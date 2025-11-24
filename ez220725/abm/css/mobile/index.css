@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.section{
+    overflow: hidden;
+}
+header{
+    height: 80px;
+}
+#main-logo{
+    width: 160px;
+}
+#main-menu{
+    display: none;
+}
+#burger_menu{
+    display: block;
+}
+
+
+
+.title{
+    display: none;
+}
+.category{
+    width: 300%;
+    padding: 40px 0;
+    padding-left: 20px;
+}
+.category .inner{
+    overflow-x: auto;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1%;
+}
+.category-contents{
+    height: 60px;
+}

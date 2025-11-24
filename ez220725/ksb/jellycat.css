@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: url(/img/jellycat/bg.svg);
+}
+
+h1{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+button:hover{cursor: pointer;}
+
+.inner {
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* header */
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo {
+    width: 190px;
+    height: 54.87px;
+    text-indent: -999px;
+    overflow: hidden;
+    margin: 0 0 0 40px;
+    background: url(/img/jellycat/logo.svg) no-repeat;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin: 0 40px 0 0;
+    gap: 35px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+/* .home */
+
+
+.home .inner {
+    gap: 45px;
+}
+
+.home .inner .left,
+.home .inner .right {
+    display: flex;
+    width: 360px;
+}
+
+.home .inner .left img { 
+    flex: 0;
+    width: 360px;
+    height: 252px;
+}
+
+.home .inner .right {
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+}
+
+.home .inner .right h1{
+    font-family: 'Gaegu', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.home .inner .right p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    background-color: transparent;
+}
+
+.home .inner .right button{
+    width: 188px;
+    padding: 3px 20px;
+    text-align: left;
+    font-weight: 350;
+    font-size: 0.9rem;
+    background: #5EDEF4 url(/img/jellycat/keyboard_arrow_right.svg) no-repeat 144px;
+    background-size: 24px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+/* .about */
+
+.about .inner .cards {
+    width: 760px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.about .inner .cards .card {
+    border-radius: 30px;
+    width: 760px;
+    height: 480px;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.about .inner .cards .card.c01{
+    background: url(/img/jellycat/card01.jpg) no-repeat;
+    background-position: 50% 10%;
+}
+.about .inner .cards .card.c02{
+    background: url(/img/jellycat/card02.png) no-repeat;
+    background-position: 40% 50%;
+}
+.about .inner .cards .card.c03{
+    background: url(/img/jellycat/card03.jpg) no-repeat;
+    background-size: 120%;
+    background-position: 0% 2%;
+}
+.about .inner .cards .card.c04{
+    background: url(/img/jellycat/card04.jpg) no-repeat;
+    background-size: 100%;
+    color: #000;
+}
+
+.about .prev_b {
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(/img/jellycat/keyboard_arrow_left.svg) no-repeat;
+    background-size: cover;
+}
+
+.about .next_b {
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(/img/jellycat/keyboard_arrow_right.svg) no-repeat;
+    background-size: cover;
+}
+
+/* .product */
+
+.product {
+    display: flex;
+    justify-content: center;
+}
+
+.product .inner {
+    display: flex;
+    flex-direction: column;
+    width: 1060px;
+    height: 586px;
+    gap: 20px;
+    margin: 50px 80px;
+    background: #FFFBF4;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.product .inner .friends {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+
+.product .inner .bt .prev_b {
+    width: 30px;
+    height: 30px;
+    border: none;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(/img/jellycat/keyboard_arrow_left.svg) no-repeat;
+    background-size: cover;
+}
+
+.product .inner .bt .next_b {
+    width: 30px;
+    height: 30px;
+    border: none;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(/img/jellycat/keyboard_arrow_right.svg) no-repeat;
+    background-size: cover;
+}
+
+
+.product .inner h1,
+.product .inner a h4,
+.product .inner a h6,
+.product .inner a h5 {
+    text-align: center;
+}
+
+.product .inner a img {
+    height: 272px;
+}
+
+.product .inner a h4{ font-weight: 400;font-size: 2.1rem; }
+.product .inner a h6{ font-weight: 400;font-size: 0.7rem; margin: 2px 0;}
+.product .inner a h5{ font-weight: 400;font-size: 0.9rem; }
+
+
+/* .news */
+.news .inner {
+    height: 1265px;
+    flex-direction: column;
+    row-gap: 65px;
+}
+
+.news .inner h1{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.news .inner .content {
+    display: flex;
+    width: 780px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 55px;
+}
+
+.news .inner .content h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.news .inner .content h5{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.news .inner a img {
+    width: 360px;
+    height: 360px;
+}
+
+.news .inner button {
+    background-color: #5EDEF4;
+    border: none;
+    padding: 3px 20px;
+    border-radius: 999px;
+
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* .insta */
+.insta .inner {
+    height: 600px;
+    flex-direction: column;
+    gap: 25px;
+    /* justify-content: flex-end; */
+    /* margin: 0 0 30px 0; */
+}
+
+.insta .inner .link {
+    height: 32px;
+    background: url(/img/jellycat/insta_icon.svg) no-repeat ;
+    background-size: 32px;
+    padding: 0 0 0 52px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.insta .inner .content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+/* footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 80px 0;
+}
+
+footer .inner {
+    display: block;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+    }
+
+.footer01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer01 .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+
+.footer01 .info .btlogo {
+    width: 190px;
+    height: 54.87px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(/img/jellycat/logo.svg) no-repeat;
+}
+
+.footer01 button {
+    padding: 10px 40px;
+    border: 1px solid #000;
+    background: transparent;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer02 {
+    flex-direction: column;
+    margin-top: 30px;
+    display: block;
+}
+
+.footer02 div a{
+    margin: 0 35px 0 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.footer02 p {
+    margin: 5px 0 0 0;
+    font-weight: 300;
+    font-size: 1rem;
+}

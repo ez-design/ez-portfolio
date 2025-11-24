@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="/css/jellycat.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/jellycat2.css"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".about .inner .next_b").click(function () {
+                $(".cards div:first").insertAfter(".cards div:last");
+            });
+
+            $(".about .inner .prev_b").click(function () {
+                $(".cards div:last").insertBefore(".cards div:first");
+            });
+        });
+
+        $(function () {
+            $(".bt .next_b").click(function () {
+                $(".friends a:first").insertAfter(".friends a:last");
+            });
+
+            $(".bt .prev_b").click(function () {
+                $(".friends a:last").insertBefore(".friends a:first");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="nav">
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#">젤리캣은?</a></li>
+            <li><a href="#">친구들 만나기</a></li>
+            <li><a href="#">소식</a></li>
+            <li><a href="#">매장</a></li>
+            <li><a href="#">shop</a></li>
+        </ul>
+    </header>
+    <div class="home">
+        <div class="inner">
+            <div class="left">
+                <img src="/img/jellycat/simbol.svg" alt="jellycat">
+            </div>
+            <div class="right">
+                <h1>안녕, 나는 젤리캣이야</h1>
+                <p>내 머리위에 아슬아슬 흔들리는 젤리가 느껴지니?<br>
+                    느껴진다면 이제 우린 친구야!<br>
+                    <br>
+                    난 특별한 친구들이 많아<br>
+                    내 친구들은 엉뚱하면서도 귀엽고 사랑스러워서<br>
+                    누구나 좋아하지<br>
+                    <br>
+                    무서운 밤에도 즐거운 낮에도 항상 함께하는 친구들이야
+                </p>
+                <button>젤리캣이 궁금하면</button>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="inner">
+            <button class="prev_b">이전</button>
+            <div class="cards">
+                <div class="card c01">
+                    1999년 런던에서<br>
+                    젤리와 고양이를 좋아하는 <br>
+                    한 아이의 상상에서 젤리캣이 탄생했습니다.
+                </div>
+                <div class="card c02">
+                    귀여운 동물 캐릭터와 독특한 디자인으로 <br>
+                    누구나 사랑할 수 밖에 없는<br>
+                    매력을 가졌습니다.
+
+
+                </div>
+                <div class="card c03">
+                    아이들에겐 꿈과 희망을<br>
+                    어른들에겐 순수한 동심을 주며<br>
+                    우리의 영원한 친구가 될 것입니다.
+                </div>
+                <div class="card c04">
+                    매년 기발하고 사랑스러운 조합으로 <br>
+                    찾아오는 젤리캣 친구들. <br>
+                    <br>
+                    어떤 친구들이 있는지 만나보세요
+                </div>
+            </div>
+            <button class="next_b">다음</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="inner">
+            <h1>친구들 소개</h1>
+            <div class="friends">
+                <a href="#">
+                    <img src="/img/jellycat/Fuddlewuddle_Puppy.png" alt="강아지인형">
+                    <h4>퍼들우들</h4>
+                    <h6>Fuddlewuddle</h6>
+                    <h5>복실복실한 친구들</h5>
+                </a>
+                <a href="#">
+                    <img src="/img/jellycat/Fossilly_T-Rex.png" alt="강아지인형">
+                    <h4>파실리</h4>
+                    <h6>Fossilly</h6>
+                    <h5>부드러운 친구들</h5>
+                </a>
+                <a href="#">
+                    <img src="/img/jellycat/Cordy_Roy_Fox.png" alt="강아지인형">
+                    <h4>코디로이</h4>
+                    <h6>Cordy Roy</h6>
+                    <h5>울퉁불퉁한 친구들</h5>
+                </a>
+                <a href="#">
+                    <img src="/img/jellycat/Bashful_Silver_Bunny.png" alt="강아지인형">
+                    <h4>바쉬풀 버니</h4>
+                    <h6>Bashful Bunny</h6>
+                    <h5>수줍은 토끼친구들</h5>
+                </a>
+                </a>
+                <a href="#">
+                    <img src="/img/jellycat/Huddles_Duck.png" alt="강아지인형">
+                    <h4>허들스</h4>
+                    <h6>Huddles</h6>
+                    <h5>아기를 안고 있는 친구들</h5>
+                </a>
+            </div>
+            <div class="bt">
+                <button class="prev_b">이전</button>
+                <button class="next_b">다음</button>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="inner">
+            <h1>젤리캣 소식</h1>
+            <div class="content">
+                <a href="#">
+                    <img src="/img/jellycat/event01.jpg" alt="가을이벤트">
+                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                    <h5>2022.00.00</h5>
+                </a>
+                <a href="#">
+                    <img src="/img/jellycat/notice01.jpg" alt="가을이벤트">
+                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                    <h5>2022.00.00</h5>
+                </a>
+                <a href="#">
+                    <img src="/img/jellycat/event03.jpg" alt="가을이벤트">
+                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                    <h5>2022.00.00</h5>
+                </a>
+                <a href="#">
+                    <img src="/img/jellycat/event04.jpg" alt="가을이벤트">
+                    <h3>[EVENT] 쁘띠엘린과 함께 떠나는 가을여행</h3>
+                    <h5>2022.00.00</h5>
+                </a>
+            </div>
+            <button>더보기</button>
+        </div>
+    </div>
+    <div class="insta">
+        <div class="inner">
+            <a href="#" class="link">@jellycat_korea</a>
+            <div class="content">
+                <a href="#"><img src="/img/jellycat/instar01.png" alt="공룡인형"></a>
+                <a href="#"><img src="/img/jellycat/instar02.png" alt="고래인형"></a>
+                <a href="#"><img src="/img/jellycat/instar03.png" alt="곰돌이인형"></a>
+                <a href="#"><img src="/img/jellycat/instar04.png" alt="꽃분홍토끼인형"></a>
+                <a href="#"><img src="/img/jellycat/instar05.png" alt="라벤더토끼인형"></a>
+                <a href="#"><img src="/img/jellycat/instar06.png" alt="아이보리토끼인형3개"></a>
+                <a href="#"><img src="/img/jellycat/instar07.png" alt="연분홍토끼인형3개"></a>
+                <a href="#"><img src="/img/jellycat/instar08.png" alt="베이지토끼인형3개"></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="footer01">
+                <div class="info">
+                    <a href="#" class="btlogo">jellycat</a>
+                    <p>상담가능시간 : 10:00 ~ 17:00 · 점심시간 12:00 ~ 13:00· 토요일 및 공휴일 휴무 <br>
+                        Mail : Service@petitelin.com
+                    </p>
+                </div>
+                <button>FAMILY SITE</button>
+            </div>
+            <div class="footer02">
+                <div class="gp">
+                    <a href="#">이용안내</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">SITE MAP</a>
+                </div>
+                <p>
+                    서울특별시 서초구 서초대로 46길 19-12(서초동, 서초안빌딩, 5층) 대표이사:심석영 <br>
+                    개인정보관리 및 청소년 보호 책임자:김홍식 사업자등록번호:108-81-91594<br>
+                    통신판매업신고:제 2022-서울서초-1954호<br>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
