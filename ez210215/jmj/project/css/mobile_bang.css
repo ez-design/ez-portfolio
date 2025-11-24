@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+@media all and (min-width: 960px) and (max-width:1080px){
+
+.inner{
+    min-width: 960px;
+    max-width:1080px;
+    margin-top: 0;
+    }
+body{
+    min-width: 960px;
+    max-width:1080px;
+    position: relative;
+    }
+
+.video{
+    margin: 0 auto;
+    width: 1080px;
+    height: 600px;
+    }
+    header {
+        position: relative;
+        height: 600px;
+        overflow: hidden;
+    }
+div.main {
+    padding-top: 58px;
+}
+div.nav {
+    width: 290px;
+    height: 600px;
+}
+div.nav > span:nth-of-type(1) {
+    font-size: 13px;
+    top: 43px;
+}
+div.nav > span:nth-of-type(2) {
+    font-size: 50px;
+    right: -279px;
+    top: 17px;
+}
+div.nav > span:nth-of-type(1)::after {
+ display: none;
+}
+div.title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 208px;
+    font-size: 19px;
+}
+div.nav > div.title > span:hover {
+    font-size: 20px;
+}
+div.logo {
+    font-size: 20px;
+}
+div.comment {
+    margin-top: -205px;
+}
+div.comment > span {
+    font-size: 35px;
+}
+section.one {
+    height: 600px;
+    background-size: cover;
+    }
+.p1 {
+    font-size: 33px;
+    margin-top: -76px;
+}
+div.top {
+    padding-top: 87px;
+}
+div.top > span:nth-child(1) {
+    font-size: 18px;
+    color: #e4dbcc;
+    width: 100%;
+    text-align: center;
+}
+div.top > span:nth-child(2) {
+    font-size: 20px;
+    color: #442f19;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+div.con {
+    font-size: 18px;
+    line-height: 0.5;
+    padding-top: 0;
+}
+section.two {
+    background-size: cover;
+    height: 600px;
+}
+section.three {
+    background-size: cover;
+    height: 600px;
+}
+section.three::after {
+    position: absolute;
+    top: 2000px;
+    right: 0;
+}
+.swiper-container {
+    width: 400px;
+    height: 296px;
+}
+img.headphone {
+    width: 400px;
+    height: 296px;
+}
+.swiper-container.s01 {
+    width: 400px;
+    height: 296px;
+    position: absolute;
+    top: -112px;
+    right: 144px;
+}
+div.m::after {
+    position: absolute;
+    top: 56px;
+    left: 452px;
+    width: 150px;
+    height: 150px;
+}
+section.four {
+    background-size: cover;
+    height: 600px;
+}
+div.designer > div {
+    width: 300px;
+    height: 400px;
+    margin: 0 -40px;
+    margin-left: 66px;
+}
+div.designer {
+    padding-top: 108px;
+    justify-content: flex-start;
+}
+div.d2 {
+    background-size: cover;
+}
+div.d3 {
+    background-size: cover;
+}
+div.jacob > span:nth-child(1) {
+    padding-top: 83px;
+}
+div.jacob > span:nth-child(3) {
+    font-size: 27px;
+    padding-top: 35px;
+}
+div.bt {
+    width: 40px;
+    height: 40px;
+    opacity: 0.9;
+    margin-top: 33px;
+    margin-left: 135px;
+    font-size: 16px;
+}
+div.bt:hover {
+    background: #eae7e2;
+    color: #8f877c;
+    font-size: 16px;
+}
+section.five {
+    height: 600px;
+    padding-top: 154px;
+    padding-left: 0;
+}
+div.sketch {
+    width: 17%;
+    height: 300px;
+}
+div.in{
+    padding-right: 0;
+}
+div.in::after {
+    width: 924px;
+    height: 300px;
+}
+div.in > span:nth-child(1) {
+    padding-top: 65px;
+}
+div.more {
+    margin-top: 60px;
+}
+div.more02 {
+    margin-top: 60px;
+}
+div.more03 {
+    width: 40px;
+    height: 40px;
+    margin-top: -90px;
+    margin-left: 522px;
+    font-size: 16px;
+}
+div.more03:hover {
+    background: #4d464c;
+    color: #eae7e2;
+    font-size: 16px;
+}
+footer {
+    height: 400px;
+    width: 100%;
+}
+div.foot {
+    padding-top: 71px;
+    justify-content: center;
+}
+div.foot > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+footer::after {
+    width: 100%;
+    height: 70px;
+    margin-top: 24px;
+}
+div.flogo {
+    font-size: 14px;
+    top: 71px;
+    margin-top: 24px;
+}
+div.toplogo {
+    margin-top: 72px;
+    margin-left: 50px;
+}
+p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #bab3a6;
+    margin-bottom: 22px;
+}
+ul {
+    margin-top: 64px;
+}
+
+.swiper-container.h01 {
+    width: 400px;
+    padding-top: 74px;
+    margin-right: 546px;
+    height: 350px;
+}
+div.c::after {
+    position: absolute;
+    top: 52px;
+    right: 460px;
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: #ccc8c1;
+    z-index: 5;
+}
+div.right {
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    position: absolute;
+    left: 462px;
+    top: 65px;
+    z-index: 10;
+}
+div.left > span:nth-child(2) {
+    font-size: 19px;}
+div.right > span:nth-child(2) {
+    font-size: 19px;}
+div.left {
+    width: 150px;
+    height: 150px;
+    left: 462px;
+    top: 45px;
+}
+
+
+ /* Swiper01  */
+ .swiper-slide.s1{
+display: none;
+}
+.swiper-slide.s2{
+    display: none;
+}
+.swiper-slide.s3{
+    background: url(../bang/headphone/a1.png) 29% 100% no-repeat;
+    background-size: cover;
+}
+.swiper-slide.s4{
+    display: none;
+
+}
+.swiper-slide.s5{
+    display: none;
+}
+.swiper-slide.s6{
+    display: none;
+}
+.swiper-slide.s7{
+    display: none;
+
+}
+.swiper-slide.s8{
+    background: url(../bang/headphone/ss4.png) 52% 75% no-repeat;
+    background-size: cover;
+  
+}
+.swiper-slide.s9{
+    background: url(../bang/headphone/a4.png) 6% 28% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s10{
+    background: url(../bang/headphone/ss5.png) -4% 93% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s11{
+    background: url(../bang/headphone/a5.png) 62% 26% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s12{
+    background: url(../bang/headphone/a6.png) 20% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s13{
+    background: url(../bang/headphone/a7.png) 20% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s14{
+    background: url(../bang/headphone/ss2.png) 31% 131% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s15{
+    background: url(../bang/headphone/ss3.png) 40% no-repeat;
+    background-size: cover;
+ 
+}
+
+
+ /* Swiper02  */
+
+.swiper-slide.s16{
+    background: url(../bang/specker/6.png) no-repeat;
+    background-size: cover;
+  
+}
+.swiper-slide.s17{
+    background: url(../bang/specker/9.png) 71% 50% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s18{
+    background: url(../bang/specker/10.png) 27%  no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s19{
+    background: url(../bang/specker/11.png) 7% 61% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s20{
+    background: url(../bang/specker/14.png) 25% no-repeat;
+    background-size: cover;
+ 
+}
+.swiper-slide.s21{
+    background: url(../bang/specker/15.png) 20% no-repeat;
+    background-size: cover;
+  
+}
+.swiper-slide.s22{
+    background: url(../bang/specker/a1.png) 20% no-repeat;
+    background-size: cover;
+ 
+}
+.swiper-slide.s23{
+    background: url(../bang/specker/a2.png) 31% 131% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s24{
+    background: url(../bang/specker/a7.png) 40% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s25{
+    background: url(../bang/specker/a8.png) 20% no-repeat;
+    background-size: cover;
+ 
+}
+.swiper-slide.s26{
+    background: url(../bang/specker/a12.png) 31% 131% no-repeat;
+    background-size: cover;
+
+}
+.swiper-slide.s27{
+    background: url(../bang/specker/a13.png) 40% no-repeat;
+    background-size: cover;
+
+}
+
+
+
+}

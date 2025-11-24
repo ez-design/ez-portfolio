@@ -1,0 +1,609 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: KoPubBatang Light;
+}
+body{ 
+    min-width: 1200px; 
+    max-width: 1920px;
+    /* background: #c3bdbd; */
+    background: #0D1B2A;
+    margin: 0 auto;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+html {
+	height: 100%;
+}
+
+
+
+
+
+
+/* section.one*/
+section.one{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+div.top{
+    background: url(../bang/Storiespage.jpg) no-repeat;
+    background-size: cover;
+    height: 627px ;
+    width: 950px;
+    border-radius: 390px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+div.top::after{
+    width: 950px;
+    height: 627px;
+    background: rgba(132, 132, 132, 0.7);
+    border-radius: 390px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: -1;
+    transform: rotate(
+17deg
+);
+}
+div.top::before{
+    width: 950px;
+    height: 627px;
+    background: rgba(167, 167, 167, 0.7);
+    border-radius: 390px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: -2;
+    transform: rotate(37deg);
+}
+div.top > span:nth-child(1){
+    font-size: 90px;
+    color: #ffffff;
+    opacity: 0.8;
+    margin-top: 360px;
+    padding-right: 100px;
+    position: absolute;
+    left: -64px;
+}
+div.top > span:nth-child(1)::after{
+    /* width: 950px;
+    height: 627px;
+    background: rgba(132, 132, 132, 0.7);
+    border-radius: 390px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: -1;
+    transform: rotate(
+17deg
+); */
+}
+div.top > span:nth-child(2){
+font-size: 30px;
+color: #958383;
+opacity: 0.8;
+}
+div.project{
+    background: #484848;
+    border-radius: 390px;
+    width: 274px;
+    height: 196px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 916px;
+    right: -179px;
+    transform: rotate(352deg);
+}
+div.project > span{
+font-size: 35px;
+color: #ffffff;
+opacity: 0.8;
+}
+
+/* section two/ */
+section.two{
+    background: rgba(255, 255, 255, 0.7);
+    width: 834px;
+    height: 842px;
+    padding-left: 155px;
+    padding-top: 150px;
+    position: relative;
+    z-index: 0;
+}
+section.two::after{
+    width: 834px;
+    height: 842px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: -1;
+    transform: rotate(2deg);
+}
+section.two > span:nth-of-type(1){
+    font-size: 17px;
+    color: #cbb39d;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+    top: 409px;
+    transform: rotate(
+270deg
+);
+}
+section.two > span:nth-of-type(2){
+    font-size: 17px;
+    color: #cbb39d;
+    font-weight: bold;
+    position: absolute;
+    right: -26px;
+    top: 409px;
+    transform: rotate(90deg);
+}
+div.box.b01{
+    background: url(../bang/headphone/ss4.png) 20% no-repeat;
+    background-size: cover;
+    width: 532px;
+    height: 526px;
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
+}
+
+div.box.b01 > span {
+    font-size: 70px;
+    color: #7a6865;
+    position: absolute;
+    left: 175px;
+    top: -64px;
+}
+h1{
+    font-size: 18px;
+    color: #d9c2b1;
+    position: absolute;
+    top: 42px;
+    left: 72px;
+}
+
+div.ring.a1{
+    background: url(../project/../bang/ring.png) no-repeat;
+    height: 364px;
+    margin-top: 65px;
+    margin-left: 124px;
+    position: relative;
+}
+
+/* section three/ */
+section.three{
+    background: url(../bang/pink2.PNG) no-repeat;
+    background-size: cover;
+    border-radius: 390px;
+    width: 973px;
+    height: 649px;
+    margin-top: 200px;
+    position: relative;
+    z-index: -1;
+}
+
+section.three > div:nth-child(1){
+    display: flex;
+    padding-top: 180px;
+    padding-left: 57px;
+}
+section.three::after{
+    width: 39px;
+    height: 39px;
+    background: #0d1b2a;
+    position: absolute;
+    top: 567px;
+    left: 471px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+}
+section.three::before{
+    width: 39px;
+    height: 39px;
+    background: #0d1b2a;
+    position: absolute;
+    bottom: 590px;
+    left: 471px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+}
+div.bt{
+    background: rgba(188, 169, 157, 0.7);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    opacity: 0;
+}
+div.bt > span{
+    color: #edebeb;
+    font-size: 13px;
+}
+div.r1{
+    width: 196px;
+    height: 309px;
+    margin: 0 10px;
+}
+div.sketch{
+    background: url(../bang/sketch/s1.png) no-repeat;
+    background-size: cover;
+    height: 309px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+div.headphones{
+    background: url(../bang/woman.jpg) 41% no-repeat;
+    background-size: cover;
+    height: 309px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+div.speaker{
+    background: url(../bang/tree.png) 58% no-repeat;
+    background-size: cover;
+    height: 309px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+div.designer{
+    background: url(../bang/designer/f8.jpg) 27% no-repeat;
+    background-size: cover;
+    height: 309px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 16px;
+    color: #d9c2b1;
+    padding-left: 723px;
+    opacity: 0.9;
+}
+div.ring.a2{
+    background: url(../project/../bang/ring.png) no-repeat;
+    height: 364px;
+    margin-top: 65px;
+    margin-left: 124px;
+    position: relative;
+    transform: rotate( 
+180deg
+ );
+    left: 0;
+    margin-right: 339px;
+    margin-top: 51px;
+    z-index: 1;
+}
+/* hover하면 나오는/ */
+div.r1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.r1::after{
+    width: 196px;
+    height: 309px;
+    background: rgba(86, 63, 62, 0.5) url(../bang/effect.png);
+    background-blend-mode: multiply;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    opacity: 0;
+}
+div.r1::before{
+    width: 16px;
+    height: 309px;
+    background: rgba(86, 63, 62, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    opacity: 0;
+}
+div.r1 > span{
+    font-size: 19px;
+    color: #dfe1e7;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+div.r1:hover span{
+    opacity: 1;
+    transition: all 0.5s;
+}
+div.r1:hover div.bt{
+    opacity: 1;
+    transition: all 1s;
+}
+div.r1:hover::after{
+    opacity: 1;
+    transition: all 1.5s;
+}
+div.r1:hover::before{
+    opacity: 1;
+    transition: all 2s;
+}
+/* section four/ */
+section.four{
+    background: rgba(255, 255, 255, 0.7);
+    width: 834px;
+    height: 842px;
+    padding-left: 155px;
+    padding-top: 150px;
+    margin-top: 200px;
+    position: relative;
+}
+section.four::after{
+    width: 834px;
+    height: 842px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    z-index: -1;
+    transform: rotate(265deg);
+}
+section.four > span:nth-of-type(1){
+    font-size: 17px;
+    color: #cbb39d;
+    font-weight: bold;
+
+    position: absolute;
+    left: -15px;
+    top: 409px;
+    transform: rotate(
+270deg
+);
+}
+section.four > span:nth-of-type(2){
+    font-size: 17px;
+    color: #cbb39d;
+    font-weight: bold;
+    position: absolute;
+    right: -26px;
+    top: 409px;
+    transform: rotate(90deg);
+}
+div.box.b02{
+    background: url(../bang/in.png) no-repeat;
+    background-size: cover;
+    width: 532px;
+    height: 526px;
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
+}
+div.box.b02::after{
+    width: 39px;
+    height: 39px;
+    background: #0d1b2a;
+    position: absolute;
+    top: 593px;
+    left: 247px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+}
+
+div.box.b02 > span {
+    font-size: 70px;
+    color: #7a6865;
+    position: absolute;
+    left: 175px;
+    top: -64px;
+}
+h3{
+    font-size: 18px;
+    color: #d9c2b1;
+    position: absolute;
+    top: 42px;
+    left: 72px;
+}
+
+/* section.five/ */
+
+section.five{
+    background: url(../bang/pink.PNG) no-repeat;
+    background-size: cover;
+    border-radius: 390px;
+    width: 973px;
+    height: 649px;
+    margin-top: 200px;
+    margin-bottom: 225px;
+    position: relative;
+}
+section.five::after{
+    width: 39px;
+    height: 39px;
+    background: #0d1b2a;
+    position: absolute;
+    bottom: 567px;
+    left: 471px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+}
+section.five > div{
+    display: flex;
+    align-items: center;
+    padding-top: 180px;
+    padding-left: 57px;
+    justify-content: center;
+    padding-right: 59px;
+    padding-top: 250px;
+    position: relative;
+}
+
+div.c1{
+    width: 158px;
+    height: 158px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    position: relative;
+}
+div.c1 > span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ad988d;
+}
+div.white{
+    background: white;
+    height: 158px;
+    border-radius: 87px 75px 78px 67px;
+}
+div.beige{
+    background: #dbd1c0;
+    height: 158px;
+    border-radius: 87px 75px 78px 67px;
+}
+div.gray{
+    background: #8a8785;
+    height: 158px;
+    border-radius: 87px 75px 78px 67px;
+}
+div.black{
+    background: black;
+    height: 158px;
+    border-radius: 87px 75px 78px 67px;
+}
+h4{
+    font-size: 16px;
+    color: #d9c2b1;
+    position: absolute;
+    top: 497px;
+    right: 73px;
+    opacity: 0.9;
+}
+
+div.bt02{
+    background: rgba(188, 169, 157, 0.3);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+div.bt02 > span{
+    color: #edebeb;
+    font-size: 13px;
+    opacity: 0.8;
+}
+div.bt02.b > span{
+    color: #856a4a;
+    opacity: 0.8;
+    display: block;
+}
+
+div.info{
+    display: flex;
+    flex-shrink: 0;
+    opacity: 0;
+}
+div.info.f1{
+    background: url(../bang/white.PNG) 50% no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div.info.f2{
+    background: url(../bang/beige.PNG) 65% no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    position: absolute;
+    top: 63px;
+    left: -135px;
+}
+div.info.f3{
+    background: url(../bang/gray.PNG) no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 89px;
+    right: -106px;
+}
+div.info.f4{
+    background: url(../bang/black.PNG) no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 8px;
+}
+div.bt02:hover div.info{
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+
+

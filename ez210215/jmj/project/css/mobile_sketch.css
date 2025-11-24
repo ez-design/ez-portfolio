@@ -1,0 +1,238 @@
+
+@media all and (min-width: 960px) and (max-width:1080px){
+
+    .inner{
+        min-width: 960px;
+        max-width:1080px;
+        margin-top: 0;
+        }
+    body{
+        min-width: 960px;
+        max-width:1080px;
+        position: relative;
+        }
+        i.fas.fa-bars {
+            font-size: 20px;
+            color: rgb(129 129 129);
+            position: relative;
+            top: -79px;
+            left: 27px;
+            cursor: pointer;
+        }
+    .video{
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        }
+    div.main {
+        padding-top: 58px;
+    }
+    div.nav {
+        width: 290px;
+        height: 562px;
+    }
+    div.nav > span:nth-of-type(1) {
+        font-size: 20px;
+        color: rgb(129 129 129);
+        position: relative;
+        top: -67px;
+        left: 48px;
+        cursor: pointer;
+    }
+    div.nav > span:nth-of-type(2) {
+        font-size: 45px;
+        right: -303px;
+        top: -9px;
+    }
+    div.nav > span:nth-of-type(1)::after {
+     display: none;
+    }
+    div.title {
+        padding-top: 232px;
+    }
+    div.nav > div.title > span {
+        font-size: 20px;
+    }
+    div.nav > div.title > span:hover {
+        font-size: 21px;
+    }
+    header {
+        background: url(../bang/sketch/main.jpg) no-repeat;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        margin-top: 89px;
+    }
+
+    div.main > span:nth-child(1) {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    div.main > span:nth-child(2) {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    div.logo {
+        font-size: 20px;
+        top: 57px;
+    }
+    section.one {
+        margin-top: 130px;
+    }
+    div.pic.p01 {
+        width: 416px;
+        height: 307px;
+    }
+    div.pic.p02 {
+        width: 416px;
+        height: 307px;
+    }
+    div.pic.p03 {
+        width: 416px;
+        height: 307px;
+    }
+    div.pic.p04 {
+        width: 416px;
+        height: 307px;
+    }
+section.two{
+    margin-left: 115px;
+    margin-top: 130px;
+}
+section.three > div:nth-child(1) > span:nth-child(1) {
+    background: #565656e0;
+    margin-top: -721px;
+    margin-right: 199px;  
+}
+section.three > div:nth-child(1) > span:nth-child(2) {
+display: none;
+}
+div.boxb {
+    margin-left: -45px;
+    margin-top: 35px;
+}
+div.boxb > span:nth-child(1) {
+    font-size: 21px;
+
+}
+div.boxb > span:nth-child(2) {
+    font-size: 21px;
+    margin-left: 49px;
+}
+div.boxb > span:nth-child(1)::after {
+    top: 40px;
+    left: 153px;
+}
+
+div.designer.d01 {
+    background: url(../bang/s14.png) no-repeat;
+    background-size: cover;
+    width: 416px;
+    height: 307px;
+}
+div.designer.d02 {
+    background: url(../bang/s14.png) no-repeat;
+    background-size: cover;
+    width: 416px;
+    height: 307px;
+}
+div.designer.d03 {
+    background: url(../bang/s14.png) no-repeat;
+    background-size: cover;
+    width: 416px;
+    height: 307px;
+}
+div.designer.d04 {
+    background: url(../bang/s14.png) no-repeat;
+    background-size: cover;
+    width: 416px;
+    height: 307px;
+}
+div.de {
+    margin-top: -250px;
+    margin-left: 115px;
+}
+div.box.b01 {
+    margin-left: 85px;
+    margin-top: 531px;
+}
+div.f01 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+    margin-top: 359px;
+}
+div.m span:nth-child(1) {
+    font-size: 21px;
+
+}
+div.m span:nth-child(2) {
+    font-size: 21px;
+}
+span.m01 {
+   display: none;
+}
+div.de > div:nth-child(2) {
+    margin-top: 100px;
+}
+div.box.b01 {
+    background: #c6bead;
+    margin-left: 319px;
+    margin-left: 40px;
+    margin-top: 534px;
+}
+div.m {
+    position: relative;
+    margin-bottom: -4px;
+    bottom: 346px;
+    left: 229px;
+}
+
+div.left.a {
+    height: 320px;
+}
+div.right.a {
+    height: 320px;
+}
+div.right.b {
+    height: 320px;
+}
+div.left.b {
+    height: 320px;
+}
+div.middle > span {
+display: none;
+}
+section.six {
+    background: url(../bang/sketch/aa.jpg) 12% 79% no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+section.six > div > span:nth-child(2) {
+    font-size: 30px;
+    color: #fefef6;
+    margin-top: -66px;
+}
+
+section.six > div > span:nth-child(3) {
+    display: none;
+}
+section.six > div > span:nth-child(1) {
+    font-size: 18px;
+    color: #eaeae2;
+}
+
+p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #bab3a6;
+    margin-bottom: 22px;
+}
+ul {
+    margin-top: 64px;
+}
+footer{
+    display: none;
+}
+}

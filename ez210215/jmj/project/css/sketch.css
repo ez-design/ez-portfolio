@@ -1,0 +1,615 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: Arial;
+}
+body{ 
+    min-width: 1200px; 
+    background: #eaeae2;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+i.fas.fa-bars{
+    font-size: 20px;
+    color: rgb(129 129 129);
+    position: relative;
+    top: -184px;
+    left: 48px;
+    cursor: pointer;
+}
+i.fas.fa-slash{
+    font-size: 16px;
+    color: #b59f8e;
+    position: absolute;
+    top: 30px;
+    left: 41px;
+    z-index: 10;
+    cursor: pointer;
+    transform: rotate(
+6deg
+);
+}
+div.logo{
+    font-size: 25px;
+    color: #5a5752;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    top: 100px;
+    cursor: pointer;
+}
+header{
+    background: url(../bang/sketch/main.jpg) no-repeat;
+    height: 1055px;
+    width: 100%;
+    margin-top: 200px;
+}
+/* nav  */
+div.nav{
+    width: 370px;
+    height: 1284px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+div.nav.on{
+    display: block;
+    z-index: 12;
+}
+div.title{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 715px;
+}
+div.nav > div.title > span{
+    font-family: KoPubBatang Light;
+    font-weight: bold;
+    font-size: 22px;
+    color: #8e8e8d;
+    position: relative;
+    z-index: 10;
+    padding-left: 50px;
+    line-height: 3.5;
+    cursor: pointer;
+}
+div.nav > div.title > span:hover{
+    font-size: 23px;
+    color: #f1f1f1;
+}
+
+div.nav > div.title > span::after{
+    position: absolute;
+    top: 19px;
+    left: 36px;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: #af753b;
+    z-index: 20;
+    border-radius: 4px;
+}
+
+div.nav > span:nth-of-type(1){
+    display: none;
+}
+div.nav > span:nth-of-type(1)::after{
+    position: absolute;
+    bottom: 51px;
+    left: 32px;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background: #c7beb6;
+    opacity: 0.3;
+}
+
+div.nav > span:nth-of-type(2){
+    font-size: 70px;
+    font-family: KoPubBatang Light;
+    color: #ffffff;
+    opacity: 0.2;
+    width: 600px;
+    height: 90px;
+    display: block;
+    transform: rotate(
+-90deg
+);
+    position: absolute;
+    right: -279px;
+    top: 189px;
+}
+/* nav 끝  */
+
+
+.video{
+    margin: 0 auto;
+    height: 870px;
+    width: 100%;
+}
+div.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+div.main > span:nth-child(1){
+    font-size: 20px;
+    color: #cbc6be;
+    margin-top: 396px;
+}
+div.main > span:nth-child(2){
+    font-size: 50px;
+    color: #e0e0e0;
+    margin-top: 30px;
+}
+div.main > span:nth-child(3){
+    font-size: 20px;
+    color: #95928c;
+    margin-top: 50px;
+    line-height: 1.8;
+}
+section.one{
+    margin-top: 250px;
+}
+div.pic{
+    width: 516px;
+    height: 407px;
+}
+div.pic.p01{
+    width: 516px;
+    height: 407px;
+    background: url(../bang/sketch/pic01.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+div.pic.p02{
+    width: 516px;
+    height: 407px;
+    background: url(../bang/sketch/pic02.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+div.pic.p02::after{
+    /* width: 30px;
+    height: 30px;
+    background: rgba(132, 132, 132, 0.7);
+    border-radius: 390px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block; */
+}
+div.pic.p03{
+    width: 516px;
+    height: 407px;
+    background: url(../bang/sketch/pic03.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-shrink: 0;
+}
+div.pic.p04{
+    width: 516px;
+    height: 407px;
+    background: url(../bang/sketch/pic04.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 10px;
+
+}
+section.two{
+    display: flex;
+    width: 1042px;
+    flex-wrap: wrap;
+    margin-top: 256px;
+    position: relative;
+}
+section.two > div:nth-child(1){
+    margin-top: 100px;
+}
+
+section.three{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+section.three > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.box{
+    width: 492px;
+    height: 102px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    position: relative;
+    bottom: 1376px;
+    left: 21px;
+    font-family: KoPubBatang Light;
+    font-weight: bold;
+}
+div.boxb{
+    font-weight: bold;
+    font-family: Arial;
+    margin-left: -111px;
+    margin-top: -166px;
+}
+div.boxb > span{
+    font-size: 23px;
+    color: #e0e0e0;
+    font-family: auto;
+}
+div.boxb > span:nth-child(1){
+    font-size: 23px;
+    color: #acacad;;
+}
+div.boxb > span:nth-child(1)::after{
+    position: absolute;
+    top: 370px;
+    right: 696px;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 20px;
+    background: #c6bead;
+    opacity: 0.7;
+}
+div.boxb > span:nth-child(2){
+    font-size: 23px;
+    color: #acacad;;
+    margin-left: 49px;
+}
+section.three > div:nth-child(1) > span:nth-child(1){
+    color: #fefef6;
+    font-size: 21px;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    background: #c6bead52;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: KoPubBatang Light;
+    margin-top: 140px;
+}
+section.three > div:nth-child(1) > span:nth-child(2){
+    color: #9c9c9c;
+    font-size: 23px;
+    margin: 0 auto;
+    margin-top: 116px;
+    margin-left: -112px;
+    line-height: 1.8;
+    width: 710px;
+}
+
+section.four{
+    display: flex;
+    flex-direction: column;
+}
+div.de{
+    width: 1042px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 145px;
+    margin-left: 86px;
+}
+div.de > div:nth-child(2) {
+    margin-top: 100px;
+}
+
+div.m span:nth-child(1){
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 23px;
+    color: #acacad;
+    font-family: auto;
+}
+div.m span:nth-child(2){
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 23px;
+    color: #acacad;
+    font-family: auto;
+    margin-left: 49px;
+}
+div.m span:nth-child(1)::after{
+    position: absolute;
+    top: 7px;
+    right: -44px;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 19px;
+    background: #c6bead;
+    opacity: 0.7;
+}
+span.m01{
+    color: #9c9c9c;
+    font-size: 23px;
+    width: 514px;
+    position: relative;
+    margin-left: -97px;
+    font-family: auto;
+    text-align: left;
+    line-height: 1.7;
+}
+
+div.m{
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: -96px;
+}
+div.gnb{
+    margin: 0 auto;
+    margin-top: -800px;
+    position: relative;
+    bottom: -1181px;
+}
+div.box.b01{
+    color: #cacaca;
+    font-size: 24px;
+    width: 150px;
+    height: 150px;
+    background: #c6bead52;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: KoPubBatang Light;
+    margin-left: 319px;
+    margin-left: 331px;
+    margin-top: 1017px;
+}
+div.box.b01 > span:nth-child(1){
+    font-size: 16px;
+    position: relative;
+    bottom: 10px;
+    color: #5a5752;
+}
+div.box.b01 > span:nth-child(2){
+    font-size: 20px;
+    color: #fefef6;
+    font-weight: bold;
+    text-align: center;
+}
+div.designer{
+    width:516px;
+}
+div.designer.d01{
+    background: url(../bang/s14.png) no-repeat;
+    background-size: cover;
+    height: 407px;
+}
+div.designer.d02{
+    background: url(../bang/sketch/s.png) no-repeat;
+    background-size: cover;
+    height: 407px;
+    margin-left: 10px;
+}
+div.designer.d03{
+    background: url(../bang/s3.png) no-repeat;
+    background-size: cover;
+    height: 407px;
+    margin-top: 10px;
+}
+div.designer.d04{
+    background: url(../bang/s1.png) no-repeat;
+    background-size: cover;
+    height: 407px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div.f01{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+    margin-top: 140px;
+}
+div.left{
+width: 420px;
+height: 420px;
+}
+div.right{
+    width: 420px;
+    height: 420px;
+    }
+div.left.a{
+    background: url(../bang/sketch/s6.png);
+    background-size: cover;
+    margin-right: 20px;
+    height: 420px;
+}
+div.right.a{
+    background: url(../bang/sketch/s13.png);
+    background-size: cover;
+    margin-right: 20px;
+    height: 420px;
+}
+div.right.b{
+    background: url(../bang/sketch/s7.png);
+    background-size: cover;
+    margin-right: 20px;
+    height: 420px;
+}
+div.left.b{
+    background: url(../bang/sketch/s12.png);
+    background-size: cover;
+    height: 420px;
+}
+
+section.five{
+    display: flex;
+    flex-direction: column;
+}
+
+div.middle{
+    /* background-size: contain; */
+    margin: 0 auto;
+    margin-bottom: 0;
+    border-radius: 390px;
+}
+
+div.middle > span{
+    font-size: 17px;
+    text-align: center;
+    color: #5a5752;
+    opacity: 0.8;
+    font-family: KoPubBatang Light;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    background: #c6bead52;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    margin-bottom: 150px;
+}
+
+section.six{
+    background: url(../bang/sketch/aa.jpg) 12% 59% no-repeat;
+    background-size: cover;
+    height: 690px;
+
+}
+section.six > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 200px;
+}
+section.six > div > span:nth-child(1){
+    font-size: 20px;
+    color: #eaeae2;
+}
+section.six > div > span:nth-child(2){
+    font-size: 38px;
+    color: #fefef6;
+    margin-top: 35px;
+}
+section.six > div > span:nth-child(3){
+    font-size: 20px;
+    color: #eaeae2;
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+footer{
+    background: #f9f9f9;
+    height: 590px;
+}
+div.toplogo{
+    background: url(../bang/logoa.png) no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    position: absolute;
+    left: 129px;
+    bottom: 355px;
+}
+p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #bab3a6;
+    margin-bottom: 34px;
+}
+div.foot > div{
+    display: flex;
+    flex-direction: column;
+}
+div.foot > div > span{
+    font-size: 13px;
+    margin: 7px 0;
+    color: #848279;
+}
+div.foot {
+    position: relative;
+    top: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+footer::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    display: block;
+    background: #383e61;
+    width: 100%;
+    height: 78px;
+}
+div.flogo{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    top: 267px;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+div.icon{
+    position: absolute;
+    right: 351px;
+    bottom: 385px;
+    display: flex;
+}
+i.fab{
+    color: #5a5752;
+}
+div.icon > i{
+    margin: 0 9px;
+    top: -7px;
+    right: -6px;
+    border: 2px solid #969084;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

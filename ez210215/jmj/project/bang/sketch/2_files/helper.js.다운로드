@@ -1,0 +1,2 @@
+// [Bang & olufsen]  Build version: 1.0.0 - Thursday, May 6th, 2021, 6:55:57 AM  
+ !function(){void 0!==typeof window&&(window.onload=function(){sessionStorage.removeItem("authToken")})}(); 

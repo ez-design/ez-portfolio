@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+@media all and (min-width: 960px) and (max-width:1080px){
+
+.inner{
+    min-width: 960px;
+    max-width:1080px;
+    margin-top: 0;
+    }
+body{
+    min-width: 960px;
+    max-width:1080px;
+    position: relative;
+    }
+
+header {
+    background: url(../bang/designer/back.png) no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+div.top {
+    padding-bottom: 262px;}
+div.nav {
+    width: 337px;
+    height: 400px;
+    top: 0;
+    left: 0;
+}
+div.title {
+    padding-top: 139px;
+}
+div.nav > div.title > span {
+    font-size: 19px;
+}
+div.nav > div.title > span:hover {
+    font-size: 20px;
+}
+div.nav > span:nth-of-type(2) {
+    font-size: 30px;
+    right: -311px;
+    top: -122px;
+}
+div.nav > span:nth-of-type(1) {
+ display: none;
+}
+div.logo {
+    font-size: 20px;
+    top: 41px;
+}
+section.one > span:nth-of-type(2) {
+    font-size: 17px;
+    color: #4e4843;
+    width: 746px;
+    margin-top: 22px;
+    margin-right: 49px;
+    line-height: 2;
+}
+div.top > span:nth-child(2) {
+    font-size: 22px;
+    color: rgb(0 0 0 / 50%);
+    margin-top: 8px;
+}
+section.one > span:nth-of-type(1) {
+    font-size: 25px;
+}
+section.two {
+    margin-top: 290px;
+}
+div.top > span:nth-child(1) {
+    font-size: 33px;
+}
+
+div.box.b2 {
+    width: 220px;
+    height: 280px;
+}
+div.box.b3{
+    width: 220px;
+    height: 280px;
+}
+div.box.b4 {
+    width: 220px;
+    height: 280px;
+}
+div.box.b5 {
+    width: 220px;
+    height: 280px;
+}
+div.box.b6 {
+    width: 220px;
+    height: 280px;
+}
+div.box.b7 {
+    width: 220px;
+    height: 280px;
+}
+div.box.b8 {
+    width: 220px;
+    height: 280px;
+}
+div.box::after {
+    width: 220px;
+    height: 280px;
+}
+div.box::before {
+    width: 180px;
+    height: 260px;
+    top: 9px;
+    left: 18px;
+}
+div.box > span:nth-child(1) {
+    font-size: 15px;
+}
+div.box > span:nth-child(2) {
+    font-size: 15px;
+}
+div.box.b2 > span:nth-child(1) {
+    right: 43px;
+}
+div.box.b5 > span:nth-child(2) {
+    right: 26px;
+}
+div.box.b5 > span:nth-child(1) {
+    right: 6px;
+    width: 162px;
+}
+div.box.b2 > span {
+    right: 34px;
+}
+span.j1 {
+    margin-top: 150px;
+}
+div.swiper-slide.s1 {
+    margin-left: 0;
+}
+div.lnb {
+    margin-bottom: 109px;
+}
+section.two > div:nth-child(2) {
+    margin-left: 331px;
+    margin-top: 100px;
+}
+div.box.b3 {
+    right: 189px;
+    top: 52px;
+
+}
+div.box.b2 {
+    right: 141px;
+    bottom: -4px;
+}
+span.j1 {
+    font-size: 23px;
+    margin-left: 10px;
+    padding-top: 64px;
+}
+span.j2 {
+    font-size: 23px;
+    margin-left: 335px;
+    padding-top: 152px;
+}
+span.j3 {
+    font-size: 20px;
+    line-height: 1.6;
+}
+section.two > div:nth-child(1):after {
+   display: none;
+}
+section.two > div:nth-child(2):after {
+    display: none;
+
+}
+div.shadow.s1 {
+    width: 260px;
+    height: 170px;
+}
+div.shadow.s2 {
+    width: 260px;
+    height: 170px;
+}
+div.shadow.s3 {
+    width: 260px;
+    height: 170px;
+}
+div.shadow.s4 {
+    width: 260px;
+    height: 170px;
+}
+div.shadow.s5 {
+    width: 260px;
+    height: 170px;
+}
+div.shadow::after {
+    width: 215px;
+    height: 22px;
+    top: 183px;
+    left: 21px;
+}
+div.right {
+    margin-top: 80px;
+}
+div.left {
+    margin-left: 90px;
+}
+div.number{
+    display: none;
+}
+section.four {
+    background-size: cover;
+    height: 400px;
+}
+
+footer {
+    height: 400px;
+    width: 100%;
+}
+div.foot {
+    padding-top: 71px;
+    justify-content: center;
+}
+div.foot > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+footer::after {
+    position: absolute;
+    top: 403px;
+    right: 0;
+    content: "";
+    display: block;
+    background: #383e61;
+    width: 100%;
+    height: 70px;
+}
+div.flogo {
+    font-size: 14px;
+    top: 71px;
+    margin-top: 50px;
+}
+div.toplogo {
+    margin-top: -100px;
+    margin-left: -99px;
+}
+p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #bab3a6;
+    margin-bottom: 22px;
+}
+div.icon {
+    position: absolute;
+    right: 147px;
+    top: 114px;
+    display: flex;
+    /* padding-bottom: 100px; */
+}
+div.content {
+    width: 509px;
+    font-size: 18px;
+    margin-right: 300px;
+}
+div.con > span:nth-child(1) {
+    font-size: 18px;
+}
+div.con > span:nth-child(2) {
+    font-size: 18px;
+}
+div.con::after {
+    top: 3px;
+    left: 286px;
+    width: 6px;
+    height: 15px;
+}
+
+
+
+
+
+
+
+}

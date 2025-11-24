@@ -1,0 +1,735 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: "Gotham A", "Gotham B", Arial, Helvetica, sans-serif;
+    --swiper-theme-color: #fffefda6;
+    --swiper-navigation-size: 23px;
+}
+body{ 
+    min-width: 1200px; 
+    max-width: 1410px;
+    background: black;
+    margin: 0 auto;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fas.fa-bars{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 29px;
+    left: -204px;
+    cursor: pointer;
+}
+i.fas.fa-slash{
+    font-size: 16px;
+    color: #b59f8e;
+    position: absolute;
+    top: 30px;
+    left: 41px;
+    z-index: 10;
+    cursor: pointer;
+    transform: rotate(
+6deg
+);
+}
+div.bang{
+    margin-top: 230px;
+}
+div.logo{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    top: -207px;
+    cursor: pointer;
+}
+img.headphone{
+    width: 600px;
+    height: 600px;
+}
+div.top{
+    display: flex;
+}
+div.contents{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    position: relative;
+    bottom: 180px;
+}
+div.contents > span:nth-child(1){
+    font-size: 20px ;
+    color: #6d6d6d ;
+    padding-top: 340px ;
+}
+div.contents > span:nth-child(2){
+    font-size: 2.5rem;
+    color: #faf8f4;
+    padding-top: 50px;
+    width: 600px;
+    font-weight: 500;
+}
+div.contents > span:nth-child(3){
+    font-size: 19px ;
+    color: #9d9d9d ;
+    padding-top: 20px ;
+}
+div.colorbox{
+width: 135px;
+height: 40px;
+display: flex;
+justify-content: space-between;
+margin-top: 45px;
+}
+div.color.c1{
+    width: 33px;
+    height: 33px;  
+    border-radius: 50%;
+    background: #45464c;
+    border: 3px solid rgba(255, 255, 255,0.5);
+    cursor: pointer;
+}
+div.color.c2{
+    width: 33px;
+    height: 33px;  
+    border-radius: 50%;
+    background: #bab9a9;
+    border: 3px solid rgba(255, 255, 255,0.5);
+    cursor: pointer;
+}
+div.color.c3{
+    width: 33px;
+    height: 33px;  
+    border-radius: 50%;
+    background: #4E5764;
+    border: 3px solid rgba(255, 255, 255,0.5);
+    cursor: pointer;
+}
+/* swiper/ */
+.swiper-container.one
+{
+display: none;
+}
+.swiper-container.one.on
+{
+display: block;
+}
+/* comment */
+div.comment{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    border-top: 10px solid #d3c9be;
+}
+div.comment > span:nth-child(1){
+    font-size: 30px;
+    color: #b9ab93;
+    margin-top: 35px;
+}
+div.comment > span:nth-child(2){
+    font-size: 18px;
+    color: #d3c9be;
+    margin-top: 29px;
+    line-height: 2;
+    opacity: 0.8;
+}
+div.left{
+    background: url(../bang/headphone/a3png.png) 37% 66% no-repeat;
+    width: 955px;
+    height: 680px;
+    margin-top: 560px;
+}
+div.right{
+    background: url(../bang/headphone/a7.png) 20% no-repeat;
+    background-size: cover;
+    width: 955px;
+    height: 680px;
+    margin-top: 502px;
+    position: relative;
+    /* left: 455px; */
+    margin-left: 455px;
+}
+div.nav{
+    width: 370px;
+    height: 1040px;
+    /* background: rgba(114, 109, 105 , 0.8);/ */
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+div.nav.on{
+    display: block;
+    z-index: 12;
+}
+div.title{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 622px;
+
+}
+div.nav > div.title > span{
+    font-family: KoPubBatang Light;
+    font-weight: bold;
+    font-size: 22px;
+    color: #8e8e8d;
+    position: relative;
+    z-index: 10;
+    padding-left: 50px;
+    line-height: 3.5;
+    cursor: pointer;
+}
+div.nav > div.title > span:hover{
+    font-size: 23px;
+    color: #f1f1f1;
+}
+
+div.nav > div.title > span::after{
+    position: absolute;
+    top: 19px;
+    left: 36px;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: #af753b;
+    z-index: 20;
+    border-radius: 4px;
+}
+/* div.title > span:hover div.title > span::after{
+    background: #eba967;
+} */
+div.nav > span:nth-of-type(1){
+    font-size: 18px;
+    color: #959595;
+    padding-left: 90px;
+    position: relative;
+    top: 49px;
+ 
+}
+div.nav > span:nth-of-type(1)::after{
+    position: absolute;
+    bottom: 51px;
+    left: 32px;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background: #c7beb6;
+    opacity: 0.3;
+}
+
+div.nav > span:nth-of-type(2){
+    font-size: 80px;
+    font-family: KoPubBatang Light;
+    color: #ffffff;
+    opacity: 0.2;
+    width: 600px;
+    height: 90px;
+    display: block;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -271px;
+    top: 252px;
+}
+/* nav 끝  */
+div.click.c02{
+    width: 227px;
+    height: 43px;
+    background: rgba(176, 159, 131, 0.6);
+    color: white;
+    font-size: 17px;
+    position: relative;
+    left: 0;
+    bottom: -24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+div.click.c01{
+    width: 329px;
+    height: 43px;
+    background: rgba(176, 159, 131, 0.6);
+    color: white;
+    font-size: 17px;
+    position: relative;
+    left: 0;
+    bottom: -26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ /* information  */
+div.info.f1{
+    width: 608px;
+    height: 490px;
+    background: #3d3d3d;
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin-top: 60px;
+    z-index: 10;
+}
+div.info.f1 > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    padding-left: 55px;
+    padding-top: 38px;
+    line-height: 5;
+    letter-spacing: -1px;
+}
+div.info.f1 > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    color: #afa79f;
+    font-size: 14px;
+    padding-top: 47px;
+    font-weight: bold;
+    margin-left: 77px;
+}
+div.info.f1 > div:nth-child(2) > span{
+    padding: 21px 0;
+    position: relative;
+    bottom: 3px;
+}
+div.info.f1 > div:nth-child(2) > span:nth-child(3){
+    position: relative;
+    bottom: -5px;
+    line-height: 1.3;
+}
+div.info.f1 > div:nth-child(2) > span:nth-child(4){
+    position: relative;
+    bottom: 18px;
+    line-height: 1.3;
+}
+div.info.f1 > div:nth-child(2) > span:nth-child(5){
+    position: relative;
+    bottom: 43px;
+}
+
+div.bt{
+    font-size: 15px;
+    font-weight: bold;
+    color: #d3c9be;
+    position: relative;
+    left: 0;
+    z-index: 20;
+    top: 0px;
+}
+div.bt.b01{
+    font-size: 15px;
+    font-weight: bold;
+    color: #d3c9be;
+    position: relative;
+    left: -55px;
+    z-index: 20;
+    top: -1px;
+}
+div.info.f2{
+    width: 608px;
+    height: 490px;
+    background: #3d3d3d;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    margin-top: 54px;
+    z-index: 10;
+}
+div.info.f2 > div:nth-child(1){
+    width: 608px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    padding-left: 55px;
+    padding-top: 38px;
+    line-height: 5;
+    letter-spacing: -1px;
+}
+div.info.f1 > div:nth-child(1) > span{
+    position: relative;
+}
+div.info.f1 > div:nth-child(1) > span::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 19px;
+    right: 114px;
+    background: #b9ab93;
+    z-index: 20;
+}
+div.info.f2 > div:nth-child(1) > span{
+    position: relative;
+}
+div.info.f2 > div:nth-child(1) > span::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    right: 545px;
+    background: #b9ab93;
+    z-index: 20;
+}
+div.info.f2 > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    color: #afa79f;
+    font-size: 14px;
+    padding-top: 45px;
+    font-weight: bold;
+    margin-left: -306px;
+}
+div.info.f2 > div:nth-child(2) > span{
+    padding: 22px 0;
+    position: relative;
+    bottom: 0px;
+    line-height: 1.3;
+}
+div.info.f2 > div:nth-child(2) > span:nth-child(3){
+    position: relative;
+    bottom: 28px;
+    line-height: 1.3;
+}
+div.info.f2 > div:nth-child(2) > span:nth-child(4){
+    position: relative;
+    bottom: 49px;
+}
+div.info.f2 > div:nth-child(2) > span:nth-child(5){
+    position: relative;
+    bottom: 43px;
+}
+section.one{
+    width: 100%;
+}
+div.box{
+    width: 608px;
+    height: 543px;
+    background: rgba(255, 255, 255,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: -185px;
+}
+div.box > span:nth-child(1){
+    color: #faf8f4;
+    font-size: 25px;
+    letter-spacing: -2px;
+}
+div.box > span:nth-child(2){
+    color: #faf8f4;
+    margin-top: 20px;
+    font-size: 20px;
+}
+div.box > span{
+    position: relative;
+    z-index: 2;
+}
+div.box02{
+    width: 608px;
+    height: 543px;
+    background: rgba(255, 255, 255,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -185px;
+}
+div.box02 > span:nth-child(1){
+    color: #faf8f4;
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+div.box02 > span:nth-child(2){
+    color: #faf8f4;
+    margin-top: 20px;
+    font-size: 20px;
+}
+div.middle{
+    width: 445px;
+    height: 445px;
+    background: url(../bang/headphone/middle.png) 20% 61% no-repeat;
+    border-radius: 50%;
+    margin: 300px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.middle > span:nth-child(1){
+    font-size: 23px;
+    color: #faf8f4;
+}
+div.middle > span:nth-child(2){
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0px 9px;
+    color: #d9d6d0;
+    margin-top: 40px;
+    text-align: center;
+}
+div.bubble{
+    /* background: url(../bang/headphone/bubble.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 437px;
+    height: 1022px; */
+}
+div.lnb{
+    position: relative;
+    right: 247px;
+    top: 200px;
+}
+.video{
+    width: 1920px;
+    height: 870px;
+}
+div.col{
+    display: flex;
+    flex-direction: column;
+}
+div.gnb{
+    position: relative;
+}
+div.gnb.g1{
+    /* position: relative;
+    bottom: 1134px; */
+}
+div.h{
+background: url(../bang/headphone/a.png) no-repeat;
+width: 100%;
+height: 650px;
+margin-bottom: 300px;
+}
+div.h.h1{
+    background: url(../bang/headphone/a2.png) no-repeat;
+    width: 100%;
+height: 650px;
+    }
+div.h.h2{
+    background: url(../bang/headphone/a1.png) 7% 36% no-repeat;
+    width: 100%;
+height: 650px;
+    }
+section.two{
+    margin-top: 300px;
+}
+section.three{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+div.down{
+width: 464px;
+height:464px;
+}
+div.down.d1{
+    background: url(../bang/headphone/a12.png) 44% 46% no-repeat;
+    background-size: cover;
+    width: 464px;
+    height: 464px;
+}
+div.down.d2{
+    background: url(../bang/headphone/a11.png) 9% 8% no-repeat;
+    background-size: cover;
+    width: 464px;
+    height: 464px;
+}
+div.down.d3{
+    background: url(../bang/headphone/a10.png) 87% 133% no-repeat;
+    width: 464px;
+    height: 464px;
+    background-size: cover;
+}
+div.opacity{
+    width: 297px;
+    height: 130px;
+    background: rgba(255, 255, 255,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 83px;
+    bottom: 10%;
+}
+div.opacity > span:nth-child(1){
+    font-size: 18px;
+    color: #dbd3c6;    position: relative;
+    z-index: 10;
+}
+div.opacity > span:nth-child(2){
+    font-size: 19px;
+    color: #faf8f4;
+}
+section.four{
+    /* 배경바꾸기  */
+    background: url(../bang/headphone/btbt.png) 20% no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 1920px;
+    position: relative;
+    left: -247px;
+
+}
+section.four > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section.four > div > span:nth-child(1){
+    color: #faf8f4;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 287px;
+    letter-spacing: -2px;
+}
+section.four > div > span:nth-child(2){
+    color: #faf8f4;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 45px;
+    line-height: 1.5;
+}
+body::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 7037px;
+    position: absolute;
+    top: 2998px;
+    left: 50%;
+    background: #e3e2e1;
+    opacity: 0.5;
+    z-index: -1;
+}
+footer{
+    background: #f9f9f9;
+    height: 590px;
+    width: 1920px;
+    POSITION: relative;
+    bottom: 0;
+    left: -247px;
+}
+div.toplogo{
+    background: url(../bang/logoa.png) no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    position: absolute;
+    left: 129px;
+    top: 168px;
+}
+p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #bab3a6;
+    margin-bottom: 34px;
+}
+div.foot > div{
+    display: flex;
+    flex-direction: column;
+}
+div.foot > div > span{
+    font-size: 13px;
+    margin: 7px 0;
+    color: #848279;
+}
+div.foot {
+    display: flex;
+    padding-top: 171px;
+    justify-content: space-between;
+}
+footer::after{
+    position: absolute;
+    top: 590px;
+    right: 0;
+    content: "";
+    display: block;
+    background: #383e61;
+    width: 100%;
+    height: 78px;
+}
+div.flogo{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    top: 172px;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+div.icon{
+    position: absolute;
+    right: 351px;
+    top: 221px;
+    display: flex;
+}
+i.fab{
+    color: #5a5752;
+}
+div.icon > i{
+    margin: 0 9px;
+    top: -7px;
+    right: -6px;
+    border: 2px solid #969084;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* swiper  */
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 146px;
+    left: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+    top: 88%;
+    width: 244px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 100px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 102px;
+}

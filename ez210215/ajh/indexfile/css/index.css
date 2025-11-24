@@ -1,0 +1,475 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* { margin: 0 ; padding: 0;  box-sizing: border-box;
+    /* border: 1px solid red ; */
+} 
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat', "Gothic A1", sans-serif;
+}
+li { list-style: none;}
+a { text-decoration: none; color: #000;}
+
+/*------*/
+/* main.horizon {
+    width: 100%;
+    height: 100vh;
+} */
+
+section {
+    position: relative;
+    z-index: 100;
+}
+section.home {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 100PX;
+    height: 100vh;
+}
+section.home > .text {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    font-size: 3.5rem;
+    color: #000;
+}
+section.home > .text:nth-child(1){
+    justify-content: flex-start;
+    width: 100%;
+}
+section.home > .text:nth-child(3){
+    justify-content: flex-end;
+    text-align: right;
+    width: 95%;
+}
+section.home > .gnb {
+    width: 20%;
+    justify-content: flex-end;
+}
+.gnb {
+    display: flex;
+    flex-direction: column;
+}
+.gnb > li {
+    padding: 20px;
+    position: relative;
+}
+a.menu:link, a.menu:visited {   
+    position: relative;
+    z-index: 100;
+    font-size: 2rem;
+    font-weight: 600;
+}
+a.menu:hover {
+    color: #2C2966;
+}
+section.home > .arrow {
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+    width: 10px;
+    height: 200px;
+    background-color: #000;
+    animation: arrowAnimation 1.5s infinite ease-out;
+}
+section.home > .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    left: 0px;
+    transform: rotate(135deg);
+    width: 50px;
+    height: 10px;
+    background-color: #000;
+}
+.work {
+    padding: 80px;
+}
+.work .title {
+    font-size: 3rem;
+    margin: 80px 0;
+}
+.workBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.workCon {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 85%;
+    height: 70vh;
+    margin-bottom: 80px;
+    padding: 40px;
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba(121, 121, 121, 0.37);
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.workTitle {
+    width: 100%;
+    margin: 0 0 40px 0;
+    font-size: 2rem;
+}
+.workPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 10px;
+    width: 60%;
+    height: 80%;
+    min-height: 450px;
+    box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.479);
+    font-size: 1.25rem ;
+}
+.workCon:nth-child(1) > .workPic {
+    background:url(../images/porjectA-2.png);
+    background-size: cover;
+}
+.workCon:nth-child(2) > .workPic {
+    background:url(../images/SK_VIEW_main.png);
+    background-size: cover;
+}
+.work.w2 > .workPic {
+    background:url(../images/porjectA.png);
+    background-size: cover;
+}
+.textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding-left: 40px;
+}
+.work h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.work dl {
+    margin: 0 0 20px 0;
+}
+.work dl dt {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.work dl dd {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.btBox {
+    display: flex;
+    justify-content: center;
+}
+.expBt {
+    display: block;
+    margin: 0 10px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    font-weight: 700;
+    text-align: center;
+}
+.expBt:hover {
+    background: rgba( 255, 255, 255, 0.18 );
+    color: #2C2966;
+    transition: all .3s;
+}
+
+
+
+/* work swiper */
+/* 
+section.work {
+    position: relative;
+    height: 100vh;
+}
+
+.workBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80%;
+}
+.workSwiper {
+    width: 85%;
+    height: 80%;
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba(121, 121, 121, 0.37);
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    padding: 80px;
+    width: 100%;
+    height: 70vh;
+}
+.workTitle {
+    width: 100%;
+    margin: 0 0 40px 0;
+    font-size: 2rem;
+}
+.workPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 10px;
+    width: 60%;
+    height: 80%;
+    min-height: 450px;
+    box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.479);
+    font-size: 1.25rem ;
+}
+.work.w0 > .workPic {
+    background:url(../images/porjectA-2.png);
+    background-size: cover;
+}
+.work.w1 > .workPic {
+    background:url(../images/SK_VIEW_main.png);
+    background-size: cover;
+}
+.work.w2 > .workPic {
+    background:url(../images/porjectA.png);
+    background-size: cover;
+}
+.workPic:hover {
+    transition: all .5s;
+}
+.textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding-left: 80px;
+}
+.work h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.work dl {
+    margin: 0 0 20px 0;
+}
+.work dl dt {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.work dl dd {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.expBt {
+    display: block;
+    margin: 0 auto ;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    font-weight: 700;
+    text-align: center;
+}
+.expBt:hover {
+    background: rgba( 255, 255, 255, 0.18 );
+    color: #2C2966;
+    transition: all .3s;
+}
+
+.swiper-button-prev.workBt,
+.swiper-button-next.workBt {
+    background:url(../images/icon/arrow_back_black_24dp.svg);
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    right: auto;
+    width: 85px;
+    height: 70px;
+    opacity: 0;
+}
+.swiper-button-next.workBt {
+    background:url(../images/icon/arrow_forward_black_24dp.svg);
+    background-size: cover;
+}
+.swiper-button-next.workBt {
+    right: 60px;
+    left: auto;
+}
+.workBox:hover .swiper-button-prev.workBt,
+.workBox:hover .swiper-button-next.workBt {
+    opacity: .7;
+    transition: all .7s;
+}
+.swiper-button-prev.workBt:after,
+.swiper-button-next.workBt:after {
+    content: "";
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    background: url(../images/icon/arrow_back_black_24dp.svg);
+    z-index: 100;
+    background-size: cover;
+    color: #fff;
+    font-size: 5.5rem;
+    opacity: 0;
+}
+.workBox:hover .swiper-button-prev.workBt:after,
+.workBox:hover .swiper-button-next.workBt:after {
+    opacity: .7;
+    transition: all .7s;
+}
+.workBox:hover .swiper-button-prev:hover:after,
+.workBox:hover .swiper-button-next:hover:after{
+    color: #2C2966 ;
+    opacity: 1;
+    transition: all .3s;
+} */
+
+
+/*---animaiton---*/
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
+  @keyframes arrowAnimation {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0
+    }
+    30% {
+      opacity: 1
+    }
+    60% {
+      opacity: 1
+    }
+    to {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+      opacity: 0
+    }
+  }
+
+/*---모바일 전용 메뉴버튼---*/
+.menuBt {
+    width: 45px;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  .menuBt span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  .menuBt span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  .menuBt span:nth-child(2) {
+    top: 16px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  .menuBt span:nth-child(3) {
+    top: 32px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  .menuBt.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+    left: 6px;
+  }
+  .menuBt.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  .menuBt.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 32px;
+    left: 7px;
+  }
