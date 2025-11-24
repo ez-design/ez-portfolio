@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/*anton 폰트*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid skyblue; */
+}
+
+:root {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+    min-width: 1200px;
+    background: #000;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+.inner .gnb li {
+    list-style: none;
+    /* border-bottom: 1px solid transparent; */
+}
+.inner .gnb li a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner .top .gnb li a:hover{
+    color: aquamarine;
+    border-bottom: 1px solid aquamarine;
+}
+
+
+nav{
+    height: 100%;
+    cursor: pointer;
+    padding: 50px 0;
+    background: #000;
+}
+nav > .inner > .top {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+nav > .inner > .top > .topL{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+a.logo {
+    background: url(../images/t로고.png) 10% 50% no-repeat;
+    width: 20%;
+    height: 80px;
+    background-size: contain;
+    display: block;
+}
+nav > .inner ul.gnb {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+nav>.inner ul.gnb li {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.topL{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.topL span{
+    width: 50px;
+    height: 30px;
+}
+.topL span:nth-child(1){
+    background: url(../images/blog_bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.topL span:nth-child(2){
+    background: url(../images/facebook-bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.topL span:nth-child(3){
+    background: url(../images/twitter-bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.topL span:nth-child(4){
+    background: url(../images/eng-bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}   
+.space{
+    height: 7195px;
+    background: url(../images/롤토체스-sub1.jpg) 50% 0% no-repeat;
+    background-size: contain;
+} 
+img{
+    width: 100%;
+}
+/*footer*/
+footer .inner{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.inner .left{
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-weight: 200;
+    font-size: 0.9rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.left p:nth-child(2){
+    margin: 30px 0 0 0;
+}
+footer{
+    background: #000;
+    margin: 0 0 100px 0;
+}
+footer .inner .grade{
+    background: url(../images/푸터폭력성.png) 50% 100% no-repeat;
+    width: 140px;
+    height: 100%;
+    background-size: contain;
+}
+
+footer .inner .footinfo{
+    background: url(../images/푸터표.png) 50% 100% no-repeat;
+    width: 345px;
+    height: 100%;
+    background-size: contain;
+}
+/* .sec01 {
+    margin: 100px auto 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+} */
+/* .sec01 .legend > h1 {
+    margin: 150px auto 0;
+    background: linear-gradient(to bottom, #fff, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: relative;
+    font-size: 5rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 900;
+}
+
+.sec01 .legend > h6 {
+    margin: 10px auto 0;
+    color: aquamarine;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+}
+
+.sec01 .legend .copy {
+    margin: 50px auto 0;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    text-align: center;
+}
+.sec01 .legend .tftlogo {
+    display: flex;
+    margin: -20px 420px;
+    width: 355px;
+    align-self: center;
+
+}
+.sec01 .animal {
+    margin: 50px 0px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    font-size: 1.5rem;
+    font-weight: 400;
+    align-items: flex-start;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+} */
+/* .sec01 .animal > div {
+    width: 33%;
+    height: 600px;
+}
+.sec01 .animal.one > div img {
+    padding: 10px;
+}
+.sec01 .animal.two {
+    text-align: center;
+    align-items: flex-end;
+} */
+/* .sec01 .animal.one div:nth-child(1) {
+    
+    background: url(../images/pa/리틀1_hover.png) 50% 44px no-repeat;
+   
+} */
+/* .sec01 .animal.one div:nth-child(1):hover img {
+    display: none;
+} */
+/* .sec01 .animal.one div:nth-child(2) {
+    
+    background: url(../images/pa/리틀2_hover.png) 50% 44px no-repeat;
+    
+} */
+/* .sec01 .animal.one div:nth-child(2):hover img {
+    display: none;
+} */
+/* .sec01 .animal.one div:nth-child(3) {
+    background: url(../images/pa/리틀3_hover.png) 50% 44px no-repeat;
+}
+.sec01 .animal.one div:nth-child(3):hover img {
+    display: none;
+} */
+/* .sec01 .animal.two div:nth-child(1) {
+    background: url(../images/pa/리틀4_hover.png) 50% 0px no-repeat;
+} */
+/* .sec01 .animal.two div:nth-child(1):hover {
+    padding-top: 540px; 
+} */
+/* .sec01 .animal.two div:nth-child(1):hover img {
+    display: none;
+} */
+
+
+
+
+
+
+

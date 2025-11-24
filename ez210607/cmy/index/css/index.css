@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{ font-family: 'Noto Sans KR', sans-serif; }
+body{ min-width: 1280px; }
+.inner{width: 1200px; margin: 0 auto;}
+ul,li{ list-style: none; }
+a {text-decoration: none; color: inherit;}
+
+header .int{
+    height: 1080px;
+    background-color: black;
+    padding: 100px 120px;
+}
+header .int .txt{
+    display: flex;
+    justify-content: space-between;
+}
+header .int .txt>h1{
+    color: #fff;
+    font-size: 16px;
+    margin-top: 550px;
+    font-weight: 100;
+}
+header .int .txt>h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 570px;
+}
+
+.about{
+    height: 1080px;
+    background: url(../images/index/about_me.png) 100% no-repeat;
+    background-size: cover;
+}
+
+.sec01{
+    height: 1080px;
+    /* background-color: #e7ebee; */
+    background-color: #000;
+    background: url(../images/index/iloom_bg.png);
+}
+/* .sec02 .iloom{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+} */
+.sec01 .iloombox{
+    display: flex;
+    /* overflow: hidden; */
+}
+.sec01 .iloombox .iloom{
+    height: 540px;
+    width: 960px;
+    margin: 240px 50px 0;
+    /* border: solid gray 6px; */
+    border-radius: 40px;
+    transition: all 0.2s linear;
+}
+.sec01 .iloombox .iloom:hover{
+    transform: scale(1.05);
+    /* transition: 1s; */
+}
+.sec01 .iloombox .iloomlogo{
+    height: 100px;
+    width: 100px;
+    margin: 300px 0 0 50px;
+}
+.sec01 .iloombox>h3{
+    color: #fff;
+    margin: 345px 0 0 40px;
+    font-size: 40px;
+}
+.line01{
+    width: 100%;
+    float: right;
+    margin-top: -360px;
+}
+.sec01>p{
+    color: #fff;
+    /* float: right; */
+    margin: -300px 480px 0 1120px;
+    width: 500px;
+    font-size: 20px;
+}
+.sec01>p>span{font-weight: 100;}
+
+
+/* .sec2{
+    height: 1080px;
+    background: url(../images/index/iloom_bg.png) 100% no-repeat;
+    background-size: cover;
+    padding-top: 300px;
+} */
+
+.sec02{
+    height: 1080px;
+    background: url(../images/index/index_iloom06.png) 100% no-repeat;
+    background-size: cover;
+}
+.sec02 .bt{
+    /* height: 270px;
+    width: 520px; */
+    color: #cc0033;
+    font-size: 38px;
+    /* padding: 195px 0 0 1025px; */
+    float: right;
+    padding: 195px 255px 0 0;
+}
+.sec02 .bt>span>a{
+    height: 270px;
+    width: 520px;
+}
+
+footer{
+    background-color: black;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+    padding-top: 50px;
+}

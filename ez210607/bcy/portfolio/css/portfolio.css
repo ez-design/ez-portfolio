@@ -1,0 +1,466 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* noto sans 서체 */
+/* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+/* Azeret Mono 서체*/
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Raleway 서체*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid skyblue; */
+}
+
+:root{
+    font-family: "Raleway","Noto Sans KR", sans-serif;
+}
+
+body{
+    min-width: 1400px;
+    /* height: 7000px; */
+    background-color: black;
+}
+.inner{
+    width: 1400px;
+    margin: 0 auto;
+}
+.swiper-container .scroll_v{ 
+    width: 100%; 
+    height: 100vh;
+}
+.sweper-slide{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+section.scroll_v{
+    width: 100%;
+    height: 100vh; 
+}
+nav{
+    position: fixed;
+    background: url(../images/colorbar.png) 50% 0% no-repeat;
+    height: 110px;
+    width: 100%;
+    z-index: 9999;
+}
+nav .inner .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+}
+a.logo{
+    background: url(../images/logo.png) 50% 50% no-repeat;
+    width: 100px;
+    height: 50px;
+    display: block;
+    background-size: contain;
+}
+.inner .gnb li {
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+.inner .gnb li a {
+    font-family: 'Raleway';
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+nav > .inner ul.gnb {
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+nav>.inner ul.gnb li {
+    text-decoration: none;
+    color: #fff;
+    min-width: 80px;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin: 0 40px;
+}
+
+.inner .top .gnb li a:hover{
+    color: black;
+}
+
+/* -------------intro--------------- */
+.sec01{
+    position: relative;
+}
+.sec01 .inner{
+    height: 100%;
+}
+.intro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sec01::after{
+    background: url(../images/blue-circle.png) 50% 50% no-repeat;
+    width: 700px;
+    height: 550px;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 240px;
+    right: -28px;
+    z-index: -1;
+}
+.sec01 h1{
+    margin-top: 270px;
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 9rem;  
+}
+
+.sec01 h1 span{
+    background: url(../images/dot.png) 50% 50% no-repeat;
+    width: 75px;
+    height: 25px;
+    background-size: contain;
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+.dot{
+    position: relative;
+    margin-top: -328px;
+    margin-left: 740px;
+    width: 75px;
+    height: 25px;
+}
+.bigdot{
+    position: relative;
+    margin-top: -350px;
+    margin-left: 1000px;
+    width: 700px;
+    height: 550px;
+}
+.text{
+    margin-top: -130px;
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 1.3rem;  
+}
+.contact{
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 1rem;  
+    font-weight: 100;
+    white-space: pre;
+    display: flex;
+    justify-content: space-between;
+    margin: 300px 0 0 0;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100%;
+}
+
+/* -------------list--------------- */
+.sec02 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.left{
+    margin: 10% 0 0 0;
+    width: 50%;
+    height: 60%;
+}
+.right{
+    margin: 10% 0 0 0;
+    width: 50%;
+    height: 60%;
+}
+.title::after{
+    background: url(../images/titleline.png) 50% 50% no-repeat;
+    position: absolute;
+    content: "";
+    width: 584px;
+    height: 2px;
+    background-size: contain;
+    bottom: -20px;
+    left: 0;
+}
+.titleko::after{
+    background: url(../images/titleline.png) 50% 50% no-repeat;
+    position: absolute;
+    content: "";
+    width: 584px;
+    height: 2px;
+    background-size: contain;
+    bottom: -20px;
+    left: 0;
+}
+.title{
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 2.8rem; 
+    position: relative;
+}
+.titleko{
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-size: 3rem; 
+    position: relative;
+}
+.titleline{
+    position: absolute;
+    margin-top: 70px;
+    width: 584px;
+    height: 1px;
+}
+.copy{
+    margin-top: 45px;
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-weight: 400 ;
+    font-size: 1.6rem; 
+}
+.sub{
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-weight: 100;
+    font-size: 1rem; 
+    width: 85%;
+    word-break: keep-all;
+}
+.bt {
+    display: block;
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.bt:hover{
+    color: turquoise;
+}
+.sec02 .left div{
+    background: url(../images/01TFT_text.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 160px;
+    margin: 60px 0 0 0;
+}
+.sec02 .right a{
+    background: url(../images/01TFT_img.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+.sec02 .right a:hover{
+    background: url(../images/01TFT_img_hover.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+/* -------------cjc--------------- */
+.sec03-1 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sec03-1 .left div{
+    background: url(../images/02cjculture_text.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 160px;
+    margin: 60px 0 0 0;
+}
+.sec03-1 .right a{
+    background: url(../images/02cjculture.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+.sec03-1 .right a:hover{
+    background: url(../images/02cjculture_hover.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+
+/* -------------lh--------------- */
+.sec03-2 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sec03-2 .left div{
+    background: url(../images/07.LH_text.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 160px;
+    margin: 60px 0 0 0;
+}
+.sec03-2 .right a{
+    background: url(../images/07.LH.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+.sec03-2 .right a:hover{
+    background: url(../images/07.LH_hover.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+
+
+
+/* -------------por--------------- */
+
+.sec04 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sec04 .left div{
+    background: url(../images/03porsche_text.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 160px;
+    margin: 60px 0 0 0;
+}
+.sec04 .right a{
+    background: url(../images/03porsche.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+.sec04 .right a:hover{
+    background: url(../images/03porsche_hover.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+
+
+/* -------------mid--------------- */
+
+.sec05 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sec05 .left div{
+    background: url(../images/04midrim_text.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 160px;
+    margin: 60px 0 0 0;
+}
+.sec05 .right a{
+    background: url(../images/04midrim.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+.sec05 .right a:hover{
+    background: url(../images/04midrim_hover.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+
+/* -------------jejuok--------------- */
+
+.sec06 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sec06 .left div{
+    background: url(../images/05jejuok_text.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 160px;
+    margin: 60px 0 0 0;
+}
+.sec06 .right a{
+    background: url(../images/05jejuok.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+.sec06 .right a:hover{
+    background: url(../images/05jejuok_hover.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+
+
+/* -------------card--------------- */
+
+.sec07 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sec07 .left div{
+    background: url(../images/06.cardnews_text.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 160px;
+    margin: 60px 0 0 0;
+}
+.sec07 .right a{
+    background: url(../images/06.cardnews.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+.sec07 .right a:hover{
+    background: url(../images/06.cardnews_hover.png) 50% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    display: block;
+}
+

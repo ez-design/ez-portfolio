@@ -1,0 +1,977 @@
+@charset "UTF-8";
+
+
+body {
+    min-width: 320px;
+}
+
+.inner {
+    width: 85%;
+}
+div.player .inner,
+section .inner {
+    width: 85%;
+
+}
+
+
+header .bg {
+    width: 100%;
+}
+
+header .bg .main {
+    display: none;
+}
+header .bg .Mmain {
+    display: block;
+}
+header .bg .inner {
+    display: none;
+}
+
+
+header .bg nav {
+    display: block;
+}
+
+
+header .bg nav {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header .bg nav .Minner {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .bg nav .Minner .MheadL {
+    width: 70px;
+    height: 38px;
+    background: url(../img/M이글스로고.png)no-repeat;
+    margin: 0 0 0 15px;
+}
+
+
+header .bg nav .Minner .MheadR {
+    width: 22px;
+    height: 18px;
+    background: url(../img/M버튼.png)no-repeat;
+    margin: 0 15px 0 0;
+}
+
+
+
+
+.Mgnb li a.M {
+    padding: 15px;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.3); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.Mgnb a.M {
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+.Mgnb a.M.on {
+    color: #fb8335;
+    opacity: 1;
+}
+
+.Mgnb ul > li {
+    padding: 15px 0 0 30px;
+}
+
+.Mgnb li ul {
+    display: none;
+}
+.Mgnb li ul li a:hover {color: #fb8335;}
+
+/* .Mgnb li ul.on {
+    color: #fb8335;
+    display: block;
+    opacity: 1;
+} */
+
+
+.Mgnb .Msub3 li:nth-child(1) a,
+.Mgnb .Msub2 li:nth-child(1) a,
+.Mgnb .Msub li:nth-child(1) a {color: #fb8335;}
+
+
+header .bg nav .Minner .Mgnb {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translate(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+    padding: 70px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: pointer;
+    background: #25282a;
+
+}
+
+header .bg nav .Minner .Mgnb.on {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+
+
+ul.Mgnb li:nth-child(1),
+ul.Mgnb li:nth-child(6),
+ul.Mgnb li:nth-child(5),
+ul.Mgnb li:nth-child(4),
+ul.Mgnb li:nth-child(3),
+ul.Mgnb li:nth-child(2) {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+ul.Mgnb li.bt {
+    position: absolute;
+    z-index: 400;
+    top: 30px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+
+
+/* ------------------------------------------------------------------ */
+
+
+
+section h1:nth-child(1) {
+    display: none;
+}
+
+section {
+    align-items: center;
+}
+
+section h1:nth-child(2) {
+    display: block;
+    text-align: center;
+    animation: none;
+
+}
+
+
+section .inner {
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+
+section .inner .t3,
+section .inner .t2,
+section .inner .t1 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex: 0 0 auto;
+    background-color: #25282a;
+    border-radius: 30px;
+    margin: 50px 32px 0 0;
+    flex-direction: column;
+    align-items: center;
+    animation: up-down 1.1s infinite ease-in-out alternate;
+}
+
+section .inner .t3 span:nth-child(1),
+section .inner .t1 span:nth-child(1),
+section .inner .t2 span:nth-child(1) {
+    font-family: "NTSL";
+    margin: 50px 150px 0 0;
+    opacity: 1;
+}
+
+section .inner .t3 span:nth-child(2),
+section .inner .t1 span:nth-child(2),
+section .inner .t2 span:nth-child(2) {
+    width: 85%;
+    font-size: 25px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 1;
+}
+
+
+
+section .inner .t1 span:nth-child(5) {
+    font-size: 30px;
+    font-family: "NTSB";
+    margin: 15px 0 0 0;
+}
+
+
+section .inner .t2 div.team > em,
+section .inner .t3 div.teams > em,
+section .inner .t1 div.teams > em {
+    font-size: 10px;
+
+}
+
+section .inner .t2 div.team > em {
+    opacity: 0.6;
+    font-size: 10px;
+}
+
+
+section .inner .t2 div.team,
+section .inner .t3 div.teams,
+section .inner .t1 div.teams {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    margin: 30px 0 0 0;
+}
+
+
+
+section .inner .t2 div.team img,
+section .inner .t3 div.teams img,
+section .inner .t1 div.teams img {
+    width: 40%;
+}
+
+
+section .inner .t3 div.teams img:nth-child(1),
+section .inner .t3 div.teams img:nth-child(2),
+section .inner .t2 div.Mteam img:nth-child(2),
+section .inner .t2 div.Mteam img:nth-child(1),
+section .inner .t1 div.teams img:nth-child(1),
+section .inner .t1 div.teams img:nth-child(2) {
+    margin: 0 0 0 0;
+}
+
+section .inner .t2 div.time {
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    opacity: 0.8;
+    margin: 40px 0 0 0;
+
+}
+s
+
+
+
+
+/* ------------------------------------------------------------- */
+
+
+div.player .inner {
+    width: 90%;
+    /* height: 300px; */
+}
+
+div.player .inner img {
+    width: 50%
+}
+
+.pimg {
+    margin: 20px 0 20px 0;
+}
+
+
+.tab_item {
+    line-height: 40px;
+    font-size: 15px;
+    font-family: "NTSL";
+    opacity: 0.3;
+    margin: 0 20px 0 0;
+    font-style: italic;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+div.player .inner .tabs {
+    width: 100%;
+    height: 300px;
+}
+
+
+
+div.player .inner .tabs .tab_content .tabs2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-wrap: nowrap;
+    overflow-x: scroll; */
+    margin: 0 0 0 0;
+}
+
+
+div.player .inner .tabs .tab_content .boxh,
+div.player .inner .tabs .tab_content .box {
+    width: 100%;
+    height: 150px;
+    margin: 0 0 0 0;
+}
+
+.inner .tabs .tab_content .tabs2 .box.box1 {
+    background: url(../img/김민우.png) no-repeat;
+    background-size: 100%;
+}
+.inner .tabs .tab_content .tabs2 .box.box2 {
+    background: url(../img/정우람.png) no-repeat;
+    background-size: 100%;
+}
+.inner .tabs .tab_content .tabs2 .box.box3 {
+    background: url(../img/강재민.png) no-repeat;
+    background-size: 100%;
+}
+.inner .tabs .tab_content .tabs2 .box.box4 {
+    background: url(../img/카펜터.png) no-repeat;
+    background-size: 100%;
+}
+
+
+/* 타자 */
+.inner .tabs .tab_content .tabs2 .boxh.box4,
+.inner .tabs .tab_content .tabs2 .boxh.box1 {
+    background: url(../img/정은원.png) no-repeat;
+    background-size: 100%;
+}
+.inner .tabs .tab_content .tabs2 .boxh.box3,
+.inner .tabs .tab_content .tabs2 .boxh.box2 {
+    background: url(../img/노시환.png) no-repeat;
+    background-size: 100%;
+}
+
+
+
+.tabs2 .text {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-style: italic;
+}
+
+
+.text span:nth-child(1) {
+    font-size: 12px;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+    font-family: "NTSB";
+    margin: 0 0 0 0;
+}
+
+.text span:nth-child(2) {
+    font-size: 10px;
+    color: #fb8335;
+    font-family: "NTSB";
+    margin: 0 0 0 0;
+
+}
+
+.tabs2 .box.box4 .text span:nth-child(1),
+.tabs2 .box.box2 .text span:nth-child(1) {
+    font-size: 12px;
+    font-family: "NTSB";
+    margin: 0 0 0 0;
+}
+
+
+.tabs2 .box.box2 .text span:nth-child(2) {
+    font-size: 10px;
+    color: #fb8335;
+    font-family: "NTSB";
+    margin: 0;
+}
+
+.tabs2 .box.box4 .text span:nth-child(2) {
+    font-size: 10px;
+    color: #fb8335;
+    font-family: "NTSB";
+    margin: 0;
+}
+
+
+.tabs2 .boxh.box1 .text span:nth-child(2) {
+    font-size: 10px;
+    font-family: "NTSB";
+    margin: 0;
+}
+
+
+.tabs2 .boxh.box4 .text span:nth-child(2),
+.tabs2 .boxh.box3 .text span:nth-child(2),
+.tabs2 .boxh.box2 .text span:nth-child(2) {
+    font-size: 10px;
+    font-family: "NTSB";
+    margin: 0 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+.key .inner {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.keyL img:nth-child(1) {
+    width: 15%;
+}
+.keyL img:nth-child(2) {
+    width: 85%;
+    margin: 0 0 0 20px;
+}
+
+
+
+.keyC {
+    width: 100%;
+    align-items: center;
+}
+
+.keyC .top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+}
+
+.keyC .top span:nth-child(1) {
+    font-size: 30px;
+    font-family: "NTSB";
+    color: #fb8335;
+    font-style: italic;
+}
+
+.keyC .top span:nth-child(2) {
+    font-size: 20px;
+    font-family: "NTSB";
+    font-style: italic;
+}
+
+.keyC .top span:nth-child(3) {
+    font-size: 15px;
+    font-style: italic;
+    font-family: "NTSB";
+    opacity: 0.5;
+}
+
+.keyC .top span:nth-child(4) {
+    font-size: 10px;
+
+}
+
+.keyC .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 20px 0 40px;
+}
+.keyC .bottom .Cbox {
+    width: 60px;
+    height: 60px;
+    background: #25282a;
+    border-radius: 10px;
+    margin: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Cbox span:nth-child(1) {
+    font-size: 20px;
+    font-family: "NTSB";
+    color: #fb8335;
+    margin: 8px 0 0 0;
+}
+.Cbox span:nth-child(2) {
+    font-size: 10px;
+}
+
+.key .inner .keyR .Rbox:hover {
+    cursor: pointer;
+    background: #fb8335;
+}
+
+
+.bottom .Cbox:hover {
+    border: 3px solid #fb8335;
+}
+
+
+.keyR {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 0 0;
+
+
+}
+.keyR div:nth-child(1) {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.key .inner .keyR .Rbox {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #25282a;
+    margin: 10px 0 0 0;
+    text-align: center;
+    padding: 7px 0 0 0;
+}
+.Rbox span:nth-child(1) {
+    font-size: 18px;
+}
+
+.Rbox span:nth-child(2) {
+    color: #fb8335;
+    margin: 0 0 0 15px;
+    font-size: 18px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+.swiper-container > .swiper-button-next{
+    top: 45%;
+    right:-10;
+    width: 35px;
+    height: 35px;
+    background: url(../img/next버튼.png) no-repeat;
+    z-index: 100;}
+
+.swiper-container > .swiper-button-prev{  
+    top: 45%;
+    left:-10;
+    width: 35px;
+    height: 35px;
+    background: url(../img/pre버튼.png) no-repeat;
+    z-index: 100;
+}
+
+
+
+.yout {
+    margin: 100px 0 30px 0;
+}
+
+
+.yout .inner {
+    width: 85%
+}
+
+
+.youtube {
+    width: 100%;
+    height: 600px;
+    background: #191b1d;
+    margin-bottom: 100px;
+}
+
+
+
+.yout .inner .ylogo {
+    width: 100%;
+}
+
+.yout .inner .ylogo img {
+    width: 50%;
+}
+.Ybox {
+    display: none;
+}
+
+
+.Ybox2,
+.Ybox3 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.Ybox2 .YT {
+    width: 100%;
+}
+.youtube .inner {
+    width: 85%;
+}
+
+
+.swiper-container {
+    width: 100%
+}
+.swiper-slide {
+    width: 100%;
+}
+
+.Ybox3 img,
+.Ybox2 img {
+    width: 100%;
+}
+
+.Ybox2 .YT {
+    width: 100%;
+}
+
+.Ybox3 .YT span:nth-child(1),
+.Ybox2 .YT span:nth-child(1) {
+    margin: 25px 0 0 15px;
+    font-size: 20px;
+}
+
+
+.Ybox2 .YT span:nth-child(2) {
+    margin: 10px 0 0 15px;
+    font-size: 15px;
+}
+
+.Ybox2 .YT span:nth-child(3) {
+    margin: 20px 0 0 15px;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.Ybox2 .YT span:nth-child(4) {
+    margin: 10px 0 0 15px;
+    font-size: 10px;
+    color: #fb8335;
+}
+
+.Ybox3 .YT span:nth-child(2) {
+    margin: 10px 0 0 15px;
+    font-size: 15px;
+    color: #25282a;
+}
+
+.Ybox3 .YT span:nth-child(3) {
+    margin: 20px 0 0 15px;
+    font-size: 10px;
+    opacity: 0.6;
+    color: #25282a;
+}
+
+.Ybox3 .YT span:nth-child(4) {
+    margin: 10px 0 0 15px;
+    font-size: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+.news {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+.news .inner {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.newslogo {
+    margin: 0 0 0 0;
+}
+
+.news .inner img {
+    width: 35%;
+}
+
+
+.news .inner .newsL {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news .inner .newsL img {
+    width: 100%;
+}
+
+
+.newsL span:nth-child(1) {
+    margin: 40px 0 0 0;
+    opacity: 0.6;
+    font-size: 10px;
+}
+
+.newsL h1 {
+    margin: 15px 0 0 0;
+    font-size: 25px;
+}
+
+.newsL span:nth-child(3) {
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.newsL span:nth-child(5),
+.newsL span:nth-child(4) {
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+
+.newsL span:nth-child(5) {
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+
+
+.news .inner .newsR {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsR .newsbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 10px 0;
+}
+
+.newsR .newsbox img {
+    width: 100%;
+}
+
+
+.newsR .newsbox .newstxt {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 0 0px;
+}
+
+
+.newsR .newsbox .newstxt span:nth-child(1) {
+    font-size: 15px;
+    margin: 20px 0 0 0;
+}
+
+.newsR .newsbox .newstxt span:nth-child(2) {
+    margin: 7px 0 15px 0;
+    font-size: 12px;
+    opacity: 0.6;
+
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+.banner {
+    margin: 100px 0 150px 0;
+}
+
+
+
+.banner .inner {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.bannerL {
+    width: 100%;
+}
+
+.bannerL .ticket img {
+    width: 35%;
+}
+.bannerR .shop img {
+    width: 30%;
+}
+
+
+.bannerL .ticket {
+    width: 100%;
+    background-size: 45%;
+}
+
+
+.bannerL .ticketbg {
+    width: 100%;
+    height: 120px;
+    background: #25282a;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.ticketbg h1 {
+    font-size: 25px;
+    margin: 30px 0 5px 0;
+}
+
+.ticketbg span {
+    font-size: 15px;
+}
+
+
+.bannerR {
+    width: 100%;
+}
+
+.bannerR .shop {
+    margin: 30px 0 0 0;
+}
+
+
+.bannerR .shopbg {
+    width: 100%;
+    height: 120px;
+    background: #fb8335;
+    border-radius: 15px;
+    margin: 15px 0 0 0;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.shopbg h1 {
+    font-size: 35px;
+    font-style: italic;
+    margin: 20px 0 0 0;
+}
+
+.bannerR .shopbg span {
+    color: #000;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+}
+
+
+.shopbg .suri {
+    display: none;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+footer .inner {
+    width: 85%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .inner .footerL {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+}
+
+.footerL .Elogo {
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+footer .inner .footerL img {
+    width: 50%;
+}
+
+footer .inner .footerL .footermenu {
+    margin-bottom: 10px;
+}
+
+footer .inner .footerL .footermenu span {
+    font-size: 10px;
+    padding: 0 15px 0 0;
+}
+
+footer .inner .footerL .footermenu span::after {
+    width: 1px;
+    height: 10px;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+footer .inner .footerL .footermenu span:last-child::after {
+    display: none;
+}
+
+footer .inner .footerL .footerMENU span {
+    font-size: 10px;
+    padding: 0 15px 0 0;
+}
+
+
+.inner .footerR {
+    margin: 50px 0 30px 0;
+    font-size: 10px;
+    letter-spacing: 0;
+    opacity: 0.5;
+}

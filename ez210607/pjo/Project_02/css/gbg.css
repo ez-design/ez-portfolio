@@ -1,0 +1,1345 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.css');
+/* animate */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* 구글아이콘 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Noto+Serif+KR:wght@300;400;600;700&display=swap');
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Serif KR', serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+header {
+    width: 100%;
+
+
+}
+
+.top .inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    height: 60px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.memu {
+    width: 100%;
+    position: relative;
+
+}
+
+
+.menu .inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.top_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_left,
+.top_right {
+    display: flex;
+    align-items: center;
+}
+
+.top_right a {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 15px;
+}
+
+.menu .inner .gnb_wrap {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.gnb li a {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.nav {
+    width: 100%;
+    border-top: 1px solid #686868;
+}
+
+.nav .inner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.nav .inner .sub {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 100;
+    top: 161px;
+    left: 0;
+    transition: height 0.5s;
+}
+
+
+.nav .inner > .sub.on {
+    height: 350px;
+    transition: height 0.5s;
+}
+
+.sub_menu {
+    margin: 10px 35px;
+    position: relative;
+}
+
+
+
+.sub_menu li:nth-child(1) {
+    font-size: 20px;
+    color: #003668;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 500;
+}
+
+.sub_menu li {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.sub_menu li a {
+    color: #505050;
+}
+
+.sub_menu li a:hover {
+    color: #003668;
+}
+
+nav {display: none;}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+/* section {
+    height: 100vh;
+} */
+
+.sec01 {
+    width: 100%;
+    height: calc(100vh - 160px);
+    position: relative;
+}
+
+.visual {
+    height: 100%;
+    height: calc(100vh - 160px);
+    background: url(../img/경복궁메인.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.visual2 {
+    height: 100%;
+    height: calc(100vh - 160px);
+    background: url(../img/경복궁메인근정전.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.visual3 {
+    height: 100%;
+    height: calc(100vh - 160px);
+    background: url(../img/경복궁메인경회루전경.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* 
+:after,
+:before,
+*{
+    box-sizing: border-box;
+} */
+
+
+.swiper.visualSwiper .swiper-button-prev,
+.swiper.visualSwiper .swiper-button-next {
+    background: transparent;
+    width: 55px;
+    height: 55px;
+    line-height: 53px;
+    margin-top: -30px;
+    text-align: center;
+    border: 2px solid #d4d3d3;
+    border-radius: 55px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    position: absolute;
+    z-index: 700;
+}
+
+.swiper.visualSwiper .swiper-slide:hover .swiper-button-prev,
+.swiper.visualSwiper .swiper-slide:hover .swiper-button-next {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.swiper.visualSwiper .swiper-button-prev {
+    left: 25px;
+    transform: translateX(50px);
+}
+
+.swiper.visualSwiper .swiper-button-prev:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f060";
+    font-size: 15px;
+    color: #d4d3d3;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    position: absolute;
+    z-index: 700;
+}
+
+.swiper.visualSwiper .swiper-button-next {
+    right: 25px;
+    transform: translateX(-50px);
+}
+
+.swiper.visualSwiper .swiper-button-next:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    font-size: 15px;
+    color: #d4d3d3;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    position: absolute;
+    z-index: 700;
+}
+
+.swiper.visualSwiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    text-align: left;
+    line-height: 12px;
+    font-size: 12px;
+    color: #000;
+    opacity: 0.3;
+    background: #fff;
+    transition: all .2s ease;
+}
+
+.swiper.visualSwiper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper.visualSwiper .swiper-horizontal > .swiper-pagination-bullets,
+.swiper.visualSwiper .swiper-pagination-custom,
+.swiper.visualSwiper .swiper-pagination-fraction {
+    bottom: 30px;
+}
+
+
+
+.sec01 .main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    right: 5%;
+    bottom: 50px;
+}
+
+
+.sec01 .main h1 {
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    text-align: right;
+    font-weight: 600;
+    padding: 0 20px 0 0;
+    margin-bottom: 10px;
+}
+
+.sec01 .main h3 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+    text-align: right;
+    padding: 0 20px 0 0;
+    font-weight: 400;
+}
+
+
+.sec_top {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+
+.sec_top h1 {
+    font-size: 35px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.sec_top h3 {
+    font-size: 20px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 400;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+
+.sec02 {
+    width: 100%;
+    margin-bottom: 100px;
+    
+}
+
+
+.sec02 .inner {
+    width: 1580px;
+    margin: 0 auto;
+
+
+}
+
+.tab {
+    width: 100%;
+    height: 655px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* <탭 컨텐츠> */
+
+.tab_content {
+    width: 100%;
+    position: relative;
+
+
+}
+
+.tab_content .conbox .con {
+    width: 100%;
+    display: flex;
+
+}
+
+
+.tab_content .conbox {
+    width: 100%;
+    position: absolute;
+
+
+}
+
+.conleft img {
+    border-radius: 0 0 60px 0;
+}
+
+
+.conright {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+
+.conright img {
+    width: 40%;
+    height: 10%;
+}
+
+
+.conright span:nth-child(2) {
+    font-size: 32px;
+    font-family: 'Noto Serif KR', serif;
+    font: 600;
+    margin: 10px 0 5px 0;
+
+}
+
+
+.conright span:nth-child(3) {
+    font-size: 25px;
+    font-family: 'Noto Serif KR', serif;
+    font: 600;
+    margin-bottom: 30px;
+
+}
+
+
+.conright span:nth-child(7),
+.conright span:nth-child(6),
+.conright span:nth-child(5),
+.conright span:nth-child(4) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 3px;
+
+}
+
+
+.conright .button {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: #003668;
+    border-radius: 10px;
+    margin: 70px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.conright .button a {
+    color: #fff;
+}
+
+
+
+
+/* <탭버튼> */
+
+.tab_right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tab .tab_menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.tab .tab_menu .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 10px 40px;
+    cursor: pointer;
+}
+
+.circle p {
+    font-size: 20px;
+    font-family: 'Noto Serif KR', serif;
+    margin-top: 10px;
+}
+
+.circle span > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 170px;
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+}
+
+
+.circle.on span > img {
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+
+
+.tab .tab_menu div span {
+    width: 170px;
+    height: 170px;
+    border-radius: 170px;
+    overflow: hidden
+}
+
+.circle span > img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: all 0.4s;
+    transform: scale(1.3);
+    overflow: hidden
+}
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////// */
+
+
+.sec03 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.sec03 .visual {
+    height: 100%;
+    background: url(../img/경복궁의역사-배경.png) 0% 0% no-repeat;
+    background-size: cover;
+}
+
+.sec03 .inner {
+    width: 1580px;
+    margin: 0 auto;
+
+}
+
+.history {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 100px; */
+}
+
+.history .history_left {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.history .history_left img {
+    width: 90%;
+    height: 30%;
+}
+
+.history_left h3 {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.history_left h2 {
+    font-size: 55px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.history_left span {
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', serif;
+}
+
+/* 
+.history_bottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+   
+}
+
+.history_bottom span {
+    margin-bottom: 3px;
+} */
+
+.button_l {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: #003668;
+    border-radius: 10px;
+    margin: 70px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.button_l a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.mySwiper {
+    width: 80%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+.mySwiper .swiper-pagination {
+    position: absolute;
+    height: 10%;
+    /* width: auto !important;
+	left: auto !important; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    top: 65%;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    /* line-height: 20px; */
+    margin-left: 10px;
+    background: #494949;
+    display: flex;
+    flex-direction: row;
+    border-radius: 7.5px;
+    /* text-align: none; */
+    z-index: 100;
+    cursor: pointer;
+    margin: 0 2%;
+}
+
+
+.mySwiper .swiper-pagination::before {
+    width: 100%;
+    height: 1px;
+    content: "";
+    background: #000;
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    z-index: 10;
+}
+
+
+.mySwiper .swiper-pagination-bullet {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    color: #003668;
+    background: #003668;
+}
+
+
+.mySwiper .swiper-pagination-bullet:nth-child(1)::after {
+    content: "현재";
+    position: absolute;
+    top: 20px;
+    color: black;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 200;
+}
+
+.mySwiper .swiper-pagination-bullet:nth-child(2)::after {
+    content: "1900년대";
+    position: absolute;
+    top: 20px;
+    color: black;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 200;
+}
+
+.mySwiper .swiper-pagination-bullet:nth-child(3)::after {
+    content: "1800년대";
+    position: absolute;
+    top: 20px;
+    color: black;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 500;
+}
+
+.mySwiper .swiper-pagination-bullet:nth-child(4)::after {
+    content: "1500년대";
+    position: absolute;
+    top: 20px;
+    color: black;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 500;
+}
+
+.mySwiper .swiper-pagination-bullet:nth-child(5)::after {
+    content: "1400년대";
+    position: absolute;
+    top: 20px;
+    color: black;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 500;
+}
+
+.mySwiper .swiper-pagination-bullet:nth-child(6)::after {
+    content: "1300년대";
+    position: absolute;
+    top: 20px;
+    color: black;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 500;
+}
+
+.mySwiper .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 300ms opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+
+.history_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+}
+
+
+.history_img {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    overflow: hidden;
+    box-shadow: 5px 10px 10px rgba(80, 80, 80, 0.4);
+
+}
+
+.history_img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.history_text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 0 35px 0 0;
+    width: 200px;
+    background-color: #003668;
+    border-radius: 0 0 60px 0;
+
+}
+
+.history_text02 {
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0 0 25px;
+}
+
+
+.history_text span:nth-child(1) {
+
+    font-size: 20px;
+    margin: 10px 15px 0 0;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.history_text span:nth-child(2) {
+    font-size: 25px;
+    font-family: 'Noto Serif KR', sans-serif;
+    color: rgba(225, 225, 225, 0.5);
+    margin: -10px 15px 0 0;
+}
+
+.history_text span:nth-child(3) {
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Noto Serif KR', sans-serif;
+    margin: 10px 15px 0 0;
+}
+
+.history_text span:nth-child(4) {
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Noto Serif KR', sans-serif;
+    margin: 0 15px 0 0;
+}
+
+.history_text02 span:nth-child(1) {
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+
+.history_text02 .line {
+    width: 100%;
+    height: 1px;
+    margin: 5px 0 10px 0;
+    background-color: #003668;
+}
+
+
+.history_text02 span:nth-child(5),
+.history_text02 span:nth-child(4),
+.history_text02 span:nth-child(3) {
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+.sec04 {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.sec04 .inner {
+    width: 1580px;
+    margin: 0 auto;
+}
+
+.event {
+    width: 100%;
+    height: 560px;
+    display: flex;
+}
+
+.event_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0 0 80px;
+}
+
+.event_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+
+.event_text span:nth-child(1) {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+.event_text span:nth-child(2) {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.line2 {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #003668;
+}
+
+
+
+.event_bottom {
+    display: flex;
+    position: relative;
+}
+
+.event_bottom > a  {
+    margin: 0 30px 0 0;
+}
+
+.event_img img {
+    border-radius: 0 0 60px 0;
+}
+
+
+
+.button_e {
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: #003668;
+    border-radius: 10px;
+    bottom: 0;
+    right: 55px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.button_e a {
+    /* width: 100%; */
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+.sec05 {
+    width: 100%;
+    height: 100%;
+    background: url(../img/한지배경.png) 50% 50% no-repeat;
+    padding-bottom: 100px;
+}
+
+.sec05 .inner {
+    width: 1580px;
+    margin: 0 auto;
+}
+
+.guide .guide_left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 80px; */
+}
+
+.guided_top {
+    width: 550px;
+    display: flex;
+}
+
+.guide_tab {
+    position: relative;
+    width: 500px;
+    height: 100%;
+}
+
+.guide_tab ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.guide_tab ul li:nth-child(1) {
+    margin: 0 15px 0 0;
+}
+
+
+
+.guide_tab ul li {
+    height: 45px;
+    padding: 0 5px;
+    font-size: 25px;
+    color: #494949;
+    font-family: 'Noto Serif KR', sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+
+.guide_tab ul li.on {
+    color: #000;
+
+}
+
+.guide_tab ul li.on::after {
+    width: 100%;
+    height: 2px;
+    background-color: #003668;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+
+}
+
+.tabbox {
+    width: 100%;
+}
+
+.box {width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabbox .tabBox {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+}
+
+.tabbox .tabBox.on {
+    display: block;
+}
+
+.tabbox_left {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.tabbox_right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0;
+}
+
+.tabbox_left span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+    color: #686868;
+}
+
+
+
+.tabbox_right span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.tabbox_right span:hover {
+    color: #003668;
+    cursor: pointer;
+}
+
+:root {
+    --swiper-theme-color: #fff;
+}
+
+:root {
+    --swiper-navigation-color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.guideSwiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 10px;
+    left: 15px;
+    width: 100%;
+}
+
+
+.guideSwiper .swiper-pagination {
+    position: absolute;
+    text-align: left;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+
+
+
+
+.guide_bottom {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 100%;
+    /* margin-bottom: 50px; */
+}
+
+.guide_bottom span {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+.guide_bottom .notice {
+    width: 550px;
+    height: 350px;
+}
+
+.guide_icon {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.guide_icon span {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.rrbox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+
+.rbox_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.rbox {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rbox_content span {
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.rrbox a img:hover {
+    transition: all 0.2s;
+    /* transform: translateY( -8px ) */
+    transform: rotateY(180deg)
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+footer {
+    width: 100%;
+    height: 270px;
+    background: #686868;
+}
+
+footer .inner {
+    width: 1580px;
+    margin: 0 auto;
+}
+
+.footer_top {
+    display: flex;
+    padding-top: 50px;
+    position: relative;
+}
+
+
+
+.footer_top a {
+    font-size: 18px;
+    color: #fff;
+    padding: 0 40px 20px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.footer_top::after {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    content: "";
+    position: absolute;
+    bottom: 0;
+}
+
+
+.footer_bottom {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_left {
+    display: flex;
+    align-items: center;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 50px;
+}
+
+.footer_right span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+select {
+    -webkit-appearance: none;
+    /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+    display: none;
+}
+
+
+
+select {
+    width: 200px;
+    padding: .8em .5em;
+    background: url(../img/화살표.png) no-repeat 95% 50%;
+    border: 1px solid #999;
+    color: #fff;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select option {
+    color: black;
+}
+
+
+
+/* 스크롤 상단 버튼 */
+#scroll-to-top {
+    display: inline-block;
+    background-color: #003668;
+    color: #FFFFFF;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#scroll-to-top.show:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+#scroll-to-top.show:active {
+    opacity: 1;
+}
+#scroll-to-top.show {
+    opacity: 0.7;
+    visibility: visible;
+}

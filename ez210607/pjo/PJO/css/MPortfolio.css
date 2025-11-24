@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+
+body {
+    min-width: 320px;
+}
+
+.inner {
+    width: 85%;
+}
+
+.top {
+    width: 100%;
+}
+
+
+header span {
+    font-size: 20px;
+}
+
+
+.top .text h2 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.top .text h3 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.top .text h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+
+
+
+.sec04 .inner,
+.sec03 .inner,
+.sec02 .inner {
+    width: 90%;
+}
+
+.text {
+    width: 90%;
+}
+
+.sec01 h2 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.top h3 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.top h1 {
+    font-size: 70px;
+}
+
+
+.sec04 h1,
+.sec03 h1,
+.sec02 h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0 20px 0 0;
+}
+
+.sec04 h2,
+.sec03 h2,
+.sec02 h2 {
+    font-size: 30px;
+    font-family: 'GmarketSansMedium';
+}
+
+.sec04 h3,
+.sec03 h3,
+.sec02 h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+
+.sec04 .ttop,
+.sec03 .ttop,
+.sec02 .ttop {
+    flex-direction: column;
+    padding-top: 130px;
+}
+
+.top_right {
+    display: flex;
+    font-size: 10px;
+}
+
+.top_right p {
+    padding: 20px 0 0 0;
+}
+
+.visual_01 img {
+    width: 200%;
+}
+
+.visual_02 {
+    display: none;
+}
+
+
+.visual .visual_01 img {
+    border-radius: 10px;
+}
+
+.sec05 .imfor {
+    width: 100%;
+}
+
+.imfor .con {
+    width: 85%;
+    margin-top: 250px;
+}
+
+.con p {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.con h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.con span:nth-child(3) {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.con span:nth-child(4) {
+    font-size: 18px;
+}
+
+
+
+.scroll {
+    display: none;
+}

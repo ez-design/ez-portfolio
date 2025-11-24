@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+body{min-width: 320px;}
+.inner{width: calc(100% - 40px);}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 50;
+    background: white;
+}
+header .inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header .inner > a{
+    display: none;
+}
+header .inner > div{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 120px);
+}
+header .inner .mlogo,
+header .mhome,
+header .mmenu{display: block;}
+
+/* nav  */
+.mNav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -45px;
+    right: 0;
+    background: #10161f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 45px 0 0 0;
+    z-index: 100;
+    transform: translatey(-100%);
+    transition: transform 0.5s;
+    padding: 100px 0 0 0;
+}
+
+.mNav.on{
+    transform: translatey(0%);
+    transition: transform 0.5s;
+}
+.mNav span{
+    font-size: 2rem;
+    display: block;
+    width: 280px;
+    border-bottom: 1px solid #eee;
+}
+.mNav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: auto;
+}
+.mNav .msnb li{
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: 300;
+    background: #1f2c36;
+    padding: 5px 0  5px 0;
+}
+.mNav .msnb li.on{
+    background: white;
+    color: #10161f;
+    text-decoration: underline;
+}
+.mNav > button.mclose{
+    display: block;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    margin: 20px;
+}
+.mNav > div{
+    margin: 0 0 20px 0;
+}
+nav{display: none;}
+
+/* sec01  */
+section.sec01{
+    margin: 45px 0 0 0;
+    width: 100%;
+    height: 345px;
+}
+section.sec01 p {display: none;}
+section.sec01 .visual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+section.sec01 .visual h1{
+    padding: 0;
+    text-align: center;
+    font-size: 3rem;
+}
+section.sec01::after{display: none;}
+section.sec01 .visual{
+    height: 300px;
+}
+
+/* sec02  */
+section.sec02{
+    background: #860000;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 50px 0;
+}
+section.sec02 .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec02 h2{
+    padding: 20px 0;
+}
+.sec02 .left1{
+    width: 100%;
+    height: auto;
+}
+.left1 .games{
+    height: 380px;
+}
+.left1 .tab1 {
+    width: 90%;
+}
+.left1 .gamebt li{
+    font-size: 1rem;
+}
+.game {width: 90%;}
+.right1 .contents{
+    height: 380px;
+}
+/* .left1 li:hover{display: none;}
+.right1 li:hover{display: none;} */
+.game.one > span:nth-child(3){
+    padding: 0 20px 15px;
+    font-size: 1.2rem;
+}
+.game.one > div{
+    width: 90%;
+    justify-content: space-around;
+}
+.game.two{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.game.two .lineup > span{display: none;}
+.game.two .lineup{
+    width: 90%;
+    height: 15%;
+}
+.lineup > div{
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+.game.two table{
+    font-size: 1rem;
+    width: 90%;
+    height: 70%;
+}
+.game.three table{
+    font-size: 0.8rem;
+    width: 100%;
+}
+.sec02 .right1{
+    width: 100%;
+    height: auto;
+}
+
+.right1 .tab2{
+    width: 90%;
+}
+.right1 ul.contentbt li{
+    font-size: 1rem;
+}
+.right1 ul.contentbt li:nth-child(3){
+    font-size: 0.9rem;
+}
+.right1 .contents{
+    width: 100%;
+}
+.content .box{
+    width: 100%;
+}
+.content .news{
+    width: 70%;
+}
+.content .newsimg{
+    width: 30%;
+}
+/* sec03  */
+section.sec03::before{
+    display: none;
+}
+section.sec03{
+    width: 100%;
+    height: 200px;
+}
+section.sec03::after{
+    width: 180px;
+    height: 180px;
+}
+section.sec03 .inner h2,
+section.sec03 .inner p,
+section.sec03 .inner div.play
+{display: none;}
+
+.sec03 .inner a{
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    width: 170px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: none;
+    line-height: 40px;
+}
+.sec03 .inner .player{
+    display: block;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
+/* sec04  */
+
+.sec04 .inner{
+    flex-direction: column;
+    height: auto;
+}
+.sec04 .inner .left2{
+    width: 100%;
+    padding: 20px 0 ;
+}
+.left2 a{
+    width: 90%;
+}
+.sec04 .inner .right2{
+    width: 100%;
+    height: 260px;
+}
+
+.bn01 > div::after{
+    top: 13px;
+    right: 0px;
+}
+.bn02 > div::before{
+    width: 63px;
+    height: 71px;
+    top: 42px;
+    right: 37px
+}
+.bn02 > div::after{
+    width: 59px;
+    height: 73px;
+    top: 25px;
+    right: 0px;
+}
+.swiper-slide iframe{
+    height: 250px;
+}
+.right2 > div{
+    width: 90%;
+}
+/* sponsor*/
+.myswiper3 .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 1.5rem;
+}
+.myswiper3 .swiper-button-next:after, .swiper-button-next:after{
+    font-size: 1.5rem;
+}
+
+.sponsor .inner .swiper-container.mySwiper3 {
+    width: 80%;
+}
+/* footer  */
+footer{
+    height: auto;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+footer .ft1{
+    flex-wrap: wrap;
+    margin: 10px 0 20px;
+}
+footer .sns{
+    margin: 0px 0 20px 0;
+}
+footer .sns a{
+    margin: 5px;
+}
+footer .ft2 span:last-child{
+    font-size: 0.8rem;
+}

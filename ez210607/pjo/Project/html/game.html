@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>GAME-1군 경기일정</title>
+    <link rel="stylesheet" type="text/css" href="../css/game.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mgame.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bg">
+            <div class="inner">
+                <div class="headL">
+                    <ul>
+                        <a href="../html/hanwha.html"><img src="../img/이글스로고.png" alt=로고 class="logo"></a>
+                        <li class="sub">
+                            <a href="#"><span>EAGLES</span></a>
+                            <a href="#"><span>PLAYERS</span></a>
+                            <a href="#"><span>GAME</span></a>
+                            <a href="#"><span>FAN</span></a>
+                            <a href="#"><span>SHOP</span></a>
+                            <a href="#"><span>TICKECT</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headR">
+                    <ul>
+                        <a href="#">
+                            <li>KO</li>
+                        </a>
+                        <a href="#">
+                            <li>EN</li>
+                        </a>
+                        <a href="#">
+                            <li>LOGIN</li>
+                        </a>
+                        <a href="#">
+                            <li>JOIN US</li>
+                        </a>
+                        <a href="https://www.youtube.com/user/culturegroup100"><img src="../img/유튜브.png" alt=유튜브 class="sns"></a>
+                        <a href="#"><img src="../img/페이스북.png" alt=페이스북 class="sns"></a>
+                        <a href="#"><img src="../img/인스타그램.png" alt=인스타그램 class="sns"></a>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <div class="Minner">
+                    <a href="../html/hanwha.html">
+                        <div class="MheadL"></div>
+                    </a>
+                    <div class="MheadR"></div>
+                    <ul class="Mgnb">
+                        <li><a href="#" class="M">EAGLES</a>
+                            <ul class="Msub">
+                                <li><a href="../html/hanwhasub.html">구단소개</a></li>
+                                <li><a href="#">그룹사소개</a></li>
+                                <li><a href="#">HISTORY</a></li>
+                                <li><a href="#">한화생명이글스파크</a></li>
+                                <li><a href="#">사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">PLAYERS</a>
+                            <ul class="Msub2">
+                                <li><a href="../html/player1.html">투수</a></li>
+                                <li><a href="#">포수</a></li>
+                                <li><a href="#">내야수</a></li>
+                                <li><a href="#">외야수</a></li>
+                                <li><a href="#">코칭스탭</a></li>
+                                <li><a href="#">군입대선수</a></li>
+                                <li><a href="#">응원단</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">GAME</a>
+                            <ul class="Msub3">
+                                <li><a href="../html/game.html">1군 경기일정</a></li>
+                                <li><a href="#">퓨처스 경기일정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">FAN</a>
+                            <ul class="Msub4">
+                                <li><a href="#">구단소식</a></li>
+                                <li><a href="#">멤버쉽</a></li>
+                                <li><a href="#">팬타임즈</a></li>
+                                <li><a href="#">갤러리</a></li>
+                                <li><a href="#">이글스아카이브</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">SHOP</a>
+                        </li>
+                        <li><a href="#" class="M">TICKET</a>
+                        </li>
+                        <li class="bt">
+                            <span class="material-icons close">close</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav">
+                <div class="inner">
+                    <div class="list">
+                        <ul class="submenu">
+                            <li><a href="../html/hanwhasub.html">구단소개</a></li>
+                            <li><a href="#">그룹사소개</a></li>
+                            <li><a href="#">HISTORY</a></li>
+                            <li><a href="#">한화생명이글스파크</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="../html/player1.html">투수</a></li>
+                            <li><a href="#">포수</a></li>
+                            <li><a href="#">내야수</a></li>
+                            <li><a href="#">외야수</a></li>
+                            <li><a href="#">코칭스탭</a></li>
+                            <li><a href="#">군입대선수</a></li>
+                            <li><a href="#">응원단</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="../html/game.html">1군 경기일정</a></li>
+                            <li><a href="#">퓨처스 경기일정</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="#">구단소식</a></li>
+                            <li><a href="#">멤버쉽</a></li>
+                            <li><a href="#">팬타임즈</a></li>
+                            <li><a href="#">갤러리</a></li>
+                            <li><a href="#">이글스아카이브</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="inner">
+            <h1>THIS IS OUR WAY</h1>
+            <span><strong>한화이글스</strong>경기일정</span>
+            <ul class="menu">
+                <li><a href="#">1군 경기일정</a></li>
+                <li><a href="#">퓨쳐스 경기일정</a></li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <div class="inner">
+            <div class="ex">
+                <div class="box"></div>
+                <span>홈경기</span>
+                <div class="box1"></div>
+                <span>원정경기</span>
+                <div class="box2"></div>
+                <span>승리경기</span>
+            </div>
+            <div class="calendar">
+                <div class="swiper swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h2 class='date_text'>2021 .07</h2>
+                            <div class='date_item rap'>
+                                <div class="grid date_form date_head">
+                                    <div>일</div>
+                                    <div>월</div>
+                                    <div>화</div>
+                                    <div>수</div>
+                                    <div>목</div>
+                                    <div>금</div>
+                                    <div>토</div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div class="home">1
+                                        <div class="center">
+                                            <img src="../img2/두산로고.png" alt=두산>
+                                            <span>3 : 10</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div>2
+                                        <div class="center2">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>5 : 3</span>
+                                            <span>승</span>
+                                        </div>
+                                    </div>
+                                    <div>3
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>우천</span>
+                                            <span>취소</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div>4
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>0 : 5</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div>5
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>6 : 7</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">6
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>우천</span>
+                                            <span>취소</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">7
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>1 : 4</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div>8
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>우천</span>
+                                            <span>취소</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        9
+                                        <div class="center2">
+                                            <img src="../img2/SSG로고.png" alt=SSG>
+                                            <span>9 : 3</span>
+                                            <span>승</span>
+                                        </div>
+                                    </div>
+                                    <div>10
+                                        <div class="center2">
+                                            <img src="../img2/SSG로고.png" alt=SSG>
+                                            <span>3 : 1</span>
+                                            <span>승</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div>11
+                                        <div class="center">
+                                            <img src="../img2/SSG로고.png" alt=SSG>
+                                            <span>2 : 8</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div>12</div>
+                                    <div>13
+                                        <div class="center">
+                                            <img src="../img2/롯데로고.png" alt=롯데>
+                                            <span>코로나</span>
+                                            <span>중단</span>
+                                        </div>
+                                    </div>
+                                    <div>14
+                                        <div class="center">
+                                            <img src="../img2/롯데로고.png" alt=롯데>
+                                            <span>코로나</span>
+                                            <span>중단</span>
+                                        </div>
+                                    </div>
+                                    <div>15
+                                        <div class="center">
+                                            <img src="../img2/롯데로고.png" alt=롯데>
+                                            <span>코로나</span>
+                                            <span>중단</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">16
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>코로나</span>
+                                            <span>중단</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">17
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>코로나</span>
+                                            <span>중단</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div class="home">18
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>코로나</span>
+                                            <span>중단</span>
+                                        </div>
+                                    </div>
+                                    <div>19</div>
+                                    <div>20</div>
+                                    <div>21</div>
+                                    <div>22</div>
+                                    <div>23</div>
+                                    <div>24</div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div>25</div>
+                                    <div>26</div>
+                                    <div>27</div>
+                                    <div>28</div>
+                                    <div>29</div>
+                                    <div>30</div>
+                                    <div>31</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <h2 class='date_text'>2021 .08</h2>
+                            <div class='date_item rap'>
+                                <div class="grid date_form date_head">
+                                    <div>일</div>
+                                    <div>월</div>
+                                    <div>화</div>
+                                    <div>수</div>
+                                    <div>목</div>
+                                    <div>금</div>
+                                    <div>토</div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                    <div>4</div>
+                                    <div>5</div>
+                                    <div>6</div>
+                                    <div>7</div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div>8</div>
+                                    <div>9</div>
+                                    <div>10
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>1 : 4</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div>11
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>7 : 7</span>
+                                            <span>무</span>
+                                        </div>
+                                    </div>
+                                    <div>12
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>우천</span>
+                                            <span>취소</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">
+                                        13
+                                        <div class="center">
+                                            <img src="../img2/NC로고.png" alt=nc>
+                                            <span>1 : 5</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">14
+                                        <div class="center">
+                                            <img src="../img2/NC로고.png" alt=nc>
+                                            <span>9 : 9</span>
+                                            <span>무</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div class="home">15
+                                        <div class="center">
+                                            <img src="../img2/NC로고.png" alt=nc>
+                                            <span>9 : 9</span>
+                                            <span>무</span>
+                                        </div>
+                                    </div>
+                                    <div>16</div>
+                                    <div class="home">17
+                                        <div class="center2">
+                                            <img src="../img2/삼성로고.png" alt=삼성>
+                                            <span>4 : 2</span>
+                                            <span>승</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">18
+                                        <div class="center">
+                                            <img src="../img2/삼성로고.png" alt=삼성>
+                                            <span>2 : 6</span>
+                                            <span>패</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">19
+                                        <div class="center">
+                                            <img src="../img2/삼성로고.png" alt=삼성>
+                                            <span>18 : 30</span>
+                                            <span>대구</span>
+                                        </div>
+                                    </div>
+                                    <div>20
+                                        <div class="center">
+                                            <img src="../img2/두산로고.png" alt=두산>
+                                            <span>18 : 30</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                    <div>21
+                                        <div class="center">
+                                            <img src="../img2/두산로고.png" alt=두산>
+                                            <span>18 : 00</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div>22
+                                        <div class="center">
+                                            <img src="../img2/두산로고.png" alt=두산>
+                                            <span>17 : 00</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                    <div>23
+                                        <div class="center">
+                                            <img src="../img2/두산로고.png" alt=두산>
+                                            <span>18 : 30</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                    <div>24</div>
+                                    <div>25
+                                        <div class="center">
+                                            <img src="../img2/키움로고.png" alt=키움>
+                                            <span>18 : 30</span>
+                                            <span>고척</span>
+                                        </div>
+                                    </div>
+                                    <div>26
+                                        <div class="center">
+                                            <img src="../img2/키움로고.png" alt=키움>
+                                            <span>18 : 30</span>
+                                            <span>고척</span>
+                                        </div>
+                                    </div>
+                                    <div>27
+                                        <div class="center">
+                                            <img src="../img2/키움로고.png" alt=키움>
+                                            <span>18 : 30</span>
+                                            <span>고척</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">28
+                                        <div class="center">
+                                            <img src="../img2/NC로고.png" alt=nc>
+                                            <span>18 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div class="home">29
+                                        <div class="center">
+                                            <img src="../img2/NC로고.png" alt=nc>
+                                            <span>17 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div>30</div>
+                                    <div class="home">31
+                                        <div class="center">
+                                            <img src="../img2/KT로고.png" alt=kt>
+                                            <span>18 : 30</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <h2 class='date_text'>2021 .09</h2>
+                            <div class='date_item rap'>
+                                <div class="grid date_form date_head">
+                                    <div>일</div>
+                                    <div>월</div>
+                                    <div>화</div>
+                                    <div>수</div>
+                                    <div>목</div>
+                                    <div>금</div>
+                                    <div>토</div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div class="home">1
+                                        <div class="center">
+                                            <img src="../img2/KT로고.png" alt=KT>
+                                            <span>18 : 30</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div>2
+                                        <div class="center">
+                                            <img src="../img2/롯데로고.png" alt=롯데>
+                                            <span>18 : 30</span>
+                                            <span>부산</span>
+                                        </div>
+                                    </div>
+                                    <div>3
+                                        <div class="center">
+                                            <img src="../img2/롯데로고.png" alt=롯데>
+                                            <span>18 : 30</span>
+                                            <span>부산</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">4
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>17 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div class="home">5
+                                        <div class="center">
+                                            <img src="../img2/기아로고.png" alt=기아>
+                                            <span>14 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div>6</div>
+                                    <div>7
+                                        <div class="center">
+                                            <img src="../img2/NC로고.png" alt=nc>
+                                            <span>18 : 30</span>
+                                            <span>창원</span>
+                                        </div>
+                                    </div>
+                                    <div>8
+                                        <div class="center">
+                                            <img src="../img2/NC로고.png" alt=nc>
+                                            <span>18 : 30</span>
+                                            <span>창원</span>
+                                        </div>
+                                    </div>
+                                    <div>9
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>18 : 30</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        10
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>18 : 30</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">11
+                                        <div class="center">
+                                            <img src="../img2/삼성로고.png" alt=삼성>
+                                            <span>17 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div class="home">12
+                                        <div class="center">
+                                            <img src="../img2/삼성로고.png" alt=삼성>
+                                            <span>14 : 00/17 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div>13</div>
+                                    <div>14
+                                        <div class="center">
+                                            <img src="../img2/SSG로고.png" alt=SSG>
+                                            <span>18 : 30</span>
+                                            <span>인천</span>
+                                        </div>
+                                    </div>
+                                    <div>15
+                                        <div class="center">
+                                            <img src="../img2/SSG로고.png" alt=SSG>
+                                            <span>18 : 30</span>
+                                            <span>인천</span>
+                                        </div>
+                                    </div>
+                                    <div>16
+                                        <div class="center">
+                                            <img src="../img2/키움로고.png" alt=키움>
+                                            <span>18 : 30</span>
+                                            <span>고척</span>
+                                        </div>
+                                    </div>
+                                    <div>17
+                                        <div class="center">
+                                            <img src="../img2/키움로고.png" alt=키움>
+                                            <span>18 : 30</span>
+                                            <span>고척</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">18
+                                        <div class="center">
+                                            <img src="../img2/롯데로고.png" alt=롯데>
+                                            <span>17 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div class="home">19
+                                        <div class="center">
+                                            <img src="../img2/롯데로고.png" alt=롯데>
+                                            <span>14 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div>20
+                                    </div>
+                                    <div class="home">
+                                        21
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>14 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">22
+                                        <div class="center">
+                                            <img src="../img2/LG로고.png" alt=LG>
+                                            <span>14 : 00</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div>23
+                                        <div class="center">
+                                            <img src="../img2/KT로고.png" alt=KT>
+                                            <span>18 : 30</span>
+                                            <span>수원</span>
+                                        </div>
+                                    </div>
+                                    <div>24
+                                        <div class="center">
+                                            <img src="../img2/KT로고.png" alt=KT>
+                                            <span>18 : 30</span>
+                                            <span>수원</span>
+                                        </div>
+                                    </div>
+                                    <div>25
+                                        <div class="center">
+                                            <img src="../img2/두산로고.png" alt=두산>
+                                            <span>17 : 00</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid date_form dateSel">
+                                    <div>26
+                                        <div class="center">
+                                            <img src="../img2/두산로고.png" alt=두산>
+                                            <span>14 : 00</span>
+                                            <span>잠실</span>
+                                        </div>
+                                    </div>
+                                    <div>27</div>
+                                    <div class="home">28
+                                        <div class="center">
+                                            <img src="../img2/키움로고.png" alt=키움>
+                                            <span>18 : 30</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div class="home">29
+                                        <div class="center">
+                                            <img src="../img2/키움로고.png" alt=키움>
+                                            <span>18 : 30</span>
+                                            <span>대전</span>
+                                        </div>
+                                    </div>
+                                    <div>30
+                                        <div class="center">
+                                            <img src="../img2/삼성로고.png" alt=삼성>
+                                            <span>18 : 30</span>
+                                            <span>대구</span>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="footerL">
+                <img src="../img/Hlogo.png" alt=hanwha class="Elogo">
+                <div class="footermenu">
+                    <span>대전광역시 중구 대종로 373 한화이글스</span>
+                    <span>대표이사 박찬혁</span>
+                    <span>사업자 등록번호 306-81-12757</span>
+                </div>
+                <div class="footermenu">
+                    <span>TEL 042-630-8200</span>
+                    <span>FAX 042-632-2929</span>
+                </div>
+                <div class="footerMENU">
+                    <a href="#"><span>법적고지</span></a>
+                    <a href="#"><span>개인정보 처리방침</span></a>
+                    <a href="#"><span>이용약관</span></a>
+                    <a href="#"><span>고객문의</span></a>
+                    <a href="#"><span>1:1문의</span></a>
+                    <a href="#"> <span>사이트맵</span></a>
+                </div>
+            </div>
+            <div class="footerR">
+                <span>© 2014 HANWHA EAGLES. All rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/game.js"></script>
+</body>
+
+</html>

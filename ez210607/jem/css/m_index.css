@@ -1,0 +1,184 @@
+html,body{
+    min-width: 320px;
+}
+.group {
+    margin: 0 auto;
+    width: 100%;
+}
+.title{
+    font-size: 30px;
+}
+.button{
+    font-size: 12px;
+    margin-left: 40%;
+    margin-bottom: 10%;
+    width: 125px;
+}
+.wrap{
+    width: 100%;
+}
+.wrap .title {
+    padding-top: 30%;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 15px;
+    margin: 10px 0;
+    color: #fff;
+}
+p{
+    font-size: 12px;
+    word-break: keep-all;
+}
+.cross_browing .chrome,
+.cross_browing .edge,
+.cross_browing .fire_fox,
+.cross_browing .ie{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.part1 .group{
+    margin-top: 15%;
+    align-items: center;
+}
+h1 {
+    font-size: 45px;
+    line-height: 60px;
+    margin-top:35px;
+}
+.part1 p{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 25px;
+}
+
+.circles li:nth-child(1){
+    width: 70px;
+    height: 70px;
+}
+.circles li:nth-child(4){
+    width: 50px;
+    height: 50px;
+}
+.circles li:nth-child(6){
+    width: 90px;
+    height: 90px;
+}
+.circles li:nth-child(7){
+    width: 120px;
+    height: 120px;
+}
+.circles li:nth-child(10){
+    width: 140px;
+    height: 140px;
+}
+.part2 .group{
+    justify-content: unset;
+    flex-direction: column;
+    padding-top: 5%;
+    align-items: center;
+}
+.part2 .group> div:first-child{
+    width: 100%;
+}
+.part2 .imgbox img{
+    width: 90%;
+    margin-left: 5%;
+}
+.part2 .textbox{
+    width: 90%;
+    margin-left: 8%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.part2 .color .f,
+.part2 .color .s,
+.part2 .color .t{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.part3 .group{
+    justify-content: unset;
+    flex-direction: column;
+    padding-top: 5%;
+    align-items: center;
+}
+.part3 .group > div:first-child{
+    width: 100%;
+}
+.part3 .imgbox img{
+    width: 90%;
+    margin-left: 5%;
+}
+.part3 .textbox{
+    width: 90%;
+    margin-left: 8%;
+}
+.part3 .color .f,
+.part3 .color .s,
+.part3 .color .t,
+.part3 .color .fo{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.part4 .imgbox img{
+    width: 90%;
+    margin-left: 5%;
+}
+.part4 .group{
+    justify-content: unset;
+    flex-direction: column;
+    padding-top: 5%;
+    align-items: center;
+}
+.part4 .group > div:first-child{
+    width: 100%;
+}
+.part4 .textbox{
+    width: 90%;
+    margin-left: 8%;
+}
+.part4 .color .f,
+.part4 .color .s,
+.part4 .color .t{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.part4 .button_box .button {
+    margin: 10% 5% 10% 0;
+}
+.part5 .group{
+    padding: 15% 0 25%;
+}
+.part5 .group div:last-child p:nth-child(3),
+.part5 .group div:last-child p:nth-child(5){
+    font-size: 20px;
+}
+.part5 .title{
+    font-size: 30px;
+}
+.part5 .t{
+    font-size: 15px;
+}
+.part5 p{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+

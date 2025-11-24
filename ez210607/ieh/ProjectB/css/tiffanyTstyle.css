@@ -1,0 +1,275 @@
+@charset "UTF-8";
+body{min-width: 640px;}
+.inner{width: calc(100% - 40px);}
+header a.logo{
+    width: 200px;
+    height: 55px;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 3vw;
+}
+section.scroll_v > .swiper-button-prev{
+    margin: -82px 0 0 0
+}
+section.scroll_v > .swiper-button-next{
+    margin: 37px 0 0 0;
+}
+section.scroll_v > .swiper-button-next {
+    margin: 36px 0 0 0;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+    right: 10px;
+}
+.swiper-container-vertical > .swiper-pagination-bullets{
+    right: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: 10px;
+}
+.swiper-container-vertical > .swiper-pagination-bullets {
+    right: 11px;
+}
+/*sec01*/
+.sec01 .box{
+    flex-direction: column;
+    text-align: center;
+}
+.sec01 .box .title{
+    width: 60%;
+    margin: 3% 0;
+}
+.box.one .diamond{
+    width: 80%;
+    height: 50%;
+}
+
+.box.one .title{
+    margin: 0 0 2% 0;
+}
+.box h1{
+    font-size: 3rem;
+}
+.box p{
+    font-size: 1.1rem;
+}
+.box.two .title{
+    top: 50%;
+    left: 50%;
+}
+.box.three .kun1{
+    width: 80%;
+    height: 33%;
+}
+.box.three .kun2{
+    width: 80%;
+    height: 25%;
+}
+.box.four .morga{
+    width: 80%;
+    height: 45%;
+}
+.box.five{
+    justify-content: flex-start;
+}
+.box.five .tan1{
+    width: 80%;
+    height: 30%;
+    margin: 0;
+}
+.box.five .title{
+    position: unset;
+    transform: unset;
+    margin: 5% 0;
+    width: 70%;
+}
+.box.five .tan2{
+    width: 80%;
+    height: 35%;
+}
+.box.six .tsavo1{
+    width: 80%;
+    height: 32%;
+}
+.box.six .title{
+    width: 70%;
+}
+.box.six .tsavo2{
+    width: 80%;
+    height: 25%;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 45px;
+}
+.mySwiper .swiper-pagination-bullet{
+    width: 30px;
+    height: 30px;
+}
+.mySwiper .swiper-pagination-bullet-active{
+    width: 30px;
+    height: 37px;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 5%;
+}
+/*sec02*/
+.sec02 h1{
+    top: 12%;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    width: 60%;
+}
+.sec02 .history{
+    top: 32%;
+    width: 90%;
+    height: 200px;
+    overflow-y: auto;
+    justify-content: flex-start;
+}
+.history .bar{
+    width: 250%;
+    top: 0;
+    height: 100%;
+}
+.history .bar::after{
+    width: 90%;
+    top: 61px;
+}
+.year span:nth-child(1){
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.year span:nth-child(1):hover{
+    font-size: 1.4rem;
+}
+
+.year span:nth-child(1)::before{
+    width: 25px;
+    height: 25px;
+    top: 45px;
+}
+.year span:nth-child(2){
+    width: 280px;
+    top: 97px;
+    left: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.year span:nth-child(2)::before{
+    left: 11%;
+    height: 30px;
+    top: -16px;
+}
+.intro{
+    top: 50%;
+}
+.intro span{
+    height: 35%;
+}
+.info.jean{
+    background: url(../images/jean_schlumberger.png) 35% 50% no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: overlay;
+}
+.info:hover{
+    width: 150%;
+    background-blend-mode: multiply;
+}
+.info h2{
+    font-size: 2rem;
+    top: 50%;
+}
+.info:hover > h2{
+    font-size: 2.2rem;
+    top: 45%;
+}
+.intro p:nth-child(1){
+    height: 26%;
+    font-size: 1.5rem;
+}
+.intro p:nth-child(2){
+    font-size: 1rem;
+    height: 30%;
+}
+
+/*sec03*/
+.sec03 .fourC{
+    flex-direction: column;
+    height: 45%;
+    margin: 10% 0 0 0;
+}
+.fourC div:first-child{
+    background: url(../images/4c.png) 50% 10% no-repeat;
+    width: 60%;
+    height: 60%;
+    background-size: cover;
+}
+.fourC div:last-child{
+    width: 90%;
+    text-align: center;
+    margin: 0;
+}
+.fourC div:last-child h2{
+    font-size: 2.2rem;
+    margin: 2% 0;
+}
+.fourC div:last-child p {
+    font-size: 1rem;
+}
+.dia .box{
+    width: 23%;
+}
+.dia .box span:nth-child(1){
+    height: 55%;
+}
+.dia .box span:nth-child(2){
+    font-size: 1.3rem;
+}
+.dia .box span:nth-child(3){
+    height: 36%;
+}
+/*sec04*/
+.sec04{
+    flex-direction: column;
+    justify-content: center;
+}
+.sec04 div:nth-child(1){
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    background: url(../images/bluebox1.png) 1% 10% no-repeat;
+    background-size: contain;
+}
+.sec04 div:nth-child(2){
+    width: 80%;
+    height: 22%;
+    margin: 0 auto;
+}
+.sec04 div:nth-child(2) h1{
+    font-size: 2.5rem;
+}
+.sec04 div:nth-child(2) p{
+    font-size: 1rem;
+}
+.sec04.on div:nth-child(3){
+    width: 100%;
+    height: 35%;
+    background: url(../images/bluebox2.png) 100% 90% no-repeat;
+    background-size: contain;
+    /* margin: 0 0 20% 0; */
+}
+
+/*sec05*/
+.expandSlide{
+    width: 90%;
+    height: 35%;
+    margin: 0 0 30% 0;
+}
+footer{
+    height: 40%;
+}
+.sec05 h3{
+    font-size: 1.8rem;
+}

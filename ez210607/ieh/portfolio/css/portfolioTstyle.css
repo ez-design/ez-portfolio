@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body{min-width: 640px;}
+
+
+/*sec01*/
+.sec01 h1{
+    font-size: 6rem;
+}
+.sec01 h2{
+    font-size: 3rem;
+}
+.down{
+    display: none;
+}
+/*sec02*/
+.sec02 h1{
+    font-size: 4rem;
+}
+.sec02 h2{
+    font-size: 1.8rem;
+}
+.box{
+    width: 95%;
+    padding: 15% 0 0 0;
+}
+.sec02 .right .browser{
+    width: 99%;
+    height: 29vw;
+    border: 10px solid #000;
+    top: 55px;
+    left: 4px;
+}
+.sec02 .right::after {
+    width: 99%;
+    height: 29vw;
+    top: 53px;
+    left: 3px;
+}
+.sec02 h3{
+    font-size: 1.3rem;
+}
+.left p{
+    font-size: 1rem;
+}
+.left .color{
+    height: 40px;
+}
+.left span{
+    height: 40px;
+}
+
+
+/*sec03*/
+.sec03 h1{
+    font-size: 4rem;
+}
+.sec03 h2{
+    font-size: 1.8rem;
+}
+.sec03 h3{
+    font-size: 1.3rem;
+}
+.sec03 .right .browser{
+    width: 98%;
+    height: 29vw;
+    border: 10px solid #000;
+    top: 57px;
+    left: 5px;
+}
+.sec03 .right::after {
+    width: 98%;
+    height: 29vw;
+    top: 55px;
+    left: 4px;
+
+}
+.swiper-container .pB{
+    width: 100%;
+    height: 27.5vw;
+}
+
+
+/*sec04*/
+.sec04 .left{
+    width: 60%;
+}
+.sec04 a span{
+    font-size: 3rem;
+}
+.sec04 a{
+    font-size: 2rem;
+    padding: 0 2% 0 0;
+}

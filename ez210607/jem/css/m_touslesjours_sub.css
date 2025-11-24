@@ -1,0 +1,360 @@
+@charset " UTF-8";
+body {
+    min-width: 320px;
+}
+.group {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header{
+    background-size: 100% 100%;
+    background-position: 0px 0;
+    height: 170px;
+    padding-top: 0px;
+    position: relative;
+}
+header> .hd{
+    margin-top: 2%;
+}
+header> .hd img{
+    width: 80%;
+    margin: 4% 0 0 5%;
+}
+header span{
+    font-size: 30px;
+    font-weight: 100;
+    padding: 6px;
+}
+header h1{
+    font-size: 30px;
+    margin: 5% 0 0px 0;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+
+.part1 {
+    height: 555px;
+}
+.part1 h1 {
+    font-size: 23px;
+    padding: 10px;
+    margin: 20px 0;
+}
+.part1 div:first-child img {
+    width: 90%;
+    height: auto;
+}
+.part1 div:first-child p {
+    width: 90%;
+    font-size: 15px;
+    margin: 20px 0;
+}
+.part1 .color {
+    height: 150px;
+    flex-wrap: wrap;
+    padding: 0 3%;
+}
+.part1 .color div {
+    width: 48%;
+    height: 60%;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-size: 12px
+}
+.part1 .color div:nth-child(1)::after,
+.part1 .color div:nth-child(2)::after,
+.part1 .color div:nth-child(3)::after,
+.part1 .color div:nth-child(4)::after {
+    width: 40px;
+    height: 40px;
+    top: 8%;
+    left: 2%;
+}
+.part1 .color div:nth-child(2),
+.part1 .color div:nth-child(4) {
+    padding-top: 2%;
+}
+
+.tab2 h4{
+    font-size: 18px;
+    width: 100%;
+}
+.tab2 .part2 .bg {
+    height: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.tab2 .part2 .pp0 p {
+    color: #fff;
+    font-size: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.tab2 .part2 .p2-0 {
+    height: 2300px;
+    margin-bottom: 0px;
+}
+.tab2 .part2 .p2-0 h3 {
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 8%;
+}
+.tab2 .part2 .p2-0 p {
+    font-size: 13px;
+    padding: 0 00px;
+}
+.tab2 .part2 .p2-0 .p2-1,
+.tab2 .part2 .p2-0 .p2-3,
+.tab2 .part2 .p2-0 .p2-5 {
+    flex-direction: column;
+}
+.tab2 .part2 .p2-0 .p2-1 .img {
+    width: 80%;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 17%;
+    background-position: 0px 40%;
+}
+.tab2 .part2 .p2-0 .p2-1::after {
+    width: 65%;
+    height: 31%;
+    top: 15%;
+    left: 0;
+}
+.tab2 .part2 .p2-0 .p2-1 .tbox,
+.tab2 .part2 .p2-0 .p2-2 .tbox,
+.tab2 .part2 .p2-0 .p2-3 .tbox,
+.tab2 .part2 .p2-0 .p2-4 .tbox,
+.tab2 .part2 .p2-0 .p2-5 .tbox {
+    width: 100%;
+    height: 245px;
+    margin-left: 0px;
+    padding: 2%;
+}
+.tab2 .part2 .p2-0 .p2-2,
+.tab2 .part2 .p2-0 .p2-4 {
+    flex-direction: column-reverse;
+}
+.tab2 .part2 .p2-0 .p2-2 .imgbox {
+    justify-content: space-around;
+    height: 50%;
+}
+.tab2 .part2 .p2-0 .p2-2 .img {
+    background-position: 20% 0px;
+    width: 45%;
+    height: 150px;
+    margin-top: 10%;
+    margin-left: 0px;
+}
+.tab2 .part2 .p2-0 .p2-2 .imgbox .img1 {
+    background-position: 0px 75%;
+    width: 45%;
+    height: 150px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.tab2 .part2 .p2-0 .p2-2 .imgbox::after {
+    width: 81%;
+    height: 58%;
+    z-index: -1;
+    top: -24px;
+}
+.tab2 .part2 .p2-0 .p2-3 .img {
+    background-position: 0 30%;
+    width: 100%;
+    height: 200px;
+}
+.tab2 .part2 .p2-0 .p2-4 .img {
+    background-position: 0 30%;
+    width: 100%;
+    height: 150px;
+    margin-top: 0px;
+}
+.tab2 .part2 .p2-0 .p2-5 .imgbox {
+    width: 100%;
+    height: 270px;
+    justify-content: space-around;
+}
+.tab2 .part2 .p2-0 .p2-5 .img,
+.tab2 .part2 .p2-0 .p2-5 .img1,
+.tab2 .part2 .p2-0 .p2-5 .img2,
+.tab2 .part2 .p2-0 .p2-5 .img3{
+    background-size: 100% auto;
+    background-position: 0 95%;
+    width: 45%;
+    height: 100px;
+    margin: 0px 0px 0 0;
+}
+.tab2 .part2 .p2-0 .p2-5 .img{
+    margin-top: 5%;
+}
+.tab2 .part2 .p2-0 .p2-5 .img2{
+    width: 60%;
+    margin-top: 5%;
+}
+.tab2 .part2 .p2-0 .p2-5 .img3 {
+    background-size: auto 100%;
+    width: 29%;
+}
+.tab2 .part2 .p2-0 .p2-5 .tbox {
+    margin-top: 0px;
+}
+.tab2 .part2 .p2-0 .p2-5::after {
+    width: 79%;
+    height: 38%;
+    top: 70px;
+}
+
+/* part3 */
+.part3{
+    width: 95%;
+}
+.part3 h4{
+    font-size: 25px;
+    padding: 10px;
+}
+.part3 .p3 h5{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.part3 .p3 p{
+    font-size: 15px;
+    padding: 10px;
+}
+.part3 .p3 .p3-1,
+.part3 .p3 .p3-2,
+.part3 .p3 .p3-3,
+.part3 .p3 .p3-4,
+.part3 .p3 .p3-5,
+.part3 .p3 .p3-6{
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+.part3 .p3 .p3-1 .b16{
+    width: 100%;
+    height: 140px;
+}
+.part3 .p3 .p3-1 .b14{
+    width: 100%;
+    height:265px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-1 .b14 p{
+    width: 80%;
+    height:150px;
+    margin: 0px;
+    margin-left: 10px;
+}
+.part3 .p3 .p3-1 .b14 p::after{
+    width: 76%;
+    height: 137px;
+    bottom: 13px;
+    right: 13px;
+}
+.part3 .p3 .p3-1 .b13{
+    width:100%;
+    height:130px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-2 .b12{
+    width: 100%;
+    height: 120px;
+}
+.part3 .p3 .p3-2 .b11{
+    width: 100%;
+    height: 310px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-2 .b11::after{
+    width: 79%;
+    height: 100px;
+    bottom: 15px;
+    left: 29px;
+}
+.part3 .p3 .p3-2 .b11 p{
+    padding-left: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 260px;
+}
+.part3 .p3 .p3-3 .b10{
+    width: 100%;
+    height: 160px;
+}
+.part3 .p3 .p3-3 .b09{
+    width: 100%;
+    height: 115px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-3 .b08{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-4 .b07{
+    width: 100%;
+    height: 300px;
+} 
+.part3 .p3 .p3-4 .b07::after{
+    width: 80%;
+    height: 200px;
+    bottom: -41px;
+    left: 20px;
+}
+.part3 .p3 .p3-4 .b07 p{
+    width: 75%;
+    height: 165px;
+    margin: 30px 0 0 60px;
+}
+.part3 .p3 .p3-4 .b05{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-4 .b04{
+    width: 100%;
+    height: 280px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-4 .b04::after{
+    width: 90%;
+    height: 130px;
+    right: 13px;
+    bottom: 10px;
+}
+.part3 .p3 .p3-5 .b03{
+    width: 100%;
+    height: 100px; 
+}
+.part3 .p3 .p3-5 .b02{
+    width: 100%;
+    height: 140px;
+    margin-right: 0px;
+    margin-top: 30px;
+}
+.part3 .p3 .p3-6{
+    margin-bottom: 50px;
+}
+.part3 .p3 .p3-6 .b99{
+    width: 100%;
+    height: 100px;
+}
+.part3 .p3 .p3-6 .b98{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+footer{
+    padding-top: 30px;
+    font-size:10px;
+}
+footer div:first-child{
+    display: none;
+}
+footer div:last-child p{
+    padding: 5px;
+    word-break: keep-all;
+}

@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body{ min-width: 320px; }
+.inner{ width: 90%; }
+
+header .inner{
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header .inner .logo{
+    margin-left: 60px;
+}
+header .inner .topR{
+    display: none;
+}
+header .inner .topRM{
+    display: flex;
+}
+header .inner .topRM span{
+    font-size: 20px;
+}
+
+
+.sec01 .inner h1{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.sec01 .inner p{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.sec01 .inner img{
+    display: inline-block;
+    height: 160px;
+}
+.sec01 .inner .title{
+    background: none;
+    padding: 0;
+    background-color: #fcfcfc;
+    height: 170px;
+}
+.sec01 .inner .title span:nth-child(1){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 3;
+}
+.sec01 .inner .title span:nth-child(2){
+    font-size: 16px;
+    line-height: 20px;
+}
+.sec01 .inner .title span:nth-child(3){
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+.sec02 .inner{
+    background: none;
+    height: 400px;
+}
+.sec02 .inner .box1, .sec02 .inner .box2, .sec02 .inner .box3{
+    display: none;
+}
+.sec02 .inner .sec02m{
+    display: inline-block;
+    text-align: center;
+}
+.sec02 .inner .sec02m .mySwiper{
+    width: 360px;
+    height: 400px;
+}
+.sec02 .inner .swiper-slide{
+    background: url(../images/iloom/sec02mbg2.png) 100% no-repeat;
+    background-size: cover;
+    height: 360px;
+    padding: 40px;
+    /* word-break: keep-all; */
+}
+.sec02 .inner .sec02m .mySwiper .swiper-wrapper .swiper-slide h2{
+    font-size: 18px;
+    margin: 25px 0;
+}
+.sec02 .inner .sec02m .mySwiper .swiper-wrapper .swiper-slide p{
+    font-size: 12px;
+    /* word-break: keep-all; */
+}
+
+.sec03{margin: 100px 0;}
+.sec03 .inner p{
+    font-size: 18px;
+    word-break: keep-all;
+    padding: 0 40px;
+}
+
+
+.sec04 .inner .tbox1{
+    padding-top: 20px;
+    margin: 0 50px 30px;
+    width: 260px;
+    word-break: keep-all;
+}
+.sec04 .inner .tbox1 .tit{
+    font-size: 20px
+}
+.sec04 .inner .tbox1 p{
+    margin: 20px 0;
+}
+
+
+footer .inner .footerlogo{
+    display: none;
+}
+footer .inner .ABOUT,footer .inner .SUPPORT,footer .inner .INFO{
+    margin-right: 20px;
+}
+footer .inner .center{
+    margin-left: 35px;
+}
+footer .inner .sns .facebook{
+    margin: 0;
+}
+footer .inner .sns{
+    margin-right: 10px;
+}
+footer .inner .mark{
+    margin-left: 50px;
+}

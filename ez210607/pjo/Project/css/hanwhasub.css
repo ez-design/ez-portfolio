@@ -1,0 +1,586 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.css');
+/* animate */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@font-face {
+    font-family: "NTS";
+    src: url(../font/NotoSansKR-Regular.woff);
+}
+@font-face {
+    font-family: "NTSL";
+    src: url(../font/NotoSansKR-Light.woff);
+}
+@font-face {
+    font-family: "NTSB";
+    src: url(../font/NotoSansKR-Bold.woff);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+* {
+    color: #fff;
+    font-family: "NTS";
+}
+
+body {
+    background-color: #000;
+}
+
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background: url(../img2/구단소개메인.png) 50% 50% no-repeat;
+    height: 741px;
+}
+
+header .inner {
+    width: 100%;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header .inner .headL > ul {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 0 0 125px;}
+
+header .inner .headL > ul > .Mlogo {
+    align-items: center;
+    display: none;
+}
+header .inner .headL > ul > .logo {
+    align-items: center;
+}
+
+
+header .inner .headR > ul {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    margin: 0 125px 0 0;
+}
+
+header .inner .headR > ul a {
+    margin: 0 0 0 30px;
+}
+
+header .inner .headR > ul a li {
+    opacity: 0.6;
+}
+
+header .inner .headR > ul li:nth-child(2) {
+    margin: 0 10px 0 10px;
+}
+
+header .inner .headR > ul a::after {
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 65px;
+    right: 510px;
+    content: "";
+}
+
+header .inner .headR > ul a:nth-child(3)::after,
+header .inner .headR > ul a:nth-child(2)::after,
+header .inner .headR > ul a:last-child::after {
+    display: none;
+}
+
+header .inner .headR > ul .sns {
+    align-items: center;
+    opacity: 1;
+}
+
+
+header .inner ul li:hover {
+    color: #fb8335;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+header nav {
+    display: none;
+}
+
+.headL ul li.sub {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headL ul li.sub > a {
+    width: 110px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+}
+
+
+.headL ul li.sub > a span:active,
+.headL ul li.sub > a span:visited,
+.headL ul li.sub > a span:hover {
+    color: #fb8335;
+}
+
+
+
+div.nav {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+    top: 141px;
+    background-color: rgba(37, 40, 42, 0.7);
+    transition: height 0.5s;
+}
+
+div.nav > .inner {
+    height: auto;
+    border-bottom: none;
+    position: absolute;
+    left: 228px
+}
+
+div.nav > .inner .list {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+div.nav.on {
+    height: 210px;
+    transition: height 0.5s;
+}
+
+
+ul.submenu {
+    width: 110px;
+    margin: 0 5px;
+}
+
+
+
+
+ul.submenu li {
+    height: auto;
+    line-height: 27px;
+    font-size: 13px;
+}
+
+
+ul.submenu li a:hover {
+    color: #fb8335;
+}
+
+
+.list ul.submenu:nth-child(1) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(2) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(3) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+.intro {
+    width: 100%;
+
+}
+
+
+.intro .inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.intro .inner h1 {
+    font-size: 35px;
+    font-style: italic;
+    font-family: "NTSB";
+    color: #fb8335;
+}
+
+.intro .inner span strong {
+    font-size: 75px;
+}
+.intro .inner span {
+    font-size: 45px;
+}
+
+.intro .inner ul.menu {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    margin: 120px 0 200px 0;
+    padding-bottom: 20px;
+}
+
+.intro .inner ul.menu li {
+    font-size: 20px;
+    margin: 0 50px 0 0;
+    justify-content: flex-start;
+}
+
+
+ul.menu li a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.intro .inner ul.menu li:nth-child(1) a {color: #fb8335;}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+
+section.Mobile {display: none;}
+
+
+section.Mobile,
+section {
+    width: 100%;
+}
+
+section.Mobile .inner,
+section .inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+section .inner .sec4,
+section .inner .sec3,
+section .inner .sec2,
+section .inner .sec1 {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 250px;
+}
+
+.title {
+    font-size: 30px;
+    font-style: italic;
+    margin: 0 50px 0 0;
+}
+
+section .inner .sec1 .logo {
+    width: 458px;
+    display: flex;
+    align-items: center;
+    margin: 0 100px 0 0;
+}
+
+
+section .inner .sec1 .ex {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1 .ex p:nth-child(1) {
+    font-size: 40px;
+    font-family: "NTSB";
+}
+
+.sec1 .ex p:nth-child(2) {
+    font-size: 25px;
+    color: #fb8335;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    margin-top: -10px;
+    padding: 0 0 15px 0;
+}
+
+.sec1 .ex span {
+    padding: 15px 0 0 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+
+/* ////////////////////////////////////////////////////////// */
+
+.sec2 .CI {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+}
+
+.sec2 .CI span {
+    font-size: 15px;
+}
+.sec2 .CI span strong {
+    color: #fb8335;
+}
+
+.sec2 .CI span:nth-child(1) {
+    margin-top: 10px;
+}
+
+.sec2 .CI .symbol {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+
+
+.sec2 .CI .symbol .s1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sec2 .CI .symbol .s1 .box {
+    width: 335px;
+    height: 255px;
+    border-radius: 30px;
+    background: #191b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px 0 0;
+}
+
+.sec2 .CI .symbol .s1 span {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////// */
+
+.sec3 .color-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec3 .color {
+    display: flex;
+}
+
+.sec3 .color .colorbox {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background: #ff6600;
+}
+
+.sec3 .color .colorbox1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background: #25282A;
+}
+
+.sec3 .color .colorbox2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background: #97999B;
+}
+
+.sec3 .color .colorbox3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.sec3 .color .colorbox4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    background: #000;
+}
+
+.colortext1,
+.colortext {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+}
+.ctc1,
+.ctc {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.6;
+    margin: 20px 0 0 20px;
+}
+
+.colortext1 span {
+    color: #191b1d;
+}
+.ctc1 span {
+    color: #191b1d;
+}
+
+.sec2 .CI {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+}
+
+.color-sec .point {
+    font-size: 12px;
+    opacity: 0.6;
+    margin: 5px 0 0 15px;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+
+.sec4 .mas {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sec4 .mas p {font-size: 15px;
+                margin: 10px 0 0 20px ;}
+
+.sec4 .mas p:nth-child(2) {margin: 0 0 30px 20px;} 
+
+.mascort {
+    display: flex;
+    align-items: center;
+}
+
+.m1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.suri {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 135px;
+}
+
+.WV {
+    display: flex;
+    align-items: center;
+    margin: 30px 20px 0;
+}
+
+.suri span,
+.m1 span {
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.m1 span:nth-child(3) {font-size: 17px;
+                       opacity: 0.6;
+                       margin: 0;}
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+
+}
+
+footer .inner {
+    margin: 0 auto;
+    width: 1670px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .inner .footerL {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+}
+
+.footerL .Elogo {
+    width: 250px;
+    margin: 0 0 30px 0;
+}
+
+footer .inner .footerL .footermenu span {
+    display: inline-block;
+    font-family: "NTSL";
+    padding: 0 30px 10px 0;
+    opacity: 0.5;
+    position: relative;
+}
+
+footer .inner .footerL .footermenu span::after {
+    width: 1px;
+    height: 10px;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+footer .inner .footerL .footermenu span:last-child::after {
+    display: none;
+}
+
+footer .inner .footerL .footerMENU span {
+    display: inline-block;
+    padding: 20px 30px 0 0;
+    opacity: 0.5;
+    font-family: "NTSL";
+}
+
+
+footer .inner .footerL .footerMENU span:hover {
+    color: #fb8335;
+    opacity: 1;
+}
+
+.inner .footerR {
+    margin: 180px 0 0 0;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}

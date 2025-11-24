@@ -1,0 +1,494 @@
+html,body{
+    min-width: 640px; 
+    overflow-x: hidden;
+}
+.group {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* header */
+header .nav_t{
+    height: 50px;
+    margin: 1%;
+}
+header .nav_tright{
+    width: 60%;
+}
+header .nav_tright > ul{
+    width: 90%;
+    justify-content: space-around;
+}
+header .nav_tright > ul li{
+    font-size: 12px;
+}
+header .nav_tright > ul li::after{
+    right: -20px;
+}
+header .nav_t .menu{
+    width: 30px;
+    height: 30px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+/* nav */
+header>ul{
+    display: none;
+}
+
+/* sitemap */
+
+.sitemap{
+    width: 60%;
+    height: 100vh;
+    top: 0%;
+    right: 0;
+    background: #fff;
+    /* transform: translateX(100%);
+    transition: all 0.5s; */
+    position: fixed;
+}
+.sitemap.on{
+    /* transform: translateX(0%);
+    transition: all 0.5s; */
+    display: block;
+}
+.sitemap.on::before{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    content: "";
+}
+.sitemap_button{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0%;
+    right: 0%;
+    cursor: pointer;
+    background: #F6F6F6;
+}
+.sitemap_button::after{
+    background: url(../images/cancel.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: "";
+    top: 25%;
+    right: 20%;
+}
+.sitemap .m_top{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #EEEDED;
+}
+.sitemap .m_top>ul{
+    display: flex;
+    justify-content:flex-start;
+    width: 80%;
+}
+.sitemap .m_top>ul li{
+    width: 100%;
+    position: relative;
+}
+.sitemap .m_top>ul li::after{
+    width: 2px;
+    height: 10px;
+    top: 40%;
+    right: 0;
+    background:#EEEDED;
+    content: "";
+    position: absolute;
+}
+.sitemap .m_top>ul>li a{
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+.sitemap .sitebox{
+    flex-direction: column;
+    margin-top: 0%;
+    width: auto;
+}
+.sitemap .sitebox .n_t{
+    width: 100%;
+    position: relative;
+}
+.sitemap .sitebox .n_t::after{
+    background: url(../images/under_m.png) no-repeat;
+    background-size: 100% auto;
+    width: 12px;
+    height: 10px;
+    content: "";
+    top: 25px;
+    right: 11px;
+    position: absolute;
+}
+.sitemap .sitebox .n_t a{
+    font-size: 15px;
+    margin-bottom: 0%;
+    color: #333;
+    border-bottom: 1px solid #EEEDED;
+}
+.sitemap .sitebox .n_t a::after{
+    display: none;
+}
+.sitemap .sitebox .n_t.on a{
+    background: #245DA2;
+    color: #fff;
+}
+
+.sitemap .submenu{
+    display: none   ;
+}
+.sitemap .submenu > li{
+    background: #F6F6F6;
+    /* border-bottom: 1px solid #EEEDED; */
+}
+.sitemap .submenu > li a{
+    font-size: 13px;
+}
+.sitemap .submenu > li .submenu2{
+    display: none;
+}
+.sitemap .submenu .un::after{
+    background: url(../images/under_m.png) no-repeat;
+    background-size: 100% auto;
+    width: 12px;
+    height: 10px;
+    content: "";
+    top: 25px;
+    right: 11px;
+    position: absolute;
+}
+
+/* part1 */
+.part1{
+    width: 100%;
+    height: 420px;
+}
+.part1 .main_visual{
+    height: 300px;
+    font-size: 13px;
+}
+.part1 .main_visual .main_textbox {
+    margin-left: 0%;
+}
+.part1 .main_visual h1{
+    font-size: 20px;
+}
+.part1 .main_visual h1 span{
+    font-size: 25px;
+}
+.part1 .main_button > div {
+    justify-content: space-around;
+}
+.part1 .main_button .p1_left{
+    width: 45%;
+}
+.part1 .main_button .p1_left .p1textbox{
+    width: 100%;
+    height: 100%;
+}
+.part1 .main_button .p1_left a span{
+    padding: 2% 0;
+    margin-left: 30%;
+    font-size: 12px;
+}
+.part1 .main_button .p1_left a span::before{
+    width: 44%;
+    bottom: 6%;
+}
+.part1 .main_button .p1_left a span::after{
+    width: 13px;
+    bottom: 22%;
+    right: 19%;
+}   
+.part1 .main_button .p1_left h2{
+    font-size: 20px;
+}
+.part1 .main_button .p1_left p{
+    font-size: 12px;
+}
+.part1 .main_button .p1_right {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-right: 0px;
+    height: 100px;
+    margin-top: 2%;
+}
+.part1 .main_button .p1_right .right{
+    height: 100%;
+}
+.part1 .main_button .p1_right .right .img1,
+.part1 .main_button .p1_right .right .img2,
+.part1 .main_button .p1_right .right .img3,
+.part1 .main_button .p1_right .right .img4,
+.part1 .main_button .p1_right .right:hover .img1,
+.part1 .main_button .p1_right .right:hover .img2,
+.part1 .main_button .p1_right .right:hover .img3,
+.part1 .main_button .p1_right .right:hover .img4{
+    width: 50px;
+    height: 50px;
+    margin: 0 0 10px 25%;
+}
+.part1 .main_button .p1_right .right p{
+    font-size: 12px;
+}
+
+/* part2 */
+.part2{
+    padding: 15px 0;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+    padding: 3% 0;
+}
+.p2_left{
+    width: 60%;
+    margin-left: 2%;
+}
+.p2_left > ul>li{
+    font-size: 15px;
+}
+.p2_left .conBox .con .cl p:first-child{
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+}
+.p2_left .conBox .con .cl p:last-child{
+    font-size: 10px;
+    width: 80px;
+    text-align: center;
+}
+.p2_left .conBox .con a> p{
+    font-size: 13px;
+}
+.p2_left .conBox>p{
+    font-size: 13px;
+}
+.p2_right .b1,
+.p2_right .b2,
+.p2_right .b3,
+.p2_right .b4{
+    background-position: 0px 35px;
+    background-size:100% auto ;
+    height: 200px;
+}
+.part2 .p2_right h3{
+    font-size: 18px;
+}
+
+/* part3 */
+.part3{
+    height: 220px;
+}
+.part3 h3{
+    font-size: 20px;
+}
+.part3 p{
+    font-size: 12px;
+}
+.part3 .p3_container .p3_1 .b_1,
+.part3 .p3_container .p3_2 .b_2,
+.part3 .p3_container .p3_3 .b_3,
+.part3 .p3_container .p3_4 .b_4,
+.part3 .p3_container .p3_5 .b_5,
+.part3 .p3_container .p3_6 .b_6{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+.part3 .p3_container .p3_1 .b_1::after,
+.part3 .p3_container .p3_2 .b_2::after,
+.part3 .p3_container .p3_3 .b_3::after,
+.part3 .p3_container .p3_4 .b_4::after,
+.part3 .p3_container .p3_5 .b_5::after,
+.part3 .p3_container .p3_6 .b_6::after,
+.part3 .p3_container .p3_1:hover .b_1::after,
+.part3 .p3_container .p3_2:hover .b_2::after,
+.part3 .p3_container .p3_3:hover .b_3::after,
+.part3 .p3_container .p3_4:hover .b_4::after,
+.part3 .p3_container .p3_5:hover .b_5::after,
+.part3 .p3_container .p3_6:hover .b_6::after{
+    width: 50%;
+    height: 50%;
+}
+
+/* part4 */
+.part4 h3{
+    margin-right: 0px;
+}
+.part4 .p4_left{
+    width: 60%;
+    height: 310px;
+}
+.part4 .p4_left .title{
+    font-size: 18px;
+    margin-top: 10%;
+}
+.part4 .p4_left .stitle{
+    margin: 0;
+}
+.part4 .p4_left .info{
+    font-size: 13px;
+}
+.part4 .p4_left span{
+    font-size: 10px;
+    margin-bottom: 10%;
+    padding-right: 65px;
+}
+.part4 .p4_left span::before{
+    right: 10%;
+}
+.part4 .p4_left span::after{
+    right: 9%;
+}
+.part4 .p4_left .swiper-slide .box4{
+    width: 100%;
+    height: 280px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 34%;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 1%;
+}
+.part4 .p4_right{
+    width: 30%;
+    margin-right: 3%;
+}
+.part4 .p4_right .p4b_1 a,
+.part4 .p4_right .p4b_2 a,
+.part4 .p4_right .p4b_3 a{
+    height: 50px;
+    font-size: 13px;
+}
+.part4 .p4_right .p4b_1 .pb1,
+.part4 .p4_right .p4b_2 .pb2,
+.part4 .p4_right .p4b_3 .pb3,
+.part4 .p4_right .p4b_1:hover .pb1,
+.part4 .p4_right .p4b_2:hover .pb2,
+.part4 .p4_right .p4b_3:hover .pb3{
+    width: 30px;
+    height: 30px;
+}
+.part4 .p4_right .more{
+    width: 18px;
+    height: 18px;
+}
+
+/* part5 */
+.part5 .p5 .p5box1{
+    width: 35%;
+    height: 230px;
+    padding: 10px 0px;
+    margin: 0 5px;
+}
+.part5 .p5 .p5box1 h4{
+    font-size: 12px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+.part5 .p5 .p5box1 p{
+    font-size: 12px;
+}
+.part5 .p5 .p5box1 .p5_top .p5_icon1,
+.part5 .p5 .p5box1 .p5_top .p5_icon2,
+.part5 .p5 .p5box1 .p5_top .p5_icon3{
+    width: 35px;
+    height: 35px;
+}
+.part5 .p5 .p5box1 .p5_top .p5_icon1::after,
+.part5 .p5 .p5box1 .p5_top .p5_icon2::after,
+.part5 .p5 .p5box1 .p5_top .p5_icon3::after,
+.part5 .p5 .p51:hover .p5_top .p5_icon1::after,
+.part5 .p5 .p52:hover .p5_top .p5_icon2::after,
+.part5 .p5 .p53:hover .p5_top .p5_icon3::after{
+    width: 22px;
+    height: 22px;
+    top: 5px;
+    right: 5px;
+}
+.part5 .p5 .p5box1 .info span{
+    display: none;
+}
+.part5 .p5 .p5box1 .p5_button a p{
+    font-size: 10px;
+}
+.part5 .p5 .p5box1 .p5_button a .gbutton{
+    height: 18px;
+    width: 18px;
+}
+.part5 .p5 .p5box1::after {
+    height: 217px;
+    right: -6px;
+}    
+/* part6 */
+.swiper.part6{
+    display: block;
+} 
+.part6 .group{
+    display: none;
+}
+.part6 .swiper-button-next,.part6 .swiper-rtl  .swiper-button-prev {
+    right: 0%
+}
+.part6 .swiper-button-prev,.part6 .swiper-rtl  .swiper-button-next {
+    left: 1%;
+}
+.part6 .swiper.part6 .swiper-slide p a{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+.part6 .swiper.part6 .swiper-slide p{
+    position: relative;
+}
+.part6 .swiper.part6 .swiper-slide p::after{
+    width: 2px;
+    height: 13px;
+    background: #969696;
+    position: absolute;
+    top: 37%;
+    right: -10%;
+    content: "";
+}
+
+/* footer */
+footer>div .f_top p a{
+    font-size: 10px;
+}
+footer>div .f_top .sns .blog,
+footer>div .f_top .sns .facebook,
+footer>div .f_top .sns .twitter,
+footer>div .f_top .sns .youtube{
+    width: 30px;
+    height: 30px;
+}
+footer>div .f_top .sns .blog::after,
+footer>div .f_top .sns .facebook::after,
+footer>div .f_top .sns .twitter::after,
+footer>div .f_top .sns .youtube::after{
+    width: 15px;
+    height: 15px;
+}
+footer>div .f_bottom img{
+    width: 80px;
+    margin: 10px 0;
+}
+footer>div .f_bottom p{
+    font-size: 10px;
+    color: #fff;
+    padding: 0 10px;
+}

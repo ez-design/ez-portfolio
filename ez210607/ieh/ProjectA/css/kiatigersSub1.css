@@ -1,0 +1,640 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* noto sans 글씨체 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+@import url('../css/kiatigersIe.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid teal; */
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #10161f;
+    word-break: keep-all;
+}
+body{min-width: 1280px;}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{color: inherit;}
+li{
+    list-style: none;
+}
+/* header */
+header{
+    width: 100%;
+    height: 30px;
+    border-bottom:1px solid #eee ;
+}
+header .inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+header .inner > a{
+    display: block;
+    margin: 0 0 0 40px;
+    line-height: 30px;
+}
+header .inner a:nth-child(2)::after{
+    background: #10161f;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    top: 9px;
+    right: 74px;
+    content: "";
+}
+header .inner > div > span{
+    border: none;
+    background: #e10326;
+    color: white;
+    padding: 7px;
+    font-size: 2rem
+}
+header .inner .mlogo{
+    background: url(../images/emblem/wordmark.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 45px;
+    margin: 0;
+}
+
+header .inner .mlogo,
+header .mhome,
+header .mmenu{display: none;}
+
+/* nav  */
+nav{
+    width: 100%;
+    height: 80px;
+    background: #10161f;
+    position: relative;
+    z-index: 100;
+}
+nav > .inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+nav a.logo{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: url(../images/emblem/emblem1.png) 50% 50% no-repeat;
+    display: block;
+    width: 20%;
+    height: 120%;
+    background-size: contain;
+}
+nav .inner ul.gnb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* width: 1024px; */
+    width: 80%;
+    list-style: none;
+    cursor: pointer;
+}
+nav .inner ul.gnb li{
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav:hover > .inner ul.gnb{
+    border-bottom: 1px solid #eee;
+}
+
+nav:hover{
+    background: white;
+    color: #10161f;
+}
+nav:hover a.logo{opacity: 0;}
+
+nav:hover > .inner ul.gnb li{
+    color: #10161f;
+}
+nav:hover > .inner ul.gnb li.on{
+    color: #e10326;
+}
+.mNav > button.mclose{display: none;}
+
+/* snb  */
+nav .snb{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background: white;
+    z-index: 20;
+    overflow: hidden;
+}
+.snb .inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0 0; 
+}
+.snb .inner > div{
+    width: 1024px;
+    display: flex;
+    justify-content: flex-end;
+}
+.snb .inner .logo1{
+    background: url(../images/emblem/emblem2.png) 50% 50% no-repeat;
+    width: 174px;
+    height: 133px;
+    background-size: contain;
+    opacity: 0.8;
+    margin: 10px 0px 0px 10px;
+}
+.snb ul li{
+    color: #10161f;
+    padding: 10px 0 0 0;
+    font-weight: 500;
+    width: 170px;
+    cursor: pointer;
+}
+.snb ul li.on{
+    color: #e10326;
+    text-decoration: underline;
+}
+.snb ul:nth-child(4){
+    margin: 0 40px 0 0;
+}
+.snb ul:nth-child(3){
+    margin: 0 80px 0 0;
+}
+.snb ul:nth-child(2){
+    margin: 0 60px 0 0;
+}
+.snb ul:nth-child(1){
+    margin: 0 70px 0 0;
+}
+
+
+nav:hover > .snb{
+    height: 250px;
+    transition: height 0.7s;
+}
+.snb .inner ul li:hover{
+    color: #e10326;
+}
+.mNav{display: none;}
+
+/* sec01  */
+section.sec01{
+    width: 100%;
+    height: auto;
+    background: url(../images/etc/tiger1.png) 50% 0 no-repeat, #10161f;
+    position: relative;
+    color: white;
+}
+.sec01 .inner > div{
+    display: flex;
+    flex-direction: column;
+}
+.sec01 .inner .top{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.sec01 .inner .top > span{
+    background: url(../images/outfielder/no34최형우3.png) 50% 100% no-repeat;
+    width: 415px;
+    height: 400px;
+    background-size: contain;
+    margin: 0px 131px 0 0;
+}
+.sec01 .inner .top > div{
+    padding: 100px 0 0 270px;
+}
+.sec01 .inner .top h1{
+    font-size: 6rem;
+}
+.sec01 .inner .top h2{
+    font-size: 3rem;
+    padding: 10px 0 0 240px;
+}
+
+.sec01 .inner .bottom{
+    height: 80px;
+}
+.sec01 .inner .bottom ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.bottom ul li:hover{
+    text-decoration: underline;
+}
+.bottom ul li.on{
+    text-decoration: underline;
+}
+
+/* sec02  */
+.sec02 .inner{
+    padding: 0 0 0 10px;
+}
+.sec02 .inner .player{
+    width: 1180px;
+    height: 640px;
+    background: #eee;
+    margin: 30px 0 30px 0;
+    padding: 30px 30px 0;
+    position: relative;
+}
+.sec02 .inner .player::after{
+    background: url(../images/etc/tiger2.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 556px;
+    height: 617px;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+.player h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.player div > span:first-child{
+    font-size: 2rem;
+    color: #e10326;
+}
+.player div > span:last-child{
+    font-size: 2.5rem;
+}
+.player .tap{
+    position: relative;
+    z-index: 10;
+}
+.player .tap .tapbt button{
+    width: 200px;
+    height: 50px;
+    background: #e10326;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 1.5rem;
+    margin: 40px 20px 0 0 ;
+    cursor: pointer;
+}s
+.player .tap .tapbt button:hover{
+    text-decoration: underline;
+}
+.player .tap .tapbt button.on{
+    color: #e10326;
+    background: white;
+    border: 1px solid #e10326;
+    text-decoration: underline;
+}
+.tap .profile{
+    display: flex;
+    justify-content: space-between;
+}
+.profile > div:first-child{
+    width: 50%;
+}
+.profile .stat{
+    display: flex;
+    width: 550px;
+    height: auto;
+    justify-content: space-between;
+}
+.stat  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: #e10326;
+    color: white;
+}
+.stat > div > span:nth-child(1){
+    font-size: 1.4rem;
+    color: white;
+}
+.stat > div > span:nth-child(2){
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.profile .playerbg{
+    background: url(../images/outfielder/no34최형우3.png) 50% 50% no-repeat;
+    width: 50%;
+    height: 433px;
+    background-size: contain;
+}
+.profile ul{
+    margin: 50px 0 50px 0;
+}
+.profile ul li{
+    display: flex;
+    margin: 5px 0 0 0;
+    font-size: 1.5rem;
+}
+.profile ul li span:first-child{
+    display: block;
+    width: 170px;
+    font-weight: 700;
+}
+
+.inner .total{
+    width: 1120px;
+    height: 380px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+.total > div:nth-child(1){
+    width: 62px;
+    height: 300px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.total > div:nth-child(1) > ul{
+    display: flex;
+    flex-direction: column;
+}
+.total > div:nth-child(1) > ul li{
+    height: 37px;
+    line-height: 37px;
+    width: 62px;
+}
+.total > div:nth-child(1) > ul li:first-child{
+    color: #e10326;
+    font-weight: 600;
+    margin: 2px 0 0 0;
+}
+.total table{
+    width: 930px;
+    height: 300px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.total table:nth-child(1) th{
+    color: #e10326;
+}
+.total table td{
+    width: 6.2%;
+    height: auto;
+}
+.tap .profile{display: none;}
+.tap .total{display: none;}
+.profile.on, .total.on{
+    display: flex;
+}
+
+
+/*sec03*/
+.inner .players{
+    width: 101%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.inner .players .swiper-container.mySwiper1 {
+    width: 89%;
+    height: 200px;
+    margin: 0 auto;
+}
+.mySwiper1 .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .box{
+    width: 170px;
+    height: 170px;
+    border: 1px solid #10161f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.swiper-slide.on .box{
+    border: 3px solid #e10326;
+}
+.swiper-slide.on .box div:last-child{
+    background: #e10326;
+}
+.swiper-slide.on .box span:first-child{
+    color: #10161f;
+}
+.swiper-slide .box div:last-child{
+    background: #10161f;
+    height: 49px;
+    border-radius: 0 0 10px 10px;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+.swiper-slide .box div:last-child::after{
+    background: url(../images/emblem/after1.png) no-repeat;
+    width: 70px;
+    height: 30px;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background-size: contain;
+}
+.swiper-slide .box.on div:last-child::after{
+    background: url(../images/emblem/after.png) no-repeat;
+    width: 70px;
+    height: 30px;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background-size: contain;
+}
+
+.swiper-slide .box div span:first-child{
+    font-size: 1.1rem;
+    color: #e10326;
+    line-height: 48px;
+}
+.swiper-slide .box div span:last-child{
+    color: white;
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 10;
+}
+
+.img01{
+    background: url(../images/outfielder/no34최형우.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img02{
+    background: url(../images/outfielder/no53김호령.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img03{
+    background: url(../images/outfielder/no29나지완.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img04{
+    background: url(../images/outfielder/no13이창진.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img05{
+    background: url(../images/outfielder/no10이진영.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img06{
+    background: url(../images/outfielder/no16최원준.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img07{
+    background: url(../images/outfielder/no37이우성.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img08{
+    background: url(../images/outfielder/no59오선우.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img09{
+    background: url(../images/outfielder/no0박정우.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img10{
+    background: url(../images/outfielder/no07김연준.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img11{
+    background: url(../images/outfielder/no08이인한.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img12{
+    background: url(../images/outfielder/no018박수용.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.img13{
+    background: url(../images/outfielder/no027이영재.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+}
+.player h2{
+    padding: 50px 0 0 0;
+    font-size: 2rem;
+}
+span.swiper-pagination-current{
+    color: #e10326
+}
+.swiper-pagination{
+    font-size: 1.2rem;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    color: #e10326;
+}
+
+/* footer  */
+footer{
+    width: 100%;
+    height: 300px;
+    background: #10161f;
+    color: white;
+}
+footer .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .ft1{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px 0 40px;
+}
+footer .sns{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+footer .sns a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    margin: 0 10px 0;
+}
+.sns .sns1{
+    background: url(../images/etc/sns1.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sns .sns2{
+    background: url(../images/etc/sns2.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns3{
+    background: url(../images/etc/sns3.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns4{
+    background: url(../images/etc/sns4.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns5{
+    background: url(../images/etc/sns5.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns6{
+    background: url(../images/etc/sns6.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+footer .ft2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer .ft2 span:last-child{
+    margin: 20px 0 20px 0;
+}

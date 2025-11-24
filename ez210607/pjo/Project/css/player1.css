@@ -1,0 +1,746 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.css');
+/* animate */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@font-face {
+    font-family: "NTS";
+    src: url(../font/NotoSansKR-Regular.woff);
+}
+@font-face {
+    font-family: "NTSL";
+    src: url(../font/NotoSansKR-Light.woff);
+}
+@font-face {
+    font-family: "NTSB";
+    src: url(../font/NotoSansKR-Bold.woff);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+* {
+    color: #fff;
+    font-family: "NTS";
+}
+
+body {
+    background-color: #000;
+}
+
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background: url(../Pimg/전체배경.png) 50% 50% no-repeat;
+    height: 748px;
+}
+
+header .inner {
+    width: 100%;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header .inner .headL > ul {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 0 0 125px;}
+
+header .inner .headL > ul > .Mlogo {
+    align-items: center;
+    display: none;
+}
+header .inner .headL > ul > .logo {
+    align-items: center;
+}
+
+
+header .inner .headR > ul {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    margin: 0 125px 0 0;
+}
+
+header .inner .headR > ul a {
+    margin: 0 0 0 30px;
+}
+
+header .inner .headR > ul a li {
+    opacity: 0.6;
+}
+
+header .inner .headR > ul li:nth-child(2) {
+    margin: 0 10px 0 10px;
+}
+
+header .inner .headR > ul a::after {
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 65px;
+    right: 510px;
+    content: "";
+}
+
+header .inner .headR > ul a:nth-child(3)::after,
+header .inner .headR > ul a:nth-child(2)::after,
+header .inner .headR > ul a:last-child::after {
+    display: none;
+}
+
+header .inner .headR > ul .sns {
+    align-items: center;
+    opacity: 1;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+
+header nav {
+    display: none;
+}
+
+
+.headL ul li.sub {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headL ul li.sub > a {
+    width: 110px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+}
+
+
+.headL ul li.sub > a span:active,
+.headL ul li.sub > a span:visited,
+.headL ul li.sub > a span:hover {
+    color: #fb8335;
+}
+
+
+
+div.nav {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+    top: 141px;
+    background-color: rgba(37, 40, 42, 0.7);
+    transition: height 0.5s;
+}
+
+div.nav > .inner {
+    height: auto;
+    border-bottom: none;
+    position: absolute;
+    left: 228px
+}
+
+div.nav > .inner .list {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+div.nav.on {
+    height: 210px;
+    transition: height 0.5s;
+}
+
+
+ul.submenu {
+    width: 110px;
+    margin: 0 5px;
+}
+
+
+
+
+ul.submenu li {
+    height: auto;
+    line-height: 27px;
+    font-size: 13px;
+}
+
+
+ul.submenu li a:hover {
+    color: #fb8335;
+}
+
+
+.list ul.submenu:nth-child(1) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(2) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(3) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+
+
+.intro {
+    width: 100%;
+
+}
+
+
+.intro .inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.intro .inner h1 {
+    font-size: 35px;
+    font-style: italic;
+    font-family: "NTSB";
+    color: #fb8335;
+}
+
+.intro .inner span strong {
+    font-size: 75px;
+}
+.intro .inner span {
+    font-size: 45px;
+}
+
+.intro .inner ul.menu {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    margin: 120px 0 200px 0;
+    padding-bottom: 20px;
+}
+
+.intro .inner ul.menu li {
+    font-size: 20px;
+    margin: 0 50px 0 0;
+    justify-content: flex-start;
+}
+
+.intro .inner ul.menu li:nth-child(1) a {color: #fb8335;}
+
+/* .intro .inner ul.menu li a:hover {
+    color: #fb8335;
+} */
+
+ul.menu li a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+
+section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+section .inner {
+    width: 1350px;
+    margin: 0 auto;
+}
+
+section .inner .main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .inner .main .mainL {
+    width: 100%;
+}
+
+section .inner .main .mainR {
+    width: 100%;
+    height: 100;
+    background: url(../Pimg/김민우투구.png) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .inner .main .mainR .name {
+    display: flex;
+
+}
+
+section .inner .main .mainR .name .name1 {
+    display: flex;
+    flex-direction: column;
+}
+
+section .inner .main .mainR span:nth-child(1) {
+    font-size: 30px;
+    opacity: 0.6;
+    margin: 275px 220px 0 0;
+}
+
+section .inner .main .mainR .name strong {
+    font-size: 135px;
+    font-style: italic;
+    color: #fb8335;
+}
+
+section .inner .main .mainR .name .name1 {
+    margin: 0 0 0 30px;
+}
+
+
+section .inner .main .mainR .name .name1 h2 {
+    font-size: 60px;
+    padding: 33px 0 0 0;
+}
+
+section .inner .main .mainR .name .name1 span {
+    font-size: 30px;
+    opacity: 0.6;
+}
+
+section .inner .main .mainR .name2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+section .inner .main .mainR .name2 .n1 {
+    display: flex;
+    align-items: center;
+}
+
+section .inner .main .mainR .name2 .n3,
+section .inner .main .mainR .name2 .n4 {
+    margin: 0 0 0 30px;
+}
+
+section .inner .main .mainR .name2 .n3 li {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+section .inner .main .mainR .name2 .n4 li {
+    font-size: 22px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+
+/* ///////////////////////////////////////////////////////////////// */
+
+
+
+.season {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.season .inner {
+    width: 1350px;
+    margin: 0 auto;
+}
+
+.season .orange {
+    width: 100%;
+    height: 220px;
+    background: #fb8335;
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.season .inner span {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.season .orange .inner {
+    width: 1240px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.season .orange .inner .box {
+    width: 153px;
+    height: 153px;
+    border-radius: 30px;
+    background: #191b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.season .orange .inner .box .boxtext {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.season .orange .inner .box .boxtext p:nth-child(1) {
+    font-size: 25px;
+}
+
+.season .orange .inner .box .boxtext p:nth-child(2) {
+    font-size: 50px;
+    font-family: "NTSB";
+    color: #ff6600;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////// */
+
+
+
+
+.content {
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+.content .inner {
+    width: 1420px;
+    margin: 0 auto;
+}
+
+.tab-menu .tab-btn ul {
+    overflow: hidden;
+    display: flex;
+}
+
+.tab-menu .tab-btn ul li {
+    font-size: 30px;
+    font-style: italic;
+    width: 200px;
+    border-radius: 20px 20px 0 0;
+    background: #fb8335;
+    text-align: center;
+}
+
+.tab-menu .tab-btn ul li.active {
+    background: #191b1d;
+}
+
+.tab-menu .tab-btn ul li a {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+}
+
+.tab-menu .tab-cont {
+    background: #191b1d;
+    padding: 25px;
+    border-radius: 0 20px 20px 20px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px 0;
+}
+
+tr.top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6)
+}
+tr.top td {
+    color: #fb8335;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6)
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+.slide {
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+
+.slide .inner {
+    width: 1720px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+.pt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pt h1 {
+    font-size: 70px;
+    font-family: "NTSB";
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.pt1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 180%;
+    margin: 10px 0 0 15px;
+}
+
+
+.pt1 span:nth-child(1) {
+    font-size: 30px;
+}
+
+
+.player-center {
+    display: flex;
+}
+
+
+.player-center .item {
+    display: flex;
+    width: 290px;
+    flex-direction: column;
+    align-items: center;
+    transition: all linear .4s;
+    padding: 45px 30px 45px 27px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+
+.player-center .slick-center .item .pt h1.on {
+    color: #fb8335;
+    opacity: 1;
+}
+
+
+.player-center .slick-center .item {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+.slide-arrow {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.prev-arrow {
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 20px solid #fb8335;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+
+.next-arrow {
+    right: 0;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 20px solid #fb8335;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+
+
+.slide .sbt {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.slide .button {
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    background: #191b1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide .button a {
+    font-size: 30px;
+}
+
+.slide .button::after {
+    content: "";
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #fb8335;
+    justify-content: center;
+    transition: all 0.3s;
+    align-items: center;
+    position: absolute;
+
+}
+
+.slide .button:hover::after {
+    transform: translateX(100%);
+}
+
+.slide .button:hover a {
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.slide .button a:hover {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+  
+}
+
+footer .inner {
+    margin: 0 auto;
+    width: 1670px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .inner .footerL {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+}
+
+.footerL .Elogo {
+    width: 250px;
+    margin: 0 0 30px 0;
+}
+
+footer .inner .footerL .footermenu span {
+    display: inline-block;
+    font-family: "NTSL";
+    padding: 0 30px 10px 0;
+    opacity: 0.5;
+    position: relative;
+}
+
+footer .inner .footerL .footermenu span::after {
+    width: 1px;
+    height: 10px;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+footer .inner .footerL .footermenu span:last-child::after {
+    display: none;
+}
+
+footer .inner .footerL .footerMENU span {
+    display: inline-block;
+    padding: 20px 30px 0 0;
+    opacity: 0.5;
+    font-family: "NTSL";
+}
+
+
+footer .inner .footerL .footerMENU span:hover {
+    color: #fb8335;
+    opacity: 1;
+}
+
+.inner .footerR {
+    margin: 180px 0 0 0;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* 청주시 코로나19 상황판 모바일 레이아웃 */
+
+body {
+    position: relative;
+}
+body, .inner {
+    min-width: 320px;
+    /* width: 100%; */
+}
+.title .center .topBox {
+    top: 250px;
+}
+.title .center .topBox .box > div > div:first-child {
+    font-size: 15px;
+}
+.title .center .topBox .box > div > div:last-child {
+    font-size: 25px;
+}
+.title .right {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+.main .mainLeft,
+.main .mainRight {
+    width: 95%;
+    margin: 0 auto;
+}
+.m1 .swiper .swiper-slide {
+    justify-content: flex-start;
+}
+
+aside.a1 {
+    width: 80%;
+}

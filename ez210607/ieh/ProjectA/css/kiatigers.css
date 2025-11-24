@@ -1,0 +1,1063 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* noto sans 글씨체 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+@import url('../css/kiatigersIe.css');
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 빛나는 별 글씨체 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid teal; */
+}
+
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #10161f;
+    word-break: keep-all;
+}
+body{min-width: 1280px;}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{color: inherit;}
+li{
+    list-style: none;
+}
+h2{
+    color: white;
+    font-size: 2rem; 
+    font-weight: 500;
+}
+/* header */
+header{
+    width: 100%;
+    height: 30px;
+    border-bottom:1px solid #eee ;
+}
+header .inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+header .inner > a{
+    display: block;
+    margin: 0 0 0 40px;
+    line-height: 30px;
+}
+header .inner a:nth-child(2)::after{
+    background: #10161f;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    top: 9px;
+    right: 74px;
+    content: "";
+}
+header .inner > div > span{
+    border: none;
+    background: #e10326;
+    color: white;
+    padding: 7px;
+    font-size: 2rem
+}
+header .inner .mlogo{
+    background: url(../images/emblem/wordmark.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 45px;
+    margin: 0;
+}
+
+header .inner .mlogo,
+header .mhome,
+header .mmenu{display: none;}
+
+/* nav  */
+nav{
+    width: 100%;
+    height: 80px;
+    background: #10161f;
+    position: relative;
+    z-index: 100;
+}
+nav > .inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+nav a.logo{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: url(../images/emblem/emblem2.png) 50% 50% no-repeat;
+    display: block;
+    width: 20%;
+    height: 120%;
+    background-size: contain;
+}
+nav .inner ul.gnb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* width: 1024px; */
+    width: 80%;
+    list-style: none;
+    cursor: pointer;
+}
+nav .inner ul.gnb li{
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav:hover > .inner ul.gnb{
+    border-bottom: 1px solid #eee;
+}
+
+nav:hover{
+    background: white;
+    color: #10161f;
+}
+nav:hover a.logo{opacity: 0;}
+
+nav:hover > .inner ul.gnb li{
+    color: #10161f;
+}
+nav:hover > .inner ul.gnb li.on{
+    color: #e10326;
+}
+.mNav > button.mclose{display: none;}
+
+/* snb  */
+nav .snb{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background: white;
+    z-index: 20;
+    overflow: hidden;
+}
+.snb .inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0 0; 
+}
+.snb .inner > div{
+    width: 1024px;
+    display: flex;
+    justify-content: flex-end;
+}
+.snb .inner .logo1{
+    background: url(../images/emblem/emblem2.png) 50% 50% no-repeat;
+    width: 174px;
+    height: 133px;
+    background-size: contain;
+    opacity: 0.8;
+    margin: 10px 0px 0px 10px;
+}
+.snb ul li{
+    color: #10161f;
+    padding: 10px 0 0 0;
+    font-weight: 500;
+    width: 170px;
+    cursor: pointer;
+}
+.snb ul li.on{
+    color: #e10326;
+    text-decoration: underline;
+}
+.snb ul:nth-child(4){
+    margin: 0 40px 0 0;
+}
+.snb ul:nth-child(3){
+    margin: 0 80px 0 0;
+}
+.snb ul:nth-child(2){
+    margin: 0 60px 0 0;
+}
+.snb ul:nth-child(1){
+    margin: 0 70px 0 0;
+}
+
+nav:hover > .snb{
+    height: 250px;
+    transition: height 0.7s;
+}
+.snb .inner ul li:hover{
+    color: #e10326;
+}
+.mNav{display: none;}
+
+/* section1 */
+section.sec01{
+    background: #06141f;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+.visual{
+    width: 100%;
+    height: 600px;
+}
+.visual h1{
+    font-family: 'Cafe24Shiningstar';
+    color: white;
+    font-size: 4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    text-align: left;
+}
+.visual p{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.8;
+    text-align: left;
+}
+.visual.one{
+    background: url(../images/visual/visual1.png) 10% 50% no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+}
+.visual.one h1{
+    padding: 190px 50px 0 0;
+}
+.visual.two{
+    background: url(../images/visual/visual2.png) 90% 50% no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.visual.two h1{
+    padding: 140px 0 50px 0;
+}
+.visual.two p{
+    width: 560px;
+}
+.visual.three{
+    background: url(../images/visual/visual3.png) 10% 50% no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.visual.three h1{
+    padding: 130px 50px 50px 0;
+}
+.visual.three p{
+    width: 400px;
+}
+.visual.four{
+    background: url(../images/visual/visual4.png) 90% 50% no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+.visual.four h1{
+    padding: 90px 0 50px 0;
+}
+.visual.four p{
+    width: 500px;
+}
+.visual.five{
+    background: url(../images/visual/visual5.png) 10% 50% no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.visual.five h1{
+    padding: 110px 220px 50px 0 ;
+}
+.visual.five p{
+    width: 430px;
+}
+section.sec01::before{display: none;}
+section.sec01::after{
+    position: absolute;
+    background: url(../images/etc/after.png) 50% 50% no-repeat;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 222px;
+    background-size: cover;
+    z-index: 10;
+}
+/* section2 */
+section.sec02{
+    background: url(../images/etc/paper_10.png) 50% 50% no-repeat;
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+}
+.sec02 .inner{
+    display: flex;
+}
+.left1 .tab1{
+    width: 630px;
+    height: auto;
+}
+.sec02 .left1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec02 h2{
+    padding: 50px 0 25px;
+}
+.left1 ul.gamebt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.left1 .gamebt li{
+    width: 33.33333%;
+    height: 40px;
+    background: #e10326;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left1 .gamebt li.on{
+    background: white;
+    color: #e10326;
+    border-bottom: none;
+    text-decoration: underline;
+}
+.left1 li:hover{
+    text-decoration: underline;
+}
+.left1 .games{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    width: 100%;
+    height: 420px;
+    background: white;
+}
+
+.game.one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game.one > span:nth-child(1){
+    background: #e10326;
+    color: white;
+    font-size: 1.7rem;
+    padding: 5px 10px;
+    font-weight: 600;
+    margin: 45px 0 0 0;
+}
+.game.one > span:nth-child(2){
+    color: #e10326;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.game.one > span:nth-child(3){
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 165px 15px;
+    margin: 0 0 25px 0;
+    border-bottom: 1px solid #e10326;
+}
+.game.one > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    height: auto;
+}
+.game.one > div > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 180px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.game.one > div .kt span:nth-child(1){
+    background: url(../images/etc/emblem_kt.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 100px;
+}
+.game.one > div > span{
+    color: #e10326;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.game.one > div > div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 180px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.game.one > div .kia span:nth-child(1){
+    background: url(../images/emblem/emblem.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 90px;
+}
+.game.two{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.game.two .lineup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+}
+.lineup > span {
+    background: url(../images/etc/lineup.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 87%;
+}
+.lineup > div{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-items: center;
+    height: 20%;
+}
+.lineup > div span:nth-child(1){
+    color: #e10326;
+}
+.lineup > div span:nth-child(2){
+    margin: 0 0 0 15px;
+}
+.game.two table{
+    width: 40%;
+    height: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.game.two table tr:nth-child(1){
+    color: #e10326;
+}
+.game.three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game.three table{
+    width: 490px;
+    height: 360px;
+    text-align: center;
+}
+.game.three table th{
+    color: #e10326;
+}
+.game.three table td{
+    width: 11%;
+    height: auto;
+}
+.game.three table td.kt1{
+    background: url(../images/etc/emblem_kt.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.lg{
+    background: url(../images/etc/emblem_lg.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.ss{
+    background: url(../images/etc/emblem_ss.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.nc{
+    background: url(../images/etc/emblem_nc.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.ssg{
+    background: url(../images/etc/emblem_ssg.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.kw{
+    background: url(../images/etc/emblem_wo.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.ds{
+    background: url(../images/etc/emblem_ds.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.lt{
+    background: url(../images/etc/emblem_lt.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.kia1{
+    background: url(../images/emblem/emblem.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.three table td.hh{
+    background: url(../images/etc/emblem_hh.png) 50% 50% no-repeat;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+}
+.game.one {display: none;}
+.game.two {display: none;}
+.game.three {display: none;}
+.game.on {
+    display: flex;
+}
+
+.sec02 .right1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right1 .tab2{
+    width: 420px;
+    height: auto;
+}
+.right1 ul.contentbt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right1 ul.contentbt li{
+    width: 33.33333%;
+    height: 40px;
+    background: #10161f;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.right1 li:hover{
+    text-decoration: underline;
+}
+.right1 .contentbt li.on{
+    background: white;
+    color: #10161f;
+    text-decoration: underline;
+}
+.right1 .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    background: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 90%;
+}
+.content .box{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightslategrey;
+    cursor: pointer;
+    width: 100%;
+    height: 30%;
+}
+
+.content .box:nth-child(3){border-bottom: none;}
+.content .news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    padding: 0 3% 0 0;
+}
+.content .newsimg{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news .title{
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; */
+    font-weight: 600;
+    height: 24px;
+}
+.box:hover > .news .title{
+    color: #e10326;
+}
+.news .date{
+    font-size: 0.9rem;
+}
+/* .news .copy{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+} */
+/* 크로스브라우징이 있으나 ie를 제외한 mutiline ellipsis사용법 */
+/* 웹킷 계열에서는 display 속성에 box라는 것이 있다.
+방향성을 수직으로 하고 원하는 줄 수를 설정해 준다.
+텍스트는 height 값이 아니라, line-height으로 높이가 결정되며,
+줄 수만큼 곱해서 max-height 값을 설정해 준다. */
+
+
+.content.one .box:nth-child(1) .newsimg{
+    background: url(../images/etc/content2.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.content.one .box:nth-child(2) .newsimg{
+    background: url(../images/etc/tiger.png) 50% 50% no-repeat;
+    background-size: contain;
+    opacity: 0.4;
+}
+.content.one .box:nth-child(3) .newsimg{
+    background: url(../images/etc/content1.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.content.two .box:nth-child(1) .newsimg{
+    background: url(../images/etc/content.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.content.two .box:nth-child(2) .newsimg{
+    background: url(../images/etc/tiger.png) 50% 50% no-repeat;
+    background-size: contain;
+    opacity: 0.4;
+}
+.content.two .box:nth-child(3) .newsimg{
+    background: url(../images/etc/content1.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.content.three .box:nth-child(1) .newsimg{
+    background: url(../images/etc/content3.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.content.three .box:nth-child(2) .newsimg{
+    background: url(../images/etc/content4.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.content.three .box:nth-child(3) .newsimg{
+    background: url(../images/etc/content5.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+
+.content.one,
+.content.two,
+.content.three
+{display: none;}
+.content.on {
+    display: flex;
+}
+
+/* section03 */
+
+section.sec03{
+    width: 100%;
+    height: 700px;
+    background: #10161f;
+    position: relative;
+    color: white;
+}
+.sec03 .inner{
+    position: relative;
+    height: 100%;
+}
+section.sec03::before{
+    position: absolute;
+    background: url(../images/etc/before.png) 50% 50% no-repeat;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 335px;
+    background-size: cover;
+    z-index: 10;
+}
+section.sec03::after{
+    position: absolute;
+    background: url(../images/emblem/tiger_emblem.png) 50% 50% no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* position:absolute 가운데 정렬하는 방법 */
+    content: "";
+    width: 480px;
+    height: 540px;
+    opacity: 0.1;
+}
+.sec03 h2{
+    padding: 235px 0 35px 0;
+}
+.sec03 .inner .play{
+    display: flex;
+    width: 550px;
+    height: auto;
+    justify-content: space-between;
+}
+.play  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background: #e10326;
+}
+.sec03 .inner .player{
+    background: url(../images/etc/player.png) 50% 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    right: -20px;
+    width: 625px;
+    height: 459px;
+    z-index: 1;
+    overflow: hidden;
+}
+.sec03 .inner p:nth-child(2){
+    font-size: 2.2rem;
+}
+.sec03 .inner p:nth-child(2) > span{
+    color: #e10326;
+}
+.sec03 .inner p:nth-child(3){
+    font-size: 1.5rem;
+    margin: 20px 0 55px 0;
+}
+.sec03 .inner p:nth-child(4){
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+.play > div > span:nth-child(1){
+    font-size: 1.4rem;
+}
+.play > div > span:nth-child(2){
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.sec03 .inner a{
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 0.9rem;
+    background: transparent;
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+/*sec04*/
+
+.sec04 .inner{
+    display: flex;
+    height: 600px;
+}
+.sec04 .inner .left2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left2 a{
+    width: 400px;
+    height: 120px;
+    background: #10161f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 20px;
+    border: none;
+    font-size: 1.5rem;
+    text-align: justify;
+    position: relative;
+}
+
+.bn01 > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px; 
+}
+.bn01 > div::after{
+    position: absolute;
+    background: url(../images/etc/ticket.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 157px;
+    height: 76px;
+    content: "";
+    top: 20px;
+    right: 20px;
+}
+.bn01 span:nth-child(1){
+    color: #e10326;
+}
+.bn01 span:nth-child(3){
+    font-size: 0.8rem;
+    margin: 10px 0 0;
+}
+.bn02 > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px; 
+}
+.bn02 span:nth-child(1){
+    color: #e10326;
+    z-index: 10;
+}
+.bn02 > div::before{
+    position: absolute;
+    background: url(../images/etc/img-uniform-1.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 83px;
+    height: 91px;
+    content: "";
+    top: 10px;
+    right: 90px;
+    opacity: 0.8;
+}
+.bn02 > div::after{
+    position: absolute;
+    background: url(../images/etc/img-uniform-2.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 83px;
+    height: 91px;
+    content: "";
+    top: 15px;
+    right: 30px;
+    opacity: 0.8;
+}
+.bn03 > div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+    z-index: 10; 
+}
+.bn03 > div span:nth-child(1){
+    color: #e10326;
+    z-index: 10;
+}
+.bn03 > div::after{
+    position: absolute;
+    background: url(../images/etc/field1.png) 50% 50% no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 70px;
+    content: "";
+    bottom: 10px;
+    right: 0px;
+    z-index: 0;
+}
+.sec04 .inner .right2{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide iframe{
+    width: 100%;
+    height: 390px;
+}
+.sec04 .swiper-button-next,
+.sec04 .swiper-button-prev{
+    color: white;
+}
+.sec04 .swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+/* sponsor */
+.sponsor .inner{
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sponsor .inner .swiper-container.mySwiper3 {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+.mySwiper3 .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.sponsor .inner a{
+    display: block;
+}
+.sponsor .inner a.sp1{
+    background: url(../images/sponsor/kia.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner a.sp2{
+    background: url(../images/sponsor/hite.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner a.sp3{
+    background: url(../images/sponsor/sangmu_star_dental_hospital.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner a.sp4{
+    background: url(../images/sponsor/hyundai_haesang.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner a.sp5{
+    background: url(../images/sponsor/gwangju_bank.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner a.sp6{
+    background: url(../images/sponsor/hmsec.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner a.sp7{
+    background: url(../images/sponsor/ticket_link.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner a.sp8{
+    background: url(../images/sponsor/hyndai_movis.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sponsor .inner .swiper-button-next,
+.sponsor .inner .swiper-button-prev{
+    color: #e10326;
+}
+/* footer  */
+footer{
+    width: 100%;
+    height: 300px;
+    background: #10161f;
+    color: white;
+}
+footer .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .ft1{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px 0 40px;
+}
+footer .sns{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+footer .sns a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    margin: 0 10px 0;
+}
+.sns .sns1{
+    background: url(../images/etc/sns1.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sns .sns2{
+    background: url(../images/etc/sns2.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns3{
+    background: url(../images/etc/sns3.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns4{
+    background: url(../images/etc/sns4.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns5{
+    background: url(../images/etc/sns5.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns6{
+    background: url(../images/etc/sns6.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+footer .ft2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer .ft2 span:last-child{
+    margin: 20px 0 20px 0;
+}

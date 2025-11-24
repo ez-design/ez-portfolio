@@ -1,0 +1,1244 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.css');
+/* animate */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@font-face {
+    font-family: "NTS";
+    src: url(../font/NotoSansKR-Regular.woff);
+}
+@font-face {
+    font-family: "NTSL";
+    src: url(../font/NotoSansKR-Light.woff);
+}
+@font-face {
+    font-family: "NTSB";
+    src: url(../font/NotoSansKR-Bold.woff);
+}
+
+@keyframes up-down {
+    from {
+        transform: translatey(0px);
+    }
+    to {
+        transform: translatey(-20px);
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+* {
+    color: #fff;
+    font-family: "NTS";
+}
+
+
+body {
+    min-width: 1200px;
+}
+
+.inner {
+    width: 1670px;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* body {
+    min-width: 1080px;
+} */
+
+body {
+    background-color: #000;
+}
+
+
+
+header .bg {
+   
+    height: 862px;
+    background: url(../img/한화메인비주얼.png) 50% 50% no-repeat;
+    /* background-position: center; */
+}
+
+
+header .bg .inner {
+    width: 100%;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header .bg .inner .headL > ul {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 0 0 125px;}
+
+header .bg .inner .headL > ul > .Mlogo {
+    align-items: center;
+    display: none;
+}
+header .bg .inner .headL > ul > .logo {
+    align-items: center;
+}
+
+
+header .bg .inner .headR > ul {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    margin: 0 125px 0 0;
+}
+
+header .bg .inner .headR > ul a {
+    margin: 0 0 0 30px;
+}
+
+header .bg .inner .headR > ul a li {
+    opacity: 0.6;
+}
+
+header .bg .inner .headR > ul li:nth-child(2) {
+    margin: 0 10px 0 10px;
+}
+
+header .bg .inner .headR > ul a::after {
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 65px;
+    right: 508px;
+    content: "";
+}
+
+header .bg .inner .headR > ul a:last-child::after {
+    display: none;
+}
+
+header .bg .inner .headR > ul .sns {
+    align-items: center;
+    opacity: 1;
+}
+
+
+header .bg .main {align-items: center;
+                  text-align: center;
+                 margin: 317px 0 0 0;}
+
+header .bg .Mmain {
+    width: 100%;
+    height: 40%;
+    background: url(../img/M캐치프라이즈.png)no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin: 220px 0 0 0;
+    display: none;
+}
+
+/* --------------------------------------------------- */
+.headL ul li.sub {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headL ul li.sub > a {
+    width: 110px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+}
+
+
+.headL ul li.sub > a span:active,
+.headL ul li.sub > a span:visited,
+.headL ul li.sub > a span:hover {
+    color: #fb8335;
+}
+
+
+
+div.nav {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+    top: 141px;
+    background-color: rgba(37, 40, 42, 0.7);
+    transition: height 0.5s;
+}
+
+div.nav > .inner {
+    height: auto;
+    border-bottom: none;
+    position: absolute;
+    left: 228px
+}
+
+div.nav > .inner .list {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+div.nav.on {
+    height: 210px;
+    transition: height 0.5s;
+}
+
+
+ul.submenu {
+    width: 110px;
+    margin: 0 5px;
+}
+
+
+
+
+ul.submenu li {
+    height: auto;
+    line-height: 27px;
+    font-size: 13px;
+}
+
+
+ul.submenu li a:hover {
+    color: #fb8335;
+}
+
+
+.list ul.submenu:nth-child(1) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(2) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(3) li:nth-child(1) a {
+    color: #fb8335;
+}
+/* -------------------------------------------------------------------- */
+
+header .bg nav {
+    display: none;
+}
+
+/* nav------------------------------------------------------------------------- */
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+section h1:nth-child(2) {
+    display: none;
+}
+
+section h1 {
+    text-align: center;
+    animation: up-down 1.1s infinite ease-in-out alternate;
+}
+
+section .inner {
+    width: 1394px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+section .inner .t3,
+section .inner .t1 {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex: 0 0 auto;
+    background-color: #25282a;
+    border-radius: 30px;
+    margin: 82px 32px 0 0;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+}
+
+
+section .inner .t2 {
+    background: url(../img/주황.png)no-repeat;
+    width: 530px;
+    height: 662px;
+    display: flex;
+    flex: 0 0 auto;
+    background-color: #25282a;
+    border-radius: 30px;
+    margin: 25px 32px 300px 0;
+    align-items: center;
+    flex-direction: column;
+    animation: up-down 1.1s infinite ease-in-out alternate;
+}
+
+
+section .inner .t1 span:nth-child(1),
+section .inner .t3 span:nth-child(1) {
+    font-family: "NTSL";
+    margin: 65px 200px 0 0;
+    opacity: 0.6;
+}
+
+section .inner .t1 span:nth-child(2),
+section .inner .t3 span:nth-child(2) {
+    width: 330px;
+    font-size: 32px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+section .inner .t2 span:nth-child(1) {
+    font-family: "NTSL";
+    margin: 82px 325px 0 0;
+    opacity: 0.6;
+}
+
+
+section .inner .t2 span:nth-child(2) {
+    width: 440px;
+    font-size: 50px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 0.8;
+}
+
+
+
+section .inner .t2 div.team {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0 0 0;
+}
+
+section .inner .t3 div.teams,
+section .inner .t1 div.teams {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+    margin: 55px 0 0 0;
+}
+
+section .inner .t2 div.team img {
+    width: 40%;
+}
+
+section .inner .t2 div.team em {
+    font-size: 25px;
+    opacity: 0.8;
+
+}
+
+
+section .inner .t1 div.score {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    opacity: 0.8;
+
+}
+
+
+section .inner .t2 div.time {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 55px;
+    opacity: 0.8;
+    margin: 55px 0 0 0;
+
+}
+
+section .inner .t3 div.times {
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    opacity: 0.8;
+    margin: 40px 0 0 0;
+
+}
+
+section .inner .t3 div.teams > em,
+section .inner .t1 div.teams > em {
+    font-size: 20px;
+
+}
+
+section .inner .t1 span:nth-child(5) {
+    font-size: 40px;
+    font-family: "NTSB";
+    color: #fff;
+    margin: 25px 0 0 0;
+}
+
+section .inner .t3 span:nth-child(4) {
+    font-size: 40px;
+    font-family: "NTSB";
+    opacity: 0.8;
+    margin: 70px 0 0 0;
+}
+
+/* player--------------------------------------------------------------------------- */
+
+div.player {
+    width: 100%;
+    background: linear-gradient(#191b1d, #000);
+}
+
+div.player .inner {
+    width: 1670px;
+}
+.pimg {
+    margin: 70px 0 30px 0;
+}
+
+div.player .inner .tabs .tab_content .boxh,
+div.player .inner .tabs .tab_content .box {
+    width: 375px;
+    height: 448px;
+    margin: 70px 0 0 0;
+}
+
+/* 투수 */
+.inner .tabs .tab_content .tabs2 .box.box1 {
+    background: url(../img/김민우.png) no-repeat;
+}
+.inner .tabs .tab_content .tabs2 .box.box2 {
+    background: url(../img/정우람.png) no-repeat;
+}
+.inner .tabs .tab_content .tabs2 .box.box3 {
+    background: url(../img/강재민.png) no-repeat;
+}
+.inner .tabs .tab_content .tabs2 .box.box4 {
+    background: url(../img/카펜터.png) no-repeat;
+}
+
+
+
+
+/* 타자 */
+.inner .tabs .tab_content .tabs2 .boxh.box4,
+.inner .tabs .tab_content .tabs2 .boxh.box1 {
+    background: url(../img/정은원.png) no-repeat;
+}
+.inner .tabs .tab_content .tabs2 .boxh.box3,
+.inner .tabs .tab_content .tabs2 .boxh.box2 {
+    background: url(../img/노시환.png) no-repeat;
+}
+
+
+
+/* 탭구조-------------------------------- */
+
+div.player .inner .tabs {
+    width: 1670px;
+    height: auto;
+}
+
+div.player .inner .tabs .tab_content .tabs2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 200px 0;
+
+}
+
+/* 탭 스타일 */
+.tab_item {
+    line-height: 50px;
+    font-size: 30px;
+    font-family: "NTSL";
+    opacity: 0.3;
+    margin: 0 40px 0 0;
+    font-style: italic;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.tab_item:hover {
+    opacity: 1;
+}
+
+
+.tabs .tab_content {
+    width: 100%;
+    display: none;
+    overflow: hidden;
+}
+
+input[name="tab_item"] {
+    display: none;
+}
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#pit:checked ~ #pit_content,
+#hit:checked ~ #hit_content {
+    display: block;
+}
+
+/* 선택된 탭 스타일 */
+.tabs input:checked + .tab_item {
+    opacity: 1;
+}
+
+/* 텍스트----------------------- */
+.tabs2 .text {
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-style: italic;
+}
+
+
+.text span:nth-child(1) {
+    font-size: 50px;
+    font-family: "NTSB";
+    margin: 10px 10px 0 0;
+}
+
+.text span:nth-child(2) {
+    font-size: 60px;
+    color: #fb8335;
+    font-family: "NTSB";
+    margin: 0 40px 0 0;
+}
+
+.tabs2 .box.box4 .text span:nth-child(1),
+.tabs2 .box.box2 .text span:nth-child(1) {
+    font-size: 50px;
+    font-family: "NTSB";
+    margin: 10px 5px 0 0;
+}
+
+
+.tabs2 .box.box2 .text span:nth-child(2) {
+    font-size: 60px;
+    color: #fb8335;
+    font-family: "NTSB";
+    margin: 0 50px 0 0;
+}
+
+.tabs2 .box.box4 .text span:nth-child(2) {
+    font-size: 60px;
+    color: #fb8335;
+    font-family: "NTSB";
+    margin: 0 30px 0 0;
+}
+
+
+.tabs2 .boxh.box1 .text span:nth-child(2) {
+    font-size: 60px;
+    font-family: "NTSB";
+    margin: 0;
+}
+
+
+.tabs2 .boxh.box4 .text span:nth-child(2),
+.tabs2 .boxh.box3 .text span:nth-child(2),
+.tabs2 .boxh.box2 .text span:nth-child(2) {
+    font-size: 60px;
+    font-family: "NTSB";
+    margin: 0 20px 0 0;
+}
+
+/* 키플레이어-------------------------------------- */
+.key {
+    width: 100%;
+}
+
+.key .inner {
+    width: 1320px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* .keyL {
+    width: 324px;
+    height: 516px;
+    background: url(../img/정은원타격.png)no-repeat;
+} */
+
+/* .key .inner .keyL {display: flex;} */
+
+/* .keyimg {
+    margin: 150px 0 0 40px;
+}  */
+
+.keyL {
+    align-items: center;
+    position: relative;
+}
+
+.keyL .keyimg {
+    position: absolute;
+    align-items: center;
+    bottom: 50px;
+    left: 30px;
+}
+
+.keyC {
+    width: 480px;
+}
+
+.keyC .top {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0 0;
+}
+
+.keyC .bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.keyC .top span:nth-child(1) {
+    font-size: 45px;
+    font-family: "NTSB";
+    color: #fb8335;
+    font-style: italic;
+}
+
+.keyC .top span:nth-child(2) {
+    font-size: 40px;
+    font-family: "NTSB";
+    font-style: italic;
+}
+
+.keyC .top span:nth-child(3) {
+    font-size: 20px;
+    font-style: italic;
+    font-family: "NTSB";
+    opacity: 0.5;
+}
+
+.keyC .bottom .Cbox {
+    width: 105px;
+    height: 105px;
+    background: #25282a;
+    border-radius: 15px;
+    margin: 15px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.Cbox span:nth-child(1) {
+    font-size: 30px;
+    font-family: "NTSB";
+    color: #fb8335;
+    margin: 15px 0 0 0;
+}
+.Cbox span:nth-child(2) {
+    font-size: 20px;
+}
+
+.bottom .Cbox {
+    transition: 0.1s all;
+    cursor: pointer;
+}
+
+
+.bottom .Cbox.on {
+    border: 3px solid #fb8335;
+
+}
+
+
+
+/* 
+.key .inner .keyR .Rbox:hover {
+    cursor: pointer;
+    background: #fb8335;
+} */
+
+
+.bottom .Cbox:hover {
+    border: 3px solid #fb8335;
+}
+
+
+.keyR {
+    width: 300px;
+    height: auto;
+    margin: 40px 0 0 0;
+
+}
+.keyR div:nth-child(1) {
+    font-size: 25px;
+}
+
+.key .inner .keyR .Rbox {
+    width: 300px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: #25282a;
+    margin: 15px 0 0 0;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.Rbox span:nth-child(1) {
+    font-size: 30px;
+}
+.Rbox span:nth-child(2) {
+    color: #fb8335;
+    margin: 80px 0 0 10px;
+    font-size: 30px;
+}
+
+
+
+
+
+/* 유튜브------------------------------------------------------------- */
+
+
+
+/* :root {
+    --swiper-navigation-size: 44px;
+    --swiper-navigation-color: var(--swiper-theme-color);
+}
+:root {
+    --swiper-theme-color: #fb8335;
+} */
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+
+.swiper-container > .swiper-button-next{
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: url(../img/next버튼.png) no-repeat;
+    z-index: 100;}
+
+.swiper-container > .swiper-button-prev{  
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background: url(../img/pre버튼.png) no-repeat;
+    z-index: 100;
+}
+
+    /* button {
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+    }
+ */
+
+
+.swiper-container > .swiper-button-next::after,
+.swiper-container > .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-container {
+    width: 1350px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yout {
+    width: 100%;
+    height: auto;
+    margin: 300px 0 30px 0;
+}
+
+.yout .inner {
+    width: 1670px;
+}
+
+.youtube {
+    width: 100%;
+    height: 700px;
+    background: #191b1d;
+}
+
+.youtube .inner {
+    width: 1800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Ybox {
+    width: 450px;
+    height: 506px;
+    border-radius: 0 0 20px 20px;
+    background: #fb8335;
+    opacity: 0.8;
+}
+
+.Ybg {
+    width: 450px;
+    height: 506px;
+    background: url(../img/유튜브배경.png)no-repeat;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.Ybg span:nth-child(1) {
+    font-size: 35px;
+    font-family: "NTSB";
+    font-style: italic;
+    margin: 250px 0 0 70px;
+}
+
+.Ybg span:nth-child(2) {
+    font-size: 20px;
+    margin: 0 0 0 70px;
+}
+
+.Ybg span:nth-child(3) {
+    display: flex;
+    font-size: 50px;
+    font-family: "NTSB";
+    margin: 35px 0 0 70px;
+}
+.Ybox2 {
+    width: 450px;
+    height: 506px;
+    border-radius: 0 0 20px 20px;
+    background: #25282a;
+    display: flex;
+    flex-direction: column;
+}
+
+.Ybox3 {
+    width: 450px;
+    height: 506px;
+    border-radius: 0 0 20px 20px;
+    background: #fb8335;
+    display: flex;
+    flex-direction: column;
+}
+
+.Ybox3 .YT,
+.Ybox2 .YT {
+    width: 450px;
+    height: 253px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Ybox2 .YT span:nth-child(1) {
+    margin: 30px 0 0 30px;
+    font-size: 30px;
+}
+
+.Ybox2 .YT span:nth-child(2) {
+    margin: 10px 0 0 30px;
+}
+
+.Ybox2 .YT span:nth-child(3) {
+    margin: 30px 0 0 30px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.Ybox2 .YT span:nth-child(4) {
+    margin: 10px 0 0 30px;
+    color: #fb8335;
+}
+
+.Ybox3 .YT span:nth-child(1) {
+    margin: 30px 0 0 30px;
+    font-size: 30px;
+    color: #25282a;
+}
+
+.Ybox3 .YT span:nth-child(2) {
+    margin: 10px 0 0 30px;
+    color: #25282a;
+}
+
+.Ybox3 .YT span:nth-child(3) {
+    margin: 30px 0 0 30px;
+    font-size: 12px;
+    opacity: 0.6;
+    color: #25282a;
+}
+
+.Ybox3 .YT span:nth-child(4) {
+    margin: 10px 0 0 30px;
+}
+
+
+
+
+.Ybox2 .YT:hover span:nth-child(1) {
+    cursor: pointer;
+    color: #fb8335
+}
+
+.Ybox3 .YT:hover span:nth-child(1) {
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 뉴스-------------------------------------------------------------- */
+
+
+.news {
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+
+.news .inner {
+    width: 1375px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newslogo {
+    margin: 200px 0 0 0;
+}
+
+.news .inner .newsL {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px 0 0;
+}
+
+
+.newsL:hover > h1 {
+    color: #fb8335;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.newsL span:nth-child(1) {
+    margin: 60px 0 0 0;
+    opacity: 0.6;
+}
+
+.newsL h1 {
+    margin: 30px 0 0 0;
+    font-size: 35px;
+}
+
+.newsL span:nth-child(3) {
+    margin: 40px 0 0 0;
+    font-size: 20px;
+}
+
+
+.newsL span:nth-child(4) {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+}
+
+.newsL span:nth-child(5) {
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+}
+
+
+
+
+.news .inner .newsR {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.newsR .newsbox {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 22px;
+}
+
+
+.newsR .newsbox .newstxt {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+}
+
+
+.newsR .newsbox .newstxt span:nth-child(1) {
+    margin: 40px 0 0 0;
+}
+.newsR .newsbox .newstxt span:nth-child(2) {
+    margin: 10px 0 30px 0;
+    font-size: 12px;
+    opacity: 0.6;
+
+}
+
+
+
+.newsR .newsbox .newstxt .more {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #25282a;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.moretxt:hover {
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+}
+
+.newsR .newsbox .newstxt .more::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fb8335;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.newsR .newsbox .newstxt .more:hover::after {
+    transform: translateX(100%);
+}
+.newsR .newsbox .newstxt .more:hover .moretxt {
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+
+/* shop, ticket--------------------------------------------------------------------*/
+
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 300px 0 150px 0;
+}
+
+.banner .inner {
+    width: 1670px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannerL {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerL .ticketbg {
+    width: 800px;
+    height: 430px;
+    background: url(../img/티켓배경.png)no-repeat;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ticketbg h1 {
+    font-size: 60px;
+    font-style: italic;
+    margin: 150px 0 10px 0;
+}
+
+.ticketbg h1 > strong {
+    color: #fb8335;
+}
+
+.ticketbg span {
+    font-size: 45px;
+}
+
+.bannerR {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerR .shop {
+    margin: 0 0 0 35px;
+}
+
+
+.bannerR .shopbg {
+    width: 800px;
+    height: 430px;
+    background: url(../img/샵배경.png)no-repeat;
+    margin: 50px 0 0 35px;
+    position: relative;
+}
+
+
+.bannerR .shopbg span {
+    color: #000;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0 0 0 380px;
+}
+
+.shopbg h1 {
+    font-size: 100px;
+    font-style: italic;
+    margin: 70px 0 0 340px;
+}
+
+
+.shopbg .suri {
+    width: 306px;
+    height: 175px;
+    background: url(../img/수리.png)no-repeat;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 70%;
+}
+
+/* footer-------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
+footer .inner {
+    margin: 0 auto;
+    width: 1670px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .inner .footerL {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+}
+
+.footerL .Elogo {
+    width: 250px;
+    margin: 0 0 30px 0;
+}
+
+footer .inner .footerL .footermenu span {
+    display: inline-block;
+    font-family: "NTSL";
+    padding: 0 30px 10px 0;
+    opacity: 0.5;
+    position: relative;
+}
+
+footer .inner .footerL .footermenu span::after {
+    width: 1px;
+    height: 10px;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+footer .inner .footerL .footermenu span:last-child::after {
+    display: none;
+}
+
+footer .inner .footerL .footerMENU span {
+    display: inline-block;
+    padding: 20px 30px 0 0;
+    opacity: 0.5;
+    font-family: "NTSL";
+}
+
+
+footer .inner .footerL .footerMENU span:hover {
+    color: #fb8335;
+    opacity: 1;
+}
+
+.inner .footerR {
+    margin: 180px 0 0 0;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}

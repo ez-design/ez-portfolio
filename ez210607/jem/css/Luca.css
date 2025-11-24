@@ -1,0 +1,780 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap');
+/* 'Noto Sans KR', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* 'Fredoka One', cursive */
+@import url('../css/Luca(ie).css');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid darkgray; */
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+     background: #002e7f; 
+}
+.scroll{
+    height: 100vh;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+}
+
+ul, li{ list-style: none; }
+a:visited{
+    color: #fff;
+}
+a:link{
+    color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #fff;
+}
+.vertical-slider.slick-dotted{
+	margin-bottom: 0;
+}
+.vertical-slider{
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.slick-vertical .slick-slide {
+    height: 100vh;
+}
+.vertical-slider > .slick-dots{
+    
+	bottom: auto;
+	left: .5em;
+	padding: 0;
+	right: auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+    width: 25px;
+}
+
+.vertical-slider > .slick-dots li button{
+  	padding: .125em;
+}
+.vertical-slider .slide{ height: 100vh; }
+
+.slide{ display: block; }
+
+/* header */
+
+.header{
+    background: url(../images/luca_01.png) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+/* .header div:first-child{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    font-size: 20px; 
+} */
+/* .header > div:first-child a{
+    padding: 20px;
+    letter-spacing:5px;
+} */
+.header > div:last-child{
+margin-left: 30%;
+}
+.header > div:last-child p{
+    margin-top: 95%;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* part1 */
+
+.part1{
+    background: url(../images/luca_02.png) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    text-align: center;
+    padding: 3%;
+}
+.part1 h1{
+    font-size: 45px;
+    padding: 2% 0 ;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing:10px;
+}
+.part1 p{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.part1 > div:last-child{
+    display: flex;
+    justify-content: center;
+}
+.part1 .tab1 > ul li{
+    font-size: 18px;
+    padding: 15px 0 0 0;
+    margin: 15% 20px 0 20px;
+    margin-top: 15%;
+    cursor: pointer;
+    position: relative;
+}
+.part1 .tab1 > ul li:hover::after{
+    width: 100%;
+    left: 0;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+}
+.part1 .tab1 > ul li::after{
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    background: #fff;
+
+}
+.part1 .tab1 li:first-child{
+    margin-top: 70%;
+}
+.part1 .tab1 .content .conBox .mainv{
+    padding: 5% 0;
+}
+.part1 .tab1 .conBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.part1 .tab1 > ul li.on::after{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    background: #fff;
+}
+.part1 .tab1 .conBox .tab2{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+}
+.part1 .tab1 .conBox .tab2 > div:last-child{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.part1 .tab1 .conBox .tab2 > div:last-child p{
+    width: 250px;
+}
+.part1 .tab1 .content .conBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.part1 .tab1 .content .conBox.on{
+    display: block;
+}
+.part1 .tab1 .content .conBox .p1{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.part1 .tab1 .content .conBox .p1.on{
+    filter: grayscale(0%);
+}
+.part1 .tab1 .content .conBox .p1:hover{
+    filter: grayscale(0%);
+    transition: all 0.5s ease-out;
+}
+.part1 .tab1 .content .conBox .tab2 .contBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 3% 0;
+}
+.part1 .tab1 .content .conBox .tab2 .contBox.on{
+    display: block;
+}
+.part1 img{
+    width: 250px;
+    height: 140px;
+}
+.part1 .tab1 .content .conBox .tab2 div:last-child .p1{
+    position: relative;
+}
+.part1 .tab1 .content .conBox .tab2 div:last-child .p1::after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url(../images/play.png) no-repeat;
+    background-size: 100% auto;
+    top: 30px;
+    left: 85px;
+}
+
+.part1 .conBox .trailer iframe{
+    width: 850px;
+    height: 475px;
+    border: none;
+}
+.part1 .conBox{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.scroll_h{
+    width:100%;
+}
+.part2 h2,
+.part3 h2,
+.part4 h2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding: 0% 0 2% 5%;
+}
+.s03{
+    position: relative;
+}
+.s03 .slick-dots {
+    position: absolute;
+    top: 8%;
+    right: -20%;
+    height: 25px;
+   
+}
+.s03 .slick-dots li:hover{
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+}
+.s03 .slick-dots li {
+    width: 100px;
+    color: rgba(255,255,255,0.3);
+}
+.s03 .slick-dots li.slick-active {
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+}
+.part5 .slick-prev {
+    left: -35px;
+}
+
+.part2{
+    background: url(../images/luca_05.png) no-repeat;
+    /* background-size: 100% 100%;; */
+    position: relative;
+    height: 100vh;
+    padding: 1%;
+}
+.part2 .luca{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100vh;
+    text-align: center;
+    float: right;
+}
+.part2 .luca p{
+    padding: 0 15%;
+    word-break: keep-all;
+}
+.part2 .luca p span#read1{
+    display: none;
+}
+h3{
+    font-size: 37px;
+    padding: 3% 0;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+.p2{
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.part2 button,
+.part3 button,
+.part4 button{
+    background: url(../images/Shape_bu.png) no-repeat;
+    background-size:100% 100% ;
+    width: 15%;
+    height: 3%;
+    margin: 3% 0 3% 40%;
+    box-shadow:none;
+    border: none;
+}
+
+.part2 .dots,
+.part3 .dots,
+.part4 .dots,
+.part5 .dots{
+    display: block;
+}
+.part2 .dots.on,
+.part3 .dots.on,
+.part4 .dots.on,
+.part5 .dots.on{
+    display:none;
+}
+.part2 .read.on,
+.part3 .read.on,
+.part4 .read.on,
+.part5 .read.on{
+    display: block;
+}
+.part2 .read,
+.part3 .read,
+.part4 .read,
+.part5 .read{
+    display: none;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.image > img{
+    width: 30%;
+    margin: 30px;
+}
+.part2 .ch_Box{
+    display: flex;
+    justify-content: space-around;
+}
+.part2 .ch_Box .mainl{
+    width: 40%;
+    height: 100%;
+    margin-top: 4%;
+
+}
+.part3{
+    background: url(../images/luca_06.png) no-repeat;
+    background-size: 100% 100%;;
+    height: 100vh;
+    position: relative;
+    padding: 1%;
+}
+.part3 .Alberto{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100vh;
+    text-align: center;
+    float: left;
+}
+.part3 .Alberto p{
+    padding: 0 20%;
+    word-break: keep-all;
+}
+.part3 .ch_Box{
+    display: flex;
+    justify-content: space-around;
+}
+.part3 .ch_Box .mainl{
+    width: 40%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+/* part4 */
+
+.part4{
+    background: url(../images/luca_07.png) no-repeat;
+    background-size: 100% 100%;;
+    height: 100vh;
+    position: relative;
+    padding: 1%;
+}
+.part4 .Giulia{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100vh;
+    text-align: center;
+    float: right;
+}
+.part4 .Giulia p{
+    padding: 0 20%;
+    word-break: keep-all;
+}
+.part4 .ch_Box{
+    display: flex;
+    justify-content: space-around;
+}
+.part4 .ch_Box .mainl{
+    width: 40%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+/* part5 */
+
+.part5{
+    background: url(../images/luca_08.png)no-repeat;
+    height: 100vh;
+    padding: 1%;
+}
+.part5 h2{
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    letter-spacing:10px;
+    padding: 0 0 2% 10%;
+    margin-bottom: 2%;
+ }
+.part5 .sw1 .p5{
+    text-align: center;
+    background: url(../images/Shape_ch.png) no-repeat;
+    background-size: auto 100%;
+    height: 70vh;
+    margin-right: 30px;
+}
+ .part5 .sw1 {
+    width: 80%;
+    height: 85%;
+    margin-left: 10%;
+  }
+.part5 .sw1 .p5 .tBox div > h4{
+    font-size: 25px;
+    padding:2%
+}
+.part5 .sw1 .p5 .tBox div > p{
+    padding: 3% 5%;
+    letter-spacing:2px;
+    font-size: 15px;
+}
+.part5 .swiper .sw1 .p5 .ch1{
+    background: url(../images/Machiavelli.png) no-repeat;
+    background-position: 55%  100%;
+    background-size: 70% auto;
+    height: 40%;
+}
+.part5 .swiper .sw1 .p5 .ch2{
+    background: url(../images/Massimo.png) no-repeat;
+    background-position: 55% 25%;
+    height: 40%;
+    background-size: 70% auto;
+}
+.part5 .swiper .sw1 .p5 .ch3{
+    background: url(../images/Grandma.png) no-repeat;
+    background-position: 55% 95%;
+    height: 40%;
+    background-size: 70% auto;
+}
+.part5 .swiper .sw1 .p5 .ch4{
+    background: url(../images/Ercole.png) no-repeat;
+    background-position: 55% 25%;
+    height: 40%;
+    background-size: 55% auto;
+}
+.part5 .swiper .sw1 .p5 .ch5{
+    background: url(../images/Daniela.png) no-repeat;
+    background-position: 55% 120%;
+    height: 40%;
+    background-size: 55% auto;
+}
+.part5 .swiper .sw1 .p5 .ch6{
+    background: url(../images/Lorenzo.png) no-repeat;
+    background-position: 55% 111%;
+    height: 40%;
+    background-size: 60% auto;
+}
+.part5 .swiper .sw1 .p5 .ch7{
+    background: url(../images/Uncle.png) no-repeat;
+    background-position: 55% 100%;
+    height: 40%;
+    background-size: 60% auto;
+}
+.part5 .swiper .sw1 .p5 .tBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 57%;
+}
+.part5 .swiper .sw1 .p5 .tBox button{
+    background: none;
+    text-align: right;
+    font-size: 13px;
+    padding: 2% 8% 2% 2%;
+    margin-right: 6%;
+    position: relative;
+    
+}
+.part5 .sw1 .p5 .tBox button::after{
+    content: "";
+    width: 115px;
+    height: 20px;
+    background: url(../images/buttonimg.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    border-width: 0px;
+    border-style: none;
+}
+.slick-vertical .slick-slide.part5 {
+    display: block;
+    height: 100vh;
+}
+.container{
+    background: url(../images/luca_09.png) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+.part5 .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.container .Box{
+    display: flex;
+    justify-content: space-around;
+    height: 18vh;
+}
+
+/* part6 */
+.part6 .slick-prev,.part6 .slick-next {
+    top: 28%;
+}
+.part6{
+    height: 85%;
+    width: 60%;
+}
+
+.part6 .S1 .swiper-slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.part6 .S1 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+.part6 h2{
+        font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    letter-spacing: 10px;
+    padding: 0% 3% 5% 10%;
+ }
+.part6 h5{
+    font-size: 25px;
+    letter-spacing:3px;
+    padding: 1% 2%;
+ }
+.part6 h6{
+     font-size: 18px;
+     letter-spacing: 2px;
+     padding: 2% 3%;
+     /* margin: 3% 0; */
+ }
+.part6 p{
+     font-size: 13px;
+     letter-spacing: 2px;
+     padding: 2% 3%;
+ }
+ .part6 .S2 .p6-1,
+ .part6 .S2 .p6-2,
+ .part6 .S2 .p6-3{
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     padding: 0 50px;
+ }
+.part6 .S2 .p6-1 .pt6-1{
+    background: url(../images/w_01.png) no-repeat;
+    background-size:auto 100% ;
+    width: 100%;
+    height: 600px;
+    background-position: 0 0%;
+}
+.part6 .S2 .p6-2 .pt6-2{
+    background: url(../images/w_02.png) no-repeat;
+    background-size:auto 100% ;
+    width: 100%;
+    height: 600px;
+    background-position: 0 0%;
+}
+.part6 .S2 .p6-3 .pt6-3{
+    background: url(../images/w_03.png) no-repeat;
+    background-size:auto 100% ;
+    width: 100%;
+    height: 600px;
+    background-position: 0 0%;
+}
+.part6 .S2 .t_Box{
+    width: 60%;
+    padding: 2%;
+}
+.part6 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 15px;
+    margin-top: 1%;
+}
+.part6 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 15px;
+    margin-top: 1%;
+}
+.part7{
+    height: 81vh;
+    width: 35%;
+}
+.part7 h2{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    letter-spacing: 10px;
+    padding: 0% 5% 7% 5%;
+}
+.Gs1 {
+    width: 100%;
+    height: 70vh;
+    padding: 0 20%;
+}
+.Gs1 .swiper-slide {
+    height: 18vh;
+}
+.part7 .Gs1 .g1{
+    background: url(../images/g1.jpg) no-repeat;
+}
+.part7 .Gs1 .g2{
+    background: url(../images/g2.JPG) no-repeat;
+}
+.part7 .Gs1 .g3{
+    background: url(../images/g3.JPG) no-repeat;
+}
+.part7 .Gs1 .g4{
+    background: url(../images/g4.JPG) no-repeat;
+}
+.part7 .Gs1 .g5{
+    background: url(../images/g5.jpg) no-repeat;
+}
+.part7 .Gs1 .g6{
+    background: url(../images/g16.jpg) no-repeat;
+}
+.part7 .Gs1 .g7{
+    background: url(../images/g7.jpg) no-repeat;
+}
+.part7 .Gs1 .g8{
+    background: url(../images/g8.jpg) no-repeat;
+}
+.part7 .Gs1 .g9{
+    background: url(../images/g9.jpg) no-repeat;
+}
+.part7 .Gs1 .g10{
+    background: url(../images/g10.jpg) no-repeat;
+}
+.part7 .Gs1 .g11{
+    background: url(../images/g11.jpg) no-repeat;
+}
+.part7 .Gs1 .g12{
+    background: url(../images/g12.jpg) no-repeat;
+}
+.part7 .Gs1 .g13{
+    background: url(../images/g13.jpg) no-repeat;
+}
+.part7 .Gs1 .g14{
+    background: url(../images/g14.jpg) no-repeat;
+}
+.part7 .Gs1 .g15{
+    background: url(../images/g15.jpg) no-repeat;
+}
+.part7 .Gs1 .g16{
+    background: url(../images/g16.jpg) no-repeat;
+}
+.part7 .Gs1 .g17{
+    background: url(../images/g17.jpg) no-repeat;
+}
+.part7 .Gs1 .g18{
+    background: url(../images/g18.jpg) no-repeat;
+}
+.part7 .Gs1 .g19{
+    background: url(../images/g19.jpg) no-repeat;
+}
+.part7 .Gs1 .g20{
+    background: url(../images/g20.jpg) no-repeat;
+}
+.part7 .Gs1 .g21{
+    background: url(../images/g21.jpg) no-repeat;
+}
+.part7 .Gs1 .g22{
+    background: url(../images/g22.jpg) no-repeat;
+}
+.part7 .Gs1 .g23{
+    background: url(../images/g23.jpg) no-repeat;
+}
+.part7 .Gs1 .g24{
+    background: url(../images/g24.jpg) no-repeat;
+}
+.part7 .Gs1 .g25{
+    background: url(../images/g25.jpg) no-repeat;
+}
+.part7 .Gs1 .g1,
+.part7 .Gs1 .g2,
+.part7 .Gs1 .g3,
+.part7 .Gs1 .g4,
+.part7 .Gs1 .g5,
+.part7 .Gs1 .g6,
+.part7 .Gs1 .g7,
+.part7 .Gs1 .g8,
+.part7 .Gs1 .g9,
+.part7 .Gs1 .g10,
+.part7 .Gs1 .g11,
+.part7 .Gs1 .g12,
+.part7 .Gs1 .g13,
+.part7 .Gs1 .g14,
+.part7 .Gs1 .g15,
+.part7 .Gs1 .g16,
+.part7 .Gs1 .g17,
+.part7 .Gs1 .g18,
+.part7 .Gs1 .g19,
+.part7 .Gs1 .g20,
+.part7 .Gs1 .g21,
+.part7 .Gs1 .g22,
+.part7 .Gs1 .g23,
+.part7 .Gs1 .g24,
+.part7 .Gs1 .g25{
+    background-size: 100% auto;
+    background-position: 0 0;
+}
+/* footer */
+
+.container  footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container  footer div>p{
+    font-size: 12px;
+    padding: 5px;
+}
+.container  footer div:first-child{
+    display: flex;
+    justify-content: center;
+}
+.container  footer div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.container  footer div:nth-child(3){
+    display: flex;
+    justify-content: center;
+}

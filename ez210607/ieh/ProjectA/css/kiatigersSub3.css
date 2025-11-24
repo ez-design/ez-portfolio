@@ -1,0 +1,413 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* noto sans 글씨체 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid teal; */
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #10161f;
+    word-break: keep-all;
+}
+body{min-width: 1280px;}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{color: inherit;}
+li{
+    list-style: none;
+}
+/* header */
+header{
+    width: 100%;
+    height: 30px;
+    border-bottom:1px solid #eee ;
+}
+header .inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+header .inner > a{
+    display: block;
+    margin: 0 0 0 40px;
+    line-height: 30px;
+}
+header .inner a:nth-child(2)::after{
+    background: #10161f;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    top: 9px;
+    right: 74px;
+    content: "";
+}
+header .inner > div > span{
+    border: none;
+    background: #e10326;
+    color: white;
+    padding: 7px;
+    font-size: 2rem
+}
+header .inner .mlogo{
+    background: url(../images/emblem/wordmark.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 45px;
+    margin: 0;
+}
+
+header .inner .mlogo,
+header .mhome,
+header .mmenu{display: none;}
+
+/* nav  */
+nav{
+    width: 100%;
+    height: 80px;
+    background: #10161f;
+    position: relative;
+    z-index: 100;
+}
+nav > .inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+nav a.logo{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: url(../images/emblem/emblem1.png) 50% 50% no-repeat;
+    display: block;
+    width: 20%;
+    height: 120%;
+    background-size: contain;
+}
+nav .inner ul.gnb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* width: 1024px; */
+    width: 80%;
+    list-style: none;
+    cursor: pointer;
+}
+nav .inner ul.gnb li{
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav:hover > .inner ul.gnb{
+    border-bottom: 1px solid #eee;
+}
+
+nav:hover{
+    background: white;
+    color: #10161f;
+}
+nav:hover a.logo{opacity: 0;}
+
+nav:hover > .inner ul.gnb li{
+    color: #10161f;
+}
+nav:hover > .inner ul.gnb li.on{
+    color: #e10326;
+}
+.mNav > button.mclose{display: none;}
+
+/* snb  */
+nav .snb{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background: white;
+    z-index: 20;
+    overflow: hidden;
+}
+.snb .inner{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0 0; 
+}
+.snb .inner > div{
+    width: 1024px;
+    display: flex;
+    justify-content: flex-end;
+}
+.snb .inner .logo1{
+    background: url(../images/emblem/emblem2.png) 50% 50% no-repeat;
+    width: 174px;
+    height: 133px;
+    background-size: contain;
+    opacity: 0.8;
+    margin: 10px 0px 0px 10px;
+}
+.snb ul li{
+    color: #10161f;
+    padding: 10px 0 0 0;
+    font-weight: 500;
+    width: 170px;
+    cursor: pointer;
+}
+.snb ul li.on{
+    color: #e10326;
+    text-decoration: underline;
+}
+.snb ul:nth-child(4){
+    margin: 0 40px 0 0;
+}
+.snb ul:nth-child(3){
+    margin: 0 80px 0 0;
+}
+.snb ul:nth-child(2){
+    margin: 0 60px 0 0;
+}
+.snb ul:nth-child(1){
+    margin: 0 70px 0 0;
+}
+
+nav:hover > .snb{
+    height: 250px;
+    transition: height 0.7s;
+}
+.snb .inner ul li:hover{
+    color: #e10326;
+}
+.mNav{display: none;}
+
+/* sec01  */
+section.sec01{
+    width: 100%;
+    height: 240px;
+    background: url(../images/etc/mascot.png) 50% 20% no-repeat, #10161f;
+}
+.sec01 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.sec01 .inner h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+/*sec02*/
+section.sec02 .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sec02 .emblem{
+    background: url(../images/etc/tigeremblem.png) 50% 50% no-repeat;
+    width: 490px;
+    height: 340px;
+    background-size: contain;
+    margin: 40px 0 0 0;
+}
+.sec02 h4{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.sec02 h3{
+    font-size: 2.5rem;
+}
+.sec02 h2{
+    font-size: 3.5rem;
+    color: #e10326;
+    padding: 0 0 20px 0;
+}
+
+/*sec03*/
+.sec03 .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sec03 span{
+    color: #e10326;
+}
+
+.sec03 .inner h2{
+    font-size: 1.8rem;
+    padding: 30px 0 ;
+    display: flex;
+    align-items: center;
+}
+.sec03 .inner h2 span{
+    font-size: 3rem;
+}
+.sec03 h3{
+    font-size: 1.6rem;
+    margin: 0 0 10px 0;
+}
+.sec03 p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.sec03 .grade{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+}
+.sec03 .grade .box{
+    width: 380px;
+    height: 415px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grade .box.one{
+    position: relative;
+}
+.grade .box.one div::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: "";
+    background: url(../images/etc/red.png) 50% 50% no-repeat;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    margin: 10px 0;
+    opacity: 0.2;
+}
+.grade .box.two {
+    position: relative;
+}
+.grade .box.two div::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: "";
+    background: url(../images/etc/basic.png) 50% 50% no-repeat;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    margin: 10px 0;
+    opacity: 0.2;
+}
+.sec03 .grade .box p:nth-of-type(1){
+    font-size: 2rem;
+    padding: 10px 0;
+    z-index: 10;
+}
+.sec03 .grade .box p:nth-of-type(2){
+    font-size: 1.4rem;
+    padding: 0 0 10px 0;
+    z-index: 10;
+}
+.sec03 .grade .box p:nth-of-type(3){
+    font-size: 1.2rem;
+    z-index: 10;
+}
+/*sec04*/
+.sec04{
+    margin: 40px 0;
+}
+.sec04 .inner{
+    text-align: center;
+}
+.sec04 .inner h2{
+    font-size: 2rem;
+    color: #e10326;
+}
+.sec04 .inner h3{
+    font-size: 1.5rem;
+}
+.sec04 .inner p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.sec04 .inner div{
+    margin: 20px 0 0;
+}
+/* footer  */
+footer{
+    width: 100%;
+    height: 300px;
+    background: #10161f;
+    color: white;
+}
+footer .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .ft1{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px 0 40px;
+}
+footer .sns{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+footer .sns a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    margin: 0 10px 0;
+}
+.sns .sns1{
+    background: url(../images/etc/sns1.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sns .sns2{
+    background: url(../images/etc/sns2.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns3{
+    background: url(../images/etc/sns3.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns4{
+    background: url(../images/etc/sns4.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns5{
+    background: url(../images/etc/sns5.png) 50% 50% no-repeat;
+    background-size: contain;
+}.sns .sns6{
+    background: url(../images/etc/sns6.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+footer .ft2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer .ft2 span:last-child{
+    margin: 20px 0 20px 0;
+}
+.is-ie footer span{
+    display: block;
+}

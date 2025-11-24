@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body{
+    min-width: 320px;
+}
+
+.inner{
+    width: 90%;
+    position: relative;
+}
+a.logo{
+    width: 40px;
+    height: 30px;
+}
+nav{
+    height: 60px;
+}
+nav .inner .top{
+    height: 60px;
+}
+nav > .inner ul.gnb li{
+    font-size: 1rem;
+    margin: 0;
+}
+h1{
+    margin-top: 200px;
+    font-size: 3rem;
+}
+h1 span{
+    display: none;
+}
+.text{
+    margin-top: 30px;
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+main::after{
+    width: 300px;
+    height: 300px;
+    top: 110px;
+    right: -28px;
+}
+.contact{
+    font-size: 0.8rem;
+    bottom: 15%;
+}
+.contact p:last-child{
+    display: none;
+}
+
+.about{
+    display: none;
+}
+.aboutM{
+    display: block;
+    width: 90%;
+    height: auto;
+    background: #000;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}

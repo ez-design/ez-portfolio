@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>내셔널 지오그래픽 채널</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/pb_main_pc.css" />
+    <link rel="stylesheet" media="all and (max-width: 1024px)" href="../css/pb_main_t.css" />
+    <link rel="stylesheet" media="all and (max-width: 640px)" type="text/css" href="../css/pb_main_m.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/pb/icon1.ico" />
+</head>
+
+<body>
+    <script> 
+        AOS.init(); 
+    </script>
+    <header>
+        <div class="inner2">
+            <div class="top">
+                <img src="../images/pb/logo_allwhite.svg" class="logo" alt="로고">
+                <div class="menuBt">
+                    <img src="../images/pb/menuBt.png" alt="메뉴버튼" class="on">
+                    <img src="../images/pb/menuBtYellow.png" alt="메뉴버튼2">
+                </div>
+            </div>
+            <div class="visualLogo"></div>
+            <span>SCROLL DOWN</span>
+            <img src="../images/pb/chevron_down.svg" alt="" class="scrollDown">
+        </div>
+        <nav class="gnb">
+            <img src="../images/pb/x_white.svg" alt="" class="menuClose">
+            <ul>
+                <li><span>01</span>SHOWS
+                    <div></div>
+                </li>
+                <li><span>02</span>VIDEOS
+                    <div></div>
+                </li>
+                <li><span>03</span>SCHEDULE
+                    <div></div>
+                </li>
+            </ul>
+            <input type="search" placeholder="Search">
+            <img src="../images/pb/search_icon.png" alt="" class="search">
+        </nav>
+        <nav class="mMenu">
+            <img src="../images/pb/x_white.svg" alt="" class="menuClose">
+            <ul>
+                <li><span>01</span>MOST RECENT</li>
+                <li><span>02</span>SCIENCE</li>
+                <li><span>03</span>ADVENTURE</li>
+                <li><span>04</span>WILD</li>
+                <li><span>05</span>REALITY</li>
+                <li><span>06</span>HISTORY</li>
+                <li><span>07</span>DRAMA</li>
+            </ul>
+            <ul class="subM">
+                <li>SHOWS</li>
+                <li>VIDEOS</li>
+                <li>SCHEDULE</li>
+            </ul>
+            <input type="search" placeholder="Search">
+            <img src="../images/pb/search_icon.png" alt="" class="search">
+        </nav>
+    </header>
+
+    <section class="s1">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000">SCHEDULE</h1>
+            <div class="scheduleBorder">
+                <div class="scheduleBox">
+                    <p id="day"></p>
+                    <p id="yearMonth"></p>
+                    <div></div>
+                    <p><span>NOW</span>예정된 방송이 없습니다.</p>
+                </div>
+            </div>
+            <div class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oo34tdVYY3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9g80hl_-xRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"><span>#</span>MOST RECENT</h1>
+        </div>
+        <div class="swiper swiper-container s2Swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide one">
+                    <p class="category">#WILD</p>
+                    <p class="title">늑대의 왕국</p>
+                    <p class="subTitle">인간의 발이 닿지 않는 곳, '북극의 정원'의 늑대</p>
+                </div>
+                <div class="swiper-slide two">
+                    <p class="category">#WILD</p>
+                    <p class="title">늑대의 왕국</p>
+                    <p class="subTitle">인간의 발이 닿지 않는 곳, '북극의 정원'의 늑대</p>
+                </div>
+                <div class="swiper-slide three">
+                    <p class="category">#WILD</p>
+                    <p class="title">늑대의 왕국</p>
+                    <p class="subTitle">인간의 발이 닿지 않는 곳, '북극의 정원'의 늑대</p>
+                </div>
+                <div class="swiper-slide four">
+                    <p class="category">#WILD</p>
+                    <p class="title">늑대의 왕국</p>
+                    <p class="subTitle">인간의 발이 닿지 않는 곳, '북극의 정원'의 늑대</p>
+                </div>
+                <div class="swiper-slide five">
+                    <p class="category">#WILD</p>
+                    <p class="title">늑대의 왕국</p>
+                    <p class="subTitle">인간의 발이 닿지 않는 곳, '북극의 정원'의 늑대</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="s3">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"><span>#</span>SCIENCE</h1>
+            <div class="swiper swiper-container bottomSwiper b1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>이어 밀리언: 인류의 미래</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>스티븐호킹의 지니어스</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>브레이크스루2</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>기후변화: 위기의 시대</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>비포 더 플러드</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>사이언스 오브 스투피드4</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>코스모스</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-container thumbSlide t1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div>
+                            <p>이어 밀리언: 인류의 미래</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div>
+                            <p>스티븐호킹의 지니어스</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div>
+                            <p>브레이크스루2</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div>
+                            <p>기후변화: 위기의 시대</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div>
+                            <p>비포 더 플러드</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div>
+                            <p>사이언스 오브 스투피드4</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div>
+                            <p>코스모스</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nb n1"></div>
+            <div class="swiper-button-prev pb p1"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="s4">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"><span>#</span>ADVENTURE</h1>
+            <div class="swiper swiper-container bottomSwiper b2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>헤이즌 아델의 정글의 법칙</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>백 투 더 네이처3</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>트라이브맨2</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>위키드 튜나6</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>헤이즌 아델의 정글의 법칙</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>백 투 더 네이처3</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>트라이브맨2</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-container thumbSlide t2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div>
+                            <p>헤이즌 아델의 정글의 법칙</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div>
+                            <p>백 투 더 네이처3</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div>
+                            <p>트라이브맨2</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div>
+                            <p>위키드 튜나6</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div>
+                            <p>헤이즌 아델의 정글의 법칙</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div>
+                            <p>백 투 더 네이처3</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div>
+                            <p>트라이브맨2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nb n2"></div>
+            <div class="swiper-button-prev pb p2"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="s5">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"><span>#</span>WILD</h1>
+            <div class="swiper swiper-container bottomSwiper b3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>킹덤III</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>와일드 헌터</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>메가 샤크</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>프리미엄 와일드</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>와일드 파이트 클럽4</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>와일드 러시아</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>킹덤</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-container thumbSlide t3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div>
+                            <p>킹덤III</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div>
+                            <p>와일드 헌터</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div>
+                            <p>메가 샤크</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div>
+                            <p>프리미엄 와일드</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div>
+                            <p>와일드 파이트 클럽4</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div>
+                            <p>와일드 러시아</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div>
+                            <p>킹덤</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nb n3"></div>
+            <div class="swiper-button-prev pb p3"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="s6">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"><span>#</span>REALITY</h1>
+            <div class="swiper swiper-container bottomSwiper b4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>글로벌 시티즌</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>프리 솔로</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>나폴리 푸드파이터, 데이비드 로코</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>응답하라! 1980'S</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>포토 아크</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>에어 크래쉬 16</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>서저리 쉽: 바다 위의 병원선</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-container thumbSlide t4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div>
+                            <p>글로벌 시티즌</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div>
+                            <p>프리 솔로</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div>
+                            <p>나폴리 푸드파이터, 데이비드 로코</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div>
+                            <p>응답하라! 1980'S</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div>
+                            <p>포토 아크</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div>
+                            <p>에어 크래쉬 16</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div>
+                            <p>서저리 쉽: 바다 위의 병원선</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nb n4"></div>
+            <div class="swiper-button-prev pb p4"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="s7">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"><span>#</span>HISTORY</h1>
+            <div class="swiper swiper-container bottomSwiper b5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>이어 밀리언: 인류의 미래</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>스티븐호킹의 지니어스</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>브레이크스루2</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>기후변화: 위기의 시대</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>비포 더 플러드</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>사이언스 오브 스투피드4</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>코스모스</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-container thumbSlide t5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div>
+                            <p>이어 밀리언: 인류의 미래</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div>
+                            <p>스티븐호킹의 지니어스</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div>
+                            <p>브레이크스루2</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div>
+                            <p>기후변화: 위기의 시대</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div>
+                            <p>비포 더 플러드</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div>
+                            <p>사이언스 오브 스투피드4</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div>
+                            <p>코스모스</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nb n5"></div>
+            <div class="swiper-button-prev pb p5"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="s8">
+        <div class="inner">
+            <h1 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"><span>#</span>DRAMA</h1>
+            <div class="swiper swiper-container bottomSwiper b6">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>헤이즌 아델의 정글의 법칙</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>백 투 더 네이처3</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>트라이브맨2</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>위키드 튜나6</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>헤이즌 아델의 정글의 법칙</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>백 투 더 네이처3</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div class="mainBox">
+                            <div class="txt">
+                                <p>트라이브맨2</p>
+                                <p>매주 토요일 밤 11시 본방송</p>
+                                <p>집 보다 좋은 곳이 있을까?<br>놀랍고도 경이로운 여행이 될 “원 스트레인지 락” 은 전 우주를 통틀어 가장 기이하고 독특한 행성으로 손꼽히는 지구의 섬세함과 경이로움을 탐험한다. 유일하게 지구 밖으로 나가본 인간인 우주 비행사들의 눈으로, 현재 우리가 아는 인간의 삶이 어떻게 존재하게 된 것인지 그 엄청난 비밀을 들려준다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiper-container thumbSlide t6">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <div>
+                            <p>헤이즌 아델의 정글의 법칙</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div>
+                            <p>백 투 더 네이처3</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div>
+                            <p>트라이브맨2</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <div>
+                            <p>위키드 튜나6</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide five">
+                        <div>
+                            <p>헤이즌 아델의 정글의 법칙</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide six">
+                        <div>
+                            <p>백 투 더 네이처3</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seven">
+                        <div>
+                            <p>트라이브맨2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nb n6"></div>
+            <div class="swiper-button-prev pb p6"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner">
+            <div class="logos">
+                <img src="../images/pb/logo_color_allblack.svg" alt="하단 로고">
+                <img src="../images/pb/originalLogo_black.svg" alt="내셔널 지오그래픽 로고">
+            </div>
+            <div class="sns">
+                <a href="https://www.youtube.com/channel/UCPECLB_-7T4WukChKqhjv8g" target="_blank" title="내셔널 지오그래픽 유튜브 새 창으로 열림">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/natgeokorea/" target="_blank" title="내셔널 지오그래픽 인스타그램 새 창으로 열림">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/NatGeoKorea/" target="_blank" title="내셔널 지오그래픽 페이스북 새 창으로 열림">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://twitter.com/NatGeoKorea" target="_blank" title="내셔널 지오그래픽 트위터 새 창으로 열림">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p><b>개인정보처리방침</b><span>이용약관</span></p>
+        </div>
+        <p>COPYRIGHT © NATIONAL GEOGRAPHIC KOREA LLT. ALL RIGHT RESERVED</p>
+    </footer>
+
+    <div class="scrollMenu">
+        <span data-id="top">TOP</span>
+
+        <span data-id="s1">SCHEDULE</span>
+        <span data-id="s2">MOST RECENT</span>
+        <span data-id="s3">SCIENCE</span>
+        <span data-id="s4">ADVENTURE</span>
+        <span data-id="s5">WILD</span>
+        <span data-id="s6">REALITY</span>
+        <span data-id="s7">HISTORY</span>
+        <span data-id="s8">DRAMA</span>
+
+    </div>
+    <div class="mTop"><a href="#n">TOP</a></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="../js/pb.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* CheongJu Sub 1 Mobile */
+
+body{
+    min-width: 320px;
+}
+.inner{
+    width: 80%;
+}
+
+
+.section-one .inner{
+    width: 100%;
+    height: 140px;
+}
+
+.section-one .inner h1{
+    font-size: 30px;
+    line-height: 80px;
+}
+.section-one .inner .position .left .depth_one{
+    display: none;
+}
+.section-one .inner .position .left .depth_two{
+    width: 200px;
+}
+.section-one .inner .position .right .print{
+    display: none;
+}
+.section-one .inner .position .right .share{
+    border-left: none;
+}

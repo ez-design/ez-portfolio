@@ -1,0 +1,496 @@
+@charset "UTF-8";
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+/* font-awsome v5.10 */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.css');
+/* animate */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@font-face {
+    font-family: "NTS";
+    src: url(../font/NotoSansKR-Regular.woff);
+}
+@font-face {
+    font-family: "NTSL";
+    src: url(../font/NotoSansKR-Light.woff);
+}
+@font-face {
+    font-family: "NTSB";
+    src: url(../font/NotoSansKR-Bold.woff);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+* {
+    color: #fff;
+    font-family: "NTS";
+}
+
+body {
+    background-color: #000;
+}
+
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+header {
+    background: url(../img2/경기일정메인.png) 50% 50% no-repeat;
+    height: 748px;
+}
+
+header .inner {
+    width: 100%;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header .inner .headL > ul {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 0 0 125px;}
+
+header .inner .headL > ul > .Mlogo {
+    align-items: center;
+    display: none;
+}
+header .inner .headL > ul > .logo {
+    align-items: center;
+}
+
+
+header .inner .headR > ul {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    margin: 0 125px 0 0;
+}
+
+header .inner .headR > ul a {
+    margin: 0 0 0 30px;
+}
+
+header .inner .headR > ul a li {
+    opacity: 0.6;
+}
+
+header .inner .headR > ul li:nth-child(2) {
+    margin: 0 10px 0 10px;
+}
+
+header .inner .headR > ul a::after {
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: 65px;
+    right: 510px;
+    content: "";
+}
+
+header .inner .headR > ul a:nth-child(3)::after,
+header .inner .headR > ul a:nth-child(2)::after,
+header .inner .headR > ul a:last-child::after {
+    display: none;
+}
+
+header .inner .headR > ul .sns {
+    align-items: center;
+    opacity: 1;
+}
+
+
+header .inner ul li:hover {
+    color: #fb8335;
+}
+
+
+
+header nav {
+    display: none;
+}
+
+.headL ul li.sub {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headL ul li.sub > a {
+    width: 110px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+}
+
+
+.headL ul li.sub > a span:active,
+.headL ul li.sub > a span:visited,
+.headL ul li.sub > a span:hover {
+    color: #fb8335;
+}
+
+
+
+div.nav {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+    top: 141px;
+    background-color: rgba(37, 40, 42, 0.7);
+    transition: height 0.5s;
+}
+
+div.nav > .inner {
+    height: auto;
+    border-bottom: none;
+    position: absolute;
+    left: 228px
+}
+
+div.nav > .inner .list {
+    display: flex;
+    margin-top: 10px;
+}
+
+
+div.nav.on {
+    height: 210px;
+    transition: height 0.5s;
+}
+
+
+ul.submenu {
+    width: 110px;
+    margin: 0 5px;
+}
+
+
+
+
+ul.submenu li {
+    height: auto;
+    line-height: 27px;
+    font-size: 13px;
+}
+
+
+ul.submenu li a:hover {
+    color: #fb8335;
+}
+
+
+.list ul.submenu:nth-child(1) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(2) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+.list ul.submenu:nth-child(3) li:nth-child(1) a {
+    color: #fb8335;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+
+
+.intro {
+    width: 100%;
+
+}
+
+
+.intro .inner {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.intro .inner h1 {
+    font-size: 35px;
+    font-style: italic;
+    font-family: "NTSB";
+    color: #fb8335;
+}
+
+.intro .inner span strong {
+    font-size: 75px;
+}
+.intro .inner span {
+    font-size: 45px;
+}
+
+.intro .inner ul.menu {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    margin: 120px 0 150px 0;
+    padding-bottom: 20px;
+}
+
+.intro .inner ul.menu li {
+    font-size: 20px;
+    margin: 0 50px 0 0;
+    justify-content: flex-start;
+}
+.intro .inner ul.menu li:nth-child(1) a {color: #fb8335;}
+/* .intro .inner ul.menu li a:hover {
+    color: #fb8335;
+} */
+
+ul.menu li a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ///////////////////////////////////////////////////////////// */
+
+
+
+
+section {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+section .inner {
+    width: 1350px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+section .inner .ex {display: flex;
+                    align-items: center;}
+
+section .inner .ex span {font-size: 17px;}
+
+.ex .box {width: 35px;
+          height: 35px;
+          border-radius: 7px;
+          /* border: 0.5px solid rgba(255, 255, 255, 0.4); */
+          margin: 15px 7px 15px 30px ;
+          background: rgba(255, 255, 255, 0.2);}
+
+
+.ex .box1 {width: 35px;
+          height: 35px;
+          border-radius: 7px;
+          border: 0.5px solid rgba(255, 255, 255, 0.3);
+          margin: 15px 7px 15px 30px ;
+          background: #191b1d;}
+
+
+.ex .box2 {width: 35px;
+            height: 35px;
+            border-radius: 35px;
+            /* border: 0.5px solid rgba(255, 255, 255, 0.4); */
+            margin: 15px 7px 15px 30px ;
+            background: #fb8335;}
+
+
+.calendar {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: #191b1d;
+    padding: 80px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-container > .swiper-button-next{ top: 40px; right: 33%;
+                                         position: absolute; 
+                                         z-index: 30;
+                                         color: rgba(255, 255, 255, 0.6);}
+
+.swiper-container > .swiper-button-prev{ top: 40px; left: 33%; 
+                                         position: absolute; 
+                                         z-index: 30;
+                                         color: rgba(255, 255, 255, 0.6);}
+
+
+
+
+.rap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.date_head {
+    margin-bottom: 5px;
+}
+
+.date_head div {
+    /* background: #fb8335; */
+    border:0.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    color:  #fff;
+    text-align: center;
+    
+}
+
+
+.date_form {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 3px;
+}
+
+
+.date_text {text-align: center;
+            font-size: 50px;
+            font-family: "NTSL";
+            margin-bottom: 50px;}
+
+.date_form div {
+    padding: 5px 5px;
+    font-size: 16px;
+}
+
+.dateSel div {
+    display: flex;
+    flex-direction: column;
+    color: rgb(95, 95, 95);
+    height: 170px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.dateSel div.home { background: rgba(255, 255, 255, 0.1);}
+
+.dateSel .center2,
+.dateSel .center {align-items: center;
+                 border: none;
+                 margin-top: 10px;}
+
+
+.dateSel div img {height: 40%;}
+
+
+.dateSel .center2 span:nth-child(2),
+.dateSel .center span:nth-child(2) {opacity: 0.5;}
+
+
+.dateSel .center span:nth-child(3) {font-size: 14px;
+                                    opacity: 0.7;}
+
+.dateSel .center2 span:nth-child(3) {width: 23px;
+                                     height: 23px;
+                                     border-radius: 23px;
+                                     background: #fb8335;;
+                                     font-size: 14px;
+                                     color: #fff;
+                                     text-align: center;
+                                     align-items: center;}
+
+    
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+  
+}
+
+footer .inner {
+    margin: 0 auto;
+    width: 1670px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .inner .footerL {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+}
+
+.footerL .Elogo {
+    width: 250px;
+    margin: 0 0 30px 0;
+}
+
+footer .inner .footerL .footermenu span {
+    display: inline-block;
+    font-family: "NTSL";
+    padding: 0 30px 10px 0;
+    opacity: 0.5;
+    position: relative;
+}
+
+footer .inner .footerL .footermenu span::after {
+    width: 1px;
+    height: 10px;
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+footer .inner .footerL .footermenu span:last-child::after {
+    display: none;
+}
+
+footer .inner .footerL .footerMENU span {
+    display: inline-block;
+    padding: 20px 30px 0 0;
+    opacity: 0.5;
+    font-family: "NTSL";
+}
+
+
+footer .inner .footerL .footerMENU span:hover {
+    color: #fb8335;
+    opacity: 1;
+}
+
+.inner .footerR {
+    margin: 180px 0 0 0;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}

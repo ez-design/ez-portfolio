@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body{
+    min-width: 320px;
+    overflow-x:hidden ;
+    height: 5500px;
+}
+
+.inner{
+    width: 90%;
+    position: relative;
+}

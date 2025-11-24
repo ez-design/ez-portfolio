@@ -1,0 +1,247 @@
+@charset "UTF-8";
+body{min-width: 320px;}
+.inner{width: calc(100% - 40px);}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 50;
+    background: white;
+}
+header .inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header .inner > a{
+    display: none;
+}
+header .inner > div{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 120px);
+}
+header .inner .mlogo,
+header .mhome,
+header .mmenu{display: block;}
+
+/* nav  */
+.mNav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -45px;
+    right: 0;
+    background: #10161f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 45px 0 0 0;
+    z-index: 100;
+    transform: translatey(-100%);
+    transition: transform 0.5s;
+    padding: 100px 0 0 0;
+}
+
+.mNav.on{
+    transform: translatey(0%);
+    transition: transform 0.5s;
+}
+.mNav span{
+    font-size: 2rem;
+    display: block;
+    width: 280px;
+    border-bottom: 1px solid #eee;
+}
+.mNav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: auto;
+}
+.mNav .msnb li{
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: 300;
+    background: #1f2c36;
+    padding: 5px 0  5px 0;
+}
+.mNav .msnb li.on{
+    background: white;
+    color: #10161f;
+    text-decoration: underline;
+}
+.mNav > button.mclose{
+    display: block;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    margin: 20px;
+}
+.mNav > div{
+    margin: 0 0 20px 0;
+}
+nav{display: none;}
+
+/*sec01*/
+
+section.sec01{
+    height: 300px;
+}
+.sec01 .inner h1{
+    font-size: 3rem;
+}
+
+/*sec02*/
+.sec02 .field{
+    height: 250px;
+}
+.inner .field .swiper-container.mySwiper1{
+    width: 90%;
+    height: 200px;
+}
+.sec02 .field .fieldImg{
+    height: 200px;
+}
+
+.myswiper1 .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 1.3rem;
+}
+.myswiper3 .swiper-button-next:after, .swiper-button-next:after{
+    font-size: 1.3rem;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: -14px;
+    left: auto;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: -16px;
+    right: auto;
+}
+.sec02 .inner div p{
+    font-size: 1.4rem;
+}
+
+/*sec03*/
+.sec03 .inner{
+    height: auto;
+}
+.sec03 .inner .info{
+    height: auto;
+    flex-direction: column;
+}
+.info .right{
+    width: 100%;
+    font-size: 1rem;
+}
+.info .right ul{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.info .right ul li span:first-child{
+    width: 30%;
+}
+.info .right ul li span:last-child{
+    word-break: keep-all;
+    width: 70%;
+}
+.info .right ul li{
+    word-break: keep-all;
+    width: 100%
+}
+.info .left{
+    width: 100%;
+}
+.info .left .roadmap{
+    width: 90%;
+    height: 300px;
+    margin: 0 0 20px 0;
+}
+
+/*sec04*/
+.sec04 .inner h2{
+    font-size: 1.2rem;
+}
+.sec04 .inner h2 span:first-child{
+    font-size: 1.5rem;
+}
+.sec04 .inner p{
+    font-size: 1rem;
+}
+.sec04 .inner{
+    padding: 0;
+}
+
+/*sec05*/
+.sec05 .inner h2{
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
+.sec05 .inner h2 span:first-child{
+    font-size: 2rem;
+}
+.sec05 .map{
+    flex-direction: column;
+}
+.sec05 .map .mapImg{
+    width: 100%;
+    height: 300px;
+}
+.sec05 .map .mapInfo{
+    width: 100%;
+}
+.mapInfo p span:first-child{
+    font-size: 1.5rem;
+}
+.mapInfo p span:last-child{
+    font-size: 1rem;
+}
+
+/*sec06*/
+.sec06 .inner h2{
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
+.sec06 .inner h2 span:first-child{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/* footer  */
+footer{
+    height: auto;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+footer .ft1{
+    flex-wrap: wrap;
+    margin: 10px 0 20px;
+}
+footer .sns{
+    margin: 0px 0 20px 0;
+}
+footer .sns a{
+    margin: 5px;
+}
+
+footer .ft2 span:last-child{
+    font-size: 0.8rem;
+}

@@ -1,0 +1,171 @@
+@charset "UTF-8";
+body{min-width: 320px;}
+:root{
+    text-align: center;
+}
+.sec01 h1{
+    font-size: 3.5rem;
+}
+.sec01 h2{
+    font-size: 2rem;
+}
+.mySwiper .swiper-pagination.pageVertical{
+    display: none;
+}
+.swiper-container-vertical > .swiper-pagination-bullets{
+    top: 10%;
+}
+.down{
+    display: none;
+}
+/*sec02*/
+.sec02 h1{
+    font-size: 3rem;
+    padding: 0 0 0 1%;
+}
+.sec02 h2{
+    font-size: 1.5rem;
+    padding: 0 0 0 1%;
+}
+.box{
+    width: 95%;
+    flex-direction: column;
+    padding: 5% 0 0 0;
+}
+.left{
+    width: 100%;
+    padding: 0;
+}
+.sec02 h3{
+    font-size: 1.2rem;
+    padding: 1% 0;
+}
+.left p{
+    font-size: 0.8rem;
+}
+.left span {
+    width: 20px;
+    height: 20px;
+    margin: 0px 2% 0 0;
+}
+.left .color {
+    height: 25px;
+}
+.bt{
+    margin: 2% 0 0 0;
+    justify-content: center;
+}
+.bt a {
+    width: 120px;
+    height: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 22px;
+}
+.right{
+    width: 100%;
+}
+.swiper-pagination.pg1{
+    top: 0;
+}
+.sec02 .right .browser {
+    width: 98%;
+    height: 50vw;
+    border-radius: 10px;
+    border: 5px solid #000;
+    top: 21px;
+    left: 4px;
+}
+.sec02 .right::after{
+    display: none;
+}
+.swiper-container .pA {
+    margin: 25px 0 0 0;
+    width: 96%;
+}
+.sec02 .color span:nth-of-type(1){
+    width: 100%;
+}
+.sec02 .color span:nth-of-type(2){
+    width: 65%;
+}
+.sec02 .color span:nth-of-type(3){
+    width: 35%;
+}
+
+/*sec03*/
+.sec03 h1{
+    font-size: 3rem;
+    padding: 0 0 0 1%;
+}
+.sec03 h2{
+    font-size: 1.5rem;
+    padding: 0 0 0 1%;
+}
+.sec03 h3{
+    font-size: 1.2rem;
+    padding: 1% 0;
+}
+
+.sec03 .right .browser {
+    width: 96%;
+    height: 52vw;
+    border-radius: 10px;
+    border: 5px solid #000;
+    top: 20px;
+    left: 9px;
+}
+.swiper-pagination.pg2{
+    top: 0;
+}
+
+.sec03 .right::after{
+    display: none;
+}
+.swiper-container .pB {
+    margin: 25px 0 0 5px;
+    width: 96%;
+    height: 50vw;
+}
+.sec03 .color span:nth-of-type(1){
+    width: 100%;
+}
+.sec03 .color span:nth-of-type(2){
+    width: 65%;
+}
+
+
+/*sec04*/
+.sec04 h1{
+    font-size: 3rem;
+    padding: 0 0 0 1%;
+}
+.sec04 h3{
+    font-size: 1.2rem;
+    padding: 1% 0;
+}
+.sec04 .link{
+    padding: 10% 0 0 0;
+}
+.sec04 a{
+    font-size: 1.5rem;
+}
+.sec04 a span {
+    font-size: 2rem;
+}
+.sec04 a:nth-of-type(1) {
+    padding: 0;
+    width: 170px;
+}
+.sec04 a:nth-of-type(2) {
+    word-break: break-all;
+    padding: 0;
+    width: 190px;
+}
+.sec04 .box{
+    height: 52%;
+    padding: 5% 0 0 0;
+}
+.sec04 .left{
+    width: 100%;
+}

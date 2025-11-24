@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* TeamFightTactics 모바일 CSS */
+
+body{
+    min-width: 320px;
+    overflow-x:hidden ;
+    height: 5500px;
+}
+/* body {
+    min-width: 320px;
+    width: 95%;
+    background: url(../images/pa/롤토체스_main_320m.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    background-position: top;
+} */
+.inner{
+    width: 90%;
+    position: relative;
+}
+.gnb li:first-child{
+    display: none;
+}
+nav > .inner > .top > .topL{
+    display: none;
+}
+nav>.inner ul.gnb li {
+    font-size: 1.3rem;
+}
+.champ1, .champ2, .champ3, .champ4, .rabbit{
+    display: none;
+}
+a.logo{
+    width: 15%;
+    height: 50px;
+}
+nav > .inner ul.gnb {
+    width: 80%;
+}
+
+/*sec01*/
+.sec01{
+    height: auto;
+}
+.maintft{
+    margin: 250px 0 0 0;
+    width: 90%;
+    height: 80px;
+}
+.mainbt{
+    width: 70%;
+    height: 70px;
+    margin: 10px 0 0 0;
+}
+.intro{
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+main .scrollmouse{
+    display: none;
+}
+main .property > h1{
+    font-size: 3rem;
+    margin: 0;
+}
+main .property > h6{
+    font-size: 1.2rem;
+}
+main .p1{
+    background: url(../images/계열시작.png) 0% 50% no-repeat;
+    background-size: cover;
+    margin: 30px 0 0 0 ;
+    height: 35px;
+}
+.box01 span{
+    height: 80px;
+}
+main .affiliation{
+    justify-content: space-between;
+}
+.box01{
+    width: 22%;
+}
+.box01 p{
+    font-size: 0.7rem;
+}
+main .p2 {
+    background: url(../images/직업시작.png) 100% 50% no-repeat;
+    background-size: cover;
+    height: 35px;
+    margin: 30px 0 0 0;
+}
+.box02 p{
+    font-size: 0.7rem;
+}
+.box02{
+    width: 22%;
+}
+.box02 span{
+    height: 80px;
+}
+
+.newsbg{
+    margin-top: 50px;
+    height: 75px;
+}
+.swiper{
+    width: 100%;
+    height: 75px;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    display: none;
+}
+.sec02{
+    margin: 50px 0 0 0; 
+}
+.sec02 .introduce> h1{
+    margin: 0;
+    font-size: 3rem;
+}
+.sec02 .introduce > h6{
+    font-size: 1.2rem;
+}
+.inner > .contents{
+    margin-top: 0;
+}
+.inner .box{
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    height: auto;
+    margin: 25px 0 0 0;
+}
+.box .left1{
+    width: 100%;
+}
+.box .right1{
+    width: 100%;
+    padding: 0;
+}
+.inner .box .title{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.inner .box p.copy{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: -1px;
+}
+.box.two .right1,
+.box.three .left1{
+    display: none;
+}
+.inner .box.one .left1{
+    height: 200px;
+    margin: 0 0 20px 0;
+}
+
+/*sec03*/
+.sec03{
+    margin: 50px 0 0 0;
+}
+.sec03 .how > h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
+.sec03 .how > h6{
+    font-size: 1.2rem;
+}
+.border{
+    margin-top: 30px;
+    width: 100%;
+    height: 280px;
+    border: 2px solid aquamarine;
+}
+.howvideo{
+    width: 90%;
+}
+.howvideo iframe{
+    width: 100%;
+    height: 250px;
+}
+.inner .cbox{
+    height: 460px;
+    margin: 10px 0;
+}
+.inner .downtft{
+    width: 80%;
+    margin: 30px 0 0 0;
+}
+.inner .download{
+    width: 100%;
+    justify-content: space-around;
+}
+.download span{
+    width: 135px;
+}
+.inner > .contents3{
+    margin: 30px 0 0 0;
+}
+/*footer*/
+footer{
+    width: 100%;
+}
+footer .inner{
+    flex-direction: column;
+    height: auto;
+}
+.inner .left{
+    width: 100%;
+    text-align: center;
+}
+footer .inner .grade{
+    height: 75px;
+    width: 100%;
+    margin: 30px 0;
+}
+footer .inner .footinfo{
+    height: 140px;
+    width: 100%;
+}

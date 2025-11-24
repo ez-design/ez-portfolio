@@ -1,0 +1,735 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* Noto Sans KR 폰트 */
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+Oswald 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons');
+/* Material Icons baseline*/
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Round');
+/* Material Icons Round*/
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Sharp');
+/* Material Icons Sharp*/
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* Material Icons */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/*anton 폰트*/
+@keyframes scrollmouse {
+    100% {transform: translate(0,100px); opacity: 0;}
+}
+@keyframes rabbit{
+    100% {transform: translate(0,100px); opacity: 1;}
+    50% {transform: translate(0,50px); opacity: 1;}
+    0% {transform: translate(0,100px); opacity: 1;}
+}
+@keyframes draven{
+    100% {transform: translate(0,100px); opacity: 0.5;}
+    50% {transform: translate(0,50px); opacity: 1;}
+    0% {transform: translate(0,100px); opacity: 0.5;}
+}
+@keyframes kayle{
+    100% {transform: translate(0,100px); opacity: 0.5;}
+    50% {transform: translate(0,50px); opacity: 1;}
+    0% {transform: translate(0,100px); opacity: 0.5;}
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid skyblue; */
+}
+
+:root {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+    min-width: 1200px;
+    height: 7071px;
+    background: url(../images/롤토체스_main_bg.jpg) 50% 0% no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+}
+
+.inner .gnb li {
+    list-style: none;
+    /* border-bottom: 1px solid transparent; */
+}
+.inner .gnb li a {
+    text-decoration: none;
+    color: white;
+}
+
+.inner .top .gnb li a:hover{
+    color: aquamarine;
+    border-bottom: 1px solid aquamarine;
+}
+
+
+nav{
+    height: 100%;
+    cursor: pointer;
+    margin: 50px auto;
+}
+nav > .inner > .top {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+nav > .inner > .top > .topL{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+a.logo {
+    background: url(../images/t로고.png) 10% 50% no-repeat;
+    width: 20%;
+    height: 80px;
+    background-size: contain;
+    display: block;
+}
+nav > .inner ul.gnb {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+nav>.inner ul.gnb li {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.topL{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.topL span{
+    width: 50px;
+    height: 30px;
+}
+.topL span:nth-child(1){
+    background: url(../images/blog_bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.topL span:nth-child(2){
+    background: url(../images/facebook-bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.topL span:nth-child(3){
+    background: url(../images/twitter-bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.topL span:nth-child(4){
+    background: url(../images/eng-bt.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+/* -------------sec01--------------- */
+
+.sec01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 850px;
+    justify-content: flex-end;
+
+}
+.maintft{
+    background: url(../images/main_tft.png) 50% 50% no-repeat;
+    width: 700px;
+    height: 205px;
+    background-size: contain;
+}
+.mainbt{
+    background: url(../images/main_bt.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 320px;
+    height: 100px;
+    margin: 30px 180px;
+}
+.intro{
+    color: #fff;
+    font-family: Noto Sans;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 30px;
+    background: rgba(20, 88, 68, 0.5);
+    width: 700px;
+    height: 135px;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+main{
+    /* min-width: 1200px; */
+    margin: 100px auto 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main .scrollmouse{
+    background: url(../images/mouse.png) 50% 50% no-repeat;
+    height: 63px;
+    align-self: center;
+    animation: scrollmouse 1.5s infinite;
+}
+
+main .property > h1{
+    margin: 250px auto 0;
+    background: linear-gradient(to bottom, #fff, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: relative;
+    font-size: 5rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 900;
+}
+
+main .property > h6{
+    margin: 0 auto 0;
+    color: aquamarine;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+}
+
+main .p1{
+    background: url(../images/계열시작.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 54px;
+    align-items: center;
+    margin: 80px auto 0;
+}
+
+main .affiliation{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    font-size: 1.1rem;
+    font-weight: 200;
+    transform: translate(0,-20px);
+    transition-delay: .10s;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    flex-wrap: wrap;
+}
+.box01{
+    display: flex;
+    flex-direction: column;
+    width: 14.285%;
+    margin: 0 0 3% 0;
+}
+.box01 span{
+    width: 100%;
+    height: 124px;
+}
+.box01 p{
+    margin: 12px 0 0 0;
+}
+.box01:nth-child(1) span{
+    background: url(../images/괴생1.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(2) span{
+    background: url(../images/악여2.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(3) span{
+    background: url(../images/빛인3.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(4) span{
+    background: url(../images/용족4.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(5) span{
+    background: url(../images/용사5.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(6) span{
+    background: url(../images/영겁6.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(7) span{
+    background: url(../images/망각7.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(8) span{
+    background: url(../images/철갑8.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(9) span{
+    background: url(../images/어둠9.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(10) span{
+    background: url(../images/구원10.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(11) span{
+    background: url(../images/망령11.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box01:nth-child(12) span{
+    background: url(../images/신록12.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.box02{
+    display: flex;
+    flex-direction: column;
+    width: 14.285%;
+    margin: 0 0 3% 0;
+}
+.box02 span{
+    width: 100%;
+    height: 124px;
+}
+.box02 p{
+    margin: 12px 0 0 0;
+}
+.box02:nth-child(1) span{
+    background: url(../images/13암살.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(2) span{
+    background: url(../images/14싸움꾼.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(3) span{
+    background: url(../images/15용사육사.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(4) span{
+    background: url(../images/16기병대.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(5) span{
+    background: url(../images/17주문술사.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(6) span{
+    background: url(../images/18극악무도.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(7) span{
+    background: url(../images/19신왕.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(8) span{
+    background: url(../images/20기원자.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(9) span{
+    background: url(../images/21기사.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(10) span{
+    background: url(../images/22군단.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(11) span{
+    background: url(../images/23신비술사.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(12) span{
+    background: url(../images/24정찰대.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(13) span{
+    background: url(../images/25재생술사.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.box02:nth-child(14) span{
+    background: url(../images/26척후병.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+main .proani1{
+    color: white;
+    width: 106px;
+    height: 124px;
+    margin: 0 30px;
+    opacity: 1;
+}
+main .p2{
+    background: url(../images/직업시작.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 54px;
+    align-items: center;
+    margin: 80px auto 0;
+}
+.newsbg{
+    position: unset;
+    margin-top: 300px;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to bottom, rgb(17, 141, 131), aquamarine);
+    background-position: unset;
+}
+
+.mySwiper .swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+.news01{
+    background: url(../images/news2set.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.news02{
+    background: url(../images/news2set-2.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.news03{
+    background: url(../images/news2set-3.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.swiper{
+    width: 1200px;
+    height: 250px;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: black;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    color: black;
+}
+
+
+/*sec02*/
+
+.sec02{
+    /* min-width: 1200px; */
+    margin: 130px auto 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec02 .introduce> h1{
+    margin: 80px auto 0;
+    background: linear-gradient(to bottom, #fff, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: relative;
+    font-size: 5rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 900;
+}
+
+.sec02 .introduce > h6{
+    margin: 0 auto 0;
+    color: aquamarine;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+}
+
+.inner > .contents {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.inner .box {
+    width: 1200px;
+    height: 325px;
+    display: flex;
+    padding: 20px;
+    color: #fff;
+}
+.box .left1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box .right1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 20px;
+}
+.inner .box.one .left1{
+    background: url(../images/하는방법1.gif) no-repeat;
+    background-size: cover;
+}
+
+.inner .box.two .right1{
+    float: right;
+    background: url(../images/하는방법2.gif) 100% 50% no-repeat;
+    background-size: cover;
+}
+
+.inner .box .title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: aquamarine;
+    text-decoration: underline 2px aquamarine;
+    letter-spacing: -1px;
+}
+
+.inner .box p.copy {
+    /* font-family: Noto sans; */
+    color: #fff;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    word-break: keep-all;
+}
+
+.inner .box.three .left1{
+    background: url(../images/하는방법3.gif) no-repeat;
+    background-size: cover;
+}
+
+.rabbit{
+    display: block;
+    margin-left: 900px;
+    margin-top: -150px;
+    position: absolute;
+    width:255px;
+    height:200px;
+    background: url(../images/토끼캐릭터.png) center center / 100% no-repeat;
+    animation: rabbit 3s infinite;
+}
+
+.sec03{
+    /* min-width: 1200px; */
+    margin: 100px auto 0;
+    height: auto;
+    position: relative;
+}
+.sec03 .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec03 .how> h1{
+    margin: 110px auto 0;
+    background: linear-gradient(to bottom, #fff, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    position: relative;
+    font-size: 5rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 900;
+    z-index: 10;
+}
+
+.sec03 .how > h6{
+    margin: 0 auto 0;
+    color: aquamarine;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    z-index: 10;
+}
+
+.champ1{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    background: url(../images/배경-드레이븐.png) center center / 100% no-repeat;
+    width: 865px;
+    height: 691px;
+    animation: draven 4s infinite;
+}
+.champ2{
+    position: absolute;
+    top: 550px;
+    left: 0;
+    background: url(../images/배경-케일.png) center center / 100% no-repeat;
+    width: 865px;
+    height: 626px;
+    animation: kayle 3.5s infinite;
+    animation-direction: reverse;
+    animation-delay: 2s;
+}
+.champ3{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: url(../images/배경-니달리.png) center center / 100% no-repeat;
+    width: 865px;
+    height: 691px;
+    animation: draven 4s infinite;
+    animation-direction: reverse;
+    overflow: hidden;
+}
+.champ4{
+    position: absolute;
+    top: 550px;
+    right: 0;
+    background: url(../images/배경-칼리스타3.png) center center / 100% no-repeat;
+    width: 1000px;
+    height: 600px;
+    animation: kayle 4s infinite;
+    animation-delay: 2s;
+    overflow: hidden;
+}
+.border {
+    margin-top: 50px;
+    width: 1150px;
+    height: 700px;
+    border: 4px solid aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.howvideo {
+    height: auto;
+    z-index: 10;
+}
+
+.inner > .contents3 {
+    /* min-width: 1000px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inner .cbox {
+    display: inline-block;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 80px;
+    width: 380px;
+    height: 540px;
+    color: #fff;
+}
+.inner .cbox.one{
+    background: url(../images/플레이방법1.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+
+.inner .cbox.two{
+    background: url(../images/플레이방법2.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.inner .cbox.three{
+    background: url(../images/플레이방법3.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.inner .cbox.two:hover{
+    background: url(../images/플레이방법2_hover.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.inner .cbox.three:hover{
+    background: url(../images/플레이방법3_hover.jpg) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.inner .downtft {
+    background: url(../images/main_tft.png) 50% 50% no-repeat;
+    background-size: contain;
+    margin: 180px auto 0;
+    width: 374px;
+    height: 112px;
+}
+.inner .download{
+    align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 20px auto;
+    width: 350px;
+}
+.download span{
+    width: 160px;
+    height: 50px;
+}
+.download span:first-child{
+    background: url(../images/다운로드_구글.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.download span:last-child{
+    background: url(../images/다운로드_애플.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.google, .apple {
+    cursor: pointer;
+}
+
+/*footer*/
+footer .inner{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.inner .left{
+    color: #fff;
+    font-family: 'Noto Sans KR';
+    font-weight: 200;
+    font-size: 0.9rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.left p:nth-child(2){
+    margin: 30px 0 0 0;
+}
+footer .inner .grade{
+    background: url(../images/푸터폭력성.png) 50% 100% no-repeat;
+    width: 140px;
+    height: 100%;
+    background-size: contain;
+}
+
+footer .inner .footinfo{
+    background: url(../images/푸터표.png) 50% 100% no-repeat;
+    width: 345px;
+    height: 100%;
+    background-size: contain;
+}

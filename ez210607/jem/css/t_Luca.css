@@ -1,0 +1,412 @@
+body {
+    min-width: 640px; 
+}
+.group {
+    margin: 0 auto;
+    width: 100%;
+}
+/* header */
+.header{
+    background: url(../images/luca_01.png) no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.header div:first-child{
+    font-size: 12px;
+    width: 100%;
+}
+.header > div:first-child a{
+    padding: 10px;
+
+}
+.header > div:last-child{
+    margin-left: 10%;
+}
+.header > div:last-child p {
+    margin-top: 60%;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+/* part1 */
+
+.part1 {
+    background-size: auto 100%;
+    padding: 0%;
+    background-position: -380px 0px;
+}
+.part1 h1 {
+    font-size: 30px;
+    padding: 5% 0;
+    letter-spacing: 2px;
+}
+.part1 p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+.part1 > div:last-child {
+    flex-direction: column;
+    justify-content: start;
+}
+.part1 > div:last-child ul {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+.part1 .tab1 li:first-child {
+    margin-top: 0%;
+}
+.part1 .tab1 > ul li {
+    padding: 5px;
+    margin: 0% 0px 0 0px;
+    margin-top: 0%;
+}
+.part1 .tab1 .content {
+    width: 100%;
+    padding: 0 5%;
+}
+.part1 .tab1 .conBox .tab2 img {
+    width: 90%;
+    height: auto;
+}
+.part1 .tab1 .content .conBox .tab2 .contBox {
+    margin: 2% 0;
+}
+.part1 .tab1 .conBox .tab2 > div:last-child p {
+    width: 100%;
+    word-break: keep-all;
+}
+.part1 .tab1 .content .conBox .tab2 div:last-child .p1::after {
+    display: none;
+}
+.part1 .conBox .trailer iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.part2 h2,
+.part3 h2,
+.part4 h2 {
+    font-size: 30px;
+    padding: 5% 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.s03 .slick-dots {
+    position: absolute;
+    top: 13%;
+    right: 0%;
+    height: 15px;
+}
+.s03 .slick-dots li.slick-active,
+.s03 .slick-dots li:hover{
+    font-size: 20px;
+}
+/* part2 */
+.part2 {
+    padding: 0%;
+    background-size: auto 100%;
+    background-position: 53% 0px;
+}
+.part2 .luca {
+    width: 100%;
+    float: none;
+}
+.part2 .luca p {
+    padding: 0 10%;
+    margin-top: 0%;
+}
+h3 {
+    font-size: 25px;
+    padding: 2% 0;
+    letter-spacing: 3px;
+    margin-top: 25%;
+}
+.p2 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 23px;
+}
+.part2 button,
+.part3 button,
+.part4 button {
+    width: 40%;
+    margin: 2% 0 2% 30%;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.image > img {
+    width: 25%;
+    margin: 0;
+}
+.image > img:first-child{
+    margin-right: 2%;
+}
+.part2 .ch_Box .mainl {
+    margin-top: 11%;
+    margin-left: 6%;
+}
+
+/* part3 */
+.part3 {
+    padding: 0%;
+    background-size: auto 100%;
+    background-position: 30% 0
+}
+.part3 .Alberto {
+    text-align: center;
+    width: 100%;
+}
+.part3 .Alberto p {
+    padding: 0 10%;
+    margin-top: 0;
+}
+.part3 .ch_Box .mainl {
+    margin-left: 5%;
+}
+/* part4 */
+.part4 {
+    padding: 0%;
+    background-size: auto 100%;
+    background-position: 61% 0;
+}
+.part4 .Giulia {
+    width: 100%;
+    float: none;
+}
+.part4 .Giulia p {
+    padding: 0 10%;
+    margin-top: 0%;
+}
+
+.part4 .ch_Box .mainl {
+    margin-left: 5%;
+}
+/* part5 */
+.part5 {
+    padding: 0%;
+    background-size: auto 100%;
+    background-position: 76% 0;
+}
+.part5 h2 {
+    margin-bottom: 0%;
+    font-size: 30px;
+    padding: 5% 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.part5 .swiper-container {
+    width: 95%;
+    height: 78%;
+    margin-top: 6%;
+    margin-left: 2%;
+}
+.part5 .swiper .sw1 .p5 .tBox div > h4 {
+    font-size: 20px;
+    padding: 6%;
+}
+.part5 .swiper .sw1 .p5 .tBox div > p {
+    padding: 5%;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin: 0;
+}
+.part5 .swiper .sw1 .p5 .ch1 {
+    background-size: 70% auto;
+    background-position: 60px 40px;
+    height: 40%;
+}
+.part5 .swiper .sw1 .p5 .ch2 {
+    background-size: 70% auto;
+    background-position: 55% 85%;
+    height: 40%;
+}
+.part5 .swiper .sw1 .p5 .ch3 {
+    background-size: 70% auto;
+    background-position: 55px 65px;
+    height: 40%;
+}
+.part5 .swiper .sw1 .p5 .ch4 {
+    background-position: 55% 95%;
+    height: 40%;
+    background-size: 58% auto;
+}
+.part5 .swiper .sw1 .p5 .ch5 {
+    background-position: 75px 16px;
+    height: 40%;
+    background-size: 70% auto;
+}
+.part5 .swiper .sw1 .p5 .ch6 {
+    background-position: 55px 45px;
+    height: 40%;
+    background-size: 70% auto;
+}
+.part5 .swiper .sw1 .p5 .ch7 {
+    background-position: 70px 30px;
+    height: 40%;
+    background-size: 75% auto;
+}
+.part5 .sw1 .p5 .tBox {
+    height: 58%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+.container{
+    background-size: auto 100%;
+    background-position: 30% 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+/* .container .Box{
+    flex-direction: column;
+    justify-content: unset;
+} */
+.part5 .swiper-slide {
+    height: 85%;
+}
+.part5 .sw1 .p5 .tBox button {
+    margin-right: 15%;
+}
+
+.container{
+   background-size:auto 100% ;
+
+}
+
+/* part6 */
+.part6 {
+    height: auto;
+    /* width: 100%; */
+    width: 45%;
+}
+.part6 h2 {
+    font-size: 30px;
+    padding: 10% 0;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.part6 h5 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 3%;
+}
+.part6 h6 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 3%;
+    margin: 0;
+}
+.part6 p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 3%;
+}
+.part6 .S2 .p6-1,
+.part6 .S2 .p6-2,
+.part6 .S2 .p6-3{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10px;
+    height: 50vh; */
+    height: 45vh;
+    background-position: 20% 0%;
+    /* margin-left: 3%; */
+    width: 57%;
+    height: 80vh;
+    padding: 0 10px;
+
+}
+.part6 .S2 .p6-1 .pt6-1 {
+    /* height: 45vh;
+    background-position: 20% 0%;
+    margin-left: 3%; */
+    height: 70%;
+    background-position: 48% 0%;
+    background-size:auto 100%  ;
+}
+.part6 .S2 .p6-2 .pt6-2{
+    /* height: 45vh;
+    background-position: 55% 0%; */
+    height: 70%;
+    background-position: 48% 0%;
+    background-size:auto 100%  ;
+}
+.part6 .S2 .p6-3 .pt6-3{
+    height: 70%;
+    background-position: 48% 0%;
+    background-size: auto 100%;
+}
+.part6 .S2 .t_Box{
+    width: 95%;
+    padding: 0 2%;
+    margin-left: 2%;
+}
+/* part7 */
+.part7 {
+    height: 25vh;
+    /* width: 100%; */
+    width: 35%;
+}
+.part7 h2 {
+    font-size: 30px;
+    padding: 10% 0;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+.part7 .Gs1 .g1,
+.part7 .Gs1 .g2,
+.part7 .Gs1 .g3,
+.part7 .Gs1 .g4,
+.part7 .Gs1 .g5,
+.part7 .Gs1 .g6,
+.part7 .Gs1 .g7,
+.part7 .Gs1 .g8,
+.part7 .Gs1 .g9,
+.part7 .Gs1 .g10,
+.part7 .Gs1 .g11,
+.part7 .Gs1 .g12,
+.part7 .Gs1 .g13,
+.part7 .Gs1 .g14,
+.part7 .Gs1 .g15,
+.part7 .Gs1 .g16,
+.part7 .Gs1 .g17,
+.part7 .Gs1 .g18,
+.part7 .Gs1 .g19,
+.part7 .Gs1 .g20,
+.part7 .Gs1 .g21,
+.part7 .Gs1 .g22,
+.part7 .Gs1 .g23,
+.part7 .Gs1 .g24,
+.part7 .Gs1 .g25{
+    background-position: 50% 0px;
+    background-size:auto 100% ;
+    margin-bottom: 20px;
+}
+/* footer */
+.Gs1 {
+    width: 70%;
+    height: 80%;
+    padding: 0 0%;
+    margin-left: 13%;
+}
+.container footer {
+    padding-bottom: 5%;
+    margin-top: 8%;
+}
+.container footer div > p {
+    font-size: 8px;
+    padding: 5px;
+} 

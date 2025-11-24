@@ -1,0 +1,745 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* noto sans 글씨체 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+/* Material Icons Outlined*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* 나눔명조 글씨체 */
+/* font-family: 'Nanum Myeongjo', serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid teal; */
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    position: relative;
+}
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    word-break: keep-all;
+    --swiper-theme-color:#81d8d0;
+}
+section.scroll_v > .swiper-pagination-bullet {
+    background: #f1f1f1;
+    opacity: .5;
+  }
+section.scroll_v > .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--swiper-pagination-color,var(--swiper-theme-color)) !important;
+  }
+.swiper-container { width: 100%; height: 100vh; }
+section.scroll_v{ height: 100vh; }
+.swiper-container-vertical > .swiper-pagination-bullets {
+    right: 20px;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+    right: 18px;
+}
+section.scroll_v > .swiper-button-prev{
+    right: 10px;
+    left: unset;
+    transform: rotate(90deg);
+    margin: -100px 0 0 0;
+}
+section.scroll_v > .swiper-button-next{
+    transform: rotate(90deg);
+    margin: 50px 0 0 0;
+}
+
+/*header*/
+header a.logo{
+    background: url(../images/logo.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+/*sec01*/
+.sec01 .box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h1{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2.5vw;
+    padding: 0 0 2% 0;
+}
+.box p{
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+.box.one .diamond{
+    background: url(../images/mailring.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 70%;
+}
+.box.one .title{
+    margin: 0 2% 0 0;
+}
+.box.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+.box.two .shine{
+    background: url(../images/main.png) 50% 0% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+    opacity: 0.8;
+}
+.box.two .title{
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.box.three .kun1{
+    background: url(../images/Kunzite.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 20%;
+    height: 80%;
+}
+.box.three .title{
+    width: 30%;
+    margin: 0 2% 0;
+}
+.box.three .kun2{
+    background: url(../images/kunzite2.png) 50% 80% no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 80%;
+    opacity: 0.6;
+}
+.box.four .morga{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box.four .morga .mor1{
+    background: url(../images/morganite.png) 60% 50% no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 45%;
+    opacity: 0.8;
+}
+.box.four .morga .mor2{
+    background: url(../images/morganite1.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 45%;
+    height: 50%;
+    margin: 0 5% 0 0;
+    opacity: 0.8;
+}
+.box.four .morga .mor3{
+    background: url(../images/morganite2.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 45%;
+    height: 50%;
+    opacity: 0.8;
+}
+.box.four .title{
+    margin: 0 0 0 2%;
+    width: 30%;
+}
+.box.five{
+    position: relative;
+}
+.box.five .tan1{
+    background: url(../images/tanzanite.png) 50% 0% no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 100%;
+    margin: 0 10% 0 0;
+    opacity: 0.8;
+}
+.box.five .tan2{
+    background: url(../images/tanzanite2.png) 50% 80% no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+    opacity: 0.8;
+}
+.box.five .title{
+    width: 30%;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.box.six .title{
+    width: 30%;
+    margin: 0 2% 0;
+}
+.box.six .tsavo1{
+    background: url(../images/tsavorite.png) 50% 10% no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 90%;
+}
+.box.six .tsavo2{
+    background: url(../images/tsavorite2.png) 50% 90% no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 90%;
+    opacity: 0.8;
+}
+.swiper-container{
+    height: 100vh;
+}
+/* .swiper-scrollbar{
+    background: none;
+}
+.myswiper .swiper-scrollbar-drag{
+    background: #81d8d0;
+} */
+.mySwiper .swiper-pagination-bullet{
+    width: 40px;
+    height: 40px;
+    background: url(../images/bullet.png) 50% 50% no-repeat;
+    background-size: contain;
+    opacity: 1;
+}
+.mySwiper .swiper-pagination-bullet-active{
+    width: 40px;
+    height: 55px;
+    background: url(../images/bullet_active.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+/*sec02*/
+
+.sec02{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    overflow: hidden;
+}
+.sec02 h1{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 3rem;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    /* transform: translateY(-1000px); */
+}
+/* .sec02.on h1{
+    transform: translateY(0px);
+    transition: all 1s;
+} */
+.sec02 .history{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 20;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+.history .bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30%;
+    height: 70%;
+}
+.history .bar::after{
+    position: absolute;
+    top: 74px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 4px;
+    content: "";
+    background: rgba(0,0,0,0.3);
+}
+
+.bar .year{
+    width: 80px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 10;
+    position: relative;
+}
+.year span:nth-child(1){
+    font-size: 1.5rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 900;
+    position: relative;
+    padding: 15px;
+}
+.year span:nth-child(1)::before{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #81d8d0;
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.year span:nth-child(2){
+    position: absolute;
+    top: 119px;
+    right: -110px;
+    width: 300px;
+    font-size: 1rem;
+    background: #fff;
+    border: 2px solid #81d8d0;
+    opacity: 0;
+    padding: 10px;
+    /* text-align: center; */
+}
+.year span:nth-child(2)::before{
+    width: 3px;
+    height: 50px;
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #81d8d0;
+    content: "";
+}
+/* .year:hover > span:nth-child(1){
+    color: #81d8d0;
+    font-size: 2vw;
+    background: rgba(0,0,0,0.5);
+}
+.year:hover > span:nth-child(2){
+    animation: fadeInDown 1s ease;
+    opacity: 1;
+    transition: opacity 0.3;
+} */
+
+.year span:nth-child(1):hover{
+    color: #81d8d0;
+    font-size: 2rem;
+    background: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+    padding: 5px 10px;
+}
+.year span:nth-child(1):hover ~ span:nth-child(2){
+    animation: fadeInDown 1s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.designer{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.designer .info{
+    width: 33.333333%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+    position: relative;
+}
+.info h2{
+    font-size: 2.5vw;
+    font-family: 'Nanum Myeongjo', serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+.info.elsa{
+    background: url(../images/elsa_peretti.png) 50% 50% no-repeat;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    position: relative;
+}
+.info.jean{
+    background: url(../images/jean_schlumberger.png) 50% 50% no-repeat;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    position: relative;
+}
+.info.picasso{
+    background: url(../images/paloma_picasso.png) 50% 50% no-repeat;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    position: relative;
+}
+
+.intro{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 40%;
+    margin: 0 0 10% 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0 5%;
+    transform: translateY(1000px);
+}
+.intro p:nth-child(1){
+    font-size: 1.5vw;
+    font-family: 'Nanum Myeongjo', serif;
+    padding: 5% 0;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro p:nth-child(2){
+    font-size: 1vw;
+    font-weight: 200;
+    height: 30%;
+}
+.intro span{
+    width: 100%;
+    height: 30%;
+}
+.elsa .intro span{
+    background: url(../images/elsa.png) 50% 50% no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 5% 0;
+}
+.jean .intro span{
+    background: url(../images/jean.png) 50% 50% no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 5% 0;
+}
+.picasso .intro span{
+    background: url(../images/picasso.png) 50% 50% no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 5% 0;
+}
+
+.info:hover{
+    background-blend-mode: multiply;
+}
+.info:hover > h2{
+    color: #fff;
+    top: 50%;
+    transition: top 1s;
+}
+.info:hover > .intro{
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+
+/*sec03*/
+.sec03{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.sec03 .inner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec03 .fourC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    opacity: 0;
+    margin: 0 0 2% 0;
+}
+.fourC div:first-child{
+    background: url(../images/4c.png) 50% 70% no-repeat;
+    width: 40%;
+    height: 100%;
+    background-size: contain;
+}
+.fourC div:last-child{
+    width: 35%;
+    margin: 0 0 0 2%;
+}
+.fourC div:last-child h2{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2vw;
+    margin: 0 0 3% 0;
+}
+.fourC div:last-child p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.sec03.on .fourC{
+    animation: fadeIn 1s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.dia{
+    display: flex;
+    justify-content: space-around;
+    height: 45%;
+    /* opacity: 0; */
+}
+.dia .box{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 90%;
+    text-align: center;
+    opacity: 0;
+    justify-content: space-between;
+}
+.dia .box span:nth-child(1){
+    width: 100%;
+    height: 70%;
+}
+.dia .box span:nth-child(2){
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2vw;
+    margin: 5% 0;
+}
+.dia .box span:nth-child(3){
+    font-size: 1rem;
+    font-weight: 300;
+    height: 20%;
+}
+.dia .box.one span:first-child{
+    background: url(../images/cut.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.dia .box.two span:first-child{
+    background: url(../images/clarity.png) 75% 50% no-repeat;
+    background-size: cover;
+}
+.dia .box.three span:first-child{
+    background: url(../images/color.jpg) 7% 50% no-repeat;
+    background-size: cover;
+}
+.dia .box.four span:first-child{
+    background: url(../images/carat.png) 70% 50% no-repeat;
+    background-size: cover;
+}
+/* .sec03.on .dia{
+    opacity: 1;
+    animation: fadeIn 2s ease;
+} */
+.sec03.on .dia .box.one{
+    animation: fadeInUp 0.7s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sec03.on .dia .box.two{
+    animation: fadeInUp 1s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sec03.on .dia .box.three{
+    animation: fadeInUp 1.3s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sec03.on .dia .box.four{
+    animation: fadeInUp 1.6s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/*sec04*/
+.sec04{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.sec04 div:nth-child(1){
+    width: 30%;
+    background: url(../images/bluebox1.png) 50% 10% no-repeat;
+    background-size: contain;
+    margin: 0 0 0 3%;
+    opacity: 0;
+}
+.sec04 div:nth-child(2){
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2%;
+    text-align: center;
+    opacity: 0;
+    
+}
+.sec04 div:nth-child(3){
+    width: 30%;
+    background: url(../images/bluebox2.png) 50% 90% no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+.sec04 div:nth-child(2) h1{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2.5vw;
+    margin: 0 0 2% 0;
+}
+.sec04 div:nth-child(2) p{
+    font-size: 1vw;
+}
+.sec04.on div:nth-child(1){
+    animation: fadeInLeft 1s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sec04.on div:nth-child(2){
+    animation: fadeInUp 1.6s ease;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.sec04.on div:nth-child(3){
+    animation: fadeInRight 1.3s ease;
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+/*sec05*/
+.sec05{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.png) 50% 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.expandSlide{
+    width: 1200px;
+    height: 60%;
+    
+}
+.expandSlide .swiper-slide {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.5);
+    opacity: 0.7;
+}
+.expandSlide .swiper-slide.swiper-slide-active {
+    transition: transform 0.4s;
+    opacity: 1;
+    transform: scale(1.1);
+    
+}
+.expandSlide .swiper-slide div{
+    width: 100%;
+    height: 80%;
+}
+.necklace{
+    background: url(../images/necklace.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.earring{
+    background: url(../images/earring.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.ring{
+    background: url(../images/ring.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.bracelet{
+    background: url(../images/bracelet.png) 50% 70% no-repeat;
+    background-size: contain;
+}
+.weddingRing{
+    background: url(../images/wedding_ring.png) 50% 70% no-repeat;
+    background-size: contain;
+}
+.homeDeco{
+    background: url(../images/homedeco.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+.sec05 h3{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+footer a{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+footer .sns{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1% 0;
+}
+footer .sns a{
+    margin: 0 2% ;
+}
+footer .sns a:nth-child(1){
+    background: url(../images/sns_i.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+footer .sns a:nth-child(2){
+    background: url(../images/sns_f.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+footer .sns a:nth-child(3){
+    background: url(../images/sns_p.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+footer .sns a:nth-child(4){
+    background: url(../images/sns_t.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+footer .sns a:nth-child(5){
+    background: url(../images/sns_y.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+footer .sns a:nth-child(6){
+    background: url(../images/sns_k.png) 50% 50% no-repeat;
+    background-size: contain;
+}

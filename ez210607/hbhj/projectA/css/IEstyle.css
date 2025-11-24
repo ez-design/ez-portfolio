@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+/* ie-checker로 cross browsing */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* .is-ie IE공통요소 */
+.is-ie header .top .nav2:before {
+    content: "";
+    background: url(../images/pa/nav_bg.png) 0 0 no-repeat;
+    background-position: 150% -10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0.2;
+}
+.is-ie header > .h_icon {
+    animation: none;
+    z-index: 10000;
+}
+.is-ie a img {
+    border: none;
+}
+.is-ie .boxs.on {
+    display: block;
+    background: #fff;
+}
+.is-ie .s1 .box:before {
+    content: "";
+    background: url(../images/pa/bg_flower.svg) 0 0 no-repeat, url(../images/pa/bg_flower.svg) 0 0 no-repeat;
+    background-position: 0 0, 95% 95%;
+    background-size: 200%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.is-ie .main_top::before {
+    content: "";
+    background: url(../images/pa/flower_white.svg) 56% 50% no-repeat, url(../images/pa/flower_white.svg) 45% 60% no-repeat;
+    background-size: 600%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+}
+
+/* .ie9 IE9전용*/
+/* header, slick, top */
+.ie9 .slick-slide {
+    position: relative;
+    z-index: 1;
+}
+.ie9 .mainheader {
+    display: block;
+    position: absolute;
+    z-index: 10000;
+}
+.ie9 header .top {
+    display: block;
+}
+.ie9 .logo {
+    float: left;
+}
+.ie9 .logo a img {
+    border: none;
+}
+.ie9 .gnb {
+    width: 60%;
+    margin: 0 auto;
+}
+.ie9 .gnb > ul {
+    width: 100%;
+}
+.ie9 .gnb > ul > li {
+    width: 14%;
+    margin: 0;
+    display: inline-block;
+    line-height: 5em;
+}
+.ie9 .right {
+    float: right;
+    margin-top: -75px;
+    padding: 0;
+}
+.ie9 .right > * {
+    width: 33%;
+    display: inline-block;
+}
+.ie9 input {
+    width: 50%;
+}
+.ie9 .login {
+    width: 25%;
+}
+.ie9 .h_iconM {
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ie9 .h_iconM.one {
+    width: 50px;
+    height: 50px;
+    bottom: 10%;
+    background: url(../images/pa/outline_mouse_white_24dp.png) 50% 50% no-repeat;
+}
+.ie9 .h_iconM.two {
+    width: 50px;
+    height: 50px;
+    bottom: 5%;
+    background: url(../images/pa/outline_expand_more_white_24dp.png) 50% 50% no-repeat;
+}
+.ie9 header .top .nav2 {
+    display: block;
+}
+.ie9 header .top .nav2 .n_left {
+    float: left;
+}
+.ie9 header .top .nav2 .sub {
+    margin: 0 auto
+}
+.ie9 header .top .nav2 .sub > ul {
+    width: 13.9%;
+    height: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+/* s1 */
+.ie9 .s1 .box {
+    padding: 25px 115px;
+}
+.ie9 .s1 .box > * {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+.ie9 .s1 .box i {
+    display: none;
+}
+.ie9 .circle_menu {
+    margin: 0 auto;
+}
+.ie9 .circle_menu > div {
+    display: inline-block;
+    text-align: center;
+}
+.ie9 .circle_menu > div:first-child {
+    float: left;
+    margin-left: 150px;
+}
+.ie9 .circle_menu > div:last-child {
+    float: right;
+    margin-right: 150px;
+}
+.ie9 .circle, .ie9 .circle.c2 {
+    margin: 10px auto;
+}
+.ie9 .circle.c1 {
+    background: url(../images/pa/outline_date_range_white_24dp.png) 50% 50% no-repeat;
+    background-color: #0026b1;
+}
+.ie9 .circle.c2 {
+    background: url(../images/pa/outline_location_on_white_24dp.png) 50% 50% no-repeat;
+    background-color: #580085;
+}
+.ie9 .circle_menu a {
+    text-align: center;
+    padding: 0;
+    padding-right: 13px;
+    position: relative;
+}
+.ie9 .circle_menu a::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/pa/sharp_chevron_right_black_18dp.png) 50% 50% no-repeat;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+} 
+.ie9 .circle_menu i {
+    display: none;
+}
+/* s2 */
+.ie9 .s2 .sleft {
+    float: left;
+}
+.ie9 .s2 .sright {
+    float: right;
+}
+.ie9 .sleft .content > i {
+    top: 34px
+}
+.ie9 .s2 .cl {
+    width: 20px; height: 20px;
+    background: url(../images/pa/sharp_arrow_back_ios_black_18dp.png) 50% 50% no-repeat;
+}
+.ie9 .s2 .cr {
+    width: 20px; height: 20px;
+    background: url(../images/pa/sharp_arrow_forward_ios_black_18dp.png) 50% 50% no-repeat;
+}
+.ie9 .content_box {
+    display: block;
+}
+.ie9 .s2 .tabs1 button {
+    width: 33.3%;
+    margin: 0;
+    float: left;
+}
+.ie9 .s2 .box > div {
+    float: left;
+    text-align: center;
+    line-height: 5em;
+}
+.ie9 .s2 .boxs.on {
+    display: block;
+    background: #fff;
+}
+.ie9 .s2 .box > ul {
+    margin-left: 90px;
+}
+.ie9 .s2 .sright .content .news {
+    height: 111px;
+    margin-bottom: 40px;
+}
+.ie9 .s2 .sright .content .news:last-child {
+    margin-bottom: 0;
+}
+.ie9 .s2 .sright .content .news > * {
+    float: left;
+}
+.ie9 .sright .content .news .category {
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    padding: 3.5% 0;
+}
+.ie9 .sright .content .news .category.notice {
+    padding: 0;
+    line-height: 5em;
+}
+.ie9 .sright .content .news div:nth-child(2) {
+    width: 360px;
+    margin-top: 30px;
+}
+.ie9 .sright .content .news .date {
+    float: right;
+    width: 100px;
+    height: 110px;
+    line-height: 7em;
+}
+.ie9 .s2 > .inner > div > i:nth-child(3) {
+    float: right;
+}
+/* s3 */
+.ie9 .s3 .swiper-wrapper .swiper-slide {
+    float: left;
+    margin: 0 130px;
+}
+/* s4 */
+.ie9 .s4 .swiper-wrapper .swiper-slide {
+    float: left;
+    margin: 0 75px;
+}
+/* s5 */
+.ie9 .s5 .tabs2 ul li {
+    float: left;
+    vertical-align: top;
+}
+.ie9 .s5 .conBox.on {
+    display: block;
+}
+.ie9 .s5 .conBox > div {
+    float: left;
+    margin-right: 75px;
+}
+.ie9 .s5 .conBox > div:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+}
+.ie9 .s5 .conBox.one > div:before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4),transparent);
+}
+/* s6 */
+.ie9 .s6 iframe {
+    display: none;
+}
+.ie9 .s6 .inner p:last-child {
+    float: right;
+}
+.ie9 .s6 img {
+    width: 800px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.ie9 .s6 p:nth-child(4) {
+    display: block;
+    text-align: center;
+}
+/* footer */
+.ie9 footer .f_left {
+    width: 60%;
+    float: left;
+}
+.ie9 footer .f_right {
+    width: 40%;
+    float: right;
+}
+.ie9 footer .f_left > div {
+    width: 100%;
+}
+.ie9 footer .f_left > div li {
+    float: left;
+}
+
+
+/* sub */
+.ie9 nav.lnb ul {
+    display: block;
+}
+.ie9 nav.lnb ul li {
+    width: 18%;
+    padding-top: 10px;
+    float: left;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.ie9 nav.lnb ul li:nth-child(1),
+.ie9 nav.lnb ul li:nth-child(2),
+.ie9 nav.lnb ul li:nth-child(3) {
+    padding-top: 20px;
+}
+.ie9 nav.lnb ul li:last-child {
+    float: right;
+    margin-right: 0;
+}
+.ie9 .location .inner > * {
+    display: inline-block;
+}
+.ie9 main .content .left {
+    float: left;
+}
+.ie9 main .content .left {
+    display: block;
+}
+.ie9 main .content .right .top {
+    width: 300px;
+    margin-left: 155px;
+}
+.ie9 main .content .right > div > div {
+    display: inline-block;
+    text-align: center;
+}
+.ie9 .content .right .bottom.on {
+    display: block;
+}
+
+/* sub2 lnb */
+.ie9 nav.lnb.sub02 ul li {
+    margin-right: 30px;
+    padding-top: 20px;
+    float: left;
+}
+.ie9 nav.lnb.sub02 ul li:nth-child(5n) {
+    float: right;
+    margin-right: 0;
+}
+.ie9 nav.lnb.sub02 ul li.null {
+    display: none;
+}
+.ie9 main.sub02 .sec {
+    margin-top: 500px;
+}
+.ie9 main.sub02 .sec.one {
+    margin-top: 0;
+}
+.ie9 main.sub02 .bg {
+    height: 300px;
+}
+.ie9 main.sub02 .bg .inner > div {
+    width: 48%;
+    float: left;
+}
+.ie9 main.sub02 .bg .inner > div.right {
+    float: right;
+}
+.ie9 main.sub02 .bg .inner > div img {
+    width: 100%;
+}
+
+.ie9 footer.sub02 {
+    margin: 500px 0 0 0;
+    /* padding: 0; */
+}

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+body{min-width: 320px;}
+.inner{width: calc(100% - 40px);}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 50;
+    background: white;
+}
+header .inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header .inner > a{
+    display: none;
+}
+header .inner > div{
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 120px);
+}
+header .inner .mlogo,
+header .mhome,
+header .mmenu{display: block;}
+
+/* nav  */
+.mNav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -45px;
+    right: 0;
+    background: #10161f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 45px 0 0 0;
+    z-index: 100;
+    transform: translatey(-100%);
+    transition: transform 0.5s;
+    padding: 100px 0 0 0;
+}
+
+.mNav.on{
+    transform: translatey(0%);
+    transition: transform 0.5s;
+}
+.mNav span{
+    font-size: 2rem;
+    display: block;
+    width: 280px;
+    border-bottom: 1px solid #eee;
+}
+.mNav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: auto;
+}
+.mNav .msnb li{
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: 300;
+    background: #1f2c36;
+    padding: 5px 0  5px 0;
+}
+.mNav .msnb li.on{
+    background: white;
+    color: #10161f;
+    text-decoration: underline;
+}
+.mNav > button.mclose{
+    display: block;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: white;
+    margin: 20px;
+}
+.mNav > div{
+    margin: 0 0 20px 0;
+}
+nav{display: none;}
+
+/* sec01  */
+section.sec01{
+    margin: 45px 0 0 0;
+    width: 100%;
+    height: 500px;
+}
+.sec01 .inner .top{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec01 .inner .top > div{
+    padding: 50px 0 0 0;
+}
+.sec01 .inner .top h1{
+    font-size: 3rem;
+    padding: 0px 90px 0 0px;
+}
+.sec01 .inner .top h2{
+    font-size: 1.5rem;
+    padding: 0 0 0 130px;
+}
+.sec01 .inner .top > span{
+    width: 280px;
+    height: 250px;
+    margin: 0;
+}
+.sec01 .inner .bottom ul{
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.sec01 .inner .bottom ul li{
+    margin: 0 5px;
+}
+
+/*sec02 */
+.sec02{
+    margin: 0;
+}
+.sec02 .inner{
+    width: 100%;
+    height: auto;
+}
+.player > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.player h3{
+    text-align: center;
+}
+.player div > span:first-child {
+    padding: 7px 0 0 0;
+}
+.tap .profile{
+    flex-direction: column;
+}
+.swiper-slide{
+    height: auto;
+}
+.sec02 .inner .player{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px 15px ;
+}
+.player::after{
+    display: none;
+}
+.player .tap .tapbt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.player .tap .tapbt button{
+    margin: 20px 0 0 0 ;
+    font-size: 1.2rem;
+    width: 150px;
+}
+.profile > div:first-child{
+    width: 100%;
+}
+.profile .playerbg{
+    display: none;
+}
+.profile ul{
+    margin: 20px 0;
+}
+.profile ul li{
+    font-size: 1.2rem;
+}
+.profile ul li span:first-child{
+    width: 100px;
+}
+.profile ul li span:last-child{
+    font-size: 1rem;
+}
+.profile .stat{
+    width: 100%;
+    height: 100%;
+}
+
+.stat  div{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+.stat > div > span:nth-child(1){
+    font-size: 1.2rem;
+}
+.stat > div > span:nth-child(2){
+    font-size: 1.5rem;
+}
+.player h2{
+    text-align: center;
+}
+
+/*sec03*/
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: -14px;
+    left: auto;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: -16px;
+    right: auto;
+}
+.inner .total{
+    justify-content: flex-start;
+    margin: 20px 0 ;
+    width: 100%;
+}
+
+.total > div:nth-child(1){
+    border-right: 1px solid #eee;
+}
+
+.total table td{
+    width: 62px;
+}
+.total table th{
+    width: 62px;
+}
+.total > div:nth-child(2){
+    overflow-y: auto;
+    width: 100%;
+}
+.mySwiper1 .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer  */
+footer{
+    height: auto;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+footer .ft1{
+    flex-wrap: wrap;
+    margin: 10px 0 20px;
+}
+footer .sns{
+    margin: 0px 0 20px 0;
+}
+footer .sns a{
+    margin: 5px;
+}
+
+footer .ft2 span:last-child{
+    font-size: 0.8rem;
+}

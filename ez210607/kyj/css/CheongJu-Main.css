@@ -1,0 +1,816 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('../lib/slick-1.8.1/slick/slick.css');
+@import url('../lib/slick-1.8.1/slick/slick-theme.css');
+@import url('../css/CheongJu-Main-IE.css');
+*{
+    color: #191919;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    min-width: 320px;
+}
+.inner{
+    width: 1200px;
+    margin: 0px auto;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .header{
+    width: 100%;
+    height: 84px;
+    border-bottom: 1px solid #DBDBDB;
+    display: flex;
+}
+header .header .inner{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header .inner a{
+    width: 260px;
+    height: 48px;
+    display: flex;
+}
+header .header .inner .search-input{
+    width: 300px;
+    height: 36px;
+    border: 2px solid #1C3E61;
+    border-radius: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header .inner .search-input input{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+header .header .inner .upper-menu{
+    display: flex;
+}
+header .header .inner .upper-menu p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    margin-left: 30px;
+    position: relative;
+}
+header .header .inner .upper-menu p:first-child{
+    margin-left: 0px;
+}
+header .header .inner .upper-menu p:after{
+    position: absolute;
+    content: "";
+    background: #767676;
+    width: 1px;
+    height: 14px;
+    top: 6px;
+    right: -16px;
+}
+header .header .inner .upper-menu p:last-child:after{
+    display: none;
+}
+header .header .mobile-menu{
+    display: none;
+}
+
+
+header .nav{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #DBDBDB;
+}
+header .nav .inner{
+    display: flex;
+    align-items: center;
+}
+header .nav .inner div{
+    border-top: 5px solid transparent;
+    width: 150px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+header .nav .inner div:hover{
+    border-top: 5px solid #1C3E61;
+}
+header .nav .inner div span{
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+header .nav .inner div:hover span{
+    color: #1C3E61;
+}
+header .nav .inner div.zero{
+    display: none;
+}
+header .nav .inner div.one,
+header .nav .inner div.two,
+header .nav .inner div.three,
+header .nav .inner div.four,
+header .nav .inner div.five,
+header .nav .inner div.six,
+header .nav .inner div.seven,
+header .nav .inner div.eight{
+    position: relative;
+}
+header .nav .inner div ul{
+    width: 150px;
+    height: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    background: white;
+    border: 1px solid #DBDBDB;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    transition: height 0.5s ease-in;
+    overflow: hidden;
+    z-index: 10; 
+}
+header .nav .inner div ul li{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+header .nav .inner div.six ul li,
+header .nav .inner div.seven ul li{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+header .nav .inner div ul li:first-child{
+    margin-top: 20px;
+}
+header .nav .inner div ul li:last-child{
+    margin-bottom: 20px;
+}
+header .nav .inner div ul li:hover{
+    color: #1C3E61;
+    font-weight: 500;
+}
+header .nav .inner div:hover ul{
+    display: flex;
+}
+header .nav .inner div.one:hover ul{
+    height: 133px;
+}
+header .nav .inner div.two:hover ul{
+    height: 201px;
+}
+header .nav .inner div.three:hover ul{
+    height: 235px;
+}
+header .nav .inner div.four:hover ul{
+    height: 133px;
+}
+header .nav .inner div.five:hover ul{
+    height: 133px;
+}
+header .nav .inner div.six:hover ul{
+    height: 99px;
+}
+header .nav .inner div.seven:hover ul{
+    height: 167px;
+}
+header .nav .inner div.eight:hover ul{
+    height: 235px;
+}
+
+
+.section-one{
+    width: 100%;
+    height: auto;
+}
+.section-one .slick{
+    position: relative;
+}
+.section-one .slick div{
+    width: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-one .slick .one{
+    background-image: url(../image/Main_Beethoven_No_7.png);
+} 
+.section-one .slick .two{
+    background-image: url(../image/Main_Chuseok_Speacial.png);
+}
+.section-one .slick .three{
+    background-image: url(../image/Main_Taepyeong_Cheongju.png);
+}
+.section-one .slick .four{
+    background-image: url(../image/Main_Cheongju_2021_Brunch_Concert.png);
+}
+.section-one .slick .slick-arrow{
+    position: absolute;
+    top: 360px;
+    cursor: pointer;
+    z-index: 100;
+}
+.section-one .slick .slick-arrow::before,
+.section-one .slick .slick-arrow::after{
+    font-size: 40px;
+    color: #fff;
+}
+.section-one .slick .slick-prev{
+    left: 100px;
+    width: unset;
+    height: unset;
+}
+.section-one .slick .slick-next{
+    right: 100px;
+    width: unset;
+    height: unset;
+}
+
+
+.section-two{
+    width: 100%;
+    height: auto;
+    background: #f0f3f8;
+    /* background: #f8f8fa; */
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+.section-two::before{
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/Circle.png);
+    content: "";
+    opacity: 0.1;
+    position: absolute;
+    top: -300px;
+    right: 200px;
+}
+.section-two::after{
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/Circle.png);
+    content: "";
+    opacity: 0.1;
+    position: absolute;
+    top: -200px;
+    right: -50px;
+}
+.section-two .inner:before{
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/Circle.png);
+    content: "";
+    opacity: 0.1;
+    position: absolute;
+    left: -50px;
+    bottom: -200px;
+}
+.section-two .inner:after{
+    width: 400px;
+    height: 400px;
+    background-image: url(../image/Circle.png);
+    content: "";
+    opacity: 0.1;
+    position: absolute;
+    bottom: -300px;
+    right: -100px;
+}
+.section-two .inner h3{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-two .inner .calendar{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.section-two .inner .calendar .left{
+    display: flex;
+    align-items: center;
+}
+.section-two .inner .calendar .left .year{
+    font-size: 18px;
+}
+.section-two .inner .calendar .left .month{
+    display: flex;
+    align-items: center;
+}
+.section-two .inner .calendar .left .month img{
+    font-size: 20px;
+}
+.section-two .inner .calendar .left .month div{
+    height: 36px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.section-two .inner .calendar .day{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    cursor: pointer;
+}
+.section-two .inner .calendar .day li{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 4px;
+}
+.section-two .inner .calendar .day li.sat{
+    color: #004db1;
+}
+.section-two .inner .calendar .day li.sun{
+    color: rgb(216, 0, 0);
+}
+.section-two .inner .calendar .day li.on{
+    background: #1C3E61;
+    border-radius: 15px;
+    color: #fff;
+}
+.section-two .inner .calendar .day li.in{
+    text-decoration: underline;
+}
+.section-two .inner .slick{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.section-two .inner .slick article{
+    width: 280px;
+    height: 520px;
+    /* margin-right: 20px; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section-two .inner .slick article:last-child{
+    margin-right: 0px;
+}
+.section-two .inner .slick article div:first-child{
+    width: 280px;
+    height: 396px;
+    background-image: url(../image/Cheongju_Default.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.section-two .inner .slick article.three div:first-child{
+    background-image: url(../image/KimSuchan_Claude_Monet.png);
+}
+.section-two .inner .slick article.thirteen div:first-child{
+    background-image: url(../image/Beethoven_No_7.png);
+}
+.section-two .inner .slick article.fourteen div:first-child{
+    background-image: url(../image/Season_And_Autumn.png);
+}
+.section-two .inner .slick article.fifteen div:first-child{
+    background-image: url(../image/Chuseok_Speacial.png);
+}
+.section-two .inner .slick article div:first-child span{
+    width: 120px;
+    height: 30px;
+    background: #1C3E61;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+.section-two .inner .slick article div:last-child{
+    width: 280px;
+    height: 124px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.section-two .inner .slick article div:last-child h4{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section-two .inner .slick article div:last-child span:first-of-type{
+    color: #767676;
+    font-size: 16px;
+    font-weight: 400;
+}
+.section-two .inner .slick article div:last-child span:last-of-type{
+    color: #767676;
+    font-size: 16px;
+    font-weight: 400;
+}
+.section-two .inner .slick .slick-arrow{
+    position: absolute;
+    top: 260px;
+    cursor: pointer;
+    z-index: 100;
+}
+.section-two .inner .slick .slick-arrow::before,
+.section-two .inner .slick .slick-arrow::after{
+    font-size: 40px;
+    color: #1C3E61;
+}
+.section-two .inner .slick .slick-prev{
+    left: 0px;
+    width: unset;
+    height: unset;
+}
+.section-two .inner .slick .slick-next{
+    right: 0px;
+    width: unset;
+    height: unset;
+}
+
+
+.section-three{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.section-three .inner{
+    display: flex;
+    justify-content: space-between;
+}
+.section-three .inner .notice{
+    width: 900px;
+    height: 370px;
+}
+.section-three .inner .notice .tap-menu{
+    display: flex;
+}
+.section-three .inner .notice .tap-menu li{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #dbdbdb;
+    border-left: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+.section-three .inner .notice .tap-menu li:hover{
+    cursor: pointer;
+}
+.section-three .inner .notice .tap-menu li:first-child{
+    border-left: 1px solid #dbdbdb;
+}
+.section-three .inner .notice .tap-menu .on{
+    background: #1C3E61;
+    border: 1px solid #1C3E61;
+    color: #fff;
+}
+.section-three .inner .notice .slick{
+    width: 900px;
+    height: 320px;
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.section-three .inner .notice .slick{
+    display: none;
+}
+.section-three .inner .notice .slick.on{
+    display: block;
+}
+.section-three .inner .notice .slick article{
+    width: 280px;
+    height: 280px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 20px;
+}
+.section-three .inner .notice .slick article:hover{
+    text-decoration: underline;
+}
+.section-three .inner .notice .slick article span:first-child{
+    font-size: 18px;
+    font-weight: 500;
+    color: #767676;
+    /* margin-bottom: 30px; */
+}
+.section-three .inner .notice .slick article h4{
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* margin-bottom: 20px; */
+}
+.section-three .inner .notice .slick article p{
+    height: 80px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #767676;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* margin-bottom: 30px; */
+}
+.section-three .inner .notice .slick article span:last-child{
+    font-size: 16px;
+    font-weight: 500;
+    color: #767676;
+}
+.section-three .inner .notice .slick .slick-arrow{
+    position: absolute;
+    top: 160px;
+    cursor: pointer;
+    z-index: 100;
+}
+.section-three .inner .notice .slick-arrow::before,
+.section-three .inner .notice .slick-arrow::after{
+    font-size: 40px;
+    /* color: #ccc; */
+    color: #1C3E61;
+}
+.section-three .inner .notice .slick-prev{
+    left: 0px;
+    width: unset;
+    height: unset;
+}
+.section-three .inner .notice .slick-next{
+    right: 20px;
+    width: unset;
+    height: unset;
+}
+.section-three .inner .short-cut{
+    width: 280px;
+    height: 370px;
+    /* background: #1C3E61; */
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+}
+.section-three .inner .short-cut div{
+    width: 280px;
+    height: 60px;
+    background: #1C3E61;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-three .inner .short-cut div p{
+    color: #fff;
+}
+.section-three .inner .short-cut ul{
+    width: 280px;
+    height: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 20px;
+}
+.section-three .inner .short-cut ul li{
+    width: 120px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-three .inner .short-cut ul li span{
+    cursor: pointer;
+}
+.section-three .inner .short-cut ul li span:first-child{
+    width: 80px;
+    height: 80px;
+    /* background: rgba(0, 0, 0, 0.2); */
+    border: 1px solid #dbdbdb;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-three .inner .short-cut ul li span:first-child img{
+    width: 36px;
+    height: 36px;
+}
+.section-three .inner .short-cut ul li span:last-child{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.section-four{
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.2);
+}
+.section-four .slick article{
+    width: 100%;
+    height: 860px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.section-four .slick article.one{
+    background-image: url(../image/Cheongju_Philharmonic_Orchestra.png);
+} 
+.section-four .slick article.two{
+    background-image: url(../image/Cheongju_Korean_Music_Orchestra.png);
+}
+.section-four .slick article.three{
+    background-image: url(../image/Cheongju_City_Dance_Company.png);
+}
+.section-four .slick article.four{
+    background-image: url(../image/Cheongju_City_Choir.png);
+} 
+.section-four .slick article h1{
+    height: 54px;
+    color: #fff;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 46px;
+    font-weight: 500;
+}
+.section-four .slick article h3{
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.section-four .slick article p{
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.section-four .slick article div{
+    width: 150px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.section-four .slick article div span{
+    color: #fff;
+}
+.section-four .slick article div img{
+    display: none;
+}
+.section-four .slick .slick-arrow{
+    position: absolute;
+    top: 430px;
+    cursor: pointer;
+    z-index: 100;
+}
+.section-four .slick .slick-arrow::before,
+.section-four .slick .slick-arrow::after{
+    font-size: 40px;
+    color: #fff;
+}
+.section-four .slick .slick-prev{
+    left: 100px;
+    width: unset;
+    height: unset;
+}
+.section-four .slick .slick-next{
+    right: 100px;
+    width: unset;
+    height: unset;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background: #4a4c56;
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer .inner .top{
+    height: 40px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+footer .inner .top li{
+    color: #fff;
+    padding-right: 20px;
+    position: relative;
+}
+footer .inner .top li:hover{
+    text-decoration: underline;
+}
+footer .inner .top li::after{
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+footer .inner .top :last-child::after{
+    display: none;
+}
+footer .inner .bottom{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer .inner .bottom ul li{
+    color: #767676;
+}
+footer .inner .bottom ul li span{
+    color: #767676;
+}
+footer .inner .bottom ul li span:first-child{
+    padding-right: 20px;
+    position: relative;
+}
+footer .inner .bottom ul li span:first-child::after{
+    width: 1px;
+    height: 12px;
+    background: #999;
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+footer .inner .bottom ul li:last-child{
+    margin-top: 20px;
+}

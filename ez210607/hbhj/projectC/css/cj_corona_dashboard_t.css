@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* 청주시 코로나19 상황판 태블릿 레이아웃 */
+
+body {
+    position: relative;
+}
+body, .inner {
+    min-width: 640px;
+    width: 100%;
+}
+.title {
+    height: 200px;
+    flex-direction: column;
+    background-size: 80px;
+    background-position: 98% 5%;
+}
+.title .left {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+.mMenu {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+}
+.title .center {
+    width: 100%;
+}
+.title .center > a > p {
+    margin: 20px;
+}
+.title .center .topBox > p {
+    text-align: center;
+    margin-top: 20px;
+}
+.title .center .topBox .box.one {
+    width: 100%;
+}
+.title .center .topBox .box.two,
+.title .center .topBox .box.three {
+    width: 49%;
+    margin-top: 15px;
+}
+.title .right {
+    width: 100%;
+    padding: 0 50px 0 0;
+}
+.title .center .topBox {
+    width: 95%;
+    top: 200px;
+}
+
+aside.a1 {
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 1s ease-in-out;
+    z-index: 100;
+}
+aside.a1.on {
+    left: 0;
+    transition: all 1s ease-in-out;
+}
+.mClose {
+    padding: 10px;
+    color: #000;
+    font-size: 30px;
+    text-align: right;
+    display: block;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+aside.a1 > div {
+    width: 100%;
+    padding: 20px;
+    justify-content: left;
+}
+aside.a1 > ul {
+    width: 100%;
+    height: auto;
+    position: unset;
+}
+aside.a1 > ul li {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    display: block;
+}
+aside.a2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+aside.a2 .box1 {
+    width: 30%;
+}
+aside.a2 .box2 {
+    width: 60%;
+}
+aside.a2 .box2 > div:nth-child(2) {
+    width: 100%;
+}
+aside.a2 .box2 > div.list {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+}
+.mainBottom {
+    margin-top: 50px;
+}
+.m0 > .mainLeft > .mainBottom > div:nth-child(3) .box2 > p {
+    width: 100%;
+    height: auto;
+}
+.m1 .swiper .swiper-slide img {
+    width: 80%;
+}
+.m1 .swiper .swiper-slide.three video {
+    width: 370px;
+}
+.m2 .mainLeft .mainTop {
+    height: 450px;
+}
+.m2 .mainLeft .mainTop > div:nth-child(3) {
+    height: 400px;
+    margin: 10px auto;
+}
+.m2 .mainLeft .mainBottom {
+    height: 500px;
+}
+.m2 .mainLeft .mainBottom table {
+    height: 100%;
+}
+.m2 .mainRight .mainTop {
+    height: 950px;
+}
+.main.on {
+    width: 100%;
+    margin-top: 270px;
+    display: flex;
+}
+.main .mainLeft,
+.main .mainRight {
+    width: 50%;
+}

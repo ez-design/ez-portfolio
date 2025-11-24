@@ -1,0 +1,654 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>만나서 반갑습니다 :)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="78c244b6-933e-444b-9971-89613432dc93" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 65.28%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🤝</span></div><h1 class="page-title">만나서 반갑습니다 :)</h1></header><div class="page-body"><blockquote id="ebdbcda1-786d-4b71-b03e-07c241921e10" class=""><strong><mark class="highlight-gray">성만큼 범상치 않아 보이는 디자이너,                                                                                                                                             한번 믿어 보실래요?</mark></strong><strong>   </strong> <strong> </strong></blockquote><p id="8cd72606-7c60-4063-bd56-d2038697b0f9" class=""><strong>                                                                                                                                 </strong></p><div id="e67d868b-f425-4ebe-b7c4-b3c6bb4b45ef" class="column-list"><div id="7d02151e-70a2-4de1-92f1-7fa0d70c421f" style="width:33.33333333333333%" class="column"><figure id="8422054c-350f-4864-955a-49f6a908a8a0" class="image"><a href="../images/범채연증사.jpg"><img style="width:144px" src="../images/범채연증사.jpg"/></a></figure></div><div id="4bc5166f-6ccc-464a-95f0-285e5f7b9535" style="width:100%" class="column"><h3 id="c9374e42-907c-40d7-a284-182f9ce5d1bf" class=""><strong>범채연 | BEOM CHAE YEON</strong></h3><hr id="bbd15ab9-cc15-4f42-a01b-7e709566e46d"/><p id="17b2708d-51f2-4fb3-bbe5-db60ddf38a22" class="">🙍🏻‍♀️ <mark class="highlight-gray">1995. 01. 28</mark></p><p id="fdc425fb-735a-4909-98b8-dc9215f9997a" class="">📧 <mark class="highlight-gray">bcy2186@naver.com</mark></p><p id="39d50473-8c0d-492f-8615-eda79ba3872a" class="">☎️ <mark class="highlight-gray">010-3288-2186</mark></p><p id="0c8a576a-18c2-48b9-917f-49bfe4125033" class="">🇰🇷 <mark class="highlight-gray">Cheongju, Republic of Korea</mark></p><p id="2cd0d1b5-9538-497d-a246-094133c777b2" class="block-color-gray">👍🏻 Design of Web, UX / UI, Editorial, BX/ BI, </p><p id="ee650f10-3912-4738-8914-34d996ed5744" class="block-color-gray">     And Marketing, Planner, PR of course :)</p><p id="ed196362-3dac-449a-98c0-cd4615794298" class="">
+</p></div><div id="9861900f-0698-4b9b-87af-7a0ef2c8f247" style="width:4.166666666666688%" class="column"><p id="ab4c5de0-0777-4bba-a824-1205749f70a9" class="">
+</p><p id="bca5b664-33b9-4a08-9f85-be74603d5759" class="">
+</p><p id="bbe450a2-6a38-4390-aaa4-c827b2e9e11f" class="">
+</p><p id="26946913-b96c-4370-b78f-433a69ae4bbc" class="">
+</p><p id="f8981d2f-d1e2-4dbe-856f-b577b5518c04" class="">
+</p><p id="c56b0243-2615-4ece-b651-5383c9607591" class="">
+</p></div></div><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a5f68f28-9e06-4570-8248-8a909f1845fe"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong><mark class="highlight-gray">신박한 아이디어가 넘치는 열정부자 디자이너, 여기있습니다!</mark></strong></div></figure><p id="17cd2a85-ede5-479e-b440-f97aa0f342df" class="">
+</p><h3 id="14ad6bb9-681e-4fb4-a9f4-6ff8e8e1034f" class="block-color-gray"><strong>👍🏻  저를 3줄요약으로 먼저 표현해볼게요!</strong></h3><hr id="ba32fd75-be9f-4a5f-8abf-42fee999040a"/><p id="d176287e-95b9-4268-b910-4562aa087c69" class="block-color-gray">👀  기획, 홍보, <mark class="highlight-gray">브랜딩·편집·웹디자인 등 다양한 경험을 가진 </mark><strong><mark class="highlight-gray">폭넓은 기량의 소유자</mark></strong></p><p id="ddd59274-28aa-4b3c-8b84-67d88fd797d8" class="block-color-gray">💥  맡은 일은 책임감과 열정을 가지고 끝을 봐야 하는 <strong>시원한 스타일</strong></p><p id="fd6efa09-a844-4bad-91c5-5fa20056bc19" class="block-color-gray">☺️  일만큼 사람들을 좋아해요~ 조용해 보여도 곧 드러나는 <strong>활발한 성격</strong></p><p id="b0169b52-9071-4324-8fd7-18205227eb46" class="">
+</p><p id="f39ac1f9-5dec-4d84-86d9-8900b62308bc" class="">
+</p><h2 id="9e5505a0-640e-4158-89ca-cd4ec1978770" class="">👩🏻‍🎓<strong> 학력사항</strong></h2><hr id="e1c29d9d-f427-4838-98b9-3c4ab0c1381f"/><p id="b47ee114-76be-4669-83b6-67391cbaccae" class="block-color-gray">2013.03-2015.02                                                     충청대학교 시각디자인과 졸업</p><p id="fadc4da0-8256-464b-9235-c769ece30d2f" class="block-color-gray">2016.03-2018.02                                                     청주대학교 시각디자인학과 편입 / 졸업</p><p id="8f5227b9-3fe0-4946-838f-48988ec63033" class="">
+</p><h2 id="5f8a872b-39c3-447a-8185-fe4636e3ca07" class="">🏆 <strong>수상내역</strong></h2><hr id="4cb93230-1e75-4ed3-b6a8-e98bffb46da1"/><p id="d96802a7-fa67-4f4c-87f8-1108efef6d5c" class=""><mark class="highlight-gray">2014.10                                                                    4대 사회악 재능나눔 우수작품 선정 및 결창총장 수상</mark></p><p id="5a4c7671-b1be-4c01-9cea-d56aeb3cc1ba" class="block-color-gray">2014.11                                                                   11회 현대산업디자인대상전 입선</p><p id="c6152888-9cca-4c9a-9702-b6674d988049" class="block-color-gray">2014.11                                                                   11회 현대산업디자인대상전 특선</p><p id="b7539088-aa75-4046-a579-ff7cbe4736d7" class=""><mark class="highlight-gray">2016.07                                                                   제 41회 충청북도 미술대전 디자인부문 우수상</mark></p><p id="dfddff08-c49a-4088-930c-9bcea155a34b" class=""><mark class="highlight-gray">2017.05                                                                   제 41회 충청북도 미술대전 디자인부문 우수상</mark></p><p id="cba4d130-0194-45e3-ad5c-eb02223708ce" class="">
+</p><h2 id="3bc0eb87-6fa5-432d-abcc-5e6f370eff5c" class="">🧾 <strong>자격증내역</strong></h2><hr id="02b3d998-108b-4793-bb71-cab129fdadca"/><p id="f130aeeb-9b0e-4fea-9187-c8156ab9ae4d" class=""><mark class="highlight-gray">2008.06                                                                   국가공인 한자자격시험 4급 </mark></p><p id="57178657-b05e-4b1d-b6f6-c7b52c8773ea" class="block-color-gray">2013.06                                                                   국가공인 정보기술자격(ITQ)인증시험</p><p id="cc4b07a0-64c0-4570-8fcd-a1ebbe91ed17" class="block-color-gray">2013.12                                                                   자동차 운전면허 2종 보통</p><p id="fba314c5-0b2f-4f46-8fe4-f0879cca4392" class="">
+</p><h2 id="b062e1b6-05b5-4a64-941b-9a62395c1ca1" class="">👩🏻‍💻 <strong>경력사항</strong> </h2><hr id="fe0fb865-095d-4ee3-ad66-6dff312b65d1"/><p id="3bd2b924-8b07-4ec7-acd2-0ea6cf41539b" class=""><mark class="highlight-gray">2014.12 2016.02                                                      </mark><strong><mark class="highlight-gray">한솔디자인연구소</mark></strong><mark class="highlight-gray"> | 패키지 및 편집디자인 등 </mark></p><p id="11f9c24f-4665-4230-bf60-d5287d744dca" class="block-color-gray">2018.02-2019.02                                                      <strong>에딧</strong> | 분양 관련 광고·홍보물 제작 등</p><p id="28070b9f-a6fa-4eba-9452-43ab74cadf68" class="block-color-gray">2019.04-2019.09                                                      <strong>한스산업개발</strong> | 분양 관련 홍보 및 기획 등</p><p id="c4129325-915f-4add-b38a-1fcd2a1e9c97" class=""><mark class="highlight-gray">2019.11-2020.07                                                      </mark><strong><mark class="highlight-gray">디자인셀</mark></strong><mark class="highlight-gray"> | 제품 마케팅 및 홍보 및 디자인 등</mark></p><p id="80068092-33a3-4fe0-bb9d-c633278b6718" class=""><mark class="highlight-gray">2020.07-2021.03                                                      </mark><strong><mark class="highlight-gray">바이온코리아</mark></strong><mark class="highlight-gray"> |  웹디자인 및 편집디자인 등</mark></p><p id="c49e55fe-2ac6-46ab-a162-4982ac3edd89" class="">
+</p><h2 id="395acf5c-9065-438a-ac25-0d36d443c713" class="">✏️ <strong>프로그램활용</strong></h2><hr id="7cf5f5b6-52ea-44b5-a0a6-50076723896a"/><p id="d77f483a-eed6-402b-985e-906e481cb90f" class="block-color-gray">Adobe Photoshop                                                    🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵</p><p id="52a47c87-2190-4f44-b5f5-fa8c5a2d3152" class="block-color-gray">Adobe Illustrator                                                      🔵🔵🔵🔵🔵🔵🔵🔵🔵🔵</p><p id="0e83c0bf-3121-4172-904c-6c11ee037df8" class="block-color-gray">InDesign                                                                   🔵🔵🔵🔵🔵🔵🔵⚪⚪⚪</p><p id="8096c85c-5182-4f00-b7fe-498bf5f5b02b" class="block-color-gray">Figma                                                                        🔵🔵🔵🔵🔵⚪⚪⚪⚪⚪</p><p id="272c027e-f5d7-424b-b8ec-82e5550912b5" class="block-color-gray">Visual Studio Code                                                    🔵🔵🔵🔵🔵⚪⚪⚪⚪⚪</p><p id="41237e71-f85a-4b8d-9f80-fe11acd1ae9d" class="">
+</p><h2 id="fb9fa469-07f8-483b-a9ea-716a4f24a255" class="">✍🏻 <strong>자기소개서</strong></h2><hr id="a83d9fc8-0eaf-44e2-85ea-ab5b05fc5e15"/><p id="f52cfd5c-12b4-456f-a408-898d92e57d61" class="block-color-gray"><strong>[공감하며, 공생하는 디자이너 ]</strong></p><p id="3c2d6545-fb12-4790-a091-00914a203191" class="block-color-gray">많은 경험을 하면서, 디자인이라는 수업을 받으면서 나름대로 생각하는 것들이 많았습니다. 전문적으로 하시는 분들과 협업하는 과정에서 디자이너의 역할이라든지, 기획하는 부분에서 디자이너가 할 수 있는 사고들을 돌이켜봤을 때, 디자이너는 작가와 대중성(실용적)의 사이에서의 경계 부분이라고 생각합니다. 감성적인 것을 알되, 너무 치우치지 않는 것 작품에 영혼이 없어서도 안 되는 사고를 해야 합니다. 많은 인문학 공부와 지식을 쌓아야 하며, 감성적인 부분들을 어느 정도 헤아릴 줄 알아야 좋은 디자인을 할 수 있을 것이라는 생각이 매우 들었습니다. 감성적인 것을 기반으로 하는 이성적인 사고를 통해 남들에게 공감대를 형성하는 디자인을 하고 싶습니다.</p><p id="5b7b1ce8-e1e1-4601-b706-b2c7b8d8c1ea" class="">
+</p><p id="7bcade78-a8d2-4ed0-85e3-da424b98491a" class="block-color-gray"><strong>[열정의 성실함과 프로세스는 배반하지 않는다]</strong></p><p id="89245cac-40a2-47a1-b25f-75bb9ab912b7" class=""><mark class="highlight-gray">저는 `열정의 성실함과 프로세스는 배반하지 않는다.`라는 저만의 좌우명을 갖고 살아왔습니다. 그래서 저는 무엇을 하던, 그것이 쉬워 보이든 어려워 보이든 미리 좌절하거나 포기하지 않고 언제나 적극적으로 도전하는 인생을 선택했고, 저만의 재능을 가지고 빛을 내기 위해 부단히 노력해왔습니다. 인생에 대한 열정과 호기심이 넘쳤던 저는, 학창시절에 늘 새로운 활동을 경험해 보는 기회를 통해 제 역량을 키웠으며, 특히 공모전을 통해 스스로 재능을 발굴하고 디자이너로서의 감성과 능력도 함께 성장시킬 수 있었습니다. 또한, 부모님께서 늘 강조하신 말씀이 ‘모든 일에 열정을 다해 임해라` 이었습니다. 커서 사회생활을 할 때도 어떠한 시련이 닥쳐도 도전적이고 받아들이는 자세로 임하도록 당부하신 말씀이었습니다. 이러한 열정적인 자세를 가지도록 길러주신 저의 부모님을 통해 저는 매사에 더욱 적극적이며 능동적인 태도로 임할 수 있었고, 어떠한 일에도 먼저 나서고 차별되는 저만의 능력과 인생을 멋지게 만들기 위해 최선을 다했습니다.</mark></p><p id="74751f3e-8041-4493-88f5-4eae3c1c5d70" class="">
+</p><p id="b6a76747-68db-40f7-b411-2102d98ae648" class=""><mark class="highlight-gray"><strong>[꼼꼼한 성격 뒤에 숨겨진 낙천적인 마인드]</strong></mark></p><p id="0d865034-7564-4d53-b79a-b0b72eb88ae4" class=""><mark class="highlight-gray">대학 졸업전시회에서 총무를 맡았던 저는 평소 꼼꼼하고 계산적으로 판단하는 성격의 소유자입니다. 이러한 업무를 자처한 저는 장녀로 성장해 그런지 모든 일에 끝까지 책임을 지는 성격이며, 제가 맡은 일은 열정을 가지고 완수해 내는 성격입니다. 성격상 낙천적으로 내가 가진 내 업무를 즐기면서 하는 편이며 팀 작업이나 프로젝트를 진행했을 때 가장 많이 느끼는 점은 `자신의 역할을 사랑하자`입니다. 서로의 처지를 이해하고 도우며 자신의 역할에서 상대방을 가장 배려할 수 있는 부분이 무엇인 지를 연구하며, 좀 더 완벽한 작품을 만드는 것이 몇 번의 프로젝트가 엎어진 것을 경험하고 느낀 점입니다. 가끔은 필요치 않은 부분에서도 저의 배려심이 먼저 크게 작용해 오해를 불어 일으킬 수 있는 것이 저의 단점일 수도 있겠지만, 저의 긍정적인 성격이 대부분 저를 도전 의식을 흐르게 하는 에너지로 작용해 총무의 업무를 하면서 다양한 부류의 일들을 해낼 수 있게 하였습니다. 만약 제가 귀하의 회사에 입사한다면 저만의 차별화된 완성품을 만들 것이며, 몸담은 분야의 모든 것을 온종일 생각하며 심미성과 유용성이 어우러지는 프로젝트를 발전 해 나갈 것입니다.</mark></p><p id="6b3dec70-1c36-4939-a66f-defbf06c6760" class="">
+</p></div></article></body></html>

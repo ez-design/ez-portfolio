@@ -1,0 +1,446 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid darkgray; */
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    min-width: 320px;
+}
+.vertical-slider > .slick-dots {
+    left: 0%;
+}
+/* header */
+
+.header {
+    background: url(../images/luca_m.jpg);
+    background-position: 48% 0px;
+    height: 100vh;
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.header::after{
+    content: "";
+    width: 80%;
+    height: 50%;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+.header div:first-child {
+    width: 100%;
+    font-size: 10px;
+    padding: 5% 0;
+}
+.header > div:first-child a {
+    padding: 5px;
+    letter-spacing: 2px;
+}
+.header > div:last-child {
+    margin-left: 0%;
+}
+.header > div:last-child p {
+    margin-top: 90%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10%;
+}
+/* .swiper-pagination {
+    display: none;
+} */
+
+/* part 1  */
+
+.part1 {
+    background-size: auto 100%;
+    padding: 0%;
+    background-position: -380px 0px;
+}
+.part1 h1 {
+    font-size: 30px;
+    padding: 5% 0;
+    letter-spacing: 2px;
+}
+.part1 p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 10%;
+}
+.part1 > div:last-child {
+    flex-direction: column;
+    justify-content: start;
+}
+.part1 > div:last-child ul {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-evenly
+}
+.part1 .tab1 li:first-child {
+    margin-top: 0%;
+}
+.part1 .tab1 > ul li {
+    padding: 5px;
+    margin: 0% 0px 0 0px;
+    margin-top: 0%;
+}
+.part1 .tab1 .content {
+    width: 100%;
+    padding: 0px 7%;
+}
+.part1 .tab1 .conBox .tab2 img {
+    width: 90%;
+    height: auto;
+}
+.part1 .tab1 .content .conBox .tab2 .contBox {
+    margin: 10% 0 ;
+}
+
+/* .part1 .tab1 .conBox .tab2 > div:last-child{
+    width: 100%;
+} */
+.part1 .tab1 .conBox .tab2 > div:last-child p {
+    width: 100%;
+    word-break: keep-all;
+}
+.part1 .tab1 .content .conBox .tab2 div:last-child .p1::after {
+    display: none;
+}
+.part1 .conBox .trailer iframe {
+    width: 100%;
+    height: auto;
+}
+.part2 h2,
+.part3 h2,
+.part4 h2 {
+    font-size: 30px;
+    padding: 10% 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.part2 {
+    padding: 0%;
+    background-position: 53% 0px;
+}
+.part2 .luca {
+    width: 100%;
+    float: none;
+}
+.part2 .luca p {
+    padding: 0 5%;
+    margin-top: 0%;
+}
+h3 {
+    font-size: 25px;
+    padding: 5% 0;
+    letter-spacing: 3px;
+    margin-top: 0%;
+}
+.p2 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+.part2 button,
+.part3 button,
+.part4 button {
+    width: 40%;
+    margin: 3% 0 3% 30%;
+}
+.image {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.image > img {
+    width: 35%;
+    margin: 0;
+}
+.part2 .ch_Box {
+    flex-direction: column;
+}
+.part2 .ch_Box .mainl {
+    width: 50%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 28%;  
+}
+
+/* part3 */
+.part3 {
+    padding: 0%;
+    background-size: auto 100%;
+    background-position: 30% 0
+}
+.part3 .Alberto {
+    text-align: center;
+    width: 100%;
+}
+.part3 .Alberto p {
+    padding: 0 5%;
+    margin-top: 0%;
+}
+.part3 .ch_Box {
+    flex-direction: column;
+}
+.part3 .ch_Box .mainl {
+    width: 45%;
+    height: auto;
+    margin-top: 8%;
+    margin-left: 29%; 
+}
+
+/* part4 */
+
+.part4 {
+    padding: 0%;
+    background-size: auto 100%;
+    background-position: 61% 0;
+}
+.part4 .Giulia {
+    width: 100%;
+    float: none;
+}
+.part4 .Giulia p {
+    padding: 0 5%;
+    margin-top: 0%;
+}
+
+.part4 .ch_Box {
+    flex-direction: column;
+}
+.part4 .ch_Box .mainl {
+    width: 45%;
+    height: auto;
+    margin-top: 8%;
+    margin-left: 29%; 
+}
+
+/* part5 */
+
+.part5 {
+    padding: 0%;
+    background-size: auto 100%;
+    background-position: 76% 0;
+}
+.part5 h2 {
+    margin-bottom: 0%;
+    font-size: 30px;
+    padding: 7% 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.part5 .swiper-container {
+    width: 90%;
+    height: 80%;
+    margin-top: 0%;
+    margin-left: 18%;
+}
+.part5 .sw1 {
+    margin-left: 0%;
+}
+.part5 .sw1 .p5 {
+    margin-right: 10px;
+    margin-top: 1.2%;
+    background-position: 50% 0;
+}
+.part5 .swiper .sw1 .p5 .tBox div > h4 {
+    font-size: 20px;
+    padding: 6%;
+}
+.part5 .swiper .sw1 .p5 .tBox div > p {
+    padding: 5%;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin: 0;
+}
+.part5 .swiper .sw1 .p5 .ch1 {
+    background-size: 50% auto;
+    background-position: 50% 60%;
+    height: 25vh;
+}
+.part5 .swiper .sw1 .p5 .ch2 {
+    background-size: 50% auto;
+    background-position: 50% 35%;
+    height: 25vh;
+}
+.part5 .swiper .sw1 .p5 .ch3 {
+    background-size: 50% auto;
+    background-position: 50% 60%;
+    height: 25vh;
+}
+.part5 .swiper .sw1 .p5 .ch4 {
+    background-position: 65% 30%;
+    height: 25vh;
+    background-size: 45% auto;
+}
+.part5 .swiper .sw1 .p5 .ch5 {
+    background-position: 50% 15%;
+    height: 25vh;
+    background-size: 45% auto;
+}
+.part5 .swiper .sw1 .p5 .ch6 {
+    background-position: 50% 45%;
+    height: 25vh;
+    background-size: 50% auto;
+}
+.part5 .swiper .sw1 .p5 .ch7 {
+    background-position: 60% 60%;
+    height: 25vh;
+    background-size: 50% auto;
+}
+.part5 .sw1 .p5 .tBox {
+    height: 58%;
+    width: 100%;
+}
+.part5 .sw1 .p5 .tBox button {
+    margin-right: 25%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+.container{
+    background-size: auto 100%;
+    background-position: 30% 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+.container .Box{
+    flex-direction: column;
+    justify-content: unset;
+}
+.part5 .swiper-slide {
+    height: 80%;
+}
+
+/* part6 */
+
+.part6 {
+    height: auto;
+    width: 100%;
+}
+.part6 h2 {
+    font-size: 30px;
+    padding: 5% 0;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0%;
+}
+.part6 h5 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 3%;
+}
+.part6 h6 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 3%;
+    margin: 0;
+}
+.part6 p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 3%;
+}
+.part6 .S2 .p6-1,
+.part6 .S2 .p6-2,
+.part6 .S2 .p6-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 30px;
+    height: 45vh;
+}
+.part6 .S2 .p6-1 .pt6-1 {
+    height: 45vh;
+    background-position: 20% 0%;
+    margin-left: 0%;
+}
+.part6 .S2 .p6-2 .pt6-2{
+    height: 45vh;
+    background-position: 55% 0%;
+}
+.part6 .S2 .p6-3 .pt6-3{
+    height: 45vh;
+    background-position: 47% 0%;
+}
+.part6 .S2 .t_Box{
+    width: 100%;
+    padding: 2%;
+    margin-left: 0;
+} 
+.part6 .slick-prev, .part6 .slick-next {
+    top: 50%;
+}
+.part6 .slick-next {
+    right: 5px;
+}
+.part6 .slick-prev {
+    left: 5px;
+}
+/* part7 */
+
+.part7 {
+    height: 30vh;
+    width: 100%;
+}
+.part7 h2 {
+    font-size: 30px;
+    padding: 5% 0;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0% 0;
+}
+.Gs1 {
+    width: 100%;
+    height: 60%;
+    padding: 0 0%;
+}
+.part7 .Gs1 .g1,
+.part7 .Gs1 .g2,
+.part7 .Gs1 .g3,
+.part7 .Gs1 .g4,
+.part7 .Gs1 .g5,
+.part7 .Gs1 .g6,
+.part7 .Gs1 .g7,
+.part7 .Gs1 .g8,
+.part7 .Gs1 .g9,
+.part7 .Gs1 .g10,
+.part7 .Gs1 .g11,
+.part7 .Gs1 .g12,
+.part7 .Gs1 .g13,
+.part7 .Gs1 .g14,
+.part7 .Gs1 .g15,
+.part7 .Gs1 .g16,
+.part7 .Gs1 .g17,
+.part7 .Gs1 .g18,
+.part7 .Gs1 .g19,
+.part7 .Gs1 .g20,
+.part7 .Gs1 .g21,
+.part7 .Gs1 .g22,
+.part7 .Gs1 .g23,
+.part7 .Gs1 .g24,
+.part7 .Gs1 .g25{
+    background-position: 50% 0px;
+    background-size:auto 100% ;
+    margin-right: 30%;
+}
+.container footer {
+    padding-bottom: 10%;
+    margin-top: 1%;
+}
+.container footer div > p {
+    font-size: 8px;
+    padding: 5px;
+} 

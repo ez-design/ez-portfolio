@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* 내셔널 지오그래픽 태블릿 레이아웃 */
+
+body { 
+    width: 100%; 
+    min-width: 640px;
+    position: relative;
+}
+.inner,.inner2 {
+    width: 95%;
+    min-width: 640px;
+}
+section {
+    min-width: 640px;
+    height: auto;
+    padding: 50px 0;
+}
+.scrollMenu {
+    display: none;
+}
+h1 {
+    font-size: 30px;
+}
+.mTop {
+    width: 50px; height: 50px;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background: #000;
+    border: 1px solid #fff;
+    z-index: 150;
+}
+.mTop > a {
+    color: #fff;
+}
+
+/* 스와이퍼 */
+
+.bottomSwiper.swiper-container {
+    min-width: 640px;
+    height: auto;
+}
+.bottomSwiper .swiper-slide {
+    height: 300px;
+}
+.thumbSlide .swiper-slide {
+    height: 150px;
+}
+.thumbSlide .swiper-slide:hover div,
+.thumbSlide .swiper-slide:hover p {
+    display: none;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px;
+}
+.swiper-button-next.nb {
+    top: 89%;
+    right: -10px;
+}
+.swiper-button-prev.pb {
+    top: 89%;
+    left: -10px;
+}
+
+/* 메인박스 */
+
+.mainBox .txt {
+    height: 300px;
+    padding: 20px;
+}
+.mainBox .txt p:first-child {
+    margin-top: 100px;
+    padding: 0;
+}
+.mainBox .txt > p:last-child {
+    display: none;
+}
+
+/* 헤더 */
+
+header {
+    height: 700px;
+    background: url(../images/pb/visual.png) 50% 60% no-repeat;
+    background-size: 400%;
+}
+header .top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 300;
+    transition: all 0.5s;
+}
+header .top.roll {
+    background: #000;
+    transition: all 0.5s;
+}
+.top img.logo {
+    width: 90px;
+}
+header .visualLogo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-position: 0 80%;
+}
+header .inner2 > span,
+header .scrollDown {
+    display: none;
+}
+header nav {
+    width: 100%;
+    min-height: 700px;
+    transform: translateX(100%);
+    background-color: #000;
+    bottom: 0;
+    z-index: 400;
+}
+header nav.gnb {
+    display: none;
+}
+header nav.mMenu {
+    display: block;
+}
+header nav.mMenu .subM {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+header nav.mMenu .subM li {
+    padding: 0 5px;
+    font-size: 17px;
+}
+
+/* 섹션1 */
+
+.s1 .scheduleBorder {
+    height: auto;
+}
+.s1 .youtube {
+    flex-direction: column;
+}
+.s1 .youtube iframe {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* 섹션2 */
+
+.s2 {
+    overflow: hidden;
+}
+.s2 .swiper-container {
+    width: 150%; height: 500px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.s2 .swiper-slide {
+    width: 400px; height: 400px;
+    margin-top: 50px;
+    padding: 170px 0 0 0;
+}
+.s2 .swiper-button-next {
+    top: 97%;
+    right: 40%;
+}
+.s2 .swiper-button-prev {
+    top: 97%;
+    left: 40%;
+}
+.s2 .swiper-slide > p {
+    padding: 0 10px;
+}
+.s2 .swiper-slide > p.title {
+    font-size: 30px;
+}
+
+/* 배경 */
+
+.s4 {
+    background: url(../images/pb/back1.png) 50% 50% no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.s7 {
+    background: url(../images/pb/back2.png) 35% 50% no-repeat;
+    background-size: 130%;
+    background-attachment: fixed;
+}

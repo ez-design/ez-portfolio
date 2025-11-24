@@ -1,0 +1,350 @@
+body {
+    min-width: 320px;
+}
+.group {
+    margin: 0 auto;
+    width: 100%;
+}
+header{
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    height: 250px;
+    padding-top: 0px;
+    position: relative;
+}
+header> .hd{
+    margin-top: 1%;
+}
+header> .hd img{
+    width: 80%;
+    margin: 4% 0 0 5%;
+}
+header span{
+    font-size: 30px;
+    font-weight: 100;
+    padding: 3px;
+}
+header .h1{
+    margin-top: 0px;
+}
+header h1{
+    font-size: 20px;
+    margin: 5px 0 0px 0;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+header .menu_inner{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    transform: translateY(-100%);
+    transition: all 0.5s;
+    z-index: 100;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+header .menu_inner.on{
+    transform: translateY(0%);
+    transition: all 0.5s;
+}
+header .menu_inner .group>.nav{
+    flex-direction: column;
+    padding: 0 10%;
+}
+header .menu_inner .group>.nav>div {
+    width: 100%;
+    height: auto;
+}
+header .menu_inner .group>.nav>div> .menu_t a {
+    height: 70px;
+    line-height: 70px;
+}
+header .menu_inner .group>.nav>div> .menu_t{
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+header .menu_inner .group>.nav>div:last-child> .menu_t{
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+header .menu_inner .group>.nav .submenu{
+    display: none;
+    background: #2f2f2f;    
+}
+
+
+
+/* part1 */
+
+.part1 {
+    height: 660px;
+}
+.part1:after {
+    display: none;
+}
+.part1 .group h2{
+    font-size: 20px;
+    margin: 10% 0;
+}
+.part1 .container1{
+    display: flex;
+    flex-direction: column;
+}
+.part1 .container1 .p1-1 {
+    width: 100%;
+    flex-wrap: wrap;
+}
+.part1 .container1 .p1-1 .p11,
+.part1 .container1 .p1-1 .p13{
+    width: 45%;
+    height: 120px;
+}
+.part1 .container1 .p1-1 .p12,
+.part1 .container1 .p1-1 .p14{
+    width: 45%;
+    height: 120px;
+    margin: 5% 0 0 5%;
+}
+.part1 .container1 .p1-2{
+    margin-left: 0%;
+    margin-top: 5%;
+    background: #003638;
+    padding: 10% 0;
+}
+.part1 .container1 .p1-2 h3{
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.part1 .container1 .p1-2 p{
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+.part1 .container1 .p1-2 a{
+    padding: 10px;
+    width: 100px;
+    color: #fff;
+    margin-left: 40%;
+    font-size: 12px;
+}
+.part2 {
+    margin-bottom: 5%;
+    height: 100%;
+    margin: 40% 0 0% 0;
+}
+.part2 h2 {
+    font-size: 20px;
+    margin: 5% 0 5% 0;
+}
+.part2 .tab {
+    width: 100%;
+}
+.part2 .tab > ul li {
+    font-size: 13px;
+}
+.part2 .tab .swiper-container .c1box {
+    flex-direction: column;
+}
+.part2 .tab .swiper-container .c1box .tbox::after {
+    top: 3%;
+}
+.part2 .tab .swiper-container .c1box .tbox {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-left: 0%;
+}
+
+.part2 .tab .swiper-container .c1box .tbox.t1 {
+    padding-bottom: 20px;
+}
+.part2 .tbox.t1 h4 {
+    font-size: 20px;
+    margin: 10% 0 8%;
+}
+.part2 .tab .swiper-container .c1box .tbox .p {
+    padding: 0 10%;
+    margin-bottom: 10%;
+    line-height: 20px;
+    font-size: 12px;
+    word-break: keep-all;
+}
+.part2 .tab .swiper-container .c1box .tbox.t1::after{
+    content: "";
+    width: 100%;
+    height: 500px;
+    background: #003638;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    z-index: -1;
+}
+
+.part2 table {
+    font-size: 12px;
+    margin-left: 30%;
+}
+.part2 table td {
+    font-size: 10px;
+    padding: 5px;
+}
+.swiper-slide .c1box img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 0;
+}
+.part2 .tab::before {
+    display: none;
+}
+.part2 .tab::after {
+    /* height: 50%;
+    top: 50%;
+    left: -13%;
+    width: 115%; */
+    display: none;
+}
+.part2 .swiper-button-next,
+.part2 .swiper-button-prev {
+    color: #f26a25;
+    width: 15px;
+}
+.part2 .cb > ul,
+.part2 #con2 > ul {
+    width: 100%;
+    float: right;
+    margin-right: 0%;
+}
+.part2 .cb > ul > li {
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+}
+.part2 .swiper-container {
+    margin-bottom: 5%;
+}
+.part2 .tab .swiper-container .c1box::after,
+.part2 .tab .swiper-container .c1box.c1::after{
+    width: 100%;
+    height: 40%;
+    top: 2%;
+    left: 0%;
+    background: #fff;
+    z-index: -2;
+}
+.swiper-slide .c1box.c1 img {
+    display: block;
+    width: 100%;
+    margin-top: 0%;
+    position: relative;
+    z-index: 2;
+    margin-left: 0%;
+}
+.conBox .swiper-slide .c1box.c1 img,
+.conBox .swiper-slide .c1box img {
+    display: block;
+    width: 50%;
+    height: 55%;
+    /* margin-top: 5%; */
+    position: relative;
+    z-index: 2;
+    /* margin-left: 25%; */
+    margin: 10% 25% 10%;
+}
+.swiper-button-next, .swiper-button-prev {
+    top: 20%;
+}
+
+.part3{
+    margin-top: 20%;
+}
+.part3 h2{
+    font-size: 20px;
+    margin: 5% 0 5% 0;
+}
+.part3 h3{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.part3 > div {
+    flex-direction: column;
+    height: 260px;
+}
+.part3 > div .p3{
+  display: none;
+}
+.part3 .nn{
+    width: 100%;
+}
+.part3 .nn .newsin a{
+    font-size: 12px;
+    height: 30px;
+    line-height: 25px;
+}
+.part3 .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.part3 .button a{
+    font-size: 12px;
+    width: 28%;
+    height: 35px;
+    line-height: 35px;
+}
+.part4 {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    background-size: 100% 100%;
+}
+.part4 .line {
+    border: 1px solid #fff;
+    width: 90%;
+    height: 100px;
+}
+.part4 .line h6 {
+    font-size: 15px;
+    margin: 0px 0;
+    padding: 10px;
+}
+.part4 .line .cho select{
+    width: 85px;
+    height: 30px;
+    background: #fff;
+    color: #000;
+    margin-right: 20px;
+}
+.part4 .line .cho select option{
+    padding: 15px;
+    font-size: 15px;
+    position: relative;
+}
+.part4 .line .cho div:last-child{
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    color: #000;
+    position: relative;
+}
+.part4 .line .cho div:last-child::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    right: 5px;
+    position: absolute;
+    background: url(../images/searchb.svg);
+    background-size: 100% auto;
+    cursor: pointer;
+}
+footer {
+    padding-top: 1%;
+    font-size: 10px;
+}
+footer div:first-child {
+    display: none;
+}
+footer div:last-child p {
+    font-size: 10px;
+    padding: 5px;
+    word-break: keep-all;
+}

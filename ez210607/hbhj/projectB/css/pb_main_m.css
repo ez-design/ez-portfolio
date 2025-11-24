@@ -1,0 +1,8 @@
+@charset "utf-8";
+body,.inner,.inner2,section {  
+    min-width: 320px;
+}
+.bottomSwiper.swiper-container {
+    min-width: 320px;
+    height: auto;
+}

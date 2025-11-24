@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+
+.is-ie .clearfix:after { 
+    content: "";
+    display: block; 
+    clear: both; 
+} 
+.is-ie header .header .inner a{
+    float: left;
+    margin-top: 18px;
+}
+.is-ie header .header .inner a img{
+    border: none;
+}
+.is-ie header .header .inner .search-input{
+    float: left;
+    margin-top: 24px;
+    margin-left: 173px;
+}
+.is-ie header .header .inner .search-input input{
+    width: 214px;
+    float: left;
+}
+.is-ie header .header .inner .search-input img{
+    margin-top: 4px;
+    float: right;
+}
+.is-ie header .header .inner .upper-menu{
+    float: right;
+    line-height: 83px;
+}
+.is-ie header .header .inner .upper-menu p{
+    float: left;
+}
+.is-ie header .header .inner .upper-menu p:after{
+    top: 36px
+}
+
+.is-ie header .nav .inner div{
+    float: left;
+    text-align: center;
+}
+.is-ie header .nav .inner div:last-child{
+    float: right;
+}
+.is-ie.ie9 header .nav .inner div span{
+    line-height: 60px;
+    padding: 15px 0px;
+}
+.is-ie header .nav .inner div ul{
+    text-align: left;
+}
+.is-ie .section-one .slick .slick-prev,
+.is-ie .section-one .slick .slick-next{
+    width: 40px;
+    height: 40px;
+    top: 360px;
+}
+
+
+.is-ie .section-two .inner .calendar .left{
+    float: left;
+}
+.is-ie .section-two .inner .calendar .left .year{
+    float: left;
+    line-height: 60px;
+}
+.is-ie .section-two .inner .calendar .left .month{
+    display: block;
+    float: left;
+    line-height: 60px;
+}
+.is-ie .section-two .inner .calendar .left .month img:first-of-type{
+    float: left;
+    margin-top: 18px;
+}
+.is-ie .section-two .inner .calendar .left .month div{
+    float: left;
+    height: 60px;
+}
+.is-ie .section-two .inner .calendar .left .month img:last-of-type{
+    float: right;
+    margin-top: 18px;
+}
+.is-ie .section-two .inner .calendar .day{
+    float: right;
+    height: 60px;
+}
+.is-ie .section-two .inner .calendar .day li{
+    float: left;
+    margin-top: 15px;
+}
+.is-ie .section-two .inner .calendar .day li:last-child{
+    float: right;
+}
+.is-ie .section-two .inner .slick article div:first-child{
+    position: relative;
+}
+.is-ie .section-two .inner .slick article div:first-child span{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.is-ie .section-two .inner .slick article div:last-child h4{
+    white-space: nowrap;
+    margin-bottom: 3px;
+}
+.is-ie .section-two .inner .slick article div:last-child span{
+    display: block;
+}
+.is-ie .section-two .inner .slick article div:last-child span:first-of-type{
+    margin-bottom: 3px;
+}
+.is-ie .section-two .inner .slick .slick-prev,
+.is-ie .section-two .inner .slick .slick-next{
+    width: 40px;
+    height: 40px;
+    top: 260px;
+}
+
+.is-ie .section-three .inner .notice{
+    float: left;
+    margin-right: 20px;
+}
+.is-ie .section-three .inner .notice .tap-menu li{
+    float: left;
+}
+.is-ie .section-three .inner .notice .slick article h4{
+    margin-top: 27px;
+    margin-bottom: 26px;
+    white-space: nowrap;
+}
+.is-ie .section-three .inner .notice .slick article p{
+    margin-bottom: 27px;
+    /* white-space: nowrap; */
+}
+.is-ie .section-three .inner .notice .slick .slick-prev,
+.is-ie .section-three .inner .notice .slick .slick-next{
+    width: 40px;
+    height: 40px;
+    top: 160px;
+}
+.is-ie .section-three .inner .short-cut{
+    float: right;
+}
+.is-ie .section-three .inner .short-cut div{
+    text-align: center;
+}
+.is-ie .section-three .inner .short-cut div p{
+    line-height: 60px;
+}
+.is-ie .section-three .inner .short-cut ul{
+    padding: 20px;
+}
+.is-ie .section-three .inner .short-cut ul li{
+    /* width: 118px; */
+    /* height: 135px; */
+    width: 50%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    padding: 0px;
+}
+.is-ie .section-three .inner .short-cut ul li span{
+    display: block;
+}
+.is-ie .section-three .inner .short-cut ul li span:first-child{
+    padding: 22px;
+    margin: 0 auto;
+}
+.is-ie .section-four .slick article h1{
+    margin-bottom: 109px;
+}
+.is-ie .section-four .slick article h3{
+    margin-bottom: 108px;
+}
+.is-ie .section-four .slick article p{
+    margin-bottom: 109px;
+}
+.is-ie .section-four .slick article div{
+    margin: 0 auto;
+}
+.is-ie .section-four .slick article div span{
+    line-height: 50px;
+}
+.is-ie .section-four .slick .slick-prev,
+.is-ie .section-four .slick .slick-next{
+    width: 40px;
+    height: 40px;
+    top: 430px;
+}
+
+.is-ie footer .inner .top{
+    height: auto;
+}
+.is-ie footer .inner .top li{
+    float: left;
+}
+.is-ie footer .inner .bottom ul{
+    float: left;
+}
+.is-ie footer .inner .bottom a{
+    width: 134px;
+    height: 54px;
+    float: right;
+}
+.is-ie footer .inner .bottom a img{
+    border: none;
+}
+
+@media screen and (max-width: 768px){
+    .is-ie body{
+        min-width: 320px;
+    }
+    .is-ie .inner{
+        width: 80%;
+    }
+    .is-ie header .header{
+        margin: 0 auto;
+    }
+    .is-ie header .header .inner{
+        float: left;
+        padding: 0px;
+    }
+    .is-ie header .header .mobile-menu{
+        display: block;
+        float: right;
+        padding: 18px;
+    }
+    .is-ie header .header .inner a{
+        width: 236px;
+        height: 40px;
+        margin: auto 0px;
+    }
+    .is-ie.ie9 header .header .inner a{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .is-ie.ie10 .section-three .inner .short-cut ul li{
+        width: 50%;
+        height: 50%;
+        margin-bottom: 0px;
+    }
+
+    .is-ie .section-four .slick article h1{
+        height: auto;
+    }
+    .is-ie .section-four .slick article h3{
+        width: 100%;
+    }
+    .is-ie .section-four .slick article div{
+        padding: 8px;
+    }
+    .is-ie footer .inner .top{
+        margin-bottom: 0px;
+    }
+    .is-ie footer .inner .top li{
+        width: 100%;
+        height: 20px;
+    }
+    .is-ie footer .inner .top li:last-child{
+        margin-bottom: 20px;
+    }
+    .is-ie footer .inner .bottom ul li span{
+        display: block;
+    }
+    .is-ie footer .inner .bottom{
+        width: 100%;
+        display: block;
+    }
+    .is-ie footer .inner .bottom a{
+        display: none;
+    }
+    .is-ie footer .inner .bottom a img{
+        display: none;
+    }
+    .is-ie.ie10 footer .inner .bottom ul li span:first-child{
+        width: 100%;
+        text-align: left;
+    }
+}
+    

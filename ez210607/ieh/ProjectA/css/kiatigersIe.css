@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*main page*/
+.game span{
+    display: block;
+}
+.is-ie .lineup span{
+    height: 80%;
+}
+.is-ie .play div span{
+    display: block;
+}
+.is-ie .left2 span{
+    display: block;
+}
+.is-ie .right2 .mySwiper2 .swiper-wrapper{
+    width: 720px;
+}
+.is-ie .right2 .swiper-button-next{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/nextbt2.png) 50% 50% no-repeat;
+    background-size: cover;
+    /* top: 25px; */
+}
+.is-ie .right2 .swiper-button-prev{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/prevbt2.png) 50% 50% no-repeat;
+    background-size: cover;
+    /* top: 25px; */
+}
+.is-ie .sponsor .swiper-button-next{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/nextbt.png) 50% 50% no-repeat;
+    background-size: cover;
+    top: 25px;
+}
+.is-ie .sponsor .swiper-button-prev{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/prevbt.png) 50% 50% no-repeat;
+    background-size: cover;
+    top: 25px;
+}
+/*sub1*/
+.is-ie .sec01 .inner .top > span{
+    display: block;
+}
+.is-ie .players .swiper-button-next{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/nextbt.png) 50% 50% no-repeat;
+    background-size: cover;
+    top: 38%;
+}
+.is-ie .players .swiper-button-prev{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/prevbt.png) 50% 50% no-repeat;
+    background-size: cover;
+    top: 38%;
+}
+.is-ie .stat div span{
+    display: block;
+}
+.is-ie .sec02 .inner.sub2{
+    padding: 0 0 0 10px;
+}
+/*sub2*/
+.is-ie .field .swiper-button-next{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/nextbt.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.is-ie .field .swiper-button-prev{
+    width: 35px;
+    height: 50px;
+    background: url(../images/etc/prevbt.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.is-ie .sec02 .field{
+    justify-content: flex-start;
+}
+.is-ie .left .roadmap iframe{
+    display: none;
+}
+.is-ie .left .roadmap{
+    background: url(../images/etc/roadmap.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+/*footer*/
+.is-ie footer span{
+    display: block;
+}
+
+
+.is-ie .swiper-button-prev::after, .swiper-container-rtl .swiper-button-next::after{
+    content: "";
+}
+.is-ie .swiper-button-next::after, .swiper-container-rtl .swiper-button-next::after{
+    content: "";
+}

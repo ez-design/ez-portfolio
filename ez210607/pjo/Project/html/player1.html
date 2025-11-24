@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>PLAYERS-투수</title>
+    <link rel="stylesheet" type="text/css" href="../css/player1.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" href="../css/mplayer.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bg">
+            <div class="inner">
+                <div class="headL">
+                    <ul>
+                        <a href="../html/hanwha.html"><img src="../img/이글스로고.png" alt=로고 class="logo"></a>
+                        <li class="sub">
+                            <a href="#"><span>EAGLES</span></a>
+                            <a href="#"><span>PLAYERS</span></a>
+                            <a href="#"><span>GAME</span></a>
+                            <a href="#"><span>FAN</span></a>
+                            <a href="#"><span>SHOP</span></a>
+                            <a href="#"><span>TICKECT</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headR">
+                    <ul>
+                        <a href="#">
+                            <li>KO</li>
+                        </a>
+                        <a href="#">
+                            <li>EN</li>
+                        </a>
+                        <a href="#">
+                            <li>LOGIN</li>
+                        </a>
+                        <a href="#">
+                            <li>JOIN US</li>
+                        </a>
+                        <a href="https://www.youtube.com/user/culturegroup100"><img src="../img/유튜브.png" alt=유튜브 class="sns"></a>
+                        <a href="#"><img src="../img/페이스북.png" alt=페이스북 class="sns"></a>
+                        <a href="#"><img src="../img/인스타그램.png" alt=인스타그램 class="sns"></a>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <div class="Minner">
+                    <a href="../html/hanwha.html">
+                        <div class="MheadL"></div>
+                    </a>
+                    <div class="MheadR"></div>
+                    <ul class="Mgnb">
+                        <li><a href="#" class="M">EAGLES</a>
+                            <ul class="Msub">
+                                <li><a href="../html/hanwhasub.html">구단소개</a></li>
+                                <li><a href="#">그룹사소개</a></li>
+                                <li><a href="#">HISTORY</a></li>
+                                <li><a href="#">한화생명이글스파크</a></li>
+                                <li><a href="#">사회공헌</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">PLAYERS</a>
+                            <ul class="Msub2">
+                                <li><a href="../html/player1.html">투수</a></li>
+                                <li><a href="#">포수</a></li>
+                                <li><a href="#">내야수</a></li>
+                                <li><a href="#">외야수</a></li>
+                                <li><a href="#">코칭스탭</a></li>
+                                <li><a href="#">군입대선수</a></li>
+                                <li><a href="#">응원단</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">GAME</a>
+                            <ul class="Msub3">
+                                <li><a href="../html/game.html">1군 경기일정</a></li>
+                                <li><a href="#">퓨처스 경기일정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">FAN</a>
+                            <ul class="Msub4">
+                                <li><a href="#">구단소식</a></li>
+                                <li><a href="#">멤버쉽</a></li>
+                                <li><a href="#">팬타임즈</a></li>
+                                <li><a href="#">갤러리</a></li>
+                                <li><a href="#">이글스아카이브</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="M">SHOP</a>
+                        </li>
+                        <li><a href="#" class="M">TICKET</a>
+                        </li>
+                        <li class="bt">
+                            <span class="material-icons close">close</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav">
+                <div class="inner">
+                    <div class="list">
+                        <ul class="submenu">
+                            <li><a href="../html/hanwhasub.html">구단소개</a></li>
+                            <li><a href="#">그룹사소개</a></li>
+                            <li><a href="#">HISTORY</a></li>
+                            <li><a href="#">한화생명이글스파크</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="../html/player1.html">투수</a></li>
+                            <li><a href="#">포수</a></li>
+                            <li><a href="#">내야수</a></li>
+                            <li><a href="#">외야수</a></li>
+                            <li><a href="#">코칭스탭</a></li>
+                            <li><a href="#">군입대선수</a></li>
+                            <li><a href="#">응원단</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="../html/game.html">1군 경기일정</a></li>
+                            <li><a href="#">퓨처스 경기일정</a></li>
+                        </ul>
+                        <ul class="submenu">
+                            <li><a href="#">구단소식</a></li>
+                            <li><a href="#">멤버쉽</a></li>
+                            <li><a href="#">팬타임즈</a></li>
+                            <li><a href="#">갤러리</a></li>
+                            <li><a href="#">이글스아카이브</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="inner">
+            <h1>THIS IS OUR WAY</h1>
+            <span><strong>한화이글스</strong>선수단</span>
+            <ul class="menu">
+                <li><a href="#">투수</a></li>
+                <li><a href="#">포수</a></li>
+                <li><a href="#">내야수</a></li>
+                <li><a href="#">외야수</a></li>
+                <li><a href="#">군입대선수</a></li>
+                <li><a href="#">코칭스탭</a></li>
+                <li><a href="#">응원단</a></li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <div class="inner">
+            <div class="main" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mainL">
+                    <img src="../Pimg/김민우.png" alt=김민우>
+                </div>
+                <div class="mainR">
+                    <span>우투/우타</span>
+                    <div class="name">
+                        <strong>53</strong>
+                        <div class="name1">
+                            <h2>김민우</h2>
+                            <span>KIM MIN WOO</span>
+                        </div>
+                    </div>
+                    <div class="name2">
+                        <div class="n1">
+                            <ul class="n3">
+                                <li>생년월일</li>
+                                <li>체격</li>
+                                <li>출신학교</li>
+                                <li>주요경력</li>
+                            </ul>
+                            <ul class="n4">
+                                <li>1995 .07 .25</li>
+                                <li>186cm, 97kg</li>
+                                <li>마산 사파초 - 마산중 - 용마고</li>
+                                <li>2015 ~ 한화이글스</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="season">
+        <div class="inner">
+            <span>2021 시즌</span>
+        </div>
+        <div class="orange">
+            <div class="inner">
+                <div class="box">
+                    <div class="boxtext">
+                        <p>평균자책점</p>
+                        <p>4.04</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxtext">
+                        <p>승리</p>
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxtext">
+                        <p>패배</p>
+                        <p>10</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxtext">
+                        <p>홀드</p>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxtext">
+                        <p>세이브</p>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxtext">
+                        <p>탈삼진</p>
+                        <p>129</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxtext">
+                        <p>이닝</p>
+                        <p>148</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="inner">
+            <div class="tab-menu">
+                <div class="tab-btn">
+                    <ul>
+                        <li class="active"><a href="#">최근 5경기</a></li>
+                        <li><a href="#">통산기록</a></li>
+                    </ul>
+                </div>
+                <div class="tab-cont">
+                    <div>
+                        <table>
+                            <tr class="top">
+                                <td>경기일</td>
+                                <td>상대</td>
+                                <td>승패</td>
+                                <td>이닝</td>
+                                <td>투구수</td>
+                                <td>실점</td>
+                                <td>자책</td>
+                                <td>피안타</td>
+                                <td>피홈런</td>
+                                <td>4사구</td>
+                                <td>삼진</td>
+                                <td>평균자책점</td>
+                            </tr>
+                            <tr>
+                                <td>06-08</td>
+                                <td>키움</td>
+                                <td>승</td>
+                                <td>6.0</td>
+                                <td>105</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                                <td>3.60</td>
+                            </tr>
+                            <tr>
+                                <td>06-13</td>
+                                <td>KT</td>
+                                <td>패</td>
+                                <td>4.0</td>
+                                <td>76</td>
+                                <td>6</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4.04</td>
+                            </tr>
+                            <tr>
+                                <td>06-19</td>
+                                <td>SSG</td>
+                                <td>패</td>
+                                <td>5.2</td>
+                                <td>89</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>5</td>
+                                <td>4.46</td>
+                            </tr>
+                            <tr>
+                                <td>07-02</td>
+                                <td>LG</td>
+                                <td>승</td>
+                                <td>7.1</td>
+                                <td>102</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>4.06</td>
+                            </tr>
+                            <tr>
+                                <td>07-10</td>
+                                <td>SSG</td>
+                                <td>승</td>
+                                <td>6.0</td>
+                                <td>100</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>9</td>
+                                <td>3.89</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <tr class="top">
+                                <td>연도</td>
+                                <td>팀</td>
+                                <td>경기수</td>
+                                <td>완투</td>
+                                <td>완봉</td>
+                                <td>승</td>
+                                <td>패</td>
+                                <td>세이브</td>
+                                <td>홀드</td>
+                                <td>이닝</td>
+                                <td>실점</td>
+                                <td>자책점</td>
+                                <td>평균자책점</td>
+                            </tr>
+                            <tr>
+                                <td>2016</td>
+                                <td>한화</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>9.2</td>
+                                <td>18</td>
+                                <td>17</td>
+                                <td>15.83</td>
+                            </tr>
+                            <tr>
+                                <td>2017</td>
+                                <td>한화</td>
+                                <td>4</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>7.1</td>
+                                <td>15</td>
+                                <td>14</td>
+                                <td>17.18</td>
+                            </tr>
+                            <tr>
+                                <td>2018</td>
+                                <td>한화</td>
+                                <td>23</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                                <td>9</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>99.1</td>
+                                <td>79</td>
+                                <td>72</td>
+                                <td>6.52</td>
+                            </tr>
+                            <tr>
+                                <td>2019</td>
+                                <td>한화</td>
+                                <td>16</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>2</td>
+                                <td>7</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>68.0</td>
+                                <td>59</td>
+                                <td>51</td>
+                                <td>6.75</td>
+                            </tr>
+                            <tr>
+                                <td>2020</td>
+                                <td>한화</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                                <td>10</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>68.0</td>
+                                <td>72</td>
+                                <td>64</td>
+                                <td>4.34</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="inner">
+            <div class="player-center">
+                <div class="item">
+                    <img src="../Pimg/선수소개-53김민우.png" alt=김민우>
+                    <div class="pt">
+                        <h1>53</h1>
+                        <div class="pt1">
+                            <span>김민우</span>
+                            <span>KIM MIN WOO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-55강재민.png" alt=강재민>
+                    <div class="pt">
+                        <h1>55</h1>
+                        <div class="pt1">
+                            <span>강재민</span>
+                            <span>KANG JAE MIN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-65권용우.png" alt=권용우>
+                    <div class="pt">
+                        <h1>65</h1>
+                        <div class="pt1">
+                            <span>권용우</span>
+                            <span>GWON YONG WOO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-03김규연.png" alt=김규연>
+                    <div class="pt">
+                        <h1>03</h1>
+                        <div class="pt1">
+                            <span>김규연</span>
+                            <span>KIM KYU YEON</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-15김기중.png" alt=김기중>
+                    <div class="pt">
+                        <h1>15</h1>
+                        <div class="pt1">
+                            <span>김기중</span>
+                            <span>KIM KI JOONG</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-29김기탁.png" alt=김기탁>
+                    <div class="pt">
+                        <h1>29</h1>
+                        <div class="pt1">
+                            <span>김기탁</span>
+                            <span>KIM KI TAK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-47김범수.png" alt=김범수>
+                    <div class="pt">
+                        <h1>47</h1>
+                        <div class="pt1">
+                            <span>김범수</span>
+                            <span>KIM BEOM SU</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-94김승일.png" alt=김승일>
+                    <div class="pt">
+                        <h1>94</h1>
+                        <div class="pt1">
+                            <span>김승일</span>
+                            <span>KIM SEUNG IL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-45김이환.png" alt=김이환>
+                    <div class="pt">
+                        <h1>45</h1>
+                        <div class="pt1">
+                            <span>김이환</span>
+                            <span>KIM YI HWAN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-01김종수.png" alt=김종수>
+                    <div class="pt">
+                        <h1>01</h1>
+                        <div class="pt1">
+                            <span>김종수</span>
+                            <span>KIM JONG SOO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-37김진영.png" alt=김진영>
+                    <div class="pt">
+                        <h1>37</h1>
+                        <div class="pt1">
+                            <span>김진영</span>
+                            <span>KIM JIN YOUNG</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../Pimg/선수소개-32김진욱.png" alt=김진욱>
+                    <div class="pt">
+                        <h1>32</h1>
+                        <div class="pt1">
+                            <span>김진욱</span>
+                            <span>KIM JIN WOOK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sbt">
+                <div class="button">
+                    <a href="#">투수 전체</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="footerL">
+                <img src="../img/Hlogo.png" alt=hanwha class="Elogo">
+                <div class="footermenu">
+                    <span>대전광역시 중구 대종로 373 한화이글스</span>
+                    <span>대표이사 박찬혁</span>
+                    <span>사업자 등록번호 306-81-12757</span>
+                </div>
+                <div class="footermenu">
+                    <span>TEL 042-630-8200</span>
+                    <span>FAX 042-632-2929</span>
+                </div>
+                <div class="footerMENU">
+                    <a href="#"><span>법적고지</span></a>
+                    <a href="#"><span>개인정보 처리방침</span></a>
+                    <a href="#"><span>이용약관</span></a>
+                    <a href="#"><span>고객문의</span></a>
+                    <a href="#"><span>1:1문의</span></a>
+                    <a href="#"> <span>사이트맵</span></a>
+                </div>
+            </div>
+            <div class="footerR">
+                <span>© 2014 HANWHA EAGLES. All rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+    <script src="../js/player.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title>국립중앙박물관</title>
+    <link rel="stylesheet" type="text/css" href="../css/pa_sub02_pc.css">
+    <link rel="stylesheet" media="all and (max-width: 640px)" type="text/css" href="../css/pa_sub02_m.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/pa/pa_icon.ico" />
+</head>
+
+<body>
+    <header>
+        <div class="top clearfix">
+            <div class="logo"><a href="../html/pa.html"><img src="../images/pa/logo_white.svg" alt="로고"></a></div>
+            <div class="logo_m"><a href="../html/pa.html"><img src="../images/pa/logo_balck.svg" alt="모바일 로고"></a></div>
+            <nav class="gnb">
+                <i class="material-icons-outlined mclose">close</i>
+                <ul>
+                    <li data-id="sn1" class="on"><a href="../html/pa_sub01.html">관람 정보</a></li>
+                    <li data-id="sn2"><a href="../html/pa_sub02.html">전시</a></li>
+                    <li data-id="sn3"><a href="#">교육·행사</a></li>
+                    <li data-id="sn4"><a href="#">소장품</a></li>
+                    <li data-id="sn5"><a href="#">학술·출판</a></li>
+                    <li data-id="sn6"><a href="#">소식·참여</a></li>
+                    <li data-id="sn7"><a href="#">박물관 소개</a></li>
+                </ul>
+                <div class="m_bottom">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                </div>
+                <select class="m_lang">
+                    <option selected>Language</option>
+                    <option>한국어</option>
+                    <option>English</option>
+                    <option>中國語</option>
+                </select>
+                <nav class="nav2 clearfix">
+                    <div class="n_left"></div>
+                    <div class="sub">
+                        <ul id="sn1" class="on">
+                            <li><a href="#">관람안내</a></li>
+                            <li>
+                                <a href="#">전시해설</a>
+                                <ul>
+                                    <li>전시 해설 안내</li>
+                                    <li>큐레이터와의 대화</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../html/pa_sub01.html">예약하기</a>
+                                <ul>
+                                    <li><a href="../html/pa_sub01.html">상설전시 관람 예약</a></li>
+                                    <li>고故이건희 회장 기증 명품전</li>
+                                    <li>어린이 박물관 관람 예약</li>
+                                    <li>VR 체험 영상<br>(디지털 실감 영상관2)</li>
+                                    <li>교육 프로그램 및<br>도서관 예약</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">관람·편의시설</a>
+                                <ul>
+                                    <li>박물관 전체 안내</li>
+                                    <li>전시 공간</li>
+                                    <li>주요 시설</li>
+                                    <li>야외 시설</li>
+                                    <li>식당, 편의시설</li>
+                                    <li>편의시설 연락처</li>
+                                    <li>층별 안내</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                        <ul id="sn2">
+                            <li>
+                                <a href="../html/pa_sub02.html">상설전시</a>
+                                <ul>
+                                    <li><a href="../html/pa_sub02.html">상설전시실 층별 안내</a></li>
+                                    <li>추천 동선</li>
+                                    <li>선사·고대관</li>
+                                    <li>중·근세관</li>
+                                    <li>서화관</li>
+                                    <li>기증관</li>
+                                    <li>조각·공예관</li>
+                                    <li>세계문화관</li>
+                                    <li>역사의 길</li>
+                                    <li>야외 전시</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">특별전시</a></li>
+                            <li><a href="#">디지털 실감 영상관</a></li>
+                            <li><a href="#">온라인 전시관</a></li>
+                            <li><a href="#">우리문화재 국외 전시</a></li>
+                            <li><a href="#">소속 국립박물관 전시</a></li>
+                            <li><a href="#">전시도록</a></li>
+                            <li><a href="#">외국박물관 소장<br>한국 문화재</a></li>
+                        </ul>
+                        <ul id="sn3">
+                            <li><a href="#">교육 신청</a></li>
+                            <li><a href="#">교육 자료</a></li>
+                            <li><a href="#">교육 소식</a></li>
+                            <li><a href="#">스튜디오 몬(M:on)</a></li>
+                            <li><a href="#">온라인 학습 영상 자료실</a></li>
+                            <li><a href="#">문화 행사</a></li>
+                        </ul>
+                        <ul id="sn4">
+                            <li><a href="#">큐레이터 추천 소장품</a></li>
+                            <li><a href="#">소장품 검색</a></li>
+                            <li><a href="#">국보·보물 검색</a></li>
+                            <li><a href="#">수어 동영상</a></li>
+                            <li><a href="#">소장품 열람·복제</a></li>
+                            <li><a href="#">문화재 기증 안내</a></li>
+                        </ul>
+                        <ul id="sn5">
+                            <li><a href="#">정기간행물</a></li>
+                            <li><a href="#">고고학</a></li>
+                            <li><a href="#">역사학</a></li>
+                            <li><a href="#">미술사학</a></li>
+                            <li><a href="#">아시아학</a></li>
+                            <li><a href="#">보존과학</a></li>
+                            <li><a href="#">일제 강점기 조사 자료</a></li>
+                            <li><a href="#">도서관</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                        <ul id="sn6">
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">영상</a></li>
+                            <li><a href="#">자원봉사 안내</a></li>
+                            <li><a href="#">학예사 자격증 안내</a></li>
+                            <li><a href="#">전자 민원</a></li>
+                            <li><a href="#">정보공개</a></li>
+                        </ul>
+                        <ul id="sn7">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">비전과 전략</a></li>
+                            <li><a href="#">발자취</a></li>
+                            <li><a href="#">조직 및 업무</a></li>
+                            <li><a href="#">시설 소개</a></li>
+                            <li><a href="#">수장고</a></li>
+                            <li><a href="#">박물관 관련 자료</a></li>
+                            <li><a href="#">문화유산 표준관리시스템</a></li>
+                        </ul>
+                    </div>
+                    <div class="n_right"></div>
+                </nav>
+            </nav>
+            <div class="right">
+                <input type="search" placeholder="검색">
+                <div class="login">로그인</div>
+                <div class="join">회원가입</div>
+            </div>
+            <div class="right_m">
+                <i class="material-icons-outlined">search</i>
+                <i class="material-icons-outlined mMenuBt">menu</i>
+            </div>
+        </div>
+        <select class="lang">
+            <option selected>Language<i class="fas fa-caret-down"></i></option>
+            <option>한국어</option>
+            <option>English</option>
+            <option>中國語</option>
+        </select>
+    </header>
+    <nav class="lnb sub02">
+        <div class="inner">
+            <ul class="clearfix">
+                <li class="on">상설전시실 층별 안내</li>
+                <li>추천 동선</li>
+                <li>선사·고대관</li>
+                <li>중·근세관</li>
+                <li>서화관</li>
+                <li>기증관</li>
+                <li>조각·공예관</li>
+                <li>세계문화관</li>
+                <li>역사의 길</li>
+                <li>야외 전시</li>
+                <li class="null"></li>
+                <li class="null"></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="location">
+        <div class="inner">
+            <i class="fas fa-home"></i>
+            <p>전시</p>
+            <p>상설전시</p>
+            <p>상설전시실 층별 안내</p>
+        </div>
+    </div>
+    <main class="sub02">
+        <div class="inner">
+            <h1>상설전시실 층별 안내</h1>
+            <p>국립중앙박물관의 상설전시장은 <b>총 6개의 관과 50개의 실로 구성되어 12,044점의 유물을 전시하여 제공</b>하고 있으며 전시물은 외부전시 일정 및 유물의 보존 상태를 위하여 주기적으로 교체하고 있습니다.</p>
+            <p>상설 전시장은 <b>누구나 무료로 관람</b>하실 수 있습니다.</p>
+        </div>
+        <div class="inner sec one">
+            <h2>1층</h2>
+        </div>
+        <div class="s1 bg">
+            <div class="inner clearfix">
+                <div class="left">
+                    <img src="../images/pa/sub02_1stfloor1.jpg" alt="중근세관">
+                    <h2>중·근세관</h2>
+                    <p>고려, 조선, 대한제국실로 꾸며진 북쪽 전시공간은 당시의 역사자료를 관람객이 쉽게 이해하고 흥미를 느낄 수 있도록 전시되어 있습니다.</p>
+                </div>
+                <div class="right">
+                    <img src="../images/pa/sub02_1stfloor2.jpg" alt="선사고대관">
+                    <h2>선사·고대관</h2>
+                    <p>인류가 한반도에 살기 시작한 구석기시대부터 통일신라와 발해가 공존한 남북국시대까지 우리나라의 역사와 문화를 시간의 흐름에 따라 보여주는 통사적 전시 공간입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner sec two">
+            <h2>2층</h2>
+        </div>
+        <div class="s2 bg">
+            <div class="inner clearfix">
+                <div class="left">
+                    <img src="../images/pa/sub02_2ndfloor1.jpg" alt="서화관">
+                    <h2>서화관</h2>
+                    <p>서화, 불교 회화, 목칠공예 등 선과 색채로 발휘된 한국전통문화의 아름다움을 감상할 수 있는 공간입니다.</p>
+                </div>
+                <div class="right">
+                    <img src="../images/pa/sub02_2ndfloor2.jpg" alt="기증관">
+                    <h2>기증관</h2>
+                    <p>개인 소장품을 기증하여 인류의 전통문화 선양에 기여한 분들의 고귀한 뜻이 담긴 전시 공간입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="inner sec three">
+            <h2>3층</h2>
+        </div>
+        <div class="s3 bg clearfix">
+            <div class="inner clearfix">
+                <div class="left clearfix">
+                    <img src="../images/pa/sub02_3rdfloor1.jpg" alt="조각공예관">
+                    <h2>조각·공예관</h2>
+                    <p>한국 불교조각과 고려청자와 조선 백자 등의 도자공예 그리고 금속 공예문화의 진수를 감상할 수 있는 전시공간입니다.</p>
+                </div>
+                <div class="right clearfix">
+                    <img src="../images/pa/sub02_3rdfloor2.jpg" alt="세계문화관">
+                    <h2>세계문화관</h2>
+                    <p>이집트, 중국, 일본, 중앙아시아, 인도•동남아시아 등 세계 각 지역의 다양한 문화를 전시한 공간입니다.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="sub02">
+        <div class="inner clearfix">
+            <div class="f_left">
+                <div class="l_menu1 clearfix">
+                    <ul>
+                        <li><a href="#">어린이박물관</a></li>
+                        <li><a href="#">학예사자격증</a></li>
+                        <li><a href="#">박물관신문</a></li>
+                        <li><a href="#">e뮤지엄</a></li>
+                        <li><a href="#">외규장각 의궤 원문</a></li>
+                    </ul>
+                </div>
+                <div class="l_menu2 clearfix">
+                    <ul>
+                        <li><a href="#">문화유산 표준관리시스템</a></li>
+                        <li><a href="#">청년멘토</a></li>
+                        <li><a href="#">VCM 가상명품박물관</a></li>
+                    </ul>
+                </div>
+                <div class="l_menu3 clearfix">
+                    <select>
+                        <option selected>관련사이트 바로가기</option>
+                        <option>국립박물관 문화재단</option>
+                        <option>국립중앙박물관회</option>
+                        <option>사단법인 한국박물관협회</option>
+                    </select>
+                    <select onchange="if(this.value) window.open(this.value);">
+                        <option selected>소속박물관 바로가기</option>
+                        <option value="https://gyeongju.museum.go.kr/">국립경주박물관</option>
+                        <option value="https://gwangju.museum.go.kr/">국립광주박물관</option>
+                        <option value="http://jeonju.museum.go.kr/">국립전주박물관</option>
+                        <option value="http://daegu.museum.go.kr/">국립대구박물관</option>
+                        <option value="http://buyeo.museum.go.kr/">국립부여박물관</option>
+                        <option value="http://gongju.museum.go.kr/">국립공주박물관</option>
+                        <option value="http://jinju.museum.go.kr/">국립진주박물관</option>
+                        <option value="http://cheongju.museum.go.kr/">국립청주박물관</option>
+                        <option value="http://gimhae.museum.go.kr/">국립김해박물관</option>
+                        <option value="http://jeju.museum.go.kr/">국립제주박물관</option>
+                        <option value="http://chuncheon.museum.go.kr/">국립춘천박물관</option>
+                        <option value="http://naju.museum.go.kr/">국립나주박물관</option>
+                        <option value="http://iksan.museum.go.kr/">국립익산박물관</option>
+                    </select>
+                    <select onchange="location = this.value;">
+                        <option selected>가이드북 다운로드</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/7Rnz6z4qZ3B2p38QQABg4A==">한국어(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/RoMkEckgakz7pXiXQh0Gfw==">English(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/PwSRJcHNhU4GjTc9ZiWnFg==">中文(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/ybjAB4Xtjz3CqOuqIi_Zqg==">日本語(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/DcIUvWPqZhD6qLO-pJhe4Q==">Русский(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/ZgvLQnrm7UpEgh-a1LKQEw==">Français(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/spRiHIxwDZj4UztVPb4KGA==">Deutsche(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/3yPbTaC1eDcLlBCNfr2XVg==">Tiếng Việt(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/uB8b329oTiNPhUMonw0NgQ==">Español(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/F0pnS-xkn03XHDYY6jEPvA==">العربية(PDF)</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/2IWM4cV-eUhOMgTqZs59bA==">박물관 야외정원 안내</option>
+                        <option value="https://www.museum.go.kr/site/main/filedown/LhbhWriOhiD0en9CqkesEA==">프로그램(8월~10월)</option>
+                    </select>
+                </div>
+                <div class="l_menu4 clearfix">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">누리집지도</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">전자민원</a></li>
+                        <li><a href="#">공공데이터개방</a></li>
+                        <li><a href="#">저작권정책</a></li>
+                        <li><a href="#">클린신고센터</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f_right">
+                <img src="../images/pa/logo_balck.svg" alt="로고">
+                <p>04383 서울시 용산구 서빙고로137(용산동6가 168-6)</p>
+                <p>대표전화 02-2077-9000</p>
+                <p>@ National Museum of Korea.</p>
+                <div class="r_sns">
+                    <a href="https://blog.naver.com/100museum" target="_blank" title="국립중앙박물관 네이버 블로그 새 창으로 열림">
+                        <img src="../images/pa/naver_blog.svg" alt="네이버 블로그">
+                    </a>
+                    <a href="https://www.facebook.com/NationalMuseumofKorea/" target="_blank" title="국립중앙박물관 페이스북 새 창으로 열림">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://twitter.com/The_NMK" target="_blank" title="국립중앙박물관 트위터 새 창으로 열림">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nationalmuseumofkorea/" target="_blank" title="국립중앙박물관 인스타그램 새 창으로 열림">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/koreanmuseum" target="_blank" title="국립중앙박물관 유튜브 새 창으로 열림">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://audioclip.naver.com/channels/2320" target="_blank" title="국립중앙박물관 네이버 오디오클립 새 창으로 열림">
+                        <i class="fas fa-headphones-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="topbt">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../lib/IE-Checker/ie-checker.js"></script>
+    <script src="../js/pa_nav.js"></script>
+</body>
+
+</html>
