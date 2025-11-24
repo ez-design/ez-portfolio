@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>단국대학교</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <h1 class="logo"><a href="../dankook/index.html"></a></h1>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#n">대학소개</a></li>
+                    <li><a href="#n">입학안내</a></li>
+                    <li><a href="#n">교육</a></li>
+                    <li><a href="#n">연구ㆍ신학</a></li>
+                    <li><a href="#n">대학생활</a></li>
+                    <li><a href="#n">커뮤니티</a></li>
+                    <li><a href="#n">학교법인</a></li>
+                </ul>
+            </div>
+            <div class="tnb">
+                <ul>
+                    <li class="portal"><a href="#n">포털사이트</a></li>
+                    <li class="login"><a href="#n">로그인</a></li>
+                    <li class="lang">
+                        <span>언어선택</span>
+                        <ul class="list">
+                            <li class="on"><a href="#n">KOREAN</a></li>
+                            <li><a href="#n">ENGLISH</a></li>
+                            <li><a href="#n">CHINESE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <div class="visual">
+                <div class="v_logo"><img src="images/v_logo.png" alt="단국대학교 로고"></div>
+                <h2>도전과 창조의 글로벌 대학</h2>
+                <span>DANKOOK UNIVERSITY</span>
+            </div><!--visual-->
+            <div class="quick_menu">
+                <ul>
+                    <li class="q_search"><a href="#n">검색</a></li>
+                    <li class="q_student"><a href="#n">재학생</a></li>
+                    <li class="q_prospect"><a href="#n">예비 단국인</a></li>
+                    <li class="q_employee"><a href="#n">교직원</a></li>
+                    <li class="q_top"><a href="#n">TOP</a></li>
+                </ul>
+            </div>
+            <div class="service">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="tit">
+                            <h2>주요 서비스</h2>
+                            <p>방문자별 맞춤 서비스를 이용해보세요.</p>
+                            <div class="tap_menu">
+                                <ul>
+                                    <li class="on">공통</li>
+                                    <li>재학생</li>
+                                    <li>예비 단국인</li>
+                                    <li>교직원</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li class="library"><a href="#n">도서관</a></li>
+                                <li class="lifelong_edu"><a href="#n">평생교육원</a></li>
+                                <li class="dorm"><a href="#n">기숙사</a></li>
+                                <li class="certificate"><a href="#n">증명서 발급</a></li>
+                                <li class="cooperation"><a href="#n">산학협력단</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--service-->
+            <div class="notice">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>DKU <br>공지</h2>
+                        <div class="tap_menu">
+                            <ul>
+                                <li class="on" data-name="n_common">전체</li>
+                                <li data-name="n_genaeral">일반공지</li>
+                                <li data-name="n_lecture">특강</li>
+                                <li data-name="n_event">행사</li>
+                                <li data-name="n_recruit">채용</li>
+                                <li data-name="n_purchase">구매/입찰</li>
+                            </ul>
+                            <div class="more"><a href="#n">자세히보기</a></div>
+                        </div>
+                    </div>
+                    <div class="detail" >
+                        <div class="item" data-name="n_common">
+                            <ul>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        <h3>2024학년도 1학기 단국대학교 특별교원 공개채용 공고</h3>
+                                        <span>2024.05.30</span>
+                                    </a>
+                                </li>
+                                <li class="n_lecture">
+                                    <a href="#n">
+                                        <strong>특강</strong>
+                                        <h3>[도서관] IEEE Authorship Session 안내</h3>
+                                        <span>2024.05.30</span>
+                                    </a>
+                                </li>
+                                <li class="n_event">
+                                    <a href="#n">
+                                        <strong>행사</strong>
+                                        <h3>[통합과학교육연구소] 환경부, (사)한국환경교육학회, 단국대학교부설통합과학교육연구소가 함께하는 ‘환경교육 캠퍼스 포럼’ 행사 안내</h3>
+                                        <span>2024.05.30</span>
+                                    </a>
+                                </li>
+                                <li class="n_recruit">
+                                    <a href="#n">
+                                        <strong>채용</strong>
+                                        <h3>경영경제대학 글로벌경영학과 조교 채용 공고</h3>
+                                        <span>2024.05.29</span>
+                                    </a>
+                                </li>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        <h3>「학생증 디자인 리뉴얼 공모전」 최종 투표 안내</h3>
+                                        <span>2024.05.28</span>
+                                    </a>
+                                </li>
+                                <li class="n_purchase">
+                                    <a href="#n">
+                                        <strong>구매/입찰</strong>
+                                        <h3>[산단] 레이저라만분광기 1종 1점 구매 입찰</h3>
+                                        <span>2024.05.28</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="item" data-name="n_genaeral">
+                            <ul>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        <h3>2024학년도 1학기 단국대학교 특별교원 공개채용 공고</h3>
+                                        <span>2024.05.30</span>
+                                    </a>
+                                </li>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        <h3>「학생증 디자인 리뉴얼 공모전」 최종 투표 안내</h3>
+                                        <span>2024.05.28</span>
+                                    </a>
+                                </li>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        제9회 동양학연구원 산하연구소 백산학회 공동 학술심포지엄 개최 안내</h3>
+                                        <span>2024.05.28</span> 
+                                    </a>
+                                </li>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        <h3>[한국고전문학텍스트연구소] 제 6회 전문가 초청 특강 안내</h3>
+                                        <span>2024.05.28</span>
+                                    </a>
+                                </li>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        <h3>[도서관] 베어토피아 개관 안내/h3>
+                                        <span>2024.05.24</span>
+                                    </a>
+                                </li>
+                                <li class="n_genaeral">
+                                    <a href="#n">
+                                        <strong>일반공지</strong>
+                                        <h3>한국과학기술실용화학회 『과학기술융합연구』 제3권 1호 원고 모집</h3>
+                                        <span>2024.04.22</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="item" data-name="n_lecture">
+                            <ul>
+                                <li class="n_lecture">
+                                    <a href="#n">
+                                        <strong>특강</strong>
+                                        <h3>[도서관] IEEE Authorship Session 안내</h3>
+                                        <span>2024.05.30</span>
+                                    </a>
+                                </li>
+                                <li class="n_lecture">
+                                    <a href="#n">
+                                        <strong>특강</strong>
+                                        <h3>2024년 창업지원단 선배창업자 릴레이 창업특강(5월~6월) 안내</h3>
+                                        <span>2024.05.27</span>
+                                    </a>
+                                </li>
+                                <li class="n_lecture">
+                                    <a href="#n">
+                                        <strong>특강</strong>
+                                        <h3>[한문교육연구소] 인문사회연구소 지원사업 제13회 한연포럼 개최 안내</h3>
+                                        <span>2024.05.27</span>
+                                    </a>
+                                </li>
+                                <li class="n_lecture">
+                                    <a href="#n">
+                                        <strong>특강</strong>
+                                        <h3>반도체전문가 수요특강 사전등록 안내 (강연자 : TEL 이상우 Fellow)</h3>
+                                        <span>2024.05.16</span>
+                                    </a>
+                                </li>
+                                <li class="n_lecture">
+                                    <a href="#n">
+                                        <strong>특강</strong>
+                                        <h3>2024년 [청년공감] 행사 안내</h3>
+                                        <span>2024.05.16</span>
+                                    </a>
+                                </li>
+                                <li class="n_lecture">
+                                    <a href="#n">
+                                        <strong>특강</strong>
+                                        <h3>[일본연구소] HK+ 사업단 제40회 학문후속세대특강 안내</h3>
+                                        <span>2024.05.16</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="item" data-name="n_event">
+                            <ul>
+                                <li class="n_event">
+                                    <a href="#n">
+                                        <strong>행사</strong>
+                                        <h3>[통합과학교육연구소] 환경부, (사)한국환경교육학회, 단국대학교부설통합과학교육연구소가 함께하는 ‘환경교육 캠퍼스 포럼’ 행사 안내</h3>
+                                        <span>2024.05.30</span>
+                                    </a>
+                                </li>
+                                <li class="n_event">
+                                    <a href="#n">
+                                        <strong>행사</strong>
+                                        <h3>[일본연구소] HK+사업단 제15회 국내학술대회 개최</h3>
+                                        <span>2024.05.20</span>
+                                    </a>
+                                </li>
+                                <li class="n_event">
+                                    <a href="#n">
+                                        <strong>행사</strong>
+                                        <h3>환경교육 캠퍼스 포럼 안내</h3>
+                                        <span>2024.05.16</span>
+                                    </a>
+                                </li>
+                                <li class="n_event">
+                                    <a href="#n">
+                                        <strong>행사</strong>
+                                        <h3>[DKU아너스] 제1회 DKU아너스 동문특강 개최</h3>
+                                        <span>2024.05.09</span>
+                                    </a>
+                                </li>
+                                <li class="n_event">
+                                    <a href="#n">
+                                        <strong>행사</strong>
+                                        <h3>2024 경기,인천,강원 핀테크 챌린지 참여팀 모집</h3>
+                                        <span>2024.04.23</span>
+                                    </a>
+                                </li>
+                                <li class="n_event">
+                                    <a href="#n">
+                                        <strong>행사</strong>
+                                        <h3>교양기초교육연구소·교과교육연구소 공동학술대회</h3>
+                                        <span>2024.04.19</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="item" data-name="n_recruit">
+                            <ul>
+                                <li class="n_recruit">
+                                    <a href="#n">
+                                        <strong>채용</strong>
+                                        <h3>의과대학/간호대학 학사조교 채용 공고(07월 임용예정)</h3>
+                                        <span>2024.05.29</span>
+                                    </a>
+                                </li>
+                                <li class="n_recruit">
+                                    <a href="#n">
+                                        <strong>채용</strong>
+                                        <h3>경영경제대학 글로벌경영학과 조교 채용 공고</h3>
+                                        <span>2024.05.29</span>
+                                    </a>
+                                </li>
+                                <li class="n_recruit">
+                                    <a href="#n">
+                                        <strong>채용</strong>
+                                        <h3>[한문교육연구소] 학생연구원 모집</h3>
+                                        <span>2024.05.27</span>
+                                    </a>
+                                </li>
+                                <li class="n_recruit">
+                                    <a href="#n">
+                                        <strong>채용</strong>
+                                        <h3>[세종]치과대학 세종치과병원 임상전담교원(치과의사) 모집 공고</h3>
+                                        <span>2024.05.24</span>
+                                    </a>
+                                </li>
+                                <li class="n_recruit">
+                                    <a href="#n">
+                                        <strong>채용</strong>
+                                        <h3>[세종]치과대학 세종치과병원 임상전담교원(마취통증의학과 전문의) 모집 공고</h3>
+                                        <span>2024.05.24</span>
+                                    </a>
+                                </li>
+                                <li class="n_recruit">
+                                    <a href="#n">
+                                        <strong>채용</strong>
+                                        <h3>[죽전]2024년 6월 계약직 채용 모집 공고(추가)]</h3>
+                                        <span>2024.05.24</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail" >
+                        <div class="item" data-name="n_purchase">
+                            <ul>
+                                <li class="n_purchase">
+                                    <a href="#n">
+                                        <strong>구매/입찰</strong>
+                                        <h3>[산단] 레이저라만분광기 1종 1점 구매 입찰</h3>
+                                        <span>2024.05.28</span>
+                                    </a>
+                                </li>
+                                <li class="n_purchase">
+                                    <a href="#n">
+                                        <strong>구매/입찰</strong>
+                                        <h3>[산단] 스마트 감리 통합 플랫폼 설계 및 프로토타입 시스템 개발 업체 선정 입찰</h3>
+                                        <span>2024.05.27</span>
+                                    </a>
+                                </li>
+                                <li class="n_purchase">
+                                    <a href="#n">
+                                        <strong>구매/입찰</strong>
+                                        <h3>[산단] 첨단분야 혁신융합대학사업 온라인 교육용 동영상 콘텐츠 제작 업체 선정 입찰</h3>
+                                        <span>2024.05.27</span>
+                                    </a>
+                                </li>
+                                <li class="n_purchase">
+                                    <a href="#n">
+                                        <strong>구매/입찰</strong>
+                                        <h3>단국대학교 대외 고객 운영 및 만족도 조사 용역</h3>
+                                        <span>2024.05.24</span>
+                                    </a>
+                                </li>
+                                <li class="n_purchase">
+                                    <a href="#n">
+                                        <strong>구매/입찰</strong>
+                                        <h3>학교법인 단국대학 2024학년도 결산 외부회계감사 등 용역법인 선정 공고 입찰</h3>
+                                        <span>2024.05.20</span>
+                                    </a>
+                                </li>
+                                <li class="n_purchase">
+                                    <a href="#n">
+                                        <strong>구매/입찰</strong>
+                                        <h3>[[긴급] 2024학년도 2학기 글로벌K-컬처 컨소시엄 이러닝 콘텐츠 개발</h3>
+                                        <span>2024.05.20</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--wrapper-->
+            </div> <!--notice-->
+            <div class="news">
+                <div class="wrapper">
+                    <h2>DKU NEWS</h2>
+                    <ul>
+                        <li>
+                            <a href="#n">
+                                <div class="photo"><img src="images/news01.png" alt=""></div>
+                                <h3>에디슨어워드 동상 수상,<br>DKU스타트업 ㈜씨피식스</h3>
+                                <span>2024.04.19</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <div class="photo"><img src="images/news02.png" alt=""></div>
+                                <h3>고정용 동문(경제학과 77학번),<br>제50대 총동창회장 선임</h3>
+                                <span>2024.04.18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <div class="photo"><img src="images/news03.png" alt=""></div>
+                                <h3>한국어능력시험(TOPIK)<br>시행기관 선정</h3>
+                                <span>2024.04.17</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <div class="photo"><img src="images/news04.png" alt=""></div>
+                                <h3>창업 지원사업 3관왕 달성! 창업지원단,<br> 「아이디어 사업화 지원사업」 선정</h3>
+                                <span>2024.04.09</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#n">자세히보기</a></div>
+                </div>
+            </div><!--news-->
+            <div class="contents">
+                <div class="wrapper">
+                    <div class="popupzon">
+                        <div class="top">   
+                            <h2>POPUPZON</h2>
+                            <div class="page">
+                                <div class="pagination"></div>
+                                <div class="navigation">
+                                    <button class="prev"></button>
+                                    <button class="next"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper"> 
+                            <ul class="swiper-wrapper"> 
+                                <li class="swiper-slide"><img src="images/popup01.png" alt="특수대학원모집 팝업"></li> 
+                                <li class="swiper-slide"><img src="images/popup02.png" alt="단국 교사자료 기증 안내 팝업"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="donate">
+                        <div class="inner">
+                            <div class="tit">
+                                <span>당신의 사랑으로 단국은 커갑니다.</span>
+                                <h2>2024년 발전기금 모금액</h2>
+                            </div>
+                            <div class="detail">
+                                <ul>
+                                    <li class="person"><span class="counter" data-start="0" data-end="2884">0</span>명</li>
+                                    <li class="money"><span class="counter" data-start="0" data-end="840225312">0</span>원</li>
+                                </ul>
+                            </div>
+                            <div class="link">
+                                <a href="#n">
+                                    <div class="txt">
+                                        <span>월 <strong class="c_yellow">만원</strong>의 <strong class="c_pink">단국사랑</strong></span>
+                                        <p>소액 정기후원으로 함께 만들어가는 단국의 내일</p>
+                                    </div>
+                                    <div class="bts">
+                                        <strong>캠페인<br>바로가기</strong>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!--donate-->
+                </div>
+            </div><!--contents-->
+            <div class="schedule">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>DKU 학사일정</h2>
+                        <div class="date">
+                            <strong>TODAY</strong>
+                            <span></span>
+                        </div>
+                        <div class="bts">
+                            <div class="page">
+                                <div class="prev"></div>
+                                <div class="stop"></div>
+                                <div class="start"></div>
+                                <div class="next"></div>
+                            </div>
+                            <div class="more"><a href="#n">전체보기</a></div>
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper"> 
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="top">
+                                        <span><strong>5</strong><br>01~29</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span>05.01 ~ 05.29</span>
+                                        <h3>2024학년도 5월 학교현장실습<br>(사범대, 비사범계)</h3>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="top">
+                                        <span><strong>5</strong><br>13~20</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span>05.13 ~ 05.20</span>
+                                        <h3>2024학년도 하계 국제계절학기 지원기간</h3>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="top">
+                                        <span><strong>5</strong><br>22~23</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span>05.22 ~ 05.23</span>
+                                        <h3>대동제(천안)</h3>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li class="swiper-slide">
+                                <a href="#n">
+                                    <div class="top">
+                                        <span><strong>5</strong><br>22~23</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span>05.22 ~ 05.23</span>
+                                        <h3>단국축제(죽전)</h3>
+                                    </div>
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </div> <!--schedule-->
+            <div class="youtube">
+                <div class="wrapper">
+                    <div class="top">
+                        <div class="tit">
+                            <span>DANKOOK UNIVERSITY</span>
+                            <h2>Youtube</h2>
+                        </div>
+                        <div class="link">
+                            <strong>단국대학교 유튜브</strong>
+                            <button>채널 바로가기</button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="best">
+                            <iframe width="720" height="405" src="https://www.youtube.com/embed/7Qv3OZtHDkw?si=8n9HJjJydHoGjbEN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h3>개강 1달 ootd👖| 단국대학교 개강 패션❗</h3>
+                            <span>#단국대학교 #단국대 #dku #날개단대 #ootd #ootdfashion <br>
+                                #fashion #outfit #outlook #패션 #개강룩 #개강</span>
+                        </div>
+                        <div class="list_g">
+                            <div class="list01">
+                                <iframe width="345" height="194" src="https://www.youtube.com/embed/37b6jSOyAMY?si=zTYK115sxPrweZe1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3>[단백질] EP.02 음..현대 모비스🚘 영업직이야. 답이 좀 됐으려나?</h3>
+                            </div>
+                            <div class="list02">
+                                <iframe width="345" height="194" src="https://www.youtube.com/embed/orj64mYVEgk?si=GN702F75pDXobDFB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3>[호기심단국] EP.10 많이 먹으면 빨리 죽어서 패스트 푸드..?🍔</h3>
+                            </div>
+                            <div class="list03">
+                                <iframe width="345" height="194" src="https://www.youtube.com/embed/ADwpySb9Kwo?si=6YyOugwLLDUsyFDL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3>[호기심단국] EP9. 영양제 다이어트로 몸짱 되는 법💪</h3>
+                            </div>
+                            <div class="list04">
+                                <iframe width="345" height="194" src="https://www.youtube.com/embed/cCDN7ShAw5M?si=E30oOfYI9wOVBzgu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h3>2024 단국대학교 입학식 | 입학식 현장 스케치</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--youtube-->
+        </div> <!--container-->
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="f_logo"></div>
+                <div class="family_site">
+                    <ul>
+                        <li>
+                            <span>대학 홈페이지</span>
+                            <div class="list">
+                                <div class="detail">
+                                    <strong>단과대학</strong>
+                                    <ul>
+                                        <li><a href="#n">문과대학</a></li>
+                                        <li><a href="#n">법과대학</a></li>
+                                        <li><a href="#n">사회과학대학</a></li>
+                                        <li><a href="#n">경영경제대학</a></li>
+                                        <li><a href="#n">공과대학</a></li>
+                                        <li><a href="#n">SW융합대학</a></li>
+                                        <li><a href="#n">사범대학</a></li>
+                                        <li><a href="#n">음악ㆍ예술대학</a></li>
+                                        <li><a href="#n">자유교양대학</a></li>
+                                        <li><a href="#n">외국어대학</a></li>
+                                        <li><a href="#n">과학기술대학</a></li>
+                                        <li><a href="#n">생명공학대학</a></li>
+                                        <li><a href="#n">예술대학</a></li>
+                                        <li><a href="#n">스포츠과학대학</a></li>
+                                        <li><a href="#n">의과대학</a></li>
+                                        <li><a href="#n">간호대학</a></li>
+                                        <li><a href="#n">공공인재대학</a></li>
+                                        <li><a href="#n">보건과학대학</a></li>
+                                        <li><a href="#n">치과대학</a></li>
+                                        <li><a href="#n">약학대학</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>대학원 홈페이지</span>
+                            <div class="list">
+                                <div class="detail">
+                                    <strong>대학원</strong>
+                                    <ul>
+                                        <li><a href="#n">일반대학원</a></li>
+                                    </ul>
+                                </div>
+                                <div class="detail">
+                                    <strong>특수대학원(죽전)</strong>
+                                    <ul>
+                                        <li><a href="#n">경영대학원</a></li>
+                                        <li><a href="#n">행정법무대학원</a></li>
+                                        <li><a href="#n">교육대학원</a></li>
+                                        <li><a href="#n">정보융합기술·창업대학원</a></li>
+                                        <li><a href="#n">특수교육대학원</a></li>
+                                        <li><a href="#n">문화예술대학원</a></li>
+                                        <li><a href="#n">부동산 · 건설대학원</a></li>
+                                    </ul>
+                                </div>
+                                <div class="detail">
+                                    <strong>특수대학원(천안)</strong>
+                                    <ul>
+                                        <li><a href="#n">정책경영대학원</a></li>
+                                        <li><a href="#n">스포츠과학대학원</a></li>
+                                        <li><a href="#n">보건복지대학원</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>부속/부설기관 홈페이지</span>
+                            <div class="list">
+                                <div class="detail">
+                                    <strong>주요기관</strong>
+                                    <ul>
+                                        <li><a href="#n">산학협력단</a></li>
+                                        <li><a href="#n">단국대학교 총동창회</a></li>
+                                        <li><a href="#n">퇴계기념중앙도서관</a></li>
+                                        <li><a href="#n">율곡기념도서관</a></li>
+                                        <li><a href="#n">석주선기념박물관</a></li>
+                                        <li><a href="#n">단국역사관</a></li>
+                                        <li><a href="#n">평생교육원 (죽전 | 천안)</a></li>
+                                        <li><a href="#n">교육혁신원</a></li>
+                                        <li><a href="#n">단국미디어센터</a></li>
+                                        <li><a href="#n">생활관(기숙사)</a></li>
+                                        <li><a href="#n">대학생활상담센터(죽전 | 천안)</a></li>
+                                        <li><a href="#n">인권센터(죽전 | 천안)</a></li>
+                                        <li><a href="#n">체육부</a></li>
+                                        <li><a href="#n">IT4U(디지털정보원)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_nav">
+                    <ul>
+                        <li><a href="#n">개인정보취급방침</a></li>
+                        <li><a href="#n">이메일수집거부</a></li>
+                        <li><a href="#n">FAQ</a></li>
+                        <li><a href="#n">연차보고서</a></li>
+                        <li><a href="#n">사이트맵</a></li>
+                        <li><a href="#n">찾아오시는길</a></li>
+                    </ul>
+                </div>
+                <div class="f_inner">
+                    <div class="left">
+                        <div class="adress">
+                            <ul>
+                                <li>
+                                    <span>죽전캠퍼스</span>
+                                    <strong>경기도 용인시 수지구 죽전로 152 (우)16890 </strong>
+                                </li>
+                                <li>
+                                    <span>천안캠퍼스</span>
+                                    <strong>충남 천안시 동남구 단대로 119 (우)31116</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copyright">COPYRIGHT 2024 BY DANKOOK UNIVERSITY ALL RIGHT RESERVED</div>
+                    </div>
+                    <div class="call">
+                        <span>통합콜센터</span>
+                        <strong>1899-3700</strong>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div><!--wrap-->
+</body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS를 작동시키기 위한 css와 js파일 -->
+    <!--swiper 라이브러리-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>청주원광효도요양병원</title>
+</head>
+<body>
+    <div class="skipnav">
+        <!--href = #container 라고 입력하면 id="container"로 이동
+            href="#gnb"라고 입력하면 id= "gnb"로 이동-->
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb">대메뉴 바로가기</a>
+    </div>
+    <!-- 메뉴상단 고정 : fixed
+         pc버전에서 메뉴 오버 : menu_over
+         모바일 버전에서 메뉴를 클릭해서 열면 : menu_open   
+    -->
+    <div id="wrap" class="main">
+        <header class="header in">
+            <h1 class="logo"><a href="index.html">요양병원로고</a></h1>
+            <nav class="gnb" id="gnb">
+                <div class="gnb_open"><button>메뉴열기</button></div>
+                <div class="gnb_wrap ">
+                    <ul class="depth01">
+                        <li >
+                            <a href="#n"><span>병원소개</span></a>
+                            <ul class="depth02">
+                                <li><a href="#n">병원소개</a></li>
+                                <li><a href="#n">병원연혁</a></li>
+                                <li><a href="#n">인사말</a></li>
+                                <li><a href="#n">10대 브랜드 특화</a></li>
+                                <li><a href="#n">병원둘러보기</a></li>
+                                <li><a href="#n">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>이용안내</span></a>
+                            <ul class="depth02">
+                                <li><a href="#n">의료진 소개</a></li>
+                                <li><a href="#n">재활센터</a></li>
+                                <li><a href="#n">호스피스센터</a></li>
+                                <li><a href="#n">요양센터</a></li>
+                                <li><a href="#n">인지장애센터</a></li>
+                                <li><a href="#n">인공신장센터</a></li>
+                                <li><a href="#n">입원 및 퇴원 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>질병안내</span></a>
+                            <ul class="depth02">
+                                <li><a href="#n">인지장애</a></li>
+                                <li><a href="#n">당뇨</a></li>
+                                <li><a href="#n">중풍(뇌졸중)</a></li>
+                                <li><a href="#n">고혈압</a></li>
+                                <li><a href="#n">노인성 우울증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>사회사업</span></a>
+                            <ul class="depth02">
+                                <li><a href="#n">복지프로그램 안내</a></li>
+                                <li><a href="#n">자원봉사 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>소통</span></a>
+                            <ul class="depth02">
+                                <li><a href="#n">공지사항</a></li>
+                                <li><a href="#n">병원소식</a></li>
+                                <li><a href="#n">재단소식</a></li>
+                                <li><a href="#n">채용소식</a></li>
+                                <li><a href="#n">자주묻는질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gnb_close"><button>메뉴닫기</button></div>
+                <div class="family"><a href="#n">원광종합병원</a></div>
+            </nav>
+            <div class="tnb">
+                <div class="search"><a href="#n">검색</a></div>
+                <div class="share">
+                    <a href="#n">공유</a>
+                    <ul class="share_open">
+                        <li class="google"><a href="#n">구글</a></li>
+                        <li class="naver"><a href="#n">네이버</a></li>
+                        <li class="kakao"><a href="#n">카카오톡</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search_group">
+                <form>
+                    <fieldset>
+                        <legend>검색</legend>
+                        <div class="search_wrap">
+                            <label for="keyword">검색어</label>
+                            <input type="text" id="keyword" placeholder="검색어를 입력하세요">
+                            <input type="submit" value="확인">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </header>
+        <div class="container" id="container">
+            <section class="visual">
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide">
+                            <div class="tit in">
+                                <strong>BEYOND THE PASSION</strong>
+                                <span class="font">세상을 치료한다는 생각으로<br>
+                                    열정을 다하겠습니다.</span>
+                            </div>
+                            <div class="photo"><img src="images/main/visual_bg01.png" alt=""></div>
+                        </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                        <li class="swiper-slide">
+                            <div class="tit in">
+                                <strong>PATIENT FIRST</strong>
+                                <span class="font">환자중심으로 움직이는<br>
+                                    적극적인 케어</span>
+                            </div>
+                            <div class="photo"><img src="images/main/visual_bg02_2.png" alt=""></div>
+                        </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                        <li class="swiper-slide">
+                            <div class="tit in">
+                                <strong>HEALING ENVIRONMENT</strong>
+                                <span class="font">건강한 정서 함양을 위한,<br>
+                                    다양한 복지 프로그램 운영</span>
+                            </div>
+                            <div class="photo"><img src="images/main/visual_bg03.png" alt=""></div>
+                        </li> <!-- 팝업 요소들 (div로 해도 상관없음)-->
+                    </ul>
+                    <div class="swiper_cnt in">
+                        <button class="prev">이전팝업보기</button>
+                        <button class="play">재생</button>
+                        <button class="pause">일시정지</button>
+                        <button class="next">다음팝업보기</button>
+                        <div class="pagination"></div>  <!-- 컨트롤 요소는 swiper 안에 배치-->
+                        <div class="scroll">scroll</div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="story">
+                <div class="wrapper">
+                    <h2>story</h2>
+                    <div class="inner">
+                        <div class="story_top font">
+                            <span data-aos="fade-up" data-aos-delay="150">"We sincerely treat you<br>
+                                with the right treatment."</span>
+                            <strong data-aos="fade-up" data-aos-delay="550">Treat you</strong>
+                        </div>
+                        <div class="story_btm" data-aos="fade-up" data-aos-delay="750">
+                            <span>한 번의 의료서비스가</span>
+                            <strong class="font">세상을 치료합니다.</strong>
+                            <p>연령과 질병에 따라 어르신뿐만 아니라 아이까지 환자에 맞는 전문 요양 및 재활, 투석, 호스피스 등 의료서비스를 제공하고 있으며, 특히 가정에서 모시기 어려운 치매와 중풍 등의 만성질환으로 인한 가족의 부담을 덜어드리고자 전문인력에 의한 24시간 간병인 시스템을 도입해 정성을 다해 의료서비스를 제공하고 있습니다.</p>
+                            <div class="more font"><a href="#n">READ MORE</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="biz">
+                <div class="wrapper">
+                    <div class="tit" data-aos="fade-up" data-aos-delay="250">
+                        <strong class="font">진료과목</strong>
+                        <h2 class="font">Medical Subject</h2>
+                        <p>청주원광효도요양병원은 <em>요양과 치료가 동시에</em> 가능한 병원입니다.</p>
+                    </div>
+                    <div class="list" class="tit" data-aos="fade-up" data-aos-delay="350">
+                        <ul>
+                            <li class="biz01 ">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <div class="list_tit">
+                                            <strong>수준 높은 치료를 제공하는</strong>
+                                            <span >재활센터</span>
+                                        </div>  
+                                        <div class="list_sub">
+                                            <p>수준 높은 치료장비와 테이핑치료, TOGU 운동, 세라밴드 운동 등 최신 기술을 도입∙적용하여 보다 만족스러운 치료 서비스를 제공하여환자의 치료 효과를 높입니다.</p>
+                                        </div>
+                                        <div class="sub_more">READ MORE</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="biz02 ">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <div class="list_tit">
+                                            <strong>24시간 간호를 제공하는</strong>
+                                            <span >호스피스센터</span>
+                                        </div>
+                                        <div class="list_sub">
+                                            <p>환자들이 남은 생을 편안하고 충만한 삶을 살 수 있도록 신체적, 정신적 증상 완화 및 지지를 해주는 곳입니다. 특히 모든 말기 암 환자에게 24시간 간호를 제공합니다.</p>
+                                        </div>
+                                        <div class="sub_more">READ MORE</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="biz03">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <div class="list_tit">
+                                            <strong>쾌적한 환경을 조성하는</strong>
+                                            <span >요양센터</span>
+                                        </div>
+                                        <div class="list_sub">
+                                            <p>24시간 간병서비스를 통해 적극적 재활 및 물리치료를 제공합니다. 매주 1회 이상 목욕, 식사제공, 식사보조, 이미용, 청소 등의 서비스 통해 쾌적한 환자분들의 환경을 조성합니다.</p>
+                                        </div>
+                                        <div class="sub_more">READ MORE</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="biz04">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <div class="list_tit">
+                                            <strong>정확하게 치료하는</strong>
+                                            <span >인지장애센터</span>
+                                        </div>
+                                        <div class="list_sub">
+                                            <p>치매의 원인 진단을 위해서 신경학적 검사, 인지 기능을 평가하기 위한 인지 기능 검사 및 뇌파, MRI를 비롯한 뇌 영상검사 등의 내과적인 검사를 시행하고 있습니다.</p>
+                                        </div>
+                                        <div class="sub_more">READ MORE</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="biz05 off">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <div class="list_tit">
+                                            <strong>더 나은 삶을 제공하는</strong>
+                                            <span >인공신장센터</span>
+                                        </div>
+                                        <div class="list_sub">
+                                            <p>신장의 기능이 영구적으로 감소되어 회복이 불가능한 만성신부전 환자들에게 인공신장기를 사용한 혈액투석 치료로 만성신부전에서 오는 여러 합병증을 예방하고 치료합니다.</p>
+                                        </div>
+                                        <div class="sub_more">READ MORE</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more font"><a href="#m">READ MORE</a></div>
+                </div>
+            </section>
+            <section class="special">
+                <div class="wrapper">
+                    <div class="inner" data-aos="fade-up" data-aos-delay="250">
+                        <div class="tit">
+                            <strong class="font">원광재단만의 특별함</strong>
+                            <h2 class="font">Philosophy</h2>
+                            <span class="font">원광의료재단의<br> 
+                                5가지 특화된 서비스</span>
+                            <p>원광의료재단의 <em>특별한 5가지 서비스로</em> 고객감동을 실현하겠습니다.</p>
+                        </div>
+                        <div class="cnt">
+                            <ul class="font">
+                                <li data-aos="fade-up" >
+                                    <span >하나,</span>
+                                    <div class="sub">
+                                        <strong>집중치료실</strong>
+                                        <p>최적의 감염관리 시스템을 갖춰 집중치료실 운영<br>
+                                            전문의와 중환자실 전문간호사에 의한 집중케어</p>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" >
+                                    <span>둘,</span>
+                                    <div class="sub">
+                                        <strong>입원전문상담</strong>
+                                        <p>입원에서 천도까지 언스톱 서비스<br>
+                                            해피콜 활성화</p>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" >
+                                    <span>셋,</span>
+                                    <div class="sub">
+                                        <strong>팀 어프로치</strong>
+                                        <p>주 1회 합동라운딩 실시<br>
+                                            환자불편사항 접수시 우선적으로 보완</p>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" >
+                                    <span>넷,</span>
+                                    <div class="sub">
+                                        <strong>주1회 환자목욕 의무화</strong>
+                                        <p>환자 가구기의 날 행사 진행<br>
+                                            욕창, 피부병 예방 및 병실 냄새제거로 청결한 병원 유지</p>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" >
+                                    <span>다섯,</span>
+                                    <div class="sub">
+                                        <strong>사회사업프로그램</strong>
+                                        <p>인지기능 회복 프로그램/ 법회/ 사회복귀 프로그램<br>
+                                            외상환자 제외하고 활동 가능한 모든 환자가 프로그램에 참여</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="more font"><a href="#m">READ MORE</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="notice">
+                <div class="wrapper">
+                    <div class="inner" data-aos="fade-up" data-aos-delay="250">
+                        <div class="tit">
+                            <strong class="font">질병정보</strong>
+                            <h2 class="font">Notice</h2>
+                            <p>청주원광효도요양병원의 <em>질병정보를</em> 알려드립니다.</p>
+                        </div>
+                        <div class="cnt">
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/notice01.png" alt=""></div>
+                                            <div class="sub_tit">
+                                                <strong>인지장애의 오해와 진실</strong>
+                                                <span>치매는 그 자체가 어떤 활동을 이야기하는 진단명이 아니라, 특정한 증상들이 나타나서 어떤 기준을 만족시키는 경우를 이야기하는 하나의 증후군(증상복합체)입니다.</span>
+                                            </div>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/notice02.png" alt=""></div>
+                                            <div class="sub_tit">
+                                                <strong>뇌졸증 바로 알고 지내자</strong>
+                                                <span>적절한 예방 및 치료 시기를 놓치면 영구적이고 치명적인 후유증이 발생하므로 위험인자들을 잘 알고 치료함으로써 뇌졸증을 예방하는 것이 무엇보다도 중요합니다. 뇌졸증은 뇌혈관의 이상으로 나타나는 병으로, 뇌혈관이 막혀 피가 통하지 않아 발생하는 뇌경색과 뇌혈관이 터져서 발생하는 뇌출혈로 크게 구분됩니다.</span>
+                                            </div>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/notice03.png" alt=""></div>
+                                            <div class="sub_tit">
+                                                <strong>흔하지만 흔하지 않는 노인 우울증</strong>
+                                                <span>우울증은 불행한 일로 인해서 생길 수도 있지만 특별한 사건이 없어도 생기는 것입니다. 우울증은 주로 뇌의 화학적 불균형이 원인이 되어 생기며, 이것은 당뇨병 또는 관절염이 병 인 것과 마찬가지로 하나의 병입니다.</span>
+                                            </div>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/notice04.png" alt=""></div>
+                                            <div class="sub_tit">
+                                                <strong>인지장애의 오해와 진실</strong>
+                                                <span>치매는 그 자체가 어떤 활동을 이야기하는 진단명이 아니라, 특정한 증상들이 나타나서 어떤 기준을 만족시키는 경우를 이야기하는 하나의 증후군(증상복합체)입니다.</span>
+                                            </div>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/notice05.png" alt=""></div>
+                                            <div class="sub_tit">
+                                                <strong>인지장애의 오해와 진실</strong>
+                                                <span>치매는 그 자체가 어떤 활동을 이야기하는 진단명이 아니라, 특정한 증상들이 나타나서 어떤 기준을 만족시키는 경우를 이야기하는 하나의 증후군(증상복합체)입니다.</span>
+                                            </div>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/main/notice06.png" alt=""></div>
+                                            <div class="sub_tit">
+                                                <strong>인지장애의 오해와 진실</strong>
+                                                <span>치매는 그 자체가 어떤 활동을 이야기하는 진단명이 아니라, 특정한 증상들이 나타나서 어떤 기준을 만족시키는 경우를 이야기하는 하나의 증후군(증상복합체)입니다.</span>
+                                            </div>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="more font"><a href="#m">READ MORE</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="wrapper">
+                    <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                        <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                            <li class="swiper-slide">
+                                <div class="tit">
+                                    <span class="font">원광 NEWS</span>
+                                    <strong>요양병원 적정성 평가 1등급</strong>
+                                    <p>청주원광효도요양병원이 요양병원 적정성 평가 1등급 의료기관이 된 것을 알려드립니다.</p>
+                                    <div class="more font"><a href="#m">READ MORE</a></div>
+                                </div>
+                                <div class="photo"><img src="images/main/popup_01.png" alt="팝업"></div>
+                                <div class="m_photo"><img src="images/main/popup_m01.png" alt="팝업"></div>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                            <li class="swiper-slide">
+                                <div class="tit">
+                                    <span class="font ">원광 NEWS</span>
+                                    <strong>자원봉사자 모집안내</strong>
+                                    <p>청주원광효도요양병원에서 저희와 함께 하실 자원봉사분들을 기다립니다.</p>
+                                    <div class="more font"><a href="#m">READ MORE</a></div>
+                                </div>
+                                <div class="photo"><img src="images/main/popup_02.png" alt="팝업"></div>
+                                <div class="m_photo"><img src="images/main/popup_m02.png" alt="팝업"></div>
+                            </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                        </ul>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="partner">
+                <div class="logo_slide">
+                    <h2>파트너</h2>
+                    <ul>
+                        <li><img src="images/main/logo01.png" alt="충북대학교병원"></li>
+                        <li><img src="images/main/logo02.png" alt="청주한국병원"></li>
+                        <li><img src="images/main/logo03.png" alt="청주성모병원"></li>
+                        <li><img src="images/main/logo04.png" alt="효성병원"></li>
+                        <li><img src="images/main/logo05.png" alt="청주의료원"></li>
+                        <li><img src="images/main/logo06.png" alt="하나병원"></li>
+                        <li><img src="images/main/logo01.png" alt="충북대학교병원"></li>
+                        <li><img src="images/main/logo02.png" alt="청주한국병원"></li>
+                        <li><img src="images/main/logo03.png" alt="청주성모병원"></li>
+                        <li><img src="images/main/logo04.png" alt="효성병원"></li>
+                        <li><img src="images/main/logo05.png" alt="청주의료원"></li>
+                        <li><img src="images/main/logo06.png" alt="하나병원"></li>
+                        <li><img src="images/main/logo01.png" alt="충북대학교병원"></li>
+                        <li><img src="images/main/logo02.png" alt="청주한국병원"></li>
+                        <li><img src="images/main/logo03.png" alt="청주성모병원"></li>
+                        <li><img src="images/main/logo04.png" alt="효성병원"></li>
+                        <li><img src="images/main/logo05.png" alt="청주의료원"></li>
+                        <li><img src="images/main/logo06.png" alt="하나병원"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="info">
+                <div class="wrapper">
+                    <div class="inner" >
+                        <div class="tit" data-aos="fade-up" data-aos-delay="250">
+                            <strong class="font">병원안내</strong>
+                            <h2 class="font">Information</h2>
+                            <p>청주원광효도요양병원과 상담하세요.</p>
+                        </div>
+                        <div class="cnt" data-aos="fade-up" data-aos-delay="350">
+                            <ul>
+                                <li>
+                                    <h3 class="font call"><span>문의전화</span></h3>
+                                    <div class="detail num">
+                                        <span>043-267-0156</span>
+                                        <span>043-267-0301<br>
+                                            (일반문의)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="font time"><span>진료시간</span></h3>
+                                    <div class="detail box_wrap">
+                                        <div class="box"><span>월요일 - 금요일</span> <span class="time">09:00 - 17 : 30</span></div>
+                                        <div class="box"><span>토요일</span> <span class="time">09:00 - 12 : 00</span></div>
+                                        <div class="box"><span>점심</span> <span class="color time">12:00 - 13 : 00<br>공휴일 / 일요일 - 휴진</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3 class="font location"><span>오시는길</span></h3>
+                                    <div class="detail">
+                                        <span class="address">충청북도 청주시 흥덕구 월명로 15</span>
+                                        <div class="m_map"><a href="#n">지도보기</a></div>
+                                        <ul class="map">
+                                            <li class="google"><a href="#n"><span>구글 지도</span></a></li>
+                                            <li class="naver"><a href="#n"><span>네이버 지도</span></a></li>
+                                            <li class="kakao"><a href="#n"><span>카카오 지도</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="f_inner">
+                    <div class="f_top">
+                        <ul class="link">
+                            <li><a href="#n">이용약관</a></li>
+                            <li class="privacy"><a href="#n">개인정보처리방침</a></li>
+                            <li><a href="#n">이메일수집거부</a></li>
+                            <li><a href="#n">SITEMAP</a></li>
+                            <li><a href="#n">고객지원</a></li>
+                        </ul>
+                        <div class="f_info">
+                            <span>충청북도 청주시 흥덕구 월명로 15</span>
+                            <div class="call">
+                                <div class="num"><span>T</span>043-267-0301</div>
+                                <div class="num"><span>F</span>043-268-0156</div>
+                            </div>
+                        </div>
+                        <div class="copyright">ⓒ 2024 청주원광효도요양병원. All Rights Reserved.</div>
+                    </div>
+                    <div class="f_btm">
+                        <div class="familysite">
+                            <button class="open" title="열기">관련사이트</button>
+                            <ul>
+                                <li><a href="#n">원광종합병원</a></li>
+                                <li><a href="#n">인천원광효도요양병원</a></li>
+                                <li><a href="#n">인천원광효도요양병원</a></li>
+                                <li><a href="#n">인천원광효도요양병원</a></li>
+                            </ul>
+                            <button class="close" title="열기">관련사이트</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <aside class="quick show">
+            <div class="menu_btn_box">
+                <ul>
+                    <li>
+                        <a href="#n">
+                            <div class="icon i01">
+                                <i></i>
+                            </div>
+                            <span>자주묻는질문</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#n">
+                            <div class="icon i02">
+                                <i></i>
+                            </div>
+                            <span>증명서발급</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#n">
+                            <div class="icon i03">
+                                <i></i>
+                            </div>
+                            <span>병원위치</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#n">
+                            <div class="icon i04">
+                                <i></i>
+                            </div>
+                            <span>상담문의</span>
+                        </a>
+                    </li>
+                </ul>
+                <button></button>
+            </div>
+            <div class="menu_btn_top">
+                <a href="#n">
+                    <span>TOP</span>
+                </a>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

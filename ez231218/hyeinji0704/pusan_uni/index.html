@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--swiper라이브러리-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>부산대학교</title>
+</head>
+<body>
+    <div class="skipnav">
+        <!--href = #container 라고 입력하면 id="container"로 이동
+            href="#gnb"라고 입력하면 id= "gnb"로 이동-->
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb">대메뉴 바로가기</a>
+    </div>
+    <div id="wrap" class="main">
+        <header class="header">
+            <div class="wrapper">
+                <div class="header_top">
+                    <h1 class="logo"><a href="index.html"><img src="images/logo_white.svg" alt="부산대학교 로고">부산대학교</a></h1>
+                    <div class="tnb">
+                        <div class="login"><a href="#n"><span>로그인</span></a></div>
+                        <div class="service">
+                            <button class="open" title="열기">PNU Service</button>
+                            <ul>
+                                <li><a href="#n">학생지원시스템</a></li>
+                                <li><a href="#n">도서관</a></li>
+                                <li><a href="#n">미리미리서비스</a></li>
+                                <li><a href="#n">PNU Mail</a></li>
+                            </ul>
+                            <button class="close" title="열기">PNU Service</button>
+                        </div>
+                        <div class="lang">
+                            <button class="open" title="열기">Language</button>
+                            <ul>
+                                <li><a href="#n">ENG</a></li>
+                                <li><a href="#n">中文</a></li>
+                            </ul>
+                            <button class="close" title="열기">Language</button>
+                        </div>
+                    </div>
+                    <div class="until_btn">
+                        <div class="search"><button>검색</button></div>
+                        <div class="sitemap"><a href="#n">사이트맵</a></div>
+                    </div>
+                </div>
+                <nav class="gnb" id="gnb">
+                    <div class="gnb_open"><button>메뉴열기</button></div>
+                    <div class="gnb_wrap">
+                        <ul class="depth01">
+                            <li >
+                                <a href="#n">대학/대학원</a>
+                                <ul class="depth02 length01">
+                                    <li class="on">
+                                        <a href="#n">대학·학부</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">인문대학</a></li>
+                                            <li><a href="#n">생활과학대학</a></li>
+                                            <li><a href="#n">사회과학대학</a></li>
+                                            <li><a href="#n">예술대학</a></li>
+                                            <li><a href="#n">자연과학대학</a></li>
+                                            <li><a href="#n">나노과학기술대학</a></li>
+                                            <li><a href="#n">공과대학</a></li>
+                                            <li><a href="#n">생명자원과학대학</a></li>
+                                            <li><a href="#n">사범대학</a></li>
+                                            <li><a href="#n">간호대학</a></li>
+                                            <li><a href="#n">경제통상대학</a></li>
+                                            <li><a href="#n">경영대학</a></li>
+                                            <li><a href="#n">정보의생명공학대학</a></li>
+                                            <li><a href="#n">약학대학</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">대학원</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">일반대학원</a></li>
+                                            <li><a href="#n">인문사회계열</a></li>
+                                            <li><a href="#n">자연과학계열</a></li>
+                                            <li><a href="#n">공학계열</a></li>
+                                            <li><a href="#n">의학계열</a></li>
+                                            <li><a href="#n">예·체능계열</a></li>
+                                            <li><a href="#n">학과 간 협동과정</a></li>
+                                            <li><a href="#n">학·산 협동과정</a></li>
+                                            <li><a href="#n">학·연 협동과정</a></li>
+                                            <li><a href="#n">계약학과</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">전문대학원</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">국제전문대학원</a></li>
+                                            <li><a href="#n">치의학전문대학원</a></li>
+                                            <li><a href="#n">한의학전문대학원</a></li>
+                                            <li><a href="#n">법학전문대학원</a></li>
+                                            <li><a href="#n">데이터사이언스전문대학원</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">특수대학원</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">경영대학원</a></li>
+                                            <li><a href="#n">경제통상대학원</a></li>
+                                            <li><a href="#n">행정대학원</a></li>
+                                            <li><a href="#n">교육대학원</a></li>
+                                            <li><a href="#n">산업대학원</a></li>
+                                            <li><a href="#n">환경대학원</a></li>
+                                            <li><a href="#n">기술창업대학원</a></li>
+                                            <li><a href="#n">금융대학원</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">교양교육원</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">교양교육원</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n">입학/취업</a>
+                                <ul class="depth02 length02">
+                                    <li class="on">
+                                        <a href="#n" class="link">입학</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n" class="link">대학ㆍ학부 입학홈페이지</a></li>
+                                            <li><a href="#n" class="link">대학원입학홈페이지</a></li>
+                                            <li><a href="#n" class="link">전문대학원입학홈페이지</a></li>
+                                            <li><a href="#n" class="link">특수대학원입학홈페이지</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n" class="link">취업</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n" class="link">취업전략과(진로,취업)</a></li>
+                                            <li><a href="#n" class="link">일반채용</a></li>
+                                            <li><a href="#n" class="link">추천채용</a></li>
+                                            <li><a href="#n" class="link">진로ㆍ취업상담</a></li>
+                                            <li><a href="#n" class="link">진로설계</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="#n">연구/산학</a>
+                                <ul class="depth02 length03">
+                                    <li class="on">
+                                        <a href="#n">PNU 리서치</a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">연구기관</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n" class="link">연구처</a></li>
+                                            <li><a href="#n" class="link">연구원</a></li>
+                                            <li><a href="#n" class="link">연구소</a></li>
+                                            <li><a href="#n" class="link">센터</a></li>
+                                            <li><a href="#n" class="link">연구성과분석솔루션(SciVal)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n" class="link">산학협력</a>
+                                    </li>
+                                    <li>
+                                        <a href="#n" class="link">산학협력DB</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="#n">대학생활</a>
+                                <ul class="depth02 length04">
+                                    <li class="on">
+                                        <a href="#n">학생지원기관</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">도서관</a></li>
+                                            <li><a href="#n">부산대언론사</a></li>
+                                            <li><a href="#n">대학생활원</a></li>
+                                            <li><a href="#n">정보화본부</a></li>
+                                            <li><a href="#n">취업전략과</a></li>
+                                            <li><a href="#n">도서관</a></li>
+                                            <li><a href="#n">경암체육관 스포츠센터</a></li>
+                                            <li><a href="#n">장애학생지원센터</a></li>
+                                            <li><a href="#n">건강증진센터(구.보건진료소)</a></li>
+                                            <li><a href="#n">효원상담원</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">정보서비스</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n" class="link">장학.학자금</a></li>
+                                            <li><a href="#n" class="link">학생지원시스템</a></li>
+                                            <li><a href="#n" class="link">웹메일</a></li>
+                                            <li><a href="#n" class="link">인터넷증명</a></li>
+                                            <li><a href="#n" class="link">스마트교육플랫폼 PLATO</a></li>
+                                            <li><a href="#n" class="link">교육공간 예약시스템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">학사/학술</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">학사일정</a></li>
+                                            <li><a href="#n">학술행사</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">캠퍼스라이프</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">동아리</a></li>
+                                            <li><a href="#n">상남국제관</a></li>
+                                            <li><a href="#n">효원장터</a></li>
+                                            <li><a href="#n">분실물정보</a></li>
+                                            <li><a href="#n">숙박정보</a></li>
+                                            <li><a href="#n">식단안내</a></li>
+                                            <li><a href="#n">기타지원</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n" >국제교류</a>
+                            </li>
+                            <li  >
+                                <a href="#n">공지/참여</a>
+                                <ul class="depth02 length06">
+                                    <li class="on">
+                                        <a href="#n">공지사항</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">공지사항</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">PNU 건의함</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">PNU 건의함</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">시민정책제안</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">시민정책제안</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">교수초빙/직원채용</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">교수초빙/직원채용</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="#n">홍보센터</a>
+                                <ul class="depth02 length07">
+                                    <li class="on">
+                                        <a href="#n">공지사항</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">메인뉴스</a></li>
+                                            <li><a href="#n">PNU 포커스</a></li>
+                                            <li><a href="#n">언론에 비친 PNU</a></li>
+                                            <li><a href="#n">교수칼럼 및 기고글</a></li>
+                                            <li><a href="#n" class="link">부산대소식</a></li>
+                                            <li><a href="#n">카드뉴스</a></li>
+                                            <li><a href="#n">보도자료</a></li>
+                                            <li><a href="#n">자랑스러운 부산대인</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">PNU 갤러리</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">행사사진</a></li>
+                                            <li><a href="#n">전경사진</a></li>
+                                            <li><a href="#n">캘린더사진</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">자료실</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">영상자료</a></li>
+                                            <li><a href="#n">홍보책자</a></li>
+                                            <li><a href="#n">공모전</a></li>
+                                            <li><a href="#n">2019년 부산대학교</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">캠퍼스투어</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">투어신청</a></li>
+                                            <li><a href="#n">투어코스</a></li>
+                                            <li><a href="#n">투어사진</a></li>
+                                            <li><a href="#n">홍보대사</a></li>
+                                            <li><a href="#n" class="link">오시는길</a></li>
+                                            <li><a href="#n">주차 요금</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">교수초빙/직원채용</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">교수초빙/직원채용</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="#n">학교소개</a>
+                                <ul class="depth02 length08">
+                                    <li class="on">
+                                        <a href="#n" >행정서비스</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n" class="link">시설미리미리서비스</a></li>
+                                            <li><a href="#n" class="link">청렴센터</a></li>
+                                            <li><a href="#n" class="link">규정집</a></li>
+                                            <li><a href="#n" class="link">소프트웨어하우스</a></li>
+                                            <li><a href="#n" class="link">캠퍼스교통관리방</a></li>
+                                            <li><a href="#n">학교요람</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">Why PNU</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">Why PNU</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">글로컬대학30</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">차정인 총장의 글로컬 사업 방향과 비전</a></li>
+                                            <li><a href="#n">주요 내용</a></li>
+                                            <li><a href="#n">학생이 알려주는 글로컬대학</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">오시는길</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">부산캠퍼스 오시는길</a></li>
+                                            <li><a href="#n">양산캠퍼스 오시는길</a></li>
+                                            <li><a href="#n">밀양캠퍼스 오시는길</a></li>
+                                            <li><a href="#n">아미캠퍼스 오시는길</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">이념/비전</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">교육이념</a></li>
+                                            <li><a href="#n">비전</a></li>
+                                            <li><a href="#n">핵심역량</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">총장</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">인사말</a></li>
+                                            <li><a href="#n">프로필</a></li>
+                                            <li><a href="#n">총장메시지</a></li>
+                                            <li><a href="#n">역대총장</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">상징 & UI</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">상징</a></li>
+                                            <li><a href="#n">학교상징물</a></li>
+                                            <li><a href="#n">캐릭터</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#n">역사</a>
+                                        <ul class="depth03">
+                                            <li><a href="#n">연혁</a></li>
+                                            <li><a href="#n">부산대학교 70년사</a></li>
+                                            <li><a href="#n">건학스토리</a></li>
+                                            <li><a href="#n">'부산大정신'을 찾아서</a></li>
+                                            <li><a href="#n">부산대 70년, 공감스토리</a></li>
+                                            <li><a href="#n">사진으로 보는 역사</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gnb_close"><button>메뉴닫기</button></div>
+                </nav>
+            </div>
+        </header>
+        <div id="container" class="container">
+            <section class="visual">
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                        <li class="swiper-slide">
+                            <img src="images/visual_bg01.png" alt="">
+                            <div class="tit tit01">
+                                <p>대한민국 남부권 발전의 중심이 되다</p>
+                                <h2>부산대 - 부산교대 글로컬대학<br>
+                                    최종선정</h2>
+                                <div class="more"><a href="#n">자세히 보기</a></div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/visual_bg02.png" alt="">
+                            <div class="tit tit02">
+                                <h2>글로벌 연구중심대학의 꿈과 도전!</h2>
+                                <span>PNU for Global Excellence</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="images/visual_bg03.png" alt="">
+                            <div class="tit tit03">
+                                <h2>2024 세계대학평가 국내종합대 '9위'</h2>
+                                <span>부산대 올해 3大 세계대학평가 모두 대폭 상승</span>
+                                <div class="more"><a href="#n">자세히 보기</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="prev">이전 바로가기</button>
+                    <button class="next">다음 바로가기</button>
+                    <div class="page">
+                        <div class="swiper-pagination"></div>  <!-- 컨트롤 요소는 swiper 안에 배치-->
+                        <button class="play">재생</button>
+                        <button class="pause">멈춤</button>
+                    </div>
+                </div>
+            </section>
+            <section class="pnu_notice">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="notice">
+                            <div class="tit">
+                                <i class="tit_logo">타이틀 로고</i>
+                                <h2>NOTICE</h2>
+                            </div>
+                            <div class="more"><a href="#n">자세히 보기</a></div>
+                            <div class="cnt">
+                                <ul class="list">
+                                    <li class="on">
+                                        <button>전체</button>
+                                        <div class="detail article01">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>[교무과] 교섭요구 노동조합 확정 공고문</span>
+                                                        <em>2024-04-24</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>채용/인사</strong>
+                                                        <span>부산대학교 무선인공지능연구실 사무원 채용 공고</span>
+                                                        <em>2024-04-23</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>학술행사</strong>
+                                                        <span>부산대학교 무선인공지능연구실 사무원 채용 공고</span>
+                                                        <em>2024-04-22</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>[ 저자 초청 특강_교육혁신을 위한 생성형 AI 이해와 활용 ]</span>
+                                                        <em>2024-04-18</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>취업정보</strong>
+                                                        <span>2024년 제1차 정규직 행정직 채용 / 2024년 청년인턴 채용</span>
+                                                        <em>2024-04-17</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>[기술사업부] 2024년도 상반기 지식재산권 5차 교육과정 운영 및 신청 안내</span>
+                                                        <em>2024-04-16</em>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button>공지사항</button>
+                                        <div class="detail article02">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>2024학년도 여름계절수업 강좌개설 수요조사 연장실시 안내</span>
+                                                        <em>2024-04-23</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>[취업전략과] 24.1학기 면접프로그램 참가자 모집</span>
+                                                        <em>2024-04-22</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>[기술사업부] 2024년도 상반기 지식재산권 4차 교육과정 운영 및 신청 안내</span>
+                                                        <em>2024-04-18</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>학내 과속 및 불법 주ㆍ정차 단속 결과 공유 및 단속 전면 시행</span>
+                                                        <em>2024-04-18</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>[지역사회기여센터] 2024학년도 기장희망꿈나무 대학생 멘토링 멘토 추가 모집</span>
+                                                        <em>2024-04-11</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공지사항</strong>
+                                                        <span>[언어교육원] 24학년도 5월 외국어(환급) 특강 수강생 모집 안내</span>
+                                                        <em>2024-04-11</em>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button>채용/인사</button>
+                                        <div class="detail article03">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>채용/인사</strong>
+                                                        <span>[교무과] 교섭요구 노동조합 확정 공고문</span>
+                                                        <em>2024-04-24</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>채용/인사</strong>
+                                                        <span>부산대학교 글로컬대학 사업 추진 계약직원 공개채용 서류전형 합격자 공고</span>
+                                                        <em>2024-04-24</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>채용/인사</strong>
+                                                        <span>부산대학교 램프(LAMP) 사업단 계약직원(사무원) 공개채용 면접전형 결과 공고</span>
+                                                        <em>2024-04-24</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>채용/인사</strong>
+                                                        <span>부산대학교 대학회계계약직원 신규채용 면접전형 합격자 공고</span>
+                                                        <em>2024-04-24</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>채용/인사</strong>
+                                                        <span>부산대학교 산학협력단 사무원(정보기술직) 공개채용 최종 합격자 공고</span>
+                                                        <em>2024-04-23</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>채용/인사</strong>
+                                                        <span>부산대학교 램프(LAMP) 사업단 계약직원(사무원) 공개채용 서류전형 합격자 공고</span>
+                                                        <em>2024-04-22</em>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button>학술행사</button>
+                                        <div class="detail article02">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>학술행사</strong>
+                                                        <span>[철학과] 2024-1 저명학자 초청 특강(4.30.(화)14시, 비대면)</span>
+                                                        <em>2024-04-23</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>학술행사</strong>
+                                                        <span>[저자 초청 특강_교육혁신을 위한 생성형 AI 이해와 활용</span>
+                                                        <em>2024-04-11</em>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button>취업정보</button>
+                                        <div class="detail article03">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>취업정보</strong>
+                                                        <span>해커스 교육그룹 직원전환형 마케팅 인턴 채용공고</span>
+                                                        <em>2024-05-08</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>취업정보</strong>
+                                                        <span>[HDC랩스]2024년 상반기 전 직군 신입사원 공개채용 및 국군장병 채용박함회 안내</span>
+                                                        <em>2024-05-01</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>취업정보</strong>
+                                                        <span>프리윌린︎ 재무팀 재무/회계 인턴(정규직 전환형) 채용</span>
+                                                        <em>2024-05-07</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>취업정보</strong>
+                                                        <span>[선진] 2024년 2분기 선진 신입 · 경력 채용</span>
+                                                        <em>2024-05-07</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>취업정보</strong>
+                                                        <span>대구가톨릭대학교병원 행정직 공개채용 모집공고</span>
+                                                        <em>2024-05-01</em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>취업정보</strong>
+                                                        <span>[인천시설공단 2024년 청년체험형 인턴, 공무직 채용계획 공고]</span>
+                                                        <em>2024-05-10</em>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="research">
+                            <div class="tit">
+                                <i class="tit_logo">타이틀 로고</i>
+                                <h2>RESEARCH</h2>
+                            </div>
+                            <div class="more"><a href="#n">자세히 보기</a></div>
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/research_img01.jfif" alt=""></div>
+                                            <span>최병태·신화경 교수팀, 비침습적 경두개전류자극치료에 새 전극 설계·도입해 초기 뇌졸중 치료법 제시…뇌경색·염증 감소, 운동·인지기능 개선</span>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/research_img02.jfif" alt=""></div>
+                                            <span>한동욱·홍석원·김윤학 교수팀 "나노 신소재 ‘맥신’ 근육 재생 효과 있다"</span>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/research_img03.jfif" alt=""></div>
+                                            <span>윤부현·김태진 교수팀, 동물실험 없이 환경호르몬 쉽고 빠르게 찾는다</span>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/research_img04.jfif" alt=""></div>
+                                            <span>정용철 교수팀, 나노다공성 신소재 금속-유기골격체(MOF) 전산 모델링에 관한 최근 20년간 연구 총망라한 총설 논문 발표</span>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="photo"><img src="images/research_img05.jfif" alt=""></div>
+                                            <span>김창석 교수팀, 4차원 자율주행 눈으로 악천후 속에서도 달린다</span>
+                                        </a>
+                                    </li> <!-- 팝업 요소들 (div로 해도 상관없음) -->
+                                </ul>
+                            </div>
+                            <div class="page">
+                                <button class="prev">재생</button>
+                                <button class="next">멈춤</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service">
+                <div class="wrapper">
+                    <div class="tit">
+                        <div class="tit_wrap">
+                            <i class="tit_logo">타이틀 로고</i>
+                            <h2>SERVICE</h2>
+                        </div>
+                        <span>원하는 정보를 한눈에!</span>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <a href="#n">
+                                    <i><svg width="67" height="62" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_307_3486)">
+                                        <path d="M63.9462 1.39062H3.05298C2.12626 1.39062 1.375 2.15039 1.375 3.0876V46.6619C1.375 47.5992 2.12626 48.3589 3.05298 48.3589H63.9462C64.873 48.3589 65.6242 47.5992 65.6242 46.6619V3.0876C65.6242 2.15039 64.873 1.39062 63.9462 1.39062Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M28.8652 48.3594V56.5661" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M38.9238 48.3594V56.5661" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M49.4312 56.5664H17.953C17.7201 56.5664 17.5312 56.7574 17.5312 56.993V60.1829C17.5312 60.4185 17.7201 60.6095 17.953 60.6095H49.4312C49.6642 60.6095 49.853 60.4185 49.853 60.1829V56.993C49.853 56.7574 49.6642 56.5664 49.4312 56.5664Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M1.375 42.2666H65.6242" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M43.1041 15.0777V35.9979H23.8027V8.87402H37.575L43.1041 15.0777Z" stroke="#065CA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M43.1053 15.0777L37.7779 15.0314L37.5762 8.87402" stroke="#065CA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M26.7656 21.1982H39.621" stroke="#00A64F" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M26.7656 25.334H39.621" stroke="#00A64F" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M26.7656 29.8223H39.621" stroke="#00A64F" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_307_3486">
+                                        <rect width="67" height="62" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg></i>
+                                    <strong>인터넷증명발급</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <i><svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_307_3504)">
+                                        <path d="M34.5008 67.6139C52.7892 67.6139 67.6149 52.7882 67.6149 34.4998C67.6149 16.2114 52.7892 1.38574 34.5008 1.38574C16.2124 1.38574 1.38672 16.2114 1.38672 34.4998C1.38672 52.7882 16.2124 67.6139 34.5008 67.6139Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M11.4473 34.4996C11.4473 21.7954 21.7862 11.4473 34.4996 11.4473" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M57.5445 34.5C57.5445 47.2042 47.2056 57.5524 34.4922 57.5524" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M46.0203 31.4877L34.4895 23.126L22.9772 31.4692L22.0625 32.1344L22.9772 32.7997L27.9203 36.3661L34.4895 41.1151L41.0588 36.3661L46.0203 32.7719L46.9165 32.1344L46.0203 31.4877Z" stroke="#0A5DA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M34.4908 41.8637V49.1167V41.8637ZM34.4908 41.8637L27.9216 37.1146L22.9785 33.539V42.0115L34.4908 50.3363L46.0216 41.9931V33.5205L41.0601 37.1146L34.4908 41.8637Z" stroke="#0A5DA9" stroke-width="1.8" stroke-miterlimit="10"/>
+                                        <path d="M32.6797 32.125H36.9113" stroke="#02A64D" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_307_3504">
+                                        <rect width="69" height="69" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        </i>
+                                    <strong>학생지원시스템</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <i><svg width="69" height="73" viewBox="0 0 69 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_307_3511)">
+                                        <path d="M9.93945 2.70508V11.6024" stroke="#02A64D" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M9.93945 18.5859V64.5905" stroke="#0A5DA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M34.4961 36.4082V71.5097" stroke="#0A5DA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M59.0605 18.5859V64.5905" stroke="#0A5DA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M59.0605 1.03906V11.6017" stroke="#02A64D" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M34.4961 18.8613V29.4148" stroke="#02A64D" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M25.9258 8.41016H43.0639V68.3909C43.0639 70.1759 41.6296 71.6204 39.8573 71.6204H29.1415C27.3692 71.6204 25.9349 70.1759 25.9349 68.3909V8.41016H25.9258Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M4.57763 1.37988H15.2935C17.0658 1.37988 18.5 2.82443 18.5 4.6094V64.5901H1.37109V4.6094C1.37109 2.82443 2.80536 1.37988 4.57763 1.37988Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M53.6981 1.37988H64.414C66.1863 1.37988 67.6205 2.82443 67.6205 4.6094V64.5901H50.4824V4.6094C50.4824 2.82443 51.9167 1.37988 53.689 1.37988H53.6981Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_307_3511">
+                                        <rect width="69" height="73" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        </i>
+                                    <strong>도서관</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <i><svg width="64" height="71" viewBox="0 0 64 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_307_3556)">
+                                        <path d="M47.4622 65.668H16.5284C16.2959 65.668 16.1074 65.8573 16.1074 66.0909V69.1982C16.1074 69.4318 16.2959 69.6211 16.5284 69.6211H47.4622C47.6947 69.6211 47.8832 69.4318 47.8832 69.1982V66.0909C47.8832 65.8573 47.6947 65.668 47.4622 65.668Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M54.8105 44.3025H9.18778C8.37325 44.3025 7.76006 43.5487 7.93395 42.7489L9.32506 36.1113C9.45319 35.5137 9.97485 35.0908 10.5789 35.0908H53.4103C54.0143 35.0908 54.5451 35.5229 54.6641 36.1113L56.0552 42.7489C56.22 43.5487 55.6159 44.3025 54.8014 44.3025H54.8105Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M2.67263 44.7168H61.3279C62.0417 44.7168 62.6274 45.3052 62.6274 46.0222V53.3309C62.6274 55.4914 60.8794 57.2381 58.7378 57.2381H5.26265C3.11193 57.2381 1.37305 55.4822 1.37305 53.3309V46.0222C1.37305 45.3052 1.95878 44.7168 2.67263 44.7168Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M51.014 1.37891H13.4724C13.1521 1.37891 12.8867 1.64551 12.8867 1.96728V22.1098C12.8867 22.4316 13.1521 22.6982 13.4724 22.6982H27.6215C27.8136 22.6982 27.9967 22.7901 28.1065 22.9556L31.9778 28.6463C32.2158 28.9956 32.7283 28.9864 32.9571 28.6279L36.5447 22.974C36.6545 22.8085 36.8375 22.6982 37.0389 22.6982H51.0048C51.3252 22.6982 51.5906 22.4316 51.5906 22.1098V1.96728C51.5906 1.64551 51.3252 1.37891 51.0048 1.37891H51.014Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M30.0008 16.4464C30.0099 16.5199 30.0191 16.5843 30.0282 16.6578C30.0282 16.7222 30.0282 16.8049 30.0282 16.8876C30.0282 17.0347 29.9825 17.1634 29.9001 17.283C29.8635 17.3473 29.8177 17.4025 29.7537 17.4576C29.6896 17.5128 29.6164 17.5587 29.534 17.5955C29.232 17.761 28.9117 17.8254 28.5731 17.7794C28.4083 17.7334 28.2527 17.6507 28.1246 17.5404C28.0972 17.5128 28.0789 17.5036 28.0697 17.4944C28.0605 17.4944 28.0422 17.476 28.0331 17.4484C28.0239 17.4392 28.0056 17.4209 27.9965 17.4025C27.9873 17.3841 27.969 17.3657 27.9416 17.3565C27.8775 17.2921 27.8317 17.237 27.7951 17.1818C27.7585 17.1267 27.7219 17.0715 27.6853 17.0072C27.6579 16.9428 27.6304 16.8876 27.6029 16.8325C27.5755 16.7773 27.5389 16.7222 27.5023 16.6578C27.4748 16.6118 27.4565 16.5659 27.4291 16.5199C27.4016 16.4739 27.3833 16.428 27.3741 16.382C27.3284 16.2717 27.2918 16.1798 27.2826 16.0878L26.9074 15.1961C26.0746 15.1961 25.2509 15.1961 24.4272 15.1961C23.6035 15.1961 22.7707 15.1961 21.947 15.1961L21.5718 16.0878C21.5443 16.1338 21.5352 16.1798 21.526 16.2349C21.5169 16.2901 21.5077 16.336 21.4803 16.382C21.4528 16.428 21.4345 16.4739 21.4162 16.5199C21.3979 16.5659 21.3796 16.6026 21.3521 16.6578C21.3155 16.7222 21.2789 16.7773 21.2515 16.8325C21.224 16.8876 21.1874 16.9428 21.1508 17.0072C21.1233 17.0715 21.0959 17.1267 21.0593 17.1818C21.0227 17.237 20.9769 17.2921 20.9128 17.3565C20.8854 17.3657 20.8671 17.3841 20.8579 17.4025C20.8488 17.4209 20.8305 17.4392 20.8213 17.4484C20.8122 17.476 20.7939 17.4852 20.7847 17.4944C20.7755 17.5036 20.7572 17.5128 20.7298 17.5404C20.5925 17.6507 20.4461 17.7242 20.2813 17.7794C19.9427 17.8254 19.6224 17.7702 19.3204 17.5955C19.238 17.5587 19.1648 17.5128 19.1007 17.4576C19.0367 17.4025 18.9909 17.3473 18.9543 17.283C18.8719 17.1634 18.8262 17.0255 18.8262 16.8876C18.8262 16.8049 18.8262 16.7314 18.8262 16.6578C18.8262 16.5843 18.8445 16.5199 18.8536 16.4464C18.8811 16.336 18.9085 16.2257 18.9451 16.1154L19.0001 15.9499L22.7615 6.65547L22.8714 6.36129C22.8988 6.28774 22.9263 6.22339 22.9629 6.15903C22.9995 6.09468 23.0269 6.03033 23.0544 5.9384C23.1185 5.78211 23.1825 5.64421 23.2557 5.5247C23.2924 5.45115 23.3381 5.3868 23.3839 5.32244C23.4296 5.25809 23.4845 5.20293 23.5303 5.13858C23.6035 5.04664 23.7042 4.9639 23.8415 4.89955C24.0062 4.8352 24.2076 4.80762 24.4272 4.80762C24.6469 4.80762 24.8482 4.8352 25.0129 4.89955C25.1411 4.9639 25.2509 5.03745 25.3241 5.13858C25.4065 5.2489 25.498 5.3776 25.5987 5.5247C25.6719 5.64421 25.7359 5.78211 25.8 5.9384C25.8275 6.02114 25.8549 6.09468 25.8915 6.15903C25.9281 6.22339 25.9556 6.28774 25.983 6.36129L26.0929 6.65547L29.8543 15.9499L29.9093 16.1154C29.9459 16.2257 29.9733 16.336 30.0008 16.4464ZM25.7268 12.006C25.5712 11.6566 25.4065 11.2889 25.2509 10.9212C25.0953 10.5534 24.9123 10.1673 24.7384 9.7812C24.6926 9.67088 24.6377 9.56056 24.5919 9.44105C24.5462 9.33073 24.4913 9.21122 24.4455 9.11009C24.4089 9.22041 24.3631 9.33073 24.3174 9.44105C24.2716 9.56056 24.2167 9.67088 24.1709 9.7812C23.9879 10.1673 23.8232 10.5534 23.6584 10.9212C23.4937 11.2889 23.3381 11.6566 23.1825 12.006L22.8531 12.8058H26.0471L25.7176 12.006H25.7268Z" stroke="#02A64D" stroke-width="1.3" stroke-miterlimit="10"/>
+                                        <path d="M44.9277 14.6353C45.0833 14.9847 45.0925 15.3248 44.946 15.665C44.7996 15.996 44.5708 16.2993 44.2596 16.5843C43.9485 16.8601 43.5915 17.1083 43.1889 17.3106C42.7862 17.5129 42.4018 17.6599 42.0449 17.7427C41.6513 17.8254 41.2303 17.8622 40.791 17.8622C40.3517 17.8622 39.9124 17.7978 39.4731 17.6967C39.0339 17.5956 38.6037 17.4393 38.1919 17.2462C37.78 17.0532 37.3956 16.805 37.0479 16.5108C36.6269 16.1614 36.2974 15.7385 36.0594 15.2513C35.8215 14.764 35.6568 14.24 35.5469 13.6792C35.4371 13.1276 35.3822 12.5668 35.373 11.9969C35.373 11.4361 35.373 10.9029 35.4188 10.4064C35.4554 9.95594 35.5469 9.49628 35.6934 9.00903C35.8398 8.52179 36.0411 8.05293 36.2974 7.58407C36.5537 7.11521 36.8648 6.68312 37.2401 6.28781C37.6061 5.8925 38.0363 5.55234 38.5305 5.27654C38.9057 5.0559 39.3267 4.90881 39.7843 4.83527C40.2511 4.76172 40.7178 4.74333 41.1937 4.78011C41.6696 4.82607 42.1181 4.9272 42.5482 5.08349C42.9784 5.24896 43.3444 5.4696 43.6373 5.7454C43.8295 5.91088 44.0308 6.14991 44.2413 6.45329C44.4518 6.75667 44.6074 7.06924 44.6989 7.38181C44.7905 7.69439 44.7996 7.98857 44.6989 8.26437C44.6074 8.54017 44.3603 8.72404 43.9668 8.81597C43.802 8.86194 43.6465 8.87113 43.5183 8.84355C43.3811 8.81597 43.2621 8.76081 43.1614 8.67807C43.0516 8.59533 42.9509 8.5034 42.8502 8.39308C42.7496 8.28276 42.6672 8.17244 42.5757 8.06212C42.2828 7.71277 41.9533 7.47375 41.5598 7.34504C41.1754 7.21633 40.791 7.18875 40.4158 7.25311C40.0406 7.31746 39.6836 7.47375 39.3542 7.72197C39.0247 7.97019 38.7684 8.29195 38.5854 8.67807C38.3932 9.09177 38.2376 9.54224 38.1278 10.0295C38.0088 10.5167 37.9539 11.0132 37.9356 11.5188C37.9173 12.0244 37.9722 12.5117 38.0729 12.9805C38.1736 13.4494 38.3566 13.8723 38.6037 14.2308C38.7959 14.525 39.0338 14.7549 39.3176 14.9387C39.6013 15.1226 39.9033 15.2513 40.2328 15.3248C40.5531 15.3984 40.8826 15.4076 41.2212 15.3616C41.5507 15.3156 41.871 15.2053 42.1913 15.0307C42.2828 14.9847 42.3926 14.9111 42.5116 14.8192C42.6306 14.7273 42.7404 14.6353 42.8594 14.5342C42.9784 14.4423 43.1065 14.3503 43.2255 14.2584C43.3536 14.1757 43.4909 14.1113 43.6282 14.0745C43.8478 14.001 44.0858 14.0102 44.342 14.0929C44.5983 14.1757 44.7996 14.3503 44.9277 14.617V14.6353Z" stroke="#0A5DA9" stroke-width="1.3" stroke-miterlimit="10"/>
+                                        <path d="M31.9961 34.4199V65.668" stroke="#777777" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_307_3556">
+                                        <rect width="64" height="71" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        </i>
+                                    <strong>언어교육원</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <i><svg width="67" height="62" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_307_3521)">
+                                        <path d="M63.9462 1.39062H3.05298C2.12626 1.39062 1.375 2.15039 1.375 3.0876V46.6619C1.375 47.5992 2.12626 48.3589 3.05298 48.3589H63.9462C64.873 48.3589 65.6242 47.5992 65.6242 46.6619V3.0876C65.6242 2.15039 64.873 1.39062 63.9462 1.39062Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M28.8652 48.3594V56.5661" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M38.9238 48.3594V56.5661" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M49.4312 56.5664H17.953C17.7201 56.5664 17.5312 56.7574 17.5312 56.993V60.1829C17.5312 60.4185 17.7201 60.6095 17.953 60.6095H49.4312C49.6642 60.6095 49.853 60.4185 49.853 60.1829V56.993C49.853 56.7574 49.6642 56.5664 49.4312 56.5664Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M1.375 42.2666H65.6242" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M45.1314 17.2667L33.6973 8.86523L22.2724 17.2389L21.3555 17.9065L22.2724 18.5742L27.178 22.1536L33.6973 26.92L40.2075 22.1536L45.1314 18.5464L46.03 17.9065L45.1314 17.2667Z" stroke="#0A5DA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M33.6984 27.6705V34.9499V27.6705ZM33.6984 27.6705L27.179 22.9041L22.2734 19.3247V27.8281L33.6984 36.1739L45.1325 27.8003V19.2969L40.2086 22.9041L33.6984 27.6705Z" stroke="#0A5DA9" stroke-width="1.8" stroke-miterlimit="10"/>
+                                        <path d="M31.9004 17.8975H36.0999" stroke="#02A64D" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_307_3521">
+                                        <rect width="67" height="62" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        </i>
+                                    <strong>교육정보시스템</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <i><svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_307_3530)">
+                                        <path d="M41.2685 15.8494L32.597 9.45215L23.9437 15.8308L23.25 16.3415L23.9437 16.8428L27.6588 19.5818L32.597 23.2122L37.5352 19.5818L41.2685 16.8335L41.944 16.3415L41.2685 15.8494Z" stroke="#0A5DA9" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M32.5966 23.7781V29.3304V23.7781ZM32.5966 23.7781L27.6584 20.1477L23.9434 17.418V23.8988L32.5966 30.2588L41.2682 23.8802V17.3994L37.5348 20.1477L32.5966 23.7781Z" stroke="#0A5DA9" stroke-width="1.8" stroke-miterlimit="10"/>
+                                        <path d="M31.2363 16.332H34.422" stroke="#02A64D" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M1.36914 20.8447L32.4954 41.7262L63.6308 20.8447" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M24.9466 36.6562L1.36914 62.6072" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M40.0547 36.6562L63.6321 62.6072" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M53.4349 20.8447V27.6133L32.4954 41.7262L11.3916 27.2791L11.3277 20.8447H1.36914V62.6077H63.6308V20.8447H53.4349Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M53.4349 20.8442V1.39258H11.127L11.3278 20.8442" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M11.3281 20.8438L11.392 27.2781L32.4958 41.7252L53.4353 27.6124V20.8438" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_307_3530">
+                                        <rect width="65" height="64" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        </i>
+                                    <strong>웹메일</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <i><svg width="62" height="64" viewBox="0 0 62 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_307_3540)">
+                                        <path d="M45.8316 15.3942V62.6181H1.39453V1.38184H33.1008L45.8316 15.3942Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M45.8324 15.3942L33.5662 15.2837L33.1016 1.38184" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M8.21484 36.8594H20.9364" stroke="#0A5DA9" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M8.21484 41.5215H20.9364" stroke="#0A5DA9" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M8.21484 54.5107H20.9364" stroke="#0A5DA9" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M8.21484 49.8682H20.9364" stroke="#0A5DA9" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M8.21484 23.4463H20.9364" stroke="#0A5DA9" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M8.21484 28.0986H20.9364" stroke="#0A5DA9" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M40.0244 21.3545H27.1914V29.913H40.0244V21.3545Z" stroke="#02A64D" stroke-width="1.8" stroke-miterlimit="10"/>
+                                        <path d="M40.0244 34.6299H27.1914V43.1884H40.0244V34.6299Z" stroke="#02A64D" stroke-width="1.8" stroke-miterlimit="10"/>
+                                        <path d="M40.0244 47.9053H27.1914V56.4638H40.0244V47.9053Z" stroke="#02A64D" stroke-width="1.8" stroke-miterlimit="10"/>
+                                        <path d="M52.5132 21.4658V54.8707C52.5132 55.0642 52.5597 55.2576 52.6526 55.4327L55.5054 60.6838C55.9607 61.513 57.1595 61.513 57.6148 60.6838L60.4676 55.4327C60.5606 55.2576 60.607 55.0642 60.607 54.8707V21.4658C60.607 20.8117 60.0681 20.2773 59.4083 20.2773H53.7026C53.0429 20.2773 52.5039 20.8117 52.5039 21.4658H52.5132Z" stroke="#777777" stroke-width="3" stroke-miterlimit="10"/>
+                                        <path d="M52.5117 30.5947H60.6055" stroke="#777777" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M52.5117 54.0508H60.6055" stroke="#777777" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        <path d="M52.5117 26.4863H60.6055" stroke="#777777" stroke-width="2.5" stroke-miterlimit="10"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_307_3540">
+                                        <rect width="62" height="64" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        </i>
+                                    <strong>대학정보공시</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="schedule">
+                <div class="wrapper">
+                    <div class="tit">
+                        <div class="tit_wrap">
+                            <span>2024</span>
+                            <h2>학사일정</h2>
+                        </div>
+                        <p>부산대학교 주요 일정을 확인해보세요.</p>
+                    </div>
+                    <div class="cnt">
+                        <div class="cnt_sche">
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                  <button id="prevBtn">이전</button>
+                                  <h2 id="currentMonth"></h2>
+                                  <button id="nextBtn">다음</button>
+                                </div>
+                                <div class="calendar-days">
+                                  <div class="day">일</div>
+                                  <div class="day">월</div>
+                                  <div class="day">화</div>
+                                  <div class="day">수</div>
+                                  <div class="day">목</div>
+                                  <div class="day">금</div>
+                                  <div class="day">토</div>
+                                </div>
+                                <div class="calendar-dates" id="calendarDates"></div>
+                            </div>
+                            <div class="sche_info">
+                                <ul>
+                                    <li>
+                                        <a href="#n">
+                                            <strong>04.22 - 04.27</strong>
+                                            <span>2024년도 1학기 중간고사</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <strong>04.26 - 04.26</strong>
+                                            <span>2024년도 1학기 수업일수 1/2선</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <strong>05.01 - 05.07</strong>
+                                            <span>2024년도 2학기 계절 및 도약수업 복학신청기간</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <strong>05.09 - 05.10</strong>
+                                            <span>2024년도 여름계절수업 희망과목담기</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <strong>05.11 - 05.11</strong>
+                                            <span>2024년도 여름계절수업 자동신청결과확인</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <strong>05.16 - 05.16</strong>
+                                            <span>2024년도 1학기 수업일수 2/3선</span>
+                                        </a>
+                                    </li>
+                                    <li class="all_view"><a href="#n">전체 일정 확인하기</a></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div class="cnt_side">
+                            <div class="donate"></div>
+                            <div class="letter"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news"></section>
+            <section class="promo"></section>
+            <section class="campus"></section>
+            <section class="footer_menu"></section>
+        </div>
+        <footer class="footer"></footer>
+    </div><!--id="wrap" class="main"-->
+</body>
+</html>

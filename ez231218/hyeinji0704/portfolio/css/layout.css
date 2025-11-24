@@ -1,0 +1,47 @@
+.header { 
+    position:fixed; 
+    height: 90px;
+    width: 100%;
+    z-index: 100;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+} /* header는 fixed */
+.header h1 {
+    font-size: 24px;
+    margin-left: 35px;
+}
+.header h1 span {
+    margin-right: 10px;
+}
+.header .gnb_open, .header .gnb_close {
+    display: none;
+}
+.header .gnb_wrap {
+    font-size: 26px;
+    margin-right: 130px;
+}
+.header .gnb_wrap ul {
+    display: flex;
+}
+.header .gnb_wrap ul li {
+    margin-left: 30px;
+}
+.header .gnb_wrap ul li.active{ 
+    position: relative;
+} 
+.header .gnb_wrap ul li.active::after {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    z-index: 10;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #fff;
+    content: "";
+}/* 메뉴를 클릭했을때의 스타일 */

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.svg">
+    <link rel="stylesheet" href="portfolio/css/main.css">
+    <script src="portfolio/js/jquery-3.7.1.min.js"></script>
+    <!--swiper라이브러리--->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--AOS라이브러리--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="portfolio/js/main.js"></script>
+    <script src="portfolio/js/common.js"></script>
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    
+    <div id="wrap">
+        <header class="header">
+            <h1>
+                <span>2024</span>
+                <span>Web Publisher</span>
+                <span>Portfolio</span>
+            </h1>
+            <nav class="gnb">
+                <div class="gnb_open"><button>메뉴열기</button></div>
+                <div class="gnb_wrap">
+                    <ul> 
+                        <li data-link="main"><a href="#n">HOME</a></li>
+                        <li data-link="intro"><a href="#n">WHO I AM</a></li>
+                        <li data-link="project"><a href="#n">PROJECT</a></li>
+                        <li data-link="contact"><a href="#n">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="gnb_close"><button>메뉴닫기</button></div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <section data-menu="main" class="main">
+                            <div class="inner" data-aos="fade-up">
+                                <div class="main_tit">
+                                    <div class="tit tit01 typing-demo">
+                                        <div ><strong>B</strong>ULID UP</div>
+                                    </div>
+                                    <div class="tit tit02 typing-demo">
+                                        <div ><strong>G</strong>ROW UP</div>
+                                    </div>
+                                    <div class="tit tit03 typing-demo">
+                                        <div ><strong>S</strong>ERVE TO</div>
+                                    </div>
+                                    <div class="sub">
+                                        <span >1. [동사] 무언가를 창조하거나 개발하다.</span>
+                                        <span>2. [동사] 성장하다, 자라다.</span>
+                                        <span>3. [동사] -의 역할을 하다. </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section data-menu="intro" class="intro">
+                            <div class="wrapper">
+                                <div class="sec01" >
+                                    <span >;Who I am</span>
+                                    <div class="photo"><div style="width:272px;height:272px;border-radius:50%;background-color:#ededed"></div></div>
+                                    <h2>Build. Grow. Serve
+                                        <em>;개발하고, 성장하고, 제공하자</em>
+                                    </h2>
+                                    <p>아름다울 뿐만 아니라 사용하기도 편한 웹사이트를 구현해내는 것이 저의 최종 목표입니다. 또한 <em>차별없이 누구에게나 동일한 경험</em>을 쥐어주는 것이 웹퍼블리셔의 가장 중요한 역할이라고 생각합니다. <em>무한한 성장력으로 사용자들에게 멋진 경험을 제공할 수 있는 웹퍼블리셔가 되겠습니다.</em></p>
+                                </div>
+                                <div class="sec02">
+                                    <dl>
+                                        <div class="info01">
+                                            <dt>PROFILE</dt>
+                                            <dd>지이름 / NAME JI</dd>
+                                            <dd>1234.12.12</dd>
+                                            <dd>email@naver.com</dd>
+                                            <dd>010-1234-1234</dd>
+                                        </div>
+                                        <div class="info02">
+                                            <dt>WORK EXPERIENCE</dt>
+                                            <dd>
+                                                <span>1234.12<br>-1234.12</span>
+                                                <strong>근무한 회사</strong>
+                                            </dd>
+                                        </div>
+                                        <div class="info03">
+                                            <dt>CERTIFICATION</dt>
+                                            <dd>
+                                                <span>2024.04</span>
+                                                <strong>웹디자인기능사</strong>
+                                            </dd>
+                                            <dd>
+                                                <span>1234.12</span>
+                                                <strong>TOEIC OOO점</strong>
+                                            </dd>
+                                            <dd>
+                                                <span>2019.02</span>
+                                                <strong>2종보통운전면허</strong>
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                    <dl>
+                                        <div class="info04">
+                                            <dt>EDUCATION</dt>
+                                            <dd>
+                                                <span>2024.04</span>
+                                                <strong>이지디자인컴퓨터학원 UI&UX 과정 수료</strong>
+                                            </dd>
+                                            <dd>
+                                                <span>1234.12</span>
+                                                <strong>OO대학교 OO학과 졸업</strong>
+                                            </dd>
+                                        </div>
+                                        <div class="info05">
+                                            <dt>SKILLS</dt>
+                                            <dd>Photoshop</dd>
+                                            <dd>Illustrator</dd>
+                                            <dd>Adobe XD</dd>
+                                            <dd>Figma</dd>
+                                            <dd>Visual Studio Code</dd>
+                                            <dd>CSS3</dd>
+                                            <dd>jquery</dd>
+                                            <dd>HTML5</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section data-menu="index" class="index">
+                            <h2 ><strong>iNDEX</strong><br>;PROJECTs</h2>
+                            <ul class="cnt">
+                                <li class="kps on">
+                                    <a href="#n">
+                                        <strong class="num">01</strong>
+                                        <div class="right">
+                                            <div class="tit">한전KPS</div>
+                                            <div class="sub">
+                                                <span>#Renewal</span>
+                                                <span>#Fullpage</span>
+                                                <span>#responsive</span>
+                                            </div>
+                                        </div>
+                                        <button></button>
+                                    </a>
+                                </li>
+                                <li class="hospital">
+                                    <a href="#n">
+                                        <strong class="num">02</strong>
+                                        <div class="right">
+                                            <div class="tit">원광효도요양병원</div>
+                                            <div class="sub">
+                                                <span>#AOS</span>
+                                                <span>#Renewal</span>
+                                                <span>#Swiper</span>
+                                                <span>#responsive</span>
+                                            </div>
+                                        </div>
+                                        <button></button>
+                                    </a>
+                                </li>
+                                <li class="pusan_uni">
+                                    <a href="#n">
+                                        <strong class="num">03</strong>
+                                        <div class="right">
+                                            <div class="tit">부산대학교</div>
+                                            <div class="sub">
+                                                <span>#Renewal</span>
+                                            </div>
+                                        </div>
+                                        <button></button>
+                                    </a>
+                                    
+                                </li>
+                                <li class="num04">
+                                    <a href="#n" >
+                                        <strong class="num">04</strong>
+                                        <div class="right">
+                                            <div class="tit">제작 준비중입니다.</div>
+                                            <div class="sub">
+                                                <span>#Renewal</span>
+                                                <span>#responsive</span>
+                                            </div>
+                                        </div>
+                                        <button></button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section data-menu="project" class="project kps">
+                            <div class="line"></div>
+                            <div class="inner">
+                                <h2>한전 KPS 반응형<br>웹사이트 리디자인</h2>
+                                <div class="view_btn">
+                                    <a href="kps_full/index.html" target="_blank"  class="pro">GO SITE</a>
+                                    <a href="portfolio/contents/kps.html" class="det">VIEW DETAIL</a>
+                                </div>
+                                <div class="detail">
+                                    <span>Participation</span>
+                                    <strong>HTML5   CSS3   Javascript 1인 100%</strong><br>
+                                    <span>Tool</span>
+                                    <strong>Xd  HTML5   CSS3   Javascript</strong><br>
+                                    <span>Keyword</span>
+                                    <strong>전력설비   서비스   혁신   지속가능경영   기술</strong>
+                                </div>
+                            </div>
+                            <div class="photo">
+                                <a href="kps_full/index.html" target="_blank" ><img src="portfolio/images/project_k.png" alt=""></a>
+                            </div>
+                        </section>
+                    </div>   
+                    <div class="swiper-slide">
+                        <section data-menu="project" class="project hospital">
+                            <div class="line"></div>
+                            <div class="inner">
+                                <h2>원광효도요양병원 반응형<br>웹사이트 리디자인</h2>
+                                <div class="view_btn">
+                                    <a href="hospital/index.html" target="_blank"  class="pro">GO SITE</a>
+                                    <a href="portfolio/contents/hospital.html" class="det">VIEW DETAIL</a>
+                                </div>
+                                <div class="detail">
+                                    <span>Participation</span>
+                                    <strong>HTML5   CSS3   Javascript 1인 100%</strong><br>
+                                    <span>Tool</span>
+                                    <strong>Xd  Photoshop  Illustrator   HTML5   CSS3   Javascript</strong><br>
+                                    <span>Keyword</span>
+                                    <strong>안정적   신뢰적인   깔끔한</strong>
+                                </div>
+                            </div>
+                            <div class="photo">
+                                <a href="hospital/index.html" target="_blank" ><img src="portfolio/images/project_h.png" alt=""></a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section data-menu="project" class="project hospital">
+                            <div class="line"></div>
+                            <div class="inner">
+                                <h2>부산대학교<br>웹사이트 리디자인</h2>
+                                <div class="view_btn">
+                                    <a href="pusan_uni/index.html" target="_blank"  class="pro">GO SITE</a>
+                                    <a href="https://www.figma.com/file/5l83ri4klh9j27lvOotQpN/%EB%B6%80%EC%82%B0%EB%8C%80%ED%95%99%EA%B5%90-%EA%B0%9C%ED%8E%B8?type=design&node-id=380%3A2&mode=dev&t=UKVE8jsoiIIWz3M9-1" class="det">VIEW DETAIL</a>
+                                </div>
+                                <div class="detail">
+                                    <span>Participation</span>
+                                    <strong>HTML5   scss   Javascript 1인 100%</strong><br>
+                                    <span>Tool</span>
+                                    <strong>Figma  Photoshop  Illustrator   HTML5   CSS3   Javascript</strong><br>
+                                    <span>Keyword</span>
+                                    <strong>교육   안정적   깔끔한   신뢰적인</strong>
+                                </div>
+                            </div>
+                            <div class="photo">
+                                <a href="pusan_uni/index.html" target="_blank" ><img src="portfolio/images/project_p.png" alt=""></a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide">
+                        <section data-menu="contact" class="contact">
+                            <div class="tit">
+                                <div class="move_txt">BULID.GROW.SERVE.</div>
+                            </div>
+                            <ul>
+                               <li><a href="#n"><i></i></a></li>
+                               <li><a href="#n"><i></i></a></li>
+                               <li><a href="#n"><i></i></a></li> 
+                            </ul>
+                            <div class="pr">
+                                <div class="top">
+                                    <h2>지이름 NAME JI</h2>
+                                    <p>튼튼한 구조를 갖춘 웹사이트를 구현하는 <br>웹디자이너/퍼블리셔가 되겠습니다.</p>
+                                </div>
+                                <div class="btm">
+                                    <span><a href="index.html">portfolio</a></span>
+                                    <span>email@naver.com</span>
+                                    <span>010-1234-1234</span>
+                                    <strong>©2024 All rights reserved.</strong>
+                                </div>
+                            </div>
+                            <div class="btm_tit">
+                                Thank you for<br>
+                                watching<br> 
+                                my projects.
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <aside class="call">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a href="#n" class="e-mail">
+                                <span>email@naver.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n" class="phone">
+                                <span>010-1234-1234</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button>Contact Me</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="cursor"><div class="bg"></div></div>
+</body>
+</html>

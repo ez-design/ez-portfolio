@@ -1,0 +1,147 @@
+.skipnav {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 100000000;
+    width: 100%;
+}
+.skipnav a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* 속성선택자
+    a태그중에서 href="gnb"인 a태그의 스타일 - 남발x*/
+.skipnav a[href="#gnb"] {
+        background-color: #fff;
+        color: #000;
+}
+.skipnav a:focus {
+    top: 100px;
+}
+
+
+/*fiexd*/
+header.fiexd {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #f4f4f4;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.03);
+    z-index: 100;
+}
+
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    
+}
+header .logo {
+    float: left;
+    margin: 25px 0 30px 0;
+}
+header .logo a {
+    display: block;
+    width: 136px;
+    height: 48px;
+    font-size: 0;
+    line-height: 0;
+    background: url(../imges/common/logo_c.svg) no-repeat center center;
+}
+header .header_right {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+header .gnb ul,
+header .tnb {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+}
+header .gnb ul li {
+    margin-right: 60px;
+}
+header .gnb .gnb_open,
+header .gnb .gnb_close {
+    display: none; /* 모바일 */
+}
+header .tnb .search, 
+header .tnb .lang {
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    margin-left: 15px;
+}
+header .tnb .search {
+    background: url(../imges/common/search.svg)no-repeat center center / contain;
+}
+header .tnb .lang {
+    background: url(../imges/common/lang.svg)no-repeat center center /contain ;
+}
+
+
+
+footer {
+    padding-bottom: 140px;
+}
+footer .f_logo {
+    padding: 0 160px 0 31% ;
+    height: 75px;
+}
+footer .f_logo ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .line {
+    border-bottom: 1px solid #f4f4f4; 
+    margin-bottom: 20px;
+}
+footer .f_inner .f_left {
+    font-size: 16px;
+    margin-top: 30px;
+}
+footer .f_inner .f_left .f_menu a {
+    font-weight: 800;
+}
+footer .f_inner .f_left .f_info {
+    margin-top: 20px;
+}
+footer .f_inner .f_left .f_info p {
+    line-height: 1.5;
+    color: #999;
+}
+footer .f_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px;
+}
+footer .f_inner .f_right {
+    text-align: right;
+    margin-top: 20px;
+}
+footer .f_inner .f_right .f_logo2 ul {
+    display: flex;
+}
+footer .f_inner .f_right .f_logo2 ul li {
+    margin-left: 20px;
+}
+footer .f_inner .f_right .copyright {
+    font-size: 14px;
+    color: #999;
+    margin-top: 80px;
+}
