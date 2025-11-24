@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+leedaegyu.pe.kr	TRUE	/	FALSE	1999999999	PHPSESSID	9c04c8cf5d2494afc35f2ce94016b976
+leedaegyu.pe.kr	TRUE	/	FALSE	1999999999	2a0d2363701f23f8a75028924a3af643	MTEyLjIxOS43My43OA%3D%3D
+www.happypointcard.com	TRUE	/	FALSE	1999999999	SCOUTER	x66cpgcsqrp0fm
+www.happypointcard.com	TRUE	/	FALSE	1999999999	JSESSIONID	1919AD0F851B7DAB0DFF4E12A80E5790
+www.happypointcard.com	TRUE	/	FALSE	1999999999	AWSALB	Ah3yPtgNR6zoqYjSPSwv9qlkPKSHz1D1feCeMfQDLoM5rHvyn5ghlVyUwk7iicSA4Jm4dKZDCNDbIhi2l5dNEs4sxDVgGLWTU8KsVj9jhS8luaeLsst4MDMxdkRj
+www.happypointcard.com	TRUE	/	FALSE	1999999999	AWSALBCORS	Ah3yPtgNR6zoqYjSPSwv9qlkPKSHz1D1feCeMfQDLoM5rHvyn5ghlVyUwk7iicSA4Jm4dKZDCNDbIhi2l5dNEs4sxDVgGLWTU8KsVj9jhS8luaeLsst4MDMxdkRj
+www.happypointcard.com	TRUE	/	FALSE	1999999999	SameSite	None
+leedaegyu.pe.kr	TRUE	/	FALSE	1999999999	e1192aefb64683cc97abb83c71057733	c3RvcmU%3D
+

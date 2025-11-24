@@ -1,0 +1,672 @@
+@charset "UTF-8";
+
+/* ================================================== */
+/* INDEX-COMMON-S =================================== */
+/* ================================================== */
+.sec {margin-bottom: 150px;}
+.sec-header {margin-bottom: 70px;}
+.sec-tit {
+  margin-bottom: 10px;
+  font: 600 60px poppins, "Pretendard Variable", Pretendard, -apple-system, Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; color: #264037;
+}
+.sec-tit span {color: #158d51;}
+.sec-desc {font-size: 20px; color: #444;}
+.more {
+  display: block; overflow: hidden;
+  position: relative; 
+  width: 140px; height: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+.more::before {
+  content: "";
+  position: absolute; left: 0; top: 0;
+  width: 100%; height: 100%;  
+  border: 1px solid #fff; border-radius: 20px;
+  transition: all 0.4s;
+}
+.more::after {
+  content: "";
+  position: absolute; left: -100%; top: 0;
+  width: 100%; height: 100%;
+  background-color: #158d51;
+  transition: all 0.4s;
+}
+.more span {
+  position: relative; z-index: 2;
+  font-weight: 700; line-height: 40px; color: #fff;
+  transition: all 0.4s;
+}
+
+/* hover ============================================ */
+.more:hover::before {border-color: #158d51;}
+.more:hover::after {transform: translateX(100%);}
+/* ================================================== */
+/* INDEX-COMMON-E =================================== */
+/* ================================================== */
+
+
+/* ================================================== */
+/* VISUAL-S ========================================= */
+/* ================================================== */
+.visual {
+  overflow: hidden; position: relative;
+  width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);
+  margin-bottom: 180px;
+}
+.visual-swiper .swiper-slide span {
+  display: block;
+  width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);
+  background: url(../img/main_visual1.jpg) no-repeat center center/cover;
+}
+.visual-swiper .swiper-slide::before {
+  content: "";
+  position: absolute; top: 0; left: 0; z-index: 3;
+  width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);
+  background-color: rgba(0,0,0,0.5);
+}
+.visual-swiper .main-visual2 span {background-image: url(../img/main_visual2.jpg);}
+.visual-swiper .main-visual3 span {background-image: url(../img/main_visual3.jpg);}
+.visual-swiper .main-visual4 span {background-image: url(../img/main_visual4.jpg);}
+.visual-txt-swiper {
+  position: absolute; top: calc(var(--vh, 1vh) * 50); left: 140px; z-index: 5;
+  width: 100%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.visual-txt-swiper > ul {margin-bottom: 30px;}
+.visual-txt {color: transparent;}
+.visual-txt.swiper-slide-active {color: #fff;}
+.visual-tit {
+  margin-bottom: 20px;
+  font: 600 55px/1.2 poppins, "Pretendard Variable", Pretendard, -apple-system, Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+.visual-tit span {display: block;}
+.visual-desc {font-size: 21px;}
+.visual-desc span {display: block;}
+.visual-pager .swiper-pagination-bullet {
+  overflow: hidden;
+  position: relative;
+  width: 11px; height: 11px;
+  border-radius: 6px;
+  background-color: transparent;
+  opacity: 1;
+  transition: all 0.4s;
+}
+.visual-pager .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute; top: 0; left: 0; z-index: 4;
+  width: 100%; height: 11px;
+  border-radius: 6px; border: 2px solid #fff;  
+}
+.visual-pager .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute; top: 0; left: 0; z-index: 5;
+  width: 100%; height: 11px;
+  background-color: #158d51;
+  transform: translateX(-100%);
+}
+.visual-pager .swiper-pagination-bullet-active {width: 70px;}
+.visual-pager .swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute; top: 0; left: 1px; z-index: 4;
+  width: calc(100% - 2px); height: 11px;
+  border-radius: 6px; background-color: #fff;
+}
+.visual-pager .swiper-pagination-bullet-active::after {
+  animation: progressbar 7s linear 1 forwards;
+}
+@keyframes progressbar {
+  0% { transform: translateX(-100%);}
+  100% { transform: translateX(0);}
+}
+/* hover ============================================ */
+.visual-pager .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {background-color: #fff;}
+/* ================================================== */
+/* VISUAL-E ========================================= */
+/* ================================================== */
+
+
+/* ================================================== */
+/* BUSINESS-S ======================================= */
+/* ================================================== */
+.business {position: relative; margin-bottom: 80px;}
+.business::before {
+  content: "";
+  position: absolute; top: 450px; left: 0;
+  width: 100%; height: 480px;
+  background-color: #eee;
+}
+.business .sec-header {text-align: center;}
+.business-wrap {
+  display: flex; column-gap: 40px;
+  height: 500px;
+  color: #fff;
+}
+.business-item {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  transition: all 0.5s;
+}
+.business-item::before,
+.business-item::after
+ {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 500px;
+  transition: all 0.5s;
+}
+.business-item::before {
+  backdrop-filter: saturate(0) brightness(40%);
+}
+.business-item::after {
+  background-image: linear-gradient(180deg, transparent 35% , rgba(0,0,0,0.6), #158d51);
+  opacity: 0;
+}
+.const {background: url(../img/business-img1.jpg) no-repeat center center/cover;}
+.ship {background: url(../img/business-img2.jpg) no-repeat center center/cover;}
+.business-box {
+  position: absolute; bottom: -60px; left: 0; z-index: 2;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+.business-tit {
+  margin-bottom: 10px; font-size: 40px;
+  transition: all 0.5s;
+}
+.business-desc {
+  margin-bottom: 40px;
+  font-size: 19px; white-space: nowrap;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.business .more {
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.business .more::after {background-color: #fff;}
+
+/* hover ============================================ */
+.business-item:hover::before {backdrop-filter: saturate(100%) brightness(100%);}
+.business-item:hover::after {opacity: 1;}
+.business-item:hover .business-box {transform: translateY(-120px);}
+.business-item:hover .business-desc, .business-item:hover .more {opacity: 1;}
+.business .more:hover span {color: #264037;}
+.business .more:hover::before {border-color: #fff;}
+/* ================================================== */
+/* BUSINESS-E ======================================= */
+/* ================================================== */
+
+
+/* ================================================== */
+/* MARQUEE-S ======================================== */
+/* ================================================== */
+.marquee {
+  overflow: hidden;
+  width: 100%; height: 70px;
+  margin-bottom: 80px;
+}
+.marquee-wrap {
+  display: flex;
+  width: 5918px; height: 70px;
+  animation: marquee 15s linear infinite;
+}
+.marquee-wrap::before,
+.marquee-wrap::after {
+  content: "";
+  flex-basis: 2959px; height: 70px;
+  background: url(../img/marquee.svg) no-repeat left bottom/contain;
+}
+@keyframes marquee {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-50%);}
+}
+/* ================================================== */
+/* MARQUEE-E ======================================== */
+/* ================================================== */
+
+
+
+/* ================================================== */
+/* HAEMORO-S ======================================== */
+/* ================================================== */
+.haemoro {
+  position: relative; z-index: 3;
+  width: 100%; height: 700px;
+  padding: 100px 0;
+  background: url(../img/haemoro-bg.jpg) no-repeat fixed center center/cover;
+  text-align: center;
+}
+.haemoro-box {
+  height: 500px; padding-top: 100px;
+  border-radius: 0 50px 0 50px;
+  background-color: rgba(0,0,0,0.8);
+}
+.haemoro .sec-header {margin-bottom: 60px;}
+.haemoro .sec-tit {
+  width: 562px; height: 80px;
+  margin: 0 auto 40px;
+  background: url(../img/haemoro-logo.svg) no-repeat center center/contain;
+}
+.haemoro .sec-desc {color: #fff;}
+.haemoro .sec-desc span {display: block;}
+.haemoro .more {margin: 0 auto;}
+/* ================================================== */
+/* HAEMORO-E ======================================== */
+/* ================================================== */
+
+
+/* ================================================== */
+/* SUSTAIN-S ======================================== */
+/* ================================================== */
+.sustain {position: relative; text-align: center;}
+.sustain::before {
+  content: "";
+  position: absolute; top: -285px; right: 0;
+  width: 475px; height: 1050px;
+  background: url(../img/sustain-bg.svg) no-repeat center center/cover;
+}
+
+.sustain .inner {position: relative;}
+.sustain-wrap {
+  display: flex; justify-content: center; column-gap: 25px;
+}
+.sustain-wrap li {flex-basis: 280px;}
+.sustain-item {
+  display: block;
+  height: 280px;
+  padding: 0 15px;
+  border: 1px solid rgba(200,200,200,0.5);
+  color: #222;
+  transition: all 0.4s;
+}
+.sustain-item::before {
+  content: ""; display: block;
+  width: 50px; height: 50px;
+  margin: 70px auto 30px;
+  background: url(../img/sustain-ico.svg) no-repeat;
+  transition: all 0.4s;
+}
+.sustain-wrap li:nth-child(2) .sustain-item::before {background-position: -50px 0;}
+.sustain-wrap li:nth-child(3) .sustain-item::before {background-position: 0 -50px;}
+.sustain-wrap li:nth-child(4) .sustain-item::before {background-position: -50px -50px;}
+.sustain-tit {font-size: 20px; font-weight: 600;}
+.sustain-eng {font-size: 16px; color: #888; letter-spacing: -0.04em;}
+/* hover ============================================ */
+.sustain-item:hover {
+  border: 1px solid #264037;
+  background-color: #264037;
+  color: #fff;
+}
+.sustain-item:hover::before {background-image: url(../img/sustain-ico-hover.svg);}
+.sustain-item:hover .sustain-eng {color: #1bb769;}
+/* ================================================== */
+/* SUSTAIN-E ======================================== */
+/* ================================================== */
+
+
+/* ================================================== */
+/* RECRUIT-S ======================================== */
+/* ================================================== */
+.recruit {
+  position: relative; z-index: 3;
+  width: 100%; height: 700px;
+}
+.recruit::before {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 700px;
+  background: url(../img/recruit-bg.jpg) no-repeat center top/cover;
+  filter: brightness(20%);
+}
+.recruit .inner {
+  display: flex; justify-content: space-between;
+  position: relative;
+  height: 700px;
+}
+.recruit .sec-header {
+  flex: 2; order: 2; border-left: 1px solid rgba(255,255,255,0.2);
+  padding: 230px 0 0 65px;
+  margin-bottom: 0;
+}
+.recruit .sec-tit {margin-bottom: 35px; text-indent: -3px;}
+.recruit .sec-tit span {color: #1bb769}
+.recruit .sec-tit,
+.recruit .sec-desc {color: #fff;}
+.recruit .sec-desc span {display: block;}
+.recruit-item {
+  flex: 1;
+  padding: 175px 0 0 25px;
+  border-left: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+.recruit-item::before {
+  content: ""; display: block;
+  width: 50px; height: 50px; margin-bottom: 60px;
+  background-image: url(../img/recruit-ico.svg);
+}
+.recruit-item:last-child::before {background-position: -50px 0;}
+.recruit-tit {margin-bottom: 20px; font-size: 35px;}
+.recruit-desc {margin-bottom: 60px; font-weight: 300; color: #eee;}
+/* ================================================== */
+/* RECRUIT-E ======================================== */
+/* ================================================== */
+
+
+/* ================================================== */
+/* PR-S ============================================= */
+/* ================================================== */
+.pr {
+  position: relative;
+  height: 400px; margin-bottom: 200px;
+}
+.pr::before {
+  content: "";
+  position: absolute; top: -150px; left: 0;
+  width: 40%; height: 1000px;
+  background-color: #eee;
+}
+.pr .inner::before {
+  content: "";
+  position: absolute; bottom: -200px; left: 1%;
+  width: 38%; height: 302px;
+  background: url(../img/pr-bg.svg) no-repeat center bottom/contain;
+}
+.pr .sec-header {position: relative;}
+.pr-nav {
+  display: flex; column-gap: 10px;
+  position: absolute; top: 210px; left: 0;
+}
+.pr-nav div {
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.pr-nav svg {margin: 18px auto;}
+.pr-nav svg path {transition: all 0.4s;}
+.pr-swiper {
+  position: absolute; top: 0; right: 0;
+  width: 65%; max-width: 2000px; height: 400px;
+}
+.pr-item {
+  position: relative;
+  width: 360px; height: 400px;
+}
+.pr-txt {
+  position: absolute; top: 203px; left: 0;
+  width: 360px; height: 197px; padding-top: 30px;
+}
+.pr-cate {font-weight: 600; line-height: 25px; color: #158d51;}
+.pr-cate::after {
+  content: ""; display: inline-block;
+  width: 1px; height: 11px;
+  margin: 0 6px 0 11px;
+  background-color: #ccc;
+}
+.pr-date {font: 600 15px/25px poppins, "Pretendard Variable", Pretendard, -apple-system, Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; color: #888;}
+.pr-tit {
+  position: absolute; top: 70px; left: 0;
+  font-size: 20px; font-weight: 600; color: #222;
+}
+.pr-img {
+  overflow: hidden;
+  width: 360px; height: 203px;
+  background-color: #aaa;
+}
+.pr-img::before {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 203px;
+  background-color: #158d51;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.pr-img::after {
+  content: "";
+  position: absolute; top: 66px; left: 100px;
+  width: 90px; height: 71px;
+  background-image: url(../img/pr-arrow.svg);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+/* hover ============================================ */
+.pr-nav div:hover path {fill: #fff;}
+.pr-nav div:hover {background-color: #158d51;}
+.pr-item:hover .pr-img::before {opacity: 0.8;}
+.pr-item:hover .pr-img::after {
+  opacity: 1; transform: translateX(35px);
+}
+/* ================================================== */
+/* PR-E ============================================= */
+/* ================================================== */
+
+
+
+@media (max-width: 1279px) {
+
+  /* INDEX-COMMON-S =================================== */
+  .sec {margin-bottom: 130px;}
+  .sec-header {margin-bottom: 60px;}
+  .sec-tit {font-size: 50px;}
+  .sec-desc {font-size: 19px;}
+  .more {
+    width: 130px; height: 38px;
+    border-radius: 19px;
+  }
+  .more span {font-size: 16px; line-height: 38px;}
+  /* INDEX-COMMON-E =================================== */
+
+  /* VISUAL-S ========================================= */
+  .visual {margin-bottom: 150px;}
+  .visual-txt-swiper {left: 100px;}
+  /* VISUAL-E ========================================= */
+
+  /* BUSINESS-S ======================================= */
+  .business {margin-bottom: 70px;}
+  .business-wrap {column-gap: 20px;}
+  .business-desc span {display: block;}
+  /* BUSINESS-E ======================================= */
+
+  /* MARQUEE-S ======================================== */
+  .marquee {height: 60px; margin-bottom: 70px;}
+  .marquee-wrap {width: 5074px; height: 60px;}
+  .marquee-wrap::before,
+  .marquee-wrap::after {flex-basis: 2537px; height: 60px;}
+  /* MARQUEE-E ======================================== */
+
+  /* SUSTAIN-S ======================================== */
+  .sustain::before {
+    top: -243px;
+    width: 408px; height: 900px;
+    opacity: 0.4;
+  }
+  .sustain-wrap {column-gap: 20px;}
+  .sustain-wrap li {flex-basis: 220px;}
+  .sustain-item {height: 240px; padding: 0 5px;}
+  .sustain-item::before {margin: 50px auto 20px;}
+  .sustain-tit {font-size: 19px; font-weight: 600;}
+  .sustain-eng {font-size: 15px;}
+  .sustain-eng span {display: block;}
+  /* SUSTAIN-E ======================================== */
+
+  /* RECRUIT-S ======================================== */
+  .recruit .inner {padding: 0;}
+  .recruit .sec-header {
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    padding: 60px 0 0;
+    border: 0;
+    text-align: center;
+  }
+  .recruit .sec-tit {margin-bottom: 10px;}
+  .recruit-item {
+    padding: 45px 0 0 90px ; margin-top: 300px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .recruit-item:nth-child(2) {border-left: 0}
+  .recruit-item::before {margin-bottom: 30px;}
+  .recruit-tit {margin-bottom: 10px; font-size: 30px;}
+  .recruit-desc {margin-bottom: 40px;}
+  /* RECRUIT-E ======================================== */
+
+  /* PR-S ============================================= */
+  .pr {height: auto;}
+  .pr .inner {padding: 0 50px;}
+  .pr .inner::before {display: none;}
+  .pr::before {width: 100%;}
+  .pr .sec-header {text-align: center; margin-bottom: 20px;}
+  .pr .sec-desc {margin-bottom: 30px;}
+  .pr-nav {position: static; width: 110px; margin: 0 auto;}
+  .pr-swiper {
+    position: relative; width: 100%; height: 400px;}
+  /* PR-E ============================================= */
+}
+  
+
+@media (max-width: 767px) {
+
+  /* INDEX-COMMON-S =================================== */
+  .sec {margin-bottom: 110px;}
+  .sec-header {margin-bottom: 50px;}
+  .sec-tit {font-size: 40px;}
+  .sec-desc {font-size: 17px;}
+  .more {
+    width: 120px; height: 36px;
+    border-radius: 18px;
+  }
+  .more span {font-size: 15px; line-height: 36px;}
+  /* INDEX-COMMON-E =================================== */
+
+  /* VISUAL-S ========================================= */
+  .visual {margin-bottom: 120px;}
+  .visual-txt-swiper {left: 15px;}
+  .visual-tit {padding-right: 15px; margin-bottom: 15px; font-size: 40px;}
+  .visual-desc {padding-right: 15px; font-size: 18px;}
+  /* VISUAL-E ========================================= */
+
+  /* BUSINESS-S ======================================= */
+  .business {margin-bottom: 60px;}
+  .business::before {
+    content: "";
+    position: absolute; top: 293px; left: 0;
+    width: 100%; height: 623px;
+    background-color: #eee;
+  }
+  .business-wrap {
+    flex-direction: column; row-gap: 10px;
+    height: 600px;
+  }
+  .business-item::after {
+    height: 295px;
+    background-image: linear-gradient(180deg, transparent 15% , rgba(0,0,0,0.6), #158d51);
+  }
+  .business-box {bottom: -5px;}
+  .business-tit {margin-bottom: 10px; font-size: 30px;}
+  .business-desc {margin-bottom: 35px; font-size: 17px;}
+  .business-item:hover .business-box {transform: translateY(-60px);}
+  /* BUSINESS-E ======================================= */
+
+  /* MARQUEE-S ======================================== */
+  .marquee {height: 50px; margin-bottom: 60px;}
+  .marquee-wrap {width: 4228px; height: 50px;}
+  .marquee-wrap::before,
+  .marquee-wrap::after{flex-basis: 2114px; height: 50px;}
+  /* MARQUEE-E ======================================== */
+
+  /* HAEMORO-S ======================================== */
+  .haemoro {height: 600px; background-attachment: scroll;}
+  .haemoro-box {height: 400px; padding: 80px 40px 0;}
+  .haemoro .sec-header {margin-bottom: 50px;}
+  .haemoro .sec-tit {
+    width: auto; height: 55px;
+    margin: 0 auto 30px;
+    background: url(../img/haemoro-logo.svg) no-repeat center center/contain;
+  }
+  /* HAEMORO-E ======================================== */
+
+  /* SUSTAIN-S ======================================== */
+  .sustain::before {
+    top: -182px;
+    width: 475px; height: 1050px;
+  }
+  .sustain .sec-tit span {display: block; line-height: 40px;}
+  .sustain-wrap {
+    justify-content: space-evenly; 
+    flex-wrap: wrap; row-gap: 20px;
+  }
+  .sustain-wrap li {flex-basis: calc(50% - 20px);}
+  .sustain-item::before {margin: 45px auto 20px;}
+  /* SUSTAIN-E ======================================== */
+
+  /* RECRUIT-S ======================================== */
+  .recruit {height: 600px;}
+  .recruit::before {height: 600px;}
+  .recruit .sec-header {padding: 55px 20px 0;}
+  .recruit .sec-tit {margin-bottom: 10px;}
+  .recruit-item {
+    padding : 40px 20px 0; margin-top: 260px;
+    text-align: center;
+  }
+  .recruit-item:nth-child(2) {border-left: 0}
+  .recruit-item::before {margin: 0 auto 25px;}
+  .recruit-tit {font-size: 25px;}
+  .recruit-desc {margin-bottom: 30px; font-size: 15px;}
+  .recruit-item .more {margin: 0 auto;}
+  /* RECRUIT-E ======================================== */
+
+  /* PR-S ============================================= */
+  .pr .inner {padding: 0 20px;}
+  /* PR-E ============================================= */
+}
+
+
+@media (max-width: 575px) {
+
+  /* HAEMORO-S ======================================== */
+  .haemoro-box {padding: 70px 15px 0;}
+  .haemoro .sec-desc span {display: inline;}
+  /* HAEMORO-E ======================================== */
+
+  /* SUSTAIN-S ======================================== */
+  .sustain::before {
+    top: 50%; right: 50%;
+    width: 475px; max-width: 100%; height: 1050px;
+    transform: translate(50%, -50%);
+  }
+  .sustain .sec-desc span {display: block;}
+  .sustain-wrap {
+    justify-content: space-between; 
+    column-gap: 10px; row-gap: 10px;
+  }
+  .sustain-wrap li {flex: calc(50% - 10px);}
+  .sustain-item {height: 200px; padding: 0 4px;}
+  .sustain-item::before {margin: 30px auto 15px;}
+  .sustain-tit {font-size: 18px; font-weight: 500;}
+  .sustain-eng {font-size: 14px;}
+  /* SUSTAIN-E ======================================== */
+
+  /* RECRUIT-S ======================================== */
+  .recruit .sec-desc b {display: none;}
+  /* RECRUIT-E ======================================== */
+  
+  /* PR-S ============================================= */
+  .pr .inner {padding: 0;}
+  .pr-swiper {max-width: 360px;}
+  .pr-txt {padding: 30px 20px 0; height: 167px;}
+  .pr-cate {font-weight: 500; font-size: 15px;}
+  .pr-tit {padding: 0 20px; font-size: 18px; font-weight: 500;}
+  .pr-date {font-size: 14px; font-weight: 500;}
+  /* PR-E ============================================= */
+}
+
+
+@media (max-width: 479px) {
+  .visual-tit span {display: inline;}
+  .visual-desc span {display: inline;}
+}

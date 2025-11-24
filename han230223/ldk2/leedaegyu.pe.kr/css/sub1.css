@@ -1,0 +1,391 @@
+@charset "UTF-8";
+
+/* ========== SUB1-COMMON-S ========== */
+.visual {background-image: url(../img/sub-visual1.jpg)}
+/* ========== SUB1-COMMON-E ========== */
+
+
+/* ========== SUB1-ORIGIN-S ========== */
+.origin .inner,
+.story .inner {position: relative;}
+.origin-item,
+.story-item {
+  overflow: hidden;
+  width: 100%; min-width: 1280px;
+}
+.origin-tit,
+.story-tit {
+  position: relative;
+  margin-bottom: 45px;
+  font-size: 30px; font-weight: 600; line-height: 50px;
+}
+.origin-tit::after,
+.story-tit::after {
+  content: ""; display: block;
+  width: 50px; height: 6px; margin-top: 2px;
+  border-radius: 0 0 5px 0;
+  background-color: #d9212d;
+}
+.origin-year {font-size: 30px; font-weight: 600; color: #777;}
+.origin-txt {margin-bottom: 20px; position: relative;}
+.begin {height: 650px; padding-top: 50px; margin-bottom: 60px;}
+.begin .inner::before {
+  content: "";
+  position: absolute; left: 0; top: -50px;
+  width: 675px; height: 150px;
+  background-image: url(../img/sub1-1-begin-bg.svg);
+}
+.begin .inner::after {
+  content: "";
+  position: absolute; top: 480px; left: 237px;
+  width: 700px; height: 120px;
+  background-image: url(../img/sub1-1-begin-line.svg);
+}
+.begin-img {
+  position: absolute; top: 0; right: -320px;
+  width: 960px; height: 400px;
+}
+.begin-img figcaption {
+  position: absolute; bottom: -16px; left: 20px;
+  font: 700 32px Gantari, Poppins, "Pretendard Variable", Pretendard, "돋움", Dotum, sans-serif;
+  color: #fff;
+}
+.begin-img img {
+  border-radius: 80px 80px 80px 0;
+}
+.begin-img::after {
+  content: ""; display: block;
+  width: 100%; height: 400px;
+  margin: -380px 0 0 -20px;
+  border-radius: 60px 60px 60px 0;
+  background-image: url(../img/sub1-1-begin-bg.jpg);
+}
+.develope {height: 650px; margin-bottom: 135px;}
+.develope .inner {padding: 50px 0 0 550px;}
+.develope .inner::before {
+  content: "";
+  position: absolute; top: 0; left: 500px;
+  width: 1085px; height: 150px;
+  background: url(../img/sub1-1-develope-bg.svg) no-repeat;
+}
+.develope .inner::after {
+  content: "";
+  position: absolute; top: 480px; left: 237px;
+  width: 415px; height: 170px;
+  background-image: url(../img/sub1-1-develope-line.svg);
+}
+.develope-img {
+  position: absolute; top: 0; left: 0;
+  width: 500px; height: 400px;
+}
+.develope-img figcaption {
+  position: absolute; bottom: -16px; left: 50%;
+  font: 700 32px Gantari, Poppins, "Pretendard Variable", Pretendard, "돋움", Dotum, sans-serif;
+  text-align: center; color: #fff;
+  transform: translateX(-50%);
+}
+.develope-img img {
+  border-radius: 0 0 80px 80px;
+}
+.develope-img::after {
+  content: ""; display: block;
+  width: 100%; height: 400px;
+  margin-top: -380px;
+  border-radius: 0 0 60px 60px;
+  background-color: #777;
+}
+.innovate {
+  overflow: visible;
+  position: relative;
+  height: 600px; padding-top: 50px; margin-bottom: 230px;
+  background: url(../img/sub1-1-innovate.jpg) no-repeat fixed center center;
+  text-align: center; color: #fff;
+}
+.innovate .inner::before {
+  content: "INNOVATE";
+  margin-top: -165px; display: block;
+  font: 800 224px/1 Gantari, Poppins, "Pretendard Variable", Pretendard, "돋움", Dotum, sans-serif;
+  color: #d9212d;
+  mix-blend-mode: overlay;
+}
+.innovate .inner::after {
+  content: ""; display: block;
+  width: 25px; height: 240px; margin: 70px auto 0;
+  background-color: #f5f2f3;
+  mix-blend-mode: overlay;
+}
+.innovate .origin-tit::after {margin: 2px auto 0; border-radius: 0 0 5px 5px;}
+.innovate .origin-year {color: #ddd;}
+.global {height: 550px; padding-top: 200px;}
+.global .inner::before {
+  content: "";
+  position: absolute; top: -200px; left: -320px;
+  width: 1550px; height: 500px;
+  background-image: url(../img/sub1-1-global-bg.png);
+}
+.global .origin-tit {color: #d9212d;}
+.global .origin-txt {color: #333;}
+.global .origin-txt p {margin-bottom: 25px;}
+.global-img {
+  position: absolute; top: 0; right: 0;
+  width: 640px; height: 350px;
+}
+.global-img img {border-radius: 0 0 0 70px;}
+/* ========== SUB1-1-ORIGIN-E ========== */
+
+
+/* ========== SUB1-2-STORY-S ========== */
+.story .inner {position: relative;}
+.story-item {margin-bottom: 100px;}
+.story-tit {margin-bottom: 55px;}
+.story-desc {
+  position: relative;
+  font-size: 19px; font-weight: 500; color: #d9212d;
+}
+.story-txt {position: relative;}
+.story-txt p + p {margin-top: 25px;}
+.climate {height: 600px;}
+.climate .inner {padding: 100px 0 0 550px;}
+.climate .inner::before {
+  content: ""; display: block;
+  position: absolute; top: 50px; right: -320px;
+  width: 1550px; height: 550px;
+  background-image: url(../img/sub1-2-climate-bg.jpg);
+  filter: brightness(35%);
+}
+.climate-img {position: absolute; top: 0; left: -320px;}
+.climate-img img {border-radius: 0 110px 0 0;} 
+.climate .story-tit,
+.climate .story-txt {color: #fff;}
+.blend, .roast, .golden {height: 400px;}
+.blend .story-tit,
+.roast .story-tit,
+.golden .story-tit {margin-bottom: 110px;}
+.blend-img img,
+.roast-img img,
+.golden-img img {border-radius: 0 0 75px 75px;}
+.blend-img,
+.golden-img {position: absolute; top: 0; right: 0;}
+.blend .inner::before,
+.roast .inner::before,
+.golden .inner::before {
+  content: "";
+  position: absolute; top: 150px;
+  width: 1650px; height: 250px;
+}
+.blend .inner::before,
+.golden .inner::before {
+  left: -50px;
+  border: 10px solid #f5f2f3;
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+}
+.roast .inner {padding-left: 550px;}
+.roast-img {position: absolute; top: 0; left: 0;}
+.roast .inner::before {
+  left: -320px;
+  border-radius: 0 50px 50px 0;
+  background-image: url(../img/sub1-2-roast-bg.jpg);
+}
+.roast .story-txt p {color: #444;}
+.golden {margin-bottom: 150px;}
+
+.research {overflow: visible; background-color: #f5f2f3; margin-bottom: -200px;}
+.research .inner {padding: 50px 0 200px 550px;}
+.research .story-tit,
+.research .story-txt {color: #444;}
+.research-img {margin: -473px 0 0 -870px;}
+.research-img img {border-radius: 0 0 110px 0;}
+/* ========== SUB1-2-STORY-E ========== */
+
+
+/* ========== SUB1-3-ESPRESSO-BAR-S ========== */
+.dark-bg {
+  width: 100%; min-width: 1280px;
+  background-color: #333;
+}
+.bar {color: #ddd;}
+.bar-item {margin-bottom: 100px;}
+.bar .sub-header-eng {color: #f2a918;}
+.bar .sub-header-tit {color: #fff;}
+.bar .sub-header-desc {color: #ddd;}
+.bar-tit {
+  display: inline-block;
+  position: relative;
+  font: 400 40px/50px Gantari, Poppins, "Pretendard Variable", Pretendard, "돋움", Dotum, sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #f2a918;
+}
+.bar-tit::after {
+  content: ""; display: block;
+  height: 2px; background-color: #777;
+}
+.overview .bar-tit::after,
+.centro .bar-tit::after {margin: 20px 0 40px;}
+.choose .bar-tit::before,
+.store .bar-tit::before {
+  content: "";
+  position: absolute; top: 24px; left: calc(100% + 20px);
+  width: calc(620px - 50%); height: 2px;
+  background-color: #777;
+}
+.choose .bar-tit::after,
+.store .bar-tit::after {
+  width: calc(620px - 50%);
+  position: absolute; ; top: 24px; right: calc(100% + 20px);
+}
+.bar-txt p + p {margin-top: 25px;}
+.bar-txt em {font-weight: 500; color: #f2a918;}
+
+.overview {height: 440px; padding-top: 50px;}
+.overview .inner {position: relative;}
+.overview .inner::before {
+  content: "";
+  position: absolute; top: -10px; right: 0;
+  width: 800px; height: 400px;
+  background-image: url(../img/sub1-3-bg-small.png);
+  mix-blend-mode: multiply;
+}
+.overview .bar-tit::after {width: 440px;}
+.overview-swiper {
+  position: absolute; top: -50px; right: 40px;
+  width: 800px; height: 400px;
+}
+.overview-item1 {background-image: url(../img/sub1-3-overview-1.jpg);}
+.overview-item2 {background-image: url(../img/sub1-3-overview-2.jpg);}
+.overview-item3 {background-image: url(../img/sub1-3-overview-3.jpg);}
+.overview-item4 {background-image: url(../img/sub1-3-overview-4.jpg);}
+.overview-item5 {background-image: url(../img/sub1-3-overview-5.jpg);}
+.overview-swiper-btn {
+  position: absolute; top: 175px; z-index: 1;
+  width: 38px; height: 50px;
+  padding: 10px;
+  background-color: rgba(34,34,34,0.8);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.overview-swiper-btn::before {
+  content: ""; display: block;
+  width: 18px; height: 30px;
+  background: url(../img/sub1-3-big-arrow.svg) center/cover;
+  transition: all 0.4s;
+}
+.overview-prev {left: 0; padding-left: 8px;}
+.overview-next {right: 0; padding-left: 12px;}
+.overview-next::before {transform: rotate(180deg);}
+.overview-swiper-btn:hover {background-color: #f2a918;}
+.overview-swiper-btn:hover::before {filter: brightness(0);}
+
+.choose, .store {text-align: center;}
+.choose {
+  height: 980px; padding-top: 50px;
+  background-color: #222;
+}
+.choose-wrap {margin-top: 50px;}
+.choose-item {
+  float: left; position: relative;
+  width: 220px; height: 360px; margin: 0 50px 30px;
+}
+.choose-box {
+  position: absolute; top: 120px; left: 0;
+  width: 220px; height: 240px;
+  padding: 110px 10px 0;
+  border: 1px solid #f2a918;
+}
+.choose-tit {font-size: 20px; font-weight: 500; color: #fff;}
+.choose-tit::after {
+  content: ""; display: block;
+  width: 110px; height: 1px; margin: 8px auto 12px;
+  background-color: #555;
+}
+.choose-desc {font-size: 16px;}
+.choose-img {
+  position: relative; z-index: 5;
+  width: 200px; margin: 0 auto;
+}
+.choose-eng {
+  margin-top: 10px;
+  font: 300 16px Gantari, Poppins, "Pretendard Variable", Pretendard, "돋움", Dotum, sans-serif;
+  color: #f2a918;
+}
+
+.centro {height: 390px;}
+.centro .inner {
+  position: relative;
+  padding: 50px 0 0 770px;
+}
+.centro .inner::before {
+  content: "";
+  position: absolute; top: 40px; left: 0;
+  width: 680px; height: 350px;
+  background: url(../img/sub1-3-bg-small.png) center;
+  mix-blend-mode: multiply;
+}
+.centro .bar-tit::after {
+  width: calc(100% + 50px); margin-left: -50px;
+}
+.centro-img {
+  position: absolute; top: 0; left: 40px;
+  width: 680px; height: 350px;
+}
+.centro-img img {width: 680px; height: 350px;}
+
+.store {
+  padding: 50px 0 200px 0;
+  background: url(../img/sub1-3-bg.jpg) center;
+  margin-bottom: -200px;
+}
+.store .inner {position: relative;}
+.store-swiper {width: 1140px; height: 285px; margin-top: 70px;}
+.store-item {position: relative;}
+.store-tit {
+  position: absolute; top: 220px; left: 0; z-index: 5;
+  height: 40px; padding: 0 30px;
+  background-color: #222; box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  font-size: 19px; font-weight: 500; line-height: 40px;
+  color: #f2a918;
+  transition: all 0.4s;
+}
+.store-tit::after {
+  content: "";
+  position: absolute; top: 0; right: 0;
+  width: 13px; height: 13px;
+  background-image: url(../img/sub1-3-small-arrow.svg);
+  transform: translate(-22px, 17px);
+  opacity: 0;
+  transition: all 0.4s;
+}
+.store-img {
+  width: 360px; height: 240px;
+  filter: brightness(60%) grayscale(30%);
+  transition: all 0.4s;
+}
+.store-swiper-btn {
+  position: absolute; top: 220px;
+  width: 24px; height: 40px;
+  cursor: pointer;
+}
+.store-swiper-btn::before {
+  content: ""; display: block;
+  width: 24px; height: 40px;
+  background-image: url(../img/sub1-3-big-arrow.svg);
+  filter: brightness(100%) saturate(0);
+  transition: all 0.4s;
+}
+.store-prev {left: 20px;}
+.store-next {right: 20px; transform: rotate(180deg);}
+.store-item a:hover .store-tit {
+  padding: 0 42px 0 18px;
+  background-color: #f2a918;
+  color: #222;
+  transform: translateY(20px);
+}
+.store-item a:hover .store-tit::after {
+  transform: translate(-18px, 13px); opacity: 1;
+}
+.store-item a:hover .store-img {filter: brightness(100%) grayscale(0);}
+.store-swiper-btn:hover::before {
+  filter: brightness(100%) saturate(100%);
+  transform: translateX(-5px) scale(1.1);
+}

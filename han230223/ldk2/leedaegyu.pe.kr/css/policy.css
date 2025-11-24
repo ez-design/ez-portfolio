@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+/* ========== POLICY-COMMON-S ========== */
+.visual {background-image: url(../img/sub-visual-policy.jpg);}
+
+table {border-collapse: collapse;}
+.policy-con {margin-bottom: 60px;}
+.policy-con h3 {
+  margin: 30px 0 15px;
+  font-size: 24px; font-weight: 600; color: #444;
+}
+.policy table {width: 100%; margin-bottom: 25px;}
+.desc {margin-bottom: 25px;}
+.policy caption {
+  display: inline-block; overflow: hidden;
+  clip: rect(1px,1px,1px,1px); clip-path: inset(50%);
+  position: absolute;
+  width: 1px; height: 1px; border: 0;
+  text-indent: -9999px;
+}
+.policy col:first-child {border-right: 1px solid #ccc;}
+.policy thead {border-top: 2px solid #aaa; background-color: #eee;}
+
+.policy th {color: #444;}
+.policy th, .policy td {
+  padding: 15px 20px 15px;
+  border-top: 1px solid #ccc;
+}
+.policy tbody tr:last-child {border-bottom: 2px solid #aaa;}
+/* ========== POLICY-COMMON-E ========== */
+
+/* ========== PRIVACY-S ========== */
+#privacy2 col:nth-child(2) {border-right: 1px solid #ccc;}
+#privacy2 td:nth-child(3) {text-align: center;}
+.txtD1 > li {margin-bottom: 10px;}
+#privacy7 td {text-align: center;}
+#privacy10 h4 {font-size: 19px; font-weight: 500;}
+#privacy11 td {text-align: center;}
+/* ========== PRIVACY-E ========== */
+
+
+/* ========== MEDIA-S ========== */
+#media2 td,
+#media3 td,
+#media4 td {text-align: center;}
+#media4 col:nth-child(2),
+#media4 col:nth-child(3) {border-right: 1px solid #ccc;}
+/* ========== MEDIA-E ========== */
+
+
+/* ========== SAFETY-S ========== */
+.safety-img img {width: 1280px;}
+/* ========== SAFETY-E ========== */

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&amp;family=Nanum+Myeongjo:wght@800&amp;family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Noto+Serif+KR:wght@400;500;600;700;900&amp;display=swap');
+
+/* 나눔명조:800/NotoSans:light300 regular400 medium500 bold700 black900/NotoSerif:bold700 black900 */
+
+
+/*------ common-s ------*/
+a {text-decoration: none; color: inherit}
+img {display: block;}
+body {font: 18px/30px 'Noto Sans KR', "돋움", Dotum, AppleGothic, sans-serif; letter-spacing: -0.5px}
+.hidden {
+  display: inline-block;
+  overflow: hidden;
+  width: 1px; height: 1px;
+  border: 0;
+  text-indent: -9999px;
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+  clip-path: inset(50%);
+}
+.skip-nav a {
+  z-index: 9999;
+  width: 100%; height: 40px;
+  background-color: #fff;
+  text-align: center; line-height: 40px; color:#333;
+  position: absolute; left: 0; top: -100px;}
+.skip-nav a:focus {top: 0;}
+.inner {width: 1280px; margin: 0 auto;}
+/*------ common-e ------*/
+
+/*------ header-s ------*/
+.header {
+  width: 100%; height: 100px; min-width: 1280px; max-width: 1920px;
+  color: #fff;
+  position: absolute; top: 0; left: 0; z-index: 10;
+  transition: all .5s;
+}
+.h-logo {
+  float: left;
+  width: 190px; height: 38px; margin: 31px 65px 0 0px;
+  background: url(../img/icons.png) -423px -13px;
+  transition: all .5s;
+}
+.h-logo a {display: block; height: 38px; text-indent: -9999px;}
+.gnb {float: left;}
+.depth1 {float: left; height: 100px; position: relative;}
+.depth1 + .depth1:before {
+  content: "";
+  width: 1px; height: 18px;
+  background-color: #fff;
+  position: absolute; top: 43px; left: 0;
+  transition: all .5s;
+}
+.depth1 > a {
+  display: block;
+  padding: 0 31px;
+  line-height: 100px;
+  position: relative;
+  transition: all .5s;
+}
+.depth1 > a:before {
+  content: "";
+  width: 0; height: 6px;
+  background-color: #b36c09;
+  position: absolute; bottom: 0; left: 50%;
+  transition: all .5s;
+}
+.depth2 {
+  padding-top: 30px; 
+  position: relative; z-index: 10;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: all .5s;
+}
+.depth2 li a {
+  display: block; 
+  text-align: center; line-height: 38px; color: #777;
+}
+.depth2 li a span {display: inline-block; font-size: 16px; position: relative;}
+.depth2 li a span:before {
+  content: "";
+  width: 6px; height: 10px;
+  background: url(../img/icons.png) -485px 0;
+  position: absolute; top: 10px; left: -18px;
+  opacity: 0;
+  transition: all .5s;
+}
+.depth2 li a span:after {
+  content: "";
+  width: 6px; height: 10px;
+  background: url(../img/icons.png) -481px 0;
+  position: absolute; bottom: 8px; right: -18px;
+  opacity: 0;
+  transition: all .5s;
+}
+.gnb-bg {
+  width: 100%; min-width: 1280px; max-width: 1920px; height: 0;
+  background-color: #fff;
+  position: absolute; top: 100px; left: 0;
+  transition: all .5s;
+}
+.tnb {float: right; margin: 30px 10px 0 0;}
+.tnb a {
+  float: left;
+  width: 40px; height: 40px; margin-left: 10px;
+  border-radius: 20px;
+  background: url(../img/icons.png) -400px -100px #fff;
+  text-indent: -9999px;
+  transition: all .5s;
+}
+.tnb a:nth-child(2) {background-position: -400px -140px;}
+.tnb a:nth-child(3) {background-position: -400px -180px;}
+.gnb:hover .depth1 + .depth1:before {background-color: #333;}
+.gnb:hover .depth1 > a {color: #333;}
+.gnb:hover .depth2 {transform: scaleY(1) ; opacity: 1;}
+.gnb:hover .gnb-bg {height: 279px; border-top: 1px solid #999;}
+.gnb:hover + .tnb a {background-color: #ddd;}
+.depth1:hover > a:before {width: 100%; left: 0;}
+.depth2 li:hover a {color: #b36c09}
+.depth2 li:hover a span:before {left: -10px; opacity: 1;}
+.depth2 li:hover a span:after {right: -10px; opacity: 1;}
+.tnb a:nth-child(1):hover {background-position: -440px -100px; background-color: #0090df;}
+.tnb a:nth-child(2):hover {background-position: -440px -140px; background-color: #ff3399;}
+.tnb a:nth-child(3):hover {background-position: -440px -180px; background-color: #e7161b;}
+/*------ header-e ------*/
+
+
+/*------ footer-s ------*/
+.footer {
+  width: 100%; min-width: 1280px; max-width: 1920px;
+  height: 260px; padding-top: 40px;
+  background-color: #333;
+  text-align: center;
+}
+.f-logo {
+  width: 190px; height: 38px;
+  margin: 0 auto 15px;
+  background: url(../img/icons.png) -423px -13px;
+  opacity: .5;
+}
+.f-menu li {
+  display: inline-block;
+  color: #999; 
+  position: relative;
+}
+.f-menu li:nth-child(2) {color: #b26c09;}
+.f-menu li + li {margin-left: 40px;}
+.f-menu li + li:before {
+  content: "";
+  width: 1px; height: 14px;
+  background-color: #999;
+  position: absolute; top: 19px; left: -20px;
+}
+.f-menu li a {
+  display: block;
+  height: 50px;
+  font-size: 14px; line-height: 50px;
+}
+.f-addr {margin-top: 5px; font-size: 13px; line-height: 25px; color: #777;}
+.f-copy {font-size: 12px; line-height: 23px; color: #555;}
+/*------ footer-e ------*/

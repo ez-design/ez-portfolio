@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+
+/* ------ visual-s ------ */
+.main {width: 100%; min-width: 1280px; max-width: 1920px;}
+.visual {
+  width: 100%; min-width: 1280px; max-width: 1920px; 
+  height: 190px; padding-top: 160px;
+}
+.visual:before {
+  content:"";
+  width: 100%; min-width: 1280px; max-width: 1920px; height: 350px;
+  position: absolute; top: 0; left: 0;
+  backdrop-filter: brightness(60%);
+}
+.visual.info {background: url(../img/sub-visual3.jpg) center;}
+.visual-txt {
+  color: #fff; text-align: center; text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  position: relative;
+}
+.visual-txt:before {
+  content: ""; display: block;
+  width: 20px; height: 1px; margin: 0 auto;
+  background-color: #fff;
+}
+.visual-tit {
+  width: 100%;
+  font: 800 36px 'Noto Serif KR', 'Nanum Myeongjo', "명조", serif;
+  position: absolute; top: 40px; left: 0;
+}
+.visual-sub {font: 600 14px/31px 'Lexend', "돋움", Dotum, AppleGothic, sans-serif;}
+/* ------ visual-e ------ */
+
+
+/* ------ lnb-s ------ */
+.lnb {
+  width: 100%; min-width: 1280px; max-width: 1920px;
+  height: 60px; margin-bottom: 110px;
+  border-bottom: 1px solid #999;
+  text-align: center;
+}
+.lnb li {display: inline-block;}
+.lnb li a {
+  display: block;
+  margin: 0 30px;
+  font-size: 16px; line-height: 60px; color: #555;
+  position: relative;
+  transition: all .5s;
+}
+.lnb .visited a {font-weight: 500; color: #b36c09;}
+.lnb .visited a:after {
+  content: "";
+  width: 100%; height: 6px; 
+  background-color: #b36c09;
+  position: absolute; bottom: 0; left: 0;
+}
+.lnb li:not(.visited) a:before {
+  content: "";
+  width: 6px; height: 10px;
+  background: url(../img/icons.png) -485px 0;
+  position: absolute; top: 21px; left: -18px;
+  opacity: 0;
+  transition: all .5s;
+}
+.lnb li:not(.visited) a:after {
+  content: "";
+  width: 6px; height: 10px;
+  background: url(../img/icons.png) -481px 0;
+  position: absolute; bottom: 19px; right: -18px;
+  opacity: 0;
+  transition: all .5s;
+}
+.lnb li a:hover {color: #b36c09}
+.lnb li a:hover:before {opacity: 1;  left: -10px;}
+.lnb li a:hover:after {opacity: 1;  right: -10px;}
+/* ------ lnb-e ------ */
+
+
+/* ------ content-s ------*/
+.content {margin-bottom: 200px;}
+.sub-header {margin-bottom: 85px; text-align: center;}
+.sub-header-tit {
+  margin-bottom: 20px;
+  font: 800 48px 'Nanum Myeongjo', 'Noto Serif KR', "명조", serif;
+  color: #333;
+}
+.sub-header-desc {
+  font: 500 22px 'Noto Serif KR', 'Nanum Myeongjo', "명조", serif;
+  color: #999;
+}
+.sec {margin-bottom: 100px;}
+.sec-tit {
+  height: 80px;
+  font: 800 42px 'Nanum Myeongjo', 'Noto Serif KR', "명조", serif;
+  color: #333;
+}
+.content-txt {
+  padding-top: 25px; margin-top: 80px; margin-bottom: 70px;
+  color: #555;
+  position: relative;
+}
+.content-txt p + p {margin-top: 30px;}
+.content-txt:before {
+  content: "";
+  width: 20px; height: 1px; 
+  background-color: #555;
+  position: absolute; top: 0; left: 0;
+}
+/* ------ content-e ------*/

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+
+/* VISUAL-S ========================================= */
+.visual {
+  position: relative;
+  width: 100%; height: 450px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.visual::before {
+  content: "";
+  position: absolute; left: 0; top: 0;
+  width: 100%; height: 450px;
+  background-color: rgba(0,0,0,0.5);
+}
+.visual-txt {
+  position: relative; top: 200px; left: 0;
+}
+.visual-eng {
+  font: 600 18px poppins, "Pretendard Variable", Pretendard, -apple-system, Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; color: #1bb769;
+}
+.visual-tit {
+  font-size: 45px; font-weight: 600; line-height: 55px; color: #fff; 
+}
+/* VISUAL-E ========================================= */
+
+/* LNB-S ============================================ */
+.lnb  {
+  position: absolute; bottom: 0; left: 0;
+  width: 100%; height: 70px;
+  background-color: rgba(34,34,34,0.8);
+}
+.lnb-wrap {display: flex;}
+.lnb-wrap a {
+  display: block; padding: 0 20px;
+  height: 70px; font-weight: 300; line-height: 70px; color: #eee;
+}
+.lnb-wrap li:first-child a {padding-left: 0;}
+.lnb-wrap span {position: relative;}
+.lnb-wrap .on span {font-weight: 600; color: #1bb769;}
+.lnb-wrap span::after {
+  content: "";
+  position: absolute; bottom: -5px; left: 0;
+  height: 3px; width: 100%;
+  border-radius: 2px;
+  background-color: #eee;
+  opacity: 0;
+  transform: scaleX(0); transform-origin: right;
+  transition: transform 0.4s ease-in-out, opacity 0.4s;
+}
+.lnb-wrap .on span::after {opacity: 1; transform: scaleX(1); background-color: #1bb769;}
+/* hover ============================================ */
+.lnb-wrap a:hover span::after {opacity: 1; transform: scaleX(1); transform-origin: left;}
+/* LNB-E ============================================ */
+
+/* SUB-S ============================================ */
+.sub-wrap {margin-bottom: 170px;}
+.sub-header {margin: 100px 0 80px; text-align: center;}
+.sub-eng {
+  font: 600 17px/1 poppins, "Pretendard Variable", Pretendard, -apple-system, Roboto, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; color: #aaa;
+}
+.sub-tit {font-size: 40px; font-weight: 600; line-height: 45px; color: #264037;}
+/* SUB-E ============================================ */
+
+
+
+@media (max-width: 1279px) {
+
+  .visual {height: 400px;}
+  .visual::before {height: 400px;}
+  .visual-txt {top: 175px; left: 0;}
+  .visual-eng {font-size: 17px;}
+  .visual-tit {font-size: 43px; line-height: 52px;}
+
+  .lnb  {height: 65px;}
+  .lnb-wrap a {
+    height: 65px;
+    font-size: 16px; font-weight: 300; line-height: 65px;
+  }
+  
+  .sub-wrap {margin-bottom: 160px;}
+  .sub-header {margin: 90px 0 70px;}
+  .sub-eng {font-size: 16px;}
+  .sub-tit {font-size: 38px; line-height: 42px;}
+}
+
+
+@media (max-width: 767px) {
+  .visual {height: 300px;}
+  .visual::before {height: 300px;}
+  .visual-txt {top: 110px; left: 0; text-align: center;}
+  .visual-eng {font-size: 15px;}
+  .visual-tit {font-size: 35px; line-height: 52px;}
+
+  .lnb  {height: 55px;}
+  .lnb-wrap a {
+    height: 55px; padding: 0 15px;
+    font-size: 15px; font-weight: 300; line-height: 55px;
+  }
+
+  .sub-wrap {margin-bottom: 150px;}
+  .sub-header {margin: 80px 0 60px;}
+  .sub-eng {font-size: 15px;}
+  .sub-tit {font-size: 38px; line-height: 40px;}
+}
+
+@media (max-width: 575px) {
+
+  .visual {height: 250px;}
+  .visual::before {height: 250px;}
+  .visual-txt {top: 90px;}
+  .visual-eng {font-size: 14px;}
+  .visual-tit {font-size: 32px; line-height: 40px;}
+
+  .lnb-wrap {justify-content: space-between;}
+  .lnb-wrap {flex-grow: 1;}
+  .lnb-wrap a {width: 100%; padding: 0;}
+}
+

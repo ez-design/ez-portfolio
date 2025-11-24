@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.content {word-break: keep-all;}
+.content-txt:before {background-color:#b36c09;}
+.tale-tit {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px; font-weight: 500; line-height: 20px; color: #b36c09;
+}
+.tale-illust {position: relative;}
+.tale-illust-tit {font-size: 20px; line-height: 50px; color: #333;}
+.tale-illust-tit:before {
+  content: "";
+  background-color: #333;
+  height: 1px;
+  position: absolute;
+}
+.tale-img {position: relative;}
+.tale-img:before {
+  content: "";
+  background-color: #f3f3f3;
+  position: absolute; top: 30px; left: 30px; z-index: -1;
+}
+.town-illust , .book-illust {height: 430px;}
+.town-illust .tale-illust-txt {position: absolute; top: 100px; left: 720px;}
+.town-illust .tale-illust-tit:before {width: 162px; top: 49px; left: -80px;}
+.tale-illust-desc {margin-top: 20px; font-size: 16px; color: #999;}
+.town-illust .tale-img:before {width: 640px; height: 400px;}
+.group-illust .tale-illust-tit {position: absolute; top: -390px; right: 405px;}
+.group-illust .tale-illust-tit:before {width: 108px; top: 49px; right: -45px;}
+.group-illust .tale-img {position: absolute; top: -440px; right: 30px;}
+.group-illust .tale-img:before {width: 330px; height: 330px;}
+.tale-letter {
+  padding: 60px 0;
+  border-top: 1px solid #bbb; border-bottom: 1px solid #bbb;
+  background-color: #fafafa;
+  text-align: center; color: #555;
+}
+.tale-letter p {
+  margin-bottom: 35px;
+  font: 20px/35px 'Noto Serif KR', 'Nanum Myeongjo', "명조", serif;
+}
+.tale-letter span {font-size: 20px; font-weight: 500; color: #333;}
+.book-illust .tale-illust-txt {position: absolute; top: 100px; left: 580px;}
+.book-illust .tale-illust-tit:before {width: 144px; top: 49px; left: -80px;}
+.book-illust .tale-img:before {width: 500px; height: 400px;}
+
+/* history-s */
+.history {position: relative;}
+.sec-tit {border-bottom: 2px solid #777;}
+.history-btn {
+  text-align: center;
+  position: absolute; top: 113px; left: 10px;
+  cursor: pointer;
+}
+.history-wrap li:nth-child(2) .history-btn {top: 173px;}
+.history-wrap li:nth-child(3) .history-btn {top: 233px;}
+.history-wrap li:nth-child(4) .history-btn {top: 293px;}
+.history-btn span {
+  display: inline-block;
+  font: 500 36px/60px 'Lexend', "돋움", Dotum, AppleGothic, sans-serif;
+  color: #bbb; 
+  position: relative;
+  transition: all .5s;
+}
+.history-wrap .active span {color: #b36c09;}
+.history-wrap .active span:before {
+  content: "";
+  width: 12px; height: 26px;
+  background: url(../img/sub1-1-effect2.png) -8px 0;
+  position: absolute; top: 11px; left: -14px;
+}
+.history-wrap .active span:after {
+  content: "";
+  width: 12px; height: 26px;
+  background: url(../img/sub1-1-effect2.png) 0 0;
+  position: absolute; right: -14px; bottom: 10px;
+}
+.history-wrap li:not(.active) span:before {
+  content: "";
+  width: 12px; height: 26px;
+  background: url(../img/sub1-1-effect.png) -8px 0;
+  position: absolute; top: 11px; left: -18px;
+  opacity: 0;
+  transition: all .5s;
+}
+.history-wrap li:not(.active) span:after {
+  content: "";
+  width: 12px; height: 26px;
+  background: url(../img/sub1-1-effect.png) 0 0;
+  position: absolute; right: -18px; bottom: 10px; 
+  opacity: 0;
+  transition: all .5s;
+}
+.history-txt {display: none; padding: 30px 0 0 270px; color: #555;}
+.active .history-txt {display: block;}
+.history-txt dt {
+  font: 500 48px/70px 'Lexend', "돋움", Dotum, AppleGothic, sans-serif;
+  color: #b36c09;
+}
+.history-txt dd {
+  padding-bottom: 50px; border-bottom: 1px solid #bbb;
+  margin-bottom: 45px;
+}
+.history-txt dd p + p {margin-top: 30px;}
+.history-wrap .history-btn:hover span:before {opacity: 1; left: -14px;}
+.history-wrap .history-btn:hover span:after {opacity: 1; right: -14px;}
+/* history-e */
