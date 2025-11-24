@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+
+.hover-box{font-family: 'Montserrat', sans-serif;}
+.hover-ocean{overflow: hidden;
+    width: 650px; height: 350px;
+    text-align: center;
+    background-color: #000;
+    position: relative;
+}
+.hover-ocean h3{
+    width: 100%;
+    font-weight: 900; font-size: 50px; color: #fff;
+    position: absolute; left: 0; top: 150px; z-index: 10;
+    transition: all 0.3s;
+}
+.hover-ocean h3 span{color: #02f6ff;}
+
+.hover-ocean p{opacity: 0;
+    width: 100%; padding: 0 40px;
+    font-weight: 500; font-size: 18px; color: #fff;
+    position: absolute; left: 0px; top: 250px; z-index: 10;
+    transition: all 0.3s;
+}
+.hover-ocean div{
+    width: 600px; height: 40px;
+    background-color: #fff;
+    position: absolute; left: 25px; bottom: -100px; z-index: 10;
+    transition: all 0.3s;
+}
+.hover-ocean ul{overflow: hidden;
+    width: 100%;
+    position: relative; top: 9px;
+}
+.hover-ocean ul li{float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    transform: translate(0 , 30px);
+    transition: all 0.3s;
+}
+.hover-ocean ul li:nth-child(1){transition-delay: 0.2s;}
+.hover-ocean ul li:nth-child(2){transition-delay: 0.3s;}
+.hover-ocean ul li:nth-child(3){transition-delay: 0.4s;}
+
+
+.hover-ocean ul li a span{color: #333;}
+
+.hover-ocean figure img{transition: all 0.5s;}
+
+
+/* hover01 - hover - S */
+.hover-ocean:hover h3{top: 130px;}
+.hover-ocean:hover p{opacity: 1;
+    top: 200px;}
+.hover-ocean:hover div{bottom: 10px;}
+.hover-ocean:hover ul li{transform: translate(0 , 0);}
+
+.hover-ocean:hover figure img{opacity: 0.6;
+    transform: scale(1.1);}
+/* hover01 - hover - E */
+
+
+
+.hover-universe{
+    width: 650px; height: 350px;
+    background-color: #000;
+    position: relative;
+}
+.hover-universe h3{
+    width: 100%; 
+    font-weight: 900; font-size: 50px; color: #fff;  text-align: center;
+    position: absolute; left: 0px; top: 130px; z-index: 10;
+    transition: all 0.3s;
+}
+.hover-universe h3 span{color: #ff006a;}
+
+.hover-universe p{opacity: 0;
+    width: 100%; padding: 0 50px;
+    font-weight: 500; font-size: 18px; color: #fff; text-align: left;
+    position: absolute; left: 50px; top: 230px; z-index: 10;
+    transition: all 0.3s;
+}
+
+.hover-universe ul{
+    width: 590px; height: 290px;
+    position: absolute; left: 30px; top: 30px; z-index: 10;
+}
+.hover-universe ul li{
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.3s;
+}
+.hover-universe ul li:nth-child(1){
+    width: 0; height: 2px;
+    left: 0; top: 0;
+}
+.hover-universe ul li:nth-child(2){
+    width: 2px; height: 0;
+    right: 0; top: 0;
+}
+.hover-universe ul li:nth-child(3){
+    width: 0; height: 2px;
+    left: 590px; top: 288px;
+    transform: rotate(180deg);
+    transform-origin: left bottom;
+}
+.hover-universe ul li:nth-child(4){
+    width: 2px; height: 0;
+    left: 0; top: 290px;
+    transform: rotate(180deg);
+    transform-origin: left top;
+}
+
+.hover-universe figure{
+    width: 650px; height: 350px;
+    position: absolute; left: 0; top: 0;
+}
+.hover-universe figure:nth-of-type(2){overflow: hidden;
+    transition: all 0.3s;
+}
+
+
+.hover-universe:hover h3{left: -60px;}
+.hover-universe:hover p{opacity: 1;
+    left: 15px;
+}
+.hover-universe:hover ul li:nth-child(1){width: 590px; transition: all 0.2s 0s;}
+.hover-universe:hover ul li:nth-child(2){height: 290px; transition: all 0.2s 0.2s;}
+.hover-universe:hover ul li:nth-child(3){width: 590px; transition: all 0.2s 0.4s;}
+.hover-universe:hover ul li:nth-child(4){height: 290px; transition: all 0.2s 0.6s;}
+
+.hover-universe:hover figure:nth-of-type(2){width: 325px;}

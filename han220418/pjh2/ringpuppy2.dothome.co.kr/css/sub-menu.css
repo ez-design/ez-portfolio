@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+.visual{background: url(../img/menu-visual.png) no-repeat center top;}
+.lnb .lnb-wrap li{width: calc(100% / 5);}
+
+
+/* USE - S */
+.tit{margin-top: 100px; z-index: -1;}
+.use{
+    width: 1020px; margin: 0 auto 120px auto; padding: 40px;
+    border: 1px solid #ffd8c1; border-radius: 15px;
+}
+.use-box{margin-bottom: 30px;}
+.use-box-tit{
+    margin-bottom: 5px;
+    font-weight: 500; font-size: 18px; color: #222;
+}
+.use-box-desc{line-height: 25px; color: #666;}
+.use-box-desc span{ display: block;
+    margin: 10px 0 30px 20px;
+}
+/* USE - E */
+
+
+/* SAFETY - S */
+
+.safety img{display: block;
+    margin: 0 auto; padding: 70px 0 120px 0; 
+}
+/* SAFETY - E */
+
+/* PERSONAL - S */
+.personal{
+    width: 1020px; margin: 0 auto 120px auto; padding: 40px;
+    border: 1px solid #ffd8c1; border-radius: 15px;
+}
+.personal article{padding: 20px 0 20px; border-top: 1px solid #ccc;}
+.personal h3{padding-bottom: 20px; font-weight: 500; font-size: 20px; line-height: 30px; color: #444;}
+.personal h4{padding-bottom: 10px; font-size: 16px; line-height: 25px; color: #444;}
+.personal p{padding-bottom: 20px; font-size: 14px; line-height: 20px; color: #888;}
+.personal p span{color: #fc6619;}
+.personal em{display: block; margin-bottom: 20px; font-size: 14px; line-height: 20px; color: #fc6619;}
+.personal .personal-top{border-top: none;}
+.personal-contents table{width: 100%; border-collapse: collapse; margin-bottom: 10px;}
+.personal-contents th{padding: 10px 0; font-size: 16px; color: #444; background-color: #ffd8c1;}
+
+.personal-contents td{padding: 10px 0; border: 1px solid #ffd8c1; text-align: center; vertical-align: middle; font-weight: 400; font-size: 14px;}
+
+.personal article ul li{padding-left: 15px; font-weight: 300; font-size: 14px; line-height: 20px; color: #888; position: relative;}
+.personal article ul li::before{content: ""; display: block;
+    width: 8px; height: 1px;
+    background-color: #888;
+    position: absolute; left: 0; top: 10px;
+}
+/* PERSONAL - E */
+
+/* PRIVACY - S */
+.tit::before{width: 400px;}
+.tit::after{width: 400px;}
+.privacy{
+  width: 1020px; margin: 0 auto 120px auto; padding: 40px 40px 0 40px;
+  border: 1px solid #ffd8c1; border-radius: 15px;
+}
+.privacy article{padding: 20px 0 20px;}
+.privacy h3{padding-bottom: 20px; font-weight: 500; font-size: 20px; line-height: 30px; color: #444;}
+.privacy p{padding-bottom: 20px; font-size: 14px; line-height: 20px; color: #888;}
+.privacy p span{color: #fc6619;}
+.privacy em{display: block; padding: 20px 0 10px 0; font-weight: 500; font-size: 14px; line-height: 20px; color: #666;}
+.privacy strong{display: block; margin-bottom: 20px; font-size: 14px; line-height: 20px; color: #fc6619;}
+.privacy-contents table{width: 100%; border-collapse: collapse; margin-bottom: 10px;}
+.privacy-contents th{padding: 10px 0; font-size: 16px; color: #444; background-color: #ffd8c1;}
+.privacy-contents td{padding: 10px 0; border: 1px solid #ffd8c1; text-align: center; vertical-align: middle; font-weight: 400; font-size: 14px;}
+/* PRIVACY -  */

@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&amp;display=swap');
+/* font-family: 'Monoton', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;700;800;900&amp;display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+
+/* header - S */
+#header{
+    width: 900px; height: 900px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed; left: -500px; top: -400px; z-index: 100;
+}
+.logo{position: absolute; right: 150px; top: 550px;}
+.logo a{display: block;
+    width: 250px; height: 46px;
+    text-indent: -9999px;
+    background: url(../img/logo-1.png) no-repeat 0 0;
+    transform: rotate(-60deg);
+}
+.gnb{position: absolute; right: 20px; top:510px;}
+
+.gnb .depth1{
+    width: 150px;
+    position: relative;
+}
+.gnb .depth1 > a{display: block;
+    width: 100%; height: 50px;
+    border-radius: 50px;
+    background-color: #fffb01;
+    font-weight: 900; font-size: 18px; line-height: 50px; color: #cd1b19; text-align: center;
+    transition: all 0.3s;
+    position: relative; z-index: 1;
+}
+
+.gnb > ul > li:nth-child(2){width: 130px; right: 0px; top: 20px;}
+.gnb > ul > li:nth-child(3){width: 130px; right:40px; top: 40px;}
+.gnb > ul > li:nth-child(4){right: 110px; top: 60px;}
+
+
+.gnb .depth2{opacity: 0;
+    width: 300px; height: 400px;
+    position: absolute; right: -80px; top: 0px; 
+    transition: all 0.3s;
+}
+.gnb .depth2 li{
+    position: absolute;
+    transform: rotate(45deg);
+}
+.gnb .depth2 li a{display: block;
+    width: 100px; height: 100px;
+    border-radius: 100%;
+    font-weight: 700; font-size: 14px; line-height: 100px; color: #fff; text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+
+.gnb li:nth-child(1) .depth2 li:nth-child(1){right: -35px; top: 0px;}
+.gnb li:nth-child(1) .depth2 li:nth-child(2){right: 0px; top: 100px;}
+.gnb li:nth-child(1) .depth2 li:nth-child(3){right: 55px; top: 195px;}
+.gnb li:nth-child(1) .depth2 li:nth-child(4){right: 130px; top: 275px;}
+
+
+.gnb li:nth-child(1) .depth2 li:nth-child(3) a{
+    padding-top: 25px;
+    line-height: 30px;
+}
+
+.gnb li:nth-child(2) .depth2 li:nth-child(1){right: -35px; top: -10px;}
+.gnb li:nth-child(2) .depth2 li:nth-child(2){right: 10px; top: 85px;}
+.gnb li:nth-child(2) .depth2 li:nth-child(3){right: 75px; top: 170px;}
+.gnb li:nth-child(2) .depth2 li:nth-child(4){right: 160px; top: 240px;}
+
+
+.gnb li:nth-child(2) .depth2 li:nth-child(1) a{
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.gnb li:nth-child(3) .depth2 li:nth-child(1){right: -45px; top: -10px;}
+.gnb li:nth-child(3) .depth2 li:nth-child(2){right: 20px; top: 80px;}
+.gnb li:nth-child(3) .depth2 li:nth-child(3){right: 100px; top: 155px;}
+.gnb li:nth-child(3) .depth2 li:nth-child(4){right: 195px; top: 210px;}
+
+.gnb li:nth-child(3) .depth2 li:nth-child(1) a{
+    padding-top: 18px;
+    line-height: 30px;
+}
+
+.gnb li:nth-child(4) .depth2 li:nth-child(1){right: -40px; top: 0px;}
+.gnb li:nth-child(4) .depth2 li:nth-child(2){right: 40px; top: 80px;}
+
+
+.gnb .depth1:hover > a{
+    color: #fffb01;
+    border-radius: 25px;
+    background-color: #006eff;
+}
+
+.gnb .depth1:hover .depth2{opacity: 1;
+    right: -90px;
+}
+.gnb .depth2 li a:hover{
+    color: #fffb01;
+    background-color: #cd1b19;
+    transform: rotate(-45deg);
+}
+
+
+/* header - E */
+
+
+/* main - S */
+.sac{
+    width: 100%; min-width: 1500px; height: 100%;
+    background-color: #000;
+    position: fixed; left: 0; top: 0;
+}
+
+.mov1 , .mov2 , .mov3 , .mov4 {opacity: 0.7; overflow: hidden;
+    width: 50%; height: 50%;
+    position: absolute;
+}
+.mov1{left: 0; top: 0;}
+.mov2{right: 0; top: 0;}
+.mov3{right: 0; bottom: 0;}
+.mov4{left: 0; bottom: 0;}
+
+.mov1 > video , .mov2 > video , .mov3 > video , .mov4 > video{width: 100%;}
+
+.tit{
+    width: 100%; min-width: 1500px; height: 200px; margin: auto;
+    text-align: center;
+    position: absolute; left: 0; top: 0; bottom: 0;
+}
+.tit h3{
+    margin-top: -25px;
+    font-family: 'Monoton', cursive; font-size: 130px; color: #fffb01;
+}
+.tit h3 em{font-family: 'Lexend Deca', sans-serif; font-weight: 800; font-size: 50px; color: #fff;}
+.tit p{
+    font-family: 'Monoton', cursive; font-size: 80px; color: #fffb01;
+}
+
+
+.banner{
+    width: 800px; height: 800px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed; right: -500px; bottom: -500px;
+    transition: all 0.4s;
+}
+.banner-wrap{
+    width: 700px; height: 700px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute; left: 100px; top: 100px;
+    transition: all 0.8s;
+}
+.banner-wrap ul{
+    position: absolute; left: 150px; top: 80px;
+    transform: skewX(-25deg);
+}
+.banner-wrap ul li{
+    margin-top: 10px;
+    transform: translate(150px , 150px);
+    transition-property: all
+}
+.banner-wrap ul li:nth-child(1){transition-duration: 0.8s;}
+.banner-wrap ul li:nth-child(2){transition-duration: 1.0s;}
+.banner-wrap ul li:nth-child(3){transition-duration: 1.2s;}
+
+.banner-wrap ul li a{opacity: 0.5;}
+
+.banner-wrap ul li strong{display: block;
+    margin: 0 0 5px 20px;
+    color: #9cff10;
+    transform: skewX(25deg);
+}
+
+.banner-wrap ul li figure img{
+    width: 300px; height: 80px; 
+    border-radius: 40px;
+    transform: skewX(25deg);
+}
+
+
+.banner:hover{right: -300px; bottom: -300px;}
+.banner:hover .banner-wrap{left: 50px; top: 50px;}
+.banner:hover .banner-wrap ul{left: 90px;}
+.banner:hover .banner-wrap ul li{transform: translate(0 , 0);}
+.banner .banner-wrap ul li:hover a{opacity: 1;}
+
+/* main - E */
+
+
+/* footer - S */
+#footer{
+    width: 500px; height: 50px; margin: auto;
+    position: fixed; left: 0; right: 0; bottom: 10px;
+}
+#footer p{
+    width: 70%; height: 30px; margin: 0 auto;
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif; font-weight: 400; font-size: 12px; line-height: 30px; color: rgb(255, 244, 244); text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* footer - E */
