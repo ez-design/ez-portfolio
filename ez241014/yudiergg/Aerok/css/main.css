@@ -1,0 +1,1013 @@
+@import url(default.css);
+@import url(font.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual {
+    padding-top: 6.58em;
+}
+.visual h2 {
+    display: none;
+}
+.visual .wrapper {
+    display: flex;
+    gap: 2.82em;
+}
+.visual .swiper_wrap {
+    width: 57.30%;
+}
+.visual .swiper_wrap .swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+.visual .swiper ul li a {
+    display: flex;
+    flex-direction: column;
+    height: 324px;
+    padding: 2.35em;
+    border-radius: 1.17rem;
+    color: #fff;
+}
+.visual .swiper ul li a strong {
+    font-weight: 400;
+    font-size: var(--body-L);
+}
+.visual .swiper ul li a .visual_title_L {
+    font-weight: 700;
+    font-size: var(--h-s);
+}
+.visual .swiper ul li a.popup_title_1 {
+    align-items: center;
+    justify-content: center;
+    background: url(../images/popup/visual_banner02.jpg) no-repeat center center / cover;
+}
+.visual .swiper ul li a.popup_title_1 .logo {
+    font-size: 0;
+    line-height: 0;
+    width: 8.41rem;
+    height: 27px;
+    margin-bottom: 0.8rem;
+    background-image: url(../images/popup/visual\ logo.png);
+}
+.visual .swiper ul li a.popup_title_2 {
+    align-items: center;
+    background: url(../images/popup/visual_banner01.jpg) no-repeat center center / cover;   
+}
+.visual .swiper ul li a.popup_title_3 {
+    background: url(../images/popup/visual_banner03.jpg) no-repeat center center / cover;
+}
+.visual .swiper-pagination {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 0.70em;
+    margin-top: 1.2em;
+    max-height: fit-content;
+}
+.visual .swiper-pagination-bullet {
+    width: 0.58rem;
+    height: 0.58rem;
+    background-color: var(--disalbe);
+}
+.visual .user {
+    width: 38.88%;
+    padding: 2.82em;
+    border: 1px solid var(--border);
+    border-radius: 1.17rem;
+}
+.visual .user h3 {
+    margin-bottom: 1.92em;
+    font-size: var( --title-XL);
+    font-weight: 700;
+    color: var(--title-color);
+}
+.visual .user .user_group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.41em;
+}
+.visual .user .check_group {
+    display: flex;
+    margin-bottom: 1.41em;
+    gap: 1.41em;
+}
+.visual .user .check_group .inner {
+    display: flex;
+    align-items: center;
+    gap: 0.58em;
+}
+.visual .user .check_group label {
+    font-size: var( --title-m);
+    font-weight: 700;
+    color: var(--title-color);
+}
+.visual .user .check_group [type="radio"] {
+    width: 1.17rem;
+    height: 1.17rem;
+    border-color: var(--disalbe);
+}
+
+.visual .user .user_group .form_group {
+    position: relative;
+    display: flex;
+    width: 100%;
+    gap: 2.82em;
+}
+.visual .user .user_group .route_point::after {
+    position: absolute;
+    content: "";
+    bottom: 0.58em;
+    right: calc(50% - 12px);
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 21L2 16L7 11L8.425 12.4L5.825 15H21V17H5.825L8.425 19.6L7 21ZM17 13L15.575 11.6L18.175 9H3V7H18.175L15.575 4.4L17 3L22 8L17 13Z' fill='%23555555'/%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.visual .user .form_group label {
+    display: flex;
+    font-size: var( --body-s);
+    color: var(--disalbe);
+    margin-bottom: 0.3em;
+}
+.visual .user .form_group input {
+    display: flex;
+    width: 100%;
+    padding: 0.58em;
+    border: 1px solid var(--border);
+    border-radius: 0.29rem;
+}
+.visual .user .date .inner {
+    position: relative;
+}
+.visual .user .date .inner ::after {
+    position: absolute;
+    content: "";
+    bottom: 0.8em;
+    right: 1.17em;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.30775 21.4981C4.80258 21.4981 4.375 21.3231 4.025 20.9731C3.675 20.6231 3.5 20.1955 3.5 19.6903V6.30581C3.5 5.80065 3.675 5.37306 4.025 5.02306C4.375 4.67306 4.80258 4.49806 5.30775 4.49806H6.69225V2.38281H8.23075V4.49806H15.8077V2.38281H17.3077V4.49806H18.6923C19.1974 4.49806 19.625 4.67306 19.975 5.02306C20.325 5.37306 20.5 5.80065 20.5 6.30581V19.6903C20.5 20.1955 20.325 20.6231 19.975 20.9731C19.625 21.3231 19.1974 21.4981 18.6923 21.4981H5.30775ZM5.30775 19.9981H18.6923C18.7692 19.9981 18.8398 19.966 18.9038 19.9018C18.9679 19.8378 19 19.7673 19 19.6903V10.3058H5V19.6903C5 19.7673 5.03208 19.8378 5.09625 19.9018C5.16025 19.966 5.23075 19.9981 5.30775 19.9981ZM5 8.80581H19V6.30581C19 6.22881 18.9679 6.15831 18.9038 6.09431C18.8398 6.03014 18.7692 5.99806 18.6923 5.99806H5.30775C5.23075 5.99806 5.16025 6.03014 5.09625 6.09431C5.03208 6.15831 5 6.22881 5 6.30581V8.80581ZM12 14.0751C11.7552 14.0751 11.5465 13.9888 11.374 13.8163C11.2017 13.644 11.1155 13.4353 11.1155 13.1903C11.1155 12.9455 11.2017 12.7368 11.374 12.5643C11.5465 12.392 11.7552 12.3058 12 12.3058C12.2448 12.3058 12.4535 12.392 12.626 12.5643C12.7983 12.7368 12.8845 12.9455 12.8845 13.1903C12.8845 13.4353 12.7983 13.644 12.626 13.8163C12.4535 13.9888 12.2448 14.0751 12 14.0751ZM8 14.0751C7.75517 14.0751 7.5465 13.9888 7.374 13.8163C7.20167 13.644 7.1155 13.4353 7.1155 13.1903C7.1155 12.9455 7.20167 12.7368 7.374 12.5643C7.5465 12.392 7.75517 12.3058 8 12.3058C8.24483 12.3058 8.4535 12.392 8.626 12.5643C8.79833 12.7368 8.8845 12.9455 8.8845 13.1903C8.8845 13.4353 8.79833 13.644 8.626 13.8163C8.4535 13.9888 8.24483 14.0751 8 14.0751ZM16 14.0751C15.7552 14.0751 15.5465 13.9888 15.374 13.8163C15.2017 13.644 15.1155 13.4353 15.1155 13.1903C15.1155 12.9455 15.2017 12.7368 15.374 12.5643C15.5465 12.392 15.7552 12.3058 16 12.3058C16.2448 12.3058 16.4535 12.392 16.626 12.5643C16.7983 12.7368 16.8845 12.9455 16.8845 13.1903C16.8845 13.4353 16.7983 13.644 16.626 13.8163C16.4535 13.9888 16.2448 14.0751 16 14.0751ZM12 17.9981C11.7552 17.9981 11.5465 17.9118 11.374 17.7393C11.2017 17.567 11.1155 17.3584 11.1155 17.1136C11.1155 16.8686 11.2017 16.6599 11.374 16.4876C11.5465 16.3151 11.7552 16.2288 12 16.2288C12.2448 16.2288 12.4535 16.3151 12.626 16.4876C12.7983 16.6599 12.8845 16.8686 12.8845 17.1136C12.8845 17.3584 12.7983 17.567 12.626 17.7393C12.4535 17.9118 12.2448 17.9981 12 17.9981ZM8 17.9981C7.75517 17.9981 7.5465 17.9118 7.374 17.7393C7.20167 17.567 7.1155 17.3584 7.1155 17.1136C7.1155 16.8686 7.20167 16.6599 7.374 16.4876C7.5465 16.3151 7.75517 16.2288 8 16.2288C8.24483 16.2288 8.4535 16.3151 8.626 16.4876C8.79833 16.6599 8.8845 16.8686 8.8845 17.1136C8.8845 17.3584 8.79833 17.567 8.626 17.7393C8.4535 17.9118 8.24483 17.9981 8 17.9981ZM16 17.9981C15.7552 17.9981 15.5465 17.9118 15.374 17.7393C15.2017 17.567 15.1155 17.3584 15.1155 17.1136C15.1155 16.8686 15.2017 16.6599 15.374 16.4876C15.5465 16.3151 15.7552 16.2288 16 16.2288C16.2448 16.2288 16.4535 16.3151 16.626 16.4876C16.7983 16.6599 16.8845 16.8686 16.8845 17.1136C16.8845 17.3584 16.7983 17.567 16.626 17.7393C16.4535 17.9118 16.2448 17.9981 16 17.9981Z' fill='%238E8E8E'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+}
+.visual .user .form_group input::placeholder {
+    color: var(--disalbe);
+}
+.visual .user button {
+    margin-top: 2.82em;
+    font-size: var(--body-L);
+    font-weight: 700;
+    width: 100%;
+    padding: 0.58em 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 0.29em;
+}
+.visual .user button:hover {
+    background-color: var(--hover-color);
+}
+
+@media screen and (max-width:1024px){
+    .visual .wrapper{
+        flex-direction: column;
+    }
+    .visual .swiper_wrap {
+        width: auto;
+    }
+    .visual .user {
+        width: 100%;
+        padding: 1.82em;
+    }
+    .visual .user .user_group .form_group {
+        justify-content: space-between;
+    }
+    .visual .user .user_group .form_group .inner {
+        flex: 1;
+    }
+}
+@media screen and (max-width:434px){
+    .visual .user .user_group .form_group {
+        flex-direction: column;
+        gap: 0.82em;
+    }
+    .visual .user .user_group .route_point::after {
+        display: none;
+    }
+}
+.travel {
+    padding: 5.64em 0;
+}
+.travel h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.92em;
+    font-size: var(--h-s);
+    font-weight: 700;
+    color: var(--title-color);
+}
+.travel h2::after {
+    position: absolute;
+    content: "";
+    top: -0.8rem;
+    right: -4.81rem;
+    width: 3.94rem;
+    height: 3.94rem;
+    background: url(../images/icon/h3_icon_04.png) no-repeat center center / contain;
+}
+/* 탭 메뉴 */
+.travel [role="tablist"] {
+    display: flex;
+    padding: 0.58em 0.58em;
+    max-width: 11.76rem;
+    border-radius: 100px;
+    margin-bottom: 1.26em;
+    font-size: var(--body-L);
+    font-weight: 700;
+    color: var(--disalbe);
+    background-color: var( --bg-color-2);
+}
+.travel button[role="tab"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.29rem;
+    height: 40px;
+}
+.travel button[role="tab"][aria-selected = "true"] {
+    color: var(--bg-color);
+    background-color: var(--secondary-color);
+    border-radius: 100px;
+}
+.travel [role="tablist"] li button i {
+    font-size: 0;
+    line-height: 0;
+}
+/* event 팝업 */
+.travel .tab_content .event_popup {
+    position: relative;
+    height: 200px;
+    padding: 2.35em 2.82em;
+    margin-bottom: 2.82em;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0) 60%), url(../images/popup/event_popup_01.jpg) no-repeat center center / cover;
+    border-radius: 0.58rem;
+    font-weight: 700;
+    color: var(--bg-color);  
+}
+.travel #dognum_pannel .event_popup {
+    background:linear-gradient(to right, rgba(0, 37, 84, 1) 20%, rgba(0, 0, 0, 0) 60%), url(../images/popup/event_popup_02.jpg) no-repeat center center / cover;
+}
+.travel .event_popup strong {
+    font-size: var(--title-s);
+}
+.travel .event_popup .event_title_s {
+    font-size: var(--title-XXL);
+    margin-bottom: 0.25em;
+}
+.travel .event_popup span {
+    font-size: var(--body-s);
+    font-weight: 400;
+}
+.travel .event_popup .go a {
+    position: absolute;
+    bottom: 2.35rem;
+    right: 2.82rem;
+    padding: 0.58em 1.17em;
+    font-size: var(--body-m-default);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 0.26rem;
+}
+.travel .event_popup .go:hover a {
+    background-color: var(--hover-color);
+}
+@media screen and (max-width:430px){
+    .travel .tab_content .event_popup{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 1.5em 1.25em;
+    }
+    .travel .event_popup .go a {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        right: 0;
+        bottom: 0;
+    }
+    .travel .event_popup span {
+        margin-bottom: 1.9em;
+    }
+    .travel .event_popup .event_title_s {
+        font-size: var(--title-XL);
+    }
+}
+/* 탭 컨텐츠 */
+.travel .tab_content .tab_conts ul {
+    display: flex;
+    gap: 1.41em;
+}
+.travel .tab_content .tab_conts ul > li { /* flex 요소 안들어올때 이거사용 */
+    flex-shrink: 1;
+    min-width: 250px;
+}
+.travel .tab_content .tab_conts ul li a {
+    display: flex;
+    flex-direction: column;
+    gap: 1.41em;
+}
+.travel .tab_content .tab_conts ul li a .photo {
+    overflow: hidden;
+    height: 200px;
+    font-size: 0;
+    line-height: 0;
+    border-radius: 0.58rem;
+}
+.travel .tab_content .tab_conts ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.travel .tab_content .tab_conts ul li a .inner strong {
+    display: flex;
+    margin-bottom: 0.2em;
+    font-size: var(--title-s);
+    font-weight: 700;
+    color: var(--title-color);
+}
+.travel .tab_content .tab_conts ul li a .inner .date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.53em;
+    font-size: var(--body-s);
+    font-weight: 400;
+    color: var( --bdoy-color);
+}
+.travel .tab_content .tab_conts ul li a .inner .date .first, .end {
+    display: flex;
+    gap: 0.53rem;
+}
+.travel .tab_content .tab_conts ul li a .inner .date .icon {
+    font-size: 0;
+    line-height: 0;
+    width: 1.41rem;
+    height: 1.41rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.6537 12.2798L10.25 16.6836L10.25 7.87609L14.6537 12.2798Z' fill='%235F6368'/%3E%3C/svg%3E%0A");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.travel .tab_content .tab_conts ul li a .inner .money {
+    margin-bottom: 0.96em;
+    font-size: var(--title-XL);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.travel .tab_content .tab_conts ul li a .inner .tag_group {
+    display: flex;
+    gap: 0.4em;
+}
+.travel .tab_content .tab_conts ul li a .inner .tag_group span {
+    padding: 0.33em 0.66em;
+    font-size: var(--sub);
+    font-weight: 400;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.33rem;
+    color: var(--secondary-color);
+    white-space: nowrap;
+}
+
+@media screen and (max-width:983px){
+    .travel .tab_content .tab_conts ul {
+        display: flex;
+        gap: 1.41em;
+        overflow-x: auto; 
+        white-space: nowrap; 
+}
+}
+@media screen and (max-width:966px){
+    .travel .tab_content .tab_conts ul {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:768px){
+    .travel .tab_content .tab_conts ul li a .photo {
+        height: 140px;
+        border-radius: 0.48rem;
+    }
+}
+@media screen and (max-width:565px){
+    .travel .tab_content .tab_conts ul {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+}
+
+.event_ticket {
+    padding: 5.64em 0;
+}
+.event_ticket .swiper_wrap {
+    position: relative;
+    left: calc(50% - 630px);
+    width: calc(50% + 630px);
+}
+.event_ticket .swiper {
+    width: 130%;
+}
+.event_ticket h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.92em;
+    font-size: var(--h-s);
+    font-weight: 700;
+    color: var(--title-color);
+}
+.event_ticket h2::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: -3.2rem;
+    width: 2.64rem;
+    height: 2.64rem;
+    background: url(../images/icon/h3_icon_02.png) no-repeat center center / contain;
+}
+.event_ticket .swiper > ul > li {
+    position: relative;
+    display: flex;
+    gap: 2.82em;
+    padding: 2.35em 2.35em;
+    border-radius: 1.17rem;
+    border: 1px solid var(--border);
+}
+.event_ticket .swiper > ul > li .photo {
+    font-size: 0;
+    line-height: 0;
+    width: 27%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.29rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.event_ticket .swiper > ul > li .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event_ticket .swiper > ul > li .tiket_info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2.82em;
+}
+.event_ticket .swiper > ul > li .tiket_info h3 {
+    font-size: var(--title-XXL);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.event_ticket .swiper > ul > li .tiket_info > ul {
+    display: flex;
+    gap: 2.82em;
+}
+.event_ticket .swiper > ul > li .tiket_info > ul > li {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.41em;
+}
+.event_ticket .swiper > ul > li .tiket_info > ul > li .inner {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--body-L);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.event_ticket .swiper > ul > li .tiket_info > ul > li > span {
+    font-size: var(--body-L);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.event_ticket .swiper > ul > li .tiket_info ul > li > em {
+    font-size: var(--h-m);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.event_ticket .swiper > ul > li .tiket_info .reserv a {
+    position: absolute;
+    bottom: 2.35rem;
+    font-size: var(--body-L);
+    font-weight: 700;
+    padding: 0.52em 1.05em;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 0.29em;
+}
+.event_ticket .swiper > ul > li .tiket_info .reserv:hover a {
+    background-color: var(--hover-color);
+}
+.event_ticket .swiper > ul > li .tiket_info .barcod {
+    position: absolute;
+    bottom: 2.35rem;
+    right: 2.35rem;
+    font-size: 0;
+    line-height: 0;
+    width: 6.35rem;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='108' height='31' viewBox='0 0 108 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='4' height='30' transform='translate(0 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(6 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(12 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(20 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(24 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(28 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(26 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(30 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(34 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(36 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(40 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(44 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(46 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(50 0.28125)' fill='%231D1D1D'/%3E%3Crect width='2' height='30' transform='translate(54 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(60 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(66 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(72 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(78 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(86 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(92 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(98 0.28125)' fill='%231D1D1D'/%3E%3Crect width='4' height='30' transform='translate(104 0.28125)' fill='%231D1D1D'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.event_ticket .swiper_wrap .swiper-pagination {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 0.70em;
+    margin-top: 1.2em;
+}
+.event_ticket  .swiper_wrap .swiper-pagination-bullet {
+    width: 0.58rem;
+    height: 0.58rem;
+    background-color: var(--disalbe);
+}
+@media screen and (max-width:1170px){
+    .event_ticket .swiper {
+        width: 140%;
+    }
+}
+@media screen and (max-width:1194px){
+    .event_ticket .swiper {
+        width: 160%;
+    }
+}
+@media screen and (max-width:1295px){
+    .event_ticket .swiper_wrap{
+        left: 20px;
+        width: auto;
+    }
+}   
+@media screen and (max-width:899px){
+    .event_ticket .swiper {
+        width: 180%;
+    }
+}
+@media screen and (max-width:812px){
+    .event_ticket .swiper > ul > li .tiket_info h3 {
+        font-size: var(--title-XL);
+    }
+    .event_ticket .swiper > ul > li {
+        width: auto;
+    }
+    .event_ticket .swiper > ul > li .tiket_info {
+        gap: 1.82em;
+    }
+    .event_ticket .swiper > ul > li .tiket_info .tiket_title {
+        font-size: var(--title-L);
+    }
+    .event_ticket .swiper > ul > li {
+        padding: 1.17em 1.17em;
+        border-radius: 0.58rem;
+    }
+    .event_ticket .swiper > ul > li .photo {
+        width: 26%;
+        height: auto;
+    }
+    .event_ticket .swiper > ul > li .tiket_info ul > li > em {
+        font-size: var(--title-XL);
+    }
+    .event_ticket .swiper > ul > li .tiket_info .barcod {
+        bottom: 1.17rem;
+        right: 1.17rem;
+    }
+    .event_ticket .swiper > ul > li .tiket_info button {
+        bottom: 1.17rem;
+    }
+    .event_ticket .swiper > ul > li .tiket_info .reserv a {
+        bottom: 1.15rem;
+    }
+}
+@media screen and (max-width:702px){
+    .event_ticket .swiper > ul > li .tiket_info > ul {
+        height: 182px;
+    }
+    .event_ticket .swiper > ul > li .tiket_info > ul > li {
+        flex:1;
+    }
+    .event_ticket .swiper > ul > li {
+        flex-direction: column;
+        gap: 1.5em;
+        width: auto;
+    }
+    .event_ticket .swiper > ul > li .photo {
+        width: 100%;
+        height: 200px;
+    }
+    .event_ticket .swiper > ul > li .tiket_info > ul > li .inner {
+        font-size: var(--body-s);
+    }
+    .event_ticket .swiper > ul > li .tiket_info > ul > li > span {
+        font-size: var(--body-s);
+    }
+}
+
+.help {
+    padding: 5.64em 0;
+}
+.help h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.92em;
+    font-size: var(--h-s);
+    font-weight: 700;
+    color: var(--title-color);
+}
+.help h2::after {
+    position: absolute;
+    content: "";
+    top: -0.4em;
+    right: -4.2rem;
+    width: 3.44rem;
+    height: 3.44rem;
+    background: url(../images/icon/h3_icon_05.png) no-repeat center center / contain;
+}
+
+.help .inner {
+    display: flex;
+    gap: 1.41em;
+}
+.help .sale_coupon, .cs {
+    position: relative;
+    flex: 1;
+    padding: 1.64em 2.35em; 
+    border-radius: 0.58rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.help .sale_coupon {
+    color: var(--bg-color);
+    background-color: var(--secondary-color);
+}
+.help .cs {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+.help strong {
+    display: flex;
+    margin-bottom: 0.32em;
+    font-size: var( --title-XL);
+    font-weight: 700;
+}
+.help p {
+    margin-bottom: 1.41em;
+}
+.help .more {
+    width: max-content;
+    border-bottom: 1px solid;
+}
+.help .sale_coupon::after {
+    position: absolute;
+    content: "";
+    top: 3.26rem;
+    right: 2.35rem;
+    width:  3.76rem;
+    height: 3.76rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='65' viewBox='0 0 64 65' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.667 45.55V50.6267C10.667 50.832 10.7525 51.02 10.9237 51.1907C11.0943 51.3618 11.2823 51.4474 11.4877 51.4474H52.513C52.7183 51.4474 52.9063 51.3618 53.077 51.1907C53.2481 51.02 53.3337 50.832 53.3337 50.6267V45.55H10.667ZM11.4877 18.1654H18.867C18.6448 17.7654 18.479 17.3431 18.3697 16.8987C18.2603 16.4543 18.2057 15.9876 18.2057 15.4987C18.2057 13.6356 18.851 12.0587 20.1417 10.768C21.4323 9.47736 23.0092 8.83203 24.8723 8.83203C25.9901 8.83203 27.0241 9.12248 27.9743 9.70337C28.9245 10.2843 29.7537 11.0058 30.4617 11.868L31.949 13.858L33.4363 11.868C34.1168 10.9725 34.9403 10.2425 35.907 9.67803C36.8741 9.11403 37.9157 8.83203 39.0317 8.83203C40.8912 8.83203 42.4661 9.47736 43.7563 10.768C45.047 12.0587 45.6923 13.6356 45.6923 15.4987C45.6923 15.9876 45.6419 16.4543 45.541 16.8987C45.4401 17.3431 45.2701 17.7654 45.031 18.1654H52.513C53.8601 18.1654 55.0003 18.632 55.9337 19.5654C56.867 20.4987 57.3337 21.6389 57.3337 22.986V50.6267C57.3337 51.9738 56.867 53.114 55.9337 54.0474C55.0003 54.9807 53.8601 55.4474 52.513 55.4474H11.4877C10.1405 55.4474 9.00033 54.9807 8.06699 54.0474C7.13366 53.114 6.66699 51.9738 6.66699 50.6267V22.986C6.66699 21.6389 7.13366 20.4987 8.06699 19.5654C9.00033 18.632 10.1405 18.1654 11.4877 18.1654ZM10.667 38.678H53.3337V22.986C53.3337 22.7807 53.2481 22.5927 53.077 22.422C52.9063 22.2509 52.7183 22.1654 52.513 22.1654H37.9383L43.385 29.6114L40.195 31.9087L31.949 20.7194L23.703 31.9087L20.513 29.6114L25.8777 22.1654H11.4877C11.2823 22.1654 11.0943 22.2509 10.9237 22.422C10.7525 22.5927 10.667 22.7807 10.667 22.986V38.678ZM24.8723 18.1654C25.6279 18.1654 26.2612 17.9098 26.7723 17.3987C27.2834 16.8876 27.539 16.2543 27.539 15.4987C27.539 14.7431 27.2834 14.1098 26.7723 13.5987C26.2612 13.0876 25.6279 12.832 24.8723 12.832C24.1168 12.832 23.4834 13.0876 22.9723 13.5987C22.4612 14.1098 22.2057 14.7431 22.2057 15.4987C22.2057 16.2543 22.4612 16.8876 22.9723 17.3987C23.4834 17.9098 24.1168 18.1654 24.8723 18.1654ZM39.0257 18.1654C39.7812 18.1654 40.4146 17.9098 40.9257 17.3987C41.4368 16.8876 41.6923 16.2543 41.6923 15.4987C41.6923 14.7431 41.4368 14.1098 40.9257 13.5987C40.4146 13.0876 39.7812 12.832 39.0257 12.832C38.2701 12.832 37.6368 13.0876 37.1257 13.5987C36.6145 14.1098 36.359 14.7431 36.359 15.4987C36.359 16.2543 36.6145 16.8876 37.1257 17.3987C37.6368 17.9098 38.2701 18.1654 39.0257 18.1654Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.help .cs::after {
+    position: absolute;
+    content: "";
+    top: 3.26rem;
+    right: 2.35rem;
+    width:  3.76rem;
+    height: 3.76rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='65' viewBox='0 0 64 65' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.2816 55.4492C17.9558 55.4492 16.8209 54.9772 15.8769 54.0332C14.9329 53.0892 14.4609 51.9543 14.4609 50.6286V22.1159C14.4609 20.7901 14.9329 19.6552 15.8769 18.7112C16.8209 17.7672 17.9558 17.2952 19.2816 17.2952H24.8203V12.2699C24.8203 10.9441 25.2923 9.80922 26.2363 8.86522C27.1803 7.92122 28.3152 7.44922 29.6409 7.44922H34.3583C35.684 7.44922 36.8189 7.92122 37.7629 8.86522C38.7069 9.80922 39.1789 10.9441 39.1789 12.2699V17.2952H44.7176C46.0434 17.2952 47.1783 17.7672 48.1223 18.7112C49.0663 19.6552 49.5383 20.7901 49.5383 22.1159V50.6286C49.5383 51.9543 49.0663 53.0892 48.1223 54.0332C47.1783 54.9772 46.0434 55.4492 44.7176 55.4492V55.7566C44.7176 56.4099 44.4876 56.9663 44.0276 57.4259C43.568 57.8859 43.0116 58.1159 42.3583 58.1159C41.7054 58.1159 41.1492 57.8859 40.6896 57.4259C40.2296 56.9663 39.9996 56.4099 39.9996 55.7566V55.4492H23.9996V55.7566C23.9996 56.4099 23.7696 56.9663 23.3096 57.4259C22.85 57.8859 22.2938 58.1159 21.6409 58.1159C20.9876 58.1159 20.4312 57.8859 19.9716 57.4259C19.5116 56.9663 19.2816 56.4099 19.2816 55.7566V55.4492ZM19.2816 51.4492H44.7176C44.9567 51.4492 45.1534 51.3723 45.3076 51.2186C45.4614 51.0648 45.5383 50.8681 45.5383 50.6286V22.1159C45.5383 21.8763 45.4614 21.6797 45.3076 21.5259C45.1534 21.3721 44.9567 21.2952 44.7176 21.2952H19.2816C19.0425 21.2952 18.8458 21.3721 18.6916 21.5259C18.5378 21.6797 18.4609 21.8763 18.4609 22.1159V50.6286C18.4609 50.8681 18.5378 51.0648 18.6916 51.2186C18.8458 51.3723 19.0425 51.4492 19.2816 51.4492ZM24.8203 47.7566H28.8203V24.9879H24.8203V47.7566ZM35.1789 47.7566H39.1789V24.9879H35.1789V47.7566ZM28.8203 17.2952H35.1789V12.2699C35.1789 12.0303 35.102 11.8337 34.9483 11.6799C34.7945 11.5261 34.5978 11.4492 34.3583 11.4492H29.6409C29.4014 11.4492 29.2047 11.5261 29.0509 11.6799C28.8972 11.8337 28.8203 12.0303 28.8203 12.2699V17.2952Z' fill='%23002554'/%3E%3C/svg%3E%0A");
+}
+
+@media screen and (max-width:768px){
+    .help .inner {
+    flex-direction: column; 
+    }
+}
+@media screen and (max-width:457px){
+    .help .sale_coupon::after {
+        display: none
+    }
+    .help .cs::after {
+        display: none
+    }
+}
+.news {
+    padding: 5.64em 0;
+}
+.news h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.92em;
+    font-size: var(--h-s);
+    font-weight: 700;
+    color: var(--title-color);
+}
+.news h2::after {
+    position: absolute;
+    content: "";
+    top: -0.7rem;
+    right: -1.91rem;
+    width: 2.94rem;
+    height: 2.94rem;
+    background: url(../images/icon/h3_icon_01.png) no-repeat center center / contain;
+
+}
+.news .news_group {
+    position: relative;
+}
+/*고정할 영역*/
+.news .news_group .tit {
+    z-index: -1 !important;
+    float: left;
+    width: 19.76rem !important;
+    height: 60dvh;
+    padding: 2.35em;
+    border-radius: 0.58rem;
+    color: var(--bg-color);
+    background: url(../images/news/fix_bg_01.jpg) no-repeat center center / cover;
+}
+.news .news_group .sticky-anchor {
+    height: auto !important;
+}
+.news .tit .brand a {
+    display: inline-block;
+    font-size: var(--body-m-default);
+    font-weight: 700;
+    padding: 0.52em 1.05em;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 0.29em;
+}
+.news .tit .brand a:hover {
+    background-color: var(--hover-color);
+}
+.news .tit h3 {
+    margin-bottom: 1.5em;
+    font-size: var(--title-XL);
+    font-weight: 700;
+
+}
+.news .cont_wrap {
+    padding-left: 26.58em;
+}
+.news .cont_wrap .cont {
+    display: flex;
+    flex-direction: column;
+    gap: 2.82em;
+}
+.news .cont_wrap .cont ul {
+    display: flex;
+    flex-wrap: wrap; /* 줄 바꿈 가능하도록 설정 */
+    gap: 1.82em; /* 기존 gap 유지 */
+}
+.news .cont_wrap .cont ul li {
+    flex: 1 calc(50% - 1.82em); /* 한 줄에 2개 배치 */
+    max-width: 600px; /* 최대 크기 제한 */
+    min-width: 280px; /* 최소 크기 제한 */
+}
+.news .cont_wrap .cont ul li a .photo {
+    width: 100%;
+    height: 200px;
+    font-size: 0;
+    line-height: 0;
+    border: 1px solid var(--border);
+    border-radius: 0.58rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.news .cont_wrap .cont ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news .cont_wrap .cont ul li a h3 {
+    max-width: 22.35rem;
+    margin: 1.1em 0 0.47em 0;
+    font-size: var(--title-L);
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--title-color);
+}
+.news .cont_wrap .cont ul li a p {
+    margin-bottom: 1.41em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break:  break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news .cont_wrap .cont ul li a .tag_group {
+    display: flex;
+    gap: 0.4em;
+}
+.news .cont_wrap .cont ul li a .tag_group span {
+    padding: 0.33em 0.66em;
+    font-size: var(--sub);
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.33rem;
+    color: var(--secondary-color);
+}
+.news .cont_wrap .cont ul li a .tag_group span.active {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+}
+@media screen and (max-width:1164px){
+    .news_group{
+        display: flex;
+        flex-direction: column;
+    }
+    .news .news_group .tit {
+        position: relative !important;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        z-index: 0 !important;
+        top:0 !important;
+        width: auto !important;
+        height: auto !important;
+        margin-bottom: 1.5em;
+    }
+    .news .cont_wrap {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:540px){
+    .visual .swiper ul li a {
+        align-items: center;
+        height: 260px;
+    }
+    .visual .swiper ul li a.popup_title_1 .logo {
+        padding-bottom: 1.2em;
+    }
+    .visual .swiper ul li a .visual_title_L {
+        text-align: center;
+        max-width: 90%;
+    }
+    .visual .swiper ul li a strong {
+        margin-bottom: 0.4em;
+    }
+}
+/* 섹션사이영역 */
+@media screen and (max-width:1024px){
+    .visual {
+       padding: 5.25em 0 2.12em 0;
+    }
+}
+
+@media screen and (max-width:430px){
+    .travel {
+        padding: 2.12em 0;
+    }
+    .help {
+        padding: 2.12em 0;
+    }
+    .event_ticket {
+        padding: 2.12em 0;
+    }
+    .news {
+        padding: 2.12em 0 3.0em 0;
+    }
+
+    .travel [role="tablist"] {
+        max-width: fit-content;
+    }
+    .help p { 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .event_ticket .swiper > ul > li .tiket_info  {
+        gap: 1.5em;
+    }
+    .event_ticket .swiper > ul > li .tiket_info .barcod {
+        width: 4.35rem;
+        height: 20px;
+    }
+    .event_ticket .swiper > ul > li .tiket_info .reserv a {
+        font-size: var(--body-m-default);
+    }
+    .news .tit h3 {
+        font-size: var(--title-L);
+    }
+    .news .cont_wrap .cont ul {
+        gap: 1.5em;
+    }
+    .news .cont_wrap .cont ul li a h3 {
+        font-size: var(--title-m);
+    }
+    .travel .event_popup strong {
+        font-size: var(--body-s);
+    }
+    .help .inner {
+        flex-direction: row;
+    }
+    .travel .tab_content .tab_conts ul li a {
+        gap: 0.8em;
+    }
+    .travel .tab_content .tab_conts ul li a .inner .money {
+        font-size: var(--title-L);
+    }
+    .visual .user button {
+        margin-top: 1.92em;
+    }
+    .help .sale_coupon, .cs {
+        padding: 1.5em 1.25em;
+        display: flex;
+        flex-direction: column;
+    }
+    .news .news_group .tit {
+        padding: 1.5em 1.25em;
+    }
+    .visual .swiper ul li a {
+        height: 230px;
+    }
+    .visual .user {
+        padding: 1.5em 1.25em;
+    }
+    .help strong {
+        font-size: var(--title-m);
+    }
+    .travel button[role="tab"] {
+        font-size: var(--body-s);
+        width: auto;
+        height: auto;
+        padding: 0.66em 1.33em;
+    }
+    .visual .swiper ul li a.popup_title_1 {
+        justify-content:flex-start
+    }
+    .visual .swiper ul li a strong {
+        font-size: var(--body-s);
+    }
+    .visual .swiper ul li a .visual_title_L {
+        font-size: var(--title-L);
+        text-align: center;
+    }
+    .travel h2 {
+        font-size: var( --title-L);
+        margin-bottom: 1.2em;
+    }
+    .travel h2::after {
+        right: -3.61rem;
+        width: 2.94rem;
+        height: 2.94rem;
+    }
+    .event_ticket h2 {
+        font-size: var( --title-L);
+        margin-bottom: 1.2em;
+    }
+    .event_ticket h2::after {
+        bottom: 0.1em;
+        right: -2.5rem;
+        width: 1.84rem;
+        height: 1.84rem;
+    }
+    .help h2 {
+        font-size: var( --title-L);
+        margin-bottom: 1.2em;
+    }
+    .help h2::after {
+        width: 2.44rem;
+        height: 2.44rem;
+        right: -3.2rem;
+    }
+    .news h2 {
+        font-size: var(--title-L);
+        margin-bottom: 1.2em;
+    }
+    .news h2::after {
+        width: 1.94rem;
+        top: -0.9rem;
+        right: -1.41rem;
+    }
+    .event_ticket .swiper > ul > li .tiket_info h3 {
+        font-size: var( --title-L);
+    }
+    .news .tit .brand a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .visual .user h3 {
+     font-size: var(--title-L);
+    }
+}
