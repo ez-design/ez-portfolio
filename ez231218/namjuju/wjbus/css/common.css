@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 300;
+    font-display: swap;
+    src: local('KBO-Dia-Gothic_light'), url(../fonts/KBO-Dia-Gothic_light.woff) format('woff');
+}
+@font-face {
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 500;
+    font-display: swap;
+    src: local('KBO-Dia-Gothic_medium'), url(../fonts/KBO-Dia-Gothic_medium.woff) format('woff');
+}
+@font-face {
+    font-family: 'KBO-Dia-Gothic';
+    font-weight: 600;
+    font-display: swap;
+    src: local('KBO-Dia-Gothic_bold'), url(../fonts/KBO-Dia-Gothic_bold.woff) format('woff');
+}
+
+*::selection {
+    background-color: #333;
+    color: #2AC49E;
+}
+*::-moz-selection {
+    background-color: #333;
+    color: #2AC49E;
+}
+html, body {
+    font-family:'KBO-Dia-Gothic', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Apple SD Gothic Neo', '애플 SD 산돌고딕 Neo', sans-serif;
+    font-size: 17px; /* 크기 */
+    color: #333; /* 글자색상 */
+    font-weight: 300; /* 글자의 두께 */
+    line-height: 1.2; /* auto */
+    word-break: keep-all; /* 단어를 묶어서 줄바꿈 */
+    word-wrap: break-word; /* 만약 단어가 엄청 길면 분리해서 줄바꿈 */
+}
+.wrapper { /* 홈페이지의 넓이를 제한하고 가운데 정렬 */
+    width: 1280px; /* 홈페이지 넓이 */
+    margin: 0 auto;  /* 가운데 정렬 */
+    overflow: hidden;
+}
+#wrap { /* id="wrap"에 적용되는 스타일 */
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1320px){
+    .wrapper { 
+        width: auto; 
+        margin: 0 20px;  
+    }
+}/*media*/
+@media screen and (max-width:1024px){
+    html, body {
+        font-size: 15px;
+    }
+}/*media*/
+@media screen and (max-width:768px){
+    html, body {
+        font-size: 13px;
+    }
+}
+
+.skipnav {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1000000;
+    width: 100%;
+}
+.skipnav a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #F51919;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+.skipnav a[href="#gnb"] {
+    background-color: #1d1d1d;
+}
+.skipnav a:focus {
+    top: 100px;
+}

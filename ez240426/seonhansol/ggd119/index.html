@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>고양소방서</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="skip_nav">
+        <a href="#skip_contents">본문 바로가기</a>
+        <a href="#skip_menu">대메뉴 바로가기</a>
+    </div>
+    <div id="wrap">
+        <header class="">
+            <h1 class="logo"><a href="index.html">고양소방서</a></h1>
+            <nav class="gnb">
+                <button class="gnb_open"></button>
+                <div class="gnb_wrap">
+                    <ul class="depth1">
+                        <li class="">
+                            <a href="#n"><span>소방민원</span></a>
+                            <ul class="depth2">
+                                <li class=""><a href="#n"><span>안전터</span></a></li>
+                                <li><a href="#n"><span>민원안내</span></a></li>
+                                <li><a href="#n"><span>민원상담</span></a></li>
+                                <li><a href="#n"><span>화재피해주민 지원안내</span></a></li>
+                                <li><a href="#n"><span>소방관련업체 정보</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>소통마당</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>칭찬해요</span></a></li>
+                                <li><a href="#n"><span>신고해요</span></a></li>
+                                <li><a href="#n"><span>도민참여</span></a></li>
+                                <li><a href="#n"><span>시험정보</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>알림마당</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>고시/공고</span></a></li>
+                                <li><a href="#n"><span>최신소식</span></a></li>
+                                <li><a href="#n"><span>소방안전뉴스</span></a></li>
+                                <li><a href="#n"><span>보도자료</span></a></li>
+                                <li><a href="#n"><span>119재난관리 상황</span></a></li>
+                                <li><a href="#n"><span>업무추진비 공개</span></a></li>
+                                <li><a href="#n"><span>화재안전조사 공개</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>자료마당</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>소방활동 통계</span></a></li>
+                                <li><a href="#n"><span>소방활동 소개</span></a></li>
+                                <li><a href="#n"><span>소방활동 사진</span></a></li>
+                                <li><a href="#n"><span>재난행동요령</span></a></li>
+                                <li><a href="#n"><span>재난안전교육</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>교육신청</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>안전체험관 교육신청</span></a></li>
+                                <li><a href="#n"><span>열린소방서 견학신청</span></a></li>
+                                <li><a href="#n"><span>소소심 교육신청</span></a></li>
+                                <li><a href="#n"><span>피난훈련 신청</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#n"><span>소방서소개</span></a>
+                            <ul class="depth2">
+                                <li><a href="#n"><span>인사말</span></a></li>
+                                <li><a href="#n"><span>연혁</span></a></li>
+                                <li><a href="#n"><span>조직도 및 직원현황</span></a></li>
+                                <li><a href="#n"><span>소방 추모관</span></a></li>
+                                <li><a href="#n"><span>찿아오시는 길</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="gnb_close"></button>
+            </nav>
+            <div class="tnb">
+                <span class="login"><a href="#n">로그인</a></span>
+                <span class="size"><a href="#n">회원가입</a></span>
+            </div>
+        </header>
+        <main class="container" id="#skip_contents">
+            <div class="main_popup">
+                <div class="wrapper">
+                    <div class="main_inner">
+                        <div class="popup">
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소-->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                                    <li class="swiper-slide pop1">
+                                        <a href="#n">소방서팝업</a>
+                                    </li>
+                                    <li class="swiper-slide pop2">
+                                        <a href="#n">소방차 길터주기 팝업</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box_footer">
+                                <div class="more"><a href="#n">전체보기</a></div>
+                                <div class="btn_wrap">
+                                    <div class="paging"></div>
+                                    <button class="btn_prev">이전버튼</button>
+                                    <button class="btn_play">재생버튼</button>
+                                    <button class="btn_stop">일시정지</button>
+                                    <button class="btn_next">다음버튼</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="greeting">
+                            <div class="inner_box">
+                                <div class="top_box">
+                                    <div class="photo">
+                                        <a href="#n">서장인사말 배너</a>
+                                    </div>
+                                </div>
+                                <div class="bottom_box">
+                                    <ul>
+                                        <li><a href="#n"><span>열린서장실</span></a></li>
+                                        <li><a href="#n"><span>서장인사말</span></a></li>
+                                        <li><a href="#n"><span>서장일정</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="service">
+                <div class="wrapper">
+                    <h2>주요서비스</h2>
+                    <ul>
+                        <li class="service1"><a href="#n"><span>안전터</span></a></li>
+                        <li class="service2"><a href="#n"><span>민원안내</span></a></li>
+                        <li class="service3"><a href="#n"><span>민원상담</span></a></li>
+                        <li class="service4"><a href="#n"><span>화재피해주민<br>지원안내</span></a></li>
+                        <li class="service5"><a href="#n"><span>소방관련<br>업체정보</span></a></li>
+                        <li class="service6"><a href="#n"><span>통계자료</span></a></li>
+                        <li class="service7"><a href="#n"><span>신고해요</span></a></li>
+                        <li class="service8"><a href="#n"><span>도민참여</span></a></li>
+                        <li class="service9"><a href="#n"><span>시험정보</span></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="tag">
+                <div class="wrapper">
+                    <div class="inner_box">
+                        <ul>
+                            <li><a href="#n">#업무추진비</a></li>
+                            <li><a href="#n">#비상구신고센터</a></li>
+                            <li><a href="#n">#소방일일상황</a></li>
+                            <li><a href="#n">#피난안내도</a></li>
+                            <li><a href="#n">#재난발생현황</a></li>
+                            <li><a href="#n">#응급처치동영상</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="news_ppzone">
+                <div class="wrapper">
+                    <div class="inner_box">
+                        <div class="news_wrap">
+                            <div class="tab_area">
+                                <div class="tab_btn">
+                                    <ul role="tablist">
+                                        <li id="tab_01" aria-selected="true" aria-controls="panel_01" role="tab" class="active"><button><span>최신소식</span></button></li>
+                                        <li id="tab_02" aria-selected="false" aria-controls="panel_02" role="tab"><button><span>고시공고</span></button></li>
+                                        <li id="tab_03" aria-selected="false" aria-controls="panel_03" role="tab"><button><span>보도자료</span></button></li>
+                                        <li id="tab_04" aria-selected="false" aria-controls="panel_04" role="tab"><button><span>공지사항</span></button></li>
+                                    </ul>
+                                </div>
+                                <div class="tab_cnt">
+                                    <div id="panel_01" role="tabpanel" aria-labelledby="tab_01" class="active">
+                                        <div class="news_head">
+                                            <div class="date">
+                                                <span>2024.09</span>
+                                                <strong>11</strong>
+                                            </div>
+                                            <div class="txt">
+                                                <a href="#n">
+                                                    <h3>전기차 리튬배터리 화재 소화기 관련 안내문 공유드립니다</h3>
+                                                    <p>최근 잇따라 발생한 전기차 화재와 관련하여 리튬배터리 소화기로 인한 혼란 등을 방지하기 위해 아래와 같이 안내하오니 참고하시기 바랍니다.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="news_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>즐거운 추석 명절 안전을 함께 지켜요!</strong>
+                                                        <span>2024-09-02</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>올바른 119구급차 이용 문화 확산을 위한 홍보문 안내</strong>
+                                                        <span>2024-08-01</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>고양소방서 소방차 길 터주기 훈련 실시 안내</strong>
+                                                        <span>2024-07-31</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>공동주택 세대점검 업무처리 매뉴얼 공유</strong>
+                                                        <span>2024-05-02</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>아파트 비상방송설비 안내방송 개선에 따른 음원교체</strong>
+                                                        <span>2024-04-03</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="more"><a href="#n">최신소식 자세히보기</a></div>
+                                    </div>
+                                    <div id="panel_02" role="tabpanel" aria-labelledby="tab_02">
+                                        <div class="news_head">
+                                            <div class="date">
+                                                <span>2024.08</span>
+                                                <strong>13</strong>
+                                            </div>
+                                            <div class="txt">
+                                                <a href="#n">
+                                                    <h3>노인요양시설 안전관리 우수시설 신청 모집</h3>
+                                                    <p>신청ㆍ접수기간: 2024. 7. 24.(수) ~ 2024. 9. 2.(월)
+                                                        신청대상: 경기북부 관내 요양병원, 및 노인의료복지시설</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="news_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>이주노동자 근로 사업장 화재안전수칙 홍보자료</strong>
+                                                        <span>2024-07-22</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>2024년 고양소방서 소방공무원 구급보조인력(대체인력) 추가 채용 공고</strong>
+                                                        <span>2024-07-10</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>우리집 대피계획 세우기 이벤트 심사 결과 공지드립니다.</strong>
+                                                        <span>2024-06-03</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>제1회 생활안전 포스터 공모전 심사결과(최종) 공지드립니다.</strong>
+                                                        <span>2024-05-23</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>2024년 고양소방서 의용소방대 신규대원 공개모집 공고</strong>
+                                                        <span>2024-01-04</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="more"><a href="#n">고시공고 자세히보기</a></div>
+                                    </div>
+                                    <div id="panel_03" role="tabpanel" aria-labelledby="tab_03">
+                                        <div class="news_head">
+                                            <div class="date">
+                                                <span>2024.09</span>
+                                                <strong>02</strong>
+                                            </div>
+                                            <div class="txt">
+                                                <a href="#n">
+                                                    <h3>고양소방서, 벌초 시기 벌쏘임 주의 당부</h3>
+                                                    <p>최근 최장 이상고온 및 열대야 현상으로 벌쏘임․벌집제거 출동이 증가하고 있어 고양소방서에서는 다가오는 9월 추석 기간 중 벌초 등 야외활동 벌 쏘임 사고에 대해 주의를 당부했다.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="news_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>제5회 경기북부 의용소방대 강의 경연대회… 생활안전 분야 ‘1위’ 쾌거</strong>
+                                                        <span>2024-09-02</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>2024년 상반기 베스트 친절민원공무원…소방사 양해준 선정</strong>
+                                                        <span>2024-09-02</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>익명의 시민 기부물품, 복지관 전달</strong>
+                                                        <span>2024-09-02</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>북한산 치매 실종자 수색… 소중한 생명 안전하게 구조</strong>
+                                                        <span>2024-09-02</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>익명의 시민 기부물품, 복지관 전달</strong>
+                                                        <span>2024-09-02</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="more"><a href="#n">보도자료 자세히보기</a></div>
+                                    </div>
+                                    <div id="panel_04" role="tabpanel" aria-labelledby="tab_04">
+                                        <div class="news_head">
+                                            <div class="date">
+                                                <span>2024.08</span>
+                                                <strong>16</strong>
+                                            </div>
+                                            <div class="txt">
+                                                <a href="#n">
+                                                    <h3>이천소방서 종합감사 안내</h3>
+                                                    <p>이천소방서 종합감사 안내
+                                                        감사기간 : 2024. 8. 26. ~ 9. 6. / 10일간 (사전조사 3일 포함)</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="news_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>2024년 소방시설관리업체 점검능력평가</strong>
+                                                        <span>2024-07-31</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>이주노동자 근로 사업장 화재대피요령 (파키스탄)</strong>
+                                                        <span>2024-08-01</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>2024년 시‧도 소방본부 소방장비 구매예산</strong>
+                                                        <span>2024-02-07</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>메타버스 119안전체험관 업데이트 오픈</strong>
+                                                        <span>2024-02-01</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#n">
+                                                        <strong>주택용소방시설증정 이벤트</strong>
+                                                        <span>2024-01-17</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="more"><a href="#n">공지사항 자세히보기</a></div>
+                                    </div>
+                                </div><!--tab_cnt-->
+                            </div>
+                        </div>
+                        <div class="popup_wrap">
+                            <div class="popup_box">
+                                <div class="pop_tit"><h2>Popup Zone</h2></div>
+                                <div class="ppzone">
+                                    <div class="swiper">
+                                        <ul class="swiper-wrapper">
+                                            <li class="swiper-slide pop1">
+                                                    <a href="#n"><div class="photo"><img src="images/main/ppzone1.png" alt="비상구폐쇄"></div></a>
+                                            </li>
+                                            <li class="swiper-slide pop2">
+                                                <a href="#n"><div class="photo"><img src="images/main/ppzone2.png" alt="비상구폐쇄"></div></a>
+                                            </li>
+                                            <li class="swiper-slide pop3">
+                                                <a href="#n"><div class="photo"><img src="images/main/ppzone3.png" alt="비상구폐쇄"></div></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="box_footer">
+                                        <div class="more"><a href="#n">전체보기</a></div>
+                                        <div class="btn_wrap">
+                                            <div class="paging"></div>
+                                            <button class="btn_prev">이전버튼</button>
+                                            <button class="btn_play">재생버튼</button>
+                                            <button class="btn_stop">일시정지</button>
+                                            <button class="btn_next">다음버튼</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--wrapper-->
+            </section>
+            <section class="safety">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>안전정보제공</h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="safety1"><a href="#n"><span>응급처치요령</span></a></li>
+                            <li class="safety2"><a href="#n"><span>화재사고<br>대처요령</span></a></li>
+                            <li class="safety3"><a href="#n"><span>산불사고<br>대처요령</span></a></li>
+                            <li class="safety4"><a href="#n"><span>소화기사용법</span></a></li>
+                            <li class="safety5"><a href="#n"><span>옥내소화전<br>사용법</span></a></li>
+                            <li class="safety6"><a href="#n"><span>완강기사용법</span></a></li>
+                            <li class="safety7"><a href="#n"><span>자연재난<br>행동요령</span></a></li>
+                            <li class="safety8"><a href="#n"><span>사회재난<br>행동요령</span></a></li>
+                            <li class="safety9"><a href="#n"><span>생활안전<br>행동요령</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="citizen">
+                <div class="wrapper">
+                    <div class="top_box">
+                        <div class="tit">
+                            <h2>소방 알림마당</h2>
+                        </div>
+                        <div class="btn_wrap">
+                            <div class="paging"></div>
+                            <button class="btn_prev">이전버튼</button>
+                            <button class="btn_play">재생버튼</button>
+                            <button class="btn_stop">일시정지</button>
+                            <button class="btn_next">다음버튼</button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="inner_box">
+                            <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                                    <li class="swiper-slide photo1">
+                                        <a href="#n">
+                                            <strong>소방SNS</strong>
+                                            <p>국민의 안전과 생명을 지키기 위해 최선을 다하겠습니다.</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide photo2">
+                                        <a href="#n">
+                                            <strong>소방월간뉴스</strong>
+                                            <p>경기도 소방학교 2024년 제78기 신임교육과정 입교식을 진행하였습니다.</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide photo3">
+                                        <a href="#n">
+                                            <strong>소방SNS</strong>
+                                            <p>10월, 차량 화재에 주의하세요.화재예방과 안전운행에 각별한 주의가 필요합니다.</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide photo4">
+                                        <a href="#n">
+                                            <strong>119현장포커스</strong>
+                                            <p>겨울철 해빙기 수난사고발생시 구조의특성상 가장 중요한 골든타임입니다.</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide photo5">
+                                        <a href="#n">
+                                            <strong>소방SNS</strong>
+                                            <p>경기119소방정신 공유사업 (어느 소방관의 질문)</p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide photo6">
+                                        <a href="#n">
+                                            <strong>소방월간뉴스</strong>
+                                            <p>한 달 동안 경기도에서 일어난 주요 사고 소식과 경기도소방의 소식을 전해드리겠습니다.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="media">
+                <div class="wrapper">
+                    <div class="media_box">
+                        <div class="promotion inner">
+                            <div class="top_box">
+                                <div class="tit">
+                                    <h2>홍보자료실</h2>
+                                </div>
+                                <div class="more"><a href="#n">더보기</a></div>
+                            </div>
+                            <div class="cnt">
+                                <a href="#n">
+                                    <span>2024년 추석 명절 홍보 이미지</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="webtoon  inner">
+                            <div class="top_box">
+                                <div class="tit">
+                                    <h2>소방웹툰</h2>
+                                </div>
+                                <div class="more"><a href="#n">더보기</a></div>
+                            </div>
+                            <div class="cnt">
+                                <a href="#n">
+                                    <span>생활속 소방안전 이야기 #화재시대피요령</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video  inner">
+                            <div class="top_box">
+                                <div class="tit">
+                                    <h2>재난안전교육영상</h2>
+                                </div>
+                                <div class="more"><a href="#n">더보기</a></div>
+                            </div>
+                            <div class="cnt">
+                                <a href="#n">
+                                    <span>재난시 고립상황 대처 생애주기별 안전교육</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sns">
+                <div class="wrapper">
+                    <div class="sns_box">
+                        <div class="tit">
+                            <h2><span>소방청</span></h2>
+                        </div>
+                        <div class="sns_list">
+                            <ul>
+                                <li class="facebook"><a href="#n">페이스북</a></li>
+                                <li class="kakao"><a href="#n">카카오스토리</a></li>
+                                <li class="twiter"><a href="#n">트위터</a></li>
+                                <li class="blog"><a href="#n">블로그</a></li>
+                                <li class="band"><a href="#n">카카오밴드</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="f_logo"><img src="images/main/logo_w.png" alt="경기고양소방서"></div>
+                <div class="f_info">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n"><span>이메일 수집거부</span></a></li>
+                            <li><a href="#n"><span>개인정보 처리방침</span></a></li>
+                            <li><a href="#n"><span>경기도청 바로가기</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="f_inner">
+                        <address>주소: 경기도 고양시 덕양구 고양대로1342</address>
+                        <span>TEL: 031-931-0119</span>
+                        <span>FAX: 031-280-8554</span>
+                    </div>
+                    <div class="copy">COPYRIGHTⓒ 2024 GYEONGGI PROVINCE. ALL RIGHTS RESERVED.</div>
+                </div>
+                <div class="family">
+                    <button class="family_open">전국소방본부 바로가기</button>
+                    <ul>
+                        <li><a href="#n">소방청</a></li>
+                        <li><a href="#n">중앙119구조본부</a></li>
+                        <li><a href="#n">세종특별자치시소방본부</a></li>
+                        <li><a href="#n">경기도소방재난본부</a></li>
+                        <li><a href="#n">경기도북부소방재난본부</a></li>
+                        <li><a href="#n">강원도소방본부</a></li>
+                        <li><a href="#n">충청북도소방본부</a></li>
+                        <li><a href="#n">충청남도소방본부</a></li>
+                        <li><a href="#n">전북소방본부</a></li>
+                        <li><a href="#n">전남소방본부</a></li>
+                        <li><a href="#n">경상북도소방본부</a></li>
+                        <li><a href="#n">경상남도소방본부</a></li>
+                        <li><a href="#n">창원소방본부</a></li>
+                        <li><a href="#n">제주소방안전본부</a></li>
+                    </ul>
+                    <button class="family_close">전국소방본부 바로가기</button>
+                </div>
+            </div>
+        </footer>
+        <aside class="top_btn">
+            <div class="top"><button><span>TOP</span></button></div>
+        </aside>
+    </div>
+</body>
+</html>

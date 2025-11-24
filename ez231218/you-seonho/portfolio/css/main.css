@@ -1,0 +1,716 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+/* 파일명 : main.css
+   작성자 : 유선호
+   작성일 : 2024.04.15
+   설  명 : 메인페이지에만 들어가는 스타일을 저장 (header와 footer 빼고 전부 다) */
+
+.swiperV {
+   height: 100vh;
+}
+.swiper-slide {
+   height: 100vh;
+   overflow: hidden;
+}
+
+.swiper-slide-active .home h2 {
+   animation-name: right_ani;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1; 
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .home p {
+   animation-name: right_ani;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .swiper-slide-active .portfolio1 strong {
+   animation-name: in_ani;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .swiper-slide-active .portfolio1 span,
+.swiper-slide-active .swiper-slide-active .portfolio1 p,
+.swiper-slide-active .swiper-slide-active .portfolio1 a {
+   animation-name: left_ani;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .swiper-slide-active .portfolio2 strong {
+   animation-name: in_ani;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .swiper-slide-active .portfolio2 span,
+.swiper-slide-active .swiper-slide-active .portfolio2 p,
+.swiper-slide-active .swiper-slide-active .portfolio2 a {
+   animation-name: left_ani;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .swiper-slide-active .portfolio3 strong {
+   animation-name: in_ani;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .swiper-slide-active .portfolio3 span,
+.swiper-slide-active .swiper-slide-active .portfolio3 p,
+.swiper-slide-active .swiper-slide-active .portfolio3 a {
+   animation-name: left_ani;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+.swiper-slide-active .contact span {
+   animation-name: in_ani;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+@keyframes right_ani {
+   0% { transform: translate(-50px, 0); opacity: 0; }
+   100% { transform: translate(0, 0); opacity: 1; }
+}
+@keyframes left_ani {
+   0% { transform: translate(50px, 0); opacity: 0; }
+   100% { transform: translate(0, 0); opacity: 1; }
+}
+@keyframes in_ani {
+   0% { transform: translate(0, 0); opacity: 0; }
+   100% { transform: translate(0, 0); opacity: 1; }
+}
+
+.home {
+   position: relative;
+}
+.home .tit {
+   position: absolute;
+   left: 330px;  
+   top: 325px;
+   z-index: 10;
+   color: #fff;
+   font-size: 50px;
+   text-align: left;
+}
+.home .tit h2 {
+   font-size: 30px;
+   margin-bottom: 40px;
+}
+.home .tit span {
+   font-weight: 700;
+}
+.home,
+.home .photo {
+   height: 100vh; /* 팝업의 높이제어 */
+}
+.home .photo img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.about {
+   height: 100vh;
+   background-color: #DFD7CF;
+}
+.about .wrapper {
+   display: flex;
+   height: 900px;
+}
+.about .left {
+   display: block;
+   width: 460px;
+   height: auto;
+   margin: 160px 0 0 250px;
+}
+.about .tit {
+   position: relative;
+}
+.about .tit h2 {
+   position: absolute;
+   top: -60px;
+   left: -90px;
+   font-size: 100px;
+   font-weight: 700;
+   color: #ededed;
+}
+.about .tit strong {
+   font-size: 50px;
+   position: relative;
+   z-index: 10;
+}
+.about .tit p.pick {
+   margin: 50px 0 30px 0;
+}
+.about .text p {
+   margin-bottom: 5px;
+   color: #3d3d3d;
+}
+.about .text span {
+   font-size: 25px;
+   margin: 20px 0 10px 0;
+   display: inline-block;
+}
+.about .right {
+   margin: 270px 0 0 321px;
+   width: 315px;
+   height: 405px;
+}
+.about .progress {
+   display: flex;
+}
+.about .progress li {
+   position: relative;
+   margin: 0 15px;
+}
+.about .progress li .graph {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 70px;
+   height: 70px;
+   border: 1px solid #3d3d3d;
+   border-radius: 50%;
+   font-size: 15px;
+}
+.about .progress li .name {
+   display: block;
+   text-align: center;
+   font-size: 17px;
+}
+.about .progress li .last{
+   display: block;
+   text-align: center;
+   font-size: 17px;
+   margin-left: -22px;
+}
+.about .progress li svg {
+   position: absolute;
+   left: -7px;
+   top: 15px;
+   stroke-dasharray: 500;
+   stroke-dashoffset: 500;
+}
+.swiper-slide-active .about .progress li svg {
+   animation-name: circle0;
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
+   animation-timing-function: 1;
+}
+.about .progress li svg path {
+   fill: transparent;stroke:url(#SVGID_1_);stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;
+}
+@keyframes circle0 {
+   0% { stroke-dashoffset: 500; }
+   100% { stroke-dashoffset: 0; }
+ }
+
+.portfoliolink {
+   cursor: url("data:image/svg+xml,%3Csvg width='75' height='38' viewBox='0 0 75 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.45 32.3007C19.1 32.3007 17.8417 32.0841 16.675 31.6507C15.525 31.2007 14.525 30.5674 13.675 29.7507C12.825 28.9341 12.1583 27.9757 11.675 26.8757C11.2083 25.7757 10.975 24.5674 10.975 23.2507C10.975 21.9341 11.2083 20.7257 11.675 19.6257C12.1583 18.5257 12.825 17.5674 13.675 16.7507C14.5417 15.9341 15.55 15.3091 16.7 14.8757C17.85 14.4257 19.1083 14.2007 20.475 14.2007C21.9917 14.2007 23.3583 14.4674 24.575 15.0007C25.8083 15.5174 26.8417 16.2841 27.675 17.3007L25.075 19.7007C24.475 19.0174 23.8083 18.5091 23.075 18.1757C22.3417 17.8257 21.5417 17.6507 20.675 17.6507C19.8583 17.6507 19.1083 17.7841 18.425 18.0507C17.7417 18.3174 17.15 18.7007 16.65 19.2007C16.15 19.7007 15.7583 20.2924 15.475 20.9757C15.2083 21.6591 15.075 22.4174 15.075 23.2507C15.075 24.0841 15.2083 24.8424 15.475 25.5257C15.7583 26.2091 16.15 26.8007 16.65 27.3007C17.15 27.8007 17.7417 28.1841 18.425 28.4507C19.1083 28.7174 19.8583 28.8507 20.675 28.8507C21.5417 28.8507 22.3417 28.6841 23.075 28.3507C23.8083 28.0007 24.475 27.4757 25.075 26.7757L27.675 29.1757C26.8417 30.1924 25.8083 30.9674 24.575 31.5007C23.3583 32.0341 21.9833 32.3007 20.45 32.3007ZM30.135 32.0007V13.4507H34.035V32.0007H30.135ZM37.6545 32.0007V18.5507H41.5545V32.0007H37.6545ZM39.6045 16.6757C38.8878 16.6757 38.3045 16.4674 37.8545 16.0507C37.4045 15.6341 37.1795 15.1174 37.1795 14.5007C37.1795 13.8841 37.4045 13.3674 37.8545 12.9507C38.3045 12.5341 38.8878 12.3257 39.6045 12.3257C40.3212 12.3257 40.9045 12.5257 41.3545 12.9257C41.8045 13.3091 42.0295 13.8091 42.0295 14.4257C42.0295 15.0757 41.8045 15.6174 41.3545 16.0507C40.9212 16.4674 40.3378 16.6757 39.6045 16.6757ZM51.674 32.2007C50.224 32.2007 48.9324 31.9091 47.799 31.3257C46.6657 30.7257 45.774 29.9007 45.124 28.8507C44.4907 27.8007 44.174 26.6091 44.174 25.2757C44.174 23.9257 44.4907 22.7341 45.124 21.7007C45.774 20.6507 46.6657 19.8341 47.799 19.2507C48.9324 18.6507 50.224 18.3507 51.674 18.3507C53.0907 18.3507 54.324 18.6507 55.374 19.2507C56.424 19.8341 57.199 20.6757 57.699 21.7757L54.674 23.4007C54.324 22.7674 53.8824 22.3007 53.349 22.0007C52.8324 21.7007 52.2657 21.5507 51.649 21.5507C50.9824 21.5507 50.3824 21.7007 49.849 22.0007C49.3157 22.3007 48.8907 22.7257 48.574 23.2757C48.274 23.8257 48.124 24.4924 48.124 25.2757C48.124 26.0591 48.274 26.7257 48.574 27.2757C48.8907 27.8257 49.3157 28.2507 49.849 28.5507C50.3824 28.8507 50.9824 29.0007 51.649 29.0007C52.2657 29.0007 52.8324 28.8591 53.349 28.5757C53.8824 28.2757 54.324 27.8007 54.674 27.1507L57.699 28.8007C57.199 29.8841 56.424 30.7257 55.374 31.3257C54.324 31.9091 53.0907 32.2007 51.674 32.2007ZM63.0963 29.2507L63.1963 24.5007L69.4713 18.5507H74.1213L68.0963 24.6757L66.0713 26.3257L63.0963 29.2507ZM59.8713 32.0007V13.4507H63.7713V32.0007H59.8713ZM69.8963 32.0007L65.3463 26.3507L67.7963 23.3257L74.6213 32.0007H69.8963Z' fill='white'/%3E%3Cpath d='M4.59766 3.5087L13.8423 7.36662L5.87891 13.4438L4.59766 3.5087Z' fill='white'/%3E%3C/svg%3E"), auto;
+   /*cursor: url(../images/common/link_ico2.png), pointer;*/
+}
+
+.portfolio1 {
+   height: 100vh;
+   background: url(../images/main/portfolio1.png) no-repeat center center / cover;
+}
+.portfolio1 .wrapper {
+   height: 900px;
+}
+.portfolio1 .inner {
+   display: flex;
+   justify-content: space-between;
+   height: auto;
+   position: relative;
+}
+.portfolio1 .portfoliolink {
+   position: absolute;
+   left: 35%;
+   top: 10%;
+   width: 40%;
+   height: 80%;
+}
+.portfolio1 .Click {
+   position: absolute;
+   top: 10%;
+   font-size: 40px;
+   color: #fff;
+}
+.portfolio1 .portfoliolink {
+   position: absolute;
+   left: 35%;
+   top: 10%;
+   width: 40%;
+   height: 80%;
+}
+.portfolio1 .left {
+   margin: 300px 0 0 100px;
+   color: #3d3d3d;
+}
+.portfolio1 .right {
+   margin: 200px 0 0 0;
+}
+.portfolio1 .tit {
+   font-size: 50px;
+   position: relative;
+   margin-bottom: 40px;
+}
+.portfolio1 .tit h2 {
+   position: absolute;
+   top: -60px;
+   left: -90px;
+   font-size: 100px;
+   font-weight: 700;
+   color: #ededed;
+}
+.portfolio1 .tit strong {
+   position: relative;
+   z-index: 10;
+}
+.portfolio1 .right .text {
+   padding-left: 109px;
+}
+.portfolio1 .right .text span {
+   font-size: 25px;
+   padding: 12px;
+   position: relative;
+   display: block;
+}
+.portfolio1 .right .text span::before {
+   position: absolute;
+   bottom: 12px;
+   left: 0;
+   border: 1px solid rgba(57, 77, 117, 0);
+   background-color: rgba(57, 77, 117, 0.2);
+   content: "";
+}
+.portfolio1 .right .text span.Overview::before {
+   width: 142px;
+   height: 12px;
+}
+.portfolio1 .right .text span.Participation::before {
+   width: 185px;
+   height: 12px;
+}
+.portfolio1 .right .text span.Font::before {
+   width: 85px;
+   height: 12px;
+}
+.portfolio1 .right .text span.Color::before {
+   width: 157px;
+   height: 12px;
+}
+.portfolio1 .right .text p {
+   color: #3d3d3d;
+}
+.portfolio1 .right .text .list {
+   display: flex;
+}
+.portfolio1 .right .text .list p {
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 100%;
+   width: 37px;
+   height: 37px;
+   font-size: 0;
+   line-height: 0;
+   margin-right: 20px;
+}
+.portfolio1 .right .text .list p.Color1 {
+   border-color: #7C6C5D;
+   background-color: #7C6C5D;
+}
+.portfolio1 .right .text .list p.Color2 {
+   border-color: #1D1D1D;
+   background-color: #1D1D1D;
+}
+.portfolio1 .right .text .list p.Color3 {
+   border-color: #fff;
+   background-color: #fff;
+}
+.portfolio1 .web a {
+   border: 1px solid #3d3d3d;
+   border-radius: 20px;
+   width: 185px;
+   line-height: 30px;
+   margin: 30px 0 0 110px;
+   display: block;
+   text-align: center;
+}
+.portfolio1 .web a:hover {
+   background-color: #3d3d3d;
+   color: #fff;
+}
+
+.portfolio2 {
+   height: 100vh;
+   background: url(../images/main/portfolio2.png) no-repeat center center / cover;
+}
+.portfolio2 .inner {
+   display: flex;
+   height: 900px;
+   position: absolute;
+}
+.portfolio2 .portfoliolink {
+   position: absolute;
+   left: 10%;
+   top: 40%;
+   width: 30%;
+   height: 30%;
+}
+.portfolio2 .portfoliolink {
+   position: absolute;
+   left: 10%;
+   top: 20%;
+   width: 70%;
+   height: 60%;
+}
+.portfolio2 .left {
+   margin: 160px 0 0 0;
+}
+.portfolio2 .tit {
+   font-size: 50px;
+   position: relative;
+   margin-bottom: 5px;
+}
+.portfolio2 .tit h2 {
+   position: absolute;
+   top: -60px;
+   left: 0px;
+   font-size: 100px;
+   font-weight: 700;
+   color: #ededed;
+}
+.portfolio2 .tit strong {
+   position: relative;
+   z-index: 10;
+   padding-left: 90px;
+}
+.portfolio2 .left .text span {
+   font-size: 25px;
+   padding: 12px;
+   position: relative;
+   display: block;
+   width: 200px;
+}
+.portfolio2 .left .text span::before {
+   position: absolute;
+   bottom: 12px;
+   left: 0;
+   border: 1px solid rgba(45, 70, 43, 0);
+   background-color: rgba(45, 70, 43, 0.2);
+   content: "";
+}
+.portfolio2 .left .text span.Overview::before {
+   width: 142px;
+   height: 12px;
+}
+.portfolio2 .left .text span.Participation::before {
+   width: 185px;
+   height: 12px;
+}
+.portfolio2 .left .text span.Font::before {
+   width: 85px;
+   height: 12px;
+}
+.portfolio2 .left .text span.Color::before {
+   width: 157px;
+   height: 12px;
+}
+.portfolio2 .left .text p {
+   color: #3d3d3d;
+}
+.portfolio2 .left .text p.p2,
+.portfolio2 .left .text p.p3 {
+   width: 200px;
+}
+.portfolio2 .left .text .list {
+   display: flex;
+}
+.portfolio2 .left .text .list p {
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 100%;
+   width: 37px;
+   height: 37px;
+   font-size: 0;
+   line-height: 0;
+   margin-right: 20px;
+}
+.portfolio2 .left .text .list p.Color1 {
+   border-color: #313131;
+   background-color: #313131;
+}
+.portfolio2 .left .text .list p.Color2 {
+   border-color: #FAFAFA;
+   background-color: #FAFAFA;
+}
+.portfolio2 .web a {
+   border: 1px solid #3d3d3d;
+   border-radius: 20px;
+   width: 185px;
+   line-height: 30px;
+   margin-top: 30px;
+   display: block;
+   text-align: center;
+}
+.portfolio2 .web a:hover {
+   background-color: #3d3d3d;
+   color: #fff;
+}
+.portfolio2 .right {
+   color: #3d3d3d;
+}
+.portfolio2 .right p.info {
+   margin: 150px 0 0 725px;
+}
+.portfolio2 .right p.news {
+   margin: 455px 0 0 340px;
+}
+.portfolio2 .right p.nav {
+   margin: -30px 0 0 880px;
+}
+
+.portfolio3 {
+   height: 100vh;
+   background: url(../images/main/portfolio3.png) no-repeat center center / cover;
+}
+.portfolio3 .inner {
+   display: flex;
+   height: 900px;
+   position: absolute;
+}
+.portfolio3 .portfoliolink {
+   position: absolute;
+   left: 20%;
+   top: 20%;
+   width: 62%;
+   height: 74%;
+}
+.portfolio3 .left {
+   margin: 160px 0 0 0;
+}
+.portfolio3 .tit {
+   font-size: 50px;
+   position: relative;
+   margin-bottom: 5px;
+}
+.portfolio3 .tit h2 {
+   position: absolute;
+   top: -60px;
+   left: 0px;
+   font-size: 100px;
+   font-weight: 700;
+   color: #ededed;
+}
+.portfolio3 .tit strong {
+   position: relative;
+   z-index: 10;
+   padding-left: 90px;
+}
+.portfolio3 .left .text span {
+   font-size: 25px;
+   padding: 12px;
+   position: relative;
+   display: block;
+   width: 200px;
+}
+.portfolio3 .left .text span::before {
+   position: absolute;
+   bottom: 12px;
+   left: 0;
+   border: 1px solid rgba(45, 70, 43, 0);
+   background-color: rgba(45, 70, 43, 0.2);
+   content: "";
+}
+.portfolio3 .left .text span.Overview::before {
+   width: 142px;
+   height: 12px;
+}
+.portfolio3 .left .text span.Participation::before {
+   width: 185px;
+   height: 12px;
+}
+.portfolio3 .left .text span.Font::before {
+   width: 85px;
+   height: 12px;
+}
+.portfolio3 .left .text span.Color::before {
+   width: 157px;
+   height: 12px;
+}
+.portfolio3 .left .text p {
+   color: #3d3d3d;
+}
+.portfolio3 .left .text p.p1 {
+   width: 400px;
+}
+.portfolio3 .left .text .list {
+   display: flex;
+}
+.portfolio3 .left .text .list p {
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 100%;
+   width: 37px;
+   height: 37px;
+   font-size: 0;
+   line-height: 0;
+   margin-right: 20px;
+}
+.portfolio3 .left .text .list p.Color1 {
+   border-color: #911826;
+   background-color: #911826;
+}
+.portfolio3 .left .text .list p.Color2 {
+   border-color: #241C15;
+   background-color: #241C15;
+}
+.portfolio3 .web a {
+   border: 1px solid #3d3d3d;
+   border-radius: 20px;
+   width: 185px;
+   line-height: 30px;
+   margin-top: 30px;
+   display: block;
+   text-align: center;
+}
+.portfolio3 .web a:hover {
+   background-color: #3d3d3d;
+   color: #fff;
+}
+.portfolio3 .right {
+   color: #3d3d3d;
+}
+.portfolio3 .right p.main {
+   margin: 250px 0 0 960px;
+}
+.portfolio3 .right p.info {
+   margin: 325px 0 0 1000px;
+}
+
+.contact {
+   height: 100vh;
+   background: url(../images/common/contact.png) no-repeat center center / cover;
+}
+.contact .wrapper {
+   height: 900px;
+}
+.contact .tit {
+   font-size: 50px;
+   position: relative;
+   padding: 320px 0 48px 0;
+   color: #fff;
+   font-weight: 700;
+}
+.contact .tit h2 {
+   position: absolute;
+   top: 260px;
+   left: 0px;
+   font-size: 100px;
+   font-weight: 700;
+   color: rgba(237, 237, 237, 0.8);
+}
+.contact .tit strong {
+   position: relative;
+   z-index: 10;
+   padding-left: 90px;
+}
+.contact .text {
+   text-align: center;
+   color: #fff;
+}
+.contact .text span {
+   font-size: 50px;
+   margin-bottom: 68px;
+   display: block;
+}
+.contact .text span strong {
+   font-weight: 700;
+}
+.contact .text p {
+   font-size: 35px;
+   margin-bottom: 5px;
+}
+.page {
+	position: fixed;
+   right: 20px;
+	bottom: 40%;
+	z-index: 9999;
+   color: #fff;
+   text-align: right;
+}
+.page ul li a {
+   display: block;
+   margin-bottom: 20px;
+   padding-right: 40px;
+}
+.page ul li.on a {
+   font-weight: 700;
+}
+.page ul li a:hover {
+   font-weight: 700;
+}
+.page ul li a span {
+   position: relative;
+}
+.page ul li a span::after {
+   position: absolute;
+   top: 4px;
+   right: -30px;
+   border-radius: 100%;
+   width: 10px;
+   height: 10px;
+   background-color: rgba(255, 255, 255, 0.5);
+   content: "";
+}
+
+
+
+
+
+
+
+body #fp-nav.fp-right {
+   right: 100px;
+}
+body #fp-nav ul li .fp-tooltip {
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 15px;
+   font-family: inherit; /* 상속 */
+   opacity: 1;
+   width: auto;
+   top: 3px;
+}
+body #fp-nav ul li a span, .fp-slidesNav ul li a span {
+   height: 15px;
+   width: 15px;
+   background: rgba(255, 255, 255, 0.5);
+}
+body #fp-nav ul li a.active span,
+body .fp-slidesNav ul li a.active span,
+body #fp-nav ul li:hover a.active span,
+body .fp-slidesNav ul li:hover a.active span {
+   height: 15px;
+   width: 15px;
+   background-color: #fff;
+   margin: -2px 0 0 -2px;
+}
+body #fp-nav ul li, body .fp-slidesNav ul li {
+   margin: 20px 0;
+}
+body #fp-nav ul li:hover .fp-tooltip, body #fp-nav.fp-show-active a.active + .fp-tooltip {
+   font-weight: 700;
+   color: #fff;
+}

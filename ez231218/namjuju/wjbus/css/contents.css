@@ -1,0 +1,218 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+.cts_greeting {
+    margin: 134px 0 100px 0;
+    position: relative;
+}
+.cts_greeting::before {
+    position: absolute;
+    right: -13px;
+    top: 5px;
+    background-color: #e9e9e9;
+    width: calc(50% + -267px);
+    height: 58%;
+    border-radius: 170px 0 0 170px;
+    content: "";
+}
+.cts_greeting .txt {
+    height: 568px;
+}
+.cts_greeting .txt h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+.cts_greeting .txt h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 60px 0;
+}
+.cts_greeting .txt h3 span {
+    font-weight: 700;
+}
+.cts_greeting p {
+    margin: 0 415px 0 0;
+    line-height: 1.6;
+}
+.cts_greeting p strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d1d1d;
+    line-height: 2;
+}
+.cts_greeting p strong span {
+    color: #f96623;
+}
+.cts_greeting .ceo {
+    position: absolute;
+    left: calc(50% + 300px);
+    top: 19px;
+}
+.cts_greeting .ceo .photo {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.cts_greeting .ceo .photo img {
+    position: relative;
+    width: 300px
+}
+.cts_greeting .ceo .sign {
+    display: flex;
+    align-items: flex-start;
+    margin: 37px 0 0 0;
+    justify-content: center;
+}
+.cts_greeting .ceo .sign strong {
+    display: block;
+    margin: 10px 30px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+@media screen and (max-width:1400px){
+    .cts_greeting p {
+        margin: 0 500px 0 0;
+    }
+    .cts_greeting .ceo {
+        left: calc(50% + 186px);
+        top: 60px;
+    }
+    .cts_greeting {
+        margin: 134px 0 100px 0;
+        position: relative;
+    }
+    .cts_greeting .txt {
+        height: 700px;
+    }
+    .cts_greeting::before {
+        width: calc(50% + -151px);
+        height: 48%;
+        top: 43px;
+    }
+    .cts_greeting .ceo .sign {
+        margin: 48px 0 0 0;
+    }
+}
+@media screen and (max-width:1024px){
+    .cts_greeting .txt h2 {
+        font-size: 23px;
+    }
+    .cts_greeting .txt h3 {
+        font-size: 20px;
+        margin: 0 0 49px 0;
+    }
+    .cts_greeting p {
+        margin: 0 40vw 0 0;
+    }
+    .cts_greeting .ceo .photo img {
+        width: 238px;
+    }
+    .cts_greeting .ceo {
+        left: calc(50% + 123px);
+        top: 162px;
+    }
+    .cts_greeting {
+        margin: 80px 0 78px 0;
+    }
+    .cts_greeting .txt {
+        height: 633px;
+    }
+    .cts_greeting p strong {
+        font-size: 17px;
+    }
+    .cts_greeting::before {
+        width: calc(50% + -92px);
+        height: 43%;
+        top: 145px;
+    }
+}
+@media screen and (max-width:768px) {
+    .cts_greeting p {
+        margin: 0;
+    }
+    .cts_greeting .ceo {
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 122px;
+    }
+    .cts_greeting .txt {
+        height: 100%;
+    }
+    .cts_greeting .txt p {
+        margin-top: 435px;
+        text-align: center;
+    }
+    .cts_greeting .ceo .sign strong {
+        margin: 10px 30px 0 0;
+        font-size: 17px;
+    }
+    .cts_greeting .ceo .sign strong {
+        margin: 18px 25px 0 0;
+        font-size: 17px;
+    }
+    .cts_greeting .txt h2 {
+        font-size: 17px;
+        text-align: center;
+    }
+    .cts_greeting .txt h3 {
+        font-size: 15px;
+        margin: 0 0 49px 0;
+        text-align: center;
+    }
+    .cts_greeting::before {
+        width: calc(50% + 153px);
+        height: 276px;
+        top: 103px;
+    }
+    .cts_greeting .ceo .sign {
+        margin: 20px 0 0 0;
+    }
+    
+}
+
+.cts_laborgreeting .inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 130px 0;
+}
+.cts_laborgreeting .inner .labor_txt {
+    width: 70%;
+
+}
+.cts_laborgreeting .inner .labor_txt h2 {
+    color: #29754c;
+    font-size: 20px;
+    font-weight: 500;
+}
+.cts_laborgreeting .inner .labor_txt p {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.cts_laborgreeting .inner .labor_txt p span {
+    font-weight: 500;
+    line-height: 2;
+}
+@media screen and (max-width:768px) {
+    .cts_laborgreeting .inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 70px 0 100px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cts_laborgreeting .inner .labor_txt h2 {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .cts_laborgreeting .inner .labor_txt {
+        width: 100%;
+    }
+}

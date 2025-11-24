@@ -1,0 +1,137 @@
+@charset "utf-8"; /* 이 CSS 문서는 UTF-8양식으로 인코딩 되어 있습니다. */
+/* 본고딕 CND방식으로 사용할때 폰트를 정의하는 font-face가 입력된 css를 import 불러다가
+   사용하는 방식을 많이 씀
+   이 방식은 간단하지만 문제가 google이 서비스를 중단하면 사용 못함
+   font 파일을 저장해서 사용하는 방식을 씀 */
+/* 영문 웹폰트 */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* 한글 웹폰트 */
+/* @font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Charmonman';
+    src: url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Charmonman';
+    src: url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+*::selection {
+    background-color: #1d1d1d;
+    color: #fff;
+}
+*::-moz-selection { /* 호환성을 위한 코드 */
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+/* 영문, 숫자는 영문 폰트를 사용하고 한글만 한국어 폰트를 사용하고 싶을때
+   (단 영문 폰트로 선택한 폰트는 한국어가 지원되는 폰트면 안됨)
+   둘 다 폰트파일을 불러오고 (import, font-face) body에서 폰트를 정의할때 무조건 영문폰트 먼저 선언
+   영어, 숫자만 영문폰트 적용되고 한글은 지원되지 않기때문에 다음에 선언된 한글 폰트가 적용됨
+   font-family에 여러폰트를 쓰는 것은 앞에 폰트가 지원안되면 다음폰트, 그게 또 안되면 다음폰트... 무한반복 */
+html, body {
+    /* 만약에 내가 정의한 웹폰트가 적용안되면, 맑은고딕(window용) 또는 애플고딕(맥용) 사용 */
+    font-family: 'Noto Sans KR', 'Gowun Batang', 'Charmonman', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Helvetica', 'Apple SD Gothic Neo', '애플 SD 산돌고딕 Neo', sans-serif; /* 서체 serif 명조 sans-serif 고딕 */
+    font-size: 15px; /* 크기 */
+    background-color: #fff;
+    color: #1d1d1d; /* 글자색상 */
+    font-weight: 400; /* 글자의 두께 */
+    line-height: 1.2; /* auto */
+    /* word-break: keep-all; */
+    word-wrap: break-word; /* 만약 단어가 엄청 길면 줄바꿈 */
+}
+.wrapper { /* 홈페이지의 넓이를 제한하고 가운데 정렬 */
+    width: 1280px; /* 홈페이지 넓이 */
+    margin: 0 auto;  /* 가운데 정렬 */
+}
+#wrap { /* id="wrap"에 적용되는 스타일 */
+    width: 100%;
+    /* PC형에서 wrapper사이즈보다 브라우저 넓이가 작을때
+       가로스크롤바가 생성되는데 오른쪽에 background가 
+       짤리는 현상이 생김.  
+       가로스크롤바가 생성되었을때도 홈페이지를 정상적으로 
+       서비스 하기 위해서 최소 넓이를 입력 */
+    overflow: hidden;
+    /* 전체화면 밖에 나간영역 숨김 */
+}
+
+/* wrapper의 사이즈 1280 + 40px(좌여여백) = 1320 */
+@media screen and (max-width:1320px){
+    .wrapper { /* 홈페이지의 넓이를 제한하고 가운데 정렬 */
+        width: auto; 
+        /* 홈페이지 넓이를 제한하면 안됨
+           디바이스의 넓이에 맞춰서 꽊차게 나와야 하기 때문에
+           그 안쪽으로 좌우 여백이 20px씩 들어가게 함 */
+        margin: 0 20px;  /* 가운데 정렬 */
+    }
+} /* media */
+@media screen and (max-width:1024px){
+    html, body {
+        font-size: 15px; /* 크기 */ 
+    }
+}
+@media screen and (max-width:768px){
+    html, body {
+        font-size: 13px; /* 크기 */ 
+    }
+}
+
+.skipnav {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1000000000000;
+    width: 100%;
+}
+.skipnav a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #FE6D46;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+/* 속성선택자
+ a태그중에서 href="#gnb"인  a 태그의 스타일 */
+.skipnav a[href="#gnb"] {
+    background-color: #FFAF37;
+}
+.skipnav a:focus {
+    top: 100px;
+}
+
+/* 파일명 : common.css
+   작성자 : 유선호
+   작성일 : 2024.03.20
+   속  성 : 홈페이지 전체에 공통으로 적용되는 스타일을 저장
+            문자스타일 등의 기본스타일만 저장 */

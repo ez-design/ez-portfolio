@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap);
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+    font-display: swap;
+} 

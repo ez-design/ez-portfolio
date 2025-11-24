@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="js/main.js"></script>
+    <title>세븐일레븐</title>
+</head>
+<body>
+    <div class="skipnav">
+        <a href="#container">본문 바로가기</a>
+        <a href="#gnb">대메뉴 바로가기</a>
+    </div>
+    <header>
+        <div class="head_top">
+            <h1 class="logo"><a href="index.html">7-ELEVEN</a></h1>
+            <div class="tnb1">
+                <ul>
+                    <li><a href="#n">창업안내</a></li>
+                    <li><a href="#n">입점상담</a></li>
+                </ul>
+            </div>
+            <div class="tnb2">
+                <ul>
+                    <li><a href="#n">로그인</a></li>
+                    <li><a href="#n">문의하기</a></li>
+                    <li><a href="#n">고객의 소리</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head_sub">
+            <div class="wrapper">
+                <nav id="gnb" class="gnb">
+                    <button type="button" class="gnb_open">메뉴열기</button>
+                    <div class="gnb_wrap">
+                        <ul class="depth1">
+                            <li>
+                                <a href="#n"><span>이벤트</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n">진행중인 이벤트</a></li>
+                                    <li><a href="#n">완료된 이벤트</a></li>
+                                    <li><a href="#n">어린이 미술대회</a></li>
+                                    <li><a href="#n">온라인 갤러리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>상품</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n">Fresh Food</a></li>
+                                    <li><a href="#n">세븐카페</a></li>
+                                    <li><a href="#n">이달의 증정할인</a></li>
+                                    <li><a href="#n">PB상품/신상품</a></li>
+                                    <li><a href="#n">도시락 전단지</a></li>
+                                    <li><a href="#n">서비스안내</a></li>
+                                    <li><a href="#n">스마트픽</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>7-ELEVEN 소개</span></a>
+                                <ul class="depth2">
+                                    <li><a href="#n">회사소개</a></li>
+                                    <li><a href="#n">ESG경영</a></li>
+                                    <li><a href="#n">윤리경영</a></li>
+                                    <li><a href="#n">환경경영</a></li>
+                                    <li><a href="#n">안전·보건경영</a></li>
+                                    <li><a href="#n">채용안내</a></li>
+                                    <li><a href="#n">고객의 소리</a></li>
+                                    <li><a href="#n">공지사항</a></li>
+
+                                </ul>
+                            </li> 
+                            <li><a href="#n"><span>새로운소식</span></a></li>
+                            <li><a href="#n"><span>매장찾기</span></a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="gnb_close">메뉴닫기</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="container" class="container">
+        <div id="wrap">
+            <section class="visual">
+                <div class="scroll">
+                    <h2>scroll</h2>
+                </div>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#n"> <img src="images/visual01.png" alt="맛으로 무장해제 맛장우도시락 맛장우시리즈 30%할인"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#n"> <img src="images/visual02.png" alt="맛으로 무장해제 맛장우도시락 맛장우시리즈 30%할인"></a>
+                        </li>
+                    </ul>
+                    <div class="visual_btn">
+                        <div class="ctrl_btn">
+                            <div class="auto">
+                                <button type="button" class="play">재생</button>
+                                <button type="button" class="stop">일시정지</button>
+                                <div class="circle_wrap" data-slide="slide0">
+                                    <svg class="circle1" viewbox="0 0 100 100">
+                                        <circle cx="0" cy="0" r="0" fill="none" />
+                                        <path id="progress" stroke-width="8" stroke="#555" fill="none" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>
+                                    </svg>
+                                    <svg class="circle2" viewbox="0 0 100 100">
+                                        <circle cx="0" cy="0" r="0" fill="none" />
+                                        <path id="progress01" stroke-width="8" stroke="#555" fill="none" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <button type="button" class="prev">이전팝업보기</button>
+                            <div class="paging"></div>
+                            <button type="button" class="next">다음팝업보기</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="event">
+                <div class="wrapper">
+                    <h2>이달의 행사 상품</h2>
+                    <div class="more"><a href="#n">전체보기</a></div>
+                    <ul class="depth3">
+                        <li class="active">
+                            <button type="button">1+1</button>
+                            <div class="swiper swiper1">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one01.png" alt="제품이미지"></span><span class="one">1+1</span><strong>다논)액티비아업플레인210ml</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one02.png" alt="제품이미지"></span><span class="one">1+1</span><strong>다논)액티비아업딸기210ml</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one03.png" alt="제품이미지"></span><span class="one">1+1</span><strong>다논)액티비아업복숭아210ml</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one04.png" alt="제품이미지"></span><span class="one">1+1</span><strong>빙그레)요플레프로틴플레인210ml</strong><span class="won">3,800원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one05.png" alt="제품이미지"></span><span class="one">1+1</span><strong>빙그레)요플레프로틴딸기바나나</strong><span class="won">3,800원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one06.png" alt="제품이미지"></span><span class="one">1+1</span><strong>풀무원)요거톡스타볼132g</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one07.png" alt="제품이미지"></span><span class="one">1+1</span><strong>풀무원)초코그래놀라129g</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one08.png" alt="제품이미지"></span><span class="one">1+1</span><strong>PB)오구딸기타임200ml</strong><span class="won">1,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one09.png" alt="제품이미지"></span><span class="one">1+1</span><strong>PB)오구초코타임200ml</strong><span class="won">1,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/one10.png" alt="제품이미지"></span><span class="one">1+1</span><strong>PB)담음사과주스250ml</strong><span class="won">1,800원</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="pagination"></div>
+                        </li>
+                        <li>
+                            <button type="button">2+1</button>
+                            <div class="swiper swiper2">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two01.png" alt="제품이미지"></span><span class="two">2+1</span><strong>삼립)불고기치즈부리또115g</strong><span class="won">3,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two02.png" alt="제품이미지"></span><span class="two">2+1</span><strong>삼립)슈퍼슈프림치즈부리또120g</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two03.png" alt="제품이미지"></span><span class="two">2+1</span><strong>삼립)함박소시지치즈부리또125g</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two04.png" alt="제품이미지"></span><span class="two">2+1</span><strong>르구르망)몬테스낵29g</strong><span class="won">1,600원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two05.png" alt="제품이미지"></span><span class="two">2+1</span><strong>뉴초이스)닥터큐망고젤리60g</strong><span class="won">1,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two06.png" alt="제품이미지"></span><span class="two">2+1</span><strong>뉴초이스)닥터큐포도젤리60g</strong><span class="won">1,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two07.png" alt="제품이미지"></span><span class="two">2+1</span><strong>빙그레)아카페라아메리카노240ml</strong><span class="won">2,000원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/two08.png" alt="제품이미지"></span><span class="two">2+1</span><strong>빙그레)아카페라카라멜240ml</strong><span class="won">2,000원</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="pagination"></div>
+                        </li>
+                        <li>
+                            <button type="button">신상품</button>
+                            <div class="swiper swiper3">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new01.png" alt="제품이미지"></span><span class="new">new</span><span class="dis">할인</span><strong>롯데)가나초콜릿우유190ml</strong><span class="won">1,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new02.png" alt="제품이미지"></span><span class="new">new</span><span class="dis">할인</span><strong>CJ)사천마라탕면217g</strong><span class="won">3,900원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new03.png" alt="제품이미지"></span><span class="new">new</span><span class="two">2+1</span><strong>대림)하우스펍브랏부어스트80g</strong><span class="won">2,700원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new04.png" alt="제품이미지"></span><span class="new">new</span><span class="two">2+1</span><strong>롯데)빵빠레소프트바바닐라</strong><span class="won">1,500원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new05.png" alt="제품이미지"></span><span class="new">new</span><span class="two">2+1</span><strong>롯데)빵빠레소프트바초코</strong><span class="won">1,500원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new06.png" alt="제품이미지"></span><span class="new">new</span><span class="two">2+1</span><strong>현대)미에로화이바스파클링350ml</strong><span class="won">2,200원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new07.png" alt="제품이미지"></span><span class="new">new</span><span class="two">2+1</span><strong>코카)레몬에이드제로350ml</strong><span class="won">2,000원</span></a></li>
+                                    <li class="swiper-slide"><a href="#n"><span class="imginner"><img src="images/new08.png" alt="제품이미지"></span><span class="new">new</span><span class="one">1+1</span><strong>CJ)백설코코넛게살푸팟퐁커리170</strong><span class="won">4,900원</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="pagination"></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <section class="app">
+                <div class="wrapper">
+                    <div class="app_inner">
+                        <div class="app_img">
+                            <img src="images/app03.png" alt="세븐일레븐앱" class="app_icon">
+                            <img src="images/app02.png" alt="폭죽" class="paper">
+                        </div>
+                        <div class="app_txt">
+                            <h2>간편하게 사용가능한 혜택!<br>재미있는 이벤트로 가득!</h2>
+                            <strong>지금다운로드 받고 경험해보세요!</strong>
+                            <a href="#n"><span>앱 다운로드</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="discount">
+                <h2>할인상품</h2>
+                <div class="wrapper">
+                    <div class="more"><a href="#n">전체보기</a></div>
+                </div>
+                <div class="swiper"> <!-- 팝업의 높이와 넓이를 css에서 줄 수 있는 요소 -->
+                    <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소 -->
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis01.png" alt="제품이미지"><strong>매일)허쉬초코쿠키앤크림235ml</strong><div class="amount"><del>1,400원</del><span>1,200원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis02.png" alt="제품이미지"><strong>덴마크)대니쉬우유900ml*2입</strong><div class="amount"><del>5,750원</del><span>5,250원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis03.png" alt="제품이미지"><strong>덴마크)딸기딸기우유300ml</strong><div class="amount"><del>2,000원</del><span>1,400원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis04.png" alt="제품이미지"><strong>덴마크)초코초코우유300ml</strong><div class="amount"><del>2,000원</del><span>1,400원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis05.png" alt="제품이미지"><strong>덴마크)커피커피300ml</strong><div class="amount"><del>2,000원</del><span>1,400원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis06.png" alt="제품이미지"><strong>덴마크)바나바나우유300ml</strong><div class="amount"><del>2,000원</del><span>1,400원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis07.png" alt="제품이미지"><strong>서울)흑임자우유750ml</strong><div class="amount"><del>4,200원</del><span>3,200원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis08.png" alt="제품이미지"><strong>빙그레)점보요구르트500ml</strong><div class="amount"><del>2,300원</del><span>1,900원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis09.png" alt="제품이미지"><strong>매일)허쉬초코드링크프로틴235ml</strong><div class="amount"><del>1,400원</del><span>1,200원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis10.png" alt="제품이미지"><strong>매일)바이오초코링프로틴130g</strong><div class="amount"><del>2,300원</del><span>1,500원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis11.png" alt="제품이미지"><strong>매일)바이오그래놀라127g</strong><div class="amount"><del>2,300원</del><span>1,500원</span></div></a></li>
+                        <li class="swiper-slide"><a href="#n"><img src="images/dis12.png" alt="제품이미지"><strong>덴마크)소화가잘되는우유900ml</strong><div class="amount"><del>3,300원</del><span>3,000원</span></div></a></li>
+                    </ul>
+                </div>
+                <div class="pagination"></div>
+            </section>
+            <section class="search_box">
+                <div class="wrapper">
+                    <div class="search_inner">
+                        <div class="search_main">
+                            <h2>우리동네<em><i>7-ELEVEN</i></em>어디있지?</h2>
+                            <p>근처에 있는 7-ELEVEN을 찾아보세요!</p>
+                            <div class="search_wrap">
+                                <div class="search_group">
+                                    <form> 
+                                        <fieldset>
+                                            <legend>검색</legend>
+                                            <div class="search">
+                                                <label for="keyword">검색어</label>
+                                                <input type="text" id="keyword" placeholder="매장명 또는 지역을 입력해주세요. ex) OO동 ">
+                                                <input type="submit" value="확인">
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="search_tag">
+                                    <ul>
+                                        <li><a href="#n"><h3>24시간</h3></a></li>
+                                        <li><a href="#n"><h3>세븐카페</h3></a></li>
+                                        <li><a href="#n"><h3>ATM</h3></a></li>
+                                        <li><a href="#n"><h3>무인택배접수</h3></a></li>
+                                        <li><a href="#n"><h3>치킨</h3></a></li>
+                                        <li><a href="#n"><h3>의약품</h3></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_img">
+                            <img src="images/shop_bg.png" alt="세븐일레븐메장이미지">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner">
+                <h2>엘포인트</h2>
+                <div class="wrapper">
+                    <div class="bannerinner">
+                        <a href="#n"><img src="images/lpay.png" alt="l.point with l.pay 다양한 포인트 혜택과 간편결제를 하나로"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="startups">
+                <div class="wrapper">
+                    <h2>창업안내</h2>
+                    <p>가치를 공유하고 함께 나아가는 세븐일레븐</p>
+                    <div class="start_icon">
+                        <ul>
+                            <li><a href="#n"><img src="images/startups01.png" alt=""><div class="txt"><span>창업절차</span><i>바로가기</i></div></a></li>
+                            <li><a href="#n"><img src="images/startups02.png" alt=""><div class="txt"><span>창업상담</span><i>바로가기</i></div></a></li>
+                            <li><a href="#n"><img src="images/startups03.png" alt=""><div class="txt"><span>창업설명회</span><i>바로가기</i></div></a></li>
+                            <li><a href="#n"><img src="images/startups04.png" alt=""><div class="txt"><span>창업성공기</span><i>바로가기</i></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="f_top">
+            <div class="wrapper">
+                <div class="f_list">
+                    <ul>
+                        <li><a href="#n">CUSTOMER</a>
+                            <ul>
+                                <li><a href="#n">고객의 소리</a></li>
+                                <li><a href="#n">채용문의</a></li>
+                                <li><a href="#n">창업상담</a></li>
+                                <li><a href="#n">입점문의</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#n">RECRUIT</a>
+                            <ul>
+                                <li><a href="#n">기업채용</a></li>
+                                <li><a href="#n">MATE</a></li>
+                                <li><a href="#n">윤리핫라인</a></li>
+                                <li><a href="#n">불공정거래신고</a></li>
+                                <li><a href="#n">안전·보건핫라인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="family_site">
+                    <button type="button" class="open" title="열기">FAMILY SITE</button>
+                    <ul>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데그룹</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">L.POINT</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데채용센터</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데제과</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데칠성음료</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데칠성몰</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데리아</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데리아몰</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">엔제리너스</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">엔제리너스몰</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">T.G.I Friday's</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">크림스피크림 도넛</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">파스퇴르몰</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">파스퇴르아이</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">쉐푸드</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">엔네이처</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데비엔나</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">키스틱</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">의성마늘햄</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데주류BG</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">WINE</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데아사히주류</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데백화점</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">엘롯데</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">영플라자</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">프리미엄아울렛</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데아울렛</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">상품본부</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">에비뉴엘</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데마트</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">토이저러스</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데슈퍼</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데빅마켓</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데컬처웍스</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데시네마</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">샤롯데씨어터</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">롯데홈쇼핑</a></li>
+                        <li><a href="#n" target="_blank" title="새창열기">코리아세븐</a></li>
+                    </ul>
+                    <button type="button" class="close" title="닫기">FAMILY SITE</button>
+                </div>
+            </div>
+        </div>
+        <div class="f_bottom">
+            <div class="wrapper">
+                <div class="f_logo">
+                    <a href="#n"><img src="images/f_logo.png" alt="7-ELEVEN"></a>
+                    <ul class="sns">
+                        <li class="insta"><a href="https://www.instagram.com/7elevenkorea/" target="_blank" title="새창열기">인스타그램 </a></li>
+                        <li class="youtube"><a href="https://www.youtube.com/user/7elevenkorea" target="_blank" title="새창열기">유튜브</a></li>
+                    </ul>
+                </div>
+                <ul class="f_depth1">
+                    <li><a href="#n">사이트맵</a></li>
+                    <li><a href="#n">개인정보취급방침</a></li>
+                    <li><a href="#n">영상정보처리기기 운영관리 방침</a></li>
+                </ul>
+                <ul class="f_depth2">
+                    <li>서울특별시 중구 청계천로 100 시그니처타워 4층</li>
+                    <li><span>TEL </span>1577-0711<span>FAX </span>02-2679-6860</li>
+                    <li>롯데택배 세븐일레븐 전용 고객센터 : 1688-1211</li>
+                </ul>
+                <div class="copyright">
+                    <strong>COPYRIGHT 2014 KOREA SEVEN CO, LTD. All Rights Reserved.</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        
+        
+</body>
+</html>

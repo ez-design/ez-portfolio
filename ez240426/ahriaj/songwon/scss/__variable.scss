@@ -1,0 +1,160 @@
+$bg-skyblue : #E6EFF7;
+$main-dark-b : #00539B;
+$main-vivid-b : #0039C8;
+$w80 : rgba(255,255,255,0.8);
+$w60 : rgba(255,255,255,0.6);
+$w50 : rgba(255,255,255,0.5);
+$w20 : rgba(255,255,255,0.2);
+/* font size */
+$vs-tit : 5.33rem;
+$vs-tit-mo1 : 4rem;
+$vs-tit-mo2 : 3.07rem;
+$tit-size : 3rem;
+$tit-size-mo : 2.154rem;
+
+
+@mixin underLine {
+    animation-name: under;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes under{
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+@mixin titH2 {
+    font-family: 'GM';
+    color: #1d1d1d;
+    font-weight: 300;
+}
+@mixin poAb {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+@mixin poAb_x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+@mixin poAb_y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+@mixin beforeBg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+@mixin beforeWh{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+@mixin afterSp {
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+/* 텍스트 줄수 제한*/
+@mixin twoTxt {
+    line-height: 1.3;
+    height: 2.5em;
+    overflow: hidden;
+}
+@mixin oneTxt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin otTxt {
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* more 오버애니메이션 */
+@keyframes mAct {
+    0% {
+        right: 8px;
+    }
+    50% {
+        right: 12px;
+    }
+    100% {
+        right: 8px;
+    }
+}
+
+@mixin moreAct {
+    animation: {
+        name: mAct;
+        duration : 1s;
+        iteration-count: infinite;
+        timing-function: linear;
+    }
+}
+
+$pc1500: 1500px;
+$pc1300: 1300px;
+$pc1260: 1260px;
+$pc1260: 1259px;
+$pc1025: 1025px;
+$pc1024: 1024px;
+$pcTomobile: 769px;
+$mobile768: 768px;
+$mobile480: 480px;
+
+@mixin respond($pc1300) {
+    @media screen and (max-width:$pc1300) {
+        @content;
+    }
+}
+@mixin respond($pc1024) {
+    @media screen and (max-width:$pc1024) {
+        @content;
+    }
+}
+@mixin respond($mobile768) {
+    @media screen and (max-width:$mobile768) {
+        @content;
+    }
+}
+@mixin respond($mobile480) {
+    @media screen and (max-width:$mobile480) {
+        @content;
+    }
+}
+

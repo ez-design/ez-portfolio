@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>한화생물연구센터</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div class="skipnav">
+        <a href="#skip_contents">본문 바로가기</a>
+        <a href="#skip_menu">대메뉴 바로가기</a>
+    </div>
+    <div id="wrap">
+        <!--
+            메뉴에 마우스를 오버하면 하위 메뉴가 나타남 - menu_over
+            모바일에서 메뉴 열면 - menu_open
+        -->
+        <header class="">
+            <h1 class="logo"><a href="#n">한화생물연구센터</a></h1>
+            <div class="right">
+                <nav class="gnb" id="skip_menu">
+                    <!-- pc모드 : 1차 메뉴에 마우스를 오버하면 li에 on 클래스 추가
+                         mobile : 1차 메뉴를 클릭하면 li에 open 클래스를 추가
+                        li를 클릭하면 active 클래스 추가 > depth2 나옴 -->
+                    <button class="gnb_open">메뉴열기</button>
+                    <div class="gnb_wrap">
+                        <ul class="depth1">
+                            <li>
+                                <a href="#n"><span>연구센터 소개</span></a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#n"><span>연구센터안내</span></a>
+                                        <a href="#n"><span>인사말</span></a>
+                                        <a href="#n"><span>새로운 소식</span></a>
+                                        <a href="#n"><span>오시는길</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>구조/치료활동</span></a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#n" class="line"><span>해양동물구조<br>치료기관</span></a>
+                                        <a href="#n"><span>활동 실적</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>보전활동</span></a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#n"><span>서식지외보전기관</span></a>
+                                        <a href="#n"><span>대상동물</span></a>
+                                        <a href="#n"><span>영상자료</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#n"><span>연구과제</span></a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#n"><span>연구과제</span></a>
+                                        <a href="#n"><span>연구분야</span></a>
+                                        <a href="#n"><span>수행연구</span></a>
+                                        <a href="#n" class="line"><span>보호대상해양생물<br>학습게시판</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="gnb_close">메뉴닫기</button>
+                </nav>
+                <div class="tnb">
+                    <a href="#n" class="lang">KR</a>
+                    <a href="#n" class="pla">아쿠아플라넷</a>
+                </div>
+            </div>
+        </header>
+        <main class="container" id="skip_contents">
+            <div class="biz">
+                <h2>팝업</h2>
+                <div class="list">
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide popup1">
+                                <div class="tit">
+                                    <h3>해양생물연구센터</h3>
+                                    <p>Marine Biology Research Center</p>
+                                </div>
+                                <video controls autoplay loop muted preload="auto" src="images/main/visual.mp4"></video>
+                            </li>
+                            <li class="swiper-slide popup2">
+                                <div class="tit">
+                                    <h3>해양생물연구센터</h3>
+                                    <p>Marine Biology Research Center</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="paging"></div>
+                    </div>
+                    <button class="biz-prev">이전</button>
+                    <button class="biz-next">다음</button>
+                </div>
+            </div>
+            <div class="ass" data-aos="fade-up">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2 data-aos="fade-up">연구과제</h2>
+                        <p data-aos="fade-up" data-aos-delay="300">전시생물의 복지와 보전을 위한 다양한 연구를 합니다.</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li class="stu" data-aos="fade-up" data-aos-delay="500">
+                            <a href="#n">
+                                <strong>01</strong>
+                                <span>A Study on the Biological<br>System of Seawater</span>
+                                <h3>해수관상생물연구</h3>
+                            </a>
+                        </li>
+                        <li class="bre" data-aos="fade-up" data-aos-delay="550">
+                            <a href="#n">
+                                <strong>02</strong>
+                                <span>Animal breeding<br>research</span>
+                                <h3>동물번식연구</h3>
+                            </a>
+                        </li>
+                        <li class="lss" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#n">
+                                <strong>03</strong>
+                                <span>LSS<br>research</span>
+                                <h3>LSS 연구</h3>
+                            </a>
+                        </li>
+                        <li class="pro" data-aos="fade-up" data-aos-delay="650">
+                            <a href="#n">
+                                <strong>04</strong>
+                                <span>Marine Life Learning<br>Bulletin Board Subject to Protection</span>
+                                <h3>보호대상해양생물 학습</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="res">
+                <div class="wrapper">
+                    <div class="subject">
+                        <h2 data-aos="fade-up">구조 · 치료활동</h2>
+                        <p data-aos="fade-up" data-aos-delay="300">아쿠아플라넷은 해양수산부로부터
+                            해양동물전문구조·치료기관으로
+                            지정되어 활동 중입니다.</p>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li data-aos="fade-up" data-aos-delay="500">
+                                <a href="#n">
+                                    <div class="sub">
+                                        <h3>뱀머리 돌고래 외상 응급조치 후 이송 치료</h3>
+                                        <div class="detail">
+                                            <ul>
+                                                <li>
+                                                    <h4>대상</h4>
+                                                    <div class="name">
+                                                        <strong>뱀머리돌고래</strong>
+                                                        <span>Steno bredanensis</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>장소</h4>
+                                                    <div class="loc">
+                                                        <strong>여수시 돌산읍 우두리 내항</strong>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>과정</h4>
+                                                    <div class="pro">
+                                                        <strong>좌초 개체로 피부 외상이 있어 응급조치 후 이송 치료</strong>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="photo"><img src="images/main/res01.png" alt="뱀머리돌고래 사진"></div>
+                                </a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="500">
+                                <a href="#n">
+                                    <div class="sub">
+                                        <h3>3일간 그물 안에 있던 잔점박이물범 신체검사 진행</h3>
+                                        <div class="detail">
+                                            <ul>
+                                                <li>
+                                                    <h4>대상</h4>
+                                                    <div class="name">
+                                                        <strong>잔점박이물범</strong>
+                                                        <span>Harbor seal, Phoca vitulina</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>장소</h4>
+                                                    <div class="loc">
+                                                        <strong>제주 서귀포시 성산읍 신양리</strong>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>과정</h4>
+                                                    <div class="pro">
+                                                        <strong>1. 주민신고로 출동 후 신체검사 진행<br>2. 기생물 및 기력 부족으로 보호 조치</strong>
+                                                    </div>
+                                                </li>
+                                                <li class="checkup">
+                                                    <h4>검진</h4>
+                                                    <div class="che">
+                                                        <strong>외형에 상처 거의 없으며 약 3일간 그물 안에 있어 기력이 떨어진 것</strong>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="photo">
+                                            <img src="images/main/res02.png" alt="잔점박이물범 사진">
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="500">
+                                <a href="#n">
+                                    <div class="sub">
+                                        <h3>다리에 이물이 있는 붉은바다거북 소독치료</h3>
+                                        <div class="detail">
+                                            <ul>
+                                                <li>
+                                                    <h4>대상</h4>
+                                                    <div class="name">
+                                                        <strong>붉은바다거북</strong>
+                                                        <span>Caretta Caretta</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>장소</h4>
+                                                    <div class="loc">
+                                                        <strong>강원도 삼척시 장호항</strong>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>과정</h4>
+                                                    <div class="pro">
+                                                        <strong>이물 제거 및 상처부위 소독 치료</strong>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="photo"><img src="images/main/res03.png" alt="붉은바다거북 사진"></div>
+                                </a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="500">
+                                <a href="#n">
+                                    <div class="sub">
+                                        <h3>고래상어 그물망에 긁힌 일부 상처 치료 후 즉시 방류</h3>
+                                        <div class="detail">
+                                            <ul>
+                                                <li>
+                                                    <h4>대상</h4>
+                                                    <div class="name">
+                                                        <strong>고래상어</strong>
+                                                        <span>Rhincodon typus</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>장소</h4>
+                                                    <div class="loc">
+                                                        <strong>강원도 삼척시 초곡항</strong>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>과정</h4>
+                                                    <div class="pro">
+                                                        <strong>정치망 혼획 개체로 그물에 일부 긁힌 상처 외 유영 상태 및 활력이 양호하여 현장 즉시 방류</strong>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="photo"><img src="images/main/res04.png" alt="고래상어 사진"></div>
+                                </a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="500">
+                                <a href="#n">
+                                    <div class="sub">
+                                        <h3>정치망 내에 들어온 남방큰돌고래 다시 바다로</h3>
+                                        <div class="detail">
+                                            <ul>
+                                                <li>
+                                                    <h4>대상</h4>
+                                                    <div class="name">
+                                                        <strong>남방큰돌고래</strong>
+                                                        <span>Tursiops aduncus</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>장소</h4>
+                                                    <div class="loc">
+                                                        <strong>제주시 구좌읍 농공단지</strong>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h4>과정</h4>
+                                                    <div class="pro">
+                                                        <strong>정치망 내에서 유영하고 있는 것을 발견</strong>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="photo"><img src="images/main/res05.png" alt="남방큰돌고래 사진"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#n" data-aos="fade-up" data-aos-delay="500" class="perf"><span>전체 구조 실적보기</span></a>
+            </div>
+            <div class="ani">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2 data-aos="fade-up">대상동물</h2>
+                        <p data-aos="fade-up" data-aos-delay="300">아쿠아플라넷 여수, 제주, 일산, 63은 전시만이 아닌 생물의 복지와 보존을 위하여 노력하고 있습니다.</p>
+                    </div>
+                    <div class="list">
+                        <ul data-aos="fade-up" data-aos-delay="500">
+                            <li>
+                                <i class="whale">고래</i>
+                                <strong>고래류</strong>
+                            </li>
+                            <li>
+                                <i class="pin">기각류</i>
+                                <strong>기각류</strong>
+                            </li>
+                            <li>
+                                <i class="otter">수달</i>
+                                <strong>수달</strong>
+                            </li>
+                            <li>
+                                <i class="penguin">펭귄</i>
+                                <strong>펭귄류</strong>
+                            </li>
+                            <li>
+                                <i class="turtle">바다거북</i>
+                                <strong>바다거북</strong>
+                            </li>
+                            <li>
+                                <i class="horses">해마와 해룡</i>
+                                <strong>해마와 해룡</strong>
+                            </li>
+                            <li>
+                                <i class="shark">상어</i>
+                                <strong>상어류</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <!-- family site 클릭하면 family에 open 클래스 추가 -->
+                <div class="family">
+                    <button class="family_open">FAMILY SITE</button>
+                    <ul class="">
+                        <li>
+                            <a href="#n" target="_blank" title="open new window">아쿠아플라넷</a>
+                        </li>
+                        <li>
+                            <a href="#n" target="_blank" title="open new window">한화그룹</a>
+                        </li>
+                        <li>
+                            <a href="#n" target="_blank" title="open new window">한화호텔&리조트㈜</a>
+                        </li>
+                        <li>
+                            <a href="#n" target="_blank" title="open new window">한화리조트</a>
+                        </li>
+                        <li>
+                            <a href="#n" target="_blank" title="open new window">플라자CC</a>
+                        </li>
+                    </ul>
+                    <button class="family_close">FAMILY SITE</button>
+                </div>
+                <div class="f_logo">
+                    <img src="images/common/logo_center.png" alt="로고 이미지">
+                </div>
+                <div class="f_nav">
+                    <ul>
+                        <li><a href="#n">이메일무단수집거부</a></li>
+                        <li><a href="#n">개인정보처리방침</a></li>
+                        <li><a href="#n">영상정보처리기기운영·처리방침</a></li>
+                        <li><a href="#n">이용약관</a></li>
+                    </ul>
+                </div>
+                <div class="f_info">
+                    <address>경기도 수원시 영통구 광교호수공원로 300 갤러리아 광교 파사쥬</address>
+                    <address>경기도 고양시 일산서구 한류월드로 282 (대화동 2606-1)</address>
+                    <address>전라남도 여수시 오동도로 61-11</address>
+                    <address>제주특별자치도 서귀포시 성산읍 섭지코지로 95 서울특별시 영등포구 63로 36, 리버타워</address>
+                </div>
+                <div class="copy">ⓒ marine biology research center. All Rights Reserved.</div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        AOS.init({
+        offset: 200,
+        duration: 500,
+        easing: 'ease',
+        });
+    </script>
+    <div class="cursor">more<br>view</div>
+</body>
+</html>

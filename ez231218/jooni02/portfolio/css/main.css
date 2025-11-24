@@ -1,0 +1,128 @@
+@import url(default.css);
+@import url(common.css);
+@import url(layout.css);
+
+@media screen and (max-width:1600px){
+    section .wrapper
+    footer .wrapper {
+        width: auto;
+        margin: 0 150px;
+    }
+}
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+    color: #000;
+}
+#fp-nav ul li .fp-tooltip {
+    top: -6px;
+    font-size: 20px;
+    font-family: 'Geologica';
+    font-weight: 800;
+}
+
+img.show {
+    display: none;
+}
+
+.web, .edit_design, .finish h2 {
+    font-size: 90px;
+    font-weight: 800;
+}
+
+.main {
+    background: url(../imges/main/protfoilo_bg.png) no-repeat center center /cover ;
+}
+.main .main_tit {
+    font-weight: 800;
+    margin-top: 100px;
+}
+.main .main_tit h1 {
+    font-size: 80px;
+}
+.main .main_tit .list span {
+    display: flex;
+    font-size: 60px;
+}
+.main .main_tit .txt span {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 20px 0;
+    font-size: 20px;
+}
+.main .main_tit .txt span strong{
+    font-size: 40px;
+}
+
+.info {
+    background-color: rgba(244, 244, 244, 0.5);
+    overflow: hidden;
+}
+
+.web .web_tit {
+    padding: 0 200px;
+}
+.web .web_tit>h2 {
+    margin-bottom: 40px;
+}
+.web .list ul li {
+    border-bottom: 1px solid #D9D9D9;
+}
+.web .list ul li:first-child {
+    border-top: 1px solid #D9D9D9;
+}
+.web .list ul li a {
+    display: block;
+    padding: 30px 0;
+}
+.web .list ul li a h2 {
+    font-size: 45px;
+    padding-left: 10px;
+}
+.web .list ul li a h2 strong {
+    font-size: 30px;
+    margin-left: 40px;
+}
+.web .list ul li a:hover h2,
+.web .list ul li a:hover h2 strong {
+    color: red;
+}
+
+/* 기타디자인
+.web .list ul li:nth-child(4) a:hover h2,
+.web .list ul li:nth-child(4) a:hover h2 strong {
+    color: #999;
+}
+.web .list ul li:nth-child(4) {
+    color: #999;
+} */
+
+
+.finish {
+    background: url(../imges/main/finish.png) no-repeat center center / cover;
+}
+.finish h2 {
+    font-size: 90px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 10px;
+}
+.finish p {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*애니메이션 작용*/
+.main.active .list {
+    overflow: hidden;
+    height: 72px;
+}
+.main.active .list span {
+    
+    animation-name: sec03_ani;
+    animation-duration: 1.5s; /* 동작 시간*/
+    animation-iteration-count: 1; /* 반복 횟수 */
+    animation-fill-mode: forwards /* 애니메이션 종료 후 상태 (forwards - 100% 유지) */
+}
+@keyframes sec03_ani { 
+	0% { transform: translate(0, 1.2em) }
+	100% { transform: translate(0, 0) }
+}

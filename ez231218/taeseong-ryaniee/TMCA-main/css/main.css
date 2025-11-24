@@ -1,0 +1,818 @@
+@import url(../css/font.css);
+@import url(../css/reset.css);
+@import url(../css/default.css);
+
+img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+}
+
+.body_wrap {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    border-left:  0.1rem solid #adadad;
+    border-right:  0.1rem solid #adadad;
+    position: relative;
+}
+
+
+
+.open_btn_wrap,
+.close_btn_wrap {
+    display: none;
+}
+
+.aside_wrap {
+    position: fixed;
+    width: 40rem;
+
+}
+.content_wrap {
+    margin-left: 40rem;
+    border-left:  0.1rem solid #adadad;
+}
+
+.aside_wrap aside {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+aside .gnb {
+    margin: 3rem 0 0 5.5rem;
+}
+
+aside .gnb ul li a {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 7rem;
+}
+
+aside .logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+aside .logo a {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    width: 40rem;
+    height: 14rem;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 40rem auto;
+}
+
+.exhibition .Exhibit_info a img,
+.education .edu_info a img {
+    display: block;
+    max-width: 100%;
+}
+
+.exhibition .Exhibit_tit {
+    margin: 3rem 4.5rem 0 0;
+    text-align: right;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.exhibition {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    overflow-x: auto;
+}
+
+.exhibition .Exhibit_info {
+    border-left:  0.1rem solid #adadad;
+}
+
+.exhibition .Exhibit_info ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 2rem;
+    padding: 2rem
+}
+
+.exhibition .Exhibit_info .tit .title_ko {
+    font-size: 2.6rem;
+}
+
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-top:  0.1rem solid #adadad;
+    overflow-x: auto;
+
+}
+
+.education .edu_tit {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    margin: 2rem 3.5rem 0 0;
+    text-align: right;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+
+.education .edu_tit a {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.education .edu_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: auto;
+    width: 100%;
+    border-left:  0.1rem solid #adadad;
+    ;
+}
+
+.education .edu_info .edu_subtit {
+    display: block;
+    font-size: 2.2rem;
+    line-height: 5rem;
+    padding-left: 1rem;
+    color: #fbfbfb;
+    background-color: #2b2b2b;
+}
+
+.tottv {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: max-content;
+    border-top:  0.1rem solid #adadad;
+}
+.tottv .tottv_tit {
+    display: grid;
+    grid-template-rows: 5fr 1fr;}
+.tottv .tottv_tit img {
+    width: 30%;
+    margin: 4rem 0 0 4rem
+}
+
+.tottv .tottv_tit a {
+    display: block;
+    margin: 0 3rem 0 0;
+text-align: right;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.tottv .tottv_video {
+    border-left:  0.1rem solid #adadad;
+}
+
+.tottv .tottv_video .youtube_wrap {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 30rem;
+}
+
+.tottv .tottv_video .youtube_wrap iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.tottv .tottv_video em {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 6rem;
+    margin-left: 2rem;
+}
+
+.press {
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    border-top:  0.1rem solid #adadad;
+
+}
+
+.press .press_info {
+    grid-column: 2;
+    background-color: #2b2b2b;
+}
+
+.press .press_info .press_logo {
+    margin: 3rem 0 6.5rem 2rem;
+    width: 60%;
+    object-fit: contain;
+}
+
+.press .press_info .view {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    color: #fbfbfb;
+    text-align: right;
+}
+
+.press .press_info .book_pic {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    border-right:  0.1rem solid #adadad;
+}
+
+.press .press_info .book_pic img {
+    max-width: 100%;
+    object-fit: scale-down;
+    margin-right: 1rem;
+}
+
+.press .former_totaldesign {
+    position: relative;
+}
+
+.press .former_totaldesign .dream {
+    font-size: 0;
+    line-height: 0;
+
+}
+
+.press .former_totaldesign .dream::before {
+    width: 8.5rem;
+    height: 8.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    background-image: url(../images/DREAMM.png);
+    background-repeat: no-repeat;
+    background-size: 8rem auto;
+    content: '';
+}
+
+.press .former_totaldesign .formerlogo {
+    font-size: 0;
+    line-height: 0;
+
+}
+
+.press .former_totaldesign .formerlogo::before {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 22rem;
+    background-image: url(../images/former logo.png);
+    background-repeat: no-repeat;
+    background-size: auto 22rem;
+    content: '';
+}
+
+.location h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 5rem 0 1rem 5rem;
+    background-color: #2b2b2b;
+    color: #fbfbfb;
+}
+
+.location .map {
+    width: 100%;
+    height: 40rem;
+}
+
+.location .map object {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: saturate(1)invert(1) hue-rotate(180deg) grayscale(0.75) sepia(0.35);
+}
+
+.location .location_info .address .address_info_web em,
+.location .location_info .transpotation .address_info_mobile em {
+    font-size: 2.4rem;
+    font-weight: 600;
+    float: left;
+
+}
+
+.location .location_info .address {
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr;
+    border-bottom:  0.1rem solid #adadad;
+}
+
+.location .location_info .address img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.location .location_info .address .address_info_web {
+    display: grid;
+    font-size: 2rem;
+    grid-template-rows: 5fr 1fr 1fr;
+    margin: 3rem;
+    text-align: right;
+}
+
+.location .location_info .transpotation {
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: 3fr 2fr 2fr 1.5fr;
+    text-align: right;
+}
+
+.location .location_info img {
+    width: 100%;
+height: 100%;
+    object-fit: cover;
+}
+
+.location .location_info .transpotation .trans_info {
+    display: grid;
+    grid-template-rows: 0.5fr 1.75fr;
+    align-items: start;
+    padding: 2rem;
+    align-items: end;
+    text-align: right;
+    border-right:  0.1rem solid #adadad;
+}
+
+.location .location_info .transpotation .address_info_mobile {
+    display: none;
+}
+
+.location .location_info .transpotation .trans_info li {
+    display: block;
+    margin: 0 2rem 1rem 0;
+}
+
+.location .location_info .transpotation .trans_info em {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.location .location_info .transpotation .subway {
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: right;
+}
+
+.location .location_info .transpotation .subway li {
+    display: block;
+    padding: 1.5rem 1.5rem 0 0;
+}
+
+.location .location_info .subway li strong {
+    display: block;
+}
+
+.location .location_info .transpotation .title {
+    text-align: left;
+    font-weight: 600;
+    margin-left: 2rem;
+    color: #2b2b2b;
+}
+
+.location .location_info .transpotation .subway,
+.location .location_info .transpotation .bus {
+    color: #fbfbfb;
+}
+
+.location .location_info .transpotation .subway .line_04 strong,
+.location .location_info .transpotation .subway .line_ui strong {
+    margin-bottom: 3rem;
+}
+
+.location .location_info .transpotation .subway .line_03 strong {
+    margin-bottom: 1rem;
+}
+
+.location .location_info .transpotation .subway .line_03 {
+    background-color: #EF7C1C;
+}
+
+.location .location_info .transpotation .subway .line_04 {
+    background-color: #01A4DE;
+}
+
+.location .location_info .transpotation .subway .line_ui {
+    background-color: #B7C452;
+}
+
+.location .location_info .transpotation .subway strong {
+    font-weight: 600;
+}
+
+.location .location_info .bus {
+    display: grid;
+    font-size: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: right;
+}
+
+.location .location_info .transpotation .bus .greenbus,
+.location .location_info .transpotation .bus .bluebus {
+    line-height: 3rem;
+    padding: 1rem 1rem 0 0;
+}
+
+.location .location_info .transpotation .bus .bluebus {
+    grid-column: 2;
+    background-color: #456CE0;
+}
+
+.location .location_info .transpotation .bus .greenbus {
+    background-color: #65C056;
+}
+
+.location .location_info .transpotation .bus .title {
+    margin-top: 1.5rem;
+}
+
+.footer .footer_wrap {
+    padding: 3.6rem;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    border-top:  0.1rem solid #adadad;
+    background-color: #fbfbfb;
+    color: #2b2b2b;
+}
+
+footer .Museum_info li{
+    line-height: 3rem;
+}
+.footer .sns_wrap .sns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.footer .sns_wrap .sns li{
+    line-height: 0;
+    font-size: 0;}
+.footer .sns_wrap .sns li a{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: 2.5rem auto;
+    margin-left: 1rem;
+}
+.footer .sns_wrap .sns .instagram{
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_80' data-name='그룹 80' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_96' data-name='사각형 96' width='25' height='25' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_79' data-name='그룹 79' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_413' data-name='패스 413' d='M12.5,25h0A12.5,12.5,0,1,1,25,12.5,12.537,12.537,0,0,1,12.5,25' fill='%232b2b2b'/%3E%3Cpath id='패스_414' data-name='패스 414' d='M58.779,47.912H52.326a4.407,4.407,0,0,0-4.407,4.407v6.453a4.407,4.407,0,0,0,4.407,4.407h6.454a4.407,4.407,0,0,0,4.407-4.407V52.319a4.407,4.407,0,0,0-4.407-4.407m3,10.973a2.925,2.925,0,0,1-2.925,2.925h-6.6a2.925,2.925,0,0,1-2.925-2.925v-6.6a2.925,2.925,0,0,1,2.925-2.925h6.6a2.925,2.925,0,0,1,2.925,2.925Z' transform='translate(-42.996 -42.99)' fill='%23fbfbfb'/%3E%3Cpath id='패스_415' data-name='패스 415' d='M87.628,84.028a3.961,3.961,0,1,0,3.961,3.961,3.961,3.961,0,0,0-3.961-3.961m0,6.529A2.568,2.568,0,1,1,90.2,87.989a2.568,2.568,0,0,1-2.568,2.568' transform='translate(-75.072 -75.396)' fill='%23fbfbfb'/%3E%3Cpath id='패스_416' data-name='패스 416' d='M154.015,73.579a.923.923,0,1,0,.923.923.923.923,0,0,0-.923-.923' transform='translate(-137.365 -66.02)' fill='%23fbfbfb'/%3E%3C/g%3E%3C/svg%3E%0A");}
+
+.footer .sns_wrap .sns .facebook{
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_82' data-name='그룹 82' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_97' data-name='사각형 97' width='25' height='25' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_81' data-name='그룹 81' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_417' data-name='패스 417' d='M12.5,25h0A12.5,12.5,0,1,1,25,12.5,12.537,12.537,0,0,1,12.5,25' fill='%23221f20'/%3E%3Cpath id='패스_418' data-name='패스 418' d='M80.857,59.915l.367-2.846H78.4V55.251c0-.824.231-1.386,1.412-1.386h1.506V51.318a20.15,20.15,0,0,0-2.2-.112,3.43,3.43,0,0,0-3.661,3.763v2.1H73.007v2.846h2.459V66.6H78.4V59.915Z' transform='translate(-65.507 -45.946)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");}
+.footer .sns_wrap .sns .twitter{background-image: url("data:image/svg+xml,%3Csvg id='X_logo' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_94' data-name='사각형 94' width='25' height='25' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_76' data-name='그룹 76' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_409' data-name='패스 409' d='M12.5,25h0A12.5,12.5,0,1,1,25,12.5,12.537,12.537,0,0,1,12.5,25' fill='%232b2b2b'/%3E%3Cpath id='패스_410' data-name='패스 410' d='M55.106,57.967l5.21,6.967L55.073,70.6h1.18l4.59-4.959L64.552,70.6h4.016l-5.5-7.358,4.88-5.272h-1.18l-4.227,4.567-3.416-4.567Zm1.735.869h1.845l8.146,10.892H64.988Z' transform='translate(-49.416 -52.012)' fill='%23fbfbfb'/%3E%3C/g%3E%3C/svg%3E%0A");}
+.footer .sns_wrap .sns .naverblog{background-image: url("data:image/svg+xml,%3Csvg id='Naver_logo' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25' height='25' viewBox='0 0 25 25'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_95' data-name='사각형 95' width='25' height='25' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_78' data-name='그룹 78' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_411' data-name='패스 411' d='M12.5,25h0A12.5,12.5,0,1,1,25,12.5,12.537,12.537,0,0,1,12.5,25' fill='%232b2b2b'/%3E%3Cpath id='패스_412' data-name='패스 412' d='M62.439,65.4V76.966H66.5v-5.46l3.925,5.46h4.19V65.4H70.63l.008,5.837L66.76,65.4Z' transform='translate(-56.024 -58.685)' fill='%23fbfbfb'/%3E%3C/g%3E%3C/svg%3E%0A");}
+
+.footer .sns_wrap span{
+    display: block;
+
+}
+.footer .copyright br{
+    display: none;
+}
+@media screen and (max-width: 738px) {
+    .body_wrap {
+        display: block;
+        border-left: 0;
+        border-right: 0;
+        overflow-x: hidden;
+    }
+
+    .body_wrap .open_btn_wrap {
+        position: fixed;
+        top: 0;
+        left: 23px;
+        display: grid;
+        width: calc(100vw - 46px);
+        grid-template-columns: 2fr 8fr;
+        font-size: 2.5rem;
+        border-bottom:  0.1rem solid #adadad;
+        background-color: #fbfbfb;
+        z-index: 100;
+    }
+
+    .open_btn_wrap .menu_btn,
+    .close_btn_wrap .close_btn {
+        padding: 2rem;
+        border-right:  0.1rem solid #adadad;
+    }
+
+    .open_btn_wrap span,
+    .close_btn_wrap span {
+        margin: 2rem;
+        text-align: right;
+    }
+
+    .content_wrap {
+        display: block;
+        border-left: 0;
+        margin-left: 0;
+    }
+
+    .body_wrap .aside_wrap {
+        display: block;
+        position: relative;
+        height: auto;
+    }
+
+    .body_wrap .aside_wrap aside{
+        display: block;
+        position: relative;
+        height: auto;
+    }
+    .body_wrap .aside_wrap .gnb {
+        display: none;
+    }
+
+    .body_wrap .aside_wrap .logo {
+        position: relative;
+        display: block;
+        width: calc(100vw - 44px);
+        padding-top: 7rem;
+    }
+
+    .body_wrap .aside_wrap .logo a {
+        display: block;
+        width: calc(100vw - 44px);
+        height: 15rem;
+        background-image: url(../images/logo_moblie.png);
+        background-repeat: no-repeat;
+        background-size: calc(100vw - 44px) auto;}
+
+
+    .body_wrap.open .gnb {
+        display: block;
+        position: absolute;
+        left: 0;
+        margin: 0;
+        background-color: #fbfbfb;
+        width: calc(100vw - 44px);
+        height: 100vh;
+        z-index: 100;
+        text-align: center;
+    }
+
+    .body_wrap.open .gnb ul {
+        margin-top: 10rem;
+    }
+
+    .body_wrap.open .gnb ul li a {
+        line-height: 12rem;
+        padding: 10rem
+    }
+
+    .body_wrap.open .close_btn_wrap {
+        position: fixed;
+        top: 0;
+        left: 23px;
+        display: grid;
+        width: calc(100vw - 46px);
+        grid-template-columns: 2fr 8fr;
+        font-size: 2.5rem;
+        border-bottom:  0.1rem solid #adadad;
+        background-color: #fbfbfb;
+        z-index: 100;
+    }
+
+
+
+    .exhibition {
+        display: block;
+        border: 0;
+    }
+
+    .exhibition .Exhibit_tit {
+        border: 0;
+        float: left;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .exhibition .Exhibit_tit br,
+    .education .edu_tit br {
+        display: none;
+    }
+
+    .exhibition .Exhibit_info {
+        border: 0;
+    }
+
+    .exhibition .Exhibit_info ul {
+        flex-direction: column;
+        float: left;
+        display: block;
+        text-align: left;
+    }
+
+    .exhibition .Exhibit_info ul li.exhibit_duration {
+        margin-top: 2rem;
+    }
+
+    .education {
+        display: block;
+    }
+
+    .education .edu_tit {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem 2rem 1rem 2rem;
+        align-items: baseline;
+    }
+
+    .education .edu_info {
+        border-left: 0;
+        display: block;
+    }
+
+    .education .edu_info .edu01 img {
+        width: 100%;
+    }
+
+    .education .edu_info .edu01 span {
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+
+    .education .edu_info .edu02 {
+        display: none;
+    }
+
+    .tottv {
+        grid-template-columns: 1fr 2fr;
+    }
+    .tottv .tottv_tit {
+    display: grid;
+    grid-template-rows: 6fr 1fr;}
+    .tottv .tottv_tit img {
+        width: 65%;
+        margin: 3rem 0 0 3rem;
+        object-fit: cover;
+    }
+
+    .tottv .tottv_tit a {
+        text-align: right;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 3rem;
+        font-size: 2rem;
+
+    }
+
+
+    .tottv .tottv_video iframe {
+        width: 100%;
+        height: calc(100% - 6rem);
+    }
+
+    .press {
+        display: none;
+    }
+
+    .location h2 {
+        padding-left: 2rem;
+    }
+
+    .location .location_info img {
+        display: none
+    }
+
+    .location .location_info .address .address_info_web {
+        display: none;
+    }
+
+    .location .location_info .transpotation {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+    }
+
+    .location .location_info .transpotation .address_info_mobile {
+        display: block;
+        border-bottom:  0.1rem solid #adadad;
+
+
+    }
+
+    .location .location_info .transpotation .address_info_mobile li {
+        display: block;
+        text-align: left;
+        margin: 2rem 0 2rem 2rem;
+    }
+
+    .location .location_info .transpotation .address_info_mobile li em {
+        float: unset;
+        margin: 0;
+    }
+
+    .location .location_info .transpotation .address_info_mobile li.postal {
+        display: none;
+    }
+
+    .location .location_info .transpotation .trans_info {
+        display: block;
+        text-align: left;
+        border-bottom:  0.1rem solid #adadad;
+        border-right: 0;
+        border-left:  0.1rem solid #adadad;
+
+    }
+
+    .location .location_info .transpotation .trans_info li {
+        margin: 2rem 0 2rem 2rem;
+    }
+
+    .location .location_info .transpotation .trans_info br {
+        display: none;
+    }
+
+    .location .location_info .transpotation .subway {
+        grid-template-rows: 1fr 1fr
+    }
+
+    .location .location_info .transpotation .subway strong {
+        float: left;
+        margin-left: 1.5rem;
+    }
+
+    .location .location_info .transpotation .bus {
+        border-left:  0.1rem solid #adadad;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        font-size: 2.5rem;
+    }
+
+    .location .location_info .transpotation .bus .title {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .location .location_info .transpotation .bus .greenbus li,
+    .location .location_info .transpotation .bus .bluebus li {
+
+        line-height: 4rem;
+    }
+
+    .location .location_info .transpotation .bus .greenbus {
+        grid-row: 1;
+        grid-column: 3;
+
+    }
+
+    .location .location_info .transpotation .bus .bluebus {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .footer .footer_wrap {
+        padding: 5rem 0;
+        font-size: 1.75rem;
+        display: block;
+        line-height: 5rem;
+        text-align: center;}
+    .footer .sns_wrap .sns{
+        justify-content: center;
+        margin: 4rem auto;
+    }
+    .footer .copyright{
+        position: relative;
+        margin-bottom: 3rem;
+        line-height: 2rem;}
+    .footer .copyright br{
+display: block;}
+
+
+    .footer .copyright::before {
+        position: absolute;
+        bottom: -5rem;
+        left: -22px;
+        height: 0.1rem;
+        width: 100vw;
+        background-color: #adadad;
+        z-index: 100000000000000;
+        content: '';
+    
+    }
+}

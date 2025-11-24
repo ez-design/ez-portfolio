@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>JW메리어트호텔서울</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>    
+            <div class="wrapper">
+                <div class="tnb">
+                    <div class="left">
+                        <a href="#n">메리어트 브랜드 호텔 찾기</a>
+                        <a href="#n">고객지원</a>
+                    </div>
+                    <h1 class="logo"><a href="index.html">JW메리어트호텔서울</a></h1>
+                    <div class="right">
+                        <a href="#n" class="lang">KR</a>
+                        <button class="tnb_menu">메뉴</button>
+                    </div>
+                </div>
+                <!-- 마우스오버 시 depth1 li에 menu_over 클래스
+                     .depth1 li에 마우스오버 시 on 클래스 > depth2 오픈 -->
+                <nav class="gnb" id="skip_menu">
+                    <button class="gnb_open">메뉴 열기</button>
+                    <div class="gnb_wrap">
+                        <ul class="depth1">
+                            <li class=""><a href="#n">JW 메리어트</a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>브랜드정보</span></a></li>
+                                    <li><a href="#n"><span>갤러리</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#n">객실</a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>펜트하우스</span></a></li>
+                                    <li><a href="#n"><span>비즈니스 스위트</span></a></li>
+                                    <li><a href="#n"><span>전체객실</span></a></li>
+                                    <li><a href="#n"><span>장애인고객용객실</span></a></li>
+                                    <li><a href="#n"><span>가상투어</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#n">이벤트홀</a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>웨딩홀</span></a></li>
+                                    <li><a href="#n"><span>이벤트홀</span></a></li>
+                                    <li><a href="#n"><span>가상투어</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#n">프로모션·패키지</a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>특별 프로모션</span></a></li>
+                                    <li><a href="#n"><span>리조트 할인</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#n">익스피리언스</a>
+                                <ul class="depth2">
+                                    <li><a href="#n"><span>호텔시설</span></a></li>
+                                    <li><a href="#n"><span>JW가든</span></a></li>
+                                    <li><a href="#n"><span>인근관광지</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#n" class="black">예약하기</a></li>
+                        </ul>
+                    </div>
+                    <button class="gnb_close">메뉴 닫기</button>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <section class="visual">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>JS Marriott</h2>
+                        <p>최상의 시설과 최선의 서비스로<br> 최고의 오늘을 보답하겠습니다.</p>
+                    </div>
+                </div>
+                <div class="reservation">
+                    <h2>예약하기</h2>
+                    <div class="reservation-date res checkin">
+                        <strong>Check-in</strong>
+                        <span>날짜선택</span>
+                    </div>
+                    <div class="reservation-date res checkout">
+                        <strong>Check-out</strong>
+                        <span>날짜선택</span>
+                    </div>
+                    <div class="reservation-select res select-medium room">
+                        <strong>Room</strong>
+                        <span>게스트룸 1개</span>
+                    </div>
+                    <div class="reservation-select res select-medium">
+                        <strong>Children</strong>
+                        <span>0명</span>
+                    </div>
+                    <div class="reservation-select res select-medium">
+                        <strong>Adult</strong>
+                        <span>0명</span>
+                    </div>
+                    <button class="reservation-button"><span>예약하기</span></button>
+                </div>
+            </section>
+            <section class="rest">
+                <div class="list">
+                    <div class="swiper">
+                        <!-- jquary에서 li에 on클래스 추가 -->
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide guest">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/rest01.png" alt="게스트룸 사진"></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide guest">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/rest01-1.png" alt="게스트룸 사진"></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide lounge">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/rest02.png" alt="이그제큐티브 라운지 사진"></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide biz">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/main/rest03.png" alt="비즈니스 스위트 킹 사진"></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="rest-prev">이전</button>
+                        <button class="rest-next">다음</button>
+                    </div> <!--swiper-->
+                </div>
+                <div class="txt">
+                    <div class="tit">
+                        <h2>The best rest</h2>
+                        <p>최고의 휴식을 선사하겠습니다.</p>
+                    </div>
+                    <div class="tab_txt">
+                        <button class="tab_menu guest on"><span class="guest on">게스트 룸</span></button>
+                        <button class="tab_menu lounge"><span>이그제큐티브 라운지 이용</span></button>
+                        <button class="tab_menu biz"><span>비즈니스 스위트 킹</span></button>
+                    </div>
+                    <strong>※ 1킹베드룸은 장애인 고객용 객실입니다.</strong>
+                    <div class="more"><a href="#n">전체보기</a></div>
+                </div>
+            </section>
+            <section class="time">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>At a special time</h2>
+                        <ul>
+                            <li>Meeting hall</li>
+                            <li>Wedding hall</li>
+                            <li>Dining restaurant</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <div class="swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="photo"><img src="images/main/time01.png" alt="이벤트홀"></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="photo"><img src="images/main/time02.png" alt="웨딩홀"></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="photo"><img src="images/main/time03.png" alt="레스토랑"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="paging"></div>
+                    </div>
+                    <div class="more"><a href="#n">전체보기</a></div>
+                </div>
+            </section>
+            <section class="pack">
+                <div class="wrapper">
+                    <div class="tit">
+                            <h2>Promotion · Package</h2>
+                            <ul>
+                                <li>썸머 블리스 패키지</li>
+                                <li>메리어트 본보이 전용 특별 요금</li>
+                                <li>어텀 블리스 피크닉 패키지</li>
+                            </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <!-- 마우스를 오버한 li에는 on 클래스 추가
+                                 마우스르 오버하지 않은 li에는 off 클래스 추가 -->
+                            <li class="pack1">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <h3>썸머 블리스 패키지</h3>
+                                        <p>2024년 7월 1일 — 2024년 9월 1일</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pack2">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <h3>메리어트 본보이 전용 특별 요금</h3>
+                                        <p>2024년 7월 22일 — 2024년 10월 31일</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pack3">
+                                <a href="#n">
+                                    <div class="inner">
+                                        <h3>어텀 블리스 피크닉 패키지</h3>
+                                        <p>2024년 9월 1일 — 2024년 11월 17일</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more"><a href="#n">전체보기</a></div>
+                </div>
+            </section>
+            <section class="exp">
+                <div class="wrapper">
+                    <div class="txt">
+                        <div class="tit">
+                            <h2>Experience</h2>
+                            <p>지친 일상에 보양이 되겠습니다.</p>
+                        </div>
+                        <div class="tab_txt">
+                            <button class="tab_menu.on spa on"><span>스파</span></button>
+                            <button class="tab_menu fitn"><span>피트니스</span></button>
+                            <button class="tab_menu pool"><span>수영</span></button>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="swiper">
+                            <!-- jquary에서 li에 on클래스 추가 -->
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide spa on">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/exp01.png" alt="스파 사진"></div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide fitn">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/exp02.png" alt="피트니스 사진"></div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide pool">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/main/exp03.png" alt="수영장 사진"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!--swiper-->
+                    </div>
+                    <div class="more"><a href="#n">전체보기</a></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="sns">
+                    <ul>
+                        <li><a href="#n" class="face">페이스북</a></li>
+                        <li><a href="#n" class="insta">인스타그램</a></li>
+                        <li><a href="#n" class="x">x</a></li>
+                        <li><a href="#n" class="youtube">유튜브</a></li>
+                        <li><a href="#n" class="naver">네이버</a></li>
+                        <li><a href="#n" class="kakao">카카오톡</a></li>
+                    </ul>
+                </div>
+                <div class="f_nav">
+                    <ul>
+                        <li><a href="#n">추적 선호 사항</a></li>
+                        <li><a href="#n">채용</a></li>
+                        <li><a href="#n">이용약관</a></li>
+                        <li><a href="#n">프로그램 이용약관</a></li>
+                        <li><a href="#n">개인정보 센터</a></li>
+                        <li><a href="#n">디지털 접근성</a></li>
+                        <li><a href="#n">사이트 맵</a></li>
+                        <li><a href="#n">도움말</a></li>
+                    </ul>
+                </div>
+                <div class="f_info">
+                    <span>JW 메리어트 호텔 서울</span><br>
+                    <address>서울특별시 서초구 반포동 19-3</address>
+                    <span>TEL.  +82 2-62826262</span>
+                </div>
+                <div class="copy">
+                    <span>© 1996-2024 메리어트 인터내셔널 ALL RIGHTS RESERVED. </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        AOS.init({
+        offset: 150,
+        duration: 500,
+        easing: 'ease',
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual h2 {
+    display: none;
+}
+.visual .swiper .swiper-wrapper {
+    position: relative;
+}
+.visual .swiper ul li {
+    height: 100vh;
+}
+.visual .swiper ul li .tit {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    color: var(--txt-color-w80);
+    margin-right: 10%;
+}
+.visual .swiper ul li .tit strong {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.visual .swiper ul li .tit h3 {
+    font-size: 75px;
+}
+.visual .swiper ul li .tit h3 br {
+    display: none;
+}
+.visual .swiper ul li .photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 110px);
+    height: 100%;
+    overflow: hidden;
+}
+.visual .swiper ul li .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.visual .swiper ul li.swiper-slide-active .photo {
+    animation-name: visual_img;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes visual_img {
+    0% { left:0; }
+    100% { left:-100px; }
+}
+.visual .swiper .btn_wrap {
+    position: absolute;
+    left: 10%; 
+    bottom: 10%;
+    z-index: 10;
+    width: 80%;
+    color: #fff;
+}
+.visual .swiper .btn_wrap .paging {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.visual .swiper .btn_wrap .paging .swiper-pagination-bullet {
+    width: 33.3%;
+    height: 2px;
+    border-radius: 0;
+    background-color: rgba(217, 217, 217, 0.3);
+    opacity: 1;
+    position: relative;
+}
+.visual .swiper .btn_wrap .paging .swiper-pagination-bullet-active::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--txt-color-w60);
+    content: "";
+    animation-name: visual_count;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+    animation-timing-function: linear;
+}
+@keyframes visual_count {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+
+@media screen and (max-width:1300px) {
+    .visual .swiper ul li .tit h3 {
+        font-size: 70px;
+        letter-spacing: -0.02em;
+    }
+}
+@media screen and (max-width:1024px) {
+    .visual .swiper ul li {
+        height: 600px;
+    }
+    .visual .swiper ul li .tit strong {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .visual .swiper ul li .tit h3 {
+        font-size: 65px;
+    }
+}
+@media screen and (max-width:768px) {
+    .visual .swiper ul li {
+        height: 450px;
+    }
+    .visual .swiper ul li .tit strong {
+        font-size: 20px;
+    }
+    .visual .swiper ul li .tit h3 {
+        font-size: 55px;
+    }
+    .visual .swiper ul li .tit h3 br {
+        display: block;
+    }
+}
+@media screen and (max-width:495px) {
+    .visual .swiper ul li .tit strong {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .visual .swiper ul li .tit h3 {
+        font-size: 50px;
+    }
+}
+
+.program h2 {
+    font-size: var(--txt-size-tit);
+    margin: var(--margin-tit);
+    text-align: center;
+}
+.program .swiper ul li {
+    display: flex;
+    justify-content: center;
+}
+.program .swiper ul li .photo {
+    font-size: 0;
+    line-height: 0;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-left: 100px;
+}
+.program .swiper ul li .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.program .swiper ul li .txt {
+    font-weight: 400;
+    width: 400px;
+    margin: 58px 0 0 100px;
+}
+.program .swiper ul li .txt h3 {
+    font-size: 35px;
+}
+.program .swiper ul li .txt p {
+    font-size: 20px;
+    margin: 10px 0 50px 0;
+}
+.program .swiper ul li .txt .more {
+    margin-bottom: 10px;
+}
+.program .swiper ul li .txt .more a {
+    padding: 0 45px 0 0;
+    position: relative;
+}
+.program .swiper ul li .txt .more a::after {
+    position: absolute;
+    left: -2px;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #3d3d3d;
+    content: "";
+}
+.program .swiper ul li .txt .more a span {
+    position: relative;
+}
+.program .swiper ul li .txt .more a span::after {
+    position: absolute;
+    right: -40px;
+    bottom: 2px;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_146_15' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_146_15)'%3E%3Cpath d='M14.8365 18.6634L13.7673 17.6191L18.6462 12.7401H2.5V11.2404H18.6558L13.7923 6.36139L14.8365 5.31714L21.5095 11.9904L14.8365 18.6634Z' fill='%231C1B1F'/%3E%3C/g%3E%3C/svg%3E%0A");
+    content: "";
+}
+.program .swiper ul li .txt .more a:hover {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.program .swiper ul li .txt .more a:hover::after {
+    background-color: #1d1d1d;
+}
+.program .swiper ul li .txt .more a:hover span::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_146_21' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_146_21)'%3E%3Cpath d='M15 19L13.575 17.6L18.175 13H2V11H18.175L13.6 6.4L15 5L22 12L15 19Z' fill='%231C1B1F'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.program button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    line-height: 0;
+}
+.program button.swiper-button-prev {
+    left: 0;
+}
+.program button.swiper-button-next {
+    right: 0;
+}
+.program button::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+}
+.program .swiper-button-prev::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='43' height='43' viewBox='0 0 43 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_53_623' fill='white'%3E%3Cpath d='M0 21.1421L21.1421 -3.69809e-07L42.2842 21.1421L21.1421 42.2842L0 21.1421Z'/%3E%3C/mask%3E%3Cpath d='M0 21.1421L-1.41421 19.7279L-2.82843 21.1421L-1.41421 22.5563L0 21.1421ZM1.41421 22.5563L22.5563 1.41421L19.7279 -1.41421L-1.41421 19.7279L1.41421 22.5563ZM22.5563 40.87L1.41421 19.7279L-1.41421 22.5563L19.7279 43.6984L22.5563 40.87Z' fill='%233D3D3D' mask='url(%23path-1-inside-1_53_623)'/%3E%3C/svg%3E%0A");
+}
+.program .swiper-button-next::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='43' height='43' viewBox='0 0 43 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_151_37' fill='white'%3E%3Cpath d='M42.2842 21.1421L21.1421 42.2842L-7.39618e-07 21.1421L21.1421 -3.69809e-07L42.2842 21.1421Z'/%3E%3C/mask%3E%3Cpath d='M42.2842 21.1421L43.6984 22.5563L45.1126 21.1421L43.6984 19.7279L42.2842 21.1421ZM40.87 19.7279L19.7279 40.87L22.5563 43.6984L43.6984 22.5563L40.87 19.7279ZM19.7279 1.41421L40.87 22.5563L43.6984 19.7279L22.5563 -1.41421L19.7279 1.41421Z' fill='%233D3D3D' mask='url(%23path-1-inside-1_151_37)'/%3E%3C/svg%3E%0A");
+}
+
+@media screen and (max-width:1024px) {
+    .program h2 {
+        font-size: 55px;
+        margin: 50px 0 25px 0;
+    }
+    .program .swiper ul li {
+        display: block;
+    }
+    .program .swiper ul li .photo {
+        width: 60%;
+        height: 30%;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    .program .swiper ul li .txt {
+        width: 60%;
+        height: 30%;
+        margin: 0 auto;
+    }
+    .program .swiper ul li .txt h3 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .program .swiper ul li .txt p {
+        font-size: 16px;
+        margin: 10px 0 50px 0;
+    }
+    .program .swiper ul li .txt .more {
+        text-align: center;
+    }
+    .program .swiper ul li .txt .more a span {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:768px) {
+    .program h2 {
+        font-size: 35px;
+    }
+    .program .swiper ul li .txt h3 {
+        font-size: 20px;
+    }
+    .program .swiper ul li .txt p {
+        font-size: 13px;
+        margin: 10px 0 25px 0;
+    }
+    .program .swiper ul li .txt .more a span {
+        font-size: 13px;
+    }
+    .program .swiper ul li .txt .more a span::after {
+        bottom: 1px;
+        width: 10px;
+        height: 10px;
+    }
+    .program button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.gallery {
+    padding: 100px 0;
+    background-color: var(--color-main);
+    color: #fff;
+    margin-top: 150px;
+}
+.gallery h2 {
+    font-size: var(--txt-size-tit);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.gallery .swiper ul {
+    transition-timing-function: linear;
+}
+.gallery .swiper ul li {
+    width: 20%;
+}
+.gallery .swiper ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.gallery .swiper_bottom {
+    margin: 30px 0 50px 0;
+}
+.gallery .more {
+    text-align: center;
+}
+.gallery .more a {
+    padding: 0 45px 0 0;
+    position: relative;
+}
+.gallery .more a::after {
+    position: absolute;
+    left: -2px;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--txt-color-gray);
+    content: "";
+}
+.gallery .more a span {
+    position: relative;
+}
+.gallery .more a span::after {
+    position: absolute;
+    right: -40px;
+    bottom: 2px;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_147_27' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_147_27)'%3E%3Cpath d='M14.8365 18.6634L13.7673 17.6191L18.6462 12.7401H2.5V11.2404H18.6558L13.7923 6.36139L14.8365 5.31714L21.5095 11.9904L14.8365 18.6634Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    content: "";
+}
+.gallery .more a:hover {
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+.gallery .more a:hover::after {
+    background-color: #fff;
+}
+.gallery .more a:hover span::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_147_33' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_147_33)'%3E%3Cpath d='M15 19L13.575 17.6L18.175 13H2V11H18.175L13.6 6.4L15 5L22 12L15 19Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width:1024px) {
+    .gallery {
+        padding: 40px 0;
+        margin-top: 50px;
+    }
+    .gallery h2 {
+        font-size: 55px;
+        margin-bottom: 50px;;
+    }
+    .gallery .swiper_bottom {
+        margin: 20px 0 35px 0;
+    }
+}
+@media screen and (max-width:768px) {
+    .gallery h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .gallery .swiper_bottom {
+        margin: 18px 0 25px 0;
+    }
+    .gallery .more a span::after {
+        bottom: 1px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.notice {
+    margin-top: 150px;
+}
+.notice .wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.notice .tit {
+    margin-right: 30px;
+}
+.notice .tit h2 {
+    font-size: var(--txt-size-tit);
+    margin: 0;
+}
+.notice .list {
+    width: 832px;
+    font-weight: 400;
+}
+.notice .list ul li {
+    border-bottom: 1px solid var(--txt-color-gray);
+}
+.notice .list ul li:first-child {
+    border-top: 1px solid var(--txt-color-txt);
+}
+.notice .list ul li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    line-height: 70px;
+}
+.notice .list ul li a h3 {
+    color: var(--txt-color-tit);
+}
+.notice .list ul li a span {
+    font-size: 13px;
+}
+.notice .list ul li a:hover h3 {
+    font-weight: 700;
+}
+.notice .more {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    font-weight: 400;
+}
+.notice .more a {
+    padding-right: 45px;
+}
+.notice .more a::after {
+    position: absolute;
+    left: -2px;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #3d3d3d;
+    content: "";
+}
+.notice .more a span {
+    position: relative;
+}
+.notice .more a span::after {
+    position: absolute;
+    right: -40px;
+    bottom: 2px;
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_146_15' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_146_15)'%3E%3Cpath d='M14.8365 18.6634L13.7673 17.6191L18.6462 12.7401H2.5V11.2404H18.6558L13.7923 6.36139L14.8365 5.31714L21.5095 11.9904L14.8365 18.6634Z' fill='%231C1B1F'/%3E%3C/g%3E%3C/svg%3E%0A");
+    content: "";
+}
+.notice .more a:hover {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.notice .more a:hover::after {
+    background-color: #1d1d1d;
+}
+.notice .more a:hover span::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_146_21' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_146_21)'%3E%3Cpath d='M15 19L13.575 17.6L18.175 13H2V11H18.175L13.6 6.4L15 5L22 12L15 19Z' fill='%231C1B1F'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+@media screen and (max-width:1024px) {
+    .notice {
+        margin-top: 100px;
+    }
+    .notice .wrapper {
+        display: block;
+    }
+    .notice .tit {
+        margin-right: 0;
+        text-align: center;
+    }
+    .notice .tit h2 {
+        font-size: 55px;
+        margin: 75px 0 25px 0;
+    }
+    .notice .list {
+        width: auto;
+        height: auto;
+        margin-top: 25px;
+    }
+    .notice .list ul li a {
+        display: block;
+        padding: 0 15px;
+        line-height: 1.4;
+    }
+    .notice .list ul li a h3 {
+        font-size: 16px;
+        padding: 10px 0 15px 0;
+    }
+    .notice .list ul li a span {
+        display: block;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .notice .more {
+        position: relative;
+        left: auto;
+        top: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .notice .more a {
+        position: relative;
+        padding-right: 45px;
+    }
+}
+@media screen and (max-width:768px) {
+    .notice {
+        margin-top: 50px;
+    }
+    .notice .tit h2 {
+        font-size: 35px;
+        margin: 50px 0 20px 0;
+    }
+    .notice .more a span::after {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+

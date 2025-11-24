@@ -1,0 +1,58 @@
+/***********************************************************
+   파일명 : layout.css
+   작성자 : 유선호
+   작성일 : 2024.04.15
+   속  성 : 모든 페이지의 레이아웃 요소 (header/footer/서브레이아웃)
+            메뉴명, sub_visual 이미지스타일, 탭메뉴
+************************************************************/
+
+header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100px;
+   z-index: 100;
+   padding: 0 100px;
+   display: flex;
+   justify-content: space-between;
+   color: #fff;
+}
+header .logo {
+   margin-top: 35px;
+}
+header .logo a {
+   display: block;
+   width: 147px;
+   height: 24px;
+   font-size: 0;
+   line-height: 0;
+   background: url(../images/common/YOU_SEONHO_W.svg) no-repeat center center / contain;
+}
+header .gnb ul {
+   display: flex;
+   text-align: center;
+}
+header .gnb ul li {
+   margin-left: 50px;
+   width: 120px;
+}
+header .gnb ul li a {
+   display: block;
+   line-height: 100px;
+}
+header .gnb ul li.on a {
+   font-weight: 700;
+}
+header .gnb ul li a:hover {
+   color: #1d1d1d;
+}
+header.black .gnb ul li a:hover {
+   color: #fff;
+}
+header.black {
+   color: #1d1d1d;
+}
+header.black .logo a {
+   background: url(../images/common/YOU_SEONHO.svg) no-repeat center center / contain;
+}

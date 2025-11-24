@@ -1,0 +1,1374 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+@import url(layout.css);
+
+.visual {
+    background: url(../images/main/visual_bg.png) no-repeat center center / cover;
+    height: 1000px;
+    position: relative;
+}
+.visual .wrapper {
+    position: relative;
+}
+.visual .tit {
+    text-align: center;
+    color: var(--color-white);
+}
+.visual .tit h2 {
+    font-family: "Antic Didone", serif;
+    font-size: 4.667rem;
+    line-height: 1.2;
+    padding-top: 459px;
+    margin-bottom: 12px;
+}
+.visual .tit p {
+    color: var(--color-w80);
+}
+.visual .tit p br {
+    display: none;
+}
+
+.visual .reservation {
+    position: absolute;
+    left: 0;
+    bottom: 99px;
+    margin: auto;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.visual .reservation h2 {
+    display: none;
+}
+
+.visual .reservation .res {
+    display: block;
+    width: 180px;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-white);
+    color: var(--txt-main);
+    font-family: "Pre_Bold";
+    height: 80px;
+}
+.visual .reservation .res::after {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 12.6L16.6 8L18 9.4L12 15.4L6 9.4L7.4 8L12 12.6Z' fill='%23111111'/%3E%3C/svg%3E%0A");
+}
+.visual .reservation .res::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 80px;
+    content: "";
+    background-color: var(--txt-main-20);
+}
+.visual .reservation .res:last-child::before {
+    display: none;
+}
+.visual .reservation .res strong {
+    display: block;
+    font-weight: 700;
+    font-size: 1.133rem;
+    color: var(--txt-main);
+    padding: 15px 0 0 18px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.visual .reservation .res span {
+    font-family: "Pre_Regul";
+    font-weight: 400;
+    color: var(--color-g80);
+    padding: 0 0 0 18px;
+    font-weight: 400;
+}
+.visual .reservation button {
+    display: block;
+    width: 180px;
+    background-color: var(--txt-main);
+}
+.visual .reservation button span {
+    color: var(--color-white);
+    font-size: 1.333rem;
+}
+
+.rest {
+    display: flex;
+    margin-top: 98px;
+    position: relative;
+}
+.rest::before {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    height: 550px;
+    content: "";
+    background-color: var(--color-main);
+    z-index: -1;
+}
+.rest .txt {
+    width: 40%;
+    padding: 0 48px;
+    color: var(--color-white);
+    margin: 300px 0 0 0;
+    position: relative;
+}
+.rest .txt .tit {
+    padding: 0 0 50px 0;
+}
+.rest .tit h2 {
+    font-family: "Antic Didone", serif;
+    font-size: 3.333rem;
+    margin: 0 0 0 -7px;
+}
+.rest .tit p {
+    color: var(--color-w80);
+}
+.rest .txt .more {
+    position: absolute;
+    left: 48px;
+    bottom: 29px;
+    
+}
+.rest .txt .more a {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    width: 46px;
+    height: 46px;
+    position: relative;
+}
+.rest .txt .more a::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' stroke='white' stroke-opacity='0.6'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='white' fill-opacity='0.6'/%3E%3C/svg%3E%0A");
+    transition: 0.2s;
+}
+.rest .txt .more a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' fill='white' stroke='white'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='%237C6C5D'/%3E%3C/svg%3E%0A");
+}
+.rest .txt .tab_txt {
+    display: flex;
+}
+.rest .txt .tab_txt {
+    margin-bottom: 16px;
+}
+.rest .txt .tab_txt button {
+    margin-right: 24px;
+}
+.rest .txt button.tab_menu span {
+    font-family: "Pre_Regul";
+    font-weight: 400;
+    color: var(--color-w40);
+}
+.rest .txt button.on span {
+    color: var(--color-white);
+}
+.rest .txt button span:hover {
+    color: var(--color-white);
+}
+.rest .txt strong {
+    color: var(--color-w40);
+}
+.rest .list {
+    width: 60%;
+}
+.rest .list .swiper ul li a .photo {
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    height: 745px;
+}
+.rest .list .swiper ul li a .photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.rest .list .swiper .rest-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 82px;
+    height: 82px;
+    z-index: 5;
+    content: "";
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='82' height='82' viewBox='0 0 82 82' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='41' cy='41' r='41' fill='white' fill-opacity='0.2'/%3E%3Cpath d='M71 46H12L29.7683 28' stroke='white' stroke-opacity='0.6' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
+.rest .list .swiper .rest-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 82px;
+    height: 82px;
+    z-index: 5;
+    content: "";
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='82' height='82' viewBox='0 0 82 82' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='41' cy='41' r='41' fill='white' fill-opacity='0.2'/%3E%3Cpath d='M12 46H71L53.2317 28' stroke='white' stroke-opacity='0.6' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
+.time {
+    margin-top: 183px;
+}
+.time .wrapper {
+    position: relative;
+}
+.time .tit {
+    display: flex;
+    margin-bottom: 21px;
+    color: var(--txt-main);
+}
+.time .tit h2 {
+    font-family: "Antic Didone", serif;
+    font-size: 3.333rem;
+    line-height: 1.2;
+}
+.time .tit ul {
+    display: flex;
+}
+.time .tit ul li {
+    margin: 37px 0 0 25px;
+    color: var(--color-main);
+    position: relative;
+}
+.time .tit ul li::before {
+    position: absolute;
+    right: -12px;
+    top: 2px;
+    width: 1px;
+    height: 15px;
+    content: "";
+    background-color: var(--color-main);
+}
+.time .tit ul li:last-child::before {
+    display: none;
+}
+.time .more {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 46px;
+    height: 46px;
+}
+.time .more a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+.time .more a::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: 0.2s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' stroke='%237C6C5D'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='%237C6C5D'/%3E%3C/svg%3E%0A");
+}
+.time .more a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' fill='%237C6C5D' stroke='%237C6C5D'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.time .list {
+    position: relative;
+}
+.time .list .paging {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 1146px;
+    height: 36px;
+    content: "";
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.time .list .paging span.swiper-pagination-bullet {
+    background-color: var(--color-w20);
+    opacity: 1;
+    width: 336px;
+    height: 2px;
+    color: var(--color-w30);
+    text-align: center;
+    position: relative;
+}
+.time .list .paging .swiper-pagination-bullet-active::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 336px;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    animation-name: time_count;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes time_count {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+.time .list .paging span::before {
+    display: block;
+    line-height: 3.5rem;
+    font-family: "Pre_Bold";
+    font-size: 20px;
+}
+.time .list .paging span.swiper-pagination-bullet-active::before {
+    color: var(--color-white);
+}
+.time .list .paging span.item1::before {
+    content: "Meeting hall";
+}
+.time .list .paging span.item2::before {
+    content: "Wedding hall";
+}
+.time .list .paging span.item3::before {
+    content: "Dining restaurant";
+}
+.time .list ul li .popup1 {
+    background-image: url(../images/main/time01.png);
+}
+.time .list ul li .popup2 {
+    background-image: url(../images/main/time02.png);
+}
+.time .list ul li .popup3 {
+    background-image: url(../images/main/time03.png);
+}
+.time .list ul li .photo {
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.time .list ul li .photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pack {
+    margin-top: 128px;
+}
+.pack .wrapper {
+    position: relative;
+}
+.pack .tit {
+    display: flex;
+    margin-bottom: 21px;
+    color: var(--txt-main);
+}
+.pack .tit h2 {
+    font-family: "Antic Didone", serif;
+    font-size: 3.333rem;
+    line-height: 1.2;
+}
+.pack .tit ul {
+    display: flex;
+}
+.pack .tit ul li {
+    margin: 37px 0 0 25px;
+    color: var(--color-main);
+    position: relative;
+}
+.pack .tit ul li::before {
+    position: absolute;
+    right: -12px;
+    top: 2px;
+    width: 1px;
+    height: 15px;
+    content: "";
+    background-color: var(--color-main);
+}
+.pack .tit ul li:last-child::before {
+    display: none;
+}
+.pack .more {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 46px;
+    height: 46px;
+}
+.pack .more a {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+}
+.pack .more a::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: 0.2s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' stroke='%237C6C5D'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='%237C6C5D'/%3E%3C/svg%3E%0A");
+}
+.pack .more a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' fill='%237C6C5D' stroke='%237C6C5D'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.pack .list ul {
+    display: flex;
+    height: 531px;
+}
+.pack .list ul li {
+    width: 33.33%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* before 정렬의 기준 */
+    transition: 0.5s;
+    position: relative;
+}
+.pack .list ul li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    content: "";
+}
+.pack .list ul li.pack1 {
+    background-image: url(../images/main/pack01.png); 
+}
+.pack .list ul li.pack2 {
+    background-image: url(../images/main/pack02.png);
+}
+.pack .list ul li.pack3 {
+    background-image: url(../images/main/pack03.png);
+}
+.pack .list ul li a {
+    display: block;
+    height: 531px;
+}
+.pack .list ul li a .inner {
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+    transition: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pack .list ul li.on {
+    width: 95%;
+}
+.pack .list ul li.on::before {
+    opacity: 0;
+}
+.pack .list ul li.on a .inner {
+    position: absolute;
+    bottom: 21px;
+    left: 30px;
+    opacity: 1;
+    display: flex;
+    color: var(--color-white);
+}
+.pack .list ul li.on a .inner h3 {
+    font-family: 'Pre_Bold';
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.pack .list ul li.on a .inner p {
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 20px 0 0 9px;
+}
+.exp {
+    margin-top: 183px;
+    position: relative;
+}
+.exp::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 585px;
+    content: "";
+    background-color: var(--color-main);
+    z-index: -1;
+}
+.exp .wrapper {
+    display: flex;
+    position: relative;
+}
+.exp .txt {
+    width: 40%;
+    height: 585px;
+}
+.exp .txt .tit {
+    color: var(--color-white);
+}
+.exp .txt .tit h2 {
+    font-family: "Antic Didone", serif;
+    font-size: 3.333rem;
+    line-height: 1.2;
+    padding-top: 242px;
+}
+.exp .txt .tit p {
+    margin: 17px 0 0 0;
+    color: var(--color-w80);
+}
+.exp .more {
+    position: absolute;
+    left: 0;
+    top: 365px;
+    width: 46px;
+    height: 46px;
+}
+.exp .more a {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+}
+.exp .more a::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' stroke='white' stroke-opacity='0.6'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='white' fill-opacity='0.6'/%3E%3C/svg%3E%0A");
+    transition: 0.2s;
+}
+.exp .more a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='46' viewBox='0 0 46 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='45' height='45' rx='22.5' fill='white' stroke='white'/%3E%3Cpath d='M24.6 23L20 18.4L21.4 17L27.4 23L21.4 29L20 27.6L24.6 23Z' fill='%237C6C5D'/%3E%3C/svg%3E%0A");
+}
+.exp .txt .tab_txt {
+    color: var(--color-w40);
+    margin: 136px 0 0 308px;
+    width: 288px;
+}
+.exp .txt .tab_txt button {
+    display: block;
+    padding: 11.5px 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+}
+.exp .txt .tab_txt button.on {
+    color: var(--color-white);
+}
+.exp .txt .tab_txt button.on::after {
+    position: absolute;
+    left: -3px;
+    bottom: 0px;
+    width: 279px;
+    height: 1px;
+    content: "";
+    background-color: var(--color-white);
+}
+.exp .txt .tab_txt button::before {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z' fill='white' fill-opacity='0.4'/%3E%3C/svg%3E%0A");
+}
+.exp .txt .tab_txt button.on span::before {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.exp .tab {
+    width: 60%;
+    height: 653px;
+    margin-bottom: 121px;
+}
+.exp .tab ul li {
+    display: none;
+}
+.exp .tab ul li.on {
+    display: block;
+}
+.exp .tab ul li.on a {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.exp .tab ul li.on a .photo {
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.exp .tab ul li.on a .photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:1650px){
+    .visual {
+        height: 900px;
+    }
+    .visual .tit h2 {
+        font-size: 60px;
+        padding-top: 400px;
+        margin-bottom: 5px;
+    }
+    
+    .visual .reservation {
+        left: 50%;
+        width: 900px;
+        transform: translateX(-50%);
+    }
+    .visual .reservation .res {
+        width: 150px;
+    }
+    .visual .reservation .res::after {
+        right: 12px;
+    }
+    .visual .reservation .res strong {
+        font-size: 1.2rem;
+        padding: 14px 0 0 13px;
+        margin-bottom: 8px;
+        line-height: 1.2;
+    }
+    .visual .reservation .res span {
+        padding: 0 0 0 13px;
+    }
+    .visual .reservation button {
+        width: 150px;
+    }
+    .rest::before {
+        bottom: -45px;
+        height: 450px;
+    }
+    .rest .txt {
+        width: 45%;
+        padding: 0 40px;
+        color: var(--color-white);
+        margin: 250px 0 0 0;
+        position: relative;
+    }
+    .rest .txt .tit {
+        padding: 0 0 43px 0;
+    }
+    .rest .tit h2 {
+        font-size: 45px;
+        margin: 0 0 0 -7px;
+    }
+    .rest .list {
+        width: 55%;
+    }
+    .rest .list .swiper ul li a .photo {
+        height: 600px;
+    }
+    .time .tit {
+        margin-bottom: 16px;
+    }
+    .time .tit h2 {
+        font-size: 45px;
+    }
+    .time .tit ul li {
+        margin: 29px 0 0 18px;
+    }
+    .time .tit ul li::before {
+        right: -10px;
+        top: 4px;
+        height: 12px;
+    }
+    .time .more {
+        top: 4px;
+    }
+    .pack .tit {
+        margin-bottom: 16px;
+    }
+    .pack .tit h2 {
+        font-size: 45px;
+    }
+    .pack .tit ul li {
+        margin: 29px 0 0 18px;
+    }
+    .pack .tit ul li::before {
+        right: -10px;
+        top: 4px;
+        height: 12px;
+    }
+    .pack .list ul li a {
+        display: block;
+        height: 531px;
+    }
+    .pack .list ul li a .inner {
+        opacity: 0;
+        transition: 0.5s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .pack .list ul li.on {
+        width: 95%;
+    }
+    .pack .list ul li.on::before {
+        opacity: 0;
+    }
+    .pack .list ul li.on a .inner h3 {
+        font-size: 30px;
+    }
+    .pack .list ul li.on a .inner p {
+        padding: 15px 0 0 7px;
+    }
+    .pack .more {
+        top: 8px;
+    }
+
+    .exp::before {
+        height: 450px;
+    }
+    .exp .txt {
+        width: 45%;
+        height: 450px;
+    }
+    .exp .txt .tit h2 {
+        font-size: 45px;
+        padding-top: 196px;
+    }
+    .exp .txt .tit p {
+        margin: 10px 0 0 0;
+    }
+    .exp .txt .tab_txt {
+        margin: 70px 0 0 259px;
+    }
+    .exp .txt .tab_txt button {
+        padding: 10px 0;
+    }
+    .exp .tab {
+        width: 55%;
+        height: 585px;
+        margin-bottom: 20px;
+    }
+    .exp .more {
+        top: 300px;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .visual {
+        height: 800px;
+    }
+    .visual .tit h2 {
+        font-size: 57px;
+        padding-top: 271px;
+        margin-bottom: 0;
+    }
+    .visual .reservation .res h2 {
+        padding: 16px 0 0 13px;
+    }
+    .rest::before {
+        bottom: -60px;
+        height: 400px;
+    }
+    .rest .txt {
+        padding: 0 20px;
+        margin: 200px 0 0 0;
+    }
+    .rest .txt .tit {
+        margin: 0 0 0 0;
+        padding: 0 0 30px 0;
+    }
+    .rest .tit h2 {
+        font-size: 40px;
+        margin: 0 0 5px -7px;
+    }
+    .rest .txt .more {
+        left: 20px;
+    }
+    .rest .list .swiper ul li a .photo {
+        height: 500px;
+    }
+    .rest .list .swiper .rest-prev {
+        width: 70px;
+        height: 70px;
+    }
+    .rest .list .swiper .rest-next {
+        width: 70px;
+        height: 70px;
+    }
+    .time .tit {
+        margin-bottom: 9px;
+    }
+    .time .tit h2 {
+        font-size: 40px;
+    }
+    .time .tit ul li {
+        margin: 28px 0 0 12px;
+    }
+    .time .tit ul li::before {
+        right: -7px;
+        top: 3px;
+        height: 11px;
+    }
+    .time .list ul li .photo img {
+        object-fit: contain;
+    }
+    .time .list .paging {
+        width: 90%;
+    }
+    .time .list .paging span.swiper-pagination-bullet {
+        width: 100%;
+    }
+    .time .list .paging .swiper-pagination-bullet-active::after {
+        width: 100%;
+    }
+    .time .list .paging span::before {
+        font-size: 18px;
+    }
+    .pack .tit {
+        margin-bottom: 9px;
+    }
+    .pack .tit h2 {
+        font-size: 40px;
+    }
+    .pack .tit ul li {
+        margin: 28px 0 0 12px;
+    }
+    .pack .tit ul li::before {
+        right: -7px;
+        top: 3px;
+        height: 11px;
+    }
+    .pack .more {
+        top: 4px;
+    }
+    .pack .list ul li a {
+        display: block;
+        height: 531px;
+    }
+    .pack .list ul li a .inner {
+        opacity: 0;
+        transition: 0.5s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .pack .list ul li.on a .inner {
+        display: block;
+        bottom: 34px;
+        left: 35px;
+    }
+    .pack .list ul li.on a .inner h3 {
+        font-size: 28px;
+    }
+    .pack .list ul li.on a .inner p {
+        padding: 3px 0 0 0px;
+    }
+    .exp::before {
+        height: 400px;
+    }
+    .exp .txt {
+        width: 45%;
+        height: 400px;
+    }
+    .exp .txt .tit h2 {
+        font-size: 40px;
+        padding-top: 125px;
+    }
+    .exp .txt .tit p {
+        margin: 6px 0 0 0;
+    }
+    .exp .txt .tab_txt {
+        margin: 55px 0 0 216px;
+        width: 200px;
+    }
+    .exp .txt .tab_txt button {
+        padding: 10px 0;
+    }
+    .exp .tab {
+        width: 587px;
+        height: 450px;
+        margin-bottom: 45px;
+    }
+    .exp .txt .tab_txt button.on::after {
+        position: absolute;
+        left: -6px;
+        bottom: 0px;
+        width: 200px;
+        height: 1px;
+        content: "";
+        background-color: var(--color-white);
+    }
+    .exp .tab {
+        margin-bottom: 25px;
+    }
+    .exp .more {
+        top: 223px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .visual {
+        height: 600px;
+    }
+    .visual .tit h2 {
+        font-size: 40px;
+        padding-top: 158px;
+        margin-bottom: 5px;
+    }
+    .visual .tit p {
+        color: var(--color-w80);
+    }
+    .visual .tit p br {
+        display: block;
+    }
+    .visual .reservation {
+        width: 150px;
+        height: 55px;
+    }
+    .visual .reservation .res {
+        display: none;
+    }
+    .visual .reservation button {
+        display: block;
+        width: 150px;
+        background-color: var(--txt-main);
+    }
+    .visual .reservation button span {
+        color: var(--color-white);
+        font-size: 23px;
+    }
+    .rest {
+        margin-top: 70px;
+        display: block;
+        padding-bottom: 30px;
+    }
+    .rest::before {
+        bottom: -55px;
+        height: 485px;
+    }
+    .rest .txt {
+        width: 100%;
+        padding: 0 20px;
+        margin: 15px 0 0 0;
+    }
+    .rest .txt .tit {
+        padding: 0 0 27px 0;
+    }
+    .rest .tit h2 {
+        font-family: "Antic Didone", serif;
+        font-size: 35px;
+        margin: 9px 0 0 -2px;
+    }
+    .rest .txt .more {
+        left: auto;
+        right: 20px;
+        top: 0;
+        bottom: auto;
+    }
+    .rest .txt .more a {
+        width: 35px;
+        height: 35px;
+    }
+    .rest .txt .tab_txt {
+        display: flex;
+    }
+    .rest .txt .tab_txt {
+        margin-bottom: 16px;
+    }
+    .rest .txt .tab_txt button {
+        margin-right: 20px;
+    }
+    .rest .list {
+        width: 90%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .rest .list .swiper ul li a .photo {
+        height: 450px;
+    }
+    .rest .list .swiper .rest-prev {
+        display: none;
+    }
+    .rest .list .swiper .rest-next {
+        display: none;
+    }
+    .time {
+        margin-top: 110px;
+    }
+    .time .tit {
+        margin: 37px 0 9px 0;
+    }
+    .time .tit h2 {
+        font-size: 35px;
+    }
+    .time .tit ul {
+        display: none;
+    }
+    .time .more {
+        width: 35px;
+        height: 35px;
+        top: 7px;
+    }
+    .time .more a {
+        width: 100%;
+        height: 100%;
+    }
+    .time .more a::before {
+        right: 0;
+        top: 0;
+    }
+    .time .list .paging {
+        bottom: 30px;
+        width: 90%;
+    }
+    .time .list .paging span.swiper-pagination-bullet {
+        width: 100%;
+    }
+    .time .list .paging .swiper-pagination-bullet-active::after {
+        width: 100%;
+    }
+    .time .list .paging span::before {
+        font-size: 17px;
+    }
+    .time .list ul li .photo {
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    .pack {
+        margin-top: 70px;
+    }
+    .pack .tit {
+        margin: 37px 0 9px 0;
+    }
+    .pack .tit h2 {
+        font-size: 35px;
+    }
+    .pack .tit ul li {
+        display: none;
+    }
+    .pack .more {
+        width: 35px;
+        height: 35px;
+        top: 7px;
+    }
+    .pack .list ul {
+        display: flex;
+        height: 278px;
+    }
+    .pack .list ul li a {
+        display: block;
+        height: 278px;
+    }
+    .pack .list ul li.on a .inner {
+        position: absolute;
+        bottom: 21px;
+        left: 30px;
+        opacity: 1;
+        display: block;
+        color: var(--color-white);
+    }
+    .pack .list ul li.on a .inner h3 {
+        font-size: 17px;
+    }
+    .pack .list ul li.on a .inner p {
+        font-size: 13px;
+        padding: 2px 0 0 0;
+    }
+    .exp {
+        margin-top: 70px;
+    }
+    .exp::before {
+        height: 485px;
+    }
+    .exp .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .exp .txt {
+        width: 100%;
+        height: 311px;
+    }
+    .exp .txt .tit {
+        color: var(--color-white);
+    }
+    .exp .txt .tit h2 {
+        font-family: "Antic Didone", serif;
+        font-size: 3.333rem;
+        line-height: 1.2;
+        padding-top: 9px;
+    }
+    .exp .txt .tit p {
+        margin: 9px 0 0 0;
+        color: var(--color-w80);
+    }
+    .exp .more {
+        width: 35px;
+        height: 35px;
+        left: auto;
+        right: 0;
+        top: 162px;
+    }
+    .exp .more a {
+    }
+    .exp .txt .tab_txt {
+        color: var(--color-w40);
+        margin: 40px 0 0 0;
+        width: 100%;
+    }
+    .exp .txt .tab_txt button {
+        padding: 9.5px 0;
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+    }
+    .exp .txt .tab_txt button.on::after {
+        position: absolute;
+        left: -3px;
+        bottom: 0px;
+        width: 100%;
+        height: 1px;
+        content: "";
+        background-color: var(--color-white);
+    }
+    .exp .txt .tab_txt button::before {
+        position: absolute;
+        right: 6px;
+        top: 5px;
+        width: 24px;
+        height: 24px;
+        content: "";
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6 12L8 7.4L9.4 6L15.4 12L9.4 18L8 16.6L12.6 12Z' fill='white' fill-opacity='0.4'/%3E%3C/svg%3E%0A");
+    }
+    .exp .txt .tab_txt button.on span::before {
+        position: absolute;
+        right: 6px;
+        top: 5px;
+        width: 24px;
+        height: 24px;
+    }
+    .exp .tab {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .exp .swiper-wrapper {
+        height: 400px; 
+    }
+    .exp .tab ul li.on a .photo {
+        width: 100%;
+        height: 400px;
+    }
+    .exp .tab ul li.on a .photo img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:768px){
+    .visual {
+        height: 467px;
+    }
+    .visual .tit h2 {
+        font-size: 35px;
+        line-height: 1.2;
+        padding-top: 73px;
+        margin-bottom: 4px;
+    }
+    .visual .reservation {
+        width: 128px;
+        height: 34px;
+    }
+    .visual .reservation button {
+        width: 128px;
+    }
+    .visual .reservation button span {
+        font-size: 18px;
+    }
+    .rest::before {
+        bottom: -18px;
+        height: 313px;
+    }
+    .rest .txt .tit {
+        padding: 0 0 19px 0;
+    }
+    .rest .tit h2 {
+        font-size: 25px;
+    }
+    .rest .txt .tab_txt {
+        margin-bottom: 16px;
+    }
+    .rest .txt .tab_txt button {
+        margin-right: 18px;
+    }
+    .rest .txt .tab_txt button:last-child {
+        margin-right: 0;
+    }
+    .rest .list {
+        width: 90%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .rest .list .swiper .rest-prev {
+        display: none;
+    }
+    .rest .list .swiper .rest-next {
+        display: none;
+    }
+    .time {
+        margin-top: 88px;
+    }
+    .time .tit {
+        margin: 0 0 9px 0;
+    }
+    .time .tit h2 {
+        font-size: 25px;
+    }
+    .time .more {
+        width: 25px;
+        height: 25px;
+    }
+    .time .more a::before {
+        right: 0;
+        top: 0;
+    }
+    .time .list .paging {
+        bottom: 15px;
+        width: 90%;
+    }
+    .time .list .paging span::before {
+        font-size: 11px;
+        height: 30px;
+        overflow: hidden;
+    }
+    .pack .tit {
+        margin: 20px 0 9px 0;
+    }
+    .pack .tit h2 {
+        font-size: 25px;
+    }
+    .pack .more {
+        width: 25px;
+        height: 25px;
+        top: 7px;
+    }
+    .pack .list ul {
+        display: flex;
+        height: 119px;
+    }
+    .pack .list ul li a {
+        display: block;
+        height: 119px;
+    }
+    .pack .list ul li.on a .inner {
+        bottom: 10px;
+        left: 6px;
+    }
+    .pack .list ul li.on a .inner h3 {
+        font-size: 15px;
+    }
+    .pack .list ul li.on a .inner p {
+        font-size: 11px;
+        padding: 0 0 0 0;
+    }
+    .exp {
+        padding-bottom: 40px;
+    }
+    .exp::before {
+        height: 312px;
+    }
+    .exp .txt {
+        width: 100%;
+        height: 205px;
+    }
+    .exp .txt .tit h2 {
+        font-size: 25px;
+    }
+    .exp .txt .tit p {
+        margin: 7px 0 0 0;
+    }
+    .exp .more a {
+        top: -41px;
+    }
+    .exp .txt .tab_txt {
+        color: var(--color-w40);
+        margin: 31px 0 0 0;
+        width: 100%;
+    }
+    .exp .txt .tab_txt button {
+        padding: 5px 0;
+    }
+    .exp .txt .tab_txt button.on::after {
+        width: 98%;
+    }
+    .exp .tab {
+        width: 100%;
+        height: 149px;
+        margin-bottom: 0;
+    }
+    .exp .tab ul li.on a .photo {
+        height: 149px;
+    }
+    .exp .tab ul li.on a .photo img {
+        object-fit: cover;
+    }
+    .exp .swiper-wrapper {
+        height: 149px;
+    }
+}
