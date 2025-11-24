@@ -1,0 +1,111 @@
+@mixin before-default{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+@mixin after-default{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+@mixin header-drop_shadow {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+}
+@mixin border-box_shadow {
+    color: #fff;
+    border: 1px solid $disalbe;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(142, 142, 142, 0.2);
+}
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin icon {
+    width: 1.41rem;
+    height: 1.41rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin service_icon {
+    position: absolute;
+    content: "";
+    width: 2.8rem;
+    height: 2.8rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin service_icon2 {
+    content: "";
+    width: 2.8rem;
+    height: 2.8rem;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin bg {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin circle {
+    position: relative;
+    content: "";
+    width: 0.23rem;
+    height: 0.23rem;
+    background-color: $text-disalbe;
+    border-radius: 50%;
+}
+@mixin h2 {
+    font-size: $title-XL;
+    color: $title-color;
+    font-weight: 700;
+}
+
+/* max width 정해줘야함 */
+@mixin text_hidden_2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@mixin text_hidden_1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin mobile {
+    @media (max-width:640px){
+        @content;
+        body, html {
+            font-size: 15px;
+        }
+    }
+}
+
+@mixin skip {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 3px;
+    color: transparent;
+    line-height: 0;
+}
