@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+khy2.dothome.co.kr	TRUE	/	FALSE	1999999999	G5PHPSESSID	eje1b1oh5ovd5hrh6v2o42piul
+khy2.dothome.co.kr	TRUE	/	FALSE	1999999999	2a0d2363701f23f8a75028924a3af643	MTEyLjIxOS43My43OA%3D%3D
+khy2.dothome.co.kr	TRUE	/	FALSE	1999999999	e1192aefb64683cc97abb83c71057733	YnJhbmNoZXNfb24%3D
+

@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+/* SUB02-COMMON - S */
+.sub-tit {
+    margin-bottom: 30px;
+    font: 800 30px/40px 'Nanum Gothic'; color: #111;
+}
+/* SUB02-COMMON - E */
+
+
+
+/* SUB02 - S */
+
+/* belgium-detail - s */
+.belgium-detail {
+    overflow: hidden;
+    width: 100%; height: 790px;
+    padding-top: 100px; box-sizing: border-box;
+    background-image: url(../img/Belgium-Building-bg.jpg);
+    position: relative;
+}
+.belgium-detail strong {
+    display: block;
+    margin-bottom: 50px;
+    font: 800 90px/90px 'Nanum Gothic'; color: rgba(255,255,255,0.05);
+}
+.belgium-detail-wrap {display: flex;}
+.belgium-detail-box {
+    padding: 75px 100px; box-sizing: border-box;
+    background-color: #ffbc00;
+    color: #111;
+    position: relative; z-index: 1;
+}
+.belgium-detail-box em {
+    display: block;
+    margin-bottom: 50px;
+    font: 800 35px/40px 'Nanum Gothic';
+}
+.belgium-detail-box ul li {
+    padding: 20px 80px 20px 0; box-sizing: border-box;
+    font-size: 18px; line-height: 30px;
+    position: relative;
+}
+.belgium-detail-box ul li::before {content: "";
+    width: 100%; height: 1px;
+    background-color: #d9a000;
+    position: absolute; left: 0; bottom: 0;
+}
+.belgium-detail-box ul li span {
+    display: inline-block;
+    width: 120px;
+    font-weight: 600;
+}
+.belgium-detail-box ul li:nth-child(2) span {
+    float: left; 
+    margin-bottom: 20px;
+}
+.belgium-detail-img {
+    width: 1136px;
+    margin-left: -200px;
+    position: absolute; left: 50%; bottom: 0; 
+}
+.belgium-detail-img img {width: 100%;}
+/* belgium-detail - e */
+
+
+/* belgium-point - s */
+.belgium-point {padding: 80px 0; box-sizing: border-box;}
+.belgium-point .inner {display: flex;}
+.belgium-point-list {
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+.belgium-point-list + .belgium-point-list::before {content: "";
+    width: 1px; height: 90%;
+    background-color: #ddd;
+    position: absolute; left: 0; top: 5%;
+}
+.belgium-point-img {
+    width: 58px; height: 70px;
+    margin: 0 auto 30px auto;
+}
+.belgium-point-img img {width: 100%;}
+.belgium-point-txt {
+    display: block;
+    font-size: 17px; line-height: 25px; color: #444;
+}
+.belgium-point-txt span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 800; font-size: 22px; color: #8D744A;
+}
+/* belgium-point - e */
+
+
+/* belgium-owner - s */
+.belgium-owner {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.belgium-owner-wrap {
+    display: flex;
+    border: 1px solid #eee; box-sizing: border-box;
+}
+.belgium-owner-name {
+    width: 30%;
+    padding: 45px; box-sizing: border-box;
+}
+.belgium-owner-name figure {
+    width: 83px; height: 107px;
+    margin: 0 auto 20px auto;
+}
+.belgium-owner-name figure img {width: 100%; height: 107px;}
+.belgium-owner-name em {
+    display: block;
+    font-weight: 800; font-size: 22px; line-height: 30px; text-align: center;
+}
+.belgium-owner-desc {
+    width: 70%;
+    padding: 70px; box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+.belgium-owner-desc li {
+    display: flex;
+    line-height: 40px; 
+}
+.belgium-owner-desc li:first-child {margin-bottom: 30px;}
+.belgium-owner-desc li em {
+    display: block;
+    width: 150px;
+    font-weight: 800; font-size: 22px; 
+}
+.belgium-owner-desc li div strong {font-weight: 800; font-size: 30px; color: #111;}
+.belgium-owner-desc li div strong:first-child {margin-right: 50px;}
+.belgium-owner-desc li div strong span:first-child {
+    display: inline-block;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: #8d744a;
+    font-weight: 600; font-size: 18px; text-align: center; color: #fff; 
+}
+.belgium-owner-desc li div strong span:nth-of-type(2) {font-weight: 400; font-size: 16px; color: #777;}
+.belgium-owner-desc li p {font-weight: 600; font-size: 20px; color: #444;}
+/* belgium-owner - e */
+
+
+/* belgium-location - s */
+.belgium-location {
+    width: 100%; height: 100%;
+    padding: 120px 0; margin-bottom: 80px; box-sizing: border-box;
+    background-image: url(../img/bg-ab-Belgium.jpg);
+}
+.belgium-location .sub-tit {
+    margin-bottom: 40px;
+    font-size: 40px; line-height: 50px; color: #fff;
+}
+.belgium-location p {
+    width: 50%;
+    font-size: 18px; line-height: 25px; color: #fff;
+}
+.belgium-location p:nth-of-type(1) {margin-bottom: 25px;}
+/* belgium-location - e */
+
+
+/* belgium-photo - s */
+.belgium-photo {
+    padding: 80px 0; box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+.belgium-photo-wrap {display: flex; flex-wrap: wrap;}
+.belgium-photo-wrap figure {width: calc( ( 100% - 40px ) / 3 );}
+.belgium-photo-wrap figure + figure {margin-left: 20px;}
+.belgium-photo-wrap figure img {width: 100%;}
+.belgium-photo-wrap figure img:first-child {margin-bottom: 20px;}
+/* belgium-photo - e */
+
+/* SUB02 - E */
+
+
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 1280 px 
+**********  ********** **********/
+@media ( max-width : 1280px ) {
+    /* SUB02 - S */
+
+    /* belgium-detail - s */
+    .belgium-detail {
+        height: 100%;
+        padding-top: 80px;
+    }
+    .belgium-detail strong {font-size: 75px; line-height: 80px;}
+    .belgium-detail-box {padding: 60px 80px;}
+    .belgium-detail-box em {
+        margin-bottom: 30px;
+        font-size: 30px; line-height: 40px;
+    }
+    .belgium-detail-box ul li {
+        padding: 15px 60px 15px 0; 
+        font-size: 16px; line-height: 25px;
+    }
+    .belgium-detail-box ul li span {width: 100px;}
+    .belgium-detail-img {
+        width: 80%;
+        margin-left: -150px;
+    }
+    /* belgium-detail - e */
+
+    /* belgium-owner - s */
+    .belgium-owner-name {padding: 40px;}
+    .belgium-owner-name em {font-size: 20px;}
+    .belgium-owner-desc {padding: 70px 50px;}
+    .belgium-owner-desc li {line-height: 35px;}
+    .belgium-owner-desc li em {
+        width: 110px;
+        font-size: 20px; 
+    }
+    .belgium-owner-desc li div strong {font-size: 25px;}
+    .belgium-owner-desc li div strong:first-child {margin-right: 30px;}
+    .belgium-owner-desc li div strong span:first-child {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    .belgium-owner-desc li div strong span:nth-of-type(2) {font-size: 14px;}
+    .belgium-owner-desc li p {font-size: 18px;}
+    /* belgium-owner - e */
+
+    /* belgium-location - s */
+    .belgium-location {padding: 100px 0;}
+    .belgium-location .sub-tit {font-size: 35px; line-height: 40px;}
+    .belgium-location p {
+        width: 70%;
+        font-size: 16px; 
+    }
+    .belgium-location p:nth-of-type(1) {margin-bottom: 20px;}
+    /* belgium-location - e */
+
+    /* SUB02 - E */
+}
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 1024 px 
+**********  ********** **********/
+@media ( max-width : 1024px ) {
+    /* SUB02 - S */
+
+    /* belgium-point - s */
+    .belgium-point {padding: 60px 0;}
+    .belgium-point-img {width: 45px; height: 55px;}
+    .belgium-point-txt {font-size: 16px;}
+    .belgium-point-txt span {font-size: 18px;}
+    /* belgium-point - e */
+
+    /* belgium-owner - s */
+    .belgium-owner {margin-bottom: 60px;}
+    .belgium-owner-wrap {flex-direction: column;}
+    .belgium-owner-name {
+        width: 100%;
+        padding: 40px;
+    }
+    .belgium-owner-name em {font-size: 20px;}
+    .belgium-owner-desc {
+        width: 100%;
+        padding: 70px 50px;
+    }
+    .belgium-owner-desc li {
+        justify-content: center;
+        line-height: 35px; 
+    }
+    .belgium-owner-desc li:first-child {margin-bottom: 30px;}
+    .belgium-owner-desc li em {
+        width: 110px;
+        font-size: 20px; 
+    }
+    .belgium-owner-desc li div strong {font-size: 25px;}
+    .belgium-owner-desc li div strong:first-child {margin-right: 30px;}
+    .belgium-owner-desc li div strong span:first-child {
+        width: 100px;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    .belgium-owner-desc li div strong span:nth-of-type(2) {font-size: 14px;}
+    .belgium-owner-desc li p {font-size: 18px;}
+    /* belgium-owner - e */
+
+    /* belgium-photo - s */
+    .belgium-photo {padding: 60px 0;}
+    .belgium-photo-wrap figure {width: calc( ( 100% - 20px ) / 3 );}
+    .belgium-photo-wrap figure + figure {margin-left: 10px;}
+    .belgium-photo-wrap figure img:first-child {margin-bottom: 10px;}
+    /* belgium-photo - e */
+
+    /* SUB02 - E */
+}
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 780 px 
+**********  ********** **********/
+@media ( max-width : 780px ) {
+    /* SUB02-COMMON - S */
+    .sub-tit {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    /* SUB02-COMMON - E */
+
+    /* SUB02 - S */
+
+    /* belgium-detail - s */
+    .belgium-detail {padding-top: 40px;}
+    .belgium-detail strong {
+        margin-bottom: 30px;
+        font-size: 45px; line-height: 50px;
+    }
+    .belgium-detail-box {
+        width: 100%;
+        padding: 50px; margin-bottom: 55%;
+    }
+    .belgium-detail-box em {
+        margin-bottom: 20px;
+        font-size: 25px; line-height: 30px;
+    }
+    .belgium-detail-box ul li {
+        padding: 15px 0; 
+        font-size: 16px; line-height: 25px;
+    }
+    .belgium-detail-box ul li span {width: 120px;}
+    .belgium-detail-img {
+        width: 100%;
+        margin-left: 0;
+        left: 0; bottom: 0; z-index: 1;
+    }
+    /* belgium-detail - e */
+
+    /* belgium-point - s */
+    .belgium-point .inner {flex-wrap: wrap;}
+    .belgium-point-list {width: 50%;}
+    .belgium-point-list:nth-of-type(n+1):nth-of-type(-n+2) {margin-bottom: 50px;}
+    .belgium-point-list:nth-child(4)::before {display: none;}
+    .belgium-point-img {margin: 0 auto 20px auto;}
+    .belgium-point-txt {font-size: 14px; line-height: 20px;}
+    .belgium-point-txt span {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    /* belgium-point - e */
+
+    /* belgium-owner - s */
+    .belgium-owner-name {padding: 25px;}
+    .belgium-owner-desc {padding: 50px 20px;}
+    .belgium-owner-desc li {
+        justify-content: left;
+        line-height: 30px; 
+    }
+    .belgium-owner-desc li em {
+        width: 100px;
+        font-size: 18px; 
+    }
+    .belgium-owner-desc li div strong {
+        display: block;
+        font-size: 25px;
+    }
+    .belgium-owner-desc li div strong:first-child {margin: 0 0 10px 0}
+    .belgium-owner-desc li div strong span:first-child {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    .belgium-owner-desc li div strong span:nth-of-type(2) {font-size: 13px;}
+    .belgium-owner-desc li p {font-size: 16px;}
+    /* belgium-owner - e */
+
+    /* belgium-location - s */
+    .belgium-location {padding: 80px 0; margin-bottom: 60px;}
+    .belgium-location .sub-tit {
+        margin-bottom: 30px;
+        font-size: 30px; line-height: 40px;
+    }
+    .belgium-location p {
+        width: 100%;
+        font-size: 14px; 
+    }
+    .belgium-location p:nth-of-type(1) {margin-bottom: 20px;}
+    /* belgium-location - e */
+
+    /* SUB02 - E */
+}
+
+
+
+
+
+/**********  ********** **********
+      MAX - WIDTH : 480 px 
+**********  ********** **********/
+@media ( max-width : 480px ) {
+    /* SUB02-COMMON - S */
+    .sub-tit {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    /* SUB02-COMMON - E */
+
+
+    /* SUB02 - S */
+
+    /* belgium-detail - s */
+    .belgium-detail strong {font-size: 40px;}
+    .belgium-detail-box {padding: 40px 30px; margin-bottom: 55%;}
+    .belgium-detail-box em {font-size: 20px;}
+    .belgium-detail-box ul li {font-size: 14px;}
+    .belgium-detail-box ul li span {width: 90px;}
+    /* belgium-detail - e */
+
+    /* belgium-owner - s */
+    .belgium-owner-name {padding: 20px;}
+    .belgium-owner-desc {padding: 30px 20px;}
+    .belgium-owner-desc li {flex-direction: column;}
+    .belgium-owner-desc li:first-child {}
+    .belgium-owner-desc li em {
+        margin-bottom: 10px;
+        font-size: 16px; 
+    }
+    .belgium-owner-desc li div strong {font-size: 22px;}
+    .belgium-owner-desc li div strong:first-child {margin: 0 0 5px 0}
+    .belgium-owner-desc li div strong span:nth-of-type(2) {font-size: 13px;}
+    .belgium-owner-desc li p {font-size: 14px; line-height: 20px;}
+    /* belgium-owner - e */
+
+    /* belgium-photo - s */
+    .belgium-photo-wrap {flex-direction: column;}
+    .belgium-photo-wrap figure {width: 100%;}
+    .belgium-photo-wrap figure + figure {margin: 10px 0 0 0;}
+    /* belgium-photo - e */
+
+    /* SUB02 - E */
+}

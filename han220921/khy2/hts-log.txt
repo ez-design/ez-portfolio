@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 24 Mar 2023 14:31:36 at http://khy2.dothome.co.kr/ +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp
+(winhttrack -qwC2%Pns0u1%B%s%uN0%I0p3BaK0c99T9999R3H0%kf2A99999999999%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%l "en, *" http://khy2.dothome.co.kr/ -O1 "C:\My Web Sites\khy2" +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:31:36	Warning: 	* security warning: maximum number of simultaneous connections limited to 8 to avoid server overload
+14:31:36	Warning: 	* security warning: maximum bandwidth limited to 250000 to avoid server overload
+14:32:02	Warning: 	Found for khy2.dothome.co.kr/bbs/
+14:32:02	Warning: 	File has moved from khy2.dothome.co.kr/bbs/ to https://guide-page.dothome.co.kr/403.html
+14:33:24	Warning: 	File not parsed, looks like binary: khy2.dothome.co.kr/js/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0
+14:36:07	Warning: 	Found for khy2.dothome.co.kr/plugin/kcaptcha/
+14:36:07	Warning: 	File has moved from khy2.dothome.co.kr/plugin/kcaptcha/ to https://guide-page.dothome.co.kr/403.html
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 0 seconds : 1116 links scanned, 1114 files written (64872605 bytes overall) [65261939 bytes received at 181283 bytes/sec], 168072 bytes transferred using HTTP compression in 4 files, ratio 28%, 8.7 requests per connection
+(No errors, 7 warnings, 0 messages)

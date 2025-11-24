@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+
+<!-- Mirrored from lee-song-yi.pe.kr/bbs/login.php?wr_id=5&sst=wr_datetime&sod=asc&sop=and&page=1&url=http%3A%2F%2Flee-song-yi.pe.kr%2Fbbs%2Fboard.php%3Fbo_table%3Dbasic_qa%26amp%3Bwr_id%3D5%26amp%3Bsst%3Dwr_datetime%26amp%3Bsod%3Dasc%26amp%3Bsop%3Dand%26amp%3Bpage%3D1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Mar 2023 08:23:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>로그인 | 그누보드5</title>
+<link rel="stylesheet" href="../css/default7d54.css?ver=220620">
+<link rel="stylesheet" href="../js/font-awesome/css/font-awesome.min7d54.css?ver=220620">
+<link rel="stylesheet" href="../skin/member/basic/style7d54.css?ver=220620">
+<!--[if lte IE 8]>
+<script src="http://lee-song-yi.pe.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "../index.html";
+var g5_bbs_url   = "index.html";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="밀크티, 버블티, 커피, 디저트, 차, 홍차"/> 
+  <meta name="description" content="자연의 찻집 팔공티입니다."/>
+
+  <meta property="og:title" content="팔공티-PALGONGTEA"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="PALGONGTEA 밀크티가 맛있는 카페입니다.">
+  <meta property="og:image" content="img/og.png">
+<script src="../js/jquery-1.12.4.min4fe0.js?ver=221017"></script>
+<script src="../js/jquery-migrate-1.4.1.min4fe0.js?ver=221017"></script>
+<script src="../js/jquery.menu4fe0.js?ver=221017"></script>
+<script src="../js/common4fe0.js?ver=221017"></script>
+<script src="../js/wrest4fe0.js?ver=221017"></script>
+<script src="../js/placeholders.min4fe0.js?ver=221017"></script>
+</head>
+<body>
+
+<!-- 로그인 시작 { -->
+<div id="mb_login" class="mbskin">
+    <div class="mbskin_box">
+        <h1>로그인</h1>
+        <div class="mb_log_cate">
+            <h2><span class="sound_only">회원</span>로그인</h2>
+            <a href="register.html" class="join">회원가입</a>
+        </div>
+        <form name="flogin" action="http://lee-song-yi.pe.kr/bbs/login_check.php" onsubmit="return flogin_submit(this);" method="post">
+        <input type="hidden" name="url" value="http%3A%2F%2Flee-song-yi.pe.kr%2Fbbs%2Fboard.php%3Fbo_table%3Dbasic_qa%26amp%3Bwr_id%3D5%26amp%3Bsst%3Dwr_datetime%26amp%3Bsod%3Dasc%26amp%3Bsop%3Dand%26amp%3Bpage%3D1">
+        
+        <fieldset id="login_fs">
+            <legend>회원로그인</legend>
+            <label for="login_id" class="sound_only">회원아이디<strong class="sound_only"> 필수</strong></label>
+            <input type="text" name="mb_id" id="login_id" required class="frm_input required" size="20" maxLength="20" placeholder="아이디">
+            <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
+            <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
+            <button type="submit" class="btn_submit">로그인</button>
+            
+            <div id="login_info">
+                <div class="login_if_auto chk_box">
+                    <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">
+                    <label for="login_auto_login"><span></span> 자동로그인</label>  
+                </div>
+                <div class="login_if_lpl">
+                    <a href="password_lost.html">아이디/비밀번호 찾기</a>  
+                </div>
+            </div>
+        </fieldset> 
+        </form>
+            </div>
+
+            
+</div>
+
+<script>
+jQuery(function($){
+    $("#login_auto_login").click(function(){
+        if (this.checked) {
+            this.checked = confirm("자동로그인을 사용하시면 다음부터 회원아이디와 비밀번호를 입력하실 필요가 없습니다.\n\n공공장소에서는 개인정보가 유출될 수 있으니 사용을 자제하여 주십시오.\n\n자동로그인을 사용하시겠습니까?");
+        }
+    });
+});
+
+function flogin_submit(f)
+{
+    if( $( document.body ).triggerHandler( 'login_sumit', [f, 'flogin'] ) !== false ){
+        return true;
+    }
+    return false;
+}
+</script>
+<!-- } 로그인 끝 -->
+
+
+
+
+
+</body>
+
+<!-- Mirrored from lee-song-yi.pe.kr/bbs/login.php?wr_id=5&sst=wr_datetime&sod=asc&sop=and&page=1&url=http%3A%2F%2Flee-song-yi.pe.kr%2Fbbs%2Fboard.php%3Fbo_table%3Dbasic_qa%26amp%3Bwr_id%3D5%26amp%3Bsst%3Dwr_datetime%26amp%3Bsod%3Dasc%26amp%3Bsop%3Dand%26amp%3Bpage%3D1 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Mar 2023 08:23:57 GMT -->
+</html>

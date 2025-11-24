@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+/* SUB1-COMMON - S */
+.visual {background-image: url(../img/sub/visual1.png);}
+.sub-article-tit {
+    margin-bottom: 80px;
+    font: 30px/45px 'GmarketSansB'; color: #333; text-align: center;
+}
+/* SUB1-COMMON - E */
+
+/* SUB1-1 - S */
+.frankburger-desc {margin-bottom: 60px;}
+.frankburger-desc p {line-height: 25px; text-align: center;}
+.frankburger-desc p:first-child {margin-bottom: 10px;}
+.frankburger-intro {margin-bottom: 80px;}
+.frankburger-intro-list {
+    margin-bottom: 100px;
+    position: relative;
+}
+.frankburger-intro-desc {
+    float: right;
+    width: 530px;
+    padding-top: 90px;
+}
+.frankburger-intro-list:nth-child(2) .frankburger-intro-desc {
+    float: left;
+    padding-left: 70px;
+}
+.frankburger-intro-tit {
+    font-size: 30px; line-height: 40px; color: #333;
+    margin-bottom: 10px;
+}
+.frankburger-intro-tit span {
+    display: block;
+    padding-top: 20px;
+    font: 45px/60px 'GmarketSansB';
+}
+.frankburger-intro-txt {font-size: 18px; line-height: 25px;}
+.frankburger-intro-list em {
+    line-height: 25px; color: #fff;
+    position: absolute; left: 60px; top: 400px; z-index: 1;
+}
+.frankburger-intro-list:nth-child(2) em {left: 910px;}
+.frankburger-intro-img {
+    float: left;
+    position: relative; 
+}
+.frankburger-intro-list:nth-child(2) .frankburger-intro-img {float: right;}
+.frankburger-intro-img::after {content: "";
+    width: 640px; height: 400px;
+    border-radius: 50px 200px 200px 50px;
+    background-color: #f8d200;
+    position: absolute; left: 10px; top: 25px; z-index: -1;
+}
+.frankburger-intro-list:nth-child(2) .frankburger-intro-img::after {
+    border-radius: 200px 50px 50px 200px;
+    background-color: #1d4c5a;
+    left: -10px;
+}
+.frankburger-intro-list:last-child .frankburger-intro-img::after {background-color: #7fbe26;}
+.frankburger-intro-img img {border-radius: 50px 200px 200px 50px;}
+.frankburger-intro-list:nth-child(2) .frankburger-intro-img img {border-radius: 200px 50px 50px 200px;}
+
+.logo-main {
+    padding-top: 420px; margin-bottom: 80px;
+    position: relative;
+}
+.logo-tit {
+    float: left;
+    width: 320px;
+    font: 30px/45px 'GmarketSansB'; color: #333;
+}
+.logo-main-desc {float: left;}
+.logo-main-desc p:first-child {
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+.logo-main-desc p:last-child {font-size: 12px; line-height: 20px; color: #999;}
+.logo-main-img {position: absolute; left: 0; top: 0;}
+.logo-main-img img {border: 1px solid #ddd;}
+.logo-type {margin-bottom: 80px;}
+.logo-type-list {
+    float: left;
+    width: 285px; 
+    padding-top: 218px;
+    position: relative;
+}
+.logo-type-list:first-child {margin-right: 53px;}
+.logo-type-list:nth-child(2) {margin-right: 52px;}
+.logo-type-list strong {
+    display: block;
+    height: 30px;
+    font-weight: 700; font-size: 18px; line-height: 30px; color: #777;
+}
+.logo-type-list strong span {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 400; font-size: 14px; line-height: 30px; color: #999;
+}
+.logo-type-img {position: absolute; left: 0; top: 0;}
+.logo-color .logo-tit {margin-bottom: 100px;}
+.logo-color-list {
+    float: left;
+    width: 450px;
+    padding-top: 60px;
+    line-height: 25px;
+    position: relative;
+}.logo-color-list:nth-of-type(2n-1) {margin: 0 60px 25px 0;}
+.logo-color-list::before {content: "";
+    width: 450px; height: 50px;
+    background-color: #7fbe26;
+    position: absolute; left: 0; top: 0;
+}
+.logo-color-list:nth-child(2)::before {background-color: #313a43;}
+.logo-color-list:nth-child(3)::before {background-color: #1d4c5a;}
+.logo-color-list:last-child::before {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+/* SUB1-1 - E */
+
+
+/* SUB1-2 - S */
+.special-list {margin-bottom: 80px;}
+.special-list-text {
+    width: 760px;
+    padding-top: 80px;
+}
+.special-list:nth-of-type(2n-1) .special-list-text {float: left;}
+.special-list:nth-of-type(2n) .special-list-text {float: right;}
+.special-list-tit {
+    display: inline-block;
+    font-size: 30px; line-height: 70px; font-family: 'GmarketSansM'; color: #333;
+    margin-bottom: 25px;
+}
+.special-list-tit span {
+    display: inline-block;
+    width: 110px;
+    font-size: 60px; font-family: 'GmarketSansB';
+}
+.special-list:nth-child(2) .special-list-tit span {color: #f8d200;}
+.special-list:nth-child(3) .special-list-tit span {color: #1d4c5a;}
+.special-list:nth-child(4) .special-list-tit span {color: #7fbe26;}
+.special-list:nth-child(5) .special-list-tit span {color: #f8d200;}
+.special-list:nth-child(6) .special-list-tit span {color: #1d4c5a;}
+.special-list:nth-child(7) .special-list-tit span {color: #7fbe26;}
+.special-list:last-child .special-list-tit span {color: #f8d200;}
+.special-list-tit em {
+    display: inline-block;
+    font-size: 35px; font-family: 'GmarketSansB';
+}
+.special-list-desc {
+    font-size: 18px; line-height: 25px; 
+    margin-bottom: 15px; padding-left: 110px;
+}
+.special-list-img {width: 410px; height: 380px;}
+.special-list:nth-of-type(2n-1) .special-list-img {float: right;}
+.special-list:nth-of-type(2n) .special-list-img {float: left;}
+/* SUB1-2 - E */
+
+
+/* SUB1-3 - S */
+.management-vision, .real-burger {padding: 80px 0;}
+.management-desc p {font-size: 18px; line-height: 25px; text-align: center;}
+.management-desc p:first-child {margin-bottom: 10px;}
+.management-vision-infographic {margin-bottom: 50px;}
+.management-vision-infographic strong {
+    display: block;
+    margin-bottom: 160px;
+    font-weight: 700; font-size: 25px; line-height: 180px; color: #fff; text-align: center; 
+    position: relative; 
+}
+.management-vision-infographic strong::before {content: "";
+    width: 180px; height: 180px;
+    border-radius: 100%;
+    background-color: #1d4c5a;
+    position: absolute; left: 550px; top: 0; z-index: -1;
+}
+.management-vision-infographic ul {padding: 0 30px;}
+.management-vision-infographic ul li {
+    float: left;
+    width: 180px; height: 180px;
+    padding-top: 130px;
+    border: 1px solid #1d4c5a; border-radius: 100%;
+    font-size: 18px; line-height: 20px; text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.management-vision-infographic ul li+li {margin-left: 340px;}
+.management-vision-infographic ul li::before {content: "";
+    width: 70px; height: 70px;
+    margin-left: -35px;
+    background-image: url(../img/sub/vision-icon.png);
+    position: absolute; left: 50%; top: 45px;
+}
+.management-vision-infographic ul li:nth-child(2)::before {background-position: -70px 0;}
+.management-vision-infographic ul li:last-child::before {
+    width: 71px;
+    background-position: -140px 0;
+}
+.management-vision-infographic ul li::after {content: "";
+    width: 1px; height: 500px;
+    background-color: #ddd;
+    position: absolute; left: 320px; top: -350px; z-index: -2;
+    transform: rotate(65deg);
+}
+.management-vision-infographic ul li:nth-child(2)::after {
+    height: 160px;
+    left: 90px; top: -160px;
+    transform: rotate(0deg);
+}
+.management-vision-infographic ul li:last-child::after {
+    left: -140px;
+    transform: rotate(-65deg);
+}
+
+.management-vision-wrap {padding: 0 30px;}
+.management-vision-list+.management-vision-list {margin-top: 20px;}
+.management-vision-list strong {
+    float: left;
+    width: 120px;
+    font-weight: 500; font-size: 18px; line-height: 25px; color: #1d4c5a;
+}
+.management-vision-desc {
+    float: left;
+}
+.management-vision-desc p {line-height: 25px;}
+
+.real-burger-list {
+    float: left;
+    width: 240px; height: 350px;
+    padding: 35px 20px 0 20px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.real-burger-list + .real-burger-list {margin-left: 20px;}
+.real-burger-list::before {content: "";
+    width: 200px; height: 1px;
+    background-color: #eee;
+    position: absolute; left: 20px; top: 130px;
+}
+.real-burger-list strong {
+    display: block;
+    margin-bottom: 30px;
+    font: 25px/45px 'GmarketSansB'; color: #1d4c5a;
+}
+.real-burger-list p {line-height: 25px; word-break: keep-all;}
+.real-burger-list::after {content: "";
+    width: 70px; height: 70px;
+    background-image: url(../img/sub/real-burger-icon.png);
+    position: absolute; right: 20px; bottom: 25px;
+}
+.real-burger-list:nth-child(2)::after {
+    width: 76px;
+    background-position: -70px 0;
+}
+.real-burger-list:nth-child(3)::after {
+    width: 88px;
+    background-position: -146px 0;
+}
+.real-burger-list:nth-child(4)::after {background-position: -234px 0;}
+.real-burger-list:last-child::after {
+    width: 56px;
+    background-position: -304px 0;
+}
+
+.interior {padding-top: 80px;} 
+.interior-desc {
+    margin-bottom: 60px;
+    font-size: 18px; line-height: 25px; text-align: center;
+}
+.interior-detail-list {
+    float: left;
+    width: 400px;
+    padding-top: 310px;
+    position: relative;
+}
+.interior-detail-list + .interior-detail-list {margin-left: 40px;}
+.interior-detail-list strong {
+    display: block;
+    margin-bottom: 20px;
+    font: 20px/30px 'GmarketSansB'; color: #1d4c5a;
+}
+.interior-detail-list p {line-height: 25px;}
+.interior-detail-img {position: absolute; left: 0; top: 0;}
+/* SUB1-3 - E */

@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playball&amp;display=swap');
+
+/* MAIN-COMMON - S */
+.sec {padding: 70px 0; margin-bottom: 70px;}
+.sec-header {
+    margin-bottom: 80px;
+    text-align: center;
+}
+.sec-tit {font: 40px/60px 'GmarketSansB'; color: #111;}
+.sec-tit span {font-size: 35px; color: #1d4c5a;}
+.sec-desc {font-size: 20px; line-height: 30px; color: #555;}
+.more-btn {
+    display: block;
+    width: 150px; height: 40px;
+    padding-left: 25px;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 12px; line-height: 40px; color: #fff;
+    background-color: #334a5e;
+    box-shadow: 6px 5px #111;
+}
+.more-btn:hover {
+    translate: 6px 5px;
+    transition: all 0.3s;
+    box-shadow: none;
+}
+/* MAIN-COMMON - E */
+
+
+/* MAIN - S */
+.visual {
+    width: 100%; height: 900px; min-width: 1280px;
+    margin-bottom: 70px;
+}
+.visual h3 {text-indent: -9999px;}
+.visual .visual-txt {padding-top: 620px;}
+.visual .visual-txt p {font: 55px/65px 'GmarketSansB'; color: #fff;}
+.visual .visual-txt p span {font-size: 40px; font-family: 'GmarketSansM';}
+
+/* DISTINCTION - S */
+.distinction {position: relative;}
+.distinction .swiper {
+    width: 500px;
+    margin-left: 0;
+}
+.swiper-slide {
+    width: 445px; height: 480px;
+    background-repeat: no-repeat;
+    background-position: 700px 0;
+}
+.distinction-tit {
+    padding-top: 10px; margin-bottom: 20px;
+    font: 60px/75px 'GmarketSansB'; color: #334a5e;
+}
+.distinction-tit span {
+    display: block;
+    margin-bottom: 20px;
+    font: 85px/100px 'GmarketSansB'; color: #7fbe26;
+}
+.distinction-desc {
+    margin-bottom: 45px;
+    font-size: 24px; line-height: 30px; color: #333;
+}
+.swiper-button-next {
+    color: #334a5e;
+    position: absolute; right: 0; top: 480px; z-index: 1;
+}
+.swiper-button-prev {
+    left: 560px;
+    color: #334a5e;
+    position: absolute; left: 550px; top: 480px; z-index: 1;
+}
+.swiper-pagination {display: none;}
+.distinction .image {
+    width: 445px; height: 480px;
+    position: absolute; right: 135px; top: 240px;
+}
+/* DISTINCTION - E */
+
+/* MENU - S */
+.menu {
+    width: 100%; height: 680px; min-width: 1280px; overflow: hidden;
+    background-color: #7fbe26;
+    position: relative;
+}
+.menu .sec-header {
+    margin-left: -215px;
+    position: absolute; left: 50%; top: 405px;
+}
+.menu .sec-tit span {color: #111;}
+.menu-list li {
+    float: left;
+    width: 229px; height: 810px; 
+    padding-top: 200px; margin-left: -115px;
+    background-repeat: no-repeat;
+    position: absolute; left: 50%; top: 70px; z-index: 1;
+    transform-origin: center bottom;
+}
+.menu-list li:first-child {transform: rotate(-64deg);}
+.menu-list li:nth-child(2) {transform: rotate(-48deg);}
+.menu-list li:nth-child(3) {transform: rotate(-32deg);}
+.menu-list li:nth-child(4) {transform: rotate(-16deg);}
+.menu-list li:nth-child(6) {transform: rotate(16deg);}
+.menu-list li:nth-child(7) {transform: rotate(32deg);}
+.menu-list li:nth-child(8) {transform: rotate(48deg);}
+.menu-list li:last-child {transform: rotate(64deg);}
+.menu-list li em {
+    display: block;
+    font-weight: 500; font-size: 16px; line-height: 20px; color: #111; text-align: center;
+    opacity: 0;
+}
+.menu-list li:nth-child(5) em {opacity: 1;}
+.menu-list li span {
+    display: block;
+    font: 35px/30px 'Playball'; color: #f8d200;
+}
+.menu-list-img {
+    position: absolute; left: 0; top: 0;
+    transform: scale(0.9);
+}
+.menu-list li:first-child .menu-list-img img {transform: rotate(64deg);}
+.menu-list li:nth-child(2) .menu-list-img img {transform: rotate(48deg);}
+.menu-list li:nth-child(3) .menu-list-img img {transform: rotate(32deg);}
+.menu-list li:nth-child(4) .menu-list-img img {transform: rotate(16deg);}
+.menu-list li:nth-child(5) .menu-list-img img {transform: scale(1.1);}
+.menu-list li:nth-child(6) .menu-list-img img {transform: rotate(-16deg);}
+.menu-list li:nth-child(7) .menu-list-img img {transform: rotate(-32deg);}
+.menu-list li:nth-child(8) .menu-list-img img {transform: rotate(-48deg);}
+.menu-list li:last-child .menu-list-img img {transform: rotate(-64deg);}
+.menu .more-btn {
+    margin-left: -75px;
+    color: #333;
+    background-color: #f8d200;
+    position: absolute; left: 50%; top: 555px; z-index: 1;
+}
+.animated-title { 
+    height: 150px;  
+    overflow: hidden;
+    position: relative; top: -50px; 
+}
+.menu-bg-txt > p {
+    font: 150px/1 'GmarketSansB'; color: #79b81f; white-space: nowrap; 
+    animation: flow 20s linear infinite;
+}
+@keyframes flow {
+    from {transform: translateX(0);}
+    to   {transform: translateX(-50%);}
+}
+.menu-list li:hover .menu-list-img img {transform: scale(1.1)}
+.menu-list li:first-child:hover .menu-list-img img {rotate: 64deg;}
+.menu-list li:nth-child(2):hover .menu-list-img img {rotate: 48deg;}
+.menu-list li:nth-child(3):hover .menu-list-img img {rotate: 32deg;}
+.menu-list li:nth-child(4):hover .menu-list-img img {rotate: 16deg;}
+.menu-list li:nth-child(6):hover .menu-list-img img {rotate: -16deg;}
+.menu-list li:nth-child(7):hover .menu-list-img img {rotate: -32deg;}
+.menu-list li:nth-child(8):hover .menu-list-img img {rotate: -48deg;}
+.menu-list li:last-child:hover .menu-list-img img {rotate: -64deg;}
+/* MENU - E */
+
+/* TV - S */
+.tv {
+    min-width: 1280px; overflow: hidden;
+    position: relative;
+}
+.tv .sec-header {margin-bottom: 160px;}
+.tv-wrap {
+    padding-top: 430px;
+    position: relative; 
+}
+.tv-list {
+    width: 320px; height: 300px;
+    padding: 240px 25px 0 25px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: absolute; left: 0; top: 0;
+    transform-origin: left bottom;
+    transition: all 0.3s;
+}
+.tv-list:nth-child(2) {
+    left: 25%; top: 0;
+    transform: rotate(-15deg);
+}
+.tv-list:nth-child(3) {
+    margin-left: -160px;
+    left: 50%; top: -80px;
+    transform: rotate(15deg);
+}
+.tv-list:nth-child(4) {
+    left: 60%; top: 80px;
+    transform: rotate(-15deg);
+}
+.tv-list:last-child {
+    left: 70%; top: -50px;
+    transform: rotate(15deg);
+}
+.tv-list:hover {
+    z-index: 10;
+    transform: scale(1.05);
+}
+.tv-list:nth-child(n+3):nth-child(-n+5):hover {top: 0;}
+.tv-list-tit {line-height: 20px;}
+.tv-list-tit span {
+    display: block;
+    padding-top: 12px;
+    font-size: 12px; line-height: 14px; color: #999; text-align: right;
+    position: relative;
+}
+.tv-list-tit span::before {content: "";
+    width: 17px; height: 14px;
+    background-image: url(../img/heart-icon.png);
+    position: absolute; right: 25px; top: 12px;
+}
+.tv-list-video {
+    width: 270px; height: 200px;
+    position: absolute; left: 25px; top: 25px;
+}
+.tv .more-btn {margin: 0 auto;}
+/* TV - E */
+
+/* SEARCH - S */
+.search {
+    width: 100%; height: 450px; min-width: 1280px;
+    padding-top: 110px;
+    background-image: url(../img/search-bg.jpg);
+    position: relative;
+}
+.search .sec-header {margin-bottom: 70px;}
+.search .sec-desc {font: 55px/70px 'GmarketSansB'; color: #fff; text-align: left;}
+.search .sec-desc span {font-size: 60px; color: #334a5e;}
+.search-form {width: 700px; height: 70px; position: relative;}
+.search-form::after {content: "";
+    width: 342px; height: 400px;
+    background-image: url(../img/search-bg-store.png);
+    position: absolute; left: 938px; top: -170px;
+}
+.search-box {
+    padding-left: 95px;
+    position: relative;
+}
+.search-box #search-box-text {
+    width: 700px; height: 70px;
+    border: none; border-radius: 35px;
+    color: #777; text-indent: 35px;
+}
+.search-box-btn {
+    width: 70px; height: 70px;
+    border: none;
+    background-color: transparent;
+    position: absolute; right: 15px; top: 0; z-index: 1;
+}
+.search-box-btn i {font-size: 35px; color: #f8d200;}
+.search-box-btn span {display: none;}
+/* SEARCH - E */
+
+/* NEWS - S */
+.latest {position: relative;}
+.latest .sec-header {margin-bottom: 140px;}
+.latest_wr2 {
+    float: right;
+    position: absolute; left: 325px; top: 296px;
+}
+.latest_wr2 .latest_webzine_list .document_list > ul > li::before {content: "";
+    width: 115px; height: 100px;
+    margin-left: -57px;
+    background: url(../img/news-icon.png) no-repeat 0 0;
+    position: absolute; left: 50%; top: -50px; z-index: 1;
+  }
+/* NEWS - E */
+/* MAIN - E */

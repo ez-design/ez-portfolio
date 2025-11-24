@@ -1,0 +1,20 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 24 Mar 2023 17:16:51 at http://lee-song-yi.pe.kr +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.ogv +*.webm +*.mp4
+(winhttrack -qiC1%Pns0u1%B%s%uN0%I0p3DaK0M9999999999999999999999999999999999999999999999999999m999999999999999999999999999999999999999999999999999999999999999999,99999999999999999999999999999999999999999999999c99T9999R3H0%kf2A99999999999%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%l "en, *" http://lee-song-yi.pe.kr -O1 "C:\My Web Sites\lsy2" +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.ogv +*.webm +*.mp4 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:16:51	Warning: 	* security warning: maximum number of simultaneous connections limited to 8 to avoid server overload
+17:16:51	Warning: 	* security warning: maximum bandwidth limited to 250000 to avoid server overload
+17:16:51	Warning: 	HTML file (29395 bytes) retransferred due to lack of cache: lee-song-yi.pe.kr/
+17:16:53	Warning: 	HTML file (814 bytes) retransferred due to lack of cache: lee-song-yi.pe.kr/bbs/
+17:17:15	Warning: 	Found for lee-song-yi.pe.kr/bbs/
+17:17:15	Warning: 	File has moved from lee-song-yi.pe.kr/bbs/ to https://guide-page.dothome.co.kr/403.html
+17:19:31	Warning: 	HTML file (838 bytes) retransferred due to lack of cache: lee-song-yi.pe.kr/plugin/kcaptcha/
+17:21:57	Warning: 	Found for lee-song-yi.pe.kr/plugin/kcaptcha/
+17:21:57	Warning: 	File has moved from lee-song-yi.pe.kr/plugin/kcaptcha/ to https://guide-page.dothome.co.kr/403.html
+
+HTTrack Website Copier/3.49-2 mirror complete in 7 minutes 50 seconds : 1018 links scanned, 1016 files written (95788039 bytes overall), 1016 files updated [96149208 bytes received at 204572 bytes/sec], 169978 bytes transferred using HTTP compression in 5 files, ratio 28%
+(No errors, 9 warnings, 0 messages)

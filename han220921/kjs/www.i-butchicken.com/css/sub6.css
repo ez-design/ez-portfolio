@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* SUB6-COMMON - S */
+.sub-visual{background-image: url(../img/sub-visual6.png);}
+/* SUB6-COMMON - E */
+
+
+
+/* LOGIN - S */
+#mb_login{
+    width: 450px;
+    padding: 60px 0 150px;
+}
+.mbskin_box{
+    width: 450px; border-style: none !important;
+    position: relative;
+}
+#mb_login h2{text-indent: -9999px;}
+#mb_login h2::before{content: "";
+    width: 200px; height: 120px;
+    background-image: url(../img/login-logo.png); background-size: contain;
+    position: absolute; left: 50%; top: 0;
+    transform: translate(-50%);
+}
+#mb_login .mb_log_cate{padding: 25px 0;}
+#mb_login .mb_log_cate a.join{
+    width: 70px;
+    padding: 0 0;
+    color: #777; 
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute; left: 175px; bottom: 35px;
+}
+#login_fs .frm_input{padding-left: 15px;}
+#login_info .login_if_auto label{
+    padding-left: 20px;
+    font-family: 'Noto Sans KR' !important; color: #777; letter-spacing: -1px ;
+}
+#login_info .login_if_auto label span{position: absolute; left: 0; top: 6px;}
+#login_info .login_if_lpl a{color: #777;}
+.mbskin .btn_submit{
+    height: 45px;
+    padding: 10px 0;
+    font-family: 'Noto Sans KR'; line-height: 25px; letter-spacing: -1px;
+    background-color: #e01c23;
+}
+
+
+/**************************************
+MAX_WIDTH : 560
+**************************************/
+@media(max-width: 560px){
+    .mbskin_box{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #mb_login{
+        width: 100%;
+        padding-right: 0; padding-left: 0;
+    }
+    #login_fs{padding: 0;}
+    #mb_login h2::before{
+        width: 175px; height: 105px;
+        top: -10px;
+    }
+    a.join{display: none;}
+}
+/* LOGIN - E */
+
+
+/* 회원가입 - S */
+.register{padding: 50px 0 80px;}
+.register h2{font-weight: 700; font-size: 24px !important; line-height: 35px; color: #555;}
+#fregister p{background-color: #aaa;}
+#fregister p::before{display: none;}
+#fregister_private th{
+    font-weight: 500 !important; font-size: 18px; color: #555 !important;
+}
+#fregister_private td{line-height: 25px; color: #777; text-align: center;}
+.register .btn_confirm .btn_submit{
+    font-family: 'Noto Sans KR'; letter-spacing: -1px;
+    background-color: #e01c23;
+    transition: all 0.3s;
+}
+#fregister_chkall label:hover{color: #e01c23;}
+.register .btn_confirm .btn_submit:hover{background-color: #af0000;}
+/* 회원가입 - E */
+
+
+
+.ctt_admin{display: none;}
+
