@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 구글폰트 Noto, Nanum Myeongjo */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/* font-awesome v4.7 */
+
+
+*{ font-family: 'Noto Sans KR', sans-serif; }
+
+.w3-content{ max-width: 1600px; }
+.w3-sidebar{
+    z-index: 3;
+    width: 300px;
+}
+.w3-overlay{ cursor: pointer; }
+.w3-main{ margin-left: 300px; }
+#portfolio > a > img{ width: 65px; }
+#about img{ width: 100%; }
