@@ -1,0 +1,151 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tajawal:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+*{
+    margin: 0;
+    /* ㄴ>전체적용 위험 */
+    box-sizing: border-box;
+    /* outline: 1px solid lime; */
+}
+body{
+    font-family: "Roboto", "맑은 고딕", "Malgun Gothic", NanumGothicWeb, NanumMyeongjoWeb, AppleGothic, sans-serif,
+        Verdana, Arial, Helvetica, sans-serif;}
+a{text-decoration: none;}
+li {list-style: none;}
+.header .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header .left {
+    margin-top: 18px;
+}
+.header .logo img {
+    width: 254px;
+    height: 55px;
+}
+.header .left {float: left;}
+.header .right {float: right;}
+.header .right span {
+    position:relative;
+}
+.header .right span::after {
+    position:absolute; 
+    content:''; 
+    display:block; 
+    width:100%; 
+    height:0; 
+    bottom: -20px;
+    left: 0;
+    background: #60ae2b;
+}
+.header .right span:hover::after{
+    height:5px
+}
+.header .wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header .right span {
+    /* display: block; */
+    margin: 0 0 0 20px;
+    font-size: 15px;
+    color: #60ae2b;
+    text-decoration: none;
+    font-weight:600;
+    border-bottom: 3px solid transparent;
+    line-height: 90px;
+}
+.header .right .fa-facebook{
+    color: #60ae2b;
+}
+/* -------------------복붙---------- */
+:root{
+    --swiper-navigation-color: #fff;
+    --swiper-navigation-color: #fff;
+}
+body {
+    min-width: 1280px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header {height: 90px;}
+/* -------------------슬라이드------------- */
+.basic{
+    width: 100%;
+    height: 578px;
+    margin: 0 auto;
+}
+.basic .swiper-slide.sec01{
+    background: bisque;
+    background: url(../img/pa.shakeshack자료/img/main/slide1.png) 50% 60%;
+    background-size: cover;
+}
+.basic .swiper-slide.sec02{
+    background: rgb(241, 214, 180);
+    background: url(../img/pa.shakeshack자료/img/main/slide2.png) 50% 60%;
+    background-size: cover;
+}
+.basic .swiper-slide.sec03{
+    background: rgb(226, 198, 164);
+    background: url(../img/pa.shakeshack자료/img/main/slide3.png) 50% 60%;
+    background-size: cover;
+}
+.basic .swiper-slide.sec04{
+    background: rgb(216, 186, 150);
+    background: url(../img/pa.shakeshack자료/img/main/slide4.png) 50% 60%;
+    background-size: cover;
+}
+/* -------------------------슬라이드 */
+
+.main_content{width: 1200px; margin: 0 auto;}
+.txtbox{width: 650px;}
+.txtbox.one p{text-align: left; word-break: keep-all;}
+.txtbox.two p{text-align: right; word-break: keep-all;}
+
+/* 이 밑으로 수정 */
+.mainbox.one{
+    margin: 58px 0;
+}
+.txtbox.one{float: left;}
+.mainbox.one .imgbox{float: left; padding: 32px 0 0 10px;}
+.mainbox.one::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mainbox.two{margin: 58px 0;}
+.txtbox.two{float: right;}
+.mainbox.two .imgbox{float: right; padding: 16px 10px 0 0;}
+.mainbox.two::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 클리어픽스로 플롯해제하는 이유: 플롯 쓰면 자식요소의 높이가 사라지게되므로 플롯해제시키는 것 */
+/* + 인접선택자 : 바로 뒤에 오는 요소를 한정지을 때 쓴다 */
+.main_content .mainbox.one .txtbox.one,
+.main_content .mainbox.two .txtbox.two{
+    font-family: 'Poiret One', cursive;
+    width: 600px;
+    word-break: keep-all;
+}
+.main_content .txtbox.one .title,
+.main_content .txtbox.two .title{
+    font-family: 'Poiret One', cursive;
+    font-size: 48px;
+    font-weight: bold;
+}
+.main_content .txt{
+    margin: 32px 0;
+}
+.main_content .txt,
+.main_content .smalltxt{
+    font-family: 'Roboto', '맑은 고딕','Malgun Gothic', 'NanumGothicWeb', 'NanumMyeongjoWeb', AppleGothic, 
+    sans-serif, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.main_content .smalltxt{
+    font-size: 12px;
+}

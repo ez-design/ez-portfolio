@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#point {
+  height: 30px;
+  margin-bottom: 20px;
+}
+body {
+  margin-top: 10px;
+  width: 100%;
+  height: 90vh;
+  background-color: #f6f9fc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+#canvas {
+  position: relative;
+  width: 1000px;
+  height: 400px;
+}
+.rule_modal {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  width: 1000px;
+  height: 400px;
+  background-image: url("../img/rule1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.rule_modal.rule2 {
+  background-image: url("../img/rule2.png");
+}
+.rule_modal.on {
+  display: block;
+}
+.rule_modal > * {
+  position: absolute;
+  z-index: 999;
+  cursor: pointer;
+}
+.rule_modal .x_btn {
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  right: 230px;
+  background-image: url("../img/x_btn.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rule_modal .next_prev_btn {
+  top: 300px;
+  right: 230px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+.rule_modal .next_prev_btn::after {
+  content: "다음";
+}
+.rule_modal .next_prev_btn.next::after {
+  content: "이전";
+}
+
+.difficult_modal {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+canvas {
+  background: #eee;
+  position: absolute;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  top: 320px;
+  transform: translate(-50%, -50%);
+}
+
+.btn button {
+  font-family: "Jua", sans-serif;
+  border: none;
+  font-size: 35px;
+  padding: 10px 26px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.btn .rule {
+  background-color: #e5fde2;
+  color: #d8d8d8;
+}
+.btn .game_difficulty {
+  margin-left: 60px;
+  background-color: #e5fde2;
+  color: #d8d8d8;
+}
+.btn .rule:hover,
+.btn .game_difficulty:hover {
+  background-color: #77b934;
+  color: black;
+}
+.btn .game_difficulty.text::after {
+  content: "게임시작";
+}
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  bottom: 64px;
+  right: 0;
+  background-color: #e5fde2;
+  min-width: 165px;
+  overflow: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 1;
+}
+
+.dropdown.on .dropdown_content {
+  display: block;
+}
+.dropdown.on .game_difficulty {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.dropdown.on .game_difficulty.text::after {
+  content: "난이도선택";
+  font-size: 28.3px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  display: block;
+}
+
+input[type="radio"]:checked + label {
+  background: #77b934;
+}

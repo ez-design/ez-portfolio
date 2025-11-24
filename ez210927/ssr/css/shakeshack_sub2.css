@@ -1,0 +1,382 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tajawal:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+*{
+    margin: 0 ;
+    box-sizing: border-box;
+    /* outline: 1px solid lime; */
+}
+.body{
+    font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+}
+a{text-decoration: none;}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main.content .inner{
+    position: relative;
+}
+/* a:before {
+    content: "\f104";
+    font-family: 'FontAwesome';
+    left:0;
+    position:absolute;
+    top:0;
+} */
+.header{
+    height: 90px;
+}
+.header .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header .left {
+    margin-top: 18px;
+}
+.header .logo img {
+    width: 254px;
+    height: 55px;
+}
+.left {float: left; }
+.right {float: right;}
+/* .header .right span:hover{text-decoration: underline;} */
+.header .right span {position:relative;}
+.header .right span::after {
+    position:absolute; 
+    content:''; 
+    display:block; 
+    width:100%; 
+    bottom: -20px;
+    left: 0;
+    height:0; 
+    background: #60ae2b;
+}
+.header .right span:hover::after{height:5px}
+.header .right span {
+    margin: 0 0 0 20px;
+    font-size: 15px;
+    color: #60ae2b;
+    text-decoration: none;
+    font-weight:600;
+    border-bottom: 3px solid transparent;
+    line-height: 90px;
+}
+
+.header .right .fa-facebook{
+    /* position: absolute; */
+    /* top: 140px; */
+    /* right: -10px; */
+    color: #60ae2b;
+}
+.visual .img{
+    width: 100%;
+    height: 578px;
+    background: url(../img/pa.shakeshack자료/sub2/visual.png) 50% 60%;
+    background-size: cover;
+    text-align: center;
+}
+.main.content .inner{
+    margin: 0 auto;
+    width: 1200px;
+    position: relative; 
+}
+.main.content .inner .fas.fa-angle-left{
+    position: absolute;
+    top: 140px;
+    left:  -10px;
+}
+.main.content .inner .fas.fa-angle-right{
+    position: absolute;
+    top: 140px;
+    right: -10px;
+}
+.main.content h1{
+    font-size: 48px;
+    font-family: 'Poiret One', cursive;
+    margin:  55px 0 0 0;
+}
+.main.content .inner .bt_container{
+    width: 100%;
+    /* overflow: scroll; */
+    /* scroll-snap-type: none; */
+    /* -ms-overflow-style: none; */
+    /* display: inline-block; */
+    /* height: 62px; */
+    margin: 70px 0;
+    
+}
+.bt_container::-webkit-scrollbar { 
+    display: none !important; 
+}
+/* ㄴ>스크롤바 기능은 살려놓고 안보이게 하는. 근데 기능죽음*/
+
+.main.content .inner .bt_container .bt{
+    border: none;
+    background: none;
+    margin: 0 0 10px 0;
+    
+}
+.main.content .inner .bt_container .bt{
+    justify-self: end;
+    justify-content: space-around;
+}
+
+.main.content .inner .bt .kor{
+    font-size: 14px;
+    color: #60ae2b;
+}
+.main.content .inner .information{
+    width: 50%;
+    width: 40%;
+    height: 700px;
+    /* background: #f1f1f1; */
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main.content .inner .information .info{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.main.content .inner .information .info .sec01{
+    display: flex;
+    align-items: flex-end;
+}
+.main.content .inner .information .info .sec01 .eng{
+    font-family: 'Poiret One', cursive;
+    font-size: 48px;
+    /* font-weight: bold; */
+}
+.main.content .inner .information .info .sec01 .kor{
+    font-size: 34px;
+}
+.main.content .inner .information .info .sec .title{
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+.main.content .inner .information .info .sec02,
+.main.content .inner .information .info .sec03,
+.main.content .inner .information .info .sec04,
+.main.content .inner .information .info .sec05{
+    font-size: 16px;
+    margin: 50px 0;
+    color: #4A4A4A;
+}
+.main.content .inner .information .info .sec05 .sns a{
+    margin: 0 12px 0 0;
+}
+.main.content .inner .img.sec01{
+    float: left;
+    background-size: cover;
+    width: 30%;
+}
+.main.content .inner .img.sec02{
+    float: right;
+    background-size: cover;
+    width: 30%;
+}
+.main.content .inner .img.sec01 div{
+    background: url(../img/pa.shakeshack자료/sub2/seoul.jpg)50% 60% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.main.content .inner .img.sec02 .img.i01{
+    background: url(../img/pa.shakeshack자료/sub2/1200px-Map_of_South_Korea-blank.svg.png)50% 60% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.main.content .inner .img.sec01 div .circle{
+    width: 10px;
+    height: 10px;
+    background: #969696;
+    /* background: #60ae2b; */
+    box-shadow: 1px 2px 2px grey;
+    border-radius: 5px;
+    /* border: 0.5px rgba(red, green, blue, alpha) #314126; */
+    position: absolute;
+}
+.main.content .inner .img.sec01 div .circle.c01{
+    top: 449px;
+    left:  208px;
+}
+.main.content .inner .img.sec01 div .circle.c02{
+    top: 436px;
+    left: 221px;
+}
+.main.content .inner .img.sec01 div .circle.c03{
+    top: 392px;
+    left: 201px;
+}
+.main.content .inner .img.sec01 div .circle.c04{
+    top: 315px;
+    left:120px;
+}
+.main.content .inner .img.sec01 div .circle.c05{
+    top: 456px;
+    left: 193px;
+}
+.main.content .inner .img.sec01 div .circle.c06{
+    top: 392px;
+    left: 178px;
+}
+.main.content .inner .img.sec01 div .circle.c07{
+    top: 436px;
+    left: 119px;
+}
+.main.content .inner .img.sec01 div .circle.c08{
+    top: 425px;
+    left: 165px;
+}
+.main.content .inner .img.sec01 div .circle.c09{
+    top: 305px;
+    left: 230px;
+}
+.main.content .inner .img.sec01 div .circle.c10{
+    top: 444px;
+    left: 240px;
+}
+.main.content .inner .img.sec01 div .circle.c11{
+    top: 403px;
+    left: 138px;
+}
+.main.content .inner .img.sec01 div .circle.c12{
+    top: 459px;
+    left: 143px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle{
+    width: 10px;
+    height: 10px;
+    background: #969696;
+    /* background: #60ae2b; */
+    box-shadow: 1px 2px 2px grey;
+    border-radius: 5px;
+    /* border: 0.5px rgba(red, green, blue, alpha) #314126; */
+    /* border: 1px solid #58a822; */
+    position: absolute;
+}
+.main.content .inner .img.sec01 .circle .circle:hover{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: lime;
+}
+.main.content .inner .img.sec02 .img.i01 .circle:hover{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: lime;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c01{
+    top: 146px;
+    left:216px;
+    /* width: 14px; */
+    /* height: 14px; */
+    /* border-radius: 7px; */
+    /* background: lime; */
+    /* box-shadow: 3px 3px 3px #71b941; */
+    border: none;
+    z-index: 33;
+    /* 호버시 효과 */
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c02{
+    top: 146px;
+    left:223px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c03{
+    top:140px;
+    left:227px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c04{
+    top: 220px;
+    left: 125px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c05{
+    top:142px;
+    left:222px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c06.인천공항{
+    top:208px;
+    left:68px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c07.센트럴시티{
+    top:146px; 
+    left:213px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c08.송도{
+    top:213px;
+    left:89px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c09.서면{
+    top: 425px;
+    left: 271px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c10.종각{
+    top:138px;
+    left:214px;
+    display: none;
+
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c11.영등포{
+    top:142px;
+    left:204px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c12.용산{
+    top:142px;
+    left:212px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c13.대구{
+    top:368px;
+    left:232px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c14.대전{
+    top:318px;
+    left:141px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c15.노원{
+    top:128px;
+    left:220px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c16.코엑스{
+    top:144px;
+    left:226px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c17.동탄{
+    top:240px;
+    left:117px;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c18{
+    top:137px;
+    left: 208px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c19{
+    top:149px;
+    left:208px;
+    display: none;
+}
+.main.content .inner .img.sec02 .img.i01 .circle.c20{
+    top: 270px;
+    left: 124px;
+}
+
+/* 스크립트 연결시 쓸것 */
+/* Document.getElementById(“지점정보아이디”).css(“display”,”none”) */
+/* ID 말고 클래스명으로 */

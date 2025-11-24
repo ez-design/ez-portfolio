@@ -1,0 +1,170 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Tajawal:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+*{
+    margin: 0 ;
+    box-sizing: border-box;
+    /* outline: 1px solid lime; */
+}
+body{
+    font-family: "Roboto", "맑은 고딕", "Malgun Gothic", NanumGothicWeb, NanumMyeongjoWeb, AppleGothic, sans-serif,
+        Verdana, Arial, Helvetica, sans-serif;}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* clearfix 선언해놓으면 일일이 해당 객체마다 플롯해제 안하고 일괄적용 가능하다 */
+/* clearfix 필요한 객체마다 클래스명 뒤에 clearfix 추가하기 */
+
+/* .header{ 
+    height: 90px;
+    clear: both;
+    clear: none;
+}         */
+
+.header .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header .left {
+    margin-top: 18px;
+}
+.header .logo img {
+    width: 254px;
+    height: 55px;
+}
+.left {float: left; }
+.right {float: right; }
+.header .right span {
+    position:relative;
+}
+a{text-decoration: none;}
+.header .right span::after {
+    position:absolute; 
+    content:''; 
+    display:block; 
+    width:100%; 
+    height:0; 
+    bottom: -20px;
+    left: 0;
+    background: #60ae2b;
+}
+.header .right span:hover::after{
+    height:5px
+}
+.header .right .fa-facebook{color: #60ae2b;}
+.header .right span {
+    /* display: block; */
+    margin: 0 0 0 20px;
+    font-size: 15px;
+    color: #60ae2b;
+    text-decoration: none;
+    font-weight:600;
+    border-bottom: 3px solid transparent;
+    line-height: 90px;
+}
+.visual .img{
+    width: 100%;
+    height: 578px;
+    background: url(../img/pa.shakeshack자료/sub1/visual.png) 50% 60%;
+    background-size: cover;
+    text-align: center;
+}
+.visual p {
+    color: #fff;
+}
+.visual .img .title{
+    font-family: 'Poiret One', cursive;
+    font-size: 42px;
+    font-weight: bold;
+    padding-top: 190px;
+}
+.visual .copy,
+.visual .txt{
+    font-family: "roboto";
+    font-weight: 600px;
+}
+
+.visual .copy{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.visual .txt{font-size: 25px;}
+
+.main_content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main_content h1{
+    margin-top: 55px;
+    font-size: 48px;
+    /* font-family: poe; */
+    font-family: 'Poiret One', cursive;
+}
+.card::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.card {
+    height: 430px;
+    width: 100%;
+    margin: 100px 0;
+}
+.card > .imgbox{
+    width: 55%;
+    background: slategrey;
+    height: 430px;
+    float: left;
+}
+.card.one .imgbox{
+    background: url(../img/pa.shakeshack자료/sub1/2021_SFSG_1We-Hold-Ourselves-Accountable\ 3.png) no-repeat;
+    background: cover;
+}
+.card.two .imgbox{
+    background: url(../img/pa.shakeshack자료/sub1/2021_SFSG_We-Hold-Ourselves-Accountable\ 1.png) no-repeat;
+}
+.card.three .imgbox{
+    background: url(../img/pa.shakeshack자료/sub1/2021_SFSG_3We-Hold-Ourselves-Accountable\ 2.png) no-repeat;
+}
+
+.card > .txtbox{
+    width: 45%;
+    background: #fafafa;
+    height: 430px;
+    float: right;
+    padding: 30px 35px 0 35px;
+}
+.card .txtbox p{
+    font-size: 18px;
+    /* word-break: keep-all; */
+}
+
+.card .txtbox .title {
+    font-family: 'Poiret One', cursive;
+    font-size: 36px;
+    font-weight:bold;
+}
+/* p[class="title_k"]{
+    font-size: 30px;
+    font-weight: 600px;
+} */
+.card .txtbox .title_k{
+    font-size: 30px;
+    font-weight: 600px;
+    margin: 0 0 50px 0;
+}
+.card .txtbox .copy{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 30px 0 40px 0;
+}
+.card .txtbox p:nth-child(4){
+    margin: 15px 0;
+}
